@@ -1,0 +1,17 @@
+{
+  "name": "neighborhoodos-wedge-home-maintenance",
+  "version": "0.1.0",
+  "description": "West Waldo home-maintenance wedge for NeighborhoodOS. Owner-occupied only. Uses KC Open Data as a backbone.",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "fetch": "node fetch-all.js",
+    "ingest": "node ingest-all.js",
+    "digest": "node digest.js",
+    "ask": "node ask.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  },
+  "license": "MIT"
+}

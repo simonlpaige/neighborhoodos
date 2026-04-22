@@ -1,0 +1,40 @@
+{
+  "name": "neighborhoodos",
+  "version": "0.1.0",
+  "description": "An operating system for neighborhoods that want to solve their own problems. Pick a sharp wedge, ship a working tool, rotate when needed.",
+  "type": "module",
+  "main": "core/node.js",
+  "scripts": {
+    "sync": "node ingest/sync.js",
+    "sync:status": "node ingest/sync.js --status",
+    "api": "node identity/api.js",
+    "start": "node ingest/sync.js && node identity/api.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "better-sqlite3": "^12.9.0",
+    "nodemailer": "^8.0.5",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "neighborhood",
+    "civic-tech",
+    "governance",
+    "commons",
+    "open-data",
+    "community"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonlpaige/neighborhoodos"
+  },
+  "homepage": "https://neighborhoodos.org",
+  "bugs": {
+    "url": "https://github.com/simonlpaige/neighborhoodos/issues"
+  }
+}
