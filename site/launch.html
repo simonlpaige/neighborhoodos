@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launch your own NeighborhoodOS — the 30-day playbook</title>
+<meta name="description" content="A step-by-step playbook for launching a NeighborhoodOS node in your own neighborhood. No platform magic. You do the listening. The software wraps the work.">
+<meta property="og:title" content="Launch your own NeighborhoodOS">
+<meta property="og:description" content="The 30-day playbook for starting a node in your neighborhood. You supply the work and the AI. The install is just the wrapper.">
+<meta property="og:url" content="https://neighborhoodos.org/launch">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #14181a;
+  --surface: #1a2124;
+  --s2:      #222a2e;
+  --s3:      #2a3438;
+  --border:  #2f3a3f;
+  --border2: #3b4a4f;
+  --text:    #e6e8dc;
+  --muted:   #8fa09a;
+  --dim:     #5a6b65;
+  --accent:  #e8a04a;
+  --a2:      #c98638;
+  --warm:    #f0b878;
+  --sky:     #6fb4c9;
+  --leaf:    #7fa05c;
+  --warn:    #d07a5a;
+}
+
+html { scroll-behavior: smooth; }
+
+:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--warm); text-decoration: underline; }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(20,24,26,0.95);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+}
+.nav-logo {
+  font-size: 15px; font-weight: 800; letter-spacing: 0.04em;
+  color: var(--accent); text-decoration: none;
+}
+.nav-logo:hover { color: var(--warm); text-decoration: none; }
+.nav-links { display: flex; gap: 0; align-items: center; }
+.nav-links a {
+  padding: 0 14px; height: 56px;
+  display: flex; align-items: center;
+  font-size: 14px; color: var(--muted);
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  text-decoration: none;
+}
+.nav-links a:hover { color: var(--text); border-bottom-color: var(--accent); }
+.nav-links a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.container { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+
+header.hero {
+  padding: 72px 0 48px;
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(232,160,74,0.08), transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(111,180,201,0.06), transparent 50%);
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sky);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+h1 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.tagline {
+  font-size: clamp(16px, 2vw, 18px);
+  color: var(--muted);
+  max-width: 640px;
+}
+
+section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 22px;
+  color: var(--text);
+}
+h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+p { margin-bottom: 16px; color: var(--text); }
+p + p { margin-top: 0; }
+
+.phases {
+  counter-reset: phase;
+  list-style: none;
+  margin: 28px 0;
+}
+.phases > li {
+  counter-increment: phase;
+  position: relative;
+  padding: 22px 22px 22px 72px;
+  margin-bottom: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+}
+.phases > li::before {
+  content: counter(phase);
+  position: absolute;
+  left: 18px; top: 22px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #14181a;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.phases .phase-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.phases .phase-meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.phases p { margin-bottom: 10px; font-size: 15px; }
+.phases ul {
+  list-style: none;
+  margin: 10px 0 4px;
+}
+.phases ul li {
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 15px;
+}
+.phases ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.callout {
+  background: var(--s2);
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  margin: 22px 0;
+  border-radius: 0 6px 6px 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+.callout strong { color: var(--text); }
+.callout.warn { border-left-color: var(--warn); }
+.callout.warn strong { color: var(--warm); }
+
+.kit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.kit-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+.kit-item h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+.kit-item p { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.5; }
+
+code {
+  background: var(--s2);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: var(--warm);
+}
+pre {
+  background: var(--s2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-size: 13px;
+  color: var(--text);
+  overflow-x: auto;
+  margin: 14px 0;
+  line-height: 1.5;
+}
+
+.signals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+@media (max-width: 640px) { .signals { grid-template-columns: 1fr; } }
+.signal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+}
+.signal h4 {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.signal.good h4 { color: var(--leaf); }
+.signal.bad h4 { color: var(--warn); }
+.signal p { font-size: 14px; color: var(--text); margin: 0; }
+
+.cta-block {
+  background: var(--s2);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 26px;
+  margin: 28px 0;
+  text-align: center;
+}
+.cta-block h3 { margin-bottom: 8px; }
+.cta-block p { color: var(--muted); margin-bottom: 18px; font-size: 15px; }
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+  margin: 0 4px;
+}
+.btn-primary { background: var(--accent); color: #14181a; }
+.btn-primary:hover { background: var(--warm); color: #14181a; text-decoration: none; }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border2); }
+.btn-secondary:hover { background: var(--s3); color: var(--text); text-decoration: none; }
+
+footer {
+  padding: 40px 0 60px;
+  font-size: 13px;
+  color: var(--dim);
+}
+footer a { color: var(--muted); }
+footer a:hover { color: var(--accent); }
+.footer-row {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">neighborhoodos</a>
+  <div class="nav-links">
+    <a href="/#approach">Approach</a>
+    <a href="/#wedge">Current pilot</a>
+    <a href="/launch.html" class="active">Launch your own</a>
+    <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">The 30-day playbook</div>
+    <h1>Launch your own <em>NeighborhoodOS</em>.</h1>
+    <p class="tagline">The install is the wrapper. You supply the neighborhood, the conversations, and the AI. This page is the honest version of what that actually takes over the first 30 days.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Read this first</h2>
+    <p>There's no one-click "launch a neighborhood" button, and anyone selling you one is lying. The reason most civic software fails is that it treats the software as the product. The software isn't the product here. <strong>Trust is the product.</strong> The software is just the wrapper that makes showing up reliably a little easier.</p>
+    <p>What you'll do over the first 30 days is mostly talk to people. Roughly 20 conversations. The software helps you remember what they said, spot patterns, and pick one sharp wedge to build around. You bring the neighborhood. You bring your own AI (OpenAI key, Anthropic key, or a local Ollama). We bring the wrapper.</p>
+
+    <div class="callout warn">
+      <strong>Honest pre-flight check.</strong> If you're not willing to knock on 20 doors, go to three meetings, and hear "no thanks" out loud a few times, this isn't the right tool yet. Save yourself the install. Come back when the neighborhood feels loud in your head.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>What you'll end up with at day 30</h2>
+    <div class="kit">
+      <div class="kit-item">
+        <h4>One chosen wedge</h4>
+        <p>A single concrete pain that passes the four-test filter and has at least 3 neighbors ready to try v1.</p>
+      </div>
+      <div class="kit-item">
+        <h4>A node profile</h4>
+        <p>Your neighborhood's boundary, key civic contacts, meeting schedule, and the five loudest pain patterns from your intake conversations.</p>
+      </div>
+      <div class="kit-item">
+        <h4>A running local install</h4>
+        <p>SQLite DB, ingest scripts pointed at your city's open data, weekly digest in your inbox. Data stays on your machine.</p>
+      </div>
+      <div class="kit-item">
+        <h4>A v1 plan</h4>
+        <p>A one-page plan for the ugliest possible version of the tool that solves your chosen wedge inside 90 days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>The phases</h2>
+
+    <ol class="phases">
+      <li>
+        <div class="phase-title">Pre-flight — before you touch code</div>
+        <div class="phase-meta">Day 0 · 2-3 hours</div>
+        <p>Write a one-page NODE.md about your neighborhood. Boundary. Roughly how many households. Existing groups (HOA, neighborhood association, block captains, Facebook group). What civic meetings already happen and who shows up. What's broken that everyone already complains about. You'll update this as you learn.</p>
+        <p>Decide who else is in on this with you, even loosely. One person alone can start a node. One person alone can't sustain one.</p>
+        <ul>
+          <li>Template: <code>wedges/_template/NODE.md</code> in the repo</li>
+          <li>Budget: a notebook, a neighborhood map, and a coffee meeting with one ally</li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="phase-title">Install — wrap the work</div>
+        <div class="phase-meta">Day 1 · 30 minutes</div>
+        <p>Clone the repo, install dependencies, point the ingest scripts at your city's open data portal (Socrata, ArcGIS, or your local equivalent), and drop in an AI key.</p>
+<pre>git clone https://github.com/simonlpaige/neighborhoodos.git
+cd neighborhoodos
+npm install
+cp .env.example .env
+# edit .env: add OPENAI_API_KEY or ANTHROPIC_API_KEY or OLLAMA_HOST
+# edit connectors/cities.json: add your city's open data endpoints</pre>
+        <p>If your city doesn't have open data, that's fine. Skip the connectors for now. The intake and wedge work still runs.</p>
+        <ul>
+          <li>Supported AI: OpenAI, Anthropic, any Ollama model locally</li>
+          <li>Your data never leaves your machine. The AI calls are routed through whatever key you provide.</li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="phase-title">Listening — the actual work</div>
+        <div class="phase-meta">Days 2-20 · ~20 conversations</div>
+        <p>This is the phase where real nodes are made and fake ones die. Talk to 20 neighbors. Start with the loud ones (block captains, long-timers, the person who runs the Facebook group). Move to the quiet ones (people who moved in recently, elderly homeowners, renters if your wedge includes them).</p>
+        <p>The intake tool in the repo gives you a 12-question conversation guide and stores the anonymized notes in your local DB. After each batch of 5 conversations, run <code>node intake/summarize.js</code> and it asks your AI to pull pain patterns across them.</p>
+        <ul>
+          <li>Bring snacks. Seriously.</li>
+          <li>Go to 2-3 existing civic meetings. Listen more than you talk.</li>
+          <li>Record which pains come up repeatedly, not just the loudest one once.</li>
+        </ul>
+        <div class="callout">
+          <strong>You'll feel like you have nothing after week 2.</strong> That's normal. Patterns don't show up until around conversation 12. Keep going.
+        </div>
+      </li>
+
+      <li>
+        <div class="phase-title">Wedge selection — pick one pain</div>
+        <div class="phase-meta">Days 20-25 · one evening, then sleep on it</div>
+        <p>Run <code>node wedges/suggest.js</code>. It hands your intake summary to your AI with the four-test filter baked in. You get 2-3 candidate wedges ranked on:</p>
+        <ul>
+          <li><strong>Concrete.</strong> Can you describe it in one sentence at a kitchen table?</li>
+          <li><strong>Costly.</strong> Are people losing money, time, or dignity to it right now?</li>
+          <li><strong>Local.</strong> Does the solution work at the block level without waiting on city hall?</li>
+          <li><strong>Swappable.</strong> If you build the wrong thing, can you stop without tearing out the platform?</li>
+        </ul>
+        <p>The AI recommends. You decide. Pick one. Write the chosen wedge into <code>wedges/your-wedge/README.md</code>. Tell three of the neighbors who showed up strongest in intake that this is what you're building toward, and ask if they'll try v1.</p>
+      </li>
+
+      <li>
+        <div class="phase-title">Scaffold — the ugliest v1</div>
+        <div class="phase-meta">Days 25-30 · a weekend</div>
+        <p>Run <code>node wedges/scaffold.js your-wedge</code>. It creates a folder with an ingest script, a local data model, a basic CLI, and a README stub. It does NOT build you a product. It gives you the skeleton so you can start filling in what YOUR wedge actually needs.</p>
+        <p>The ugliest possible v1 is usually: a spreadsheet-or-SQLite list, one script that updates it, and one human (you) sending a weekly text message to the neighbors who opted in. That's fine. Ship that. Every fancier version is built on top of that skeleton once it earns trust.</p>
+        <ul>
+          <li>No users yet = no product yet. Get 3 real users before you write your second feature.</li>
+          <li>Toothbrush test: does anyone use this twice a week? If not, the wedge is wrong, the UX is wrong, or it's both.</li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="phase-title">Run, listen, rotate</div>
+        <div class="phase-meta">Day 30+ · ongoing</div>
+        <p>After 90 days, check the signals below. If the wedge is working, keep running it and queue the next one. If it isn't, rotate the wedge. The platform stays, the wedge changes. This is the whole point.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Signals at 90 days</h2>
+    <div class="signals">
+      <div class="signal good">
+        <h4>Working</h4>
+        <p>20+ households have used the tool once. 3+ named "prevented a disaster" stories. At least one coordinated block-level job where real money was saved. Neighbors bring other neighbors without you asking.</p>
+      </div>
+      <div class="signal bad">
+        <h4>Not working</h4>
+        <p>Fewer than 10 households have touched it. You're the only one talking about it. The people who said "yes, try it on me" at intake have gone quiet. Rotate the wedge. No shame. The platform stays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>What NeighborhoodOS is not</h2>
+    <ul style="list-style: none; margin-top: 12px;">
+      <li style="padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text);"><strong>Not a platform that runs your neighborhood for you.</strong> You run it. This is a wrapper.</li>
+      <li style="padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text);"><strong>Not a social network.</strong> There's no feed, no likes, no algorithm. The software exists to make specific shared problems a little easier.</li>
+      <li style="padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text);"><strong>Not a hosted SaaS.</strong> Every node runs locally. Your data stays with you. If two nodes want to federate, they opt in explicitly.</li>
+      <li style="padding: 12px 0; color: var(--text);"><strong>Not for every neighborhood.</strong> If your block already solves its own problems informally, great, you don't need this. Come back when something's actually breaking.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Ready?</h2>
+    <div class="cta-block">
+      <h3>Start with the repo</h3>
+      <p>The install is the easy part. The first real step is writing your NODE.md and lining up your first 5 conversations. Clone the code when you're ready for day 1.</p>
+      <a class="btn btn-primary" href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">Browse the code</a>
+      <a class="btn btn-secondary" href="/">Back to home</a>
+    </div>
+    <p style="color: var(--muted); font-size: 14px; margin-top: 18px;">Questions? Open an issue on GitHub, or if you're piloting in a neighborhood and want to compare notes, reach out through <a href="https://simonlpaige.com">simonlpaige.com</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div>
+        neighborhoodos.org · MIT licensed · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> · <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>
+      </div>
+      <div>
+        Built in West Waldo, Kansas City
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
