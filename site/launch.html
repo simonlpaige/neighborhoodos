@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Launch your own NeighborhoodOS — the 30-day playbook</title>
-<meta name="description" content="A step-by-step playbook for launching a NeighborhoodOS node in your own neighborhood. No platform magic. You do the listening. The software wraps the work.">
-<meta property="og:title" content="Launch your own NeighborhoodOS">
+<title>Launch your own neighborhoodOS — the 30-day playbook</title>
+<meta name="description" content="A step-by-step playbook for launching a neighborhoodOS node in your own neighborhood. No platform magic. You do the listening. The software wraps the work.">
+<meta property="og:title" content="Launch your own neighborhoodOS">
 <meta property="og:description" content="The 30-day playbook for starting a node in your neighborhood. You supply the work and the AI. The install is just the wrapper.">
 <meta property="og:url" content="https://neighborhoodos.org/launch">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Launch your own NeighborhoodOS">
+<meta name="twitter:title" content="Launch your own neighborhoodOS">
 <meta name="twitter:description" content="The 30-day playbook for starting a node in your neighborhood.">
 <link rel="canonical" href="https://neighborhoodos.org/launch">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "Launch your own NeighborhoodOS",
-  "description": "A 30-day playbook for starting a NeighborhoodOS node in your own neighborhood.",
+  "name": "Launch your own neighborhoodOS",
+  "description": "A 30-day playbook for starting a neighborhoodOS node in your own neighborhood.",
   "url": "https://neighborhoodos.org/launch",
   "totalTime": "P30D",
   "inLanguage": "en",
@@ -31,7 +31,7 @@
   },
   "isPartOf": {
     "@type": "WebSite",
-    "name": "NeighborhoodOS",
+    "name": "neighborhoodOS",
     "url": "https://neighborhoodos.org/"
   }
 }
@@ -40,56 +40,56 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --paper:        #F2EBDC;
-  --paper-2:      #E9DFC9;
-  --paper-3:      #DCD0B6;
-  --ink:          #16201A;
-  --ink-soft:     #2C3A30;
-  --ink-muted:    #5A6A5C;
-  --moss:         #2F4A33;
-  --moss-deep:    #1E3322;
-  --moss-mid:     #4A6B4F;
-  --moss-pale:    #B8C4A8;
-  --clay:         #B4593A;
-  --clay-pale:    #D9A78F;
-  --thread:       #8E7B4E;
-  --thread-pale:  #C9B98C;
+  /* Neutrals */
+  --paper:        #F5EFE6;
+  --paper-2:      #EDE5D6;
+  --paper-3:      #E2D8C3;
+  --ink:          #1F1A17;
+  --ink-2:        #3A332D;
+  --ink-3:        #7A6F66;
 
-  --f-display: "Instrument Serif", Georgia, serif;
-  --f-body:    "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  /* Accents */
+  --terracotta:       #C2553A;
+  --terracotta-deep:  #8E3A26;
+  --ochre:            #D9A441;
+  --moss:             #5C7A4E;
+  --dusk:             #3F4A6B;
+  --brick:            #8B2E1F;
+
+  /* Fonts */
+  --f-display: "Fraunces", Georgia, serif;
+  --f-body:    "Inter Tight", system-ui, sans-serif;
   --f-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
 
+  /* Rules */
   --rule:      1px solid var(--ink);
-  --rule-soft: 1px solid color-mix(in oklab, var(--ink) 25%, transparent);
+  --rule-soft: 1px solid var(--paper-3);
 }
 
 html { scroll-behavior: smooth; }
 
-::selection { background: var(--moss); color: var(--paper); }
+::selection { background: var(--terracotta); color: var(--paper); }
 
 :focus-visible {
-  outline: 2px solid var(--moss);
-  outline-offset: 3px;
-  border-radius: 2px;
+  outline: 2px solid var(--terracotta);
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 
 body {
   font-family: var(--f-body);
-  font-size: 17px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--ink);
-  background:
-    radial-gradient(800px 600px at 80% -10%, color-mix(in oklab, var(--thread-pale) 30%, transparent), transparent 60%),
-    radial-gradient(700px 500px at -5% 110%, color-mix(in oklab, var(--moss-pale) 25%, transparent), transparent 65%),
-    var(--paper);
+  background: var(--paper);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "ss01", "onum";
 }
 
-a { color: var(--moss); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:hover { color: var(--moss-deep); }
+a { color: var(--dusk); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
 
+/* ─── Nav ─── */
 nav.site-nav {
   position: sticky; top: 0; z-index: 100;
   background: var(--paper);
@@ -100,32 +100,40 @@ nav.site-nav {
 }
 .nav-logo {
   font-family: var(--f-display);
-  font-style: italic;
-  font-size: 24px;
-  letter-spacing: -0.02em;
-  color: var(--moss);
+  font-weight: 600;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+  color: var(--ink);
   text-decoration: none;
 }
-.nav-logo:hover { color: var(--moss-deep); }
+.nav-logo .os {
+  font-variant: small-caps;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+.nav-logo:hover { color: var(--terracotta-deep); }
 .nav-links { display: flex; gap: 0; align-items: center; }
 .nav-links a {
   padding: 0 16px; height: 64px;
   display: flex; align-items: center;
   font-family: var(--f-mono);
   font-size: 11px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--ink-soft);
+  color: var(--ink-2);
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.18s, border-color 0.18s;
 }
-.nav-links a:hover { color: var(--moss); border-bottom-color: var(--moss); }
-.nav-links a.active { color: var(--moss); border-bottom-color: var(--moss); }
+.nav-links a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+.nav-links a.active { color: var(--terracotta); border-bottom-color: var(--terracotta); }
 
+/* ─── Layout ─── */
 .container { max-width: 860px; margin: 0 auto; padding: 0 28px; }
 
+/* ─── Hero ─── */
 header.hero {
   padding: 88px 0 64px;
   border-bottom: var(--rule-soft);
@@ -136,7 +144,7 @@ header.hero {
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--ink-3);
   font-weight: 500;
   margin-bottom: 20px;
   display: block;
@@ -146,40 +154,46 @@ h1 {
   font-family: var(--f-display);
   font-style: italic;
   font-weight: 400;
+  font-optical-sizing: auto;
   font-size: clamp(40px, 6vw, 72px);
   line-height: 1.0;
   letter-spacing: -0.015em;
   color: var(--ink);
   margin-bottom: 24px;
   max-width: 18ch;
+  text-wrap: pretty;
 }
-h1 em { color: var(--moss-deep); font-style: italic; }
+h1 em { color: var(--terracotta-deep); font-style: italic; }
 
 .tagline {
   font-family: var(--f-body);
   font-size: clamp(17px, 1.8vw, 19px);
-  line-height: 1.5;
-  color: var(--ink-soft);
+  line-height: 1.65;
+  color: var(--ink-2);
   max-width: 56ch;
 }
 
+/* ─── Sections ─── */
 section { padding: 72px 0; border-bottom: var(--rule-soft); }
-section.alt { background: color-mix(in oklab, var(--paper-2) 60%, var(--paper)); }
+section.alt { background: var(--paper-2); }
 
 h2 {
   font-family: var(--f-display);
   font-style: italic;
   font-weight: 400;
+  font-optical-sizing: auto;
   font-size: clamp(32px, 4.5vw, 52px);
   line-height: 1.05;
   letter-spacing: -0.01em;
   color: var(--ink);
   margin-bottom: 24px;
   max-width: 22ch;
+  text-wrap: pretty;
 }
 h3 {
   font-family: var(--f-display);
-  font-weight: 400;
+  font-weight: 500;
+  font-optical-sizing: auto;
   font-size: clamp(20px, 2vw, 24px);
   line-height: 1.2;
   letter-spacing: -0.005em;
@@ -187,10 +201,11 @@ h3 {
   margin-bottom: 12px;
 }
 
-p { margin-bottom: 18px; max-width: 64ch; }
+p { margin-bottom: 18px; max-width: 64ch; line-height: 1.65; }
 p strong { color: var(--ink); font-weight: 600; }
-em { font-style: italic; color: var(--moss-deep); }
+em { font-style: italic; color: var(--terracotta-deep); }
 
+/* ─── Section head ─── */
 .section-head {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -202,11 +217,12 @@ em { font-style: italic; color: var(--moss-deep); }
   font-family: var(--f-mono);
   font-size: 11px;
   letter-spacing: 0.16em;
-  color: var(--ink-muted);
+  color: var(--ink-3);
   text-transform: uppercase;
 }
 .section-head h2 { margin-bottom: 0; }
 
+/* ─── Phases ─── */
 .phases {
   counter-reset: phase;
   list-style: none;
@@ -226,15 +242,16 @@ em { font-style: italic; color: var(--moss-deep); }
   font-family: var(--f-mono);
   font-size: 11px;
   letter-spacing: 0.16em;
-  color: var(--ink-muted);
+  color: var(--ink-3);
 }
 .phases .phase-title {
   font-family: var(--f-display);
   font-style: italic;
   font-weight: 400;
+  font-optical-sizing: auto;
   font-size: clamp(22px, 2.2vw, 28px);
   line-height: 1.15;
-  color: var(--moss-deep);
+  color: var(--terracotta-deep);
   margin-bottom: 4px;
 }
 .phases .phase-meta {
@@ -242,7 +259,7 @@ em { font-style: italic; color: var(--moss-deep); }
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--ink-3);
   margin-bottom: 16px;
 }
 .phases p { margin-bottom: 14px; }
@@ -259,11 +276,12 @@ em { font-style: italic; color: var(--moss-deep); }
 .phases ul li::before {
   content: '';
   position: absolute;
-  left: 0; top: 14px;
+  left: 0; top: 13px;
   width: 12px; height: 1px;
-  background: var(--moss);
+  background: var(--terracotta);
 }
 
+/* ─── Callout ─── */
 .callout {
   border-top: var(--rule-soft);
   border-bottom: var(--rule-soft);
@@ -271,77 +289,82 @@ em { font-style: italic; color: var(--moss-deep); }
   margin: 28px 0;
   font-family: var(--f-display);
   font-style: italic;
+  font-optical-sizing: auto;
   font-size: clamp(18px, 2vw, 22px);
   line-height: 1.35;
-  color: var(--moss-deep);
+  color: var(--terracotta-deep);
   max-width: 56ch;
 }
 .callout strong { color: var(--ink); font-weight: 400; font-style: italic; }
-.callout.warn { color: var(--clay); }
+.callout.warn { color: var(--brick); }
 .callout.warn strong { color: var(--ink); }
 
+/* ─── Kit grid ─── */
 .kit {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
   margin: 24px 0;
 }
 .kit-item {
-  background: var(--paper-3);
+  background: var(--paper);
   border: var(--rule-soft);
-  border-radius: 2px;
+  border-radius: 12px;
   padding: 22px;
 }
+section.alt .kit-item { background: var(--paper-2); }
 .kit-item h4 {
   font-family: var(--f-mono);
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--ink-3);
   font-weight: 500;
   margin-bottom: 10px;
 }
 .kit-item p {
-  font-family: var(--f-body);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--ink);
   margin: 0;
 }
 
+/* ─── Code ─── */
 code {
   font-family: var(--f-mono);
   background: var(--paper-2);
   padding: 2px 6px;
-  border-radius: 2px;
-  font-size: 14px;
-  color: var(--moss-deep);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--terracotta-deep);
 }
 pre {
   font-family: var(--f-mono);
   background: var(--paper-3);
   border: var(--rule-soft);
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 18px 20px;
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--ink);
   overflow-x: auto;
   margin: 18px 0;
 }
 
+/* ─── Signals ─── */
 .signals {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 16px;
   margin: 28px 0;
 }
 .signal {
-  background: var(--paper-3);
+  background: var(--paper);
   border: var(--rule-soft);
-  border-radius: 2px;
+  border-radius: 12px;
   padding: 24px;
 }
+section.alt .signal { background: var(--paper-2); }
 .signal h4 {
   font-family: var(--f-mono);
   font-size: 11px;
@@ -351,13 +374,14 @@ pre {
   font-weight: 500;
 }
 .signal.good h4 { color: var(--moss); }
-.signal.bad h4 { color: var(--clay); }
-.signal p { font-size: 16px; line-height: 1.5; margin: 0; }
+.signal.bad h4 { color: var(--brick); }
+.signal p { font-size: 15px; line-height: 1.6; margin: 0; }
 
+/* ─── CTA block ─── */
 .cta-block {
-  background: var(--paper-3);
+  background: var(--paper-2);
   border: var(--rule-soft);
-  border-radius: 2px;
+  border-radius: 12px;
   padding: 36px;
   margin: 32px 0;
   text-align: center;
@@ -365,32 +389,36 @@ pre {
 .cta-block h3 {
   margin-bottom: 10px;
   font-style: italic;
-  color: var(--moss-deep);
+  color: var(--terracotta-deep);
 }
 .cta-block p {
   margin: 0 auto 22px;
   max-width: 48ch;
+  color: var(--ink-2);
 }
+
+/* ─── Buttons ─── */
 .btn {
   display: inline-flex;
   align-items: center;
   padding: 12px 22px;
-  border-radius: 2px;
+  border-radius: 8px;
   font-family: var(--f-mono);
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
   border: 1px solid transparent;
   margin: 0 4px;
 }
-.btn-primary { background: var(--moss); color: var(--paper); }
-.btn-primary:hover { background: var(--moss-deep); color: var(--paper); }
+.btn-primary { background: var(--terracotta); color: var(--paper); border-color: var(--terracotta); }
+.btn-primary:hover { background: var(--terracotta-deep); border-color: var(--terracotta-deep); color: var(--paper); }
 .btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn-secondary:hover { background: var(--ink); color: var(--paper); }
 
+/* ─── Not list ─── */
 .not-list {
   list-style: none;
   margin-top: 16px;
@@ -404,28 +432,31 @@ pre {
   font-family: var(--f-display);
   font-style: italic;
   font-weight: 400;
+  font-optical-sizing: auto;
   font-size: 22px;
-  color: var(--moss-deep);
+  color: var(--terracotta-deep);
   display: block;
   margin-bottom: 4px;
 }
 
+/* ─── Footer ─── */
 footer {
   padding: 56px 0 72px;
   font-family: var(--f-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--ink-3);
 }
-footer a { color: var(--ink-soft); text-decoration: none; }
-footer a:hover { color: var(--moss); }
+footer a { color: var(--ink-2); text-decoration: none; }
+footer a:hover { color: var(--terracotta); }
 .footer-row {
   display: flex; flex-wrap: wrap; gap: 20px;
   justify-content: space-between;
   align-items: center;
 }
 
+/* ─── Responsive ─── */
 @media (max-width: 720px) {
   .signals { grid-template-columns: 1fr; }
   .nav-links a { padding: 0 10px; font-size: 10px; }
@@ -442,7 +473,7 @@ footer a:hover { color: var(--moss); }
 <body>
 
 <nav class="site-nav">
-  <a href="/" class="nav-logo">neighborhoodos</a>
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
   <div class="nav-links">
     <a href="/#approach">Approach</a>
     <a href="/#wedge">Pilot</a>
@@ -454,7 +485,7 @@ footer a:hover { color: var(--moss); }
 <header class="hero">
   <div class="container">
     <span class="eyebrow">The 30-day playbook</span>
-    <h1>Launch your own <em>NeighborhoodOS</em>.</h1>
+    <h1>Launch your own <em>neighborhoodOS</em>.</h1>
     <p class="tagline">The install is the wrapper. You supply the neighborhood, the conversations, and the AI. This page is the honest version of what that takes over the first 30 days.</p>
   </div>
 </header>
@@ -631,7 +662,7 @@ cp .env.example .env
       <a class="btn btn-primary" href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">Browse the code</a>
       <a class="btn btn-secondary" href="/">Back to home</a>
     </div>
-    <p style="font-size: 15px; color: var(--ink-muted); margin-top: 22px;">Questions? Open an issue on GitHub. If you are piloting in a neighborhood and want to compare notes, reach out through <a href="https://simonlpaige.com">simonlpaige.com</a>.</p>
+    <p style="font-size: 15px; color: var(--ink-3); margin-top: 22px;">Questions? Open an issue on GitHub. If you are piloting in a neighborhood and want to compare notes, reach out through <a href="https://simonlpaige.com">simonlpaige.com</a>.</p>
   </div>
 </section>
 
