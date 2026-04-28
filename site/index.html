@@ -13,6 +13,9 @@
 <meta name="twitter:title" content="NeighborhoodOS">
 <meta name="twitter:description" content="An operating system for neighborhoods that want to solve their own problems.">
 <link rel="canonical" href="https://neighborhoodos.org/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,264 +54,362 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:      #14181a;
-  --surface: #1a2124;
-  --s2:      #222a2e;
-  --s3:      #2a3438;
-  --border:  #2f3a3f;
-  --border2: #3b4a4f;
-  --text:    #e6e8dc;
-  --muted:   #8fa09a;
-  --dim:     #5a6b65;
-  --accent:  #e8a04a;
-  --a2:      #c98638;
-  --warm:    #f0b878;
-  --sky:     #6fb4c9;
-  --leaf:    #7fa05c;
+  --paper:        #F2EBDC;
+  --paper-2:      #E9DFC9;
+  --paper-3:      #DCD0B6;
+  --ink:          #16201A;
+  --ink-soft:     #2C3A30;
+  --ink-muted:    #5A6A5C;
+  --moss:         #2F4A33;
+  --moss-deep:    #1E3322;
+  --moss-mid:     #4A6B4F;
+  --moss-pale:    #B8C4A8;
+  --clay:         #B4593A;
+  --clay-pale:    #D9A78F;
+  --thread:       #8E7B4E;
+  --thread-pale:  #C9B98C;
+
+  --f-display: "Instrument Serif", Georgia, serif;
+  --f-body:    "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --f-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  --rule:      1px solid var(--ink);
+  --rule-soft: 1px solid color-mix(in oklab, var(--ink) 25%, transparent);
 }
 
 html { scroll-behavior: smooth; }
 
+::selection { background: var(--moss); color: var(--paper); }
+
 :focus-visible {
-  outline: 2px solid var(--sky);
+  outline: 2px solid var(--moss);
   outline-offset: 3px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.65;
-  font-size: 16px;
+  font-family: var(--f-body);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink);
+  background:
+    radial-gradient(800px 600px at 80% -10%, color-mix(in oklab, var(--thread-pale) 30%, transparent), transparent 60%),
+    radial-gradient(700px 500px at -5% 110%, color-mix(in oklab, var(--moss-pale) 25%, transparent), transparent 65%),
+    var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "onum";
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { color: var(--warm); text-decoration: underline; }
+a { color: var(--moss); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--moss-deep); }
 
-nav {
+nav.site-nav {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(20,24,26,0.95);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
+  background: var(--paper);
+  border-bottom: var(--rule-soft);
   padding: 0 28px;
   display: flex; align-items: center; justify-content: space-between;
-  height: 56px;
+  height: 64px;
 }
 .nav-logo {
-  font-size: 15px; font-weight: 800; letter-spacing: 0.04em;
-  color: var(--accent); text-decoration: none;
-}
-.nav-logo:hover { color: var(--warm); text-decoration: none; }
-.nav-links { display: flex; gap: 0; align-items: center; }
-.nav-links a {
-  padding: 0 14px; height: 56px;
-  display: flex; align-items: center;
-  font-size: 14px; color: var(--muted);
-  border-bottom: 2px solid transparent;
-  transition: color 0.15s, border-color 0.15s;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: var(--moss);
   text-decoration: none;
 }
-.nav-links a:hover { color: var(--text); border-bottom-color: var(--accent); }
+.nav-logo:hover { color: var(--moss-deep); }
+.nav-links { display: flex; gap: 0; align-items: center; }
+.nav-links a {
+  padding: 0 16px; height: 64px;
+  display: flex; align-items: center;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nav-links a:hover { color: var(--moss); border-bottom-color: var(--moss); }
 
-.container { max-width: 960px; margin: 0 auto; padding: 0 28px; }
+.container { max-width: 920px; margin: 0 auto; padding: 0 28px; }
 
 header.hero {
-  padding: 84px 0 60px;
-  border-bottom: 1px solid var(--border);
-  background:
-    radial-gradient(ellipse at 20% 30%, rgba(232,160,74,0.08), transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(111,180,201,0.06), transparent 50%);
+  padding: 96px 0 72px;
+  border-bottom: var(--rule-soft);
+}
+
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
 }
 
 h1 {
-  font-size: clamp(34px, 6vw, 54px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 20px;
-  color: var(--text);
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(44px, 7vw, 84px);
+  line-height: 1.0;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 18ch;
 }
-h1 em {
-  font-style: normal;
-  color: var(--accent);
-}
+h1 em { color: var(--moss-deep); font-style: italic; }
 
 .tagline {
-  font-size: clamp(17px, 2vw, 20px);
-  color: var(--muted);
-  max-width: 640px;
-  margin-bottom: 32px;
+  font-family: var(--f-body);
+  font-size: clamp(18px, 2vw, 21px);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 56ch;
+  margin-bottom: 36px;
 }
 
 .cta-row {
   display: flex; flex-wrap: wrap; gap: 12px;
-  margin-top: 32px;
+  margin-top: 36px;
 }
 .btn {
-  display: inline-block;
-  padding: 11px 22px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 2px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.15s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   border: 1px solid transparent;
 }
-.btn-primary {
-  background: var(--accent);
-  color: #14181a;
-}
-.btn-primary:hover { background: var(--warm); color: #14181a; text-decoration: none; }
-.btn-secondary {
-  background: transparent;
-  color: var(--text);
-  border-color: var(--border2);
-}
-.btn-secondary:hover { background: var(--s2); color: var(--text); text-decoration: none; }
+.btn-primary { background: var(--moss); color: var(--paper); }
+.btn-primary:hover { background: var(--moss-deep); color: var(--paper); }
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-secondary:hover { background: var(--ink); color: var(--paper); }
 
-section { padding: 60px 0; border-bottom: 1px solid var(--border); }
+section { padding: 84px 0; border-bottom: var(--rule-soft); }
+section.alt { background: color-mix(in oklab, var(--paper-2) 60%, var(--paper)); }
 
 h2 {
-  font-size: 28px;
-  font-weight: 700;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.05;
   letter-spacing: -0.01em;
-  margin-bottom: 24px;
-  color: var(--text);
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 22ch;
 }
 h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 14px;
-  color: var(--accent);
-}
-
-p { margin-bottom: 16px; color: var(--text); }
-p + p { margin-top: 0; }
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 20px;
-}
-@media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 24px;
-}
-.card h3 { margin-top: 0; }
-.card .pill {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 99px;
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: var(--ink);
   margin-bottom: 12px;
 }
-.pill-active { background: rgba(127,160,92,0.15); color: var(--leaf); border: 1px solid rgba(127,160,92,0.3); }
-.pill-queued { background: rgba(111,180,201,0.12); color: var(--sky); border: 1px solid rgba(111,180,201,0.3); }
-.pill-idea   { background: rgba(143,160,154,0.1); color: var(--muted); border: 1px solid var(--border2); }
+
+p { margin-bottom: 18px; max-width: 64ch; }
+p strong { color: var(--ink); font-weight: 600; }
+em { font-style: italic; color: var(--moss-deep); }
 
 .steps {
   counter-reset: step;
   list-style: none;
-  margin: 20px 0;
+  margin: 28px 0;
+  display: flex;
+  flex-direction: column;
 }
 .steps li {
   counter-increment: step;
   position: relative;
-  padding-left: 44px;
-  margin-bottom: 18px;
-  color: var(--text);
+  padding: 18px 0 18px 56px;
+  border-top: var(--rule-soft);
 }
+.steps li:last-child { border-bottom: var(--rule-soft); }
 .steps li::before {
-  content: counter(step);
+  content: counter(step, decimal-leading-zero);
   position: absolute;
-  left: 0; top: 0;
-  width: 30px; height: 30px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: #14181a;
-  font-weight: 800;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 14px;
+  left: 0; top: 22px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-muted);
+}
+.steps li strong {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--moss-deep);
+  display: block;
+  margin-bottom: 4px;
 }
 
 ul.bullets {
   list-style: none;
-  margin: 12px 0 20px;
+  margin: 16px 0 24px;
 }
 ul.bullets li {
-  padding-left: 20px;
+  padding-left: 24px;
   position: relative;
-  margin-bottom: 8px;
-  color: var(--text);
+  margin-bottom: 12px;
+  max-width: 64ch;
 }
 ul.bullets li::before {
-  content: '→';
+  content: '';
   position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-weight: 700;
+  left: 0; top: 14px;
+  width: 12px; height: 1px;
+  background: var(--moss);
 }
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.card {
+  background: var(--paper-3);
+  border: var(--rule-soft);
+  border-radius: 2px;
+  padding: 28px;
+}
+.card h3 { margin-top: 0; margin-bottom: 14px; }
+.card p { margin-bottom: 0; font-size: 16px; line-height: 1.55; }
+.card p + p { margin-top: 12px; }
+
+.chip {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.chip-active { color: var(--moss); }
+.chip-queued { color: var(--ink-muted); }
 
 .callout {
-  background: var(--s2);
-  border-left: 3px solid var(--accent);
-  padding: 16px 20px;
-  margin: 20px 0;
-  border-radius: 0 6px 6px 0;
-  color: var(--muted);
-  font-size: 15px;
+  border-top: var(--rule-soft);
+  border-bottom: var(--rule-soft);
+  padding: 24px 0;
+  margin: 32px 0;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.3;
+  color: var(--moss-deep);
+  max-width: 56ch;
 }
-.callout strong { color: var(--text); }
+.callout strong { color: var(--ink); font-weight: 400; font-style: italic; }
+
+.marginalia {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+  border-left: 2px solid var(--moss);
+  padding-left: 16px;
+  margin: 24px 0;
+  max-width: 38ch;
+}
+
+code {
+  font-family: var(--f-mono);
+  background: var(--paper-2);
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: var(--moss-deep);
+}
 
 footer {
-  padding: 40px 0 60px;
-  font-size: 13px;
-  color: var(--dim);
+  padding: 56px 0 72px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
 }
-footer a { color: var(--muted); }
-footer a:hover { color: var(--accent); }
+footer a { color: var(--ink-soft); text-decoration: none; }
+footer a:hover { color: var(--moss); }
 .footer-row {
   display: flex; flex-wrap: wrap; gap: 20px;
   justify-content: space-between;
   align-items: center;
 }
-code {
-  background: var(--s2);
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 14px;
-  color: var(--warm);
+
+.section-head {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  margin-bottom: 36px;
+}
+.section-head .num {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+.section-head h2 { margin-bottom: 0; }
+
+@media (max-width: 720px) {
+  .two-col { grid-template-columns: 1fr; }
+  .nav-links a { padding: 0 10px; font-size: 10px; }
+  header.hero { padding: 64px 0 48px; }
+  section { padding: 56px 0; }
+  .section-head { grid-template-columns: 1fr; gap: 8px; }
+  h1 { max-width: none; }
+  .steps li { padding-left: 0; padding-top: 36px; }
+  .steps li::before { top: 18px; }
 }
 </style>
 </head>
 <body>
 
-<nav>
+<nav class="site-nav">
   <a href="#" class="nav-logo">neighborhoodos</a>
   <div class="nav-links">
     <a href="#approach">Approach</a>
-    <a href="#wedge">Current pilot</a>
-    <a href="/launch.html">Launch your own</a>
+    <a href="#wedge">Pilot</a>
+    <a href="/launch.html">Launch</a>
     <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="container">
-    <h1>An operating system for neighborhoods that want to <em>solve their own problems</em>.</h1>
-    <p class="tagline">Pick one sharp pain on your block. Ship a working tool for it in weeks. Use the tool to strengthen trust, capacity, and self-governance. Rotate when the first one is handled well. That's it.</p>
+    <span class="eyebrow">An operating system for neighborhoods</span>
+    <h1>Neighborhoods that <em>solve their own problems</em>.</h1>
+    <p class="tagline">Pick one sharp pain on your block. Ship a working tool for it in weeks. Use the tool to build trust, capacity, and self-governance. Rotate to the next pain when the first one is handled. That is the whole idea.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="/launch.html">Start your node</a>
-      <a class="btn btn-secondary" href="#wedge">See the current pilot</a>
+      <a class="btn btn-secondary" href="#wedge">See the pilot</a>
       <a class="btn btn-secondary" href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">Browse the code</a>
     </div>
   </div>
@@ -316,15 +417,18 @@ code {
 
 <section id="approach">
   <div class="container">
-    <h2>The wedge approach</h2>
+    <div class="section-head">
+      <div class="num">01 / Approach</div>
+      <h2>The wedge approach.</h2>
+    </div>
     <p>Most civic software tries to do everything for everyone. It ends up doing nothing for anyone.</p>
-    <p>NeighborhoodOS works the other way. We start with <strong>one concrete pain</strong> in <strong>one real neighborhood</strong> and ship a working tool for it in weeks, not quarters. When the tool earns trust, we keep it running and pick the next pain.</p>
+    <p>NeighborhoodOS goes the other way. We start with <strong>one concrete pain</strong> in <strong>one real neighborhood</strong> and ship a working tool for it in weeks, not quarters. When the tool earns trust, we keep it running and pick the next pain.</p>
 
-    <h3 style="margin-top: 32px;">A pain has to pass four tests</h3>
+    <h3 style="margin-top: 48px; font-style: italic; color: var(--moss-deep);">A pain has to pass four tests.</h3>
     <ol class="steps">
       <li><strong>Concrete.</strong> You can describe it in one sentence at a kitchen table.</li>
       <li><strong>Costly.</strong> People are losing money, time, or dignity to it right now.</li>
-      <li><strong>Local.</strong> The solution works at the block level without waiting on policy.</li>
+      <li><strong>Local.</strong> The fix works at the block level without waiting on policy.</li>
       <li><strong>Swappable.</strong> If we build the wrong thing, we can stop and pick something else without tearing out the platform.</li>
     </ol>
 
@@ -334,74 +438,78 @@ code {
   </div>
 </section>
 
-<section id="wedge">
+<section id="wedge" class="alt">
   <div class="container">
-    <h2>Current pilot: Home maintenance</h2>
-    <p><strong>West Waldo, Kansas City, Missouri.</strong> Owner-occupied homes only. Rental properties out of scope for this wedge.</p>
+    <div class="section-head">
+      <div class="num">02 / Pilot</div>
+      <h2>Home maintenance brigade.</h2>
+    </div>
+    <p><strong>West Waldo, Kansas City, Missouri.</strong> Owner-occupied homes only. No rentals. No landlords.</p>
 
-    <h3 style="margin-top: 28px;">The specific pain</h3>
-    <p>Three stories show up on every block in older KC neighborhoods:</p>
-    <ul class="bullets">
-      <li>An aging homeowner postpones a $200 fix because they can't find a trustworthy contractor. Six months later it's an $8,000 disaster.</li>
-      <li>Someone rolls the dice on a contractor from a sketchy flyer. Overcharged, bad work, no recourse.</li>
-      <li>Five houses on the same block need the same three things done. Nobody knows it. Everyone pays full markup, on different weekends.</li>
-    </ul>
+    <p>Once a month, a group of neighbors picks one homeowner who cannot afford to fix their own house, and we go fix one thing. Roof patch. Porch rebuild. Storm-door replacement. Gutter haul. Whatever the house actually needs, picked from a list the homeowner helped write.</p>
 
-    <h3 style="margin-top: 28px;">What we're building (first 90 days)</h3>
+    <p>This is closer to a Habitat for Humanity work day than a tech product. Habitat builds new houses with volunteers and donated materials. We do the same thing, but for the houses that already exist on our blocks, and we do it every month, on the same Saturday, so people can plan around it.</p>
+
+    <div class="marginalia">The software does not swing the hammer. People swing the hammer. The software keeps track of who, what, where, when, and what got bought.</div>
+
+    <h3 style="margin-top: 56px; font-style: italic; color: var(--moss-deep);">Who does what.</h3>
     <div class="two-col">
       <div class="card">
-        <div class="pill pill-active">Building</div>
-        <h3>Neighbor-vetted contractor list</h3>
-        <p>Residents recommend people who did right by them. Every entry needs at least two independent named-neighbor recommendations before it's "trusted."</p>
+        <span class="chip chip-active">People</span>
+        <h3>The brigade</h3>
+        <p>Neighbors with hands. Some are tradespeople, retired or working. Most are not. The retired plumber leads a plumbing day. The carpenter leads a porch day. Everyone else hauls, scrapes, paints, holds the ladder, brings food.</p>
       </div>
       <div class="card">
-        <div class="pill pill-active">Building</div>
-        <h3>First-pass diagnostic</h3>
-        <p>A handful of retired tradespeople and capable homeowners who'll walk over and tell you if it's a $20 fix or a $2,000 fix, before you call anyone.</p>
+        <span class="chip chip-active">People</span>
+        <h3>The homeowner</h3>
+        <p>Lives in the house. Owns the house. Cannot afford to pay for the fix. Picks the project from a short list scoped to what we can finish in one day. Is on site, makes the call on what gets done, gets thanked at the end.</p>
       </div>
       <div class="card">
-        <div class="pill pill-queued">Next</div>
-        <h3>Shared tool library</h3>
-        <p>Pressure washer, tile saw, extension ladder, drain snake. Stop 30 neighbors from each owning one that lives in a garage 363 days a year.</p>
+        <span class="chip chip-active">Software</span>
+        <h3>Logistics</h3>
+        <p>Matches the next house to the next Saturday. Tracks who said they could come and what skill they bring. Builds a supplies list from the project type. Records what got done and what is still on the list for next month.</p>
       </div>
       <div class="card">
-        <div class="pill pill-queued">Next</div>
-        <h3>Block-level batching</h3>
-        <p>One month a year where we batch the same job across willing neighbors (gutter cleaning, fence staining) and negotiate one price.</p>
+        <span class="chip chip-queued">Software</span>
+        <h3>Memory</h3>
+        <p>Keeps a record of every house we have visited and every fix we have made. So a year from now, we know which roofs we patched, which porches still need a railing, and which neighbors said yes the first time.</p>
       </div>
     </div>
 
-    <h3 style="margin-top: 36px;">What "working" looks like at 90 days</h3>
+    <h3 style="margin-top: 56px; font-style: italic; color: var(--moss-deep);">What working looks like at 90 days.</h3>
     <ul class="bullets">
-      <li>20+ West Waldo households have used the tool at least once.</li>
-      <li>10+ contractors vetted by two or more neighbors each.</li>
-      <li>At least three "prevented a disaster" stories we can point at by name, with permission.</li>
-      <li>One coordinated block-level job where four or more houses saved real money vs. hiring separately.</li>
+      <li>Three Saturdays done. Three houses with one real fix each.</li>
+      <li>A standing crew of fifteen or more neighbors who have shown up at least once.</li>
+      <li>A list of homes waiting for next month, written by the neighbors who know which houses are quietly falling apart.</li>
+      <li>A supplies budget under $400 per Saturday, sourced from donations, ReStore, and a small kitty.</li>
     </ul>
-    <p>If those numbers aren't hit at 90 days, we rotate the wedge. The platform stays, the wedge changes. No shame.</p>
+    <p>If those numbers do not show up at 90 days, we rotate the wedge. The platform stays, the wedge changes. No shame.</p>
   </div>
 </section>
 
 <section id="code">
   <div class="container">
-    <h2>Code & architecture</h2>
-    <p>All code is open source. MIT licensed. Runs locally on one neighborhood node, no central server.</p>
+    <div class="section-head">
+      <div class="num">03 / Code</div>
+      <h2>Open source. Local first.</h2>
+    </div>
+    <p>All code is open source. MIT licensed. Runs locally on one neighborhood node. No central server.</p>
 
     <div class="two-col">
       <div class="card">
         <h3>Repo layout</h3>
-        <p style="color: var(--muted); font-size: 14px;">
-          <code>core/</code> — node entry + shared wiring<br>
-          <code>connectors/</code> — city data, social signals<br>
-          <code>ingest/</code> — cron-ready scripts<br>
-          <code>identity/</code> — trust levels, federated voting<br>
-          <code>wedges/</code> — the swappable part<br>
-          <code>site/</code> — this page
+        <p style="font-family: var(--f-mono); font-size: 13px; line-height: 1.9; color: var(--ink-soft);">
+          <code>core/</code> &nbsp; node entry, shared wiring<br>
+          <code>connectors/</code> &nbsp; city data, social signals<br>
+          <code>ingest/</code> &nbsp; cron-ready scripts<br>
+          <code>identity/</code> &nbsp; trust levels, voting<br>
+          <code>wedges/</code> &nbsp; the swappable part<br>
+          <code>site/</code> &nbsp; this page
         </p>
       </div>
       <div class="card">
         <h3>Quick start</h3>
-        <p style="color: var(--muted); font-size: 14px;">
+        <p style="font-family: var(--f-mono); font-size: 13px; line-height: 1.9; color: var(--ink-soft);">
           <code>git clone</code><br>
           <code>cd neighborhoodos</code><br>
           <code>npm install</code><br>
@@ -412,20 +520,23 @@ code {
       </div>
     </div>
 
-    <p style="margin-top: 24px;">
+    <p style="margin-top: 32px;">
       Mirrored on <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> and <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>. Issues welcome. Expect breaking changes weekly until v1.
     </p>
   </div>
 </section>
 
-<section>
+<section class="alt">
   <div class="container">
-    <h2>Who's behind it</h2>
-    <p>One person, in one neighborhood, right now. <a href="https://simonlpaige.com">Simon L. Paige</a> in West Waldo, KCMO. Runs a small web design business and a few other things by day; this is where the rest of the energy goes.</p>
-    <p>If the pilot works, this becomes a real thing with real governance. Until then, it's a kitchen-table project you can watch and contribute to.</p>
+    <div class="section-head">
+      <div class="num">04 / People</div>
+      <h2>Who is behind it.</h2>
+    </div>
+    <p>One person, in one neighborhood, right now. <a href="https://simonlpaige.com">Simon L. Paige</a> in West Waldo, KCMO. Runs a small web design business and a few other things by day. This is where the rest of the energy goes.</p>
+    <p>If the pilot works, this becomes a real thing with real governance. Until then, it is a kitchen-table project you can watch and contribute to.</p>
 
-    <div class="callout" style="margin-top: 32px;">
-      <strong>Related, not merged:</strong> <a href="https://commonweave.earth" target="_blank" rel="noopener">Commonweave</a> is a sibling project — a framework and open directory for the broader commons-and-cooperatives movement. NeighborhoodOS can optionally use the Commonweave directory to answer "who's already working on this near me?" when a wedge calls for it. The two projects are independent.
+    <div class="callout" style="margin-top: 40px;">
+      <strong>Related, not merged.</strong> <a href="https://commonweave.earth" target="_blank" rel="noopener">Commonweave</a> is a sibling project. A framework and open directory for the broader commons-and-cooperatives movement. NeighborhoodOS can optionally use the Commonweave directory to answer "who is already working on this near me?" when a wedge calls for it. The two projects are independent.
     </div>
   </div>
 </section>
@@ -434,10 +545,10 @@ code {
   <div class="container">
     <div class="footer-row">
       <div>
-        neighborhoodos.org · MIT licensed · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> · <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>
+        neighborhoodos.org &nbsp;·&nbsp; MIT &nbsp;·&nbsp; <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>
       </div>
       <div>
-        Built in West Waldo, Kansas City
+        Built in West Waldo, KC
       </div>
     </div>
   </div>
