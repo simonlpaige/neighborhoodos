@@ -407,9 +407,30 @@ footer a:hover { color: var(--terracotta); }
 }
 
 /* ΓöÇΓöÇΓöÇ Responsive ΓöÇΓöÇΓöÇ */
+@media (max-width: 860px) {
+  nav.site-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    height: auto;
+    padding: 12px 20px;
+  }
+  .nav-logo { line-height: 1.15; }
+  .nav-links {
+    flex-wrap: wrap;
+    row-gap: 2px;
+    max-width: 100%;
+  }
+  .nav-links a {
+    min-height: 40px;
+    height: auto;
+    padding: 0 12px 0 0;
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 720px) {
   .two-col { grid-template-columns: 1fr; }
-  .nav-links a { padding: 0 10px; font-size: 10px; }
   header.hero { padding: 64px 0 48px; }
   section { padding: 56px 0; }
   .section-head { grid-template-columns: 1fr; gap: 8px; }
