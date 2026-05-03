@@ -1,97 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Waldo Local Node Dashboard | NeighborhoodOS</title>
-  <meta name="description" content="A live local dashboard for Waldo and south Kansas City residents: 311, City Council, county legislature, development, budgets, and resident action.">
-  <meta property="og:title" content="Waldo Local Node Dashboard | NeighborhoodOS">
-  <meta property="og:description" content="Live civic signal for Waldo: 311, council, county, planning, budgets, and resident action.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neighborhoodos.org/local/">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://neighborhoodos.org/local/">
-  <style>
-    :root{--bg:#f6f1e8;--ink:#1d1914;--muted:#6b6257;--card:#fffaf1;--line:#ded2bf;--green:#264d38;--gold:#c58b2b;--red:#9a3d2e;--blue:#315f7d;--shadow:0 18px 45px rgba(40,28,13,.10)}
-    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#fff7df 0,#f6f1e8 36%,#efe5d4 100%);color:var(--ink);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial} a{color:var(--green);font-weight:750} .wrap{max-width:1180px;margin:0 auto;padding:24px} header{display:grid;grid-template-columns:1.4fr .6fr;gap:20px;align-items:end;padding:28px 0 18px}.eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:850;font-size:12px}.hero{background:rgba(255,250,241,.82);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}h1{font-size:clamp(34px,6vw,76px);line-height:.92;margin:8px 0 14px;letter-spacing:-.055em}.lede{font-size:clamp(18px,2vw,23px);max-width:790px;color:#3a332b}.status{background:#173528;color:#fff;border-radius:22px;padding:20px;box-shadow:var(--shadow)}.status b{display:block;font-size:14px;color:#f8d38b;text-transform:uppercase;letter-spacing:.09em}.status .time{font-size:28px;font-weight:900;margin:7px 0}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{border:1px solid var(--line);background:#fff6e6;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:rgba(255,250,241,.9);border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:var(--shadow);min-height:220px}.wide{grid-column:span 8}.full{grid-column:1/-1}.card h2{font-size:20px;margin:0 0 6px}.card p{color:var(--muted);margin:0 0 14px}.metric{display:flex;gap:12px;align-items:baseline;margin:12px 0 16px}.metric strong{font-size:42px;line-height:1;color:var(--green)}.metric span{color:var(--muted);font-weight:750}.items{display:grid;gap:10px}.item{border-top:1px solid var(--line);padding-top:10px}.item:first-child{border-top:0;padding-top:0}.item b{display:block}.meta{display:block;color:var(--muted);font-size:13px;margin-top:2px}.tag{display:inline-block;border-radius:999px;background:#eadcc8;color:#403426;font-size:12px;font-weight:850;padding:3px 8px;margin-right:6px}.tag.live{background:#d9eadc;color:#173528}.tag.warn{background:#f6dfd9;color:#772f25}.tag.todo{background:#dbe8ef;color:#224d68}.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}.action{border:1px solid var(--line);background:#fff6e6;border-radius:18px;padding:14px}.action b{display:block}.small{font-size:13px;color:var(--muted)}.loading{color:var(--muted);font-style:italic}.footer{color:var(--muted);font-size:13px;margin:28px 0}.source{font-size:12px;color:var(--muted);margin-top:14px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--green);color:white;border-radius:999px;padding:10px 14px;font-weight:900}.btn.secondary{background:#fff6e6;color:var(--green);border:1px solid var(--line)}
-    @media(max-width:850px){header{grid-template-columns:1fr}.card,.wide{grid-column:1/-1}.actions{grid-template-columns:1fr}.wrap{padding:16px}h1{font-size:44px}}
-  </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Waldo Local Node Dashboard","description":"Live civic signal dashboard for Waldo and south Kansas City residents.","spatialCoverage":"Waldo, Kansas City, Missouri","creator":{"@type":"Organization","name":"NeighborhoodOS"}}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waldo Local Node Dashboard | neighborhoodOS</title>
+<meta name="description" content="A working Waldo and south Kansas City civic dashboard: live 311 requests, source links for council, county, planning, budgets, and a resident action queue.">
+<meta property="og:title" content="Waldo Local Node Dashboard | neighborhoodOS">
+<meta property="og:description" content="Live civic signal for Waldo: 311, council, county, planning, budgets, development, and resident action.">
+<meta property="og:url" content="https://neighborhoodos.org/local/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://neighborhoodos.org/local/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Waldo Local Node Dashboard",
+  "description": "A civic signal dashboard for Waldo and south Kansas City residents.",
+  "url": "https://neighborhoodos.org/local/",
+  "spatialCoverage": "Waldo, Kansas City, Missouri",
+  "creator": { "@type": "Organization", "name": "neighborhoodOS" },
+  "isPartOf": { "@type": "WebSite", "name": "neighborhoodOS", "url": "https://neighborhoodos.org/" }
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --paper:#F5EFE6; --paper-2:#EDE5D6; --paper-3:#E2D8C3;
+  --ink:#1F1A17; --ink-2:#3A332D; --ink-3:#7A6F66;
+  --terracotta:#C2553A; --terracotta-deep:#8E3A26; --ochre:#D9A441;
+  --moss:#5C7A4E; --dusk:#3F4A6B; --brick:#8B2E1F;
+  --f-display:"Fraunces", Georgia, serif; --f-body:"Inter Tight", system-ui, sans-serif; --f-mono:"JetBrains Mono", ui-monospace, monospace;
+  --rule:1px solid var(--ink); --rule-soft:1px solid var(--paper-3);
+}
+html { scroll-behavior:smooth; }
+body { font-family:var(--f-body); font-size:16px; line-height:1.6; color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+a { color:var(--dusk); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+a:hover { color:var(--terracotta-deep); }
+:focus-visible { outline:2px solid var(--terracotta); outline-offset:2px; border-radius:3px; }
+.site-nav { position:sticky; top:0; z-index:100; background:var(--paper); border-bottom:var(--rule-soft); padding:0 28px; display:flex; align-items:center; justify-content:space-between; min-height:64px; }
+.nav-logo { font-family:var(--f-display); font-weight:600; font-size:20px; letter-spacing:-0.01em; color:var(--ink); text-decoration:none; }
+.nav-logo .os { font-variant:small-caps; font-size:.9em; letter-spacing:.03em; }
+.nav-links { display:flex; gap:0; align-items:center; flex-wrap:wrap; justify-content:flex-end; }
+.nav-links a { padding:0 14px; min-height:64px; display:flex; align-items:center; font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-weight:500; color:var(--ink-2); text-decoration:none; border-bottom:2px solid transparent; }
+.nav-links a:hover, .nav-links a.active { color:var(--terracotta); border-bottom-color:var(--terracotta); }
+.container { max-width:1120px; margin:0 auto; padding:0 28px; }
+.hero { padding:80px 0 52px; border-bottom:var(--rule-soft); }
+.hero-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); gap:40px; align-items:end; }
+.eyebrow, .num, .label { font-family:var(--f-mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); font-weight:500; }
+h1 { font-family:var(--f-display); font-style:italic; font-weight:400; font-size:clamp(42px,6.6vw,82px); line-height:1; letter-spacing:-.015em; max-width:13ch; margin:18px 0 24px; }
+h1 em, h2 em { color:var(--terracotta-deep); font-style:italic; }
+.tagline { font-size:clamp(17px,1.8vw,20px); line-height:1.65; color:var(--ink-2); max-width:62ch; }
+.status-card { background:var(--paper-2); border:var(--rule-soft); border-radius:12px; padding:24px; }
+.status-card strong { display:block; font-family:var(--f-display); font-style:italic; font-size:30px; font-weight:400; color:var(--terracotta-deep); margin:8px 0; }
+.pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.pill { border:var(--rule-soft); border-radius:999px; padding:7px 11px; font-family:var(--f-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2); background:var(--paper-2); }
+section { padding:64px 0; border-bottom:var(--rule-soft); }
+section.alt { background:var(--paper-2); }
+.section-head { display:grid; grid-template-columns:92px 1fr; gap:24px; align-items:baseline; margin-bottom:32px; }
+h2 { font-family:var(--f-display); font-style:italic; font-weight:400; font-size:clamp(32px,4.2vw,54px); line-height:1.05; letter-spacing:-.01em; max-width:20ch; }
+h3 { font-family:var(--f-display); font-weight:500; font-size:24px; line-height:1.2; margin-bottom:10px; }
+p { margin-bottom:18px; max-width:66ch; }
+.dashboard-grid { display:grid; grid-template-columns:1.4fr .9fr; gap:18px; align-items:start; }
+.card { background:var(--paper); border:var(--rule-soft); border-radius:12px; padding:24px; }
+.alt .card { background:var(--paper-2); }
+.stack { display:grid; gap:14px; }
+.feed-head { display:flex; justify-content:space-between; gap:16px; align-items:start; margin-bottom:18px; }
+.metric { font-family:var(--f-display); font-style:italic; color:var(--terracotta-deep); font-size:44px; line-height:1; }
+.filters { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0; }
+.filter { border:1px solid var(--ink); background:transparent; color:var(--ink); border-radius:8px; padding:9px 12px; font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; }
+.filter[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
+.items { display:grid; gap:0; }
+.item { border-top:var(--rule-soft); padding:16px 0; }
+.item:first-child { border-top:0; }
+.item b { display:block; font-size:18px; line-height:1.25; margin:4px 0; }
+.meta { display:block; color:var(--ink-3); font-size:14px; }
+.tag { display:inline-flex; width:max-content; font-family:var(--f-mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; border-radius:999px; padding:4px 8px; background:var(--paper-3); color:var(--ink-2); margin:0 6px 6px 0; }
+.tag.live { background:#DDE8D3; color:#2F4B2A; }
+.tag.warn { background:#EED2C9; color:var(--brick); }
+.tag.source { background:#D9DFEA; color:var(--dusk); }
+.source-list { list-style:none; display:grid; gap:12px; }
+.source-list li { border-top:var(--rule-soft); padding-top:12px; }
+.source-list li:first-child { border-top:0; padding-top:0; }
+.source-list a { font-weight:600; }
+.wedge { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:20px; }
+.wedge-step { background:var(--paper); border:var(--rule-soft); border-radius:12px; padding:22px; }
+.wedge-step .num { color:var(--terracotta-deep); display:block; margin-bottom:12px; }
+.actions { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.action { background:var(--paper); border:var(--rule-soft); border-radius:12px; padding:22px; display:flex; flex-direction:column; justify-content:space-between; min-height:190px; }
+.action p { font-size:15px; color:var(--ink-2); margin-bottom:18px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; width:max-content; max-width:100%; padding:11px 16px; border-radius:8px; border:1px solid var(--ink); font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; color:var(--ink); }
+.btn:hover { background:var(--ink); color:var(--paper); }
+.note { border-top:var(--rule-soft); border-bottom:var(--rule-soft); padding:22px 0; color:var(--terracotta-deep); font-family:var(--f-display); font-style:italic; font-size:22px; line-height:1.35; }
+footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); }
+.footer-row { display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; }
+@media (max-width:860px) { .hero-grid, .dashboard-grid, .wedge, .actions { grid-template-columns:1fr; } .section-head { grid-template-columns:1fr; gap:8px; } .site-nav { align-items:flex-start; flex-direction:column; padding:12px 20px; } .nav-links a { min-height:42px; padding:0 10px 0 0; } .container { padding:0 20px; } }
+</style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <section class="hero">
-      <div class="eyebrow">NeighborhoodOS installed node example</div>
-      <h1>Waldo Local Dashboard</h1>
-      <p class="lede">A live civic signal board for neighbors: 311 issues, council work, county meetings, development, budget documents, and the plain-English next action hiding inside the paperwork swamp.</p>
-      <div class="pillrow"><span class="pill">Waldo / South KC</span><span class="pill">Council District 6</span><span class="pill">Jackson County</span><span class="pill">Resident-first AI wedge</span></div>
-    </section>
-    <aside class="status">
-      <b>Dashboard freshness</b>
-      <div class="time" id="freshness">Loading live data</div>
-      <div id="freshness-detail">Pulling public feeds from DataKC, city/county meeting sources, and planning links.</div>
-    </aside>
-  </header>
+<nav class="site-nav" aria-label="Main navigation">
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/local/" class="active">Waldo dashboard</a>
+    <a href="/launch.html">Launch</a>
+    <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</nav>
 
-  <main class="grid">
-    <section class="card wide" id="service-card">
-      <h2>311 and service requests</h2>
-      <p>Live public 311 signal from DataKC. The first version uses recent public requests while Waldo geofencing is hardened.</p>
-      <div class="metric"><strong id="sr-count">…</strong><span>recent requests loaded</span></div>
-      <div class="items" id="sr-items"><div class="loading">Loading DataKC 311 records…</div></div>
-      <div class="source">Source: DataKC open data, queried from the browser.</div>
-    </section>
-
-    <section class="card" id="wedge-card">
-      <h2>The wedge</h2>
-      <p>NeighborhoodOS turns civic data into resident action.</p>
-      <div class="items">
-        <div class="item"><span class="tag live">1</span><b>See what is happening</b><span class="meta">Requests, agendas, plans, budgets, notices.</span></div>
-        <div class="item"><span class="tag live">2</span><b>Understand what it means</b><span class="meta">Plain-language summaries, local impact, deadlines.</span></div>
-        <div class="item"><span class="tag live">3</span><b>Do something useful</b><span class="meta">Email a rep, attend a meeting, file a request, organize neighbors.</span></div>
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Installed node example · Waldo / South KC</span>
+      <h1>Local signal, then <em>neighbor action</em>.</h1>
+      <p class="tagline">This is the Waldo neighborhoodOS node: a working civic dashboard for 311 requests, council and county sources, plans, budgets, development breadcrumbs, and the next useful thing a neighbor can do.</p>
+      <div class="pills" aria-label="Dashboard scope">
+        <span class="pill">Waldo</span><span class="pill">KCMO</span><span class="pill">Jackson County</span><span class="pill">Resident-first wedge</span>
       </div>
-    </section>
+    </div>
+    <aside class="status-card" aria-labelledby="freshness-label">
+      <span class="label" id="freshness-label">Dashboard status</span>
+      <strong id="freshness">Loading public data</strong>
+      <p id="freshness-detail">Checking DataKC from your browser. Source-linked civic layers are available even if a public feed blocks loading.</p>
+    </aside>
+  </div>
+</header>
 
-    <section class="card"><h2>City Council</h2><p>Meetings, ordinances, committee work, agendas, and votes.</p><div class="items"><div class="item"><span class="tag todo">Live source</span><b>KCMO legislative portal</b><span class="meta">Council and committee agendas. API parsing comes next.</span></div><div class="item"><a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">Open KCMO legislation portal</a></div><div class="item"><a href="https://www.kcmo.gov/city-hall/city-officials/city-council" target="_blank" rel="noopener">Open City Council page</a></div></div></section>
-    <section class="card"><h2>Jackson County Legislature</h2><p>County meetings, budget hearings, assessment issues, and services that hit residents directly.</p><div class="items"><div class="item"><span class="tag todo">Live source</span><b>County legislative meetings</b><span class="meta">Monday legislature work, ordinances, resolutions, budget, assessment.</span></div><div class="item"><a href="https://www.jacksongov.org/Government/County-Legislature" target="_blank" rel="noopener">Open county legislature page</a></div><div class="item"><a href="https://www.jacksongov.org/Government/Departments/Finance-Purchasing/Budget" target="_blank" rel="noopener">Open county budget page</a></div></div></section>
-    <section class="card"><h2>Planning and development</h2><p>Rezoning, variances, plan commission cases, neighborhood impact, and public hearing breadcrumbs.</p><div class="items"><div class="item"><span class="tag todo">Watch</span><b>City Plan Commission / BZA</b><span class="meta">Best next live feed because hearings create resident deadlines.</span></div><div class="item"><a href="https://www.kcmo.gov/city-hall/departments/city-planning-development" target="_blank" rel="noopener">Open City Planning and Development</a></div><div class="item"><a href="https://data.kcmo.org/" target="_blank" rel="noopener">Search DataKC planning datasets</a></div></div></section>
-    <section class="card"><h2>Budgets and plans</h2><p>Budgets are where values stop making speeches and start writing checks.</p><div class="items"><div class="item"><span class="tag live">City</span><b>KCMO budget and adopted budget books</b><span class="meta">Track services, capital improvements, and district impacts.</span></div><div class="item"><a href="https://www.kcmo.gov/city-hall/departments/finance/budget" target="_blank" rel="noopener">Open KCMO budget page</a></div><div class="item"><a href="https://playbook.kcmo.gov/" target="_blank" rel="noopener">Open KC Playbook</a></div></div></section>
+<main>
+  <section aria-labelledby="service-title">
+    <div class="container dashboard-grid">
+      <article class="card">
+        <div class="feed-head">
+          <div>
+            <span class="label">Live layer</span>
+            <h2 id="service-title">311 service requests.</h2>
+          </div>
+          <div aria-label="Recent 311 records loaded"><div class="metric" id="sr-count">…</div><span class="meta">rows</span></div>
+        </div>
+        <p>These are live public records from DataKC. The buttons below are real filters on loaded rows, not stage props. Waldo-only geofencing depends on the fields DataKC returns in-browser, so the page labels this honestly.</p>
+        <div class="filters" aria-label="311 filters">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All loaded</button>
+          <button class="filter" type="button" data-filter="open" aria-pressed="false">Open-ish</button>
+          <button class="filter" type="button" data-filter="south" aria-pressed="false">South / Waldo text</button>
+        </div>
+        <div class="items" id="sr-items" aria-live="polite"><div class="item"><span class="tag">Loading</span><b>Loading DataKC 311 records</b><span class="meta">If this hangs, use the source link in the right rail.</span></div></div>
+      </article>
 
-    <section class="card full"><h2>Resident action queue</h2><p>What a neighborhood node should help people do next. Static now, fed by workshops and live feeds next.</p><div class="actions"><div class="action"><b>Report or track a 311 issue</b><span class="small">Find repeat issues, file better reports, prepare photos and locations.</span></div><div class="action"><b>Understand an agenda item</b><span class="small">Turn a dense ordinance into what changes, who decides, and when to speak.</span></div><div class="action"><b>Watch a development case</b><span class="small">Summarize notice, deadlines, hearing dates, and likely neighborhood impacts.</span></div><div class="action"><b>Draft a neighbor update</b><span class="small">Make a plain-language flyer, email, or association note.</span></div><div class="action"><b>Ask the right official</b><span class="small">Identify city vs county responsibility before shouting into the wrong mailbox.</span></div><div class="action"><b>Capture repeat tasks</b><span class="small">Turn common resident needs into NeighborhoodOS agent templates with human review.</span></div></div></section>
-  </main>
+      <aside class="stack">
+        <div class="card">
+          <h3>Source links that work today</h3>
+          <ul class="source-list">
+            <li><span class="tag live">live</span><a href="https://data.kcmo.org/311/311-Call-Center-Service-Requests/7at3-sxhp" target="_blank" rel="noopener">DataKC 311 service requests</a><span class="meta">Public service request dataset.</span></li>
+            <li><span class="tag source">source</span><a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">KCMO legislation portal</a><span class="meta">Council agendas, ordinances, resolutions.</span></li>
+            <li><span class="tag source">source</span><a href="https://www.kcmo.gov/city-hall/city-officials/city-council" target="_blank" rel="noopener">KCMO City Council</a><span class="meta">Members, districts, committees.</span></li>
+            <li><span class="tag source">source</span><a href="https://www.jacksongov.org/Government/County-Legislature" target="_blank" rel="noopener">Jackson County Legislature</a><span class="meta">County meetings and district work.</span></li>
+            <li><span class="tag source">source</span><a href="https://www.kcmo.gov/city-hall/departments/city-planning-development" target="_blank" rel="noopener">City Planning and Development</a><span class="meta">Planning, zoning, hearings, permits.</span></li>
+            <li><span class="tag source">source</span><a href="https://www.kcmo.gov/city-hall/departments/finance/budget" target="_blank" rel="noopener">KCMO budget</a><span class="meta">Adopted budget and finance documents.</span></li>
+          </ul>
+        </div>
+        <div class="note">If a thing cannot load live yet, this page sends you to the real public source instead of dressing a dead button in a tiny tuxedo.</div>
+      </aside>
+    </div>
+  </section>
 
-  <footer class="footer">This is the Waldo installed-node demo: useful public data first, local facilitation second, automation only where it helps residents. Last page build: <span id="build-time"></span>.</footer>
-</div>
+  <section class="alt" id="wedge" aria-labelledby="wedge-title">
+    <div class="container">
+      <div class="section-head"><div class="num">01 / Wedge</div><h2 id="wedge-title">How the node earns trust.</h2></div>
+      <p>NeighborhoodOS is not trying to be another civic portal. The wedge is smaller and sharper: take messy public signal, explain what changed, and help a neighbor do one useful thing before the window closes.</p>
+      <div class="wedge">
+        <div class="wedge-step"><span class="num">Step 01</span><h3>See what changed</h3><p>311 spikes, agenda items, county hearings, development notices, budget changes, and repeated neighborhood patterns.</p></div>
+        <div class="wedge-step"><span class="num">Step 02</span><h3>Understand why it matters</h3><p>Plain-language summaries, deadlines, district context, who controls the decision, and what is city vs county.</p></div>
+        <div class="wedge-step"><span class="num">Step 03</span><h3>Do something useful</h3><p>File a better request, attend the right meeting, email the right office, organize neighbors, or turn a repeat problem into an agent template.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="actions-title">
+    <div class="container">
+      <div class="section-head"><div class="num">02 / Actions</div><h2 id="actions-title">Resident action queue.</h2></div>
+      <div class="actions">
+        <article class="action"><div><h3>Report a city issue</h3><p>Use myKCMO to file or track a 311 request. Good for trash, potholes, missed pickup, streetlights, nuisance, and city-service issues.</p></div><a class="btn" href="https://www.kcmo.gov/city-hall/311" target="_blank" rel="noopener">Open 311</a></article>
+        <article class="action"><div><h3>Read the next council packet</h3><p>Go straight to the legislation portal before meetings. NeighborhoodOS can later summarize agenda items, but the source is here today.</p></div><a class="btn" href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">Open council</a></article>
+        <article class="action"><div><h3>Check county decisions</h3><p>County work affects assessments, budgets, health, courts, and services. This link opens the county legislature source.</p></div><a class="btn" href="https://www.jacksongov.org/Government/County-Legislature" target="_blank" rel="noopener">Open county</a></article>
+        <article class="action"><div><h3>Watch development</h3><p>Planning and zoning cases are where deadlines matter. Start at the city planning source while live case parsing gets built.</p></div><a class="btn" href="https://www.kcmo.gov/city-hall/departments/city-planning-development" target="_blank" rel="noopener">Open planning</a></article>
+        <article class="action"><div><h3>Follow the money</h3><p>Budgets are where values stop giving speeches and start writing checks. Use this for city budget books and finance updates.</p></div><a class="btn" href="https://www.kcmo.gov/city-hall/departments/finance/budget" target="_blank" rel="noopener">Open budget</a></article>
+        <article class="action"><div><h3>Launch another node</h3><p>The Waldo page is an installed example. The launch guide explains how another neighborhood picks its own wedge.</p></div><a class="btn" href="/launch.html">Read launch guide</a></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div>neighborhoodos.org · Waldo installed-node demo · public sources first</div>
+    <div><a href="/">Home</a> · <a href="/launch.html">Launch guide</a> · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</footer>
+
 <script>
-const DATAKC_311 = 'https://data.kcmo.org/resource/7at3-sxhp.json?$limit=8&$order=creation_date%20DESC';
-function safeDate(v){ const d = new Date(v); return isNaN(d) ? '' : d.toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); }
-function pick(obj, keys){ for (const k of keys) if (obj && obj[k]) return obj[k]; return ''; }
-function esc(s){ return String(s ?? '').replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c])); }
-async function load311(){
+const DATAKC_311 = 'https://data.kcmo.org/resource/7at3-sxhp.json?$limit=25&$order=creation_date%20DESC';
+const southTerms = ['waldo', '64114', '64113', '64131', '75th', '79th', '85th', 'wornall', 'ward parkway', 'brookside', 'south']
+let serviceRows = [];
+let activeFilter = 'all';
+function escapeHtml(value) { return String(value ?? '').replace(/[&<>\"]/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '\"':'&quot;'}[char])); }
+function pick(row, keys) { for (const key of keys) if (row && row[key]) return row[key]; return ''; }
+function niceDate(value) { const date = new Date(value); return Number.isNaN(date.getTime()) ? '' : date.toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); }
+function rowText(row) { return Object.values(row || {}).join(' ').toLowerCase(); }
+function isOpenish(row) { const status = String(pick(row, ['status', 'case_status', 'request_status'])).toLowerCase(); return !status || !/(closed|resolved|complete|cancel)/.test(status); }
+function isSouthText(row) { const text = rowText(row); return southTerms.some(term => text.includes(term)); }
+function filteredRows() {
+  if (activeFilter === 'open') return serviceRows.filter(isOpenish);
+  if (activeFilter === 'south') return serviceRows.filter(isSouthText);
+  return serviceRows;
+}
+function renderRows() {
+  const rows = filteredRows();
+  document.getElementById('sr-count').textContent = rows.length;
   const box = document.getElementById('sr-items');
-  try{
-    const res = await fetch(DATAKC_311, {headers:{'Accept':'application/json'}});
-    if(!res.ok) throw new Error('DataKC returned ' + res.status);
-    const rows = await res.json();
-    document.getElementById('sr-count').textContent = rows.length;
-    box.innerHTML = rows.map(r => {
-      const type = pick(r, ['service_name','request_type','type','category']) || 'Service request';
-      const addr = pick(r, ['street_address','address','location_1_address','zipcode']) || 'Kansas City';
-      const status = pick(r, ['status','case_status']) || 'open/public';
-      const date = safeDate(pick(r, ['creation_date','created_date','requested_datetime']));
-      return '<div class="item"><span class="tag live">' + esc(status) + '</span><b>' + esc(type) + '</b><span class="meta">' + esc(addr) + (date ? ' · ' + esc(date) : '') + '</span></div>';
-    }).join('') || '<div class="item"><span class="tag warn">No rows</span><b>No recent rows returned</b><span class="meta">The feed loaded but returned nothing.</span></div>';
-    document.getElementById('freshness').textContent = 'Live data loaded';
-    document.getElementById('freshness-detail').textContent = '311 feed refreshed in your browser at ' + new Date().toLocaleTimeString();
-  }catch(err){
+  if (!rows.length) {
+    box.innerHTML = '<div class="item"><span class="tag warn">No matches</span><b>No loaded rows match this filter</b><span class="meta">Try All loaded, or open the DataKC source link for deeper search.</span></div>';
+    return;
+  }
+  box.innerHTML = rows.slice(0, 10).map(row => {
+    const type = pick(row, ['service_name', 'request_type', 'type', 'category', 'description']) || 'Service request';
+    const status = pick(row, ['status', 'case_status', 'request_status']) || 'public row';
+    const address = pick(row, ['street_address', 'address', 'location_1_address', 'zipcode']) || 'Kansas City';
+    const date = niceDate(pick(row, ['creation_date', 'created_date', 'requested_datetime', 'open_date']));
+    const south = isSouthText(row) ? '<span class="tag live">south signal</span>' : '';
+    return '<div class="item"><span class="tag live">' + escapeHtml(status) + '</span>' + south + '<b>' + escapeHtml(type) + '</b><span class="meta">' + escapeHtml(address) + (date ? ' · ' + escapeHtml(date) : '') + '</span></div>';
+  }).join('');
+}
+async function load311() {
+  try {
+    const response = await fetch(DATAKC_311, { headers: { 'Accept': 'application/json' } });
+    if (!response.ok) throw new Error('DataKC returned HTTP ' + response.status);
+    serviceRows = await response.json();
+    document.getElementById('freshness').textContent = 'Live 311 loaded';
+    document.getElementById('freshness-detail').textContent = 'Loaded ' + serviceRows.length + ' recent public DataKC rows at ' + new Date().toLocaleTimeString() + '. Other civic layers link to their public sources until parsers are added.';
+    renderRows();
+  } catch (error) {
+    document.getElementById('freshness').textContent = 'Source-linked mode';
+    document.getElementById('freshness-detail').textContent = 'DataKC did not load in this browser: ' + error.message + '. The source links still work.';
     document.getElementById('sr-count').textContent = '0';
-    box.innerHTML = '<div class="item"><span class="tag warn">Feed issue</span><b>DataKC 311 did not load in this browser</b><span class="meta">' + esc(err.message) + '. Links and action queue still work.</span></div>';
-    document.getElementById('freshness').textContent = 'Partial live mode';
-    document.getElementById('freshness-detail').textContent = 'One public feed failed client-side; source links remain available.';
+    document.getElementById('sr-items').innerHTML = '<div class="item"><span class="tag warn">Feed issue</span><b>DataKC 311 did not load here</b><span class="meta">Use the DataKC source link. Nothing on this page pretends the feed worked.</span></div>';
   }
 }
-document.getElementById('build-time').textContent = new Date().toISOString();
+document.querySelectorAll('.filter').forEach(button => {
+  button.addEventListener('click', () => {
+    activeFilter = button.dataset.filter;
+    document.querySelectorAll('.filter').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    renderRows();
+  });
+});
 load311();
 </script>
 </body>

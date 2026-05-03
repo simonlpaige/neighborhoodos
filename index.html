@@ -1,98 +1,590 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Waldo Local Node Dashboard - NeighborhoodOS</title>
-  <meta name="description" content="A live local dashboard for Waldo and south Kansas City residents: 311, City Council, county legislature, development, budgets, and resident action.">
-  <meta property="og:title" content="Waldo Local Node Dashboard | NeighborhoodOS">
-  <meta property="og:description" content="Live civic signal for Waldo: 311, council, county, planning, budgets, and resident action.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neighborhoodos.org/">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://neighborhoodos.org/">
-  <style>
-    :root{--bg:#f6f1e8;--ink:#1d1914;--muted:#6b6257;--card:#fffaf1;--line:#ded2bf;--green:#264d38;--gold:#c58b2b;--red:#9a3d2e;--blue:#315f7d;--shadow:0 18px 45px rgba(40,28,13,.10)}
-    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#fff7df 0,#f6f1e8 36%,#efe5d4 100%);color:var(--ink);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial} a{color:var(--green);font-weight:750} .wrap{max-width:1180px;margin:0 auto;padding:24px} header{display:grid;grid-template-columns:1.4fr .6fr;gap:20px;align-items:end;padding:28px 0 18px}.eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:850;font-size:12px}.hero{background:rgba(255,250,241,.82);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}h1{font-size:clamp(34px,6vw,76px);line-height:.92;margin:8px 0 14px;letter-spacing:-.055em}.lede{font-size:clamp(18px,2vw,23px);max-width:790px;color:#3a332b}.status{background:#173528;color:#fff;border-radius:22px;padding:20px;box-shadow:var(--shadow)}.status b{display:block;font-size:14px;color:#f8d38b;text-transform:uppercase;letter-spacing:.09em}.status .time{font-size:28px;font-weight:900;margin:7px 0}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{border:1px solid var(--line);background:#fff6e6;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:rgba(255,250,241,.9);border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:var(--shadow);min-height:220px}.wide{grid-column:span 8}.full{grid-column:1/-1}.card h2{font-size:20px;margin:0 0 6px}.card p{color:var(--muted);margin:0 0 14px}.metric{display:flex;gap:12px;align-items:baseline;margin:12px 0 16px}.metric strong{font-size:42px;line-height:1;color:var(--green)}.metric span{color:var(--muted);font-weight:750}.items{display:grid;gap:10px}.item{border-top:1px solid var(--line);padding-top:10px}.item:first-child{border-top:0;padding-top:0}.item b{display:block}.meta{display:block;color:var(--muted);font-size:13px;margin-top:2px}.tag{display:inline-block;border-radius:999px;background:#eadcc8;color:#403426;font-size:12px;font-weight:850;padding:3px 8px;margin-right:6px}.tag.live{background:#d9eadc;color:#173528}.tag.warn{background:#f6dfd9;color:#772f25}.tag.todo{background:#dbe8ef;color:#224d68}.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}.action{border:1px solid var(--line);background:#fff6e6;border-radius:18px;padding:14px}.action b{display:block}.small{font-size:13px;color:var(--muted)}.loading{color:var(--muted);font-style:italic}.footer{color:var(--muted);font-size:13px;margin:28px 0}.source{font-size:12px;color:var(--muted);margin-top:14px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--green);color:white;border-radius:999px;padding:10px 14px;font-weight:900}.btn.secondary{background:#fff6e6;color:var(--green);border:1px solid var(--line)}
-    @media(max-width:850px){header{grid-template-columns:1fr}.card,.wide{grid-column:1/-1}.actions{grid-template-columns:1fr}.wrap{padding:16px}h1{font-size:44px}}
-  </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Waldo Local Node Dashboard","description":"Live civic signal dashboard for Waldo and south Kansas City residents.","spatialCoverage":"Waldo, Kansas City, Missouri","creator":{"@type":"Organization","name":"NeighborhoodOS"}}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>neighborhoodOS ΓÇö An operating system for neighborhoods that solve their own problems</title>
+<meta name="description" content="Pick one sharp problem on your block. Build a working tool around it. Rotate when needed. neighborhoodOS is an open-source civic platform piloting in West Waldo, Kansas City.">
+<meta property="og:title" content="neighborhoodOS">
+<meta property="og:description" content="An operating system for neighborhoods that want to solve their own problems. Current pilot: home maintenance in West Waldo, Kansas City.">
+<meta property="og:url" content="https://neighborhoodos.org">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="neighborhoodOS">
+<meta name="twitter:description" content="An operating system for neighborhoods that want to solve their own problems.">
+<link rel="canonical" href="https://neighborhoodos.org/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://neighborhoodos.org/#website",
+      "url": "https://neighborhoodos.org/",
+      "name": "neighborhoodOS",
+      "description": "An open-source operating system for neighborhoods that solve their own problems.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "neighborhoodOS",
+      "url": "https://neighborhoodos.org/",
+      "applicationCategory": "CivicApplication",
+      "operatingSystem": "Web",
+      "description": "Pick one sharp problem on your block. Build a working tool around it. Rotate when needed. Open-source civic platform piloting in West Waldo, Kansas City.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Simon L. Paige"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/simonlpaige/neighborhoodos"
+    }
+  ]
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Neutrals */
+  --paper:        #F5EFE6;
+  --paper-2:      #EDE5D6;
+  --paper-3:      #E2D8C3;
+  --ink:          #1F1A17;
+  --ink-2:        #3A332D;
+  --ink-3:        #7A6F66;
+
+  /* Accents */
+  --terracotta:       #C2553A;
+  --terracotta-deep:  #8E3A26;
+  --ochre:            #D9A441;
+  --moss:             #5C7A4E;
+  --dusk:             #3F4A6B;
+  --brick:            #8B2E1F;
+
+  /* Fonts */
+  --f-display: "Fraunces", Georgia, serif;
+  --f-body:    "Inter Tight", system-ui, sans-serif;
+  --f-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  /* Rules */
+  --rule:      1px solid var(--ink);
+  --rule-soft: 1px solid var(--paper-3);
+}
+
+html { scroll-behavior: smooth; }
+
+::selection { background: var(--terracotta); color: var(--paper); }
+
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+body {
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--dusk); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+
+/* ΓöÇΓöÇΓöÇ Nav ΓöÇΓöÇΓöÇ */
+nav.site-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--paper);
+  border-bottom: var(--rule-soft);
+  padding: 0 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav-logo .os {
+  font-variant: small-caps;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+.nav-logo:hover { color: var(--terracotta-deep); }
+.nav-links { display: flex; gap: 0; align-items: center; }
+.nav-links a {
+  padding: 0 16px; height: 64px;
+  display: flex; align-items: center;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.18s, border-color 0.18s;
+}
+.nav-links a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+
+/* ΓöÇΓöÇΓöÇ Layout ΓöÇΓöÇΓöÇ */
+.container { max-width: 920px; margin: 0 auto; padding: 0 28px; }
+
+/* ΓöÇΓöÇΓöÇ Hero ΓöÇΓöÇΓöÇ */
+header.hero {
+  padding: 96px 0 72px;
+  border-bottom: var(--rule-soft);
+}
+
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h1 {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(44px, 7vw, 84px);
+  line-height: 1.0;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 18ch;
+  text-wrap: pretty;
+}
+h1 em { color: var(--terracotta-deep); font-style: italic; }
+
+.tagline {
+  font-family: var(--f-body);
+  font-size: clamp(17px, 2vw, 19px);
+  line-height: 1.65;
+  color: var(--ink-2);
+  max-width: 56ch;
+  margin-bottom: 36px;
+}
+
+.cta-row {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: 36px;
+}
+
+/* ΓöÇΓöÇΓöÇ Buttons ΓöÇΓöÇΓöÇ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--terracotta); color: var(--paper); border-color: var(--terracotta); }
+.btn-primary:hover { background: var(--terracotta-deep); border-color: var(--terracotta-deep); color: var(--paper); }
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-secondary:hover { background: var(--ink); color: var(--paper); }
+
+/* ΓöÇΓöÇΓöÇ Sections ΓöÇΓöÇΓöÇ */
+section { padding: 84px 0; border-bottom: var(--rule-soft); }
+section.alt { background: var(--paper-2); }
+
+h2 {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 28px;
+  max-width: 22ch;
+  text-wrap: pretty;
+}
+h3 {
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+p { margin-bottom: 18px; max-width: 64ch; line-height: 1.65; }
+p strong { color: var(--ink); font-weight: 600; }
+em { font-style: italic; color: var(--terracotta-deep); }
+
+/* ΓöÇΓöÇΓöÇ Steps ΓöÇΓöÇΓöÇ */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  margin: 28px 0;
+  display: flex;
+  flex-direction: column;
+}
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 18px 0 18px 56px;
+  border-top: var(--rule-soft);
+}
+.steps li:last-child { border-bottom: var(--rule-soft); }
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0; top: 22px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+.steps li strong {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--terracotta-deep);
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ΓöÇΓöÇΓöÇ Bullets ΓöÇΓöÇΓöÇ */
+ul.bullets {
+  list-style: none;
+  margin: 16px 0 24px;
+}
+ul.bullets li {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 12px;
+  max-width: 64ch;
+}
+ul.bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 13px;
+  width: 12px; height: 1px;
+  background: var(--terracotta);
+}
+
+/* ΓöÇΓöÇΓöÇ Grid ΓöÇΓöÇΓöÇ */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* ΓöÇΓöÇΓöÇ Cards ΓöÇΓöÇΓöÇ */
+.card {
+  background: var(--paper);
+  border: var(--rule-soft);
+  border-radius: 12px;
+  padding: 28px;
+}
+section.alt .card { background: var(--paper-2); border-color: var(--paper-3); }
+.card h3 { margin-top: 0; margin-bottom: 14px; }
+.card p { margin-bottom: 0; font-size: 15px; line-height: 1.6; }
+.card p + p { margin-top: 12px; }
+
+/* ΓöÇΓöÇΓöÇ Chips / Pills ΓöÇΓöÇΓöÇ */
+.chip {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.chip-active { color: var(--terracotta); }
+.chip-queued { color: var(--ink-3); }
+
+/* ΓöÇΓöÇΓöÇ Callout ΓöÇΓöÇΓöÇ */
+.callout {
+  border-top: var(--rule-soft);
+  border-bottom: var(--rule-soft);
+  padding: 24px 0;
+  margin: 32px 0;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.35;
+  color: var(--terracotta-deep);
+  max-width: 56ch;
+}
+.callout strong { color: var(--ink); font-weight: 400; font-style: italic; }
+
+/* ΓöÇΓöÇΓöÇ Marginalia ΓöÇΓöÇΓöÇ */
+.marginalia {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+  border-left: 2px solid var(--terracotta);
+  padding-left: 16px;
+  margin: 24px 0;
+  max-width: 38ch;
+}
+
+/* ΓöÇΓöÇΓöÇ Code ΓöÇΓöÇΓöÇ */
+code {
+  font-family: var(--f-mono);
+  background: var(--paper-2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--terracotta-deep);
+}
+
+/* ΓöÇΓöÇΓöÇ Section head ΓöÇΓöÇΓöÇ */
+.section-head {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  margin-bottom: 36px;
+}
+.section-head .num {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.section-head h2 { margin-bottom: 0; }
+
+/* ΓöÇΓöÇΓöÇ Footer ΓöÇΓöÇΓöÇ */
+footer {
+  padding: 56px 0 72px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+footer a { color: var(--ink-2); text-decoration: none; }
+footer a:hover { color: var(--terracotta); }
+.footer-row {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ΓöÇΓöÇΓöÇ Responsive ΓöÇΓöÇΓöÇ */
+@media (max-width: 720px) {
+  .two-col { grid-template-columns: 1fr; }
+  .nav-links a { padding: 0 10px; font-size: 10px; }
+  header.hero { padding: 64px 0 48px; }
+  section { padding: 56px 0; }
+  .section-head { grid-template-columns: 1fr; gap: 8px; }
+  h1 { max-width: none; }
+  .steps li { padding-left: 0; padding-top: 36px; }
+  .steps li::before { top: 18px; }
+}
+</style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <section class="hero">
-      <div class="eyebrow">NeighborhoodOS installed node example</div>
-      <h1>Waldo Local Dashboard</h1>
-      <p class="lede">A live civic signal board for neighbors: 311 issues, council work, county meetings, development, budget documents, and the plain-English next action hiding inside the paperwork swamp.</p>
-      <div class="pillrow"><span class="pill">Waldo / South KC</span><span class="pill">Council District 6</span><span class="pill">Jackson County</span><span class="pill">Resident-first AI wedge</span></div>
-    </section>
-    <aside class="status">
-      <b>Dashboard freshness</b>
-      <div class="time" id="freshness">Loading live data</div>
-      <div id="freshness-detail">Pulling public feeds from DataKC, city/county meeting sources, and planning links.</div>
-    </aside>
-  </header>
 
-  <main class="grid">
-    <section class="card wide" id="service-card">
-      <h2>311 and service requests</h2>
-      <p>Live public 311 signal from DataKC. The first version uses recent public requests while Waldo geofencing is hardened.</p>
-      <div class="metric"><strong id="sr-count">…</strong><span>recent requests loaded</span></div>
-      <div class="items" id="sr-items"><div class="loading">Loading DataKC 311 records…</div></div>
-      <div class="source">Source: DataKC open data, queried from the browser.</div>
-    </section>
+<nav class="site-nav">
+  <a href="#" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="#approach">Approach</a>
+    <a href="#wedge">Pilot</a>
+    <a href="/launch.html">Launch</a>
+    <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</nav>
 
-    <section class="card" id="wedge-card">
-      <h2>The wedge</h2>
-      <p>NeighborhoodOS turns civic data into resident action.</p>
-      <div class="items">
-        <div class="item"><span class="tag live">1</span><b>See what is happening</b><span class="meta">Requests, agendas, plans, budgets, notices.</span></div>
-        <div class="item"><span class="tag live">2</span><b>Understand what it means</b><span class="meta">Plain-language summaries, local impact, deadlines.</span></div>
-        <div class="item"><span class="tag live">3</span><b>Do something useful</b><span class="meta">Email a rep, attend a meeting, file a request, organize neighbors.</span></div>
+<main>
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">An operating system for neighborhoods</span>
+    <h1>Neighborhoods that <em>solve their own problems</em>.</h1>
+    <p class="tagline">Pick one sharp pain on your block. Ship a working tool for it in weeks. Use the tool to build trust, capacity, and self-governance. Rotate to the next pain when the first one is handled. That is the whole idea.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/launch.html">Start your node</a>
+      <a class="btn btn-secondary" href="#wedge">See the pilot</a>
+      <a class="btn btn-secondary" href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">Browse the code</a>
+    </div>
+  </div>
+</header>
+
+<section id="approach">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">01 / Approach</div>
+      <h2>The wedge approach.</h2>
+    </div>
+    <p>Most civic software tries to do everything for everyone. It ends up doing nothing for anyone.</p>
+    <p>neighborhoodOS goes the other way. We start with <strong>one concrete pain</strong> in <strong>one real neighborhood</strong> and ship a working tool for it in weeks, not quarters. When the tool earns trust, we keep it running and pick the next pain.</p>
+
+    <h3 style="margin-top: 48px; font-style: italic; color: var(--terracotta-deep);">A pain has to pass four tests.</h3>
+    <ol class="steps">
+      <li><strong>Concrete.</strong> You can describe it in one sentence at a kitchen table.</li>
+      <li><strong>Costly.</strong> People are losing money, time, or dignity to it right now.</li>
+      <li><strong>Local.</strong> The fix works at the block level without waiting on policy.</li>
+      <li><strong>Swappable.</strong> If we build the wrong thing, we can stop and pick something else without tearing out the platform.</li>
+    </ol>
+
+    <div class="callout">
+      <strong>The platform stays. The wedge changes.</strong> The core of neighborhoodOS is the same across every wedge. What swaps is the specific tool we build on top for the current pain.
+    </div>
+  </div>
+</section>
+
+<section id="wedge" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">02 / Pilot</div>
+      <h2>Home maintenance brigade.</h2>
+    </div>
+    <p><strong>West Waldo, Kansas City, Missouri.</strong> Owner-occupied homes only. No rentals. No landlords.</p>
+
+    <p>Once a month, a group of neighbors picks one homeowner who cannot afford to fix their own house, and we go fix one thing. Roof patch. Porch rebuild. Storm-door replacement. Gutter haul. Whatever the house actually needs, picked from a list the homeowner helped write.</p>
+
+    <p>This is closer to a Habitat for Humanity work day than a tech product. Habitat builds new houses with volunteers and donated materials. We do the same thing, but for the houses that already exist on our blocks, and we do it every month, on the same Saturday, so people can plan around it.</p>
+
+    <div class="marginalia">The software does not swing the hammer. People swing the hammer. The software keeps track of who, what, where, when, and what got bought.</div>
+
+    <h3 style="margin-top: 56px; font-style: italic; color: var(--terracotta-deep);">Who does what.</h3>
+    <div class="two-col">
+      <div class="card">
+        <span class="chip chip-active">People</span>
+        <h3>The brigade</h3>
+        <p>Neighbors with hands. Some are tradespeople, retired or working. Most are not. The retired plumber leads a plumbing day. The carpenter leads a porch day. Everyone else hauls, scrapes, paints, holds the ladder, brings food.</p>
       </div>
-    </section>
+      <div class="card">
+        <span class="chip chip-active">People</span>
+        <h3>The homeowner</h3>
+        <p>Lives in the house. Owns the house. Cannot afford to pay for the fix. Picks the project from a short list scoped to what we can finish in one day. Is on site, makes the call on what gets done, gets thanked at the end.</p>
+      </div>
+      <div class="card">
+        <span class="chip chip-active">Software</span>
+        <h3>Logistics</h3>
+        <p>Matches the next house to the next Saturday. Tracks who said they could come and what skill they bring. Builds a supplies list from the project type. Records what got done and what is still on the list for next month.</p>
+      </div>
+      <div class="card">
+        <span class="chip chip-queued">Software</span>
+        <h3>Memory</h3>
+        <p>Keeps a record of every house we have visited and every fix we have made. So a year from now, we know which roofs we patched, which porches still need a railing, and which neighbors said yes the first time.</p>
+      </div>
+    </div>
 
-    <section class="card"><h2>City Council</h2><p>Meetings, ordinances, committee work, agendas, and votes.</p><div class="items"><div class="item"><span class="tag todo">Live source</span><b>KCMO legislative portal</b><span class="meta">Council and committee agendas. API parsing comes next.</span></div><div class="item"><a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">Open KCMO legislation portal</a></div><div class="item"><a href="https://www.kcmo.gov/city-hall/city-officials/city-council" target="_blank" rel="noopener">Open City Council page</a></div></div></section>
-    <section class="card"><h2>Jackson County Legislature</h2><p>County meetings, budget hearings, assessment issues, and services that hit residents directly.</p><div class="items"><div class="item"><span class="tag todo">Live source</span><b>County legislative meetings</b><span class="meta">Monday legislature work, ordinances, resolutions, budget, assessment.</span></div><div class="item"><a href="https://www.jacksongov.org/Government/County-Legislature" target="_blank" rel="noopener">Open county legislature page</a></div><div class="item"><a href="https://www.jacksongov.org/Government/Departments/Finance-Purchasing/Budget" target="_blank" rel="noopener">Open county budget page</a></div></div></section>
-    <section class="card"><h2>Planning and development</h2><p>Rezoning, variances, plan commission cases, neighborhood impact, and public hearing breadcrumbs.</p><div class="items"><div class="item"><span class="tag todo">Watch</span><b>City Plan Commission / BZA</b><span class="meta">Best next live feed because hearings create resident deadlines.</span></div><div class="item"><a href="https://www.kcmo.gov/city-hall/departments/city-planning-development" target="_blank" rel="noopener">Open City Planning and Development</a></div><div class="item"><a href="https://data.kcmo.org/" target="_blank" rel="noopener">Search DataKC planning datasets</a></div></div></section>
-    <section class="card"><h2>Budgets and plans</h2><p>Budgets are where values stop making speeches and start writing checks.</p><div class="items"><div class="item"><span class="tag live">City</span><b>KCMO budget and adopted budget books</b><span class="meta">Track services, capital improvements, and district impacts.</span></div><div class="item"><a href="https://www.kcmo.gov/city-hall/departments/finance/budget" target="_blank" rel="noopener">Open KCMO budget page</a></div><div class="item"><a href="https://playbook.kcmo.gov/" target="_blank" rel="noopener">Open KC Playbook</a></div></div></section>
+    <h3 style="margin-top: 56px; font-style: italic; color: var(--terracotta-deep);">What working looks like at 90 days.</h3>
+    <ul class="bullets">
+      <li>Three Saturdays done. Three houses with one real fix each.</li>
+      <li>A standing crew of fifteen or more neighbors who have shown up at least once.</li>
+      <li>A list of homes waiting for next month, written by the neighbors who know which houses are quietly falling apart.</li>
+      <li>A supplies budget under $400 per Saturday, sourced from donations, ReStore, and a small kitty.</li>
+    </ul>
+    <p>If those numbers do not show up at 90 days, we rotate the wedge. The platform stays, the wedge changes. No shame.</p>
+  </div>
+</section>
 
-    <section class="card full"><h2>Resident action queue</h2><p>What a neighborhood node should help people do next. Static now, fed by workshops and live feeds next.</p><div class="actions"><div class="action"><b>Report or track a 311 issue</b><span class="small">Find repeat issues, file better reports, prepare photos and locations.</span></div><div class="action"><b>Understand an agenda item</b><span class="small">Turn a dense ordinance into what changes, who decides, and when to speak.</span></div><div class="action"><b>Watch a development case</b><span class="small">Summarize notice, deadlines, hearing dates, and likely neighborhood impacts.</span></div><div class="action"><b>Draft a neighbor update</b><span class="small">Make a plain-language flyer, email, or association note.</span></div><div class="action"><b>Ask the right official</b><span class="small">Identify city vs county responsibility before shouting into the wrong mailbox.</span></div><div class="action"><b>Capture repeat tasks</b><span class="small">Turn common resident needs into NeighborhoodOS agent templates with human review.</span></div></div></section>
-  </main>
+<section id="code">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">03 / Code</div>
+      <h2>Open source. Local first.</h2>
+    </div>
+    <p>All code is open source. MIT licensed. Runs locally on one neighborhood node. No central server.</p>
 
-  <footer class="footer">This is the Waldo installed-node demo: useful public data first, local facilitation second, automation only where it helps residents. Last page build: <span id="build-time"></span>.</footer>
-</div>
-<script>
-const DATAKC_311 = 'https://data.kcmo.org/resource/7at3-sxhp.json?$limit=8&$order=creation_date%20DESC';
-function safeDate(v){ const d = new Date(v); return isNaN(d) ? '' : d.toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); }
-function pick(obj, keys){ for (const k of keys) if (obj && obj[k]) return obj[k]; return ''; }
-function esc(s){ return String(s ?? '').replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c])); }
-async function load311(){
-  const box = document.getElementById('sr-items');
-  try{
-    const res = await fetch(DATAKC_311, {headers:{'Accept':'application/json'}});
-    if(!res.ok) throw new Error('DataKC returned ' + res.status);
-    const rows = await res.json();
-    document.getElementById('sr-count').textContent = rows.length;
-    box.innerHTML = rows.map(r => {
-      const type = pick(r, ['service_name','request_type','type','category']) || 'Service request';
-      const addr = pick(r, ['street_address','address','location_1_address','zipcode']) || 'Kansas City';
-      const status = pick(r, ['status','case_status']) || 'open/public';
-      const date = safeDate(pick(r, ['creation_date','created_date','requested_datetime']));
-      return '<div class="item"><span class="tag live">' + esc(status) + '</span><b>' + esc(type) + '</b><span class="meta">' + esc(addr) + (date ? ' · ' + esc(date) : '') + '</span></div>';
-    }).join('') || '<div class="item"><span class="tag warn">No rows</span><b>No recent rows returned</b><span class="meta">The feed loaded but returned nothing.</span></div>';
-    document.getElementById('freshness').textContent = 'Live data loaded';
-    document.getElementById('freshness-detail').textContent = '311 feed refreshed in your browser at ' + new Date().toLocaleTimeString();
-  }catch(err){
-    document.getElementById('sr-count').textContent = '0';
-    box.innerHTML = '<div class="item"><span class="tag warn">Feed issue</span><b>DataKC 311 did not load in this browser</b><span class="meta">' + esc(err.message) + '. Links and action queue still work.</span></div>';
-    document.getElementById('freshness').textContent = 'Partial live mode';
-    document.getElementById('freshness-detail').textContent = 'One public feed failed client-side; source links remain available.';
-  }
-}
-document.getElementById('build-time').textContent = new Date().toISOString();
-load311();
-</script>
+    <div class="two-col">
+      <div class="card">
+        <h3>Repo layout</h3>
+        <p style="font-family: var(--f-mono); font-size: 13px; line-height: 2.0; color: var(--ink-2);">
+          <code>core/</code> &nbsp; node entry, shared wiring<br>
+          <code>connectors/</code> &nbsp; city data, social signals<br>
+          <code>ingest/</code> &nbsp; cron-ready scripts<br>
+          <code>identity/</code> &nbsp; trust levels, voting<br>
+          <code>wedges/</code> &nbsp; the swappable part<br>
+          <code>site/</code> &nbsp; this page
+        </p>
+      </div>
+      <div class="card">
+        <h3>Quick start</h3>
+        <p style="font-family: var(--f-mono); font-size: 13px; line-height: 2.0; color: var(--ink-2);">
+          <code>git clone</code><br>
+          <code>cd neighborhoodos</code><br>
+          <code>npm install</code><br>
+          <code>cd wedges/home-maintenance</code><br>
+          <code>node fetch-all.js</code><br>
+          <code>node ingest-all.js</code>
+        </p>
+      </div>
+    </div>
+
+    <p style="margin-top: 32px;">
+      Mirrored on <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> and <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>. Issues welcome. Expect breaking changes weekly until v1.
+    </p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">04 / People</div>
+      <h2>Who is behind it.</h2>
+    </div>
+    <p>One person, in one neighborhood, right now. <a href="https://simonlpaige.com">Simon L. Paige</a> in West Waldo, KCMO. Runs a small web design business and a few other things by day. This is where the rest of the energy goes.</p>
+    <p>If the pilot works, this becomes a real thing with real governance. Until then, it is a kitchen-table project you can watch and contribute to.</p>
+
+    <div class="callout" style="margin-top: 40px;">
+      <strong>Related, not merged.</strong> <a href="https://commonweave.earth" target="_blank" rel="noopener">Commonweave</a> is a sibling project ΓÇö a framework and open directory for the broader commons-and-cooperatives movement. neighborhoodOS can optionally use the Commonweave directory to answer "who is already working on this near me?" when a wedge calls for it. The two projects are independent.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div>
+        neighborhoodos.org &nbsp;┬╖&nbsp; MIT &nbsp;┬╖&nbsp; <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> &nbsp;┬╖&nbsp; <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>
+      </div>
+      <div>
+        Built in West Waldo, KC
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

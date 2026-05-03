@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launch your own neighborhoodOS - the 30-day playbook</title>
+<meta name="description" content="A step-by-step playbook for launching a neighborhoodOS node in your own neighborhood. No platform magic. You do the listening. The software wraps the work.">
+<meta property="og:title" content="Launch your own neighborhoodOS">
+<meta property="og:description" content="The 30-day playbook for starting a node in your neighborhood. You supply the work and the AI. The install is just the wrapper.">
+<meta property="og:url" content="https://neighborhoodos.org/launch">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Launch your own neighborhoodOS">
+<meta name="twitter:description" content="The 30-day playbook for starting a node in your neighborhood.">
+<link rel="canonical" href="https://neighborhoodos.org/launch">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Launch your own neighborhoodOS",
+  "description": "A 30-day playbook for starting a neighborhoodOS node in your own neighborhood.",
+  "url": "https://neighborhoodos.org/launch",
+  "totalTime": "P30D",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Simon L. Paige"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "neighborhoodOS",
+    "url": "https://neighborhoodos.org/"
+  }
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Neutrals */
+  --paper:        #F5EFE6;
+  --paper-2:      #EDE5D6;
+  --paper-3:      #E2D8C3;
+  --ink:          #1F1A17;
+  --ink-2:        #3A332D;
+  --ink-3:        #7A6F66;
+
+  /* Accents */
+  --terracotta:       #C2553A;
+  --terracotta-deep:  #8E3A26;
+  --ochre:            #D9A441;
+  --moss:             #5C7A4E;
+  --dusk:             #3F4A6B;
+  --brick:            #8B2E1F;
+
+  /* Fonts */
+  --f-display: "Fraunces", Georgia, serif;
+  --f-body:    "Inter Tight", system-ui, sans-serif;
+  --f-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  /* Rules */
+  --rule:      1px solid var(--ink);
+  --rule-soft: 1px solid var(--paper-3);
+}
+
+html { scroll-behavior: smooth; }
+
+::selection { background: var(--terracotta); color: var(--paper); }
+
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+body {
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--dusk); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+
+/* ─── Nav ─── */
+nav.site-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--paper);
+  border-bottom: var(--rule-soft);
+  padding: 0 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo {
+  font-family: var(--f-display);
+  font-weight: 600;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav-logo .os {
+  font-variant: small-caps;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+.nav-logo:hover { color: var(--terracotta-deep); }
+.nav-links { display: flex; gap: 0; align-items: center; }
+.nav-links a {
+  padding: 0 16px; height: 64px;
+  display: flex; align-items: center;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.18s, border-color 0.18s;
+}
+.nav-links a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+.nav-links a.active { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+
+/* ─── Layout ─── */
+.container { max-width: 860px; margin: 0 auto; padding: 0 28px; }
+
+/* ─── Hero ─── */
+header.hero {
+  padding: 88px 0 64px;
+  border-bottom: var(--rule-soft);
+}
+
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h1 {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.0;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 24px;
+  max-width: 18ch;
+  text-wrap: pretty;
+}
+h1 em { color: var(--terracotta-deep); font-style: italic; }
+
+.tagline {
+  font-family: var(--f-body);
+  font-size: clamp(17px, 1.8vw, 19px);
+  line-height: 1.65;
+  color: var(--ink-2);
+  max-width: 56ch;
+}
+
+/* ─── Sections ─── */
+section { padding: 72px 0; border-bottom: var(--rule-soft); }
+section.alt { background: var(--paper-2); }
+
+h2 {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 24px;
+  max-width: 22ch;
+  text-wrap: pretty;
+}
+h3 {
+  font-family: var(--f-display);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+p { margin-bottom: 18px; max-width: 64ch; line-height: 1.65; }
+p strong { color: var(--ink); font-weight: 600; }
+em { font-style: italic; color: var(--terracotta-deep); }
+
+/* ─── Section head ─── */
+.section-head {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  margin-bottom: 36px;
+}
+.section-head .num {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.section-head h2 { margin-bottom: 0; }
+
+/* ─── Phases ─── */
+.phases {
+  counter-reset: phase;
+  list-style: none;
+  margin: 36px 0;
+}
+.phases > li {
+  counter-increment: phase;
+  position: relative;
+  padding: 28px 0 28px 72px;
+  border-top: var(--rule-soft);
+}
+.phases > li:last-child { border-bottom: var(--rule-soft); }
+.phases > li::before {
+  content: counter(phase, decimal-leading-zero);
+  position: absolute;
+  left: 0; top: 32px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+.phases .phase-title {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: clamp(22px, 2.2vw, 28px);
+  line-height: 1.15;
+  color: var(--terracotta-deep);
+  margin-bottom: 4px;
+}
+.phases .phase-meta {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 16px;
+}
+.phases p { margin-bottom: 14px; }
+.phases ul {
+  list-style: none;
+  margin: 14px 0 4px;
+}
+.phases ul li {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 8px;
+  max-width: 64ch;
+}
+.phases ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 13px;
+  width: 12px; height: 1px;
+  background: var(--terracotta);
+}
+
+/* ─── Callout ─── */
+.callout {
+  border-top: var(--rule-soft);
+  border-bottom: var(--rule-soft);
+  padding: 22px 0;
+  margin: 28px 0;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.35;
+  color: var(--terracotta-deep);
+  max-width: 56ch;
+}
+.callout strong { color: var(--ink); font-weight: 400; font-style: italic; }
+.callout.warn { color: var(--brick); }
+.callout.warn strong { color: var(--ink); }
+
+/* ─── Kit grid ─── */
+.kit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.kit-item {
+  background: var(--paper);
+  border: var(--rule-soft);
+  border-radius: 12px;
+  padding: 22px;
+}
+section.alt .kit-item { background: var(--paper-2); }
+.kit-item h4 {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.kit-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ─── Code ─── */
+code {
+  font-family: var(--f-mono);
+  background: var(--paper-2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--terracotta-deep);
+}
+pre {
+  font-family: var(--f-mono);
+  background: var(--paper-3);
+  border: var(--rule-soft);
+  border-radius: 8px;
+  padding: 18px 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink);
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+/* ─── Signals ─── */
+.signals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+.signal {
+  background: var(--paper);
+  border: var(--rule-soft);
+  border-radius: 12px;
+  padding: 24px;
+}
+section.alt .signal { background: var(--paper-2); }
+.signal h4 {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.signal.good h4 { color: var(--moss); }
+.signal.bad h4 { color: var(--brick); }
+.signal p { font-size: 15px; line-height: 1.6; margin: 0; }
+
+/* ─── CTA block ─── */
+.cta-block {
+  background: var(--paper-2);
+  border: var(--rule-soft);
+  border-radius: 12px;
+  padding: 36px;
+  margin: 32px 0;
+  text-align: center;
+}
+.cta-block h3 {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: var(--terracotta-deep);
+}
+.cta-block p {
+  margin: 0 auto 22px;
+  max-width: 48ch;
+  color: var(--ink-2);
+}
+
+/* ─── Buttons ─── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  border: 1px solid transparent;
+  margin: 0 4px;
+}
+.btn-primary { background: var(--terracotta); color: var(--paper); border-color: var(--terracotta); }
+.btn-primary:hover { background: var(--terracotta-deep); border-color: var(--terracotta-deep); color: var(--paper); }
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-secondary:hover { background: var(--ink); color: var(--paper); }
+
+/* ─── Not list ─── */
+.not-list {
+  list-style: none;
+  margin-top: 16px;
+}
+.not-list li {
+  padding: 18px 0;
+  border-top: var(--rule-soft);
+}
+.not-list li:last-child { border-bottom: var(--rule-soft); }
+.not-list li strong {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  color: var(--terracotta-deep);
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ─── Footer ─── */
+footer {
+  padding: 56px 0 72px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+footer a { color: var(--ink-2); text-decoration: none; }
+footer a:hover { color: var(--terracotta); }
+.footer-row {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 720px) {
+  .signals { grid-template-columns: 1fr; }
+  .nav-links a { padding: 0 10px; font-size: 10px; }
+  header.hero { padding: 64px 0 48px; }
+  section { padding: 56px 0; }
+  .section-head { grid-template-columns: 1fr; gap: 8px; }
+  .phases > li { padding-left: 0; padding-top: 56px; }
+  .phases > li::before { top: 28px; }
+  h1 { max-width: none; }
+  .cta-block { padding: 24px; }
+}
+</style>
+</head>
+<body>
+
+
+<main>
+<nav class="site-nav">
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="/#approach">Approach</a>
+    <a href="/#wedge">Pilot</a>
+    <a href="/launch.html" class="active">Launch</a>
+    <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">The 30-day playbook</span>
+    <h1>Launch your own <em>neighborhoodOS</em>.</h1>
+    <p class="tagline">The install is the wrapper. You supply the neighborhood, the conversations, and the AI. This page is the honest version of what that takes over the first 30 days.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="num">00 / Read first</div>
+      <h2>Read this first.</h2>
+    </div>
+    <p>There is no one-click "launch a neighborhood" button. Anyone selling you one is lying. Most civic software fails because it treats the software as the product. The software is not the product here. <strong>Trust is the product.</strong> The software is the wrapper that makes showing up reliably a little easier.</p>
+    <p>What you will do over the first 30 days is mostly talk to people. Roughly 20 conversations. The software helps you remember what they said, spot patterns across them, and pick one sharp wedge to build around. You bring the neighborhood. You bring your own AI (OpenAI key, Anthropic key, or a local Ollama). We bring the wrapper.</p>
+
+    <div class="callout warn">
+      <strong>Honest pre-flight check.</strong> If you are not willing to knock on 20 doors, sit through three meetings, and hear "no thanks" a few times out loud, this is not the right tool yet. Save yourself the install. Come back when the neighborhood feels loud in your head.
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">01 / Outcome</div>
+      <h2>What you have at day 30.</h2>
+    </div>
+    <div class="kit">
+      <div class="kit-item">
+        <h4>One chosen wedge</h4>
+        <p>A single concrete pain that passes the four-test filter, with at least three neighbors ready to try v1.</p>
+      </div>
+      <div class="kit-item">
+        <h4>A node profile</h4>
+        <p>Your neighborhood boundary, key civic contacts, meeting schedule, and the five loudest pain patterns from your intake conversations.</p>
+      </div>
+      <div class="kit-item">
+        <h4>A running install</h4>
+        <p>SQLite DB, ingest scripts pointed at your city open data, weekly digest in your inbox. Data stays on your machine.</p>
+      </div>
+      <div class="kit-item">
+        <h4>A v1 plan</h4>
+        <p>A one-page plan for the ugliest possible version of the tool that solves your chosen wedge inside 90 days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="num">02 / Phases</div>
+      <h2>The phases.</h2>
+    </div>
+
+    <ol class="phases">
+      <li>
+        <div class="phase-title">Pre-flight, before you touch code.</div>
+        <div class="phase-meta">Day 0 · 2 to 3 hours</div>
+        <p>Write a one-page NODE.md about your neighborhood. Boundary. Roughly how many households. Existing groups (HOA, neighborhood association, block captains, Facebook group). What civic meetings already happen and who shows up. What is broken that everyone already complains about. You will update this as you learn.</p>
+        <p>Decide who else is in on this with you, even loosely. One person alone can start a node. One person alone cannot sustain one.</p>
+        <ul>
+          <li>Template: <code>wedges/_template/NODE.md</code> in the repo</li>
+          <li>Budget: a notebook, a neighborhood map, and a coffee meeting with one ally</li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="phase-title">Install, wrap the work.</div>
+        <div class="phase-meta">Day 1 · 30 minutes</div>
+        <p>Clone the repo, install dependencies, point the ingest scripts at your city open data portal (Socrata, ArcGIS, or your local equivalent), and drop in an AI key.</p>
+<pre>git clone https://github.com/simonlpaige/neighborhoodos.git
+cd neighborhoodos
+npm install
+cp .env.example .env
+# edit .env: add OPENAI_API_KEY or ANTHROPIC_API_KEY or OLLAMA_HOST
+# edit connectors/cities.json: add your city open data endpoints</pre>
+        <p>If your city has no open data, that is fine. Skip the connectors for now. The intake and wedge work still runs.</p>
+        <ul>
+          <li>Supported AI: OpenAI, Anthropic, any Ollama model locally</li>
+          <li>Your data never leaves your machine. AI calls go through whatever key you provide.</li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="phase-title">Listening, the actual work.</div>
+        <div class="phase-meta">Days 2 to 20 · about 20 conversations</div>
+        <p>This is the phase where real nodes are made and fake ones die. Talk to 20 neighbors. Start with the loud ones (block captains, long-timers, the person who runs the Facebook group). Move to the quiet ones (people who moved in recently, elderly homeowners, renters if your wedge includes them).</p>
+        <p>The intake tool in the repo gives you a 12-question conversation guide and stores anonymized notes in your local DB. After each batch of five conversations, run <code>node intake/summarize.js</code> and it asks your AI to pull pain patterns across them.</p>
+        <ul>
+          <li>Bring snacks. Seriously.</li>
+          <li>Sit in on two or three existing civic meetings. Listen more than you talk.</li>
+          <li>Record which pains come up repeatedly, not just the loudest one once.</li>
+        </ul>
+        <div class="callout">
+          <strong>You will feel like you have nothing after week two.</strong> That is normal. Patterns do not show up until around conversation twelve. Keep going.
+        </div>
+      </li>
+
+      <li>
+        <div class="phase-title">Wedge selection, pick one pain.</div>
+        <div class="phase-meta">Days 20 to 25 · one evening, then sleep on it</div>
+        <p>Run <code>node wedges/suggest.js</code>. It hands your intake summary to your AI with the four-test filter baked in. You get two or three candidate wedges ranked on:</p>
+        <ul>
+          <li><strong>Concrete.</strong> Can you describe it in one sentence at a kitchen table?</li>
+          <li><strong>Costly.</strong> Are people losing money, time, or dignity to it right now?</li>
+          <li><strong>Local.</strong> Does the fix work at the block level without waiting on city hall?</li>
+          <li><strong>Swappable.</strong> If you build the wrong thing, can you stop without tearing out the platform?</li>
+        </ul>
+        <p>The AI recommends. You decide. Pick one. Write the chosen wedge into <code>wedges/your-wedge/README.md</code>. Tell three of the neighbors who showed up strongest in intake that this is what you are building toward, and ask if they will try v1.</p>
+      </li>
+
+      <li>
+        <div class="phase-title">Scaffold, the ugliest v1.</div>
+        <div class="phase-meta">Days 25 to 30 · a weekend</div>
+        <p>Run <code>node wedges/scaffold.js your-wedge</code>. It creates a folder with an ingest script, a local data model, a basic CLI, and a README stub. It does not build you a product. It gives you the skeleton so you can start filling in what your wedge actually needs.</p>
+        <p>The ugliest possible v1 is usually a spreadsheet or SQLite list, one script that updates it, and one human (you) sending a weekly text to the neighbors who opted in. That is fine. Ship that. Every fancier version is built on top of that skeleton once it earns trust.</p>
+        <ul>
+          <li>No users yet means no product yet. Get three real users before you write your second feature.</li>
+          <li>Toothbrush test: does anyone use this twice a week? If not, the wedge is wrong, the UX is wrong, or it is both.</li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="phase-title">Run, listen, rotate.</div>
+        <div class="phase-meta">Day 30 onward</div>
+        <p>After 90 days, check the signals below. If the wedge is working, keep running it and queue the next one. If it is not, rotate the wedge. The platform stays. The wedge changes. That is the whole point.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">03 / Signals</div>
+      <h2>Signals at 90 days.</h2>
+    </div>
+    <div class="signals">
+      <div class="signal good">
+        <h4>Working</h4>
+        <p>Twenty or more households have used the tool once. Three or more named "prevented a disaster" stories. At least one coordinated block-level job where real money was saved. Neighbors bring other neighbors without you asking.</p>
+      </div>
+      <div class="signal bad">
+        <h4>Not working</h4>
+        <p>Fewer than ten households have touched it. You are the only one talking about it. The people who said "yes, try it on me" at intake have gone quiet. Rotate the wedge. No shame. The platform stays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="num">04 / Limits</div>
+      <h2>What it is not.</h2>
+    </div>
+    <ul class="not-list">
+      <li><strong>Not a platform that runs your neighborhood for you.</strong> You run it. This is a wrapper.</li>
+      <li><strong>Not a social network.</strong> No feed. No likes. No algorithm. The software exists to make specific shared problems a little easier.</li>
+      <li><strong>Not a hosted SaaS.</strong> Every node runs locally. Your data stays with you. If two nodes want to federate, they opt in explicitly.</li>
+      <li><strong>Not for every neighborhood.</strong> If your block already solves its own problems informally, great, you do not need this. Come back when something is actually breaking.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">05 / Begin</div>
+      <h2>Ready?</h2>
+    </div>
+    <div class="cta-block">
+      <h3>Start with the repo.</h3>
+      <p>The install is the easy part. The first real step is writing your NODE.md and lining up your first five conversations. Clone the code when you are ready for day one.</p>
+      <a class="btn btn-primary" href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">Browse the code</a>
+      <a class="btn btn-secondary" href="/">Back to home</a>
+    </div>
+    <p style="font-size: 15px; color: var(--ink-3); margin-top: 22px;">Questions? Open an issue on GitHub. If you are piloting in a neighborhood and want to compare notes, reach out through <a href="https://simonlpaige.com">simonlpaige.com</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div>
+        neighborhoodos.org &nbsp;·&nbsp; MIT &nbsp;·&nbsp; <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; <a href="https://codeberg.org/AlphaWorm/neighborhoodos" target="_blank" rel="noopener">Codeberg</a>
+      </div>
+      <div>
+        Built in West Waldo, KC
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+</body>
+</html>
