@@ -1,33 +1,28 @@
 # NeighborhoodOS
 
-> An open-source operating system for neighborhoods that want to solve their own problems. Pick one sharp pain, ship a working tool in weeks, rotate to the next pain when it is handled well.
+> An open-source operating system for neighborhoods that want to solve their own problems. Pick one sharp pain, ship a working tool in weeks, rotate when needed.
 
 ## What it is
-NeighborhoodOS is a civic-tech platform piloting in West Waldo, Kansas City, Missouri. It is open-source and node-based - any neighborhood can stand up its own instance.
-
-## How it works
-1. Pick one specific, costly, recurring pain on the block.
-2. Build a small tool around just that pain.
-3. Use the tool to strengthen trust, local capacity, and self-governance.
-4. When that pain is handled well, rotate to the next one.
-
-The pain has to be: concrete, costly, recurring, and actionable by the neighborhood itself.
-
-## Current pilot
-West Waldo, Kansas City - home-maintenance coordination (see neighborhoodos-homecare).
-
-## Who runs it
-Maintained by Simon L. Paige and the West Waldo neighborhood. Open contribution welcome.
+NeighborhoodOS is a local-first civic platform piloting in West Waldo, Kansas City, Missouri. It combines a swappable wedge model with an installed local node that can ingest civic signals and turn them into neighbor action.
 
 ## Important pages
-- [Home](https://neighborhoodos.org/): platform overview
-- [Launch playbook](https://neighborhoodos.org/launch): 30-day steps to start a node in your own neighborhood
+- https://neighborhoodos.org/ - platform overview and active home-maintenance wedge
+- https://neighborhoodos.org/local/ - West Waldo installed node dashboard: 311, council, county, budget, development, and wedge signals
+- https://neighborhoodos.org/pilot/ - alias for the Waldo pilot node
+- https://neighborhoodos.org/launch.html - 30-day steps to start a node
+
+## Current pilot
+West Waldo, Kansas City - home-maintenance coordination plus the revived local civic intelligence dashboard.
+
+## Core sources for the Waldo node
+- KCMO open 311 datasets
+- Kansas City Legistar / city clerk agendas
+- City Plan Commission dockets and staff reports
+- KCMO line-item budget datasets
+- Jackson County Legislature and property-tax sources
 
 ## Contact
-- Repo: github.com/SimonPaige/neighborhoodos (link from site)
-- Email: simon@simonlpaige.com (project lead)
+- Repo: https://github.com/simonlpaige/neighborhoodos
+- Email: simon@simonlpaige.com
 
-## License
-Open source. Not for sale.
-
-Last updated: 2026-04-26
+Last updated: 2026-05-03
