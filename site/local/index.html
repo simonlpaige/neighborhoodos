@@ -1,113 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NeighborhoodOS Local Node - West Waldo, KCMO</title>
-<meta name="description" content="A revived NeighborhoodOS local node for West Waldo, KCMO: 311 signals, city and county meetings, budgets, development plans, and a practical wedge pipeline.">
-<link rel="canonical" href="https://neighborhoodos.org/local/">
-<meta property="og:title" content="NeighborhoodOS Local Node - West Waldo, KCMO">
-<meta property="og:description" content="311, city council, county legislature, budget, development, and neighborhood wedge signals in one local civic dashboard.">
-<meta property="og:url" content="https://neighborhoodos.org/local/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<style>
-*,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#0b1020;color:#edf3ff;line-height:1.55}a{color:#7dd3fc;text-decoration:none}a:hover{text-decoration:underline}.shell{max-width:1180px;margin:0 auto;padding:28px 20px 76px}.top{position:sticky;top:0;z-index:5;background:rgba(11,16,32,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(148,163,184,.22)}.topin{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;letter-spacing:-.04em}.brand span{color:#86efac}.nav{display:flex;gap:10px;flex-wrap:wrap}.nav a{font-size:13px;color:#cbd5e1;padding:7px 10px;border:1px solid rgba(148,163,184,.18);border-radius:999px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch;margin:34px 0 24px}.card,.panel{background:linear-gradient(180deg,rgba(30,41,59,.86),rgba(15,23,42,.92));border:1px solid rgba(148,163,184,.24);border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.28)}.hero .card{padding:30px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#86efac;background:rgba(34,197,94,.12);border:1px solid rgba(134,239,172,.25);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.hero h1{font-size:clamp(34px,6vw,68px);line-height:.94;letter-spacing:-.07em;margin:18px 0 18px}.hero p{font-size:18px;color:#cbd5e1;max-width:720px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;font-weight:800;background:#86efac;color:#052e16}.btn.secondary{background:transparent;color:#e2e8f0;border:1px solid rgba(226,232,240,.24)}.nodecard{padding:22px;display:flex;flex-direction:column;gap:14px}.nodecard h2{margin:0;font-size:20px}.mapbox{min-height:220px;border-radius:18px;background:radial-gradient(circle at 30% 35%,rgba(134,239,172,.34),transparent 28%),radial-gradient(circle at 62% 58%,rgba(125,211,252,.26),transparent 30%),linear-gradient(135deg,#172554,#052e16);border:1px solid rgba(226,232,240,.18);position:relative;overflow:hidden}.mapbox:before{content:"West WaldoA 75th-85th · Wornall-State Line";white-space:pre;position:absolute;left:18px;bottom:18px;color:#fff;font-weight:900;text-shadow:0 2px 20px rgba(0,0,0,.6)}.pulse{position:absolute;width:16px;height:16px;border-radius:50%;background:#86efac;left:48%;top:50%;box-shadow:0 0 0 12px rgba(134,239,172,.16),0 0 0 26px rgba(134,239,172,.08)}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.panel{padding:20px}.panel h2,.panel h3{margin:0 0 12px;letter-spacing:-.03em}.panel p{color:#cbd5e1}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.kpi{background:rgba(15,23,42,.72);border:1px solid rgba(148,163,184,.2);border-radius:18px;padding:16px}.num{font-size:32px;font-weight:950;letter-spacing:-.05em}.label{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:#94a3b8;font-weight:800}.list{display:grid;gap:10px}.item{border:1px solid rgba(148,163,184,.18);background:rgba(15,23,42,.52);border-radius:16px;padding:13px 14px}.item b{display:block}.meta{font-size:12px;color:#94a3b8;margin-top:3px}.tag{display:inline-flex;margin:2px 6px 2px 0;padding:3px 8px;border-radius:999px;background:rgba(125,211,252,.12);border:1px solid rgba(125,211,252,.2);color:#bae6fd;font-size:12px;font-weight:700}.warn{background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.28)}.ok{background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.28)}.bad{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.28)}.wedge{border-left:4px solid #86efac}.sourcegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.sourcegrid a{display:block;padding:12px;border-radius:14px;background:rgba(15,23,42,.55);border:1px solid rgba(148,163,184,.18);font-weight:800}.small{font-size:13px;color:#94a3b8}.footer{padding:24px 20px;border-top:1px solid rgba(148,163,184,.18);color:#94a3b8;text-align:center}.flow{display:grid;gap:10px}.step{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start}.dot{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#86efac;color:#052e16;font-weight:950}.bar{height:10px;background:#1e293b;border-radius:999px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#86efac,#7dd3fc);border-radius:999px}.note{border:1px dashed rgba(226,232,240,.26);border-radius:18px;padding:14px;color:#cbd5e1;background:rgba(15,23,42,.35)}@media(max-width:860px){.hero,.grid,.sourcegrid{display:block}.panel,.card{margin-bottom:16px}.kpis{grid-template-columns:repeat(2,1fr)}.nav{display:none}.span4,.span6,.span8,.span12{grid-column:auto}.hero h1{font-size:42px}}
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CivicStructure","name":"NeighborhoodOS West Waldo Local Node","url":"https://neighborhoodos.org/local/","areaServed":"West Waldo, Kansas City, Missouri","description":"A local civic dashboard combining 311, meeting, county, budget, development, and wedge implementation signals."}</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waldo Local Node Dashboard | NeighborhoodOS</title>
+  <meta name="description" content="A live local dashboard for Waldo and south Kansas City residents: 311, City Council, county legislature, development, budgets, and resident action.">
+  <meta property="og:title" content="Waldo Local Node Dashboard | NeighborhoodOS">
+  <meta property="og:description" content="Live civic signal for Waldo: 311, council, county, planning, budgets, and resident action.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neighborhoodos.org/local/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://neighborhoodos.org/local/">
+  <style>
+    :root{--bg:#f6f1e8;--ink:#1d1914;--muted:#6b6257;--card:#fffaf1;--line:#ded2bf;--green:#264d38;--gold:#c58b2b;--red:#9a3d2e;--blue:#315f7d;--shadow:0 18px 45px rgba(40,28,13,.10)}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#fff7df 0,#f6f1e8 36%,#efe5d4 100%);color:var(--ink);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial} a{color:var(--green);font-weight:750} .wrap{max-width:1180px;margin:0 auto;padding:24px} header{display:grid;grid-template-columns:1.4fr .6fr;gap:20px;align-items:end;padding:28px 0 18px}.eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:850;font-size:12px}.hero{background:rgba(255,250,241,.82);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}h1{font-size:clamp(34px,6vw,76px);line-height:.92;margin:8px 0 14px;letter-spacing:-.055em}.lede{font-size:clamp(18px,2vw,23px);max-width:790px;color:#3a332b}.status{background:#173528;color:#fff;border-radius:22px;padding:20px;box-shadow:var(--shadow)}.status b{display:block;font-size:14px;color:#f8d38b;text-transform:uppercase;letter-spacing:.09em}.status .time{font-size:28px;font-weight:900;margin:7px 0}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{border:1px solid var(--line);background:#fff6e6;border-radius:999px;padding:7px 11px;font-size:13px;font-weight:800}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:rgba(255,250,241,.9);border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:var(--shadow);min-height:220px}.wide{grid-column:span 8}.full{grid-column:1/-1}.card h2{font-size:20px;margin:0 0 6px}.card p{color:var(--muted);margin:0 0 14px}.metric{display:flex;gap:12px;align-items:baseline;margin:12px 0 16px}.metric strong{font-size:42px;line-height:1;color:var(--green)}.metric span{color:var(--muted);font-weight:750}.items{display:grid;gap:10px}.item{border-top:1px solid var(--line);padding-top:10px}.item:first-child{border-top:0;padding-top:0}.item b{display:block}.meta{display:block;color:var(--muted);font-size:13px;margin-top:2px}.tag{display:inline-block;border-radius:999px;background:#eadcc8;color:#403426;font-size:12px;font-weight:850;padding:3px 8px;margin-right:6px}.tag.live{background:#d9eadc;color:#173528}.tag.warn{background:#f6dfd9;color:#772f25}.tag.todo{background:#dbe8ef;color:#224d68}.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}.action{border:1px solid var(--line);background:#fff6e6;border-radius:18px;padding:14px}.action b{display:block}.small{font-size:13px;color:var(--muted)}.loading{color:var(--muted);font-style:italic}.footer{color:var(--muted);font-size:13px;margin:28px 0}.source{font-size:12px;color:var(--muted);margin-top:14px}.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--green);color:white;border-radius:999px;padding:10px 14px;font-weight:900}.btn.secondary{background:#fff6e6;color:var(--green);border:1px solid var(--line)}
+    @media(max-width:850px){header{grid-template-columns:1fr}.card,.wide{grid-column:1/-1}.actions{grid-template-columns:1fr}.wrap{padding:16px}h1{font-size:44px}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Waldo Local Node Dashboard","description":"Live civic signal dashboard for Waldo and south Kansas City residents.","spatialCoverage":"Waldo, Kansas City, Missouri","creator":{"@type":"Organization","name":"NeighborhoodOS"}}</script>
 </head>
 <body>
-<header class="top"><div class="topin"><div class="brand">neighborhood<span>OS</span> / local node</div><nav class="nav"><a href="/">Approach</a><a href="#signals">Signals</a><a href="#meetings">Meetings</a><a href="#wedge">Wedge</a><a href="#sources">Sources</a></nav></div></header>
-<main class="shell">
-<section class="hero">
-  <div class="card">
-    <div class="eyebrow">Installed node example · Waldo, KCMO</div>
-    <h1>One neighborhood dashboard for the stuff that actually hits the block.</h1>
-    <p>This revives the original Waldo pilot: 311 requests, city council and county legislature signals, budget and development links, plus a wedge pipeline that turns civic noise into one concrete neighborhood project at a time.</p>
-    <div class="cta"><a class="btn" href="#signals">Open the dashboard</a><a class="btn secondary" href="#wedge">See the wedge model</a></div>
-  </div>
-  <aside class="panel nodecard">
-    <div class="mapbox"><div class="pulse" aria-hidden="true"></div></div>
-    <h2>West Waldo node</h2>
-    <p class="small">Prototype boundary: West Waldo / Ward Parkway area. The exact production boundary should be swapped to a parcel, neighborhood association, or council-district geometry when a partner owns the node.</p>
-    <div><span class="tag">311</span><span class="tag">6th District</span><span class="tag">Jackson County</span><span class="tag">development</span><span class="tag">budget</span></div>
-  </aside>
-</section>
+<div class="wrap">
+  <header>
+    <section class="hero">
+      <div class="eyebrow">NeighborhoodOS installed node example</div>
+      <h1>Waldo Local Dashboard</h1>
+      <p class="lede">A live civic signal board for neighbors: 311 issues, council work, county meetings, development, budget documents, and the plain-English next action hiding inside the paperwork swamp.</p>
+      <div class="pillrow"><span class="pill">Waldo / South KC</span><span class="pill">Council District 6</span><span class="pill">Jackson County</span><span class="pill">Resident-first AI wedge</span></div>
+    </section>
+    <aside class="status">
+      <b>Dashboard freshness</b>
+      <div class="time" id="freshness">Loading live data</div>
+      <div id="freshness-detail">Pulling public feeds from DataKC, city/county meeting sources, and planning links.</div>
+    </aside>
+  </header>
 
-<section class="kpis" aria-label="Node snapshot">
-  <div class="kpi"><div class="num">5</div><div class="label">signal layers</div></div>
-  <div class="kpi"><div class="num">1</div><div class="label">active wedge</div></div>
-  <div class="kpi"><div class="num">90</div><div class="label">day proof window</div></div>
-  <div class="kpi"><div class="num">$400</div><div class="label">target Saturday cap</div></div>
-</section>
+  <main class="grid">
+    <section class="card wide" id="service-card">
+      <h2>311 and service requests</h2>
+      <p>Live public 311 signal from DataKC. The first version uses recent public requests while Waldo geofencing is hardened.</p>
+      <div class="metric"><strong id="sr-count">…</strong><span>recent requests loaded</span></div>
+      <div class="items" id="sr-items"><div class="loading">Loading DataKC 311 records…</div></div>
+      <div class="source">Source: DataKC open data, queried from the browser.</div>
+    </section>
 
-<section id="signals" class="grid">
-  <div class="panel span8">
-    <h2>Neighborhood signal board</h2>
-    <p>The old page was a civic intelligence dashboard. This version keeps that shape, but makes the purpose clearer: every signal either explains what is happening nearby or helps choose the next wedge.</p>
-    <div class="list">
-      <div class="item bad"><b>311 service pressure</b><span class="meta">Use KCMO open 311 data to spot unresolved property, trash, street, water, animal-control, and nuisance issues around the node.</span></div>
-      <div class="item warn"><b>Development and zoning changes</b><span class="meta">Watch City Plan Commission dockets, staff reports, rezonings, permits, TIF, and public hearings before neighbors hear about them too late.</span></div>
-      <div class="item warn"><b>Budget and capital plans</b><span class="meta">Track city budget lines, PIAC/GO KC style capital work, and county budget items that affect streets, parks, public safety, and property taxes.</span></div>
-      <div class="item"><b>City council and committee action</b><span class="meta">Pull Legistar/city clerk agendas into plain English: what matters, where it is, who sponsors it, and what neighbors can still do.</span></div>
-      <div class="item"><b>County legislature and property tax signals</b><span class="meta">Jackson County meetings, budgets, assessments, and tax deadlines matter locally. The node should put them next to city signals, not in a separate maze.</span></div>
-    </div>
-  </div>
-  <aside class="panel span4">
-    <h3>What the node does</h3>
-    <div class="flow">
-      <div class="step"><div class="dot">1</div><div><b>Collect</b><div class="small">Public data, agendas, PDFs, meeting notes, resident reports.</div></div></div>
-      <div class="step"><div class="dot">2</div><div><b>Translate</b><div class="small">Plain-English summaries, local filters, deadlines, affected blocks.</div></div></div>
-      <div class="step"><div class="dot">3</div><div><b>Choose</b><div class="small">Pick one wedge where neighbors can act without waiting for permission.</div></div></div>
-      <div class="step"><div class="dot">4</div><div><b>Remember</b><div class="small">Track commitments, outcomes, and what worked last time.</div></div></div>
-    </div>
-  </aside>
-</section>
+    <section class="card" id="wedge-card">
+      <h2>The wedge</h2>
+      <p>NeighborhoodOS turns civic data into resident action.</p>
+      <div class="items">
+        <div class="item"><span class="tag live">1</span><b>See what is happening</b><span class="meta">Requests, agendas, plans, budgets, notices.</span></div>
+        <div class="item"><span class="tag live">2</span><b>Understand what it means</b><span class="meta">Plain-language summaries, local impact, deadlines.</span></div>
+        <div class="item"><span class="tag live">3</span><b>Do something useful</b><span class="meta">Email a rep, attend a meeting, file a request, organize neighbors.</span></div>
+      </div>
+    </section>
 
-<section id="meetings" class="grid" style="margin-top:16px">
-  <div class="panel span6"><h2>City layer</h2><div class="list">
-    <div class="item"><b>Kansas City Council and committees</b><span class="meta">Business sessions, council meetings, ordinances, resolutions, sponsors, votes, and agenda attachments.</span></div>
-    <div class="item"><b>City Plan Commission / BZA</b><span class="meta">Development cases, staff reports, variances, rezonings, and neighborhood-impact notices.</span></div>
-    <div class="item"><b>DataKC and 311</b><span class="meta">Open service requests and counts by council district. For Waldo, filter to geography and issue type.</span></div>
-  </div></div>
-  <div class="panel span6"><h2>County layer</h2><div class="list">
-    <div class="item"><b>Jackson County Legislature</b><span class="meta">Regular Monday meetings, ordinances, budget hearings, committees, and district updates.</span></div>
-    <div class="item"><b>Property tax and assessment</b><span class="meta">County signals belong here because they are one of the most direct neighborhood pain points.</span></div>
-    <div class="item"><b>Budget and services</b><span class="meta">County funds, public works, health, courts, collections, and assessment operations.</span></div>
-  </div></div>
-</section>
+    <section class="card"><h2>City Council</h2><p>Meetings, ordinances, committee work, agendas, and votes.</p><div class="items"><div class="item"><span class="tag todo">Live source</span><b>KCMO legislative portal</b><span class="meta">Council and committee agendas. API parsing comes next.</span></div><div class="item"><a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">Open KCMO legislation portal</a></div><div class="item"><a href="https://www.kcmo.gov/city-hall/city-officials/city-council" target="_blank" rel="noopener">Open City Council page</a></div></div></section>
+    <section class="card"><h2>Jackson County Legislature</h2><p>County meetings, budget hearings, assessment issues, and services that hit residents directly.</p><div class="items"><div class="item"><span class="tag todo">Live source</span><b>County legislative meetings</b><span class="meta">Monday legislature work, ordinances, resolutions, budget, assessment.</span></div><div class="item"><a href="https://www.jacksongov.org/Government/County-Legislature" target="_blank" rel="noopener">Open county legislature page</a></div><div class="item"><a href="https://www.jacksongov.org/Government/Departments/Finance-Purchasing/Budget" target="_blank" rel="noopener">Open county budget page</a></div></div></section>
+    <section class="card"><h2>Planning and development</h2><p>Rezoning, variances, plan commission cases, neighborhood impact, and public hearing breadcrumbs.</p><div class="items"><div class="item"><span class="tag todo">Watch</span><b>City Plan Commission / BZA</b><span class="meta">Best next live feed because hearings create resident deadlines.</span></div><div class="item"><a href="https://www.kcmo.gov/city-hall/departments/city-planning-development" target="_blank" rel="noopener">Open City Planning and Development</a></div><div class="item"><a href="https://data.kcmo.org/" target="_blank" rel="noopener">Search DataKC planning datasets</a></div></div></section>
+    <section class="card"><h2>Budgets and plans</h2><p>Budgets are where values stop making speeches and start writing checks.</p><div class="items"><div class="item"><span class="tag live">City</span><b>KCMO budget and adopted budget books</b><span class="meta">Track services, capital improvements, and district impacts.</span></div><div class="item"><a href="https://www.kcmo.gov/city-hall/departments/finance/budget" target="_blank" rel="noopener">Open KCMO budget page</a></div><div class="item"><a href="https://playbook.kcmo.gov/" target="_blank" rel="noopener">Open KC Playbook</a></div></div></section>
 
-<section id="wedge" class="grid" style="margin-top:16px">
-  <div class="panel span8 wedge"><h2>The wedge: home maintenance brigade</h2><p>The local node is not just a dashboard. Dashboards become civic aquarium gravel if they do not lead to action. The first Waldo wedge is practical: once a month, neighbors pick one owner-occupied home that needs one doable repair and fix it together.</p>
-    <div class="list">
-      <div class="item ok"><b>Why this wedge fits the dashboard</b><span class="meta">311, code complaints, dangerous-building flags, aging housing, and property-tax pressure all point at the same local pain: homes quietly falling apart.</span></div>
-      <div class="item"><b>What software handles</b><span class="meta">Intake, eligibility, volunteer skills, supply lists, donations, schedule, photo log, follow-up tasks, and public memory.</span></div>
-      <div class="item"><b>What neighbors handle</b><span class="meta">Choosing the house, doing the work, feeding the crew, deciding what counts as safe, fair, and worth repeating.</span></div>
-    </div>
-  </div>
-  <aside class="panel span4"><h3>90-day proof</h3><p class="small">If these do not happen, rotate the wedge. The platform stays.</p><div class="list"><div class="item"><b>3 Saturdays</b><div class="bar"><div class="fill" style="width:0%"></div></div><span class="meta">Ready to log first workday.</span></div><div class="item"><b>15 neighbors</b><div class="bar"><div class="fill" style="width:0%"></div></div><span class="meta">Crew roster not public yet.</span></div><div class="item"><b>3 completed repairs</b><div class="bar"><div class="fill" style="width:0%"></div></div><span class="meta">Outcome tracking starts here.</span></div></div></aside>
-</section>
+    <section class="card full"><h2>Resident action queue</h2><p>What a neighborhood node should help people do next. Static now, fed by workshops and live feeds next.</p><div class="actions"><div class="action"><b>Report or track a 311 issue</b><span class="small">Find repeat issues, file better reports, prepare photos and locations.</span></div><div class="action"><b>Understand an agenda item</b><span class="small">Turn a dense ordinance into what changes, who decides, and when to speak.</span></div><div class="action"><b>Watch a development case</b><span class="small">Summarize notice, deadlines, hearing dates, and likely neighborhood impacts.</span></div><div class="action"><b>Draft a neighbor update</b><span class="small">Make a plain-language flyer, email, or association note.</span></div><div class="action"><b>Ask the right official</b><span class="small">Identify city vs county responsibility before shouting into the wrong mailbox.</span></div><div class="action"><b>Capture repeat tasks</b><span class="small">Turn common resident needs into NeighborhoodOS agent templates with human review.</span></div></div></section>
+  </main>
 
-<section class="grid" style="margin-top:16px">
-  <div class="panel span6"><h2>AI / WaldoNet role</h2><p>This is where the WaldoNet idea plugs in without making the hardware the hero.</p><div class="list"><div class="item"><b>Explain civic gobbledygook</b><span class="meta">Turn agendas, budgets, staff reports, and county documents into readable summaries with source links.</span></div><div class="item"><b>Find local relevance</b><span class="meta">Flag items that mention Waldo, 6th District, nearby streets, parks, zoning, stormwater, sidewalks, and property issues.</span></div><div class="item"><b>Draft neighbor-ready actions</b><span class="meta">Meeting questions, testimony notes, flyer copy, intake forms, and repair-day checklists.</span></div></div></div>
-  <div class="panel span6"><h2>Governance promise</h2><p>The node should be boringly accountable.</p><div class="note"><b>Rules for v1:</b> cite sources, show dates, keep raw links, never pretend stale data is fresh, and make it clear when an AI summary is a summary rather than an official record.</div></div>
-</section>
-
-<section id="sources" class="panel" style="margin-top:16px"><h2>Live source map</h2><p class="small">These are the public inputs this node should keep wiring into structured feeds. Some links are official pages, some are open-data datasets, and some are agenda systems that may need scrapers because governments enjoy making robots sad.</p><div class="sourcegrid">
-  <a href="https://data.kcmo.org/311/Open-311-Requests-by-Council-District/g7yw-jg39" target="_blank" rel="noopener">KCMO open 311 by council district</a>
-  <a href="https://data.kcmo.org/311/Map-of-Open-311-Requests-Resolved-requests-availab/6usz-cebw" target="_blank" rel="noopener">KCMO open 311 map</a>
-  <a href="https://kansascity.legistar.com/Calendar.aspx?G=D2E89A09-8736-4EFB-B4AE-572E0903BD5A" target="_blank" rel="noopener">Kansas City Legistar calendar</a>
-  <a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">KCMO legislation search</a>
-  <a href="https://www.kcmo.gov/city-hall/departments/city-planning-development/about-the-city-plan-commission-cpc" target="_blank" rel="noopener">City Plan Commission</a>
-  <a href="https://data.kcmo.org/Development-Review/City-Plan-Commission-Docket-with-Staff-Reports/yckm-q3pc" target="_blank" rel="noopener">CPC docket with staff reports</a>
-  <a href="https://data.kcmo.org/Budget/FY-2023-2024-Line-Item-Budget/rgpj-fr97" target="_blank" rel="noopener">KCMO line-item budget</a>
-  <a href="https://www.jacksongov.org/Government/County-Legislature" target="_blank" rel="noopener">Jackson County Legislature</a>
-  <a href="https://www.jacksongov.org/Government/County-Legislature/Legislative-Calendar" target="_blank" rel="noopener">Jackson County legislative calendar</a>
-  <a href="https://mo-jackson.publicaccessnow.com/Collector/TaxSearch.aspx" target="_blank" rel="noopener">Jackson County property tax search</a>
-</div></section>
-
-<section class="panel" style="margin-top:16px"><h2>Next build pass</h2><p>Turn this revived page from a sharp static demo into the real node again: refresh the 311 ingest, add Legistar agenda ingest, scrape or manually capture county meetings, add a development-case filter for Waldo-area addresses, and publish a weekly neighbor digest.</p></section>
-</main>
-<footer class="footer">NeighborhoodOS · West Waldo local node · revived 2026-05-03 · <a href="/">home</a> · <a href="/pilot/">/pilot</a> · <a href="https://github.com/simonlpaige/WormHole/tree/main/neighborhood-os" target="_blank" rel="noopener">source</a></footer>
+  <footer class="footer">This is the Waldo installed-node demo: useful public data first, local facilitation second, automation only where it helps residents. Last page build: <span id="build-time"></span>.</footer>
+</div>
+<script>
+const DATAKC_311 = 'https://data.kcmo.org/resource/7at3-sxhp.json?$limit=8&$order=creation_date%20DESC';
+function safeDate(v){ const d = new Date(v); return isNaN(d) ? '' : d.toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); }
+function pick(obj, keys){ for (const k of keys) if (obj && obj[k]) return obj[k]; return ''; }
+function esc(s){ return String(s ?? '').replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c])); }
+async function load311(){
+  const box = document.getElementById('sr-items');
+  try{
+    const res = await fetch(DATAKC_311, {headers:{'Accept':'application/json'}});
+    if(!res.ok) throw new Error('DataKC returned ' + res.status);
+    const rows = await res.json();
+    document.getElementById('sr-count').textContent = rows.length;
+    box.innerHTML = rows.map(r => {
+      const type = pick(r, ['service_name','request_type','type','category']) || 'Service request';
+      const addr = pick(r, ['street_address','address','location_1_address','zipcode']) || 'Kansas City';
+      const status = pick(r, ['status','case_status']) || 'open/public';
+      const date = safeDate(pick(r, ['creation_date','created_date','requested_datetime']));
+      return '<div class="item"><span class="tag live">' + esc(status) + '</span><b>' + esc(type) + '</b><span class="meta">' + esc(addr) + (date ? ' · ' + esc(date) : '') + '</span></div>';
+    }).join('') || '<div class="item"><span class="tag warn">No rows</span><b>No recent rows returned</b><span class="meta">The feed loaded but returned nothing.</span></div>';
+    document.getElementById('freshness').textContent = 'Live data loaded';
+    document.getElementById('freshness-detail').textContent = '311 feed refreshed in your browser at ' + new Date().toLocaleTimeString();
+  }catch(err){
+    document.getElementById('sr-count').textContent = '0';
+    box.innerHTML = '<div class="item"><span class="tag warn">Feed issue</span><b>DataKC 311 did not load in this browser</b><span class="meta">' + esc(err.message) + '. Links and action queue still work.</span></div>';
+    document.getElementById('freshness').textContent = 'Partial live mode';
+    document.getElementById('freshness-detail').textContent = 'One public feed failed client-side; source links remain available.';
+  }
+}
+document.getElementById('build-time').textContent = new Date().toISOString();
+load311();
+</script>
 </body>
 </html>
