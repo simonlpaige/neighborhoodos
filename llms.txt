@@ -1,27 +1,29 @@
 # NeighborhoodOS
 
-NeighborhoodOS is a community AI pilot for Waldo, Kansas City. It helps neighbors learn AI, solve practical problems, and build shared civic memory.
+> NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together.
 
-## Current architecture
+NeighborhoodOS is a civic AI system for community-governed access, shared local context, and practical problem-solving. The first pilot is Waldo Grove in Kansas City, Missouri.
 
-- **The Workshop** - the public front door: AI literacy, problem-solving clinics, and guided tool-building workshops.
-- **The Loom** - shared civic memory built from Kansas City 311, city open data, county/state records, and Waldo resources/assets.
-- **The Grove** - community-governed access to AI capacity, trusted spaces, tools, and stewardship rules.
+## Public architecture
 
-## Workshop emphasis
+- **The Workshop** - the public front door. Residents learn AI, bring stuck local problems, and build small useful tools with human review.
+- **The Loom** - the shared working memory. It gathers civic sources, local resource maps, meeting notes, open commitments, and provenance so people and agents can understand what is happening.
+- **The Grove** - the local stewardship layer. It includes trusted spaces, shared tools, training, operating agreements, and community-governed AI capacity.
 
-The Workshop is for residents first, especially vulnerable individuals and people most likely to be affected by automated systems without having a say. It also serves community leaders, nonprofits, and local organizations.
+## Current pilot: Waldo Grove
 
-Learning should have levels:
+WaldoNet was the prototype name. Waldo Grove is the current pilot frame. NeighborhoodOS is the broader model.
 
-1. Safe user - ask better questions, protect private data, spot scams, verify outputs.
-2. Local problem framer - turn a messy issue into a brief, checklist, resource map, or 311 follow-up plan.
-3. Tool builder - build a small assistant, tracker, intake form, or neighborhood guide with supervision.
-4. Workshop helper - help others learn and maintain shared resources.
+The 90-day pilot shape:
 
-## Loom build direction
+1. Three Learn sessions for practical AI literacy, safety, privacy, scams, bias, and verification.
+2. Two Solve clinics where residents and organizations turn real problems into briefs, source lists, and next actions.
+3. Two Build workshops for small useful tools such as guides, trackers, intake forms, and resource maps.
+4. One Loom seed from public civic data and Waldo resource data.
 
-Start The Loom with the existing NeighborhoodOS build guide:
+## Loom source direction
+
+The Loom should begin with sources that can be fetched, linked, and checked:
 
 - Kansas City 311 requests
 - permits
@@ -34,13 +36,20 @@ Start The Loom with the existing NeighborhoodOS build guide:
 - county and state records that affect Waldo
 - Waldo resources and assets: associations, libraries, schools, churches, clinics, nonprofits, mutual aid, makerspaces, and trusted local businesses
 
-## Naming
+If data is live, say so. If a feed is not parsed yet, link to the public source. Do not invent freshness.
 
-WaldoNet was the prototype name. Waldo Grove is the current pilot frame. NeighborhoodOS is the broader model.
+## Safety boundaries
 
-## Boundaries
+Do not frame NeighborhoodOS as predictive policing, a people database, resident dossiers, protest monitoring, private social scraping, sensitive case management, or outbound automated civic decision-making. The system should support human review and community benefit.
 
-Do not present this as a business project or a corporate product. Do not overclaim full community-owned infrastructure on day one. Use community-governed access unless local ownership is actually established.
+Use **community-governed access** unless full community ownership is actually established.
+
+## Public URLs
+
+- Home: https://neighborhoodos.org/
+- Waldo local dashboard: https://neighborhoodos.org/local/
+- Pilot alias: https://neighborhoodos.org/pilot/
+- Source: https://github.com/simonlpaige/neighborhoodos
 
 ## Contact
 

@@ -3,53 +3,319 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NeighborhoodOS - Community AI for Waldo</title>
-<meta name="description" content="NeighborhoodOS is a community AI pilot for Waldo: practical AI literacy, problem-solving workshops, and a civic Loom built from 311, city, county, state, and neighborhood resource data.">
+<title>NeighborhoodOS | Learn, solve, and build with community AI</title>
+<meta name="description" content="NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together. The Waldo Grove pilot starts with The Workshop: practical AI literacy, problem clinics, and shared civic memory.">
 <link rel="canonical" href="https://neighborhoodos.org/">
 <meta property="og:title" content="NeighborhoodOS">
-<meta property="og:description" content="A Waldo pilot for community AI literacy, problem-solving, and shared civic memory.">
+<meta property="og:description" content="Community-governed AI capacity, shared civic memory, and practical problem-solving through The Workshop, The Loom, and The Grove.">
 <meta property="og:url" content="https://neighborhoodos.org/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"NeighborhoodOS","url":"https://neighborhoodos.org/","description":"A community AI pilot in Waldo, Kansas City, focused on practical AI literacy, problem-solving workshops, and shared civic memory built from local public data and neighborhood resources.","areaServed":{"@type":"Place","name":"Waldo, Kansas City, Missouri"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOccupationalProgram","name":"The Workshop - Waldo pilot","description":"A community AI learning and problem-solving program with Learn, Solve, and Build tracks, including beginner literacy, safety, higher-level workshops, and real tool-building with human review.","provider":{"@type":"Organization","name":"NeighborhoodOS"},"educationalProgramMode":"in-person and hybrid"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NeighborhoodOS",
+  "url": "https://neighborhoodos.org/",
+  "description": "NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together.",
+  "areaServed": { "@type": "Place", "name": "Waldo, Kansas City, Missouri" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "The Workshop - Waldo Grove pilot",
+  "description": "A community AI learning and problem-solving pilot with Learn, Solve, and Build tracks for residents and local organizations.",
+  "provider": { "@type": "Organization", "name": "NeighborhoodOS" },
+  "educationalProgramMode": "in-person and hybrid"
+}
+</script>
 <style>
-*, *::before, *::after { box-sizing: border-box; }
-:root { --bg:#0b1020; --panel:#111827; --panel-2:#172033; --panel-3:#0f172a; --line:#263244; --text:#e5e7eb; --muted:#94a3b8; --soft:#cbd5e1; --blue:#38bdf8; --green:#22c55e; --yellow:#f59e0b; --red:#ef4444; --violet:#a78bfa; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --paper:#F5EFE6; --paper-2:#EDE5D6; --paper-3:#E2D8C3;
+  --ink:#1F1A17; --ink-2:#3A332D; --ink-3:#7A6F66;
+  --terracotta:#C2553A; --terracotta-deep:#8E3A26; --ochre:#D9A441;
+  --moss:#5C7A4E; --dusk:#3F4A6B; --brick:#8B2E1F;
+  --display:"Fraunces", Georgia, serif; --body:"Inter Tight", system-ui, sans-serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+  --rule:1px solid var(--ink); --rule-soft:1px solid var(--paper-3);
+}
 html { scroll-behavior:smooth; }
-body { margin:0; background:var(--bg); color:var(--text); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.6; }
-a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underline; } strong { color:#fff; }
-nav { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; gap:18px; padding:14px 22px; background:rgba(11,16,32,.92); border-bottom:1px solid var(--line); backdrop-filter:blur(10px); }
-.brand { font-weight:800; letter-spacing:-.02em; color:#fff; } .brand span { color:var(--green); }
-.nav-links { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; } .nav-links a { color:var(--muted); font-size:13px; padding:6px 10px; border-radius:999px; } .nav-links a:hover { color:var(--text); background:var(--panel-2); text-decoration:none; }
-.wrap { max-width:1120px; margin:0 auto; padding:34px 20px 70px; }
-.page-header { padding:28px; border:1px solid var(--line); border-radius:22px; background:linear-gradient(135deg, rgba(56,189,248,.13), rgba(34,197,94,.10) 45%, rgba(167,139,250,.10)); box-shadow:0 24px 80px rgba(0,0,0,.28); }
-.eyebrow { color:var(--green); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; margin-bottom:10px; }
-h1 { margin:0; max-width:850px; font-size:clamp(34px,5vw,62px); line-height:1.02; letter-spacing:-.045em; }
-.lede { max-width:820px; margin:18px 0 0; color:var(--soft); font-size:18px; }
-.ctas { margin-top:24px; display:flex; flex-wrap:wrap; gap:12px; } .btn { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); background:var(--panel); color:var(--text); padding:10px 15px; border-radius:12px; font-weight:700; } .btn.primary { background:var(--green); color:#03110a; border-color:var(--green); } .btn:hover { text-decoration:none; filter:brightness(1.05); }
-.stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:18px 0 34px; } .stat-card { padding:18px; border:1px solid var(--line); border-radius:16px; background:var(--panel); } .stat-n { font-size:28px; font-weight:850; line-height:1; } .stat-l { margin-top:7px; color:var(--muted); font-size:13px; } .blue{color:var(--blue)} .green{color:var(--green)} .yellow{color:var(--yellow)} .violet{color:var(--violet)}
-section { margin-top:34px; } .section-title { display:flex; align-items:end; justify-content:space-between; gap:20px; border-bottom:1px solid var(--line); padding-bottom:12px; margin-bottom:16px; } .section-title h2 { margin:0; font-size:24px; letter-spacing:-.02em; } .section-title p { margin:0; color:var(--muted); font-size:14px; max-width:560px; }
-.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; } .grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
-.card { border:1px solid var(--line); background:var(--panel); border-radius:18px; padding:20px; } .card.emph { background:linear-gradient(180deg, var(--panel-2), var(--panel)); } .card h3 { margin:0 0 8px; color:#fff; font-size:18px; } .card p { margin:0 0 12px; color:var(--soft); } .card .tag { display:inline-block; margin-bottom:10px; color:var(--green); text-transform:uppercase; letter-spacing:.12em; font-size:11px; font-weight:850; }
-ul { margin:10px 0 0; padding-left:20px; color:var(--soft); } li { margin:7px 0; }
-.ladder { display:grid; gap:10px; } .level { border:1px solid var(--line); border-radius:14px; padding:14px; background:var(--panel-3); } .level b { color:#fff; }
-.note { color:var(--muted); font-size:13px; border-left:3px solid var(--line); padding-left:12px; margin-top:14px; }
-footer { border-top:1px solid var(--line); color:var(--muted); text-align:center; padding:24px; font-size:13px; }
-@media (max-width:840px){ nav{align-items:flex-start; flex-direction:column}.stats-grid,.grid-3,.grid-2{grid-template-columns:1fr}.page-header{padding:22px}.lede{font-size:16px} }
+body { font-family:var(--body); color:var(--ink); background:var(--paper); line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+a { color:var(--dusk); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+a:hover { color:var(--terracotta-deep); }
+:focus-visible { outline:2px solid var(--terracotta); outline-offset:3px; border-radius:4px; }
+.skip-link { position:absolute; left:16px; top:-80px; background:var(--ink); color:var(--paper); padding:10px 14px; z-index:200; }
+.skip-link:focus { top:16px; }
+.site-nav { position:sticky; top:0; z-index:100; min-height:64px; padding:0 28px; display:flex; align-items:center; justify-content:space-between; gap:24px; background:rgba(245,239,230,.94); border-bottom:var(--rule-soft); backdrop-filter:blur(10px); }
+.nav-logo { font-family:var(--display); font-weight:600; font-size:21px; letter-spacing:-.01em; color:var(--ink); text-decoration:none; }
+.nav-logo .os { font-variant:small-caps; font-size:.9em; letter-spacing:.03em; }
+.nav-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:0; }
+.nav-links a { min-height:64px; display:flex; align-items:center; padding:0 14px; font-family:var(--mono); font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2); text-decoration:none; border-bottom:2px solid transparent; }
+.nav-links a:hover { color:var(--terracotta); border-bottom-color:var(--terracotta); }
+.container { max-width:1120px; margin:0 auto; padding:0 28px; }
+.hero { padding:86px 0 64px; border-bottom:var(--rule-soft); }
+.hero-grid { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr); gap:48px; align-items:end; }
+.eyebrow, .num, .label { font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); font-weight:500; }
+h1, h2, h3 { text-wrap:balance; }
+h1 { max-width:13ch; margin:18px 0 24px; font-family:var(--display); font-style:italic; font-weight:400; font-size:clamp(44px,7vw,84px); line-height:.98; letter-spacing:-.02em; }
+h1 em, h2 em { color:var(--terracotta-deep); font-style:italic; }
+.lede { max-width:64ch; font-size:clamp(18px,2vw,22px); line-height:1.55; color:var(--ink-2); }
+.hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; width:max-content; max-width:100%; min-height:44px; padding:11px 16px; border-radius:8px; border:1px solid var(--ink); font-family:var(--mono); font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--ink); text-decoration:none; background:transparent; }
+.btn:hover { background:var(--ink); color:var(--paper); text-decoration:none; }
+.btn.primary { background:var(--terracotta-deep); border-color:var(--terracotta-deep); color:var(--paper); }
+.btn.primary:hover { background:var(--ink); border-color:var(--ink); }
+.status-card { background:var(--paper-2); border:var(--rule-soft); border-radius:12px; padding:24px; }
+.status-card strong { display:block; margin:8px 0; font-family:var(--display); font-style:italic; font-size:32px; font-weight:400; line-height:1.05; color:var(--terracotta-deep); }
+.status-card p { color:var(--ink-2); }
+.pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.pill { border:var(--rule-soft); border-radius:999px; padding:7px 11px; font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2); background:var(--paper); }
+section { padding:72px 0; border-bottom:var(--rule-soft); }
+section.alt { background:var(--paper-2); }
+.section-head { display:grid; grid-template-columns:96px 1fr; gap:24px; align-items:baseline; margin-bottom:34px; }
+h2 { max-width:20ch; font-family:var(--display); font-style:italic; font-weight:400; font-size:clamp(34px,4.6vw,58px); line-height:1.05; letter-spacing:-.01em; }
+h3 { margin-bottom:10px; font-family:var(--display); font-weight:500; font-size:25px; line-height:1.2; }
+p { max-width:68ch; margin-bottom:18px; }
+ul { margin:14px 0 0 20px; color:var(--ink-2); }
+li { margin:8px 0; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+.card { background:var(--paper); border:var(--rule-soft); border-radius:12px; padding:24px; }
+.alt .card { background:var(--paper-2); }
+.card p { color:var(--ink-2); }
+.card .tag { display:inline-flex; width:max-content; margin-bottom:12px; padding:5px 9px; border-radius:999px; background:var(--paper-3); color:var(--terracotta-deep); font-family:var(--mono); font-size:10px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; }
+.callout { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start; padding:30px; background:var(--ink); color:var(--paper); border-radius:14px; }
+.callout p, .callout li { color:var(--paper-2); }
+.callout h2 { color:var(--paper); }
+.callout .btn { color:var(--paper); border-color:var(--paper-3); }
+.callout .btn:hover { background:var(--paper); color:var(--ink); }
+.ladder { display:grid; gap:12px; }
+.step { display:grid; grid-template-columns:88px 1fr; gap:20px; padding:18px 0; border-top:var(--rule-soft); }
+.step:first-child { border-top:0; }
+.step b { display:block; margin-bottom:4px; font-size:18px; color:var(--ink); }
+.note { margin-top:20px; padding:20px 0; border-top:var(--rule-soft); border-bottom:var(--rule-soft); color:var(--terracotta-deep); font-family:var(--display); font-style:italic; font-size:23px; line-height:1.35; }
+.source-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+.source-row a { display:inline-flex; align-items:center; min-height:40px; padding:9px 12px; border:var(--rule-soft); border-radius:8px; background:var(--paper); font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; color:var(--ink-2); }
+.source-row a:hover { color:var(--terracotta-deep); border-color:var(--terracotta-deep); }
+footer { padding:48px 0 72px; font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); }
+.footer-row { display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between; }
+.footer-row a { color:var(--ink-2); }
+@media (max-width:900px) {
+  .hero-grid, .grid-3, .grid-2, .callout { grid-template-columns:1fr; }
+  .section-head { grid-template-columns:1fr; gap:8px; }
+  .site-nav { align-items:flex-start; flex-direction:column; padding:12px 20px; }
+  .nav-links { justify-content:flex-start; }
+  .nav-links a { min-height:40px; padding:0 12px 0 0; }
+  .container { padding:0 20px; }
+  .hero { padding:58px 0 48px; }
+  section { padding:56px 0; }
+}
+@media (max-width:560px) {
+  .site-nav { gap:8px; }
+  .nav-links { gap:6px 10px; }
+  .nav-links a { min-height:30px; padding:0; font-size:10px; letter-spacing:.1em; }
+  h1 { max-width:11ch; font-size:clamp(38px,12vw,50px); line-height:1.02; }
+  .hero-actions .btn { width:100%; }
+  .step { grid-template-columns:1fr; gap:4px; }
+  .status-card, .card, .callout { padding:20px; }
+}
 </style>
 </head>
 <body>
-<nav aria-label="Primary"><div class="brand">Neighborhood<span>OS</span></div><div class="nav-links"><a href="#workshop">Workshop</a><a href="#loom">Loom</a><a href="#grove">Grove</a><a href="#pilot">Pilot</a><a href="#partner">Partner</a></div></nav>
-<main class="wrap">
-<header class="page-header"><div class="eyebrow">Waldo Grove pilot · Kansas City</div><h1>Community AI that helps neighbors learn, solve, and build.</h1><p class="lede">NeighborhoodOS starts with people, not software. The first pilot centers <strong>The Workshop</strong>: practical AI literacy for residents, seniors, parents, vulnerable neighbors, and community leaders, plus problem-solving clinics and advanced build sessions for tools the neighborhood actually needs.</p><div class="ctas"><a class="btn primary" href="#workshop">Start with The Workshop</a><a class="btn" href="#loom">See what The Loom will track</a></div></header>
-<div class="stats-grid" aria-label="Pilot summary"><div class="stat-card"><div class="stat-n green">Learn</div><div class="stat-l">AI literacy, safety, and confidence</div></div><div class="stat-card"><div class="stat-n blue">Solve</div><div class="stat-l">Clinics for real local problems</div></div><div class="stat-card"><div class="stat-n yellow">Build</div><div class="stat-l">Advanced workshops making useful tools</div></div><div class="stat-card"><div class="stat-n violet">Loom</div><div class="stat-l">311, civic data, and Waldo resources</div></div></div>
-<section id="workshop"><div class="section-title"><h2>The Workshop</h2><p>The public front door: learn what AI can do, use it safely, bring stuck problems, and build practical tools with human review.</p></div><div class="grid-3"><article class="card emph"><span class="tag">Learn</span><h3>AI literacy for people first</h3><p>Not just executives, founders, or civic insiders. The first audience is residents who are most likely to be acted on by AI without being invited into the room.</p><ul><li>Seniors, parents, students, renters, workers, disabled neighbors, and low-literacy residents.</li><li>What AI is good at, bad at, and too risky for.</li><li>Privacy, scams, bias, hallucinations, and when to ask a human.</li></ul></article><article class="card emph"><span class="tag">Solve</span><h3>Problem-solving clinics</h3><p>Bring a real problem. Leave with a clearer brief, useful context, a stakeholder map, and the next practical move.</p><ul><li>Service navigation and civic issue triage.</li><li>Neighborhood association operations.</li><li>Documents, forms, phone trees, and process bottlenecks.</li></ul></article><article class="card emph"><span class="tag">Build</span><h3>Tool-building workshops</h3><p>Learning should advance. People should be able to move from "what is this?" to "I helped build something useful." Tiny miracle, fewer slides.</p><ul><li>Guided build nights for forms, trackers, local guides, and simple automations.</li><li>Apprentice-to-builder levels, with real portfolio artifacts.</li><li>Community-benefit tools first; commercial language later, if earned.</li></ul></article></div></section>
-<section id="advancement"><div class="section-title"><h2>A path of advancement</h2><p>The Workshop should not be a one-off “Intro to AI” class. It should give people a ladder.</p></div><div class="ladder"><div class="level"><b>Level 1 · Safe user:</b> ask better questions, protect private data, spot scams, verify outputs.</div><div class="level"><b>Level 2 · Local problem framer:</b> turn a messy issue into a brief, checklist, resource map, or 311 follow-up plan.</div><div class="level"><b>Level 3 · Tool builder:</b> build a small assistant, tracker, intake form, or neighborhood guide with supervision.</div><div class="level"><b>Level 4 · Workshop helper:</b> help others learn, document patterns, and maintain shared resources.</div></div></section>
-<section id="loom"><div class="section-title"><h2>The Loom</h2><p>The shared civic memory layer. Start with data we can fetch, verify, and explain.</p></div><div class="grid-2"><article class="card"><span class="tag">Build first</span><h3>Public-data spine</h3><p>The Loom should begin with the practical civic data already described in the build guide, then become useful through Workshop questions.</p><ul><li>Kansas City 311 requests and follow-up state.</li><li>City permits, violations, dangerous buildings, crime reports, budgets, vendor payments, zoning, council agendas, and votes.</li><li>County and state records where they affect Waldo: property, courts, elections, agencies, representatives, and public programs.</li></ul></article><article class="card"><span class="tag">Local context</span><h3>Waldo resources and assets</h3><p>The Loom is not only government data. It should know the living neighborhood.</p><ul><li>Neighborhood associations, libraries, churches, schools, clinics, nonprofits, mutual aid groups, makerspaces, and trusted local businesses.</li><li>Meeting notes, commitments, recurring problems, and who knows what.</li><li>Resource maps for residents who need help now, not after a procurement cycle wakes up.</li></ul></article></div><p class="note">The existing NeighborhoodOS build guide already covers the KC Open Data pipeline: fetch 311, permits, crime, violations, dangerous buildings, budget, vendor payments, ingest to SQLite, generate digests, and ask plain-English questions with local models.</p></section>
-<section id="grove"><div class="section-title"><h2>The Grove</h2><p>Community-governed access to AI capacity, spaces, tools, and rules.</p></div><div class="card"><p>The Grove is the local stewardship layer. It can include shared devices, trusted access points, workshops, compute, partner spaces, and operating agreements. The point is not to brag about servers. The point is that people have a governed place to learn and use AI without being harvested, priced out, or talked down to.</p></div></section>
-<section id="pilot"><div class="section-title"><h2>90-day Waldo pilot</h2><p>Small enough to run. Useful enough to learn from.</p></div><div class="card"><ul><li><strong>3 Learn sessions</strong> for residents first, with special attention to vulnerable people and people most exposed to automated systems.</li><li><strong>2 Solve clinics</strong> for real problems from residents, neighborhood groups, and local organizations.</li><li><strong>2 advanced Build workshops</strong> where participants make simple, useful tools from actual local needs.</li><li><strong>1 Loom seed</strong> built from 311, city, county, state, and Waldo resource data.</li><li><strong>1 candidate tool</strong> only if the clinics reveal a clear need. A service navigator and action tracker is the current best example.</li></ul><p class="note">WaldoNet was the prototype name. Waldo Grove is the current pilot frame. NeighborhoodOS is the broader model.</p></div></section>
-<section id="partner"><div class="section-title"><h2>Partner with the pilot</h2><p>Help host, recruit, shape, or fund a concrete Workshop pilot.</p></div><div class="card emph"><p>We are looking for civic partners who want a practical 90-day pilot: teach useful AI, help neighbors solve real problems, and seed a shared Loom from public data and local resources.</p><ul><li><strong>Host a session</strong> for residents or partner organizations.</li><li><strong>Bring a problem</strong> to a Solve clinic.</li><li><strong>Help build the Loom</strong> from public datasets and Waldo resource maps.</li></ul></div></section>
-</main><footer>NeighborhoodOS · Waldo Grove pilot, Kansas City · <a href="/llms.txt">llms.txt</a></footer>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="#workshop">Workshop</a>
+    <a href="#layers">Layers</a>
+    <a href="#pilot">Pilot</a>
+    <a href="/local/">Local dashboard</a>
+    <a href="/llms.txt">llms.txt</a>
+  </div>
+</nav>
+<main id="main">
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Waldo Grove pilot · Kansas City</span>
+        <h1>Community AI for <em>neighbor action</em>.</h1>
+        <p class="lede">NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together. The first public step is The Workshop: a place to learn AI, bring stuck civic problems, and build small tools people can actually use.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="btn primary" href="#workshop">Explore the Workshop pilot</a>
+          <a class="btn" href="/local/">Open the Waldo dashboard</a>
+        </div>
+      </div>
+      <aside class="status-card" aria-label="Pilot summary">
+        <span class="eyebrow">What starts first</span>
+        <strong>Learn, solve, build.</strong>
+        <p>The software does not swing the hammer. People swing the hammer. NeighborhoodOS gives the neighborhood a shared bench, a sharp notebook, and a safer way to use AI without pretending the machine is in charge.</p>
+        <div class="pills">
+          <span class="pill">AI literacy</span>
+          <span class="pill">Problem clinics</span>
+          <span class="pill">Civic memory</span>
+          <span class="pill">Human review</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <section id="workshop">
+    <div class="container">
+      <div class="section-head">
+        <span class="num">01</span>
+        <h2>The Workshop is the front door.</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="tag">Learn</span>
+          <h3>Practical AI literacy</h3>
+          <p>Residents learn what AI can do, where it breaks, what private information to keep out of it, and how to check its work.</p>
+          <ul>
+            <li>Plain-language sessions for beginners.</li>
+            <li>Scams, bias, privacy, and hallucinations.</li>
+            <li>Confidence for people most likely to be acted on by automated systems.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag">Solve</span>
+          <h3>Bring a real problem</h3>
+          <p>A stuck issue becomes a cleaner brief, a source list, a map of who is involved, and a next move a human can make.</p>
+          <ul>
+            <li>311 follow-up and city process puzzles.</li>
+            <li>Home repair, resource navigation, and paperwork snarls.</li>
+            <li>Neighborhood association bottlenecks.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag">Build</span>
+          <h3>Make small useful tools</h3>
+          <p>When a need is clear, builders and residents make simple helpers: trackers, guides, forms, checklists, and local assistants with human review.</p>
+          <ul>
+            <li>Guided build nights.</li>
+            <li>Visible artifacts, not slide decks.</li>
+            <li>Community benefit first.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="note">The goal is not one more “Intro to AI” class. The goal is a ladder: safe user, local problem framer, tool builder, Workshop helper.</p>
+    </div>
+  </section>
+
+  <section id="layers" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="num">02</span>
+        <h2>Three layers, kept clear.</h2>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="tag">The Grove</span>
+          <h3>Community-governed access</h3>
+          <p>The Grove is the local stewardship layer: trusted places, shared tools, training, agreements, and AI capacity that serves the neighborhood instead of harvesting it.</p>
+        </article>
+        <article class="card">
+          <span class="tag">The Loom</span>
+          <h3>Shared working memory</h3>
+          <p>The Loom is the civic evidence layer: 311 requests, public records, meeting notes, resource maps, commitments, and provenance, kept readable for people and agents.</p>
+        </article>
+        <article class="card">
+          <span class="tag">The Workshop</span>
+          <h3>Learn, solve, build</h3>
+          <p>The Workshop is the human layer. Neighbors bring problems, learn the tool, check the machine, and turn messy situations into practical next steps.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="loom">
+    <div class="container">
+      <div class="section-head">
+        <span class="num">03</span>
+        <h2>The Loom starts with public sources and local context.</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <span class="tag">Public-data spine</span>
+          <h3>Use what can be checked</h3>
+          <p>The first Loom seed should be boring in the best way: fetched, linked, labeled, and honest about freshness.</p>
+          <ul>
+            <li>Kansas City 311 requests, permits, violations, dangerous buildings, zoning, budgets, vendor payments, council agendas, and votes.</li>
+            <li>County and state records where they affect Waldo.</li>
+            <li>Links back to the real source when parsing is incomplete.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag">Waldo resources</span>
+          <h3>The neighborhood knows things too</h3>
+          <p>Public data is only half the story. The Loom also needs the living map of local help and local knowledge.</p>
+          <ul>
+            <li>Neighborhood associations, libraries, churches, schools, clinics, nonprofits, mutual aid, and trusted local businesses.</li>
+            <li>Meeting notes, recurring problems, and open commitments.</li>
+            <li>Resource maps for people who need help now.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="source-row" aria-label="Source links">
+        <a href="/local/">View Waldo dashboard</a>
+        <a href="/llms.txt">Read agent overview</a>
+        <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub source</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pilot" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="num">04</span>
+        <h2>Waldo Grove is the first pilot.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="ladder card">
+          <div class="step"><span class="num">1</span><div><b>Three Learn sessions</b><p>Resident-first AI literacy with special attention to people most exposed to automated systems.</p></div></div>
+          <div class="step"><span class="num">2</span><div><b>Two Solve clinics</b><p>Real problems from residents, neighborhood groups, and local organizations, worked into next moves.</p></div></div>
+          <div class="step"><span class="num">3</span><div><b>Two Build workshops</b><p>Small tools from actual needs: guides, trackers, intake forms, and source maps.</p></div></div>
+          <div class="step"><span class="num">4</span><div><b>One Loom seed</b><p>311, civic sources, county/state links, and Waldo resource data gathered into a shared memory layer.</p></div></div>
+        </div>
+        <aside class="card">
+          <span class="tag">Naming note</span>
+          <h3>WaldoNet was the prototype name.</h3>
+          <p>Waldo Grove is the current pilot frame. NeighborhoodOS is the broader model. The Workshop is the public front door. The Loom is the shared context brain. The Grove is the local stewardship layer.</p>
+          <p>That keeps the page from becoming a mythology drawer. Three names is already enough civic confetti.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="partner">
+    <div class="container">
+      <div class="callout">
+        <div>
+          <span class="eyebrow">Partner with the pilot</span>
+          <h2>Bring a place, a problem, or a room of neighbors.</h2>
+        </div>
+        <div>
+          <p>NeighborhoodOS is looking for partners who want a practical 90-day pilot: teach useful AI, work real problems, seed a shared Loom, and learn what a community-governed model should become.</p>
+          <ul>
+            <li>Host a Workshop session.</li>
+            <li>Bring a problem to a Solve clinic.</li>
+            <li>Help map public sources and Waldo resources.</li>
+          </ul>
+          <a class="btn" href="mailto:simon@simonlpaige.com?subject=NeighborhoodOS%20pilot">Talk about the pilot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container footer-row">
+    <span>NeighborhoodOS · Waldo Grove pilot · Kansas City</span>
+    <span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a> · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">source</a></span>
+  </div>
+</footer>
 </body>
 </html>
