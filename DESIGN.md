@@ -16,7 +16,7 @@ The software is not the hero. Neighbor action is the hero.
 2. Editorial before dashboard. Make pages readable first, interactive second.
 3. Warm civic paper. Backgrounds should feel like paper, not cold app chrome.
 4. Local specificity. Prefer Waldo, KCMO, Jackson County, 311, council, planning, budgets, home repair, block-level language.
-5. No mythology pileups. NeighborhoodOS, Workshop, Loom, Grove, WaldoNet, Commonweave, and KCDD need clear roles.
+5. No mythology pileups. NeighborhoodOS, education/training/problem-solving, public data/memory, local AI infrastructure/resources, WaldoNet, Commonweave, and KCDD need clear roles.
 6. Small useful wedge. Design around one resident action at a time.
 7. Accessibility is part of the aesthetic: contrast, semantic HTML, visible focus, readable type, keyboard-safe controls.
 
@@ -109,9 +109,9 @@ For dashboards and local-node pages:
 ## Relationship language
 
 - NeighborhoodOS = umbrella civic AI ecosystem and public site.
-- The Workshop = public front door for Learn / Solve / Build and resident-first AI literacy.
-- The Loom = civic evidence and memory layer with provenance and safety boundaries.
-- The Grove / Waldo Grove = local stewardship and place-based pilot frame.
+- Education, training, & problem solving = public front door for Learn / Solve / Build and resident-first AI literacy.
+- Public data, federated governance, neighborhood assets tracking and memory = civic evidence and memory layer with provenance and safety boundaries.
+- Hardware/local AI infrastructure, shared tools & resources = local capacity and stewardship layer for the place-based pilot frame.
 - WaldoNet = legacy/prototype language. Use only when historical context requires it.
 - Commonweave = sibling project, not merged into NeighborhoodOS.
 

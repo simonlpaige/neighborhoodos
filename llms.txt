@@ -2,28 +2,28 @@
 
 > NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together.
 
-NeighborhoodOS is a civic AI system for community-governed access, shared local context, and practical problem-solving. The first pilot is Waldo Grove in Kansas City, Missouri.
+NeighborhoodOS is a civic AI system for community-governed access, shared local context, and practical problem-solving. The first pilot is Waldo in Kansas City, Missouri.
 
 ## Public architecture
 
-- **The Workshop** - the public front door. Residents learn AI, bring stuck local problems, and build small useful tools with human review.
-- **The Loom** - the shared working memory. It gathers civic sources, local resource maps, meeting notes, open commitments, and provenance so people and agents can understand what is happening.
-- **The Grove** - the local stewardship layer. It includes trusted spaces, shared tools, training, operating agreements, and community-governed AI capacity.
+- **Education, training, & problem solving** - the public front door. Residents learn AI, bring stuck local problems, and build small useful tools with human review.
+- **Public data, federated governance, neighborhood assets tracking and memory** - the shared working memory. It gathers civic sources, local resource maps, meeting notes, open commitments, and provenance so people and agents can understand what is happening.
+- **Hardware/local AI infrastructure, shared tools & resources** - the local capacity layer. It includes trusted spaces, shared tools, training, operating agreements, and community-governed AI capacity.
 
-## Current pilot: Waldo Grove
+## Current pilot: Waldo
 
-WaldoNet was the prototype name. Waldo Grove is the current pilot frame. NeighborhoodOS is the broader model.
+WaldoNet was the prototype name. Waldo is the current pilot frame. NeighborhoodOS is the broader model.
 
 The 90-day pilot shape:
 
 1. Three Learn sessions for practical AI literacy, safety, privacy, scams, bias, and verification.
 2. Two Solve clinics where residents and organizations turn real problems into briefs, source lists, and next actions.
-3. Two Build workshops for small useful tools such as guides, trackers, intake forms, and resource maps.
-4. One Loom seed from public civic data and Waldo resource data.
+3. Two Build sessions for small useful tools such as guides, trackers, intake forms, and resource maps.
+4. One public-data and memory seed from public civic data and Waldo resource data.
 
-## Loom source direction
+## Public-data and memory source direction
 
-The Loom should begin with sources that can be fetched, linked, and checked:
+The shared memory layer should begin with sources that can be fetched, linked, and checked:
 
 - Kansas City 311 requests
 - permits
