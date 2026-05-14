@@ -1,39 +1,52 @@
 # NeighborhoodOS
 
-**An operating system for neighborhoods that want to solve their own problems.**
-
-Pick one shared pain. Build a working tool around it. Use the tool to strengthen trust, capacity, and self-governance. Rotate to the next pain when the first one is handled well.
+**Helping communities build practical AI capacity, share context, and solve real problems together.**
 
 Live site: [neighborhoodos.org](https://neighborhoodos.org)
 
 ---
 
-## The wedge approach
+## What this is
 
-Most civic software tries to do everything for everyone. It ends up doing nothing for anyone.
+NeighborhoodOS is a civic AI project with three practical pieces:
 
-NeighborhoodOS works the other way. We start with **one sharp, specific pain** in **one real neighborhood** and ship a working tool for it in weeks, not quarters. When it earns trust, we keep it running and pick the next pain.
+1. **Education, training, and problem solving** - residents learn what AI can and cannot do, bring real local problems to structured clinics, and help build simple community-benefit tools.
+2. **Public data, federated governance, and neighborhood memory** - shared civic memory built from 311, city, county, and state records, plus local resources, assets, and meeting notes. Built to guide decisions, surface problems and solutions, and protect communities from institutional forgetting.
+3. **Local AI infrastructure and shared tools** - community-governed access to AI capacity. Trusted access points, shared tools, clear usage rules, and local stewardship.
 
-The pain we pick has to pass four tests:
-
-1. **Concrete.** You can describe it in one sentence at a kitchen table.
-2. **Costly.** People are losing money, time, or dignity to it right now.
-3. **Local.** The solution works at the block level without waiting on policy.
-4. **Swappable.** If we build the wrong thing, we can stop and pick something else without tearing out the platform.
-
-The platform in this repo stays the same across wedges. The wedge modules (`wedges/*`) are the things we swap.
+The entry point is always **Learn, Solve, Build** - not the platform.
 
 ---
 
-## Current wedge: Home maintenance (West Waldo, KCMO)
+## Current focus: 90-day pilot
 
-Pilot target: **homeowners in West Waldo, Kansas City, Missouri.**
+The first pilot targets one neighborhood and three tracks:
 
-Out of scope: rental properties, landlord coordination, commercial property.
+- **Learn** - 3 sessions of practical AI literacy for residents, neighborhood leaders, nonprofits, and small businesses.
+- **Solve** - 2 problem-solving clinics where participants bring stuck problems and leave with stakeholder maps and clear next steps.
+- **Build** - 1 lightweight tool, scoped only after the Solve clinics surface a real need.
 
-Why this first: older neighborhoods consistently tell us the same story. An aging homeowner gets a $200 repair they can't find a trustworthy contractor for, postpones it, and it turns into an $8,000 disaster. Or three neighbors on the same block hire three different people for the same fence stain job at three different price points, with two bad outcomes. A vetted-neighbor handyperson network, a shared tool library, and a "I'll come look at it for free" first-pass diagnostic can save real money and print real trust inside 90 days.
+The candidate build on the table: a **Neighborhood Service Navigator and Action Tracker** - it helps residents turn a confusing local issue into plain-language next steps, relevant resources, source links, and a follow-up tracker reviewed by humans. Not a 311 replacement. Not legal advice. Not a sensitive-data system.
 
-See [`wedges/home-maintenance/`](./wedges/home-maintenance/) for pilot code and docs.
+Success at day 90: 3 Learn sessions, 2 Solve clinics, 10-20 real problems captured, 3-5 moved to next actions, 1 Build candidate scoped or set aside with a clear reason, and enough evidence to decide what comes next.
+
+---
+
+## Safety commitments
+
+The public data and neighborhood memory layer is designed to be bad at surveillance on purpose.
+
+Hard limits:
+- No resident dossiers
+- No people scoring
+- No predictive policing
+- No protest monitoring
+- No immigration-enforcement use
+- No private social scraping
+- No sensitive case management
+- No automated adverse decisions about people
+
+The design uses public and provenance-first records, human review, append-only audit events, and clear data-steward roles.
 
 ---
 
@@ -45,10 +58,10 @@ neighborhoodos/
 ├── connectors/      # City data (KC Open Data, Legistar), social signals
 ├── ingest/          # Cron-ready ingest scripts (populate the DB)
 ├── identity/        # Civic identity, trust levels, federated voting
-├── wedges/          # Wedge implementations (swap me as we learn)
-│   └── home-maintenance/   # Current pilot: West Waldo home maintenance
+├── wedges/          # Pilot modules (swap as we learn)
+│   └── home-maintenance/   # West Waldo home maintenance (early prototype)
 ├── site/            # neighborhoodos.org frontend
-├── docs/            # Architecture + wedge playbook
+├── docs/            # Architecture + pilot playbook
 └── package.json
 ```
 
@@ -56,11 +69,11 @@ neighborhoodos/
 
 ## Principles
 
-- **Proof before framework.** Ship the ugliest v1 that solves a real problem. The framework is what gets written AFTER the v1 works, not before.
-- **Neighborhoods over platforms.** Each neighborhood runs its own node. No central server. Data stays local unless residents vote to federate it.
-- **Trust is the feature.** The tool is a pretext for showing up reliably. If the software is good and nobody trusts anybody, we failed.
+- **Practical before platform.** Ship the smallest useful thing for one real neighborhood. The framework gets written after v1 works, not before.
+- **Neighborhoods over platforms.** Each neighborhood runs its own node. Data stays local unless residents decide otherwise.
+- **Trust is the feature.** The tool is a reason to show up reliably. Good software with no trust is a failure.
 - **Toothbrush test.** Does anyone use this daily? If not, reassess.
-- **Swap, don't scale.** A wedge that worked in one neighborhood isn't automatically right for another. Every new node starts with its own listening phase.
+- **Safety by design.** Civic memory should protect communities, not expose them. Hard limits come first.
 
 ---
 
@@ -70,8 +83,10 @@ neighborhoodos/
 git clone https://github.com/simonlpaige/neighborhoodos.git
 cd neighborhoodos
 npm install
+```
 
-# Current wedge (West Waldo home maintenance pilot):
+Pilot module (early prototype, West Waldo home maintenance):
+```bash
 cd wedges/home-maintenance
 npm install
 node fetch-all.js   # pull KC Open Data
@@ -79,19 +94,19 @@ node ingest-all.js  # load into SQLite
 node digest.js      # generate weekly digest
 ```
 
-See [`wedges/home-maintenance/LEGACY-README.md`](./wedges/home-maintenance/LEGACY-README.md) for full commands.
-
 ---
 
 ## Status
 
-Pre-alpha. One active pilot node (West Waldo). No production dependencies on this code outside that pilot. Breaking changes are still expected weekly. Issues and PRs welcome but don't expect backward compatibility yet.
+Pre-alpha. One active pilot in development (West Waldo, KCMO). Breaking changes are expected. Issues and PRs welcome.
+
+Current partners in conversation: [KC Digital Drive](https://kcdigitaldrive.org).
 
 ---
 
 ## Relationship to Commonweave
 
-[Commonweave](https://commonweave.earth) is a sibling project — a framework and directory for the broader "effortless economy" movement (co-ops, land trusts, mutual aid, commons-aligned orgs). NeighborhoodOS can optionally consume the Commonweave directory to answer "who's already working on this near me?" when a wedge calls for it. It is not required. The two projects run independently.
+[Commonweave](https://commonweave.earth) is a sibling project - a framework and directory for the broader "effortless economy" movement (co-ops, land trusts, mutual aid, commons-aligned orgs). NeighborhoodOS can optionally consume the Commonweave directory to answer "who's already working on this near me?" when a pilot calls for it. It is not required. The two projects run independently.
 
 ---
 
