@@ -11,13 +11,15 @@ This page summarizes the hard limits. The full text is [docs/BANNED-USE.md](../d
 3. **No monitoring of speech, protest, or organizers.** No sentiment analysis of residents, no mapping of who influences whom.
 4. **No scoring people.** No risk, trust, compliance, or value scores for residents or households.
 5. **No automated decisions about people.** AI may summarize and draft; humans decide who gets help, what gets escalated, what gets funded.
+6. **No unreviewed AI summaries of public meetings.** Never publish an AI-generated account of a meeting that a trained person hasn't checked. Link to [Kansas City Documenters](Partners.md) notes, which are fact-checked by The Beacon, or to the official agenda and minutes.
+7. **Hold nothing about residents by default.** Anything that changes this must be added to the [Threat Model](Threat-Model.md) first.
 
 ## What is encouraged
 
 - Aggregate patterns about infrastructure and institutions (unresolved streetlights by block, response times by department).
-- Tracking promises made by public officials in public meetings.
-- Plain-language explanations of public documents.
-- Community voting with blinded, verifiable ballots.
+- Tracking promises made by public officials in public meetings, using Documenters' verified notes or official records.
+- Plain-language explanations of public documents, reviewed by a person before they're shared.
+- Community voting with blinded, verifiable ballots (only if residents ask for it; see [Later, if residents want it](Later-If-Residents-Want-It.md)).
 
 ## How it's enforced
 

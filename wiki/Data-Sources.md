@@ -8,7 +8,7 @@ Base: `https://data.kcmo.org/resource/<id>.json`. Synced incrementally by `conne
 
 | Key | Socrata ID | Dataset | Good for | Caution |
 |---|---|---|---|---|
-| `requests_311` | `7at3-sxhp` | 311 service requests | Infrastructure patterns, response times | Free-text fields can contain personal info; steward reviews |
+| `requests_311` | `d4px-6rwg` | 311 service requests, 2021 to present | Infrastructure patterns, response times | The connector never pulls the free-text `additional_questions` field, which can hold names and phone numbers. The older `7at3-sxhp` dataset covers 2007 to March 2021 only |
 | `permits` | `ntw8-aacc` | Building permits | Development and repair trends | |
 | `violations` | `tezm-fh2e` | Property violations | Chronic code problems, especially commercial landlords | Never used to target individual homeowners |
 | `dangerous_buildings` | `ax3m-jhxx` | Dangerous buildings list | Vacancy and blight | |

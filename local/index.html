@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Waldo Local Node Dashboard | neighborhoodOS</title>
-<meta name="description" content="A working Waldo and south Kansas City civic dashboard: live 311 requests, source links for council, county, planning, budgets, and a resident action queue.">
+<meta name="description" content="Recent 311 requests in Waldo, Kansas City, links to Documenters meeting notes and city and county sources, and next steps a neighbor can take. Part of NeighborhoodOS: free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.">
 <meta property="og:title" content="Waldo Local Node Dashboard | neighborhoodOS">
-<meta property="og:description" content="Live civic signal for Waldo: 311, council, county, planning, budgets, development, and resident action.">
+<meta property="og:description" content="Recent 311 requests in Waldo, meeting notes from Kansas City Documenters, and links to city and county sources.">
 <meta property="og:url" content="https://neighborhoodos.org/local/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -141,11 +141,11 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
           </div>
           <div aria-label="Recent 311 records loaded"><div class="metric" id="sr-count">…</div><span class="meta">rows</span></div>
         </div>
-        <p>These are live public records from DataKC. The buttons below are real filters on loaded rows, not stage props. Waldo-only geofencing depends on the fields DataKC returns in-browser, so the page labels this honestly.</p>
+        <p>These are the most recent public 311 records from DataKC inside a Waldo box (about 71st to 85th Street, Ward Parkway to Holmes). The page asks DataKC only for the issue, status, date, and address, never the free-text fields where residents sometimes leave phone numbers.</p>
         <div class="filters" aria-label="311 filters">
           <button class="filter" type="button" data-filter="all" aria-pressed="true">All loaded</button>
-          <button class="filter" type="button" data-filter="open" aria-pressed="false">Open-ish</button>
-          <button class="filter" type="button" data-filter="south" aria-pressed="false">South / Waldo text</button>
+          <button class="filter" type="button" data-filter="open" aria-pressed="false">Still open</button>
+          <button class="filter" type="button" data-filter="resolved" aria-pressed="false">Resolved</button>
         </div>
         <div class="items" id="sr-items" aria-live="polite"><div class="item"><span class="tag">Loading</span><b>Loading DataKC 311 records</b><span class="meta">If this hangs, use the source link in the right rail.</span></div></div>
       </article>
@@ -154,15 +154,14 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
         <div class="card">
           <h3>Source links that work today</h3>
           <ul class="source-list">
-            <li><span class="tag live">live</span><a href="https://data.kcmo.org/311/311-Call-Center-Service-Requests/7at3-sxhp" target="_blank" rel="noopener">DataKC 311 service requests</a><span class="meta">Public service request dataset.</span></li>
+            <li><span class="tag live">live</span><a href="https://data.kcmo.org/311/Map-of-Open-311-Requests-Resolved-requests-availab/6usz-cebw" target="_blank" rel="noopener">DataKC 311 requests</a><span class="meta">Current 311 dataset (d4px-6rwg), updated daily.</span></li>
             <li><span class="tag source">source</span><a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">KCMO legislation portal</a><span class="meta">Council agendas, ordinances, resolutions.</span></li>
-            <li><span class="tag source">source</span><a href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">KCMO City Council</a><span class="meta">Members, districts, committees.</span></li>
-            <li><span class="tag source">source</span><a href="https://jacksonco.legistar.com/" target="_blank" rel="noopener">Jackson County Legislature</a><span class="meta">County meetings and district work.</span></li>
+                        <li><span class="tag source">source</span><a href="https://jacksonco.legistar.com/" target="_blank" rel="noopener">Jackson County Legislature</a><span class="meta">County meetings and district work.</span></li>
             <li><span class="tag source">source</span><a href="https://clerk.kcmo.gov/DepartmentDetail.aspx?ID=45759&GUID=BC0A8FD1-87A1-4E14-81A8-76903755163C" target="_blank" rel="noopener">City Planning and Development</a><span class="meta">Planning, zoning, hearings, permits.</span></li>
             <li><span class="tag source">source</span><a href="https://kansascitymo.opengov.com/transparency" target="_blank" rel="noopener">KCMO budget</a><span class="meta">Adopted budget and finance documents.</span></li>
           </ul>
         </div>
-        <div class="note">If a thing cannot load live yet, this page sends you to the real public source instead of dressing a dead button in a tiny tuxedo.</div>
+        <div class="note">For what happened at a public meeting, read <a href="https://kansascity.documenters.org/reporting/" target="_blank" rel="noopener">Kansas City Documenters</a>. If a thing cannot load live yet, this page sends you to the real public source instead of dressing a dead button in a tiny tuxedo.</div>
       </aside>
     </div>
   </section>
@@ -173,8 +172,8 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
       <p>NeighborhoodOS is not trying to be another civic portal. The wedge is smaller and sharper: take messy public signal, explain what changed, and help a neighbor do one useful thing before the window closes.</p>
       <div class="wedge">
         <div class="wedge-step"><span class="num">Step 01</span><h3>See what changed</h3><p>311 spikes, agenda items, county hearings, development notices, budget changes, and repeated neighborhood patterns.</p></div>
-        <div class="wedge-step"><span class="num">Step 02</span><h3>Understand why it matters</h3><p>Plain-language summaries, deadlines, district context, who controls the decision, and what is city vs county.</p></div>
-        <div class="wedge-step"><span class="num">Step 03</span><h3>Do something useful</h3><p>File a better request, attend the right meeting, email the right office, organize neighbors, or turn a repeat problem into an agent template.</p></div>
+        <div class="wedge-step"><span class="num">Step 02</span><h3>Understand why it matters</h3><p>Kansas City Documenters' fact-checked meeting notes, deadlines, district context, who controls the decision, and what is city vs county. No unreviewed AI summaries.</p></div>
+        <div class="wedge-step"><span class="num">Step 03</span><h3>Do something useful</h3><p>File a better request, attend the right meeting, email the right office, organize neighbors, or bring it to a Solve clinic.</p></div>
       </div>
     </div>
   </section>
@@ -183,12 +182,13 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
     <div class="container">
       <div class="section-head"><div class="num">02 / Actions</div><h2 id="actions-title">Resident action queue.</h2></div>
       <div class="actions">
-        <article class="action"><div><h3>Report a city issue</h3><p>Use myKCMO to file or track a 311 request. Good for trash, potholes, missed pickup, streetlights, nuisance, and city-service issues.</p></div><a class="btn" href="https://data.kcmo.org/311/Map-of-Open-311-Requests-Resolved-requests-availab/6usz-cebw" target="_blank" rel="noopener">Open 311</a></article>
-        <article class="action"><div><h3>Read the next council packet</h3><p>Go straight to the legislation portal before meetings. NeighborhoodOS can later summarize agenda items, but the source is here today.</p></div><a class="btn" href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">Open council</a></article>
+        <article class="action"><div><h3>Report a city issue</h3><p>Use myKCMO to file or track a 311 request. Good for trash, potholes, missed pickup, streetlights, nuisance, and city-service issues.</p></div><a class="btn" href="https://www.kcmo.gov/talk-to-us/mykcmo" target="_blank" rel="noopener">Open myKCMO</a></article>
+        <article class="action"><div><h3>Catch up on a meeting</h3><p>Kansas City Documenters are residents paid to take notes at public meetings; The Beacon fact-checks them. Start there, then check the official record.</p></div><a class="btn" href="https://kansascity.documenters.org/reporting/" target="_blank" rel="noopener">Read Documenters notes</a></article>
+        <article class="action"><div><h3>Read the next council packet</h3><p>Go straight to the legislation portal for agendas, ordinances, and resolutions before meetings.</p></div><a class="btn" href="https://clerk.kcmo.gov/Legislation.aspx" target="_blank" rel="noopener">Open council</a></article>
         <article class="action"><div><h3>Check county decisions</h3><p>County work affects assessments, budgets, health, courts, and services. This link opens the county legislature source.</p></div><a class="btn" href="https://jacksonco.legistar.com/" target="_blank" rel="noopener">Open county</a></article>
         <article class="action"><div><h3>Watch development</h3><p>Planning and zoning cases are where deadlines matter. Start at the city planning source while live case parsing gets built.</p></div><a class="btn" href="https://clerk.kcmo.gov/DepartmentDetail.aspx?ID=45759&GUID=BC0A8FD1-87A1-4E14-81A8-76903755163C" target="_blank" rel="noopener">Open planning</a></article>
         <article class="action"><div><h3>Follow the money</h3><p>Budgets are where values stop giving speeches and start writing checks. Use this for city budget books and finance updates.</p></div><a class="btn" href="https://kansascitymo.opengov.com/transparency" target="_blank" rel="noopener">Open budget</a></article>
-        <article class="action"><div><h3>Launch another node</h3><p>The Waldo page is an installed example. The launch guide explains how another neighborhood picks its own wedge.</p></div><a class="btn" href="/launch.html">Read launch guide</a></article>
+        <article class="action"><div><h3>Bring it to a clinic</h3><p>Stuck on something the city hasn't fixed? Solve clinics help you figure out who can fix it and what to do next.</p></div><a class="btn" href="/#brief">Turn a problem into a plan</a></article>
       </div>
     </div>
   </section>
@@ -196,25 +196,29 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
 
 <footer>
   <div class="container footer-row">
-    <div>neighborhoodos.org · Waldo installed-node demo · public sources first</div>
-    <div><a href="/">Home</a> · <a href="/launch.html">Launch guide</a> · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a></div>
+    <div>NeighborhoodOS · Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.</div>
+    <div><a href="/">Home</a> · <a href="mailto:simon@simonlpaige.com">simon@simonlpaige.com</a> · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
 
 <script>
-const DATAKC_311 = 'https://data.kcmo.org/resource/7at3-sxhp.json?$limit=25&$order=creation_date%20DESC';
-const southTerms = ['waldo', '64114', '64113', '64131', '75th', '79th', '85th', 'wornall', 'ward parkway', 'brookside', 'south']
+// Current KCMO 311 dataset (2021 to present). The old 7at3-sxhp dataset stopped in March 2021.
+// Only non-free-text fields are requested. Waldo box: ~71st to 85th St, Ward Pkwy to Holmes Rd.
+const WALDO_BOX = 'within_box(lat_long, 39.0005, -94.6140, 38.9540, -94.5750)';
+const DATAKC_311 = 'https://data.kcmo.org/resource/d4px-6rwg.json?' + new URLSearchParams({
+  '$select': 'reported_issue,issue_type,issue_sub_type,current_status,open_date_time,resolved_date,incident_address',
+  '$where': WALDO_BOX,
+  '$order': 'open_date_time DESC',
+  '$limit': '25'
+}).toString();
 let serviceRows = [];
 let activeFilter = 'all';
 function escapeHtml(value) { return String(value ?? '').replace(/[&<>\"]/g, char => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '\"':'&quot;'}[char])); }
-function pick(row, keys) { for (const key of keys) if (row && row[key]) return row[key]; return ''; }
 function niceDate(value) { const date = new Date(value); return Number.isNaN(date.getTime()) ? '' : date.toLocaleString([], {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); }
-function rowText(row) { return Object.values(row || {}).join(' ').toLowerCase(); }
-function isOpenish(row) { const status = String(pick(row, ['status', 'case_status', 'request_status'])).toLowerCase(); return !status || !/(closed|resolved|complete|cancel)/.test(status); }
-function isSouthText(row) { const text = rowText(row); return southTerms.some(term => text.includes(term)); }
+function isResolved(row) { return Boolean(row.resolved_date) || /(closed|resolved|complete|cancel)/i.test(String(row.current_status || '')); }
 function filteredRows() {
-  if (activeFilter === 'open') return serviceRows.filter(isOpenish);
-  if (activeFilter === 'south') return serviceRows.filter(isSouthText);
+  if (activeFilter === 'open') return serviceRows.filter(row => !isResolved(row));
+  if (activeFilter === 'resolved') return serviceRows.filter(isResolved);
   return serviceRows;
 }
 function renderRows() {
@@ -226,12 +230,11 @@ function renderRows() {
     return;
   }
   box.innerHTML = rows.slice(0, 10).map(row => {
-    const type = pick(row, ['service_name', 'request_type', 'type', 'category', 'description']) || 'Service request';
-    const status = pick(row, ['status', 'case_status', 'request_status']) || 'public row';
-    const address = pick(row, ['street_address', 'address', 'location_1_address', 'zipcode']) || 'Kansas City';
-    const date = niceDate(pick(row, ['creation_date', 'created_date', 'requested_datetime', 'open_date']));
-    const south = isSouthText(row) ? '<span class="tag live">south signal</span>' : '';
-    return '<div class="item"><span class="tag live">' + escapeHtml(status) + '</span>' + south + '<b>' + escapeHtml(type) + '</b><span class="meta">' + escapeHtml(address) + (date ? ' · ' + escapeHtml(date) : '') + '</span></div>';
+    const type = [row.issue_type, row.issue_sub_type].filter(Boolean).join(': ') || 'Service request';
+    const status = row.current_status || (row.resolved_date ? 'resolved' : 'public row');
+    const address = row.incident_address || 'Waldo area';
+    const date = niceDate(row.open_date_time);
+    return '<div class="item"><span class="tag ' + (isResolved(row) ? 'source' : 'live') + '">' + escapeHtml(status) + '</span><b>' + escapeHtml(type) + '</b><span class="meta">' + escapeHtml(address) + (date ? ' · opened ' + escapeHtml(date) : '') + '</span></div>';
   }).join('');
 }
 async function load311() {
@@ -240,7 +243,8 @@ async function load311() {
     if (!response.ok) throw new Error('DataKC returned HTTP ' + response.status);
     serviceRows = await response.json();
     document.getElementById('freshness').textContent = 'Live 311 loaded';
-    document.getElementById('freshness-detail').textContent = 'Loaded ' + serviceRows.length + ' recent public DataKC rows at ' + new Date().toLocaleTimeString() + '. Other civic layers link to their public sources until parsers are added.';
+    const newest = serviceRows[0] && niceDate(serviceRows[0].open_date_time);
+    document.getElementById('freshness-detail').textContent = 'Loaded the ' + serviceRows.length + ' most recent Waldo-area 311 requests' + (newest ? ' (newest opened ' + newest + ')' : '') + '. Other civic layers link to their public sources until parsers are added.';
     renderRows();
   } catch (error) {
     document.getElementById('freshness').textContent = 'Source-linked mode';

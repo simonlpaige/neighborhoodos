@@ -108,10 +108,10 @@ For dashboards and local-node pages:
 
 ## Relationship language
 
-- NeighborhoodOS = umbrella civic AI ecosystem and public site.
-- Education, training, & problem solving = public front door for Learn / Solve / Build and resident-first AI literacy.
-- Public data, federated governance, neighborhood assets tracking and memory = civic evidence and memory layer with provenance and safety boundaries.
-- Hardware/local AI infrastructure, shared tools & resources = local capacity and stewardship layer for the place-based pilot frame.
+- NeighborhoodOS = free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems. Use this one-liner verbatim; don't invent new taglines.
+- Learn / Solve / Build = the program. Learn and Solve are the public front door.
+- Neighborhood memory, governance tools, local AI hardware = "Later, if residents want it." Never lead with these on public pages.
+- Meetings = link to Kansas City Documenters notes or official minutes. Never show unreviewed AI summaries of meetings.
 - WaldoNet = legacy/prototype language. Use only when historical context requires it.
 - Commonweave = sibling project, not merged into NeighborhoodOS.
 

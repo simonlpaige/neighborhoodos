@@ -25,13 +25,13 @@ Use the [invitation flyer](https://neighborhoodos.org/kit/#h-flyer) from the fac
 
 ## A 30-second invitation (for connectors)
 
-> “There’s a free evening at [place] on [day] about AI, the chatbots and the scams. It’s not techy. They explain what these things actually are, how people are getting scammed with fake voices, and what not to type into them. There’s food. Want to come with me?”
+> “There’s a free evening at [place] on [day] about AI, the chatbots and the scams. It’s not techy. They explain what these things actually are, how people are getting scammed with fake voices, and what not to type into them. There’s food, and they pay you thirty dollars for your time. Want to come with me?”
 
 The last line matters most. People come *with* someone.
 
 ## Announcement text (for bulletins and newsletters)
 
-> **Free: AI, scams, and your privacy.** Three friendly evenings for neighbors at [place], starting [date], [time]. Learn what AI chatbots can and can’t do, how scammers are using fake voices and messages, and how to keep your information safe. Then bring a real problem from your block and leave with a plan. No experience needed. Food provided. Questions or accommodations: [contact].
+> **Free: AI, scams, and your privacy.** Three friendly evenings for neighbors at [place], starting [date], [time]. Learn what AI chatbots can and can’t do, how scammers are using fake voices and messages, and how to keep your information safe. Then bring a real problem from your block and leave with a plan. No experience needed. Food provided, and you’ll be paid $30 for each session you attend. Questions or accommodations: [contact].
 
 ## Removing barriers
 

@@ -17,7 +17,6 @@ NeighborhoodOS was created by Simon L. Paige in 2026. He has chosen to hand it o
 ## Practical handoff checklist
 - [ ] Partner forks or is given admin on the GitHub repository
 - [ ] GitHub Pages / domain DNS ownership decided and transferred if agreed
-- [ ] Contact email on the website updated to the new program owner
-- [ ] `llms.txt` contact line updated
+- [ ] Contact email on the website, README, wiki, and `llms.txt` updated to the new program owner (currently simon@simonlpaige.com)
 - [ ] Mirrors (Codeberg) either updated or retired
 - [ ] Signed letter of permission, if requested

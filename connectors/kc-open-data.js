@@ -13,10 +13,13 @@ const APP_TOKEN = process.env.KC_OPEN_DATA_TOKEN || ''; // Optional - raises rat
 // Dataset registry. Each entry is a named feed we track.
 export const DATASETS = {
   requests_311: {
-    id: '7at3-sxhp',
+    // Current dataset, 2021 to present. The old 7at3-sxhp dataset ended March 2021.
+    id: 'd4px-6rwg',
     name: '311 Service Requests',
-    dateField: 'creation_date',
-    geoFields: ['latitude', 'longitude'],
+    dateField: 'open_date_time',
+    pointField: 'lat_long',
+    // Never pull free-text fields (additional_questions can hold phone numbers and names).
+    select: 'reported_issue,issue_type,issue_sub_type,current_status,open_date_time,resolved_date,days_to_close,department_work_group,report_source,incident_address,lat_long',
     layer: 'health_index'
   },
   permits: {
@@ -124,6 +127,17 @@ export function bboxWhere(bounds, latField = 'latitude', lonField = 'longitude')
   ].join(' AND ');
 }
 
+// Same filter for datasets that store location as a single Point column.
+export function boxWhere(bounds, pointField) {
+  const n = Number(bounds.north), s = Number(bounds.south);
+  const e = Number(bounds.east), w = Number(bounds.west);
+  if (![n, s, e, w].every(Number.isFinite)) {
+    throw new Error('boxWhere: bounds must be numeric {north, south, east, west}');
+  }
+  if (!/^[a-z_][a-z0-9_]*$/.test(pointField)) throw new Error('boxWhere: bad field name');
+  return `within_box(${pointField}, ${n}, ${w}, ${s}, ${e})`;
+}
+
 // West Waldo default bounds
 export const WEST_WALDO_BOUNDS = {
   north: 38.9920,  // ~75th St
@@ -149,7 +163,9 @@ export async function syncDataset(db, key, bounds = null, sinceDate = null) {
   const clauses = [];
 
   // Geographic filter
-  if (bounds && dataset.geoFields?.includes('latitude')) {
+  if (bounds && dataset.pointField) {
+    clauses.push(boxWhere(bounds, dataset.pointField));
+  } else if (bounds && dataset.geoFields?.includes('latitude')) {
     clauses.push(bboxWhere(bounds));
   }
 
@@ -173,7 +189,8 @@ export async function syncDataset(db, key, bounds = null, sinceDate = null) {
       limit: 1000,
       offset,
       where,
-      orderBy: dataset.dateField ? `${dataset.dateField} ASC` : null
+      orderBy: dataset.dateField ? `${dataset.dateField} ASC` : null,
+      select: dataset.select || null
     });
     records.push(...page);
     offset += page.length;

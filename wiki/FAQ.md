@@ -16,7 +16,16 @@ No. It helps residents use them well and hold institutions to their promises.
 For facilitator demos, yes, with no personal information typed in. For tools that residents type into, prefer a local model on hub hardware.
 
 **What data do you keep about participants?**
-As little as possible: a first name and a way to reach them, with consent. No addresses, no attendance scoring. The data steward decides and can delete on request.
+None, by default. Sessions count heads, not names. If the host library keeps an optional follow-up list, the library holds it. Stipend payments go through the library or a fiscal sponsor. See the [Threat Model](Threat-Model.md).
+
+**Are participants paid?**
+Yes. $30 per 90-minute session, and $20/hour for peer helpers, the same rate Kansas City Documenters pays. See [Budget and Hardware](Budget-and-Hardware.md).
+
+**Do you summarize city council meetings with AI?**
+No. We link to [Kansas City Documenters](https://kansascity.documenters.org/) notes, which are fact-checked by The Beacon, or to official minutes. We never publish an AI summary of a meeting that a person hasn't reviewed.
+
+**Why a library?**
+It's where neighbors already go for help with forms, scams, and city services, and it can apply for library grants that pay participants. See [Partners](Partners.md).
 
 **Can the city or police get access to the data?**
 The Safety Doctrine prohibits integration with or sharing to law enforcement or immigration systems. The data layer is designed to hold public records and aggregates, not information about individuals.
@@ -28,4 +37,4 @@ Yes. The education program works anywhere. The software needs new data connector
 See [Handoff and Licensing](Handoff-and-Licensing.md). Short answer: it's open for community use.
 
 **Who do we ask for help?**
-Start with this wiki. For code, open a GitHub issue. The original author may be available occasionally but isn't a support line.
+Start with this wiki. For partner conversations, email [simon@simonlpaige.com](mailto:simon@simonlpaige.com). For code, open a GitHub issue.

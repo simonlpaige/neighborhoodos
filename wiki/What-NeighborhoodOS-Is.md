@@ -2,48 +2,53 @@
 
 ## The one-sentence version
 
-NeighborhoodOS helps a neighborhood build its own practical AI capacity, keep a shared and checkable memory of what is happening locally, and solve real problems together, with people in charge the whole way.
+**Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.**
 
 ## Why it exists
 
 AI is arriving in neighborhoods whether anyone plans for it or not. It shows up as scams aimed at seniors, as automated systems that make decisions about housing and benefits, as confident chatbots that invent city code sections. The people most affected usually have the least say and the least training.
 
-At the same time, the same tools can genuinely help: turning a 300-page budget into something a block club can read, helping a tenant figure out which city office actually handles their problem, keeping track of promises officials made at meetings.
+The same tools can also help: turning a 300-page budget into something a block club can read, or helping a tenant figure out which city office actually handles their problem.
 
-NeighborhoodOS is a way to get the second without the first.
+NeighborhoodOS is a way to get the help without the harm.
 
-## The three layers
+## What it is today
 
-Keep these three things distinct. Most confusion comes from blending them.
+### 1. Practical AI help (Learn)
+Three free sessions at the library: how chatbots work, why they make things up, the scams aimed at neighbors, what never to type in, and how to check an answer. Participants are paid for their time. See [Program Design](Program-Design.md).
 
-### 1. Education, training, and problem solving (the front door)
-Learn, Solve, Build. Residents learn practical AI literacy, bring stuck problems to clinics, and co-design small tools. **This layer needs no custom software** and is where every program should start. See [Program Design](Program-Design.md).
+### 2. Clinics for stuck civic problems (Solve)
+Bring something stuck: a streetlight out for months, a zoning case, a promise made at a council meeting that nobody followed up on. Leave with a one-page brief: who has the power to fix it, what public evidence exists, and the smallest next step with a name on it. Clinics build on what [Kansas City Documenters](Partners.md) surface from public meetings.
 
-### 2. Public data and neighborhood memory (the shared context)
-A local, checkable record built from public sources (311 requests, permits, code violations, budgets, council agendas and votes) plus local knowledge (resource maps, meeting notes, open commitments). Every fact links to its source. Freshness is stated honestly. See [Data Sources](Data-Sources.md).
+### 3. A small tool, only if earned (Build)
+If a clinic surfaces a clear, safe need, neighbors sketch and test a small tool. Paper first.
 
-### 3. Local AI infrastructure and shared tools (the local capacity)
-A trusted physical place, shared devices, and modest local hardware that can run AI models on site, so neighbors' questions do not have to be sent to outside companies. Plus the operating agreements that govern it. See [Community AI Hub Guide](Community-AI-Hub-Guide.md) and [Budget and Hardware](Budget-and-Hardware.md).
+That's it. No custom software is needed for any of it.
+
+## What it might become
+
+Neighborhood memory, community governance tools, and local AI hardware are on a separate page: [Later, if residents want it](Later-If-Residents-Want-It.md). None of it starts unless residents ask for it.
 
 ## Principles
 
-- **Practical before platform.** Ship the smallest useful thing for one real neighborhood.
-- **The software does not swing the hammer. People do.** Tools suggest, organize, and draft. Humans decide and act.
-- **Trust is the feature.** A tool nobody trusts is a failure no matter how well it works.
+- **Help first.** Useful to one neighbor this week beats a platform next year.
+- **The software doesn't swing the hammer. People do.** Tools suggest, organize, and draft. Humans decide and act.
+- **Partner, don't rebuild.** Use the library, Documenters, and open curricula that already exist. See [Partners](Partners.md).
+- **Pay people for their time.** Participants and peer helpers get stipends.
 - **Show the receipts.** Every claim links to a public source, or says clearly that it can't.
-- **Toothbrush test.** If nobody uses it weekly, reconsider it.
-- **Bad at surveillance on purpose.** See [Safety Doctrine](Safety-Doctrine.md).
+- **Hold nothing about residents.** See [Threat Model](Threat-Model.md) and [Safety Doctrine](Safety-Doctrine.md).
 
 ## What it is not
 
 - Not a smart-city platform or a replacement for 311.
 - Not legal advice, case management, or a benefits eligibility system.
 - Not a people database. It never builds profiles of residents.
+- Not a source of AI summaries of public meetings.
 - Not a product. It is an open program anyone can run.
 
 ## Names
 
-- **NeighborhoodOS**: the overall model and the open project.
-- **Waldo pilot**: the first place it was designed for (Waldo, Kansas City, MO).
+- **NeighborhoodOS**: the overall program and the open project.
+- **Waldo pilot**: the first place it runs (Waldo, Kansas City, MO).
 - **WaldoNet**: an early prototype name. Historical only.
 - **Commonweave**: a separate sibling project (a directory of commons-aligned organizations). Optional, not required.

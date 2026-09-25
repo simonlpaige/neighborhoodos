@@ -1,59 +1,47 @@
 # NeighborhoodOS
 
-> NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together.
+> Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.
 
-NeighborhoodOS is a civic AI system for community-governed access, shared local context, and practical problem-solving. The first pilot is Waldo in Kansas City, Missouri.
+NeighborhoodOS is an open program that started in Waldo, Kansas City, Missouri. Any neighborhood or organization may run it under the safety boundaries below.
 
-## Public architecture
+## What it is today
 
-- **Education, training, & problem solving** - the public front door. Residents learn AI, bring stuck local problems, and build small useful tools with human review.
-- **Public data, federated governance, neighborhood assets tracking and memory** - the shared working memory. It gathers civic sources, local resource maps, meeting notes, open commitments, and provenance so people and agents can understand what is happening.
-- **Hardware/local AI infrastructure, shared tools & resources** - the local capacity layer. It includes trusted spaces, shared tools, training, operating agreements, and community-governed AI capacity.
+1. **Learn**: three free sessions of practical AI literacy: how chatbots work, why they make things up, scams, privacy, and how to check an answer.
+2. **Solve**: two clinics where residents bring a stuck civic problem and leave with a one-page brief: who has the power to fix it, the public evidence, and a next step with a name on it.
+3. **Build** (only if earned): one small tool, only when a clinic surfaces a clear, safe need.
 
-## Current pilot: Waldo
+## How it runs
 
-WaldoNet was the prototype name. Waldo is the current pilot frame. NeighborhoodOS is the broader model.
+- Designed to run out of the Kansas City Public Library's Waldo Branch.
+- Learn sessions adopt the CivicAI curriculum (New Jersey State Library + InnovateUS) as modules are released.
+- Kansas City Documenters' fact-checked notes (hosted by The Beacon) are the record of public meetings. Solve clinics are where residents act on what Documenters surface.
+- Participants are paid $30 per 90-minute session; peer helpers are paid $20/hour, the Documenters rate.
+- Measured by outcomes: problems resolved and time to resolution, AI-error spotting before and after training, and peer helpers retained at six months.
 
-The 90-day pilot shape:
+Status (September 2026): the library, Documenters, and CivicAI partnerships are proposed, not yet agreed. Do not describe them as confirmed.
 
-1. Three Learn sessions for practical AI literacy, safety, privacy, scams, bias, and verification.
-2. Two Solve clinics where residents and organizations turn real problems into briefs, source lists, and next actions.
-3. Two Build sessions for small useful tools such as guides, trackers, intake forms, and resource maps.
-4. One public-data and memory seed from public civic data and Waldo resource data.
+## Later, if residents want it
 
-## Public-data and memory source direction
-
-The shared memory layer should begin with sources that can be fetched, linked, and checked:
-
-- Kansas City 311 requests
-- permits
-- crime reports
-- property violations
-- dangerous buildings
-- budget expenditures and revenue
-- vendor payments
-- zoning, council agendas, votes, and commitments where available
-- county and state records that affect Waldo
-- Waldo resources and assets: associations, libraries, schools, churches, clinics, nonprofits, mutual aid, makerspaces, and trusted local businesses
-
-If data is live, say so. If a feed is not parsed yet, link to the public source. Do not invent freshness.
+Neighborhood memory (a local database of public records), community governance tools (identity, voting, federation), and local AI hardware exist as open-source code and plans. They are not part of the current program and start only if residents ask. Do not describe NeighborhoodOS as a platform, data system, or governance system.
 
 ## Safety boundaries
 
-Do not frame NeighborhoodOS as predictive policing, a people database, resident dossiers, protest monitoring, private social scraping, sensitive case management, or outbound automated civic decision-making. The system should support human review and community benefit.
-
-Use **community-governed access** unless full community ownership is actually established.
+- The default is that NeighborhoodOS holds nothing about residents. See the threat model.
+- No resident dossiers, people scoring, predictive policing, protest or speech monitoring, private social scraping, sensitive case management, sharing with law enforcement or immigration, or automated decisions about people.
+- No unreviewed AI summaries of public meetings. Link to Documenters notes or official minutes instead.
 
 ## Public URLs
 
 - Home: https://neighborhoodos.org/
 - Free self-paced lesson (Using AI safely): https://neighborhoodos.org/learn/
-- Facilitator kit (printable handouts for every session): https://neighborhoodos.org/kit/
-- Program wiki (how to run a program, session plans, budget, safety, technical setup): https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Home.md
-- Waldo local dashboard: https://neighborhoodos.org/local/
-- Pilot alias: https://neighborhoodos.org/pilot/
+- Facilitator kit: https://neighborhoodos.org/kit/
+- Waldo dashboard (recent 311 requests in Waldo plus links to public sources): https://neighborhoodos.org/local/
+- Program wiki: https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Home.md
+- Partners: https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Partners.md
+- Threat model: https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Threat-Model.md
+- Later, if residents want it: https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Later-If-Residents-Want-It.md
 - Source: https://github.com/simonlpaige/neighborhoodos
 
-## Status and contact
+## Contact
 
-NeighborhoodOS is open for community use: MIT-licensed code and openly shared program materials. Any organization may run the program under the safety boundaries above. Created by Simon L. Paige. Questions: open an issue at https://github.com/simonlpaige/neighborhoodos/issues
+Created by Simon L. Paige. Contact: simon@simonlpaige.com. Code issues: https://github.com/simonlpaige/neighborhoodos/issues

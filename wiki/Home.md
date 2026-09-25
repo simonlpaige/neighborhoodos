@@ -2,7 +2,11 @@
 
 **Everything you need to run a NeighborhoodOS program without the original author in the room.**
 
-NeighborhoodOS is a community AI program for neighborhoods. It starts with people, not software: residents learn what AI can and cannot do, bring real local problems to structured clinics, and build small tools only when a real need shows up. Underneath that sits an optional, open-source software stack for public civic data, neighborhood memory, and community voting, all designed to be bad at surveillance on purpose.
+**NeighborhoodOS: Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.**
+
+Neighbors learn what AI can and can't do, bring real stuck problems to structured clinics, and build small tools only when a real need shows up. It runs out of a library, links to Kansas City Documenters for public meetings, pays participants for their time, and holds nothing about residents. Infrastructure and governance tools are on a separate page, for later, if residents want them.
+
+Contact: [simon@simonlpaige.com](mailto:simon@simonlpaige.com)
 
 This wiki is written for three readers:
 
@@ -18,11 +22,13 @@ This wiki is written for three readers:
 **Understand it**
 - [What NeighborhoodOS Is](What-NeighborhoodOS-Is.md): the idea, the three layers, what it is not
 - [Safety Doctrine](Safety-Doctrine.md): the hard limits every program and every line of code must respect
+- [Threat Model](Threat-Model.md): what data is held, who can compel it, how long it's kept
 - [Glossary](Glossary.md)
 - [FAQ](FAQ.md)
 
 **Run a program**
 - [Start Here for Partners](Start-Here-for-Partners.md): the first 30 days, decisions to make, a general plan
+- [Partners](Partners.md): the library, Kansas City Documenters, and the CivicAI curriculum
 - [Program Design](Program-Design.md): Learn / Solve / Build and the four-level ladder
 - [Session Plans](Session-Plans.md): every session, minute by minute
 - [Facilitator Guide](Facilitator-Guide.md): running the room, and handling hard moments
@@ -30,9 +36,12 @@ This wiki is written for three readers:
 - [Recruitment and Outreach](Recruitment-and-Outreach.md): getting the right people in the room
 - [Roles and Staffing](Roles-and-Staffing.md): who does what, and realistic hours
 - [Budget and Hardware](Budget-and-Hardware.md): what it costs at three sizes
-- [Community AI Hub Guide](Community-AI-Hub-Guide.md): planning a physical space (built for a campus like LAMP)
 - [Evaluation and Metrics](Evaluation-and-Metrics.md): how to know if it's working
 - [Launching a New Neighborhood](Launching-a-New-Neighborhood.md): repeating it somewhere else
+
+**Later, if residents want it**
+- [Later, if residents want it](Later-If-Residents-Want-It.md): neighborhood memory, governance tools, local AI hardware, and when they should start
+- [Community AI Hub Guide](Community-AI-Hub-Guide.md): planning a physical space
 
 **Build the software**
 - [Technical Architecture](Technical-Architecture.md): how the pieces fit, and what is real vs. prototype

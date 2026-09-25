@@ -19,7 +19,7 @@ We track ten canonical public datasets. Each has a specific resource ID and date
 
 | Dataset Key | Socrata ID | Name | Date Field | Purpose |
 |-------------|------------|------|------------|---------|
-| `requests_311` | `7at3-sxhp` | 311 Service Requests | `creation_date` | Spotting infrastructure neglect |
+| `requests_311` | `d4px-6rwg` | 311 Service Requests (2021 to present) | `open_date_time` | Spotting infrastructure neglect |
 | `permits` | `ntw8-aacc` | Building Permits | `issue_date` | Tracking development trends |
 | `crime` | `gqy2-yvmn` | KCPD Reported Crime | `reported_date` | Analyzing physical neighborhood safety |
 | `violations` | `tezm-fh2e` | Property Violations | `violation_entry_date` | Mapping housing code neglect |

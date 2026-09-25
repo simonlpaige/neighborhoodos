@@ -4,11 +4,18 @@
 
 | Track | Sessions | Goal | Needs software? |
 |---|---|---|---|
-| **Learn** | 3 | Practical AI literacy: how it works, where it breaks, scams, privacy, verification | No (a projector and one AI chat tool for demos) |
-| **Solve** | 2 | Turn real stuck problems into briefs with an authority, evidence, and a next move | No (sticky notes, a wall, public data websites) |
+| **Learn** | 3 | Practical AI literacy: how it works, where it breaks, scams, privacy, verification. Adopts CivicAI modules as they're released | No (a projector and one AI chat tool for demos) |
+| **Solve** | 2 | Turn real stuck problems into briefs with an authority, evidence, and a next move. Includes issues surfaced by Kansas City Documenters | No (sticky notes, a wall, public data websites) |
 | **Build** | 1-2 | Co-design one small, safe tool from a real brief | Sometimes. Paper prototypes first. |
 
 The order matters. Learn builds trust and shared language. Solve surfaces real needs. Build only happens once a need is real.
+
+## Where it runs and what it builds on
+
+- **Host:** a public library branch (in Waldo, the Kansas City Public Library's Waldo Branch).
+- **Curriculum:** the [CivicAI](Partners.md) course from the New Jersey State Library and InnovateUS, adopted module by module as it's released. NeighborhoodOS keeps only the local pieces: Waldo examples, the Solve clinic format, and links to local public data.
+- **Meetings:** [Kansas City Documenters](Partners.md) notes are the record of public meetings. Solve clinics are where residents act on them.
+- **Pay:** participants get $30 per session; peer helpers $20/hour. See [Budget and Hardware](Budget-and-Hardware.md).
 
 ## The ladder
 
@@ -47,8 +54,7 @@ Every session ends with something physical or useful:
 ## After the first 90 days
 
 Options, in order of effort:
-1. **Repeat** the Learn/Solve cycle with a new cohort, with graduates co-facilitating.
-2. **Standing clinic:** a monthly Solve night with a public problem log.
+1. **Repeat** the Learn/Solve cycle with a new cohort, with paid graduates co-facilitating.
+2. **Standing clinic:** a monthly Solve night at the library with a public problem log.
 3. **Build one tool** that passed the rubric (see [Building a Tool](Building-a-Tool.md)).
-4. **Stand up the data layer** for the neighborhood (see [Technical Architecture](Technical-Architecture.md)).
-5. **Open the hub:** regular hours in a physical space with local hardware (see [Community AI Hub Guide](Community-AI-Hub-Guide.md)).
+4. Anything bigger (a data layer, governance tools, local hardware) only if residents ask for it. See [Later, if residents want it](Later-If-Residents-Want-It.md).
