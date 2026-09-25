@@ -9,7 +9,8 @@ This wiki is written for three readers:
 | If you are... | Start here |
 |---|---|
 | A partner organization deciding whether to run a program | [Start Here for Partners](Start-Here-for-Partners.md) |
-| A facilitator or program lead running sessions | [Program Design](Program-Design.md), then [Session Plans](Session-Plans.md) |
+| A neighbor who just wants to learn | The free [15-minute lesson](https://neighborhoodos.org/learn/) |
+| A facilitator or program lead running sessions | [Program Design](Program-Design.md), [Session Plans](Session-Plans.md), and the printable [facilitator kit](https://neighborhoodos.org/kit/) |
 | A developer or technical volunteer | [Technical Architecture](Technical-Architecture.md), then [Developer Setup](Developer-Setup.md) |
 
 ## Pages
@@ -24,6 +25,9 @@ This wiki is written for three readers:
 - [Start Here for Partners](Start-Here-for-Partners.md): the first 30 days, decisions to make, a general plan
 - [Program Design](Program-Design.md): Learn / Solve / Build and the four-level ladder
 - [Session Plans](Session-Plans.md): every session, minute by minute
+- [Facilitator Guide](Facilitator-Guide.md): running the room, and handling hard moments
+- [Facilitator kit](https://neighborhoodos.org/kit/): every printable handout
+- [Recruitment and Outreach](Recruitment-and-Outreach.md): getting the right people in the room
 - [Roles and Staffing](Roles-and-Staffing.md): who does what, and realistic hours
 - [Budget and Hardware](Budget-and-Hardware.md): what it costs at three sizes
 - [Community AI Hub Guide](Community-AI-Hub-Guide.md): planning a physical space (built for a campus like LAMP)

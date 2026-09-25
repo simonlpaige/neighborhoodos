@@ -30,7 +30,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --paper:#F5EFE6; --paper-2:#EDE5D6; --paper-3:#E2D8C3;
-  --ink:#1F1A17; --ink-2:#3A332D; --ink-3:#7A6F66;
+  --ink:#1F1A17; --ink-2:#3A332D; --ink-3:#645A51;
   --terracotta:#C2553A; --terracotta-deep:#8E3A26; --ochre:#D9A441;
   --moss:#5C7A4E; --dusk:#3F4A6B; --brick:#8B2E1F;
   --f-display:"Fraunces", Georgia, serif; --f-body:"Inter Tight", system-ui, sans-serif; --f-mono:"JetBrains Mono", ui-monospace, monospace;
@@ -46,7 +46,7 @@ a:hover { color:var(--terracotta-deep); }
 .nav-logo .os { font-variant:small-caps; font-size:.9em; letter-spacing:.03em; }
 .nav-links { display:flex; gap:0; align-items:center; flex-wrap:wrap; justify-content:flex-end; }
 .nav-links a { padding:0 14px; min-height:64px; display:flex; align-items:center; font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-weight:500; color:var(--ink-2); text-decoration:none; border-bottom:2px solid transparent; }
-.nav-links a:hover, .nav-links a.active { color:var(--terracotta); border-bottom-color:var(--terracotta); }
+.nav-links a:hover, .nav-links a.active { color:var(--terracotta-deep); border-bottom-color:var(--terracotta); }
 .container { max-width:1120px; margin:0 auto; padding:0 28px; }
 .hero { padding:80px 0 52px; border-bottom:var(--rule-soft); }
 .hero-grid { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); gap:40px; align-items:end; }
@@ -106,7 +106,8 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
   <div class="nav-links">
     <a href="/">Home</a>
     <a href="/local/" class="active">Waldo dashboard</a>
-    <a href="/launch.html">Launch</a>
+    <a href="/learn/">Free lesson</a>
+    <a href="/kit/">Facilitator kit</a>
     <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
   </div>
 </nav>

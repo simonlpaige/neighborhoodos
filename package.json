@@ -9,7 +9,7 @@
     "sync:status": "node ingest/sync.js --status",
     "api": "node identity/api.js",
     "start": "node ingest/sync.js && node identity/api.js",
-    "test": "node identity/smoke-test.js && node identity/federation-smoke.js",
+    "test": "node identity/smoke-test.js && node identity/federation-smoke.js && node core/llm-test.js",
     "config:example": "cp -n node.config.example.json node.config.json"
   },
   "dependencies": {

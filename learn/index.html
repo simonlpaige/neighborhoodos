@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free lesson: Using AI safely | NeighborhoodOS</title>
+<meta name="description" content="A free, 15-minute lesson for neighbors: how AI chatbots work, why they make things up, scams to watch for, and what to never type in. With a quick check and a printable card.">
+<link rel="canonical" href="https://neighborhoodos.org/learn/">
+<meta property="og:title" content="Using AI safely: a free 15-minute lesson">
+<meta property="og:description" content="How chatbots work, why they make things up, the scams to watch for, and what to keep private.">
+<meta property="og:url" content="https://neighborhoodos.org/learn/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="twitter:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5EFE6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/nos.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "Using AI safely: a free lesson for neighbors",
+  "educationalLevel": "Beginner",
+  "timeRequired": "PT15M",
+  "isAccessibleForFree": true,
+  "provider": { "@type": "Organization", "name": "NeighborhoodOS", "url": "https://neighborhoodos.org/" }
+}
+</script>
+<style>
+.lesson-head { padding:64px 0 40px; border-bottom:var(--rule-soft); }
+.lesson-head h1 { max-width:14ch; }
+.toc { list-style:none; display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:22px; font-size:15.5px; }
+.toc a { color:var(--ink-2); }
+.part { padding:56px 0; border-bottom:var(--rule-soft); }
+.part .num { font-family:var(--display); font-style:italic; font-size:22px; color:var(--terracotta-deep); }
+.part h2 { margin:6px 0 20px; font-size:clamp(30px,3.8vw,44px); }
+.part p, .part li { font-size:18px; line-height:1.65; }
+.part ul { margin:8px 0 18px 22px; }
+.part li { margin:6px 0; }
+.try { background:#FFFCF7; border:1px solid var(--paper-3); border-left:4px solid var(--ochre); border-radius:0 10px 10px 0; padding:18px 20px; margin:22px 0; }
+.try strong { display:block; font-family:var(--mono); font-weight:500; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:4px; }
+.try p { margin:0; font-size:17px; }
+.part .rule { font-family:var(--display); font-style:italic; font-size:26px; line-height:1.3; color:var(--terracotta-deep); margin:24px 0; max-width:30ch; font-size:clamp(24px,2.6vw,30px); }
+.never-type { display:grid; grid-template-columns:1fr 1fr; gap:0 28px; list-style:none; margin-left:0 !important; }
+.never-type li { padding:10px 0; border-top:var(--rule-soft); }
+
+/* Quick check */
+.q-card { background:#FFFCF7; border:1px solid var(--paper-3); border-radius:14px; padding:24px; margin-bottom:18px; }
+.q-card fieldset { border:0; }
+.q-card legend { font-family:var(--display); font-size:21px; line-height:1.35; margin-bottom:14px; font-weight:500; }
+.opt { display:flex; gap:12px; align-items:flex-start; padding:10px 12px; border:1px solid transparent; border-radius:8px; cursor:pointer; font-weight:400; margin:0; }
+.opt:hover { background:var(--paper-2); }
+.opt input { margin-top:5px; accent-color:var(--terracotta-deep); width:18px; height:18px; flex:none; }
+.feedback { margin-top:12px; padding:12px 14px; border-radius:8px; font-size:16.5px; }
+.feedback.good { background:#E6ECDD; color:#2F4526; }
+.feedback.try-again { background:#F7E4DA; color:#6B2A1B; }
+.score { font-family:var(--display); font-style:italic; font-size:26px; margin-top:8px; }
+
+/* Card to print */
+.pocket { border:2px dashed #BFB29C; border-radius:14px; padding:26px; background:#FFFCF7; max-width:560px; }
+.pocket h3 { font-style:italic; font-weight:400; font-size:26px; }
+.pocket ol { margin:12px 0 0 22px; }
+.pocket li { margin:8px 0; font-size:17px; }
+.next-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:26px; }
+.next-steps .card h3 { font-size:21px; }
+.next-steps .card p { font-size:16px; color:var(--ink-2); }
+
+@media (max-width:760px) { .never-type, .next-steps { grid-template-columns:1fr; } }
+@media print {
+  .lesson-head, .part, #check, .next-steps, .print-hide { display:none !important; }
+  #card { display:block !important; padding:0; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav class="site-nav" aria-label="Primary">
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="/learn/" aria-current="page">Free lesson</a>
+    <a href="/#brief">Bring a problem</a>
+    <a href="/#run">Run a program</a>
+    <a href="/kit/">Facilitator kit</a>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="lesson-head">
+    <div class="container narrow">
+      <p class="eyebrow">Free lesson · about 15 minutes</p>
+      <h1>Using AI safely, in plain words.</h1>
+      <p class="lede">This is the first session of the NeighborhoodOS program, written so you can do it on your own. No sign-up, nothing to install, and nothing you do here leaves your device.</p>
+      <ol class="toc">
+        <li><a href="#p1">1. What a chatbot really is</a></li>
+        <li><a href="#p2">2. Why it makes things up</a></li>
+        <li><a href="#p3">3. What never to type in</a></li>
+        <li><a href="#p4">4. Scams to watch for</a></li>
+        <li><a href="#p5">5. Where it actually helps</a></li>
+        <li><a href="#check">Quick check</a></li>
+        <li><a href="#card">Pocket card</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <section class="part" id="p1" aria-labelledby="p1h">
+    <div class="container narrow">
+      <span class="num">1</span>
+      <h2 id="p1h">A chatbot is a very big autocomplete.</h2>
+      <p>You know how your phone suggests the next word when you text? Type “I’m on my” and it offers “way.” It learned that from patterns in what people usually type.</p>
+      <p>AI chatbots work on the same idea, at an enormous scale. They’ve read a huge amount of text, and they write an answer one word at a time by predicting what word usually comes next. They aren’t looking the answer up, and they don’t know whether it’s true.</p>
+      <div class="try"><strong>Try it</strong><p>Open a text message and tap the middle suggested word ten times in a row. The sentence sounds like you, but it doesn’t mean anything. That’s the machine working with no facts behind it.</p></div>
+      <p class="rule">It predicts what sounds right, not what is right.</p>
+    </div>
+  </section>
+
+  <section class="part" id="p2" aria-labelledby="p2h">
+    <div class="container narrow">
+      <span class="num">2</span>
+      <h2 id="p2h">It makes things up, and sounds sure when it does.</h2>
+      <p>Because a chatbot writes whatever sounds likely, it will sometimes invent a law, a phone number, a date, or a quote that fits the pattern of a real answer. People call this a “hallucination.” The invented parts are written in the same confident voice as the true parts, so you can’t tell by reading.</p>
+      <p>That matters most when the stakes are high: a housing problem, a medical question, a bill, a letter to an official. If you cite a made-up code section in a letter to your landlord, your whole argument falls apart.</p>
+      <p><strong>The Triple-Check Rule:</strong> anything specific (a number, a law, a deadline, a name, a link) gets checked at the original source before you rely on it. The city’s own website, the actual document, a real person at the office.</p>
+      <div class="try"><strong>Try it</strong><p>Ask a chatbot about the history of a specific building or corner in your neighborhood. Then check what it said against the library, a local historical society, or someone who’s lived there a long time.</p></div>
+    </div>
+  </section>
+
+  <section class="part" id="p3" aria-labelledby="p3h">
+    <div class="container narrow">
+      <span class="num">3</span>
+      <h2 id="p3h">What never to type into a free chatbot.</h2>
+      <p>Free AI tools often keep what you type and may use it to improve their products. Treat anything you type as something a stranger might someday read.</p>
+      <ul class="never-type">
+        <li>Social Security number</li>
+        <li>Bank or card numbers</li>
+        <li>Passwords or PINs</li>
+        <li>Medical details about you or family</li>
+        <li>Your lease, contracts, or legal papers</li>
+        <li>Other people’s private information</li>
+      </ul>
+      <p>If you need help with a private document, remove the names, addresses, and numbers first, or ask a person you trust.</p>
+    </div>
+  </section>
+
+  <section class="part" id="p4" aria-labelledby="p4h">
+    <div class="container narrow">
+      <span class="num">4</span>
+      <h2 id="p4h">The scams AI makes easier.</h2>
+      <p><strong>The voice clone.</strong> A few seconds of someone’s voice from a video can be enough to fake it. You get a call from what sounds like a grandchild in trouble who needs money right now.</p>
+      <p><em>What to do:</em> hang up and call them back on the number you already have. Better yet, agree on a family safe word ahead of time, something a stranger couldn’t guess. Real family will know it.</p>
+      <p><strong>The too-local message.</strong> AI lets scammers write messages that mention your street, your utility, or a local business, so they feel real.</p>
+      <p><em>What to do:</em> don’t tap links in messages you weren’t expecting. Go to the official website yourself, or call the number printed on your bill.</p>
+      <p class="rule">Urgency plus money is the warning sign, however real it sounds.</p>
+    </div>
+  </section>
+
+  <section class="part" id="p5" aria-labelledby="p5h">
+    <div class="container narrow">
+      <span class="num">5</span>
+      <h2 id="p5h">Where it genuinely helps.</h2>
+      <p>Treat a chatbot like a fast, overconfident helper: good for first drafts, never the final word.</p>
+      <ul>
+        <li><strong>Good:</strong> turning a long, dense document into a shorter summary you then check.</li>
+        <li><strong>Good:</strong> drafting a polite letter or email you then edit.</li>
+        <li><strong>Good:</strong> brainstorming questions to ask at a meeting.</li>
+        <li><strong>Risky:</strong> anything about the law, your health, or money. Use it to find the right question, then ask a real source.</li>
+        <li><strong>Never:</strong> letting it decide something about a person, like who gets help or who to trust.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="part" id="check" aria-labelledby="checkh">
+    <div class="container narrow">
+      <span class="num">Quick check</span>
+      <h2 id="checkh">Three situations. What would you do?</h2>
+      <p>Nobody sees your answers. They’re just for you.</p>
+      <form id="quiz" onsubmit="return false">
+        <div class="q-card">
+          <fieldset>
+            <legend>A chatbot tells you the exact city code section your landlord is violating. What next?</legend>
+            <label class="opt"><input type="radio" name="q1" value="a"> Put it in my letter. It sounded very specific.</label>
+            <label class="opt"><input type="radio" name="q1" value="b" data-correct> Look up that section on the city’s website before using it.</label>
+            <label class="opt"><input type="radio" name="q1" value="c"> Ask the chatbot if it’s sure.</label>
+          </fieldset>
+          <div class="feedback" hidden data-good="Right. Specific details are exactly what chatbots invent. Check the source." data-bad="Not quite. Being specific is not the same as being true, and asking the chatbot again just gets another guess. Check the city’s own code."></div>
+        </div>
+        <div class="q-card">
+          <fieldset>
+            <legend>Your grandson calls, upset, saying he needs $800 for bail right now. It sounds just like him.</legend>
+            <label class="opt"><input type="radio" name="q2" value="a"> Send it quickly. He sounds scared.</label>
+            <label class="opt"><input type="radio" name="q2" value="b"> Ask him to prove it by telling me his birthday.</label>
+            <label class="opt"><input type="radio" name="q2" value="c" data-correct> Hang up and call him back on the number I already have.</label>
+          </fieldset>
+          <div class="feedback" hidden data-good="Right. Calling back on a number you know beats any fake voice. A family safe word helps too." data-bad="Careful. Voices can be faked, and birthdays are easy to find online. Hang up and call back on a number you already have."></div>
+        </div>
+        <div class="q-card">
+          <fieldset>
+            <legend>You want help understanding your lease. Is it OK to paste the whole thing into a free chatbot?</legend>
+            <label class="opt"><input type="radio" name="q3" value="a"> Yes, that’s what it’s for.</label>
+            <label class="opt"><input type="radio" name="q3" value="b" data-correct> Not as-is. Remove names, addresses, and numbers first, or ask a tenant advocate.</label>
+            <label class="opt"><input type="radio" name="q3" value="c"> Only if I delete the chat afterward.</label>
+          </fieldset>
+          <div class="feedback" hidden data-good="Right. Strip out anything private first, and for real legal questions, talk to a person." data-bad="Not quite. Free tools may keep what you type, even after you delete the chat on your side. Remove private details first."></div>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn primary" id="quiz-check">Check my answers</button>
+          <button type="button" class="btn" id="quiz-reset" hidden>Start over</button>
+        </div>
+        <p class="score" id="quiz-score" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="part" id="card" aria-labelledby="cardh">
+    <div class="container narrow">
+      <span class="num print-hide">Keep this</span>
+      <h2 id="cardh" class="print-hide">Your pocket card.</h2>
+      <div class="pocket">
+        <h3>Using AI safely</h3>
+        <ol>
+          <li>It predicts what sounds right, not what is right.</li>
+          <li>Check anything specific at the original source.</li>
+          <li>Never type in ID numbers, bank info, passwords, health details, or legal papers.</li>
+          <li>Urgent call asking for money? Hang up and call back on a number you know.</li>
+          <li>Use it for drafts. You make the decisions.</li>
+        </ol>
+        <p style="margin-top:14px;font-size:15px;color:var(--ink-3)">neighborhoodos.org/learn</p>
+      </div>
+      <div class="actions print-hide">
+        <button type="button" class="btn primary" id="print-card">Print the card</button>
+      </div>
+
+      <div class="next-steps print-hide">
+        <div class="card"><h3>Bring a problem</h3><p>Turn something stuck on your block into a one-page plan.</p><a href="/#brief">Open the brief builder</a></div>
+        <div class="card"><h3>See local data</h3><p>Recent 311 requests and links to city and county records.</p><a href="/local/">Waldo dashboard</a></div>
+        <div class="card"><h3>Teach this lesson</h3><p>Printable handouts and the full session plan for running this with a group.</p><a href="/kit/">Facilitator kit</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>NeighborhoodOS. Open for community use.</span>
+    <span><a href="/">Home</a> &nbsp; <a href="/local/">Waldo dashboard</a> &nbsp; <a href="https://github.com/simonlpaige/neighborhoodos">Source</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var cards = document.querySelectorAll('.q-card');
+  var score = document.getElementById('quiz-score');
+  var checkBtn = document.getElementById('quiz-check');
+  var resetBtn = document.getElementById('quiz-reset');
+  checkBtn.addEventListener('click', function () {
+    var right = 0, answered = 0;
+    cards.forEach(function (card) {
+      var picked = card.querySelector('input:checked');
+      var fb = card.querySelector('.feedback');
+      if (!picked) { fb.hidden = false; fb.className = 'feedback try-again'; fb.textContent = 'Pick an answer for this one.'; return; }
+      answered++;
+      var ok = picked.hasAttribute('data-correct');
+      if (ok) right++;
+      fb.hidden = false;
+      fb.className = 'feedback ' + (ok ? 'good' : 'try-again');
+      fb.textContent = ok ? fb.dataset.good : fb.dataset.bad;
+    });
+    if (answered < cards.length) { score.textContent = 'Answer all three, then check again.'; return; }
+    score.textContent = right === 3 ? '3 of 3. You’re ready to help someone else with this.' : right + ' of 3. Read the notes above; that’s the whole point of a practice round.';
+    resetBtn.hidden = false;
+  });
+  resetBtn.addEventListener('click', function () {
+    document.getElementById('quiz').reset();
+    cards.forEach(function (c) { c.querySelector('.feedback').hidden = true; });
+    score.textContent = ''; resetBtn.hidden = true;
+    cards[0].querySelector('input').focus();
+  });
+  document.getElementById('print-card').addEventListener('click', function () { window.print(); });
+})();
+</script>
+</body>
+</html>

@@ -25,7 +25,8 @@ This page is for an organization (a digital inclusion nonprofit, a library, a ne
 
 ### Days 1-30: Set up and Learn
 - Confirm lead, steward, room, and dates.
-- Recruit 12-25 residents per session through trusted channels (associations, churches, libraries, schools, word of mouth). Personal invitations outperform flyers.
+- Recruit 12-25 residents per session through trusted channels. Personal invitations outperform flyers; see [Recruitment and Outreach](Recruitment-and-Outreach.md).
+- Print the [facilitator kit](https://neighborhoodos.org/kit/) and read the [Facilitator Guide](Facilitator-Guide.md).
 - Run **Learn 1** (What AI is and isn't) and **Learn 2** (Scams, privacy, and checking the machine).
 - Collect only what you need: first name and how to reach them, with consent. No addresses.
 

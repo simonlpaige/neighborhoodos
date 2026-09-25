@@ -4,318 +4,481 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NeighborhoodOS | Learn, solve, and build with community AI</title>
-<meta name="description" content="NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together. The Waldo pilot starts with education, training, & problem solving: practical AI literacy, problem clinics, and shared civic memory.">
+<meta name="description" content="A free, open program that helps neighborhoods learn practical AI, turn stuck local problems into next steps, and build small tools with people in charge. Started in Waldo, Kansas City.">
 <link rel="canonical" href="https://neighborhoodos.org/">
-<meta property="og:title" content="NeighborhoodOS">
-<meta property="og:description" content="Community-governed AI capacity, public data and memory, hardware/local AI infrastructure, shared tools, resources, and practical problem-solving.">
+<meta property="og:title" content="NeighborhoodOS: community AI for neighbor action">
+<meta property="og:description" content="Learn what AI can and can't do, bring real problems, build small useful tools. Open for any neighborhood to run.">
 <meta property="og:url" content="https://neighborhoodos.org/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="twitter:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="theme-color" content="#F5EFE6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/nos.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "NeighborhoodOS",
   "url": "https://neighborhoodos.org/",
-  "description": "NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together.",
+  "description": "An open community AI program: practical AI literacy, problem-solving clinics, and small tools with human review.",
   "areaServed": { "@type": "Place", "name": "Waldo, Kansas City, Missouri" }
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOccupationalProgram",
-  "name": "Education, training, & problem solving - Waldo pilot",
-  "description": "A community AI learning and problem-solving pilot with Learn, Solve, and Build tracks for residents and local organizations.",
-  "provider": { "@type": "Organization", "name": "NeighborhoodOS" },
-  "educationalProgramMode": "in-person and hybrid"
-}
-</script>
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --paper:#F5EFE6; --paper-2:#EDE5D6; --paper-3:#E2D8C3;
-  --ink:#1F1A17; --ink-2:#3A332D; --ink-3:#7A6F66;
-  --terracotta:#C2553A; --terracotta-deep:#8E3A26; --ochre:#D9A441;
-  --moss:#5C7A4E; --dusk:#3F4A6B; --brick:#8B2E1F;
-  --display:"Fraunces", Georgia, serif; --body:"Inter Tight", system-ui, sans-serif; --mono:"JetBrains Mono", ui-monospace, monospace;
-  --rule:1px solid var(--ink); --rule-soft:1px solid var(--paper-3);
-}
-html { scroll-behavior:smooth; }
-body { font-family:var(--body); color:var(--ink); background:var(--paper); line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
-a { color:var(--dusk); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
-a:hover { color:var(--terracotta-deep); }
-:focus-visible { outline:2px solid var(--terracotta); outline-offset:3px; border-radius:4px; }
-.skip-link { position:absolute; left:16px; top:-80px; background:var(--ink); color:var(--paper); padding:10px 14px; z-index:200; }
-.skip-link:focus { top:16px; }
-.site-nav { position:sticky; top:0; z-index:100; min-height:64px; padding:0 28px; display:flex; align-items:center; justify-content:space-between; gap:24px; background:rgba(245,239,230,.94); border-bottom:var(--rule-soft); backdrop-filter:blur(10px); }
-.nav-logo { font-family:var(--display); font-weight:600; font-size:21px; letter-spacing:-.01em; color:var(--ink); text-decoration:none; }
-.nav-logo .os { font-variant:small-caps; font-size:.9em; letter-spacing:.03em; }
-.nav-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:0; }
-.nav-links a { min-height:64px; display:flex; align-items:center; padding:0 14px; font-family:var(--mono); font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-2); text-decoration:none; border-bottom:2px solid transparent; }
-.nav-links a:hover { color:var(--terracotta); border-bottom-color:var(--terracotta); }
-.container { max-width:1120px; margin:0 auto; padding:0 28px; }
-.hero { padding:86px 0 64px; border-bottom:var(--rule-soft); }
-.hero-grid { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr); gap:48px; align-items:end; }
-.eyebrow, .num, .label { font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); font-weight:500; }
-h1, h2, h3 { text-wrap:balance; }
-h1 { max-width:13ch; margin:18px 0 24px; font-family:var(--display); font-style:italic; font-weight:400; font-size:clamp(44px,7vw,84px); line-height:.98; letter-spacing:-.02em; }
-h1 em, h2 em { color:var(--terracotta-deep); font-style:italic; }
-.lede { max-width:64ch; font-size:clamp(18px,2vw,22px); line-height:1.55; color:var(--ink-2); }
-.hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
-.btn { display:inline-flex; align-items:center; justify-content:center; width:max-content; max-width:100%; min-height:44px; padding:11px 16px; border-radius:8px; border:1px solid var(--ink); font-family:var(--mono); font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--ink); text-decoration:none; background:transparent; }
-.btn:hover { background:var(--ink); color:var(--paper); text-decoration:none; }
-.btn.primary { background:var(--terracotta-deep); border-color:var(--terracotta-deep); color:var(--paper); }
-.btn.primary:hover { background:var(--ink); border-color:var(--ink); }
-.status-card { background:var(--paper-2); border:var(--rule-soft); border-radius:12px; padding:24px; }
-.status-card strong { display:block; margin:8px 0; font-family:var(--display); font-style:italic; font-size:32px; font-weight:400; line-height:1.05; color:var(--terracotta-deep); }
-.status-card p { color:var(--ink-2); }
-.pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
-.pill { border:var(--rule-soft); border-radius:999px; padding:7px 11px; font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2); background:var(--paper); }
-section { padding:72px 0; border-bottom:var(--rule-soft); }
-section.alt { background:var(--paper-2); }
-.section-head { display:grid; grid-template-columns:96px 1fr; gap:24px; align-items:baseline; margin-bottom:34px; }
-h2 { max-width:20ch; font-family:var(--display); font-style:italic; font-weight:400; font-size:clamp(34px,4.6vw,58px); line-height:1.05; letter-spacing:-.01em; }
-h3 { margin-bottom:10px; font-family:var(--display); font-weight:500; font-size:25px; line-height:1.2; }
-p { max-width:68ch; margin-bottom:18px; }
-ul { margin:14px 0 0 20px; color:var(--ink-2); }
-li { margin:8px 0; }
-.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-.grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
-.card { background:var(--paper); border:var(--rule-soft); border-radius:12px; padding:24px; }
-.alt .card { background:var(--paper-2); }
-.card p { color:var(--ink-2); }
-.card .tag { display:inline-flex; width:max-content; margin-bottom:12px; padding:5px 9px; border-radius:999px; background:var(--paper-3); color:var(--terracotta-deep); font-family:var(--mono); font-size:10px; font-weight:500; letter-spacing:.13em; text-transform:uppercase; }
-.callout { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start; padding:30px; background:var(--ink); color:var(--paper); border-radius:14px; }
-.callout p, .callout li { color:var(--paper-2); }
-.callout h2 { color:var(--paper); }
-.callout .btn { color:var(--paper); border-color:var(--paper-3); }
-.callout .btn:hover { background:var(--paper); color:var(--ink); }
-.ladder { display:grid; gap:12px; }
-.step { display:grid; grid-template-columns:88px 1fr; gap:20px; padding:18px 0; border-top:var(--rule-soft); }
-.step:first-child { border-top:0; }
-.step b { display:block; margin-bottom:4px; font-size:18px; color:var(--ink); }
-.note { margin-top:20px; padding:20px 0; border-top:var(--rule-soft); border-bottom:var(--rule-soft); color:var(--terracotta-deep); font-family:var(--display); font-style:italic; font-size:23px; line-height:1.35; }
-.source-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
-.source-row a { display:inline-flex; align-items:center; min-height:40px; padding:9px 12px; border:var(--rule-soft); border-radius:8px; background:var(--paper); font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; color:var(--ink-2); }
-.source-row a:hover { color:var(--terracotta-deep); border-color:var(--terracotta-deep); }
-footer { padding:48px 0 72px; font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); }
-.footer-row { display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between; }
-.footer-row a { color:var(--ink-2); }
+/* Hero */
+.hero { padding:72px 0 76px; border-bottom:var(--rule-soft); }
+.hero-grid { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr); gap:56px; align-items:start; }
+.hero h1 { max-width:12ch; }
+
+/* The exercise: the one bold thing on the page */
+.exercise .q { font-family:var(--display); font-size:20px; line-height:1.35; margin:10px 0 16px; }
+.exercise .bot { font-family:var(--mono); font-size:12px; color:var(--ink-3); margin-bottom:8px; }
+.claims { list-style:none; display:grid; gap:8px; }
+.claim { width:100%; text-align:left; font:inherit; font-size:16px; line-height:1.45; color:var(--ink); background:transparent; border:1px dashed transparent; border-radius:8px; padding:9px 11px 9px 36px; position:relative; cursor:pointer; }
+.claim::before { content:""; position:absolute; left:11px; top:13px; width:15px; height:15px; border:1.5px solid var(--ink-3); border-radius:4px; background:#FFFCF7; }
+.claim:hover { border-color:#CDBFA8; background:#FFFCF7; }
+.claim[aria-pressed="true"] { background:#F7E4DA; border-color:var(--terracotta); border-style:solid; }
+.claim[aria-pressed="true"]::before { background:var(--terracotta-deep); border-color:var(--terracotta-deep); box-shadow:inset 0 0 0 3px #F7E4DA; }
+.claim .verdict { display:none; margin-top:6px; font-size:14.5px; color:var(--ink-2); }
+.revealed .claim { cursor:default; padding-left:11px; }
+.revealed .claim::before { display:none; }
+.revealed .claim .verdict { display:block; }
+.revealed .claim[data-kind="invented"], .revealed .claim[data-kind="danger"] { background:#F7E4DA; border:1px solid var(--terracotta); }
+.revealed .claim[data-kind="checkable"] { background:#E6ECDD; border:1px solid #A9BC9C; }
+.verdict b { font-family:var(--mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; margin-right:6px; }
+.revealed .claim[data-kind="checkable"] .verdict b { color:var(--moss-deep); }
+.revealed .claim[data-kind="invented"] .verdict b, .revealed .claim[data-kind="danger"] .verdict b { color:var(--brick); }
+.ex-foot { margin-top:16px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.ex-result { margin-top:14px; padding:14px 16px; border-left:3px solid var(--terracotta-deep); background:var(--paper-2); border-radius:0 8px 8px 0; font-size:16px; }
+.ex-result p { margin:0 0 6px; }
+.ex-result p:last-child { margin:0; }
+
+/* Paths */
+.paths { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--ink); }
+.path { padding:28px 26px 30px 0; border-right:var(--rule-soft); }
+.path + .path { padding-left:26px; }
+.path:last-child { border-right:0; }
+.path h3 { font-size:27px; }
+.path .who { color:var(--ink-3); font-size:15px; margin-bottom:14px; }
+.path ul { list-style:none; margin-top:14px; }
+.path li { padding:10px 0; border-top:var(--rule-soft); }
+.path li a { font-weight:600; }
+.path li span { display:block; color:var(--ink-3); font-size:15px; }
+
+/* Ladder */
+.ladder { list-style:none; counter-reset:rung; display:grid; gap:0; }
+.rung { counter-increment:rung; display:grid; grid-template-columns:72px 1.1fr 1fr; gap:28px; padding:26px 0; border-top:var(--rule-soft); align-items:baseline; }
+.rung h3 { font-size:28px; }
+.rung .does { color:var(--ink-2); font-size:16.5px; margin:6px 0 0; }
+.rung .when { font-family:var(--mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--terracotta-deep); }
+.rung::before { content:counter(rung); font-family:var(--display); font-style:italic; font-size:44px; line-height:1; color:var(--terracotta-deep); }
+.rung h3 { margin:0; }
+.rung .take { color:var(--ink-2); font-size:16px; margin:0; }
+.rung .take b { display:block; font-family:var(--mono); font-weight:500; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:2px; }
+.ladder-note { margin-top:26px; font-family:var(--display); font-style:italic; font-size:22px; line-height:1.4; color:var(--terracotta-deep); max-width:40ch; }
+
+/* Brief builder */
+.brief-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+.brief-out { background:#FFFCF7; border:1px solid var(--paper-3); border-radius:14px; padding:28px; position:sticky; top:84px; }
+.brief-out h3 { font-size:26px; font-style:italic; font-weight:400; }
+.brief-out dl { margin-top:14px; }
+.brief-out dt { font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-top:14px; }
+.brief-out dd { margin-top:3px; white-space:pre-wrap; }
+.brief-out dd.empty { color:#716559; font-style:italic; }
+.where { margin-top:18px; padding:12px 14px; background:var(--paper-2); border-radius:8px; font-size:15.5px; color:var(--ink-2); }
+.privacy-line { font-size:14.5px; color:var(--ink-3); margin-top:14px; }
+.status { font-size:14.5px; color:var(--moss-deep); min-height:1.4em; margin-top:8px; }
+
+/* Safety */
+.never { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+.never ul { list-style:none; }
+.never li { padding:11px 0; border-top:1px solid #4A413A; }
+.never li strong { color:var(--paper); }
+
+/* Kit */
+.kit-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:44px; border-top:1px solid var(--ink); }
+.kit-item { padding:20px 20px 4px 0; }
+.kit-item + .kit-item { padding-left:20px; border-left:var(--rule-soft); }
+.kit-n { display:block; font-family:var(--display); font-style:italic; font-size:24px; margin-bottom:6px; }
+.kit-item p { font-size:16px; color:var(--ink-2); }
+
+/* Status */
+.facts { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.fact .tag { margin-bottom:10px; }
+.fact p { font-size:16px; color:var(--ink-2); margin:0; }
+
 @media (max-width:900px) {
-  .hero-grid, .grid-3, .grid-2, .callout { grid-template-columns:1fr; }
-  .section-head { grid-template-columns:1fr; gap:8px; }
-  .site-nav { align-items:flex-start; flex-direction:column; padding:12px 20px; }
-  .nav-links { justify-content:flex-start; }
-  .nav-links a { min-height:40px; padding:0 12px 0 0; }
-  .container { padding:0 20px; }
-  .hero { padding:58px 0 48px; }
-  section { padding:56px 0; }
+  .hero-grid, .brief-grid, .never { grid-template-columns:1fr; }
+  .paths { grid-template-columns:1fr; }
+  .path, .path + .path { padding:24px 0; border-right:0; border-bottom:var(--rule-soft); }
+  .rung { grid-template-columns:52px 1fr; }
+  .rung .take { grid-column:2; }
+  .brief-out { position:static; }
+  .facts { grid-template-columns:1fr 1fr; }
+  .kit-grid { grid-template-columns:1fr 1fr; }
+  .kit-item:nth-child(3) { padding-left:0; border-left:0; }
 }
-@media (max-width:560px) {
-  .site-nav { gap:8px; }
-  .nav-links { gap:6px 10px; }
-  .nav-links a { min-height:30px; padding:0; font-size:10px; letter-spacing:.1em; }
-  h1 { max-width:11ch; font-size:clamp(38px,12vw,50px); line-height:1.02; }
-  .hero-actions .btn { width:100%; }
-  .step { grid-template-columns:1fr; gap:4px; }
-  .status-card, .card, .callout { padding:20px; }
-}
+@media (max-width:560px) { .kit-grid { grid-template-columns:1fr; } .kit-item + .kit-item { padding-left:0; border-left:0; border-top:var(--rule-soft); } .facts { grid-template-columns:1fr; } .hero { padding:48px 0 56px; } }
+@media print { .hero, #paths, #ladder, #never, #status, #faq, #run { display:none; } .brief-grid { display:block; } .brief-builder-form { display:none; } }
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
-<nav class="site-nav" aria-label="Primary navigation">
+<nav class="site-nav" aria-label="Primary">
   <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
   <div class="nav-links">
-    <a href="#workshop">Education</a>
-    <a href="#layers">Layers</a>
-    <a href="#pilot">Pilot</a>
-    <a href="/local/">Local dashboard</a>
-    <a href="/llms.txt">llms.txt</a>
+    <a href="/learn/">Free lesson</a>
+    <a href="#brief">Bring a problem</a>
+    <a href="#run">Run a program</a>
+    <a href="/local/">Waldo dashboard</a>
+    <a href="#faq">FAQ</a>
   </div>
 </nav>
+
 <main id="main">
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="eyebrow">Waldo pilot · Kansas City</span>
-        <h1>Community AI for <em>neighbor action</em>.</h1>
-        <p class="lede">NeighborhoodOS helps communities own AI capacity, share context, and solve real problems together. The first public step is education, training, & problem solving: a place to learn AI, bring stuck civic problems, and build small tools people can actually use.</p>
-        <div class="hero-actions" aria-label="Primary actions">
-          <a class="btn primary" href="#workshop">Explore the pilot</a>
-          <a class="btn" href="/local/">Open the Waldo dashboard</a>
+        <p class="eyebrow">Started in Waldo, Kansas City</p>
+        <h1>Community AI for neighbor action.</h1>
+        <p class="lede">A free, open program where neighbors learn what AI can and can't do, bring real stuck problems, and build small useful tools. People stay in charge the whole way.</p>
+        <p class="lede">The software doesn't swing the hammer. People swing the hammer.</p>
+        <div class="actions">
+          <a class="btn primary" href="/learn/">Take the free 15-minute lesson</a>
+          <a class="btn" href="#brief">Turn a problem into a plan</a>
         </div>
       </div>
-      <aside class="status-card" aria-label="Pilot summary">
-        <span class="eyebrow">What starts first</span>
-        <strong>Learn, solve, build.</strong>
-        <p>The software does not swing the hammer. People swing the hammer. NeighborhoodOS gives the neighborhood a shared bench, a sharp notebook, and a safer way to use AI without pretending the machine is in charge.</p>
-        <div class="pills">
-          <span class="pill">AI literacy</span>
-          <span class="pill">Problem clinics</span>
-          <span class="pill">Civic memory</span>
-          <span class="pill">Human review</span>
+
+      <div class="panel exercise" id="exercise" aria-labelledby="ex-title">
+        <p class="eyebrow" id="ex-title">Try it: catch the machine</p>
+        <p class="q">A neighbor asks a chatbot: “My landlord won’t fix peeling paint. What does Kansas City code say?”</p>
+        <p class="bot">The chatbot answers, sounding sure of itself:</p>
+        <ul class="claims" id="claims">
+          <li><button type="button" class="claim" data-kind="checkable" aria-pressed="false">Kansas City has property maintenance rules that apply to rental homes.
+            <span class="verdict"><b>Checkable</b>Likely true, but look up the actual rule before quoting it.</span></button></li>
+          <li><button type="button" class="claim" data-kind="invented" aria-pressed="false">Under Section 14-B8, landlords must repair it within 24 hours.
+            <span class="verdict"><b>Invented</b>An example of a made-up section number and deadline. It sounds exactly as real as the true parts.</span></button></li>
+          <li><button type="button" class="claim" data-kind="checkable" aria-pressed="false">You can report property conditions to the city through 311.
+            <span class="verdict"><b>Checkable</b>Kansas City’s 311 takes these reports. Easy to confirm on the city’s site.</span></button></li>
+          <li><button type="button" class="claim" data-kind="danger" aria-pressed="false">If they don’t fix it, you can legally stop paying rent.
+            <span class="verdict"><b>Dangerous</b>Legal advice a chatbot can’t give. Acting on it could cost someone their home. Ask a tenant advocate.</span></button></li>
+        </ul>
+        <div class="ex-foot">
+          <span id="ex-instr" class="hint">Tap the lines you wouldn’t trust yet.</span>
+          <button type="button" class="btn small primary" id="ex-check">Check my picks</button>
+          <button type="button" class="btn small" id="ex-reset" hidden>Try again</button>
         </div>
-      </aside>
+        <div class="ex-result" id="ex-result" role="status" aria-live="polite" hidden></div>
+      </div>
     </div>
   </header>
 
-  <section id="workshop">
+  <section id="paths">
     <div class="container">
       <div class="section-head">
-        <span class="num">01</span>
-        <h2>Education, training, & problem solving are the front door.</h2>
+        <p class="eyebrow">Where to start</p>
+        <h2>Pick the door that fits you.</h2>
       </div>
-      <div class="grid-3">
-        <article class="card">
-          <span class="tag">Learn</span>
-          <h3>Practical AI literacy</h3>
-          <p>Residents learn what AI can do, where it breaks, what private information to keep out of it, and how to check its work.</p>
+      <div class="paths">
+        <div class="path">
+          <h3>I’m a neighbor</h3>
+          <p class="who">Curious, cautious, or just tired of a problem nobody fixes.</p>
           <ul>
-            <li>Plain-language sessions for beginners.</li>
-            <li>Scams, bias, privacy, and hallucinations.</li>
-            <li>Confidence for people most likely to be acted on by automated systems.</li>
+            <li><a href="/learn/">Take the free lesson</a><span>How AI works, scams to watch for, what to keep private. About 15 minutes.</span></li>
+            <li><a href="#brief">Turn a problem into a plan</a><span>A one-page brief with who can fix it and your next step.</span></li>
+            <li><a href="/local/">Open the Waldo dashboard</a><span>Recent 311 requests and links to city and county sources.</span></li>
           </ul>
-        </article>
-        <article class="card">
-          <span class="tag">Solve</span>
-          <h3>Bring a real problem</h3>
-          <p>A stuck issue becomes a cleaner brief, a source list, a map of who is involved, and a next move a human can make.</p>
-          <ul>
-            <li>311 follow-up and city process puzzles.</li>
-            <li>Home repair, resource navigation, and paperwork snarls.</li>
-            <li>Neighborhood association bottlenecks.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span class="tag">Build</span>
-          <h3>Make small useful tools</h3>
-          <p>When a need is clear, builders and residents make simple helpers: trackers, guides, forms, checklists, and local assistants with human review.</p>
-          <ul>
-            <li>Guided build nights.</li>
-            <li>Visible artifacts, not slide decks.</li>
-            <li>Community benefit first.</li>
-          </ul>
-        </article>
-      </div>
-      <p class="note">The goal is not one more “Intro to AI” class. The goal is a ladder: safe user, local problem framer, tool builder, peer helper.</p>
-    </div>
-  </section>
-
-  <section id="layers" class="alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="num">02</span>
-        <h2>Three functions, kept clear.</h2>
-      </div>
-      <div class="grid-3">
-        <article class="card">
-          <span class="tag">Hardware / local AI infrastructure</span>
-          <h3>Shared tools & resources</h3>
-          <p>Shared devices, local AI infrastructure, trusted places, training, agreements, and practical tools give the neighborhood capacity without handing the keys to an outside platform.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Public data & memory</span>
-          <h3>Federated governance and neighborhood assets</h3>
-          <p>Public data, federated governance, neighborhood asset tracking, meeting notes, resource maps, commitments, and provenance stay readable for people and agents.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Education, training, & problem solving</span>
-          <h3>Learn, solve, build</h3>
-          <p>This is the human layer. Neighbors bring problems, learn the tool, check the machine, and turn messy situations into practical next steps.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="loom">
-    <div class="container">
-      <div class="section-head">
-        <span class="num">03</span>
-        <h2>Public data and neighborhood memory start with sources that can be checked.</h2>
-      </div>
-      <div class="grid-2">
-        <article class="card">
-          <span class="tag">Public-data spine</span>
-          <h3>Use what can be checked</h3>
-          <p>The first public-data seed should be boring in the best way: fetched, linked, labeled, and honest about freshness.</p>
-          <ul>
-            <li>Kansas City 311 requests, permits, violations, dangerous buildings, zoning, budgets, vendor payments, council agendas, and votes.</li>
-            <li>County and state records where they affect Waldo.</li>
-            <li>Links back to the real source when parsing is incomplete.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span class="tag">Waldo resources</span>
-          <h3>The neighborhood knows things too</h3>
-          <p>Public data is only half the story. Neighborhood memory also needs the living map of local help and local knowledge.</p>
-          <ul>
-            <li>Neighborhood associations, libraries, churches, schools, clinics, nonprofits, mutual aid, and trusted local businesses.</li>
-            <li>Meeting notes, recurring problems, and open commitments.</li>
-            <li>Resource maps for people who need help now.</li>
-          </ul>
-        </article>
-      </div>
-      <div class="source-row" aria-label="Source links">
-        <a href="/local/">View Waldo dashboard</a>
-        <a href="/llms.txt">Read agent overview</a>
-        <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub source</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="pilot" class="alt">
-    <div class="container">
-      <div class="section-head">
-        <span class="num">04</span>
-        <h2>Waldo is the first pilot.</h2>
-      </div>
-      <div class="grid-2">
-        <div class="ladder card">
-          <div class="step"><span class="num">1</span><div><b>Three Learn sessions</b><p>Resident-first AI literacy with special attention to people most exposed to automated systems.</p></div></div>
-          <div class="step"><span class="num">2</span><div><b>Two Solve clinics</b><p>Real problems from residents, neighborhood groups, and local organizations, worked into next moves.</p></div></div>
-          <div class="step"><span class="num">3</span><div><b>Two Build sessions</b><p>Small tools from actual needs: guides, trackers, intake forms, and source maps.</p></div></div>
-          <div class="step"><span class="num">4</span><div><b>One public-data and memory seed</b><p>311, civic sources, county/state links, and Waldo resource data gathered into a shared memory layer.</p></div></div>
         </div>
-        <aside class="card">
-          <span class="tag">Naming note</span>
-          <h3>WaldoNet was the prototype name.</h3>
-          <p>Waldo is the current pilot frame. NeighborhoodOS is the broader model. Education, training, & problem solving are the public front door. Public data, federated governance, neighborhood asset tracking, and memory are the shared context layer. Hardware/local AI infrastructure, shared tools, and resources are the local capacity layer.</p>
-          <p>That keeps the page from becoming a mythology drawer. Three names is already enough civic confetti.</p>
-        </aside>
+        <div class="path">
+          <h3>I run an organization</h3>
+          <p class="who">A library, nonprofit, church, school, association, or campus.</p>
+          <ul>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Start-Here-for-Partners.md">Start here for partners</a><span>The first 30 days, decisions to make, a 90-day plan.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Session-Plans.md">Session plans</a><span>Every Learn, Solve, and Build session, minute by minute.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Budget-and-Hardware.md">Budget and hardware</a><span>What it costs, from education-only to a full community AI hub.</span></li>
+          </ul>
+        </div>
+        <div class="path">
+          <h3>I build things</h3>
+          <p class="who">Developers, data people, and technical volunteers.</p>
+          <ul>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Technical-Architecture.md">How the software fits together</a><span>Local-first Node.js and SQLite, with safety rules built into the database layer.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Developer-Setup.md">Set it up</a><span>Install, run the tests, pull public data for your neighborhood.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Known-Gaps-and-Roadmap.md">Pick something to fix</a><span>An honest list of what works and what doesn’t yet.</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="partner">
+  <section id="ladder" class="alt">
     <div class="container">
-      <div class="callout">
+      <div class="section-head">
+        <p class="eyebrow">How the program works</p>
         <div>
-          <span class="eyebrow">Partner with the pilot</span>
-          <h2>Bring a place, a problem, or a room of neighbors.</h2>
-        </div>
-        <div>
-          <p>NeighborhoodOS is looking for partners who want a practical 90-day pilot: teach useful AI, work real problems, seed shared public data and neighborhood memory, and learn what a community-governed model should become.</p>
-          <ul>
-            <li>Host an education or training session.</li>
-            <li>Bring a problem to a Solve clinic.</li>
-            <li>Help map public sources and Waldo resources.</li>
-          </ul>
-          <a class="btn" href="mailto:simon@simonlpaige.com?subject=NeighborhoodOS%20pilot">Talk about the pilot</a>
+          <h2>Learn, solve, build, then teach.</h2>
+          <p>Over about 90 days: three Learn sessions, two Solve clinics, and one Build, only if a real need shows up. Each step is a rung. Nobody is graded, and anyone can stop at any rung.</p>
         </div>
       </div>
+      <ol class="ladder">
+        <li class="rung">
+          <div><span class="when">Three Learn sessions</span><h3>Safe AI user</h3><p class="does">How chatbots work, why they make things up, the scams aimed at neighbors, and what never to type in.</p></div>
+          <p class="take"><b>You leave with</b>A privacy checklist, a family safe-word card, and the habit of checking the machine.</p>
+        </li>
+        <li class="rung">
+          <div><span class="when">Two Solve clinics</span><h3>Local problem framer</h3><p class="does">Bring something stuck. Sort out who can actually fix it, what public evidence exists, and the smallest next move.</p></div>
+          <p class="take"><b>You leave with</b>A one-page brief: who has the power to fix it, the public evidence, and a next step with a name on it.</p>
+        </li>
+        <li class="rung">
+          <div><span class="when">One Build, if earned</span><h3>Tool co-designer</h3><p class="does">When a clinic surfaces a real need, sketch a small tool on paper, test it with neighbors, and write its safety rules.</p></div>
+          <p class="take"><b>You leave with</b>A tested paper prototype, or a small working tool with a named human reviewer.</p>
+        </li>
+        <li class="rung">
+          <div><span class="when">After the first 90 days</span><h3>Peer facilitator</h3><p class="does">Co-lead the next cohort with the session plans and facilitator kit. This is how the program outlives any one organization.</p></div>
+          <p class="take"><b>You leave with</b>The materials and confidence to run the next session for your own neighbors.</p>
+        </li>
+      </ol>
+      <p class="ladder-note">The goal isn’t one more intro-to-AI class. It’s neighbors who can teach neighbors.</p>
+    </div>
+  </section>
+
+  <section id="brief">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Bring a problem</p>
+        <div>
+          <h2>A complaint is a frustration. A brief is a plan.</h2>
+          <p>This is the core exercise from our Solve clinics. Fill it in for something stuck on your block. It stays on your device: nothing you type is sent anywhere.</p>
+        </div>
+      </div>
+      <div class="brief-grid">
+        <form class="brief-builder-form" id="brief-form" onsubmit="return false">
+          <div class="field">
+            <label for="b-what">What’s wrong, exactly?
+              <span class="hint">Be concrete: where, since when, who it affects. “Streetlight at 75th and Main out since July,” not “the city ignores us.”</span></label>
+            <textarea id="b-what" name="what"></textarea>
+          </div>
+          <div class="field">
+            <label for="b-who">Who has the power to fix it?</label>
+            <select id="b-who" name="who">
+              <option value="">Choose one</option>
+              <option>The city (311, public works, codes)</option>
+              <option>A utility (power, water, gas)</option>
+              <option>A landlord or property company</option>
+              <option>The county</option>
+              <option>The state</option>
+              <option>Us: neighbors, an association, mutual aid</option>
+              <option>Not sure yet (that’s the first thing to find out)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-evidence">What evidence exists?
+              <span class="hint">311 case numbers, dated photos, permits, meeting minutes. Things anyone can check.</span></label>
+            <textarea id="b-evidence" name="evidence"></textarea>
+          </div>
+          <div class="field">
+            <label for="b-next">What’s the smallest next step, and who will take it?
+              <span class="hint">Something doable this week. “I’ll file a 311 request Tuesday and post the case number.”</span></label>
+            <textarea id="b-next" name="next"></textarea>
+          </div>
+          <p class="privacy-line">Keep it about places and institutions, not about individual neighbors.</p>
+          <button type="button" class="btn small" id="b-example">Show me an example</button>
+        </form>
+
+        <div class="brief-out" aria-labelledby="brief-title">
+          <p class="eyebrow">Your problem brief</p>
+          <h3 id="brief-title">One page, four answers.</h3>
+          <dl>
+            <dt>The problem</dt><dd id="o-what" class="empty">Start typing on the left.</dd>
+            <dt>Who can fix it</dt><dd id="o-who" class="empty">Not chosen yet.</dd>
+            <dt>Evidence</dt><dd id="o-evidence" class="empty">Nothing yet.</dd>
+            <dt>Next step</dt><dd id="o-next" class="empty">Nothing yet.</dd>
+          </dl>
+          <p class="where" id="o-where" hidden></p>
+          <div class="actions no-print">
+            <button type="button" class="btn small primary" id="b-copy">Copy brief</button>
+            <button type="button" class="btn small" id="b-print">Print</button>
+            <button type="button" class="btn small" id="b-clear">Clear</button>
+          </div>
+          <p class="status" id="b-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="never" class="alt">
+    <div class="container">
+      <div class="callout never">
+        <div>
+          <p class="eyebrow" style="color:#B8AC9F">Our promise</p>
+          <h2>Built to be bad at surveillance, on purpose.</h2>
+          <p>Neighborhood data can help people or hurt them. These limits are written into the software itself and every program that uses the name agrees to them.</p>
+          <p><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Safety-Doctrine.md">Read the full safety doctrine</a></p>
+        </div>
+        <ul>
+          <li><strong>No files on residents.</strong> We never build profiles or histories of individual people.</li>
+          <li><strong>No predictive policing.</strong> No hot-spot prediction, and no data sharing with police or immigration enforcement.</li>
+          <li><strong>No watching organizers.</strong> No monitoring of speech, protest, or who influences whom.</li>
+          <li><strong>No scoring people.</strong> No risk, trust, or “value” scores for residents or households.</li>
+          <li><strong>No machine decisions about people.</strong> AI can summarize and draft. Humans decide who gets help.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="status">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Where things stand</p>
+        <div>
+          <h2>Honest status, September 2026.</h2>
+          <p>We say what’s live and what isn’t. Data is labeled with its source and freshness, and when a feed breaks we link to the original instead of pretending.</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact card"><span class="tag moss">Ready</span><p>The full education program: session plans, manuals, rubric, and safety rules.</p></div>
+        <div class="fact card"><span class="tag moss">Live</span><p>The <a href="/local/">Waldo dashboard</a> with recent 311 requests and links to city and county records.</p></div>
+        <div class="fact card"><span class="tag dusk">Pre-alpha</span><p>Open-source software for public data, neighborhood memory, and community voting. Tested, not yet resident-facing.</p></div>
+        <div class="fact card"><span class="tag">Open</span><p>Free for any neighborhood or organization to run. MIT-licensed code, open materials.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="run" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Run it where you live</p>
+        <div>
+          <h2>Everything you need is in the open.</h2>
+          <p>You don’t need permission, a license fee, or the original team. You need a room, a facilitator, two neighbors who can bring twenty more, and someone who takes data seriously. Software is optional until a real need shows up.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Home.md">Open the program wiki</a>
+            <a class="btn" href="/kit/">Print the facilitator kit</a>
+          </div>
+        </div>
+      </div>
+      <div class="kit-grid">
+        <div class="kit-item"><span class="kit-n">A room</span><p>Seats 25, a screen, a blank wall for sticky notes, step-free access.</p></div>
+        <div class="kit-item"><span class="kit-n">Two people in charge</span><p>A program lead, and a separate data steward who decides what gets collected.</p></div>
+        <div class="kit-item"><span class="kit-n">Two connectors</span><p>Trusted neighbors who can personally invite twenty more. Pay them if you can.</p></div>
+        <div class="kit-item"><span class="kit-n">About 90 days</span><p>Seven 90-minute sessions. Roughly $5,000 to $12,000 with paid facilitation and food; less with volunteers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container narrow">
+      <div class="section-head" style="grid-template-columns:1fr">
+        <h2>Questions people ask.</h2>
+      </div>
+      <details><summary>Do I need to know anything about technology?</summary><p>No. The Learn sessions start from zero, and most of the program uses sticky notes, a projector, and conversation.</p></details>
+      <details><summary>Is this anti-AI?</summary><p>No. It’s pro-people. We teach where AI genuinely helps, where it fails, and how to stay in charge of it.</p></details>
+      <details><summary>Does this replace 311 or city services?</summary><p>No. It helps neighbors use them well, and keep track of what institutions promised.</p></details>
+      <details><summary>What do you collect about me?</summary><p>As little as possible: a first name and a way to reach you, if you choose. No addresses. You can ask to have it deleted.</p></details>
+      <details><summary>Can we do this outside Kansas City?</summary><p>Yes. The education program works anywhere. The software needs new connectors for your city’s open data. The <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Launching-a-New-Neighborhood.md">launch checklist</a> walks through it.</p></details>
     </div>
   </section>
 </main>
+
 <footer>
   <div class="container footer-row">
-    <span>NeighborhoodOS · Waldo pilot · Kansas City</span>
-    <span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a> · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">source</a></span>
+    <span>NeighborhoodOS. Open for community use. Started in Waldo, Kansas City.</span>
+    <span><a href="/learn/">Free lesson</a> &nbsp; <a href="/local/">Waldo dashboard</a> &nbsp; <a href="https://github.com/simonlpaige/neighborhoodos">Source</a> &nbsp; <a href="/kit/">Facilitator kit</a> &nbsp; <a href="/llms.txt">llms.txt</a></span>
   </div>
 </footer>
+
+<script>
+(function () {
+  /* Catch the machine */
+  var box = document.getElementById('exercise');
+  var claims = box.querySelectorAll('.claim');
+  var result = document.getElementById('ex-result');
+  var check = document.getElementById('ex-check');
+  var reset = document.getElementById('ex-reset');
+  var instr = document.getElementById('ex-instr');
+  claims.forEach(function (c) {
+    c.addEventListener('click', function () {
+      if (box.classList.contains('revealed')) return;
+      c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    });
+  });
+  check.addEventListener('click', function () {
+    var caught = 0, missed = 0, extra = 0;
+    claims.forEach(function (c) {
+      var bad = c.dataset.kind !== 'checkable';
+      var picked = c.getAttribute('aria-pressed') === 'true';
+      if (bad && picked) caught++; else if (bad) missed++; else if (picked) extra++;
+    });
+    box.classList.add('revealed');
+    claims.forEach(function (c) { c.setAttribute('aria-disabled', 'true'); });
+    var head = missed === 0
+      ? 'You caught both. Nice work.'
+      : 'You caught ' + caught + ' of 2. That’s normal: the made-up lines are written to sound exactly like the real ones.';
+    var tail = extra ? ' Being careful with the true lines is fine too. The habit is what matters.' : '';
+    result.innerHTML = '<p><strong>' + head + '</strong>' + tail + '</p><p>The rule: check anything specific (numbers, laws, deadlines, links) at the original source. <a href="/learn/">Learn more in the free lesson.</a></p>';
+    result.hidden = false; check.hidden = true; reset.hidden = false; instr.hidden = true;
+    reset.focus();
+  });
+  reset.addEventListener('click', function () {
+    box.classList.remove('revealed');
+    claims.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.removeAttribute('aria-disabled'); });
+    result.hidden = true; check.hidden = false; reset.hidden = true; instr.hidden = false;
+    claims[0].focus();
+  });
+
+  /* Problem brief builder (stays in the browser) */
+  var fields = ['what', 'who', 'evidence', 'next'];
+  var empty = { what: 'Start typing on the left.', who: 'Not chosen yet.', evidence: 'Nothing yet.', next: 'Nothing yet.' };
+  var status = document.getElementById('b-status');
+  var where = {
+    'The city (311, public works, codes)': 'Tip: file a 311 request first and write down the case number. It becomes your evidence, and you can check its status later.',
+    'A utility (power, water, gas)': 'Tip: utilities keep their own outage and repair records. Report it through the utility directly and ask for a ticket number.',
+    'A landlord or property company': 'Tip: put the request in writing and keep a dated copy. For rights and options, talk to a tenant advocate, not a chatbot.',
+    'The county': 'Tip: county offices handle things like assessments, health, and some roads. The county legislature publishes agendas you can speak at.',
+    'The state': 'Tip: your state representative’s office can often route a problem to the right agency faster than a cold call.',
+    'Us: neighbors, an association, mutual aid': 'Tip: the smallest next step is usually one conversation. Bring this brief to your next association meeting.',
+    'Not sure yet (that’s the first thing to find out)': 'Tip: that’s normal. Your next step can simply be: find out who is responsible. Bring it to a Solve clinic.'
+  };
+  function render() {
+    fields.forEach(function (f) {
+      var v = document.getElementById('b-' + f).value.trim();
+      var out = document.getElementById('o-' + f);
+      out.textContent = v || empty[f];
+      out.classList.toggle('empty', !v);
+    });
+    var w = where[document.getElementById('b-who').value];
+    var wEl = document.getElementById('o-where');
+    wEl.textContent = w || ''; wEl.hidden = !w;
+  }
+  fields.forEach(function (f) { document.getElementById('b-' + f).addEventListener('input', render); });
+  document.getElementById('b-copy').addEventListener('click', function () {
+    var labels = { what: 'The problem', who: 'Who can fix it', evidence: 'Evidence', next: 'Next step' };
+    var text = 'PROBLEM BRIEF\n\n' + fields.map(function (f) {
+      return labels[f] + ':\n' + (document.getElementById('b-' + f).value.trim() || '(blank)');
+    }).join('\n\n') + '\n\nMade with the NeighborhoodOS brief builder: neighborhoodos.org/#brief';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { status.textContent = 'Copied. Paste it into an email, a note, or a meeting agenda.'; },
+        function () { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; });
+    } else { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; }
+  });
+  document.getElementById('b-example').addEventListener('click', function () {
+    document.getElementById('b-what').value = 'The streetlight at the corner of our block has been out since July. Kids walk past it to the bus stop before sunrise.';
+    document.getElementById('b-who').value = 'The city (311, public works, codes)';
+    document.getElementById('b-evidence').value = 'Dated phone photos from July, August, and September. Not sure yet if anyone filed a 311 request; checking the open 311 map.';
+    document.getElementById('b-next').value = 'Maria files a 311 request Tuesday and posts the case number in the block group. We check its status in two weeks.';
+    render(); status.textContent = 'Example filled in. Clear it and try your own.';
+  });
+  document.getElementById('b-print').addEventListener('click', function () { window.print(); });
+  document.getElementById('b-clear').addEventListener('click', function () {
+    fields.forEach(function (f) { document.getElementById('b-' + f).value = ''; });
+    render(); status.textContent = 'Cleared.';
+    document.getElementById('b-what').focus();
+  });
+})();
+</script>
 </body>
 </html>

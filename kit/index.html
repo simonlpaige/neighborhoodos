@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilitator kit: printable handouts | NeighborhoodOS</title>
+<meta name="description" content="Every printable handout for running NeighborhoodOS Learn, Solve, and Build sessions: sign-in and consent, privacy checklist, pocket cards, sort cards, scam examples, problem brief, rubric, feedback forms, and a recruitment flyer.">
+<link rel="canonical" href="https://neighborhoodos.org/kit/">
+<meta property="og:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="twitter:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5EFE6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/nos.css">
+<style>
+.kit-head { padding:60px 0 36px; border-bottom:var(--rule-soft); }
+.kit-head h1 { max-width:14ch; }
+.index { display:grid; grid-template-columns:1fr 1fr; gap:0 32px; list-style:none; margin-top:26px; }
+.index li { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 0; border-top:var(--rule-soft); }
+.index li span.for { font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); white-space:nowrap; }
+.handouts { padding:40px 0 20px; }
+.handout { background:#fff; color:#1F1A17; max-width:8.5in; margin:0 auto 40px; padding:.6in .65in; border:1px solid var(--paper-3); border-radius:6px; box-shadow:0 18px 40px -30px rgba(31,26,23,.5); }
+.handout h2 { font-size:30px; max-width:none; margin-bottom:6px; }
+.handout .sub { color:#5A5048; margin-bottom:18px; }
+.handout h3 { font-size:19px; margin:16px 0 6px; }
+.handout p, .handout li, .handout td { font-size:15px; max-width:none; }
+.h-bar { display:flex; justify-content:space-between; align-items:center; gap:12px; max-width:8.5in; margin:0 auto 10px; }
+.h-bar .eyebrow { margin:0; }
+table.sheet { width:100%; border-collapse:collapse; margin-top:10px; }
+table.sheet th, table.sheet td { border:1px solid #9C9086; padding:8px; text-align:left; vertical-align:top; }
+table.sheet th { font-family:var(--mono); font-size:11px; font-weight:500; letter-spacing:.06em; text-transform:uppercase; background:#F3EEE6; }
+table.sheet td { height:34px; }
+.box { display:inline-block; width:13px; height:13px; border:1.5px solid #1F1A17; vertical-align:-2px; margin-right:6px; }
+.cutgrid { display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px dashed #9C9086; }
+.cutgrid > div { border:1px dashed #9C9086; padding:18px; min-height:2.3in; }
+.cutgrid.small > div { min-height:1.3in; padding:14px; }
+.cutgrid h4 { font-family:var(--display); font-style:italic; font-weight:400; font-size:20px; margin-bottom:6px; }
+.cutgrid ol, .cutgrid ul { margin-left:18px; }
+.cutgrid li { margin:4px 0; font-size:14px; }
+.card-label { font-family:var(--mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:#6E645B; }
+.lines { border-bottom:1px solid #9C9086; height:30px; }
+.msg { border:1px solid #9C9086; border-radius:8px; padding:14px; margin:10px 0; font-size:14.5px; }
+.msg .from { font-family:var(--mono); font-size:11.5px; color:#6E645B; margin-bottom:6px; }
+.flyer h2 { font-size:46px; line-height:1.02; }
+.flyer .big { font-family:var(--display); font-size:22px; line-height:1.35; margin:16px 0; }
+.fill { display:inline-block; min-width:3.2in; border-bottom:1.5px solid #1F1A17; height:1.2em; }
+.two { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.foot { margin-top:18px; font-size:12px; color:#6E645B; }
+@media (max-width:760px) {
+  .index { grid-template-columns:1fr; }
+  .handout { padding:22px; }
+  .two { grid-template-columns:1fr; }
+  table.sheet { font-size:13px; display:block; overflow-x:auto; }
+  .fill { min-width:0 !important; width:100%; display:block; }
+  .cutgrid { grid-template-columns:1fr; }
+  .flyer h2 { font-size:34px; }
+}
+@media print {
+  @page { size: letter; margin: .5in; }
+  .kit-head, .h-bar, .no-print { display:none !important; }
+  .handouts { padding:0; }
+  .handout { border:0; box-shadow:none; margin:0; padding:0; max-width:none; page-break-after:always; break-after:page; }
+  body.print-one .handout:not(.target) { display:none !important; }
+  .lines { height:40px; }
+  #h-brief h3 { margin-top:26px; }
+  a { color:inherit; text-decoration:none; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav class="site-nav no-print" aria-label="Primary">
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="/learn/">Free lesson</a>
+    <a href="/#brief">Bring a problem</a>
+    <a href="/#run">Run a program</a>
+    <a href="/kit/" aria-current="page">Facilitator kit</a>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="kit-head">
+    <div class="container">
+      <p class="eyebrow">For facilitators</p>
+      <h1>The facilitator kit.</h1>
+      <p class="lede">Every handout you need for a full Learn, Solve, and Build cycle, formatted for letter paper. Print one, or print them all. Pair it with the <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Session-Plans.md">session plans</a>.</p>
+      <div class="actions"><button type="button" class="btn primary" id="print-all">Print the whole kit</button></div>
+      <ul class="index" aria-label="Handouts">
+        <li><a href="#h-signin">Sign-in and consent sheet</a><span class="for">Every session</span></li>
+        <li><a href="#h-privacy">Privacy checklist</a><span class="for">Learn 1</span></li>
+        <li><a href="#h-sort">Good, risky, never: sort cards</a><span class="for">Learn 1</span></li>
+        <li><a href="#h-pocket">Pocket cards</a><span class="for">Learn 1 &amp; 2</span></li>
+        <li><a href="#h-phish">Spot the scam</a><span class="for">Learn 2</span></li>
+        <li><a href="#h-hunt">Public data treasure hunt</a><span class="for">Learn 3</span></li>
+        <li><a href="#h-brief">Problem brief</a><span class="for">Solve clinics</span></li>
+        <li><a href="#h-log">Public problem log</a><span class="for">Solve clinics</span></li>
+        <li><a href="#h-rubric">Build rubric score sheet</a><span class="for">Build</span></li>
+        <li><a href="#h-check">Before and after check</a><span class="for">Learn 1 &amp; 3</span></li>
+        <li><a href="#h-feedback">Session feedback slips</a><span class="for">Every session</span></li>
+        <li><a href="#h-flyer">Invitation flyer</a><span class="for">Recruiting</span></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="handouts container">
+
+    <div class="h-bar"><p class="eyebrow">Every session</p><button type="button" class="btn small" data-print="h-signin">Print this</button></div>
+    <article class="handout" id="h-signin">
+      <h2>Welcome. Sign in if you’d like.</h2>
+      <p class="sub">Session: ____________________ &nbsp; Date: __________ &nbsp; Place: ______________________</p>
+      <p><strong>What we collect and why.</strong> Only what’s on this sheet, and only if you choose. We use it to tell you about future sessions. We don’t collect addresses, we don’t share this list, and we don’t track who comes to what. Ask the data steward to delete your line anytime.</p>
+      <p>Data steward: ______________________ &nbsp; Contact: ______________________</p>
+      <table class="sheet">
+        <thead><tr><th style="width:24%">First name</th><th style="width:34%">Best way to reach you (optional)</th><th>Tell me about future sessions</th><th>OK to quote me without my name</th></tr></thead>
+        <tbody>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+          <tr><td></td><td></td><td><span class="box"></span>Yes</td><td><span class="box"></span>Yes</td></tr>
+        </tbody>
+      </table>
+      <p class="foot">Need an interpreter, large print, or another accommodation next time? Tell a facilitator or write it on the back. · NeighborhoodOS</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Learn 1</p><button type="button" class="btn small" data-print="h-privacy">Print this</button></div>
+    <article class="handout" id="h-privacy">
+      <h2>My privacy checklist</h2>
+      <p class="sub">Check the ones you already do. Circle one to start this week.</p>
+      <h3>Before I type into a chatbot</h3>
+      <p><span class="box"></span>I leave out my Social Security number, bank or card numbers, and passwords.</p>
+      <p><span class="box"></span>I leave out medical details about me or my family.</p>
+      <p><span class="box"></span>I don’t paste in leases, contracts, or legal papers. If I need help, I remove names, addresses, and numbers first.</p>
+      <p><span class="box"></span>I don’t type other people’s private information.</p>
+      <h3>When a chatbot tells me something</h3>
+      <p><span class="box"></span>I check numbers, laws, deadlines, names, and links at the original source.</p>
+      <p><span class="box"></span>I use it for drafts and ideas. I make the decisions.</p>
+      <p><span class="box"></span>For legal, health, or money questions, I ask a real person too.</p>
+      <h3>When a message or call feels urgent</h3>
+      <p><span class="box"></span>My family has a safe word a stranger couldn’t guess.</p>
+      <p><span class="box"></span>If someone asks for money in a hurry, I hang up and call back on a number I already have.</p>
+      <p><span class="box"></span>I don’t tap links in messages I wasn’t expecting. I go to the official website myself.</p>
+      <h3>One thing I’ll do this week</h3>
+      <div class="lines"></div><div class="lines"></div>
+      <p class="foot">Keep this. Nobody collects it. · neighborhoodos.org/learn</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Learn 1</p><button type="button" class="btn small" data-print="h-sort">Print this</button></div>
+    <article class="handout" id="h-sort">
+      <h2>Good, risky, or never?</h2>
+      <p class="sub">Cut apart. In small groups, sort each card into three piles: <strong>Good with checking</strong>, <strong>Risky</strong>, <strong>Never</strong>. Facilitator key on the back of the last card.</p>
+      <div class="cutgrid small">
+        <div><span class="card-label">Card 1</span><p>Summarize a 40-page city budget so our association can read it.</p></div>
+        <div><span class="card-label">Card 2</span><p>Tell me exactly what the law says about my eviction notice.</p></div>
+        <div><span class="card-label">Card 3</span><p>Draft a polite email to my council member about a broken sidewalk.</p></div>
+        <div><span class="card-label">Card 4</span><p>Decide which families get the food pantry’s last boxes.</p></div>
+        <div><span class="card-label">Card 5</span><p>Brainstorm questions to ask at the zoning meeting.</p></div>
+        <div><span class="card-label">Card 6</span><p>Figure out what my symptoms mean.</p></div>
+        <div><span class="card-label">Card 7</span><p>Translate a school flyer into Spanish so I can check it with a neighbor.</p></div>
+        <div><span class="card-label">Card 8</span><p>Rank which neighbors are “trustworthy.”</p></div>
+        <div><span class="card-label">Card 9</span><p>Explain what a word in a city notice means.</p></div>
+        <div><span class="card-label">Card 10</span><p>Pick which contractor to hire from a list of reviews.</p></div>
+        <div><span class="card-label">Card 11</span><p>Write a first draft of our block party flyer.</p></div>
+        <div><span class="card-label">Facilitator key</span><p><strong>Good with checking:</strong> 1, 3, 5, 7, 9, 11. <strong>Risky:</strong> 2, 6, 10 (use it to find better questions, then ask a person). <strong>Never:</strong> 4, 8 (decisions about people).</p></div>
+      </div>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Learn 1 &amp; 2</p><button type="button" class="btn small" data-print="h-pocket">Print this</button></div>
+    <article class="handout" id="h-pocket">
+      <h2>Pocket cards</h2>
+      <p class="sub">Cut along the dashed lines. Two of each per page.</p>
+      <div class="cutgrid">
+        <div><h4>Check the machine</h4><ol><li>It predicts what sounds right, not what is right.</li><li>Check numbers, laws, deadlines, and links at the original source.</li><li>Never type ID numbers, bank info, passwords, health details, or legal papers.</li><li>Use it for drafts. You decide.</li></ol><p class="card-label" style="margin-top:8px">neighborhoodos.org/learn</p></div>
+        <div><h4>Our family safe word</h4><p style="font-size:14px">If someone calls sounding like family and asks for money in a hurry, ask for the word. No word? Hang up and call back on a number you know.</p><p style="margin-top:14px">Safe word: <span class="fill" style="min-width:1.6in"></span></p><p class="card-label" style="margin-top:8px">Keep it private. Don’t post it online.</p></div>
+        <div><h4>Check the machine</h4><ol><li>It predicts what sounds right, not what is right.</li><li>Check numbers, laws, deadlines, and links at the original source.</li><li>Never type ID numbers, bank info, passwords, health details, or legal papers.</li><li>Use it for drafts. You decide.</li></ol><p class="card-label" style="margin-top:8px">neighborhoodos.org/learn</p></div>
+        <div><h4>Our family safe word</h4><p style="font-size:14px">If someone calls sounding like family and asks for money in a hurry, ask for the word. No word? Hang up and call back on a number you know.</p><p style="margin-top:14px">Safe word: <span class="fill" style="min-width:1.6in"></span></p><p class="card-label" style="margin-top:8px">Keep it private. Don’t post it online.</p></div>
+      </div>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Learn 2</p><button type="button" class="btn small" data-print="h-phish">Print this</button></div>
+    <article class="handout" id="h-phish">
+      <h2>Spot the scam</h2>
+      <p class="sub">These are made-up examples of the kind of messages AI makes easy to write. Circle every warning sign you can find. Then compare with your group.</p>
+      <div class="msg"><p class="from">Text message · from an unknown number</p><p>Hi, this is Water Services. Our records show a past-due balance on your account at your address. Service will be shut off TODAY at 4pm. Pay now to avoid a $150 reconnection fee: bit.ly/pay-water-now</p></div>
+      <div class="msg"><p class="from">Email · “Neighborhood Assistance Program”</p><p>Congratulations! Because you live near 75th Street, you qualify for a $2,000 home repair grant from the city. To receive your funds, confirm your Social Security number and bank routing number by replying to this email within 24 hours.</p></div>
+      <div class="msg"><p class="from">Phone call · sounds like your grandson</p><p>“Grandma, it’s me. I’m in trouble, I got in a car accident and they’re holding me. Please don’t tell Mom. A lawyer is going to call you. I need you to get $800 in gift cards, right now.”</p></div>
+      <h3>Warning signs to look for</h3>
+      <div class="two">
+        <ul class="plain"><li>A deadline measured in hours</li><li>A threat (shutoff, arrest, lost money)</li><li>A shortened or strange link</li><li>Asking for ID or bank numbers</li></ul>
+        <ul class="plain"><li>Gift cards, wire transfers, or crypto</li><li>“Don’t tell anyone”</li><li>Local details that make it feel real</li><li>Money you didn’t apply for</li></ul>
+      </div>
+      <h3>What to do instead</h3>
+      <p>Hang up or don’t reply. Look up the real phone number yourself (on your bill, or the official website) and call. Ask the family safe word. When in doubt, ask someone you trust before you pay anything.</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Learn 3</p><button type="button" class="btn small" data-print="h-hunt">Print this</button></div>
+    <article class="handout" id="h-hunt">
+      <h2>Public data treasure hunt</h2>
+      <p class="sub">Work in pairs. Pick a block you know. Find as many of these as you can in 20 minutes, using the city’s open data portal, the 311 map, and council agendas. Facilitator: write the local website addresses on the board.</p>
+      <table class="sheet">
+        <thead><tr><th style="width:36%">Find</th><th>What you found (and where)</th></tr></thead>
+        <tbody>
+          <tr><td>An open 311 request near your block</td><td></td></tr>
+          <tr><td>How long a similar request took to close</td><td></td></tr>
+          <tr><td>A building permit issued nearby this year</td><td></td></tr>
+          <tr><td>A property on a dangerous or vacant buildings list</td><td></td></tr>
+          <tr><td>An upcoming council or committee agenda item that affects the area</td><td></td></tr>
+          <tr><td>One line in the city budget that pays for something on your block</td><td></td></tr>
+          <tr><td>Something you expected to find but couldn’t</td><td></td></tr>
+        </tbody>
+      </table>
+      <h3>The line we don’t cross</h3>
+      <p>We look at places and institutions, not people. “Every unresolved streetlight request in our area” is fine. “Which neighbors complain the most” is never fine, even if the data could show it.</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Solve clinics</p><button type="button" class="btn small" data-print="h-brief">Print this</button></div>
+    <article class="handout" id="h-brief">
+      <h2>Problem brief</h2>
+      <p class="sub">One page, four answers. A complaint is a frustration; a brief is a plan. You can also fill this in online at neighborhoodos.org/#brief.</p>
+      <h3>1. What’s wrong, exactly?</h3>
+      <p style="color:#5A5048">Where, since when, who it affects. Concrete beats general.</p>
+      <div class="lines"></div><div class="lines"></div><div class="lines"></div><div class="lines"></div>
+      <h3>2. Who has the power to fix it?</h3>
+      <p><span class="box"></span>City &nbsp; <span class="box"></span>Utility &nbsp; <span class="box"></span>Landlord / property company &nbsp; <span class="box"></span>County &nbsp; <span class="box"></span>State &nbsp; <span class="box"></span>Us (neighbors, association) &nbsp; <span class="box"></span>Not sure yet</p>
+      <p>Specific office or person: <span class="fill"></span></p>
+      <h3>3. What evidence exists?</h3>
+      <p style="color:#5A5048">311 case numbers, dated photos, permits, meeting minutes. Things anyone can check.</p>
+      <div class="lines"></div><div class="lines"></div><div class="lines"></div>
+      <h3>4. The smallest next step</h3>
+      <p>What: <span class="fill" style="min-width:5.4in"></span></p>
+      <p>Who will do it: <span class="fill" style="min-width:2in"></span> &nbsp; By when: <span class="fill" style="min-width:1.4in"></span></p>
+      <p class="foot">Keep it about places and institutions, not individual neighbors. · NeighborhoodOS Solve clinic</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Solve clinics</p><button type="button" class="btn small" data-print="h-log">Print this</button></div>
+    <article class="handout" id="h-log">
+      <h2>Public problem log</h2>
+      <p class="sub">Post this on the wall. Update it at every clinic. Report back on every line, including the ones that didn’t move.</p>
+      <table class="sheet">
+        <thead><tr><th style="width:5%">#</th><th style="width:30%">Problem</th><th style="width:18%">Who can fix it</th><th style="width:22%">Next step</th><th style="width:12%">Owner</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>7</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>8</td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>9</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>10</td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p class="foot">Status: Open · In progress · Waiting on someone else · Resolved · Set aside (write why)</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Build</p><button type="button" class="btn small" data-print="h-rubric">Print this</button></div>
+    <article class="handout" id="h-rubric">
+      <h2>Should we build it? Score sheet</h2>
+      <p class="sub">Tool idea: ______________________________ &nbsp; From brief #: ______ &nbsp; Date: __________</p>
+      <h3>Red-light test: any “yes” stops the idea</h3>
+      <p><span class="box"></span>Does it link people’s identities to their records (complaints, violations, disputes)?</p>
+      <p><span class="box"></span>Does it connect to police, immigration, or other enforcement systems?</p>
+      <p><span class="box"></span>Does it track where individual people go over time?</p>
+      <p><span class="box"></span>Does it give people or households a score or rating?</p>
+      <p><span class="box"></span>Does it collect social media conversations without clear, ongoing consent?</p>
+      <p><span class="box"></span>Does it make automated decisions about who gets help or resources?</p>
+      <h3>Score (0 to 3 each). Need 7 of 9 to build.</h3>
+      <table class="sheet">
+        <thead><tr><th style="width:44%">Question</th><th style="width:10%">Score</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Neighbors first.</strong> Does it directly help residents, especially those with the least access?</td><td></td><td></td></tr>
+          <tr><td><strong>Show the receipts.</strong> Does every fact link back to a public, checkable source?</td><td></td><td></td></tr>
+          <tr><td><strong>Toothbrush test.</strong> Will people use it weekly, and can a volunteer keep it running?</td><td></td><td></td></tr>
+          <tr><td style="text-align:right"><strong>Total</strong></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:14px">Human reviewer (who checks its output): <span class="fill"></span></p>
+      <p>Date we’ll decide whether to keep it: <span class="fill" style="min-width:2in"></span></p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Learn 1 &amp; 3</p><button type="button" class="btn small" data-print="h-check">Print this</button></div>
+    <article class="handout" id="h-check">
+      <h2>Quick check (anonymous)</h2>
+      <p class="sub">Don’t write your name. Hand out at the start of Learn 1 and again at the end of Learn 3. Circle one: <strong>Before &nbsp; / &nbsp; After</strong></p>
+      <h3>1. A chatbot gives you the exact city code section your landlord is breaking. You…</h3>
+      <p><span class="box"></span>Use it in a letter &nbsp; <span class="box"></span>Look it up on the city’s site first &nbsp; <span class="box"></span>Ask the chatbot if it’s sure</p>
+      <h3>2. A call sounds like your grandchild asking for $800 right now. You…</h3>
+      <p><span class="box"></span>Send it &nbsp; <span class="box"></span>Ask their birthday &nbsp; <span class="box"></span>Hang up and call back on a number you know</p>
+      <h3>3. Is it safe to paste your whole lease into a free chatbot?</h3>
+      <p><span class="box"></span>Yes &nbsp; <span class="box"></span>Only if I delete the chat &nbsp; <span class="box"></span>Not without removing private details first</p>
+      <h3>4. How confident do you feel using AI safely?</h3>
+      <p>Not at all &nbsp; 1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5 &nbsp; Very</p>
+      <p class="foot">Facilitator key: 1 second answer, 2 third answer, 3 third answer. Compare the share of safe answers before and after; don’t match sheets to people.</p>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Every session</p><button type="button" class="btn small" data-print="h-feedback">Print this</button></div>
+    <article class="handout" id="h-feedback">
+      <h2>Session feedback slips</h2>
+      <p class="sub">Cut into four. Anonymous. Collect in a box by the door.</p>
+      <div class="cutgrid">
+        <div><p><strong>How useful was today?</strong> &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4 &nbsp;5</p><p>One thing I’ll do differently this week:</p><div class="lines"></div><p style="margin-top:8px">What should change?</p><div class="lines"></div><p style="margin-top:8px">Come back? &nbsp;<span class="box"></span>Yes <span class="box"></span>Maybe <span class="box"></span>No</p></div>
+        <div><p><strong>How useful was today?</strong> &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4 &nbsp;5</p><p>One thing I’ll do differently this week:</p><div class="lines"></div><p style="margin-top:8px">What should change?</p><div class="lines"></div><p style="margin-top:8px">Come back? &nbsp;<span class="box"></span>Yes <span class="box"></span>Maybe <span class="box"></span>No</p></div>
+        <div><p><strong>How useful was today?</strong> &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4 &nbsp;5</p><p>One thing I’ll do differently this week:</p><div class="lines"></div><p style="margin-top:8px">What should change?</p><div class="lines"></div><p style="margin-top:8px">Come back? &nbsp;<span class="box"></span>Yes <span class="box"></span>Maybe <span class="box"></span>No</p></div>
+        <div><p><strong>How useful was today?</strong> &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4 &nbsp;5</p><p>One thing I’ll do differently this week:</p><div class="lines"></div><p style="margin-top:8px">What should change?</p><div class="lines"></div><p style="margin-top:8px">Come back? &nbsp;<span class="box"></span>Yes <span class="box"></span>Maybe <span class="box"></span>No</p></div>
+      </div>
+    </article>
+
+    <div class="h-bar"><p class="eyebrow">Recruiting</p><button type="button" class="btn small" data-print="h-flyer">Print this</button></div>
+    <article class="handout flyer" id="h-flyer">
+      <p class="eyebrow">Free · Neighbors welcome · No experience needed</p>
+      <h2>AI is showing up in our neighborhood. Let’s learn it together.</h2>
+      <p class="big">Three friendly evenings on what AI chatbots can and can’t do, the scams aimed at people like us, and how to keep your information private. Then bring a real problem from your block and leave with a plan.</p>
+      <p><strong>Where:</strong> <span class="fill"></span></p>
+      <p><strong>When:</strong> <span class="fill"></span></p>
+      <p><strong>Food:</strong> <span class="fill"></span></p>
+      <p><strong>Questions or accommodations:</strong> <span class="fill"></span></p>
+      <p class="big" style="font-style:italic">The software doesn’t swing the hammer. People swing the hammer.</p>
+      <p class="foot">NeighborhoodOS is a free, open community program. We never sell or share your information. neighborhoodos.org</p>
+    </article>
+
+  </div>
+</main>
+
+<footer class="no-print">
+  <div class="container footer-row">
+    <span>NeighborhoodOS. Open for community use. Copy, adapt, and translate freely.</span>
+    <span><a href="/">Home</a> &nbsp; <a href="/learn/">Free lesson</a> &nbsp; <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Session-Plans.md">Session plans</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.getElementById('print-all').addEventListener('click', function () {
+    document.body.classList.remove('print-one'); window.print();
+  });
+  document.querySelectorAll('[data-print]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.handout.target').forEach(function (h) { h.classList.remove('target'); });
+      document.getElementById(btn.dataset.print).classList.add('target');
+      document.body.classList.add('print-one');
+      window.print();
+    });
+  });
+  window.addEventListener('afterprint', function () {
+    document.body.classList.remove('print-one');
+    document.querySelectorAll('.handout.target').forEach(function (h) { h.classList.remove('target'); });
+  });
+})();
+</script>
+</body>
+</html>

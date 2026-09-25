@@ -14,7 +14,7 @@ npm install
 npm test
 ```
 
-`npm test` runs two suites. You should see `35 passed, 0 failed` and `5 passed, 0 failed`. Both use temporary databases and clean up after themselves.
+`npm test` runs three suites. You should see `35 passed`, `5 passed`, and `6 passed`, each with `0 failed`. Both use temporary databases and clean up after themselves.
 
 ## Configure a neighborhood
 
@@ -77,6 +77,7 @@ Admin routes are closed unless `ADMIN_TOKEN` is set or per-admin tokens are prov
 | `RL_*_MAX` | Rate-limit tuning |
 | `RETENTION_*` | Data retention windows |
 | `FEDERATION_MAX_STALENESS_SECONDS`, `NODE_PRIVKEY_PATH` | Federation |
+| `NOS_LLM_HOST`, `NOS_LLM_MODEL` | Local model for tools (defaults: `http://localhost:11434`, `qwen2.5:7b`) |
 
 ## Adding a schema change
 

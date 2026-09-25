@@ -26,6 +26,7 @@ export * as ballotPdf from '../identity/ballot-pdf.js';
 export * as digest from '../identity/digest.js';
 export * as probe from '../ingest/probe.js';
 export * as meetingsPacket from './meetings-packet.js';
+export * as llm from './llm.js';
 
 // ----------------------------------------------------------------
 // Convenience: spin up a full node

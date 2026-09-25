@@ -37,6 +37,7 @@ NeighborhoodOS software is a small, local-first Node.js codebase built on SQLite
 | `index.html`, `learn/`, `local/`, `pilot/`, `launch.html` | Public website, served by GitHub Pages from `main` | Live |
 | `core/db.js` | **Safety driver.** Wraps every node database; refuses banned tables, columns, and patterns; logs blocked attempts to an append-only table | Working, tested |
 | `core/node.js` | One import for the whole API; `createNode()` spins up a node | Working |
+| `core/llm.js` | Local AI helper for tools: source-grounded answers, citations, PII redaction, local-host-only by default | Working, tested with a fake model |
 | `core/meetings-packet.js` | Builds printable meeting packets (PDF) from Legistar | Working, needs live testing |
 | `connectors/kc-open-data.js` | Incremental sync from Kansas City's Socrata open data portal | Working (network required) |
 | `connectors/legistar.js` | Kansas City council matters and events; commitment tracking | Working (network required) |
@@ -44,9 +45,9 @@ NeighborhoodOS software is a small, local-first Node.js codebase built on SQLite
 | `connectors/commonweave-directory.js` | Optional lookup of commons-aligned orgs nearby | Optional |
 | `connectors/_fetch.js` | Shared HTTP with retries and backoff | Working |
 | `ingest/sync.js`, `ingest/probe.js` | Cron-ready sync of all sources with a lockfile; health probe | Working |
-| `identity/` | Civic identity, trust levels, voting (5 methods), issues, commitments, federation, audit, rate limits, admin tokens, paper ballots, digests, HTTP API | Working, 40 automated checks pass |
+| `identity/` | Civic identity, trust levels, voting (5 methods), issues, commitments, federation, audit, rate limits, admin tokens, paper ballots, digests, HTTP API | Working; `npm test` runs 46 automated checks |
 | `identity/migrations/` | Numbered SQL migrations applied on open | Working |
-| `wedges/home-maintenance/` | First prototype "wedge" (home repair in West Waldo) | Legacy prototype; separate package |
+| `wedges/home-maintenance/` | First prototype "wedge" (home repair in West Waldo) | **Archived**; bypasses the safety driver, don't deploy |
 | `docs/` | Full manuals: workshops, rubric, safety, stewardship, data, compute | Current |
 | `wiki/` | This wiki | Current |
 | `node.config.example.json` | Per-neighborhood settings template | Current |
@@ -67,9 +68,9 @@ NeighborhoodOS software is a small, local-first Node.js codebase built on SQLite
 
 ## Where the AI models fit
 
-The codebase itself does not currently call an AI model. AI enters in two ways:
+AI enters in two ways:
 1. **In sessions**, through a facilitator-run chat tool.
-2. **In a Build**, where a tool calls a *local* model hosted by Ollama on the hub workstation. See [Building a Tool](Building-a-Tool.md) and the [Local Compute Guide](../docs/LOCAL-COMPUTE-GUIDE.md).
+2. **In a Build**, where a tool calls a *local* model hosted by Ollama on the hub workstation through `core/llm.js`, which enforces source-grounding, citations, redaction, and local-only hosting. See [Building a Tool](Building-a-Tool.md) and the [Local Compute Guide](../docs/LOCAL-COMPUTE-GUIDE.md).
 
 ## Honest status
 

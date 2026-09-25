@@ -47,10 +47,13 @@ Use **community-governed access** unless full community ownership is actually es
 ## Public URLs
 
 - Home: https://neighborhoodos.org/
+- Free self-paced lesson (Using AI safely): https://neighborhoodos.org/learn/
+- Facilitator kit (printable handouts for every session): https://neighborhoodos.org/kit/
+- Program wiki (how to run a program, session plans, budget, safety, technical setup): https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Home.md
 - Waldo local dashboard: https://neighborhoodos.org/local/
 - Pilot alias: https://neighborhoodos.org/pilot/
 - Source: https://github.com/simonlpaige/neighborhoodos
 
-## Contact
+## Status and contact
 
-Simon Paige, pilot lead.
+NeighborhoodOS is open for community use: MIT-licensed code and openly shared program materials. Any organization may run the program under the safety boundaries above. Created by Simon L. Paige. Questions: open an issue at https://github.com/simonlpaige/neighborhoodos/issues

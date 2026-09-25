@@ -1,3 +1,5 @@
+> **Archived prototype.** This was the first experiment (2026) and is kept for reference. It opens SQLite directly rather than through the `core/db.js` safety driver, so do not deploy it for public use as-is. New tools should follow [wiki/Building-a-Tool.md](../../wiki/Building-a-Tool.md).
+
 # Wedge: Home Maintenance (West Waldo, KCMO)
 
 First NeighborhoodOS pilot. Target: homeowners in West Waldo who keep postponing fixable problems because they can't find a trustworthy contractor or the cash-to-comfort ratio doesn't work.

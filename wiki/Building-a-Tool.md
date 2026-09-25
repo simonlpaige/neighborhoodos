@@ -30,34 +30,25 @@ Most good neighborhood tools stop at 1 or 2.
 
 ## 4. Using a local AI model
 
+Use `core/llm.js`. It already enforces the program's rules: answers come only from the sources you pass, citations come back with the answer, obvious personal data (SSNs, emails, phone and card numbers) is stripped from the question, requests only go to a local or private-network host unless a steward explicitly allows otherwise, and every result is marked `reviewed: false` until a person checks it.
+
 ```js
 import { createSecureDatabase } from '../core/db.js';
+import { askLocal } from '../core/llm.js';
+
 const db = createSecureDatabase('./data/navigator.db');
 
-const SYSTEM = `You translate public city information into plain language.
-Always include the official source link you were given.
-Never give legal advice. If a detail isn't in the provided sources,
-say "That isn't in the public record I have" and give the city phone number.`;
+const rows = db.prepare(`SELECT title, url, summary_text AS text
+                         FROM city_codes WHERE topic = ?`).all('property_maintenance');
 
-async function explain(question, sources) {
-  const res = await fetch('http://localhost:11434/api/chat', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model: 'qwen2.5:7b',            // any model that fits your GPU
-      stream: false,
-      options: { num_ctx: 8192 },     // keep inside VRAM
-      messages: [
-        { role: 'system', content: SYSTEM },
-        { role: 'user', content: `Sources:\n${sources}\n\nQuestion: ${question}` }
-      ]
-    })
-  });
-  return (await res.json()).message.content;
-}
+const { answer, sources } = await askLocal({
+  question: 'My landlord won\'t fix peeling paint. What can I do?',
+  sources: rows          // [{ title, url, text }]
+});
+// Show `answer` with `sources` as clickable links, plus a human review step.
 ```
 
-Give the model the sources; don't ask it to remember facts. Show the sources next to its answer. Log nothing personal.
+Settings: `NOS_LLM_HOST` (default `http://localhost:11434`) and `NOS_LLM_MODEL` (default `qwen2.5:7b`; any model that fits your GPU). Give the model the sources; never ask it to remember facts.
 
 ## 5. Definition of done
 - [ ] Passes the Red-Light Test

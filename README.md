@@ -2,7 +2,7 @@
 
 **Helping communities build practical AI capacity, share context, and solve real problems together.**
 
-Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Wiki: [start here](wiki/Home.md)** · Free lesson: [neighborhoodos.org/learn](https://neighborhoodos.org/learn/)
+Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Wiki: [start here](wiki/Home.md)** · Free lesson: [neighborhoodos.org/learn](https://neighborhoodos.org/learn/) · Facilitator kit: [neighborhoodos.org/kit](https://neighborhoodos.org/kit/)
 
 > **Open for community use.** NeighborhoodOS has been handed off so partner organizations can run it without the original author. The [wiki](wiki/Home.md) contains everything needed to run a program: program design, session plans, roles, budget, safety doctrine, data sources, and developer setup. See [Handoff and Licensing](wiki/Handoff-and-Licensing.md).
 
@@ -62,7 +62,7 @@ neighborhoodos/
 ├── identity/        # Civic identity, trust levels, federated voting
 ├── wedges/          # Pilot modules (swap as we learn)
 │   └── home-maintenance/   # West Waldo home maintenance (early prototype)
-├── index.html, learn/, local/, pilot/   # neighborhoodos.org (GitHub Pages)
+├── index.html, learn/, kit/, local/, assets/   # neighborhoodos.org (GitHub Pages)
 ├── docs/            # Full manuals: workshops, rubric, safety, stewardship
 ├── wiki/            # Program + technical wiki (start at wiki/Home.md)
 └── package.json
@@ -86,7 +86,7 @@ neighborhoodos/
 git clone https://github.com/simonlpaige/neighborhoodos.git
 cd neighborhoodos
 npm install
-npm test            # 40 checks: identity, voting, audit, federation
+npm test            # 46 checks: identity, voting, audit, federation, local AI helper
 npm run config:example   # then edit node.config.json for your neighborhood
 npm run sync        # pull public data into ./neighborhood-os.db
 ```
@@ -108,7 +108,7 @@ node digest.js      # generate weekly digest
 
 Pre-alpha. One active pilot in development (West Waldo, KCMO). Breaking changes are expected. Issues and PRs welcome.
 
-Handed off for community use; first partner: [KC Digital Drive](https://kcdigitaldrive.org). Honest status: [Known Gaps and Roadmap](wiki/Known-Gaps-and-Roadmap.md).
+Open for community use. Partner conversations: [KC Digital Drive](https://kcdigitaldrive.org). Honest status: [Known Gaps and Roadmap](wiki/Known-Gaps-and-Roadmap.md).
 
 ---
 

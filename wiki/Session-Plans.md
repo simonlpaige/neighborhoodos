@@ -1,8 +1,8 @@
 # Session Plans
 
-Each session is 90 minutes. Times are guides, not rules. Materials lists assume 20 participants. Full background for facilitators is in the [Workshop Playbook](../docs/WORKSHOP-PLAYBOOK.md) and the Level manuals in `docs/`.
+Each session is 90 minutes. Times are guides, not rules. Materials lists assume 20 participants. **Every handout referenced here is in the printable [facilitator kit](https://neighborhoodos.org/kit/)**; how to run the room (including hard moments) is in the [Facilitator Guide](Facilitator-Guide.md). Full background for facilitators is in the [Workshop Playbook](../docs/WORKSHOP-PLAYBOOK.md) and the Level manuals in `docs/`.
 
-**Every session:** welcome and food (10 min), name tags with first names only, a clear statement that nothing typed or said will be recorded or stored unless someone chooses to share it, and a close that asks "what's one thing you'll do differently this week?"
+**Every session:** welcome and food (10 min), name tags with first names only, an optional [sign-in sheet](https://neighborhoodos.org/kit/#h-signin), [feedback slips](https://neighborhoodos.org/kit/#h-feedback) at the door, a clear statement that nothing typed or said will be recorded or stored unless someone chooses to share it, and a close that asks "what's one thing you'll do differently this week?"
 
 ---
 
@@ -19,7 +19,7 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 | 1:05 | **The intern rule.** Treat AI like a fast, overconfident intern: useful drafts, always checked. |
 | 1:15 | Hand out the privacy checklist. Close. |
 
-**Materials:** projector, one AI chat account on the facilitator's device (never participants' personal accounts), printed sort cards, privacy checklist.
+**Materials:** projector, one AI chat account on the facilitator's device (never participants' personal accounts), [sort cards](https://neighborhoodos.org/kit/#h-sort), [privacy checklist](https://neighborhoodos.org/kit/#h-privacy), [quick check](https://neighborhoodos.org/kit/#h-check) (before).
 
 ---
 
@@ -31,10 +31,10 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 |---|---|
 | 0:00 | Welcome, recap Learn 1 in one sentence |
 | 0:10 | **Voice clone scam.** Explain how a few seconds of audio can clone a voice. Everyone writes a family safe word idea on their card (they do not share it). |
-| 0:25 | **Spot the phish.** Printed examples of AI-written emails and texts that use local street and business names. Circle the tells. |
+| 0:25 | **Spot the scam.** [Printed examples](https://neighborhoodos.org/kit/#h-phish) of AI-written emails and texts that use local street and business names. Circle the tells. |
 | 0:45 | **What never goes into a chatbot.** SSN, bank info, passwords, medical details, leases, private documents. Why: free tools may keep and learn from what you type. |
 | 1:00 | **The Triple-Check Rule.** Any fact, number, law, or link from AI gets checked against the original source before you rely on it. Practice on two AI answers. |
-| 1:15 | Hand out the check-the-machine card. Close. |
+| 1:15 | Hand out the [pocket cards](https://neighborhoodos.org/kit/#h-pocket). Close. |
 
 ---
 
@@ -46,10 +46,10 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 |---|---|
 | 0:00 | Welcome |
 | 0:10 | **What's public?** Tour the city's open data portal and 311 map on the projector. |
-| 0:25 | **Treasure hunt.** In pairs, find something on or near your block: an open 311 request, a permit, a dangerous building listing, a council agenda item. |
+| 0:25 | **Treasure hunt** ([worksheet](https://neighborhoodos.org/kit/#h-hunt)). In pairs, find something on or near your block: an open 311 request, a permit, a dangerous building listing, a council agenda item. |
 | 0:50 | **The line we don't cross.** Walk through the [Safety Doctrine](Safety-Doctrine.md). Discuss: "Map of every unresolved streetlight complaint" (fine) vs. "list of which neighbors complain most" (never). |
 | 1:05 | **Invite problems.** "Bring one real, stuck problem to the Solve clinic." |
-| 1:15 | Hand out block data map. Close. |
+| 1:15 | [Quick check](https://neighborhoodos.org/kit/#h-check) (after). Close. |
 
 ---
 
@@ -66,7 +66,7 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 | 0:55 | **Pick 3-5 and write briefs** in small groups using the Problem Brief template (below). AI can help draft; a human checks every line. |
 | 1:15 | **Commitments.** Each brief gets a named next step and a date. Post them on the public problem log. Close. |
 
-**Problem Brief template** (one page):
+**Problem Brief template** ([printable](https://neighborhoodos.org/kit/#h-brief), or [online](https://neighborhoodos.org/#brief)); track all of them on the [public problem log](https://neighborhoodos.org/kit/#h-log):
 1. The problem, in plain words. Where, since when, who is affected.
 2. Who has authority to fix it (specific office or entity).
 3. What evidence exists (with links).
@@ -83,7 +83,7 @@ Never write briefs about individual private residents. Focus on institutions, co
 | Time | Activity |
 |---|---|
 | 0:00 | Welcome. Read the chosen brief out loud. |
-| 0:10 | **Rubric check.** Score it together with the [Pilot Rubric](../docs/PILOT-RUBRIC.md). If it fails the Red-Light Test, stop and pick another. |
+| 0:10 | **Rubric check.** Score it together with the [score sheet](https://neighborhoodos.org/kit/#h-rubric) (full detail: [Pilot Rubric](../docs/PILOT-RUBRIC.md)). If it fails the Red-Light Test, stop and pick another. |
 | 0:25 | **Paper prototype.** Draw the screens on paper cards. Test them on each other. |
 | 0:55 | **Write the rules.** Plain-language instructions for any AI piece: always link sources, never give legal advice, say "I don't know" when unsure. |
 | 1:10 | **Name the human reviewer.** Who checks the tool's output, and how often? |

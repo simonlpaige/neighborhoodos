@@ -138,7 +138,7 @@ Before changing NeighborhoodOS customer-facing work:
 ## Canonical files
 
 - Style guide: `DESIGN.md` (repo root)
-- Live site source: the repo root (`index.html`, `local/`, `pilot/`, `launch.html`, `learn/`), served by GitHub Pages from `main`
+- Live site source: the repo root (`index.html`, `learn/`, `kit/`, `local/`, `pilot/`, `launch.html`, shared styles in `assets/nos.css`), served by GitHub Pages from `main`
 - Live URL: `https://neighborhoodos.org`
 - GitHub: `https://github.com/simonlpaige/neighborhoodos`
 - The old `site/` folder was a stale duplicate and has been removed.
