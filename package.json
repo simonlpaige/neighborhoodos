@@ -1,14 +1,16 @@
 {
   "name": "neighborhoodos",
   "version": "0.1.0",
-  "description": "An operating system for neighborhoods that want to solve their own problems. Pick a sharp wedge, ship a working tool, rotate when needed.",
+  "description": "Community-governed civic AI for neighborhoods: Learn / Solve / Build education, provenance-first public data and memory, and local AI infrastructure.",
   "type": "module",
   "main": "core/node.js",
   "scripts": {
     "sync": "node ingest/sync.js",
     "sync:status": "node ingest/sync.js --status",
     "api": "node identity/api.js",
-    "start": "node ingest/sync.js && node identity/api.js"
+    "start": "node ingest/sync.js && node identity/api.js",
+    "test": "node identity/smoke-test.js && node identity/federation-smoke.js",
+    "config:example": "cp -n node.config.example.json node.config.json"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",

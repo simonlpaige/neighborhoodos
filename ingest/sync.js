@@ -10,7 +10,7 @@
 //   node ingest/sync.js --source social    # Only social (if tokens configured)
 //   node ingest/sync.js --status           # Show sync status without pulling
 
-import Database from 'better-sqlite3';
+import { createSecureDatabase } from '../core/db.js';
 import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'fs';
 import { syncDataset, getIngestSummary, WEST_WALDO_BOUNDS, DATASETS }
   from '../connectors/kc-open-data.js';
@@ -79,7 +79,7 @@ acquireLock();
 // Main
 // ----------------------------------------------------------------
 
-const db = new Database(DB_PATH);
+const db = createSecureDatabase(DB_PATH);
 db.pragma('journal_mode = WAL');
 db.pragma('foreign_keys = ON');
 
@@ -156,7 +156,15 @@ if (!sourceFilter || sourceFilter === 'legistar') {
 }
 
 // ---- Social ----
-if (!sourceFilter || sourceFilter === 'social') {
+// OFF by default. The banned-use doctrine (docs/BANNED-USE.md) forbids
+// sentiment analysis and organizer mapping from social platforms. This
+// connector only runs when a node's steward explicitly opts in, and only
+// for consented, admin-approved group exports. See wiki: Safety-Doctrine.
+const SOCIAL_ENABLED = process.env.NOS_ENABLE_SOCIAL === '1';
+if (sourceFilter === 'social' && !SOCIAL_ENABLED) {
+  console.log('\n💬 Social connector is disabled. Set NOS_ENABLE_SOCIAL=1 only after steward sign-off.');
+}
+if (SOCIAL_ENABLED && (!sourceFilter || sourceFilter === 'social')) {
   console.log('\n💬 Social platforms...');
 
   try {

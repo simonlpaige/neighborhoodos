@@ -67,7 +67,7 @@ Use our secure database wrapper (`core/db.js`) to handle your queries safely. To
 
 ### Step 3: Design the HTML Interface
 Keep the interface lightweight, semantic, and highly accessible:
-- Use clear visual hierarchy with डिस्प्ले headings (`Fraunces` or `Georgia`).
+- Use clear visual hierarchy with display headings (`Fraunces` or `Georgia`).
 - Keep text readable with high contrast against the paper background (`#F5EFE6`).
 - Ensure all controls are fully accessible via keyboard.
 - Include direct links to the official city sources next to every AI-generated summary.

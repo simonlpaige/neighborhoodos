@@ -1,6 +1,0 @@
-# robots.txt for neighborhoodos.org
-User-agent: *
-Allow: /
-
-# AI agent overview: /llms.txt
-Sitemap: https://neighborhoodos.org/sitemap.xml

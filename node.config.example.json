@@ -1,0 +1,22 @@
+{
+  "slug": "waldo@neighborhoodos.local",
+  "name": "Waldo (pilot)",
+  "contactEmail": "steward@example.org",
+  "bounds": {
+    "north": 38.9920,
+    "south": 38.9540,
+    "east": -94.5890,
+    "west": -94.6140
+  },
+  "nextdoor": {
+    "publicSlug": "westwaldomo",
+    "enablePostScrape": false
+  },
+  "facebook": {
+    "groupId": null
+  },
+  "retention": {
+    "socialDays": 90,
+    "federationDays": 365
+  }
+}

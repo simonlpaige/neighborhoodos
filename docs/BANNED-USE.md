@@ -49,6 +49,10 @@ No AI model or automated pipeline may make direct, binding administrative or civ
 
 ## Programmatic Enforcements
 
-Our core database driver (`core/db.js`) programmatically intercepts every SQL query. It blocks the creation of prohibited tables (like `resident_dossiers` or `police_predictions`) or prohibited columns (like `resident_score`), and throws an immediate system error if any direct join attempts to de-anonymize public civic records. 
+Our core database driver (`core/db.js`) intercepts every `exec()` and `prepare()` on the node database used by the identity system (`identity/identity.js` → `openDB`) and the sync job (`ingest/sync.js`). It refuses prohibited tables (like `resident_dossiers` or `police_predictions`), prohibited columns (like `resident_score`), and direct joins between identity hashes and public civic records, throwing a `CivicSafetyViolationError`. Every blocked attempt is written to `system_safety_audit`, which, like `audit_log`, rejects UPDATE and DELETE at the database level.
 
-Safety is not a checkbox or a markdown promise; it is written directly into our code.
+This is a guardrail against mistakes and drift, not a guarantee against a determined insider with direct file access. It works alongside the human safeguards in the [Data Stewardship Guide](./Data-Stewardship-Guide.md). Known exception: the legacy `wedges/home-maintenance/` prototype opens SQLite directly and should be routed through the driver or archived before any public use.
+
+The social-media connector (`connectors/social.js`) is disabled unless a steward sets `NOS_ENABLE_SOCIAL=1`.
+
+Safety is not a checkbox or a markdown promise; it is written directly into our code, and backed by people.

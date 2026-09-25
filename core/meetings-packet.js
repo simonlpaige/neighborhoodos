@@ -8,7 +8,7 @@
 // document for tonight's meeting, not hunt through URLs.
 
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
-import { fetchJson } from './connectors/_fetch.js';
+import { fetchJson } from '../connectors/_fetch.js';
 
 const PAGE_W = 612;
 const PAGE_H = 792;

@@ -30,7 +30,7 @@ We build for residents, particularly vulnerable neighbors, not just for city adm
 - **1 Point (Low)**: Primarily serves as an administrative or developer dashboard with limited direct resident benefit.
 - **0 Points**: Only benefits municipal managers or tech-savvy operators at the expense of resident privacy or equity.
 
-### Dimension 2: Data Provenance & Intellectual Honest
+### Dimension 2: Data Provenance & Intellectual Honesty
 Our databases must be honest. If data is live, we say so; if a feed is parsed or static, we link directly to the original public source.
 - **3 Points (High)**: Data is gathered entirely from public-record, verifiable sources (such as City Open Data, county property violations, or public council minutes) with clear, clickable links back to the original source.
 - **2 Points (Medium)**: Relies on community-gathered data that undergoes human review and audit before being made visible.

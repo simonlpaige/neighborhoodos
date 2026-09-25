@@ -99,12 +99,18 @@ export function validateSQL(sql) {
  */
 export function createSecureDatabase(dbPath, options = {}) {
   const rawDb = new Database(dbPath, options);
+  return wrapSecureDatabase(rawDb);
+}
 
-  // Performance setup
+/**
+ * Wrap an already-open better-sqlite3 Database with the safety proxy.
+ * Every exec() and prepare() is checked against the doctrine first.
+ * Blocked attempts are written to system_safety_audit (append-only).
+ */
+export function wrapSecureDatabase(rawDb) {
   rawDb.pragma('journal_mode = WAL');
   rawDb.pragma('foreign_keys = ON');
 
-  // Create an internal system audit log if it doesn't exist
   rawDb.exec(`
     CREATE TABLE IF NOT EXISTS system_safety_audit (
       id           INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -114,54 +120,52 @@ export function createSecureDatabase(dbPath, options = {}) {
       status       TEXT NOT NULL,
       details      TEXT
     );
+    CREATE TRIGGER IF NOT EXISTS system_safety_audit_no_update
+    BEFORE UPDATE ON system_safety_audit
+    BEGIN SELECT RAISE(ABORT, 'system_safety_audit is append-only'); END;
+    CREATE TRIGGER IF NOT EXISTS system_safety_audit_no_delete
+    BEFORE DELETE ON system_safety_audit
+    BEGIN SELECT RAISE(ABORT, 'system_safety_audit is append-only'); END;
   `);
+
+  const logStmt = rawDb.prepare(`
+    INSERT INTO system_safety_audit (action_type, query, status, details)
+    VALUES (?, ?, ?, ?)
+  `);
+  const log = (type, sql, status, details) => {
+    try { logStmt.run(type, String(sql).slice(0, 4000), status, details); } catch { /* never mask the real error */ }
+  };
+
+  const guard = (type, sql) => {
+    try {
+      validateSQL(sql);
+    } catch (err) {
+      log(type, sql, 'BLOCKED', err.message);
+      throw err;
+    }
+  };
 
   const handler = {
     get(target, prop, receiver) {
       const val = Reflect.get(target, prop, receiver);
 
-      // Intercept direct string execution
       if (prop === 'exec') {
         return function (sql) {
-          try {
-            validateSQL(sql);
-            target.prepare(`
-              INSERT INTO system_safety_audit (action_type, query, status, details)
-              VALUES ('exec', ?, 'ALLOWED', 'Batch direct execution executed successfully')
-            `).run(sql);
-            return val.call(target, sql);
-          } catch (err) {
-            target.prepare(`
-              INSERT INTO system_safety_audit (action_type, query, status, details)
-              VALUES ('exec', ?, 'BLOCKED', ?)
-            `).run(sql, err.message);
-            throw err;
-          }
+          guard('exec', sql);
+          return val.call(target, sql);
         };
       }
 
-      // Intercept prepared statements
       if (prop === 'prepare') {
         return function (sql) {
-          try {
-            validateSQL(sql);
-            // Prepared statements are evaluated at creation time
-            return val.call(target, sql);
-          } catch (err) {
-            target.prepare(`
-              INSERT INTO system_safety_audit (action_type, query, status, details)
-              VALUES ('prepare_fail', ?, 'BLOCKED', ?)
-            `).run(sql, err.message);
-            throw err;
-          }
+          guard('prepare', sql);
+          return val.call(target, sql);
         };
       }
 
-      // Bind functions to preserve database context
-      if (typeof val === 'function') {
-        return val.bind(target);
-      }
+      if (prop === 'unsafeRaw') return target; // explicit, greppable escape hatch for migrations tooling only
 
+      if (typeof val === 'function') return val.bind(target);
       return val;
     }
   };

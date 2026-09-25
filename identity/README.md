@@ -84,7 +84,7 @@ Federation lets neighborhoods ask: "Is the city doing this to us specifically, o
 ## File Structure
 
 ```
-civic-identity/
+identity/
   schema.sql              - Base SQLite schema
   migrations.js           - Versioned migrations runner
   migrations/             - Numbered SQL migrations applied in order
@@ -115,14 +115,14 @@ civic-identity/
 ## Quick Start
 
 ```bash
-# Install deps
-npm install better-sqlite3 bcrypt
+# From the repo root
+npm install
 
-# Start the API
-NODE_SLUG="westwaldo@waldonet.local" \
+# Start the API (admin routes stay closed unless ADMIN_TOKEN is set)
+NODE_SLUG="waldo@neighborhoodos.local" \
 PORT=4242 \
 DB_PATH=./civic-identity.db \
-node api.js
+node identity/api.js
 ```
 
 **Register a user:**
@@ -161,11 +161,12 @@ curl -X POST http://localhost:4242/proposals/<id>/vote \
 ## Running the Smoke Tests
 
 ```bash
-# Install deps first (in neighborhood-os/, which hosts node_modules)
-cd ../neighborhood-os && npm install && cd ../civic-identity
+# From the repo root
+npm install
+npm test                      # runs both suites below
 
-node smoke-test.js            # end-to-end identity + voting + audit + retention
-node federation-smoke.js      # federation bundle build/receive/replay/tamper
+node identity/smoke-test.js        # end-to-end identity + voting + audit + retention
+node identity/federation-smoke.js  # federation bundle build/receive/replay/tamper
 ```
 
 Both tests use temp SQLite files and clean up after themselves.

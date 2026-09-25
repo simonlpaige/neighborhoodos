@@ -17,6 +17,7 @@ import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { runMigrations } from './migrations.js';
+import { wrapSecureDatabase } from '../core/db.js';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const SCHEMA = readFileSync(join(__dir, 'schema.sql'), 'utf8');
@@ -28,9 +29,9 @@ const BCRYPT_ROUNDS = 12;
 // ----------------------------------------------------------------
 
 export function openDB(dbPath) {
-  const db = new Database(dbPath);
-  db.pragma('journal_mode = WAL');
-  db.pragma('foreign_keys = ON');
+  // Every node DB goes through the safety driver so the banned-use rules
+  // in docs/BANNED-USE.md are enforced in code, not just promised in prose.
+  const db = wrapSecureDatabase(new Database(dbPath));
 
   // Run base schema first (idempotent - all CREATE TABLE IF NOT EXISTS),
   // then layer versioned migrations on top. The migrations runner is the
