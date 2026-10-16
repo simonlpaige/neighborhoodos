@@ -60,7 +60,7 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 | Time | Activity |
 |---|---|
 | 0:00 | Welcome. Clinic 2 only: report back on every Clinic 1 problem, even the ones that didn't move. |
-| 0:10 | **Pink notes: dump the frustrations.** One concrete problem per note. ("Streetlight at 75th and Main out since July," not "the city ignores us.") |
+| 0:10 | **Pink notes: dump the frustrations.** One concrete problem per note. ("Streetlight at Linwood and Prospect out since July," not "the city ignores us.") |
 | 0:25 | **Yellow notes: who has authority?** Landlord, city department, utility, county, state, or community. |
 | 0:40 | **Green notes: what's the evidence?** 311 cases, permits, violations, meeting minutes, photos with dates. |
 | 0:55 | **Pick 3-5 and write briefs** in small groups using the Problem Brief template (below). AI can help draft; a human checks every line. |

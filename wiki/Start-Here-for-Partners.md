@@ -2,7 +2,7 @@
 
 This page is for an organization (a library, a digital inclusion nonprofit, a neighborhood association, a campus) that wants to run a NeighborhoodOS program. It assumes no technical staff and no help from the original author.
 
-NeighborhoodOS is **free, practical AI help for neighbors, plus clinics for stuck civic problems.** In Waldo it is designed to run out of the Kansas City Public Library's Waldo Branch, alongside Kansas City Documenters. See [Partners](Partners.md).
+NeighborhoodOS is **free, practical AI help for neighbors, plus clinics for stuck civic problems.** In Linwood it is designed to run out of the LAMP campus at 1801 Linwood Blvd., alongside Kansas City Documenters. See [Partners](Partners.md).
 
 ## The short version
 
@@ -36,7 +36,7 @@ NeighborhoodOS is **free, practical AI help for neighbors, plus clinics for stuc
 
 ### Days 31-60: Finish Learn, start Solve
 - Run **Learn 3** (Public data and your block). End with the AI-error check again.
-- Point people to [Kansas City Documenters](https://kansascity.documenters.org/) notes for recent meetings that touch Waldo.
+- Point people to [Kansas City Documenters](https://kansascity.documenters.org/) notes for recent meetings that touch Linwood.
 - Run **Solve Clinic 1**. Collect problems on sticky notes; turn the strongest into one-page Problem Briefs.
 - Keep a simple, public log of problems raised, next steps, and dates. Places and institutions only, never people. A shared spreadsheet is fine.
 

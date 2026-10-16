@@ -1,6 +1,6 @@
 # Partners
 
-NeighborhoodOS does not rebuild what already works in Kansas City. It plugs into it. This page lists the partnerships the Waldo program is built around, what each one does, and where each one stands.
+NeighborhoodOS does not rebuild what already works in Kansas City. It plugs into it. This page lists the partnerships the Linwood program is built around, what each one does, and where each one stands.
 
 **Status as of September 2026: all three are proposed, not yet agreed.** Nothing here should be described in outreach as a confirmed partnership until the partner says yes in writing.
 
@@ -8,8 +8,8 @@ NeighborhoodOS does not rebuild what already works in Kansas City. It plugs into
 
 | Layer | Who does it | What NeighborhoodOS does |
 |---|---|---|
-| Where the program happens | Kansas City Public Library, Waldo Branch (201 E. 75th St.) | Brings the sessions, facilitators, and materials |
-| What gets taught | CivicAI curriculum (NJ State Library + InnovateUS), as it is released | Adds Waldo examples and the Solve clinic format |
+| Where the program happens | LAMP campus (1801 Linwood Blvd.) | Brings the sessions, facilitators, and materials |
+| What gets taught | CivicAI curriculum (NJ State Library + InnovateUS), as it is released | Adds Linwood examples and the Solve clinic format |
 | What happened at public meetings | Kansas City Documenters (The Beacon) | Links to their notes and helps residents act on them |
 | What residents do next | NeighborhoodOS Solve clinics | Turns a stuck problem into a one-page brief with a next step |
 
@@ -26,21 +26,21 @@ NeighborhoodOS does not rebuild what already works in Kansas City. It plugs into
 
 **The ask:** permission to link to and cite Documenters notes in clinic materials, a standing slot to mention Documenters training at clinics, and a way to tell the Documenters team when residents flag a meeting that needs coverage.
 
-## Kansas City Public Library, Waldo Branch: the host
+## LAMP campus: the host
 
-Libraries are already where neighbors go for help with forms, scams, and city services. Running the program out of the branch means a trusted, accessible room; staff who know the neighborhood; an existing events calendar; and a partner that can receive library-specific grants.
+KC Digital Drive's Emerge @ LAMP project puts the program on the LAMP campus at Linwood Blvd and Woodland Ave. That means a trusted, accessible room in the neighborhood, a host that already runs digital inclusion programs, and a partner that can apply for the grants that pay participant stipends. A nearby library branch is still a good second venue.
 
-**The ask:** a recurring room for 3 Learn sessions and 2 Solve clinics over about 90 days, listing on the library's events calendar, a staff point of contact, and willingness to be the lead or co-applicant on a grant that pays participant stipends (see [Budget and Hardware](Budget-and-Hardware.md)).
+**The ask:** a recurring room for 3 Learn sessions and 2 Solve clinics over about 90 days, listing on the host's events calendar, a staff point of contact, and the host's willingness to be the lead or co-applicant on a grant that pays participant stipends (see [Budget and Hardware](Budget-and-Hardware.md)).
 
-**What the library gets:** a ready-to-run program with session plans, a printable [facilitator kit](https://neighborhoodos.org/kit/), a safety doctrine, and outcome measures (see [Evaluation and Metrics](Evaluation-and-Metrics.md)).
+**What the host gets:** a ready-to-run program with session plans, a printable [facilitator kit](https://neighborhoodos.org/kit/), a safety doctrine, and outcome measures (see [Evaluation and Metrics](Evaluation-and-Metrics.md)).
 
 ## CivicAI: the curriculum
 
 In September 2026 the New Jersey State Library announced [CivicAI](https://www.njstatelib.org/new-jersey-state-library-awarded-national-leadership-grant-to-expand-civic-ai-learning-through-libraries/), a three-year IMLS-funded project with InnovateUS, the Hawaiʻi State Public Library System, and the Montana State Library. It is building a free, mobile-first, eight-part course that teaches residents to use AI to understand government information, navigate services, communicate with officials, and organize with neighbors. Its materials are meant to be freely reused by other libraries.
 
-**How we use it:** as CivicAI modules are released, the Learn sessions adopt them instead of maintaining a parallel NeighborhoodOS curriculum. Our own Learn materials stay in place until then, and we keep only what CivicAI doesn't cover: the Waldo examples, the Solve clinic format, and the link to local public data.
+**How we use it:** as CivicAI modules are released, the Learn sessions adopt them instead of maintaining a parallel NeighborhoodOS curriculum. Our own Learn materials stay in place until then, and we keep only what CivicAI doesn't cover: the Linwood examples, the Solve clinic format, and the link to local public data.
 
-**The ask:** to be kept informed as modules are published, and to share back what worked in Waldo.
+**The ask:** to be kept informed as modules are published, and to share back what worked in Linwood.
 
 ## Contact
 

@@ -1,6 +1,6 @@
 # NeighborhoodOS
 
-**Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.**
+**Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
 
 Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Wiki: [start here](wiki/Home.md)** · Free lesson: [neighborhoodos.org/learn](https://neighborhoodos.org/learn/) · Facilitator kit: [neighborhoodos.org/kit](https://neighborhoodos.org/kit/) · Contact: [simon@simonlpaige.com](mailto:simon@simonlpaige.com)
 
@@ -14,7 +14,7 @@ Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Wiki: [start he
 2. **Clinics for stuck civic problems (Solve).** Bring something stuck; leave with who can fix it, the public evidence, and a next step with a name on it.
 
 How it runs:
-- **Out of a library.** Designed for the Kansas City Public Library's Waldo Branch, using the CivicAI curriculum (NJ State Library + InnovateUS) as it's released. See [Partners](wiki/Partners.md).
+- **Out of a library.** Designed for the LAMP campus at 1801 Linwood Blvd., using the CivicAI curriculum (NJ State Library + InnovateUS) as it's released. See [Partners](wiki/Partners.md).
 - **Partnered for meetings.** Kansas City Documenters' verified notes are the meeting record. We never publish unreviewed AI summaries of meetings.
 - **Participants are paid.** $30 per session, $20/hour for peer helpers, the Documenters rate.
 - **Holds nothing about residents.** See the one-page [Threat Model](wiki/Threat-Model.md).
@@ -113,7 +113,7 @@ node digest.js      # generate weekly digest
 
 ## Status
 
-Program: in planning for Waldo, KCMO. Library, Documenters, and CivicAI partnerships are proposed, not yet agreed. Software: pre-alpha, breaking changes expected. Issues and PRs welcome.
+Program: in planning for Linwood, KCMO. Library, Documenters, and CivicAI partnerships are proposed, not yet agreed. Software: pre-alpha, breaking changes expected. Issues and PRs welcome.
 
 Open for community use. Partner conversations: [simon@simonlpaige.com](mailto:simon@simonlpaige.com). Honest status: [Known Gaps and Roadmap](wiki/Known-Gaps-and-Roadmap.md).
 

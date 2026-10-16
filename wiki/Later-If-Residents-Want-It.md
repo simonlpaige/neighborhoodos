@@ -1,6 +1,6 @@
 # Later, if residents want it
 
-NeighborhoodOS today is two things: free, practical AI help for Waldo neighbors, and clinics for stuck civic problems. Everything on this page is **not** part of the current program. It is written down so the ideas aren't lost, and so nobody mistakes them for promises.
+NeighborhoodOS today is two things: free, practical AI help for Linwood neighbors, and clinics for stuck civic problems. Everything on this page is **not** part of the current program. It is written down so the ideas aren't lost, and so nobody mistakes them for promises.
 
 ## What's here
 

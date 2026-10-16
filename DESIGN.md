@@ -15,7 +15,7 @@ The software is not the hero. Neighbor action is the hero.
 1. Public-source honest. If data is live, say so. If a feed fails or is not parsed yet, link to the real source.
 2. Editorial before dashboard. Make pages readable first, interactive second.
 3. Warm civic paper. Backgrounds should feel like paper, not cold app chrome.
-4. Local specificity. Prefer Waldo, KCMO, Jackson County, 311, council, planning, budgets, home repair, block-level language.
+4. Local specificity. Prefer Linwood, KCMO, Jackson County, 311, council, planning, budgets, home repair, block-level language.
 5. No mythology pileups. NeighborhoodOS, education/training/problem-solving, public data/memory, local AI infrastructure/resources, WaldoNet, Commonweave, and KCDD need clear roles.
 6. Small useful wedge. Design around one resident action at a time.
 7. Accessibility is part of the aesthetic: contrast, semantic HTML, visible focus, readable type, keyboard-safe controls.
@@ -108,7 +108,7 @@ For dashboards and local-node pages:
 
 ## Relationship language
 
-- NeighborhoodOS = free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems. Use this one-liner verbatim; don't invent new taglines.
+- NeighborhoodOS = free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems. Use this one-liner verbatim; don't invent new taglines.
 - Learn / Solve / Build = the program. Learn and Solve are the public front door.
 - Neighborhood memory, governance tools, local AI hardware = "Later, if residents want it." Never lead with these on public pages.
 - Meetings = link to Kansas City Documenters notes or official minutes. Never show unreviewed AI summaries of meetings.

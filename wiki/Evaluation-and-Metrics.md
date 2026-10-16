@@ -14,7 +14,7 @@ Tracked in the public problem log, which lists places and institutions, never pe
 
 | Field | Example |
 |---|---|
-| Problem (place + issue) | Streetlight out, 75th and Wornall |
+| Problem (place + issue) | Streetlight out, Linwood and Prospect |
 | Date first raised at a clinic | 2026-11-04 |
 | Next step and who took it | 311 request filed (case #…) |
 | Status | Open / Moved / Resolved / Stuck, with reason |

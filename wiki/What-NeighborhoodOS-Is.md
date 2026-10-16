@@ -2,7 +2,7 @@
 
 ## The one-sentence version
 
-**Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.**
+**Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
 
 ## Why it exists
 
@@ -49,6 +49,6 @@ Neighborhood memory, community governance tools, and local AI hardware are on a 
 ## Names
 
 - **NeighborhoodOS**: the overall program and the open project.
-- **Waldo pilot**: the first place it runs (Waldo, Kansas City, MO).
+- **Linwood pilot**: the first place it runs (Linwood, Kansas City, MO).
 - **WaldoNet**: an early prototype name. Historical only.
 - **Commonweave**: a separate sibling project (a directory of commons-aligned organizations). Optional, not required.

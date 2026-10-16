@@ -12,8 +12,8 @@ The order matters. Learn builds trust and shared language. Solve surfaces real n
 
 ## Where it runs and what it builds on
 
-- **Host:** a public library branch (in Waldo, the Kansas City Public Library's Waldo Branch).
-- **Curriculum:** the [CivicAI](Partners.md) course from the New Jersey State Library and InnovateUS, adopted module by module as it's released. NeighborhoodOS keeps only the local pieces: Waldo examples, the Solve clinic format, and links to local public data.
+- **Host:** a public library branch (in Linwood, the LAMP campus at 1801 Linwood Blvd.).
+- **Curriculum:** the [CivicAI](Partners.md) course from the New Jersey State Library and InnovateUS, adopted module by module as it's released. NeighborhoodOS keeps only the local pieces: Linwood examples, the Solve clinic format, and links to local public data.
 - **Meetings:** [Kansas City Documenters](Partners.md) notes are the record of public meetings. Solve clinics are where residents act on them.
 - **Pay:** participants get $30 per session; peer helpers $20/hour. See [Budget and Hardware](Budget-and-Hardware.md).
 

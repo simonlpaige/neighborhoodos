@@ -2,7 +2,7 @@
 
 **Everything you need to run a NeighborhoodOS program without the original author in the room.**
 
-**NeighborhoodOS: Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.**
+**NeighborhoodOS: Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
 
 Neighbors learn what AI can and can't do, bring real stuck problems to structured clinics, and build small tools only when a real need shows up. It runs out of a library, links to Kansas City Documenters for public meetings, pays participants for their time, and holds nothing about residents. Infrastructure and governance tools are on a separate page, for later, if residents want them.
 

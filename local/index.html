@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Waldo Local Node Dashboard | neighborhoodOS</title>
-<meta name="description" content="Recent 311 requests in Waldo, Kansas City, links to Documenters meeting notes and city and county sources, and next steps a neighbor can take. Part of NeighborhoodOS: free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.">
-<meta property="og:title" content="Waldo Local Node Dashboard | neighborhoodOS">
-<meta property="og:description" content="Recent 311 requests in Waldo, meeting notes from Kansas City Documenters, and links to city and county sources.">
+<title>Linwood Local Node Dashboard | neighborhoodOS</title>
+<meta name="description" content="Recent 311 requests in Linwood, Kansas City, links to Documenters meeting notes and city and county sources, and next steps a neighbor can take. Part of NeighborhoodOS: free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.">
+<meta property="og:title" content="Linwood Local Node Dashboard | neighborhoodOS">
+<meta property="og:description" content="Recent 311 requests in Linwood, meeting notes from Kansas City Documenters, and links to city and county sources.">
 <meta property="og:url" content="https://neighborhoodos.org/local/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,10 +18,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "Waldo Local Node Dashboard",
-  "description": "A civic signal dashboard for Waldo and south Kansas City residents.",
+  "name": "Linwood Local Node Dashboard",
+  "description": "A civic signal dashboard for Linwood and midtown/east Kansas City residents.",
   "url": "https://neighborhoodos.org/local/",
-  "spatialCoverage": "Waldo, Kansas City, Missouri",
+  "spatialCoverage": "Linwood, Kansas City, Missouri",
   "creator": { "@type": "Organization", "name": "neighborhoodOS" },
   "isPartOf": { "@type": "WebSite", "name": "neighborhoodOS", "url": "https://neighborhoodos.org/" }
 }
@@ -105,7 +105,7 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
   <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
   <div class="nav-links">
     <a href="/">Home</a>
-    <a href="/local/" class="active">Waldo dashboard</a>
+    <a href="/local/" class="active">Linwood dashboard</a>
     <a href="/learn/">Free lesson</a>
     <a href="/kit/">Facilitator kit</a>
     <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a>
@@ -115,11 +115,11 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
 <header class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">Installed node example · Waldo / South KC</span>
+      <span class="eyebrow">Installed node example · Linwood / Midtown-East KC</span>
       <h1>Local signal, then <em>neighbor action</em>.</h1>
-      <p class="tagline">This is the Waldo neighborhoodOS node: a working civic dashboard for 311 requests, council and county sources, plans, budgets, development breadcrumbs, and the next useful thing a neighbor can do.</p>
+      <p class="tagline">This is the Linwood neighborhoodOS node: a working civic dashboard for 311 requests, council and county sources, plans, budgets, development breadcrumbs, and the next useful thing a neighbor can do.</p>
       <div class="pills" aria-label="Dashboard scope">
-        <span class="pill">Waldo</span><span class="pill">KCMO</span><span class="pill">Jackson County</span><span class="pill">Resident-first wedge</span>
+        <span class="pill">Linwood</span><span class="pill">KCMO</span><span class="pill">Jackson County</span><span class="pill">Resident-first wedge</span>
       </div>
     </div>
     <aside class="status-card" aria-labelledby="freshness-label">
@@ -141,7 +141,7 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
           </div>
           <div aria-label="Recent 311 records loaded"><div class="metric" id="sr-count">…</div><span class="meta">rows</span></div>
         </div>
-        <p>These are the most recent public 311 records from DataKC inside a Waldo box (about 71st to 85th Street, Ward Parkway to Holmes). The page asks DataKC only for the issue, status, date, and address, never the free-text fields where residents sometimes leave phone numbers.</p>
+        <p>These are the most recent public 311 records from DataKC inside a Linwood box (about 27th to 39th Street, Troost to Benton). The page asks DataKC only for the issue, status, date, and address, never the free-text fields where residents sometimes leave phone numbers.</p>
         <div class="filters" aria-label="311 filters">
           <button class="filter" type="button" data-filter="all" aria-pressed="true">All loaded</button>
           <button class="filter" type="button" data-filter="open" aria-pressed="false">Still open</button>
@@ -196,18 +196,18 @@ footer { padding:48px 0 72px; font-family:var(--f-mono); font-size:11px; letter-
 
 <footer>
   <div class="container footer-row">
-    <div>NeighborhoodOS · Free, practical AI help for Waldo neighbors, plus clinics for stuck civic problems.</div>
+    <div>NeighborhoodOS · Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.</div>
     <div><a href="/">Home</a> · <a href="mailto:simon@simonlpaige.com">simon@simonlpaige.com</a> · <a href="https://github.com/simonlpaige/neighborhoodos" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
 
 <script>
 // Current KCMO 311 dataset (2021 to present). The old 7at3-sxhp dataset stopped in March 2021.
-// Only non-free-text fields are requested. Waldo box: ~71st to 85th St, Ward Pkwy to Holmes Rd.
-const WALDO_BOX = 'within_box(lat_long, 39.0005, -94.6140, 38.9540, -94.5750)';
+// Only non-free-text fields are requested. Linwood box: ~27th to 39th St, Troost Ave to Benton Blvd (around LAMP, 1801 Linwood Blvd).
+const LINWOOD_BOX = 'within_box(lat_long, 39.0790, -94.5720, 39.0573, -94.5440)';
 const DATAKC_311 = 'https://data.kcmo.org/resource/d4px-6rwg.json?' + new URLSearchParams({
   '$select': 'reported_issue,issue_type,issue_sub_type,current_status,open_date_time,resolved_date,incident_address',
-  '$where': WALDO_BOX,
+  '$where': LINWOOD_BOX,
   '$order': 'open_date_time DESC',
   '$limit': '25'
 }).toString();
@@ -232,7 +232,7 @@ function renderRows() {
   box.innerHTML = rows.slice(0, 10).map(row => {
     const type = [row.issue_type, row.issue_sub_type].filter(Boolean).join(': ') || 'Service request';
     const status = row.current_status || (row.resolved_date ? 'resolved' : 'public row');
-    const address = row.incident_address || 'Waldo area';
+    const address = row.incident_address || 'Linwood area';
     const date = niceDate(row.open_date_time);
     return '<div class="item"><span class="tag ' + (isResolved(row) ? 'source' : 'live') + '">' + escapeHtml(status) + '</span><b>' + escapeHtml(type) + '</b><span class="meta">' + escapeHtml(address) + (date ? ' · opened ' + escapeHtml(date) : '') + '</span></div>';
   }).join('');
@@ -244,7 +244,7 @@ async function load311() {
     serviceRows = await response.json();
     document.getElementById('freshness').textContent = 'Live 311 loaded';
     const newest = serviceRows[0] && niceDate(serviceRows[0].open_date_time);
-    document.getElementById('freshness-detail').textContent = 'Loaded the ' + serviceRows.length + ' most recent Waldo-area 311 requests' + (newest ? ' (newest opened ' + newest + ')' : '') + '. Other civic layers link to their public sources until parsers are added.';
+    document.getElementById('freshness-detail').textContent = 'Loaded the ' + serviceRows.length + ' most recent Linwood-area 311 requests' + (newest ? ' (newest opened ' + newest + ')' : '') + '. Other civic layers link to their public sources until parsers are added.';
     renderRows();
   } catch (error) {
     document.getElementById('freshness').textContent = 'Source-linked mode';

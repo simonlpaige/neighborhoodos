@@ -23,7 +23,7 @@ npm run config:example      # copies node.config.example.json to node.config.jso
 ```
 
 Edit `node.config.json`:
-- `slug`: a unique id like `waldo@yourorg.org`
+- `slug`: a unique id like `linwood@yourorg.org`
 - `name`: human-readable neighborhood name
 - `bounds`: a north/south/east/west latitude-longitude box around the neighborhood (get these from any map by right-clicking corners)
 - `contactEmail`: the data steward's address
@@ -51,7 +51,7 @@ On Windows use Task Scheduler with the same command.
 
 ```bash
 ADMIN_TOKEN="$(openssl rand -hex 24)" \
-NODE_SLUG="waldo@yourorg.org" \
+NODE_SLUG="linwood@yourorg.org" \
 DB_PATH=./node.db \
 PORT=4242 \
 npm run api

@@ -1,6 +1,6 @@
 # Threat Model
 
-One page: what data the Waldo program holds, who could force it to be handed over, and how long it's kept.
+One page: what data the Linwood program holds, who could force it to be handed over, and how long it's kept.
 
 **The default is simple: NeighborhoodOS holds nothing about residents.** The best protection against a subpoena, a breach, or a bad actor is not having the data in the first place. Anything that changes this default has to be added to this page, and approved by the data steward, before it starts.
 
@@ -12,12 +12,12 @@ One page: what data the Waldo program holds, who could force it to be handed ove
 |---|---|---|---|
 | **Website visits** (neighborhoodos.org) | GitHub (hosts the site) and Google (serves the fonts) see visitors' IP addresses. NeighborhoodOS runs no analytics, no cookies, no forms. | Legal process served on GitHub or Google, not on us | Their policies |
 | **Problem brief builder, "catch the machine" exercise** | Nobody. Runs in the visitor's browser; nothing is sent anywhere. | Nothing to compel | Gone when the tab closes |
-| **Waldo dashboard** | The visitor's browser asks DataKC (the City) directly. The City's data host sees the IP address. | Legal process served on the City or its vendor | Their policies |
+| **Linwood dashboard** | The visitor's browser asks DataKC (the City) directly. The City's data host sees the IP address. | Legal process served on the City or its vendor | Their policies |
 | **Session attendance** | Headcount only, on paper. No sign-in sheet by default. | Nothing to compel | Not kept |
 | **Optional follow-up list** (first name + one way to reach you, opt-in only) | The host library, under its own privacy policy. Not NeighborhoodOS. | Legal process served on the library. Records a library holds may also be subject to Missouri's Sunshine Law; library patron records have added protection under state law. Confirm with the library before collecting. | Deleted at the end of each 90-day cohort, or sooner on request |
 | **Stipend payments** (name, mailing address, and, above a tax threshold, a tax ID) | The paying partner (library, fiscal sponsor, or grantee) through its normal payroll or vendor system. NeighborhoodOS never sees or keeps it. | Tax authorities; legal process served on the paying partner | The partner's financial-records rules, which are usually several years |
 | **Solve clinic problem briefs** | The participant. Briefs are on paper and go home with the person who wrote them. | Nothing to compel from us | Theirs to keep |
-| **Public problem log** | Public. Lists places and institutions, never people ("streetlight at 75th and Main, 311 case #…"). | Already public | Until resolved, then archived |
+| **Public problem log** | Public. Lists places and institutions, never people ("streetlight at Linwood and Prospect, 311 case #…"). | Already public | Until resolved, then archived |
 | **Email to the program contact** | The program contact's email provider. | Legal process served on the provider or the contact | Deleted 90 days after the question is resolved |
 | **AI tools used in sessions** | The AI vendor, under the facilitator's account. Participants are told not to type personal information. | Legal process served on the vendor | Vendor's policy |
 | **Meeting notes** | Kansas City Documenters / The Beacon publish them. We link, we don't copy. | Already public | Theirs |
