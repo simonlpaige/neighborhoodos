@@ -46,3 +46,9 @@ Questions: [KC Digital Drive](https://www.kcdigitaldrive.org/contact/).
 ## Directory and analytics
 
 The directory lists organizations and public source links, not private resident contacts or named neighborhood leaders. Source availability checks are automated; service details need human review. No aggregate visitor analytics has been enabled. Any future analytics needs a named operator, purpose, fields, retention, and data-steward approval before activation.
+
+## Appearance and optional translation
+
+Light/dark appearance follows the device by default. A manual light/dark choice is saved locally as `nos-theme`; Auto removes that override. This preference contains no visitor identifier, brief text, or quiz answers. Blocked browser storage does not prevent system-following appearance.
+
+Optional translation opens Google Translate in another tab with a public reading-copy URL. Google handles that visit under its own terms. The reading copy excludes editable forms, embedded content, and scripts; no private input or visitor answers are sent. No translation scripts or requests load on the original page before a visitor chooses an external link. See [Language Access](Language-Access.md).

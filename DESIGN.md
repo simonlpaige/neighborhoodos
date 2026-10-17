@@ -16,6 +16,10 @@ Simon explicitly requested and approved a fresh visual direction in October 2026
 
 Before release, run the static audit and relevant tests, inspect desktop and mobile, exercise the lesson and brief, and verify live rendering after deployment.
 
+October 2026 appearance and language controls: follow `prefers-color-scheme` until a visitor selects light or dark. A compact sun/moon switch and an Auto reset sit beside the Translate menu in the top bar. Store only the functional theme preference locally; print stays light. Use semantic color tokens in `workshop.css` with light/dark values in `appearance.css`. Test both palettes and the expanded language menu for contrast and keyboard access.
+
+The Translate menu offers Spanish, Chinese (Simplified), Vietnamese, Arabic, and French, based on KCMO language-access priorities; do not claim a precise current individual-language ranking. Links open Google Translate only on request, using non-indexed public reading copies with no editable forms or scripts. Original page input must never appear in a translation URL or copy. The native Spanish lesson remains separate.
+
 ## Historical design reference (superseded)
 
 Canonical source of truth for `neighborhoodos.org` visual and customer-facing work.

@@ -15,7 +15,8 @@
     "test:web": "node --test tests/*.test.mjs",
     "audit:web": "node scripts/audit-site.mjs",
     "check:browser": "node scripts/browser-check.mjs",
-    "refresh:data": "node scripts/refresh-data.mjs"
+    "refresh:data": "node scripts/refresh-data.mjs",
+    "check:appearance": "node scripts/check-appearance.mjs"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",

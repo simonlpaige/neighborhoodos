@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Technical Architecture | NeighborhoodOS</title><meta name="description" content="Technical Architecture: program guidance, responsibilities, and practical materials for NeighborhoodOS, a KC Digital Drive program."><link rel="canonical" href="https://neighborhoodos.org/guide/technical-architecture/"><meta property="og:title" content="Technical Architecture | NeighborhoodOS"><meta property="og:description" content="Technical Architecture: program guidance, responsibilities, and practical materials for NeighborhoodOS, a KC Digital Drive program."><meta property="og:type" content="website"><meta property="og:url" content="https://neighborhoodos.org/guide/technical-architecture/"><meta property="og:image" content="https://neighborhoodos.org/assets/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#17324d"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/barlow-condensed-600.ttf" as="font" type="font/ttf" crossorigin=""><link rel="stylesheet" href="/assets/workshop.css"><link rel="stylesheet" href="/assets/appearance.css"><meta name="robots" content="noindex,follow"></head><body class=""><a class="skip-link" href="#main">Skip to main content</a><div class="site-top" lang="en"><div class="container"><div class="top-inner"><span>Linwood, Kansas City</span><span>A <a href="https://www.kcdigitaldrive.org/">KC Digital Drive</a> program</span></div></div></div><header class="site-nav" lang="en"><div class="container nav-inner"><a href="/reading/" class="nav-logo" aria-label="NeighborhoodOS home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>neighborhoodOS</a><nav class="nav-links" aria-label="Primary"><a href="/reading/learn/">Learn AI safely</a><a href="/reading/sessions/">Sessions</a><a href="/reading/neighborhoods/">Neighborhoods</a><a href="/reading/resources/">Resources</a><a href="/reading/guide/" aria-current="page">Run a program</a></nav></div></header><main id="main"><div class="container translation-reading-notice"><p><strong>Public reading copy.</strong> Automatic translation is for reading. To use private tools, return to your original NeighborhoodOS tab. No personal answers are included in this copy.</p></div><div class="page-head container"><p class="breadcrumbs"><a href="/reading/guide/">Program guide</a></p><h1>Technical Architecture</h1></div><div class="container content-section guide-layout"><aside class="guide-nav" aria-label="Program guide"><a href="/reading/guide/">All guide pages</a><details open=""><summary>Start here</summary><ul><li><a href="/reading/guide/home/">NeighborhoodOS Program Guide</a></li><li><a href="/reading/guide/what-neighborhoodos-is/">What NeighborhoodOS Is</a></li><li><a href="/reading/guide/start-here-for-partners/">Start Here for Partners</a></li><li><a href="/reading/guide/program-design/">Program Design</a></li><li><a href="/reading/guide/partners/">Partners and Reference Resources</a></li></ul></details><details><summary>Run a session</summary><ul><li><a href="/reading/guide/session-plans/">Session Plans</a></li><li><a href="/reading/guide/facilitator-guide/">Facilitator Guide</a></li><li><a href="/reading/guide/roles-and-staffing/">Roles and Staffing</a></li><li><a href="/reading/guide/recruitment-and-outreach/">Recruitment and Outreach</a></li><li><a href="/reading/guide/building-a-tool/">Building a Tool</a></li><li><a href="/reading/guide/launching-a-new-neighborhood/">Launching a New Neighborhood</a></li></ul></details><details><summary>Funding and handoff</summary><ul><li><a href="/reading/guide/grant-kit/">Grant Kit</a></li><li><a href="/reading/guide/budget-and-hardware/">Budget and Hardware</a></li><li><a href="/reading/guide/evaluation-and-metrics/">Evaluation and Metrics</a></li><li><a href="/reading/guide/partner-mou/">Partner Agreement Worksheet</a></li><li><a href="/reading/guide/handoff-and-licensing/">Handoff and Licensing</a></li><li><a href="/reading/guide/known-gaps-and-roadmap/">Known Gaps and Roadmap</a></li></ul></details><details><summary>Safety and technical work</summary><ul><li><a href="/reading/guide/safety-doctrine/">Safety Doctrine</a></li><li><a href="/reading/guide/threat-model/">Threat Model</a></li><li><a href="/reading/guide/language-access/">Language Access and Translation</a></li><li><a href="/reading/guide/data-sources/">Data Sources</a></li><li><a href="/reading/guide/technical-architecture/">Technical Architecture</a></li><li><a href="/reading/guide/developer-setup/">Developer Setup</a></li><li><a href="/reading/guide/later-if-residents-want-it/">Later, if residents want it</a></li><li><a href="/reading/guide/community-ai-hub-guide/">Community AI Hub Guide</a></li><li><a href="/reading/guide/faq/">FAQ</a></li><li><a href="/reading/guide/glossary/">Glossary</a></li></ul></details></aside><article class="prose"><p>NeighborhoodOS software is a small, local-first Node.js codebase built on SQLite. It is designed so one neighborhood can run its own node on one machine, and optionally share aggregate results with other neighborhoods.</p>
+<p><strong>You do not need any of this to run the education program.</strong> Read this when a Build or the data layer is on the table.</p>
+<h2>At a glance</h2>
+<pre><code>                   Public sources                         Residents
+        (KC Open Data, Legistar, county/state)        (sessions, open hours)
+                          │                                   │
+                          ▼                                   ▼
+   ┌───────────────── connectors/ ──────────────┐    ┌──── identity/api.js ────┐
+   │ kc-open-data.js   legistar.js   social.js* │    │ signup, trust levels,   │
+   │ commonweave-directory.js (optional)        │    │ proposals &amp; voting,     │
+   └───────────────────┬────────────────────────┘    │ issues, commitments,    │
+                       │ ingest/sync.js (cron)       │ federation, audit       │
+                       ▼                              └────────────┬────────────┘
+             ┌──────────────────────────────────────────────────────┐
+             │   SQLite node database  (one file per neighborhood)   │
+             │   wrapped by core/db.js: the safety driver             │
+             │   blocks banned tables/fields, append-only audit log   │
+             └──────────────────────────────────────────────────────┘
+                       │                                   │
+                       ▼                                   ▼
+          digests, meeting packets,              federation bundles
+          dashboards, small tools                (aggregates only) ──► other nodes
+
+   * social.js is disabled by default. See Safety Doctrine.
+</code></pre>
+<h2>Repository map</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>What it is</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index.html</code>, <code>learn/</code>, <code>local/</code>, <code>pilot/</code>, <code>launch.html</code></td>
+<td>Public website, served by GitHub Pages from <code>main</code></td>
+<td>Live</td>
+</tr>
+<tr>
+<td><code>core/db.js</code></td>
+<td><strong>Safety driver.</strong> Wraps every node database; refuses banned tables, columns, and patterns; logs blocked attempts to an append-only table</td>
+<td>Working, tested</td>
+</tr>
+<tr>
+<td><code>core/node.js</code></td>
+<td>One import for the whole API; <code>createNode()</code> spins up a node</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><code>core/llm.js</code></td>
+<td>Local AI helper for tools: source-grounded answers, citations, PII redaction, local-host-only by default</td>
+<td>Working, tested with a fake model</td>
+</tr>
+<tr>
+<td><code>core/meetings-packet.js</code></td>
+<td>Builds printable meeting packets (PDF) from Legistar</td>
+<td>Working, needs live testing</td>
+</tr>
+<tr>
+<td><code>connectors/kc-open-data.js</code></td>
+<td>Incremental sync from Kansas City's Socrata open data portal</td>
+<td>Working (network required)</td>
+</tr>
+<tr>
+<td><code>connectors/legistar.js</code></td>
+<td>Kansas City council matters and events; commitment tracking</td>
+<td>Working (network required)</td>
+</tr>
+<tr>
+<td><code>connectors/social.js</code></td>
+<td>Nextdoor / Facebook group signals</td>
+<td><strong>Disabled by default</strong>; conflicts with doctrine unless consented and scoped</td>
+</tr>
+<tr>
+<td><code>connectors/commonweave-directory.js</code></td>
+<td>Optional lookup of commons-aligned orgs nearby</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><code>connectors/_fetch.js</code></td>
+<td>Shared HTTP with retries and backoff</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><code>ingest/sync.js</code>, <code>ingest/probe.js</code></td>
+<td>Cron-ready sync of all sources with a lockfile; health probe</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><code>identity/</code></td>
+<td>Civic identity, trust levels, voting (5 methods), issues, commitments, federation, audit, rate limits, admin tokens, paper ballots, digests, HTTP API</td>
+<td>Working; <code>npm test</code> runs 46 automated checks</td>
+</tr>
+<tr>
+<td><code>identity/migrations/</code></td>
+<td>Numbered SQL migrations applied on open</td>
+<td>Working</td>
+</tr>
+<tr>
+<td><code>wedges/home-maintenance/</code></td>
+<td>First prototype "wedge" (home repair in West Waldo)</td>
+<td><strong>Archived</strong>; bypasses the safety driver, don't deploy</td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>Full manuals: workshops, rubric, safety, stewardship, data, compute</td>
+<td>Current</td>
+</tr>
+<tr>
+<td><code>wiki/</code></td>
+<td>This wiki</td>
+<td>Current</td>
+</tr>
+<tr>
+<td><code>node.config.example.json</code></td>
+<td>Per-neighborhood settings template</td>
+<td>Current</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Key design choices</h2>
+<p><strong>One SQLite file per neighborhood.</strong> Easy to back up (copy a file), easy to delete, runs on anything. Postgres is unnecessary at this scale.</p>
+<p><strong>Safety in code, not just prose.</strong> <code>core/db.js</code> wraps the database connection used by the identity system and the sync job. Attempts to create or query things like <code>resident_dossiers</code>, <code>risk_score</code>, or <code>police_predictions</code> throw a <code>CivicSafetyViolationError</code> and are logged. The audit tables reject UPDATE and DELETE at the database level. This is a guardrail against mistakes and drift, not a guarantee against a determined bad actor with direct file access. Governance still matters.</p>
+<p><strong>Blinded voting.</strong> Each voter's ID is blinded per proposal with an HMAC, so tallies are verifiable but individual votes can't be traced to people, even with database access. Receipts let voters confirm their vote counted.</p>
+<p><strong>Trust levels, not identity checks.</strong> People start anonymous (level 0) and earn trust through email verification, neighbor vouching, or two-coordinator address checks. Most activities need only level 2-3.</p>
+<p><strong>Federation shares aggregates only.</strong> Neighborhoods can exchange signed bundles of counts and closed-vote tallies. Raw records never leave a node. Bundles are signed, replay-protected, and expire after 24 hours.</p>
+<p><strong>No outbound automated decisions.</strong> Tools suggest, summarize, and draft. A human acts.</p>
+<h2>Where the AI models fit</h2>
+<p>AI enters in two ways:</p>
+<ol>
+<li><strong>In sessions</strong>, through a facilitator-run chat tool.</li>
+<li><strong>In a Build</strong>, where a tool calls a <em>local</em> model hosted by Ollama on the hub workstation through <code>core/llm.js</code>, which enforces source-grounding, citations, redaction, and local-only hosting. See <a href="/reading/guide/building-a-tool/">Building a Tool</a> and the <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/docs/LOCAL-COMPUTE-GUIDE.md">Local Compute Guide</a>.</li>
+</ol>
+<h2>Honest status</h2>
+<p>See <a href="/reading/guide/known-gaps-and-roadmap/">Known Gaps and Roadmap</a>. Short version: the identity, voting, federation, and data-sync code runs and is tested; there is no finished resident-facing web app for it yet; the public website and dashboard are live; the education program is fully specified.</p>
+</article></div></main><footer class="site-footer" lang="en"><div class="container"><div class="footer-top"><div><div class="footer-brand">Good questions. Useful next steps.</div><p>NeighborhoodOS is a KC Digital Drive program, starting in Linwood. Created by Simon L. Paige, site administrator and advisor.</p><a href="/reading/about/">About &amp; contact</a><a href="/reading/funders/">For funders</a><a href="/reading/business/">Small business</a></div><div><a class="kcdd-brand" href="https://www.kcdigitaldrive.org/"><img src="/assets/kcdd-logo.svg" alt="KC Digital Drive" width="180" height="54"></a><p>People stay in charge.</p><a href="/reading/guide/safety-doctrine/">Safety rules</a><a href="/reading/accessibility/">Accessibility</a><br><a href="/reading/guide/threat-model/">Privacy &amp; data</a><a href="https://github.com/simonlpaige/neighborhoodos">Source code</a></div></div><div class="footer-bottom">Open materials for practical community work. <a href="/reading/guide/handoff-and-licensing/">Reuse &amp; licensing</a><a href="https://www.kcdigitaldrive.org/contact/">Contact KC Digital Drive</a></div></div></footer>
+</body></html>

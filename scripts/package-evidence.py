@@ -5,7 +5,7 @@ import zipfile
 root=Path(__file__).resolve().parent.parent
 target=root/'downloads'/'neighborhoodos-evidence-pack.zip'
 target.parent.mkdir(exist_ok=True)
-docs=['Grant-Kit','Budget-and-Hardware','Evaluation-and-Metrics','Safety-Doctrine','Threat-Model','Roles-and-Staffing','Partner-MOU','Partners','Data-Sources','Handoff-and-Licensing','Known-Gaps-and-Roadmap']
+docs=['Grant-Kit','Budget-and-Hardware','Evaluation-and-Metrics','Safety-Doctrine','Threat-Model','Language-Access','Roles-and-Staffing','Partner-MOU','Partners','Data-Sources','Handoff-and-Licensing','Known-Gaps-and-Roadmap']
 files=[root/'wiki'/f'{name}.md' for name in docs]+[root/'data'/'neighborhoods.json']+list((root/'data'/'snapshots').glob('*.json'))
 readme='''NeighborhoodOS evidence pack — October 2026 website release
 
