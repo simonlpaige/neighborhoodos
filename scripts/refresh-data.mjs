@@ -1,3 +1,4 @@
+import {refreshPermits} from './permits.mjs';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {summarize} from './civic-data.mjs';
 const base='https://data.kcmo.org/resource/';
@@ -23,3 +24,5 @@ for(const area of config){
   await writeFile(`data/snapshots/${area.slug}.json`,JSON.stringify(snapshot,null,2)+'\n');
   console.log(`${area.slug}: ${snapshot.total} requests; ${snapshot.counts.canceled} canceled; source through ${max}`);
 }
+
+await refreshPermits({all,query,config,borders:selected,asOf,start,end,wkt});

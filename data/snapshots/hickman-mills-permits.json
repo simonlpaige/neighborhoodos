@@ -1,0 +1,132 @@
+{
+  "area": "hickman-mills",
+  "asOf": "2026-10-17",
+  "source": "w8jz-wjgn",
+  "sourceMax": "2026-10-14",
+  "sourceUpdated": "2026-10-15",
+  "parcelSource": "6g4y-sh3m",
+  "parcelUpdated": "2023-12-30",
+  "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
+  "total": 16,
+  "issued30": 0,
+  "issued90": 2,
+  "byType": [
+    {
+      "type": "Residential",
+      "count": 11
+    },
+    {
+      "type": "Commercial",
+      "count": 5
+    }
+  ],
+  "recent": [
+    {
+      "number": "CPBR-2026-01901",
+      "issued": "2026-08-04",
+      "type": "Residential building",
+      "block": "11400 block of Orchard Rd",
+      "status": "closed"
+    },
+    {
+      "number": "CPBR-2026-01858",
+      "issued": "2026-08-04",
+      "type": "Residential building",
+      "block": "10300 block of Richmond Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01445",
+      "issued": "2026-07-17",
+      "type": "Residential building",
+      "block": "7800 block of E 103rd Ter",
+      "status": "closed"
+    },
+    {
+      "number": "CPBR-2026-01498",
+      "issued": "2026-06-25",
+      "type": "Residential building",
+      "block": "10400 block of Richmond Ave",
+      "status": "closed"
+    },
+    {
+      "number": "CPBC-2026-00608",
+      "issued": "2026-06-18",
+      "type": "Commercial building",
+      "block": "11200 block of Hickman Mills Dr",
+      "status": "closed"
+    },
+    {
+      "number": "CPBR-2026-01406",
+      "issued": "2026-06-12",
+      "type": "Residential building",
+      "block": "10500 block of Eastern Ave",
+      "status": "closed"
+    },
+    {
+      "number": "CPBC-2026-00364",
+      "issued": "2026-05-13",
+      "type": "Commercial building",
+      "block": "8100 block of E 107th St",
+      "status": "See city record"
+    },
+    {
+      "number": "CPBR-2026-01076",
+      "issued": "2026-05-13",
+      "type": "Residential building",
+      "block": "8400 block of E 106th St",
+      "status": "closed"
+    },
+    {
+      "number": "CPBR-2026-01013",
+      "issued": "2026-04-30",
+      "type": "Residential building",
+      "block": "10400 block of Richmond Ave",
+      "status": "revoked"
+    },
+    {
+      "number": "CPBC-2026-00395",
+      "issued": "2026-04-27",
+      "type": "Commercial building",
+      "block": "10400 block of Blue Ridge Blvd",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-00171",
+      "issued": "2026-03-05",
+      "type": "Commercial building",
+      "block": "5300 block of Longview Rd",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-00170",
+      "issued": "2026-01-29",
+      "type": "Residential building",
+      "block": "6300 block of Longview Rd",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-00196",
+      "issued": "2026-01-27",
+      "type": "Residential building",
+      "block": "6300 block of E Red Bridge Rd",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2022-02825",
+      "issued": "2025-12-22",
+      "type": "Residential building",
+      "block": "8200 block of E 104TH Ter",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2025-02687",
+      "issued": "2025-11-17",
+      "type": "Residential building",
+      "block": "11600 block of Blue Ridge Blvd",
+      "status": "closed"
+    }
+  ],
+  "method": "Current city-issued permits are joined by parcel number to the city parcel polygons intersecting the dashboard’s named official neighborhood boundaries. Boundary-crossing parcels can appear in adjacent areas. Only residential and commercial building permits with an issue date are included; electrical, plumbing, mechanical, zoning, and applications without an issue date are excluded. A permit is not proof that work has begun, finished, or is currently authorized. Missing or changed parcel identifiers can prevent a match; zero matched records does not establish no construction.",
+  "privacy": "No owner names, contractor details, project descriptions, parcel identifiers, exact addresses, coordinates, or raw city rows are published. Recent permit records show a 100-block, public permit number, issue date, category, and recorded status only."
+}

@@ -1,0 +1,132 @@
+{
+  "area": "lykins",
+  "asOf": "2026-10-17",
+  "source": "w8jz-wjgn",
+  "sourceMax": "2026-10-14",
+  "sourceUpdated": "2026-10-15",
+  "parcelSource": "6g4y-sh3m",
+  "parcelUpdated": "2023-12-30",
+  "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
+  "total": 34,
+  "issued30": 0,
+  "issued90": 6,
+  "byType": [
+    {
+      "type": "Residential",
+      "count": 22
+    },
+    {
+      "type": "Commercial",
+      "count": 12
+    }
+  ],
+  "recent": [
+    {
+      "number": "CPBR-2026-01931",
+      "issued": "2026-08-24",
+      "type": "Residential building",
+      "block": "3700 block of E 10th St",
+      "status": "closed"
+    },
+    {
+      "number": "CPBC-2026-00794",
+      "issued": "2026-08-24",
+      "type": "Commercial building",
+      "block": "3400 block of E 12th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-00687",
+      "issued": "2026-08-19",
+      "type": "Commercial building",
+      "block": "600 block of Hardesty Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01939",
+      "issued": "2026-08-04",
+      "type": "Residential building",
+      "block": "4800 block of E 8th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-00732",
+      "issued": "2026-07-23",
+      "type": "Commercial building",
+      "block": "4200 block of E 9th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01416",
+      "issued": "2026-07-21",
+      "type": "Residential building",
+      "block": "4200 block of E 7th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01760",
+      "issued": "2026-07-17",
+      "type": "Residential building",
+      "block": "800 block of Kensington Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01710",
+      "issued": "2026-07-16",
+      "type": "Residential building",
+      "block": "1400 block of Askew Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01631",
+      "issued": "2026-07-10",
+      "type": "Residential building",
+      "block": "3200 block of E 11th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01634",
+      "issued": "2026-07-10",
+      "type": "Residential building",
+      "block": "3200 block of E 11th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01417",
+      "issued": "2026-07-08",
+      "type": "Residential building",
+      "block": "4200 block of E 7th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01533",
+      "issued": "2026-06-22",
+      "type": "Residential building",
+      "block": "600 block of Spruce Ave",
+      "status": "closed"
+    },
+    {
+      "number": "CPBR-2026-01276",
+      "issued": "2026-05-28",
+      "type": "Residential building",
+      "block": "900 block of Benton Blvd",
+      "status": "See city record"
+    },
+    {
+      "number": "CPBR-2026-01277",
+      "issued": "2026-05-26",
+      "type": "Residential building",
+      "block": "1000 block of Cleveland Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-01177",
+      "issued": "2026-05-15",
+      "type": "Residential building",
+      "block": "4400 block of Cloon Ave",
+      "status": "issued"
+    }
+  ],
+  "method": "Current city-issued permits are joined by parcel number to the city parcel polygons intersecting the dashboard’s named official neighborhood boundaries. Boundary-crossing parcels can appear in adjacent areas. Only residential and commercial building permits with an issue date are included; electrical, plumbing, mechanical, zoning, and applications without an issue date are excluded. A permit is not proof that work has begun, finished, or is currently authorized. Missing or changed parcel identifiers can prevent a match; zero matched records does not establish no construction.",
+  "privacy": "No owner names, contractor details, project descriptions, parcel identifiers, exact addresses, coordinates, or raw city rows are published. Recent permit records show a 100-block, public permit number, issue date, category, and recorded status only."
+}

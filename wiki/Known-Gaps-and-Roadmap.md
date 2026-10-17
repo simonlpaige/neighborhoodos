@@ -28,6 +28,10 @@ Status: October 17, 2026. Availability is separate from adoption, participation,
 
 ## Next data work
 
-Dangerous-building, permit, and Land Bank layers need a separate publication review before inclusion. Meetings currently link to official records and Documenters; no unreviewed AI summaries. A service navigator waits until enough human-reviewed playbooks exist. No resident accounts, governance deployment, or AI hardware is part of this release.
+Dangerous-building and Land Bank layers need a separate publication review before inclusion. Meetings currently link to official records and Documenters; no unreviewed AI summaries. A service navigator waits until enough human-reviewed playbooks exist. No resident accounts, governance deployment, or AI hardware is part of this release.
 
 Directory sources need periodic content review, not only an HTTP check. Entries older than six months are flagged by the site audit. A one-page print layout is available; use the browser's Save as PDF option. Exported monthly archival PDFs are future operations work.
+
+## Automatic building-permit checks
+
+The nightly dashboard refresh now reads the current City Issued Permits feed (w8jz-wjgn), joins its parcel identifiers to city parcel polygons, and publishes residential/commercial building-permit counts and recent block-level records for all three areas. The old CPD feed ntw8-aacc stopped updating in May 2025 and is not used. The available parcel map is dated December 30, 2023; missing or changed parcels can be excluded. Dangerous-building and Land Bank overlays remain future work.

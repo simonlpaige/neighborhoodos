@@ -52,3 +52,7 @@ The directory lists organizations and public source links, not private resident 
 Light/dark appearance follows the device by default. A manual light/dark choice is saved locally as `nos-theme`; Auto removes that override. This preference contains no visitor identifier, brief text, or quiz answers. Blocked browser storage does not prevent system-following appearance.
 
 Optional translation opens Google Translate in another tab with a public reading-copy URL. Google handles that visit under its own terms. The reading copy excludes editable forms, embedded content, and scripts; no private input or visitor answers are sent. No translation scripts or requests load on the original page before a visitor chooses an external link. See [Language Access](Language-Access.md).
+
+## Building-permit publication
+
+Nightly permit processing fetches only the fields needed for matching and publication. Parcel identifiers and exact addresses are used in process memory, never committed. The public output contains aggregate counts and recent building permits by 100-block, public permit number, date, category and recorded status. It contains no owner/contractor names, descriptions, raw rows, exact addresses, parcel identifiers or coordinates. Source links return only selected public permit fields.

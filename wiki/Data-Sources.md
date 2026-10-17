@@ -53,3 +53,13 @@ Snapshots cover requests opened in the trailing 365 days. The oldest-open metric
 Raw rows exist only in the refresh process memory. Published JSON contains aggregates and a short allowlist of public-infrastructure issues rounded to a 100-block. Household complaint locations, names, free text, coordinates, animal-service rows, and encampment rows never enter published output. No property layers or AI meeting summaries are published.
 
 The city feed can lag; show both latest city record date and snapshot preparation date. If the snapshot is more than seven days old, the website warns and links to the official source. Failed refreshes do not overwrite snapshots with empty values. Source: https://data.kcmo.org/d/d4px-6rwg and https://data.kcmo.org/d/vq6h-tqrf.
+
+## Current building-permit feed
+
+Public dashboards automatically check City Issued Permits (`w8jz-wjgn`) nightly. The old CPD dataset (`ntw8-aacc`) stopped updating on May 9, 2025 and is historical. Only issued residential and commercial building permits in the trailing 365-day query window count; applications and separate electrical, plumbing, mechanical, zoning and other permits do not. Duplicate permit numbers count once per area.
+
+The current permit feed has no geographic coordinates. Join `main_parcel_number` to `kivapin` in the city parcel polygons (`6g4y-sh3m`), retaining parcels intersecting the named official neighborhood polygons (`vq6h-tqrf`). A boundary-crossing parcel can appear in adjacent areas; counts must not be summed as a unique city total. The published parcel map was last updated December 30, 2023, so new or changed parcels can be missing. A zero match does not establish no construction.
+
+Publish issue-date counts, residential/commercial categories, and at most 15 recent records with public permit number, recorded status and a 100-block. Never publish owners, contractors, descriptions, exact addresses, parcel identifiers or coordinates. Source record links select only permit number, issue date, type and status. Permit issuance does not prove that work started, finished, or remains authorized. Show the permit source date, publication date, check date, and parcel-map date separately. A failed source or geometry query prevents publication of an empty replacement.
+
+Official sources: https://data.kcmo.org/d/w8jz-wjgn and https://data.kcmo.org/d/6g4y-sh3m.

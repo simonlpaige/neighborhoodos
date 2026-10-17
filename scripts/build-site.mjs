@@ -36,7 +36,7 @@ function writePage(route,{title,description,body,style='',script='',schema,bodyC
 }
 const home=load(read('content/original-home.html'));const script=(home('script:not([type])').last().html()||'').replace("function () { window.print(); }","function () { document.body.classList.add('print-brief'); window.print(); }");
 const fragments={exercise:home('#exercise').toString(),brief:home('#brief').html(),script};
-const pages=makePages({read,esc,md,config,resources,calendar,snapshots,fragments,guideFiles,titles,slug});
+const pages=makePages({read,esc,md,config,resources,calendar,snapshots,fragments,guideFiles,titles,slug,permitSnapshots:Object.fromEntries(config.map(c=>[c.slug,JSON.parse(read(`data/snapshots/${c.slug}-permits.json`))]))});
 for(const [route,page] of Object.entries(pages))writePage(route,page);
 for(const file of guideFiles){let content=read('wiki/'+file);const title=titles[file];content=content.replace(/^# .+\r?\n/,'');let rendered=md.render(content);const $=load(rendered,null,false);
   $('a[href]').each((_,el)=>{const href=$(el).attr('href');if(href.endsWith('.md')&&!href.startsWith('http')){const target=path.basename(href);if(titles[target])$(el).attr('href','/guide/'+slug(target)+'/');else $(el).attr('href','https://github.com/simonlpaige/neighborhoodos/blob/main/'+(href.startsWith('../')?href.slice(3):'wiki/'+href));}});
