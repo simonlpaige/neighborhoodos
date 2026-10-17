@@ -1,64 +1,32 @@
 # Start Here for Partners
 
-This page is for an organization (a library, a digital inclusion nonprofit, a neighborhood association, a campus) that wants to run a NeighborhoodOS program. It assumes no technical staff and no help from the original author.
+NeighborhoodOS is free, practical AI learning plus clinics for stuck civic problems. It is a KC Digital Drive program, beginning at the LAMP campus. This guide can be adapted by another neighborhood or host.
 
-NeighborhoodOS is **free, practical AI help for neighbors, plus clinics for stuck civic problems.** In Linwood it is designed to run out of the LAMP campus at 1801 Linwood Blvd., alongside Kansas City Documenters. See [Partners](Partners.md).
+## Before scheduling
 
-## The short version
+1. Name a program lead and a separate data steward.
+2. Agree the participating neighborhood with its local association or trusted connectors. A public-data dashboard does not establish participation.
+3. Confirm a room, step-free access, interpretation needs, and practical visiting instructions. At LAMP: 1801 Linwood Blvd, Kansas City, MO 64109; park on Woodland and enter on Linwood.
+4. Confirm the stipend payer and budget. Plan $30 per 90-minute participant session and $20/hour for peer helpers. Do not advertise payment until the session is funded.
+5. Use existing DSSC classes for Learn, then arrange two Solve clinics. A library can be a second venue.
+6. Adopt the [Safety Doctrine](Safety-Doctrine.md). Keep private resident information out of public tools and logs.
 
-1. Run it out of a library. It's the most trusted, accessible room in most neighborhoods, and it can apply for the grants that pay participants.
-2. Name two people: a **program lead** and a **data steward**.
-3. Pay participants and peer helpers ($20/hour, the Documenters rate).
-4. Run 3 Learn sessions, then 2 Solve clinics, over roughly 90 days. Use the CivicAI curriculum as it's released instead of writing your own.
-5. Build one small tool only if the clinics surface a clear, safe need. Software and hardware wait until residents ask ([Later, if residents want it](Later-If-Residents-Want-It.md)).
+## A 90-day cohort, after setup
 
-## Decisions to make in the first two weeks
-
-| Decision | Why it matters | Where to read more |
+| Period | Work | Evidence |
 |---|---|---|
-| Who is the program lead? | One accountable person keeps it moving | [Roles and Staffing](Roles-and-Staffing.md) |
-| Who is the data steward? | Required before any data is collected, even sign-in sheets | [Roles and Staffing](Roles-and-Staffing.md), [Data Stewardship](../docs/Data-Stewardship-Guide.md) |
-| Which neighborhood, exactly? | Everything is sharper with a real boundary | [Launching a New Neighborhood](Launching-a-New-Neighborhood.md) |
-| Where do sessions happen? | A library branch is the default: trusted, accessible, familiar | [Partners](Partners.md) |
-| Who pays stipends, and from what? | Paying people changes who comes; the payer handles payment details, not you | [Budget and Hardware](Budget-and-Hardware.md) |
-| Who is the first audience? | Recommended: residents most exposed to automated systems (seniors, renters, small business owners) | [Program Design](Program-Design.md) |
-| Will you adopt the Safety Doctrine as written? | It is the condition for using the name and the trust it carries | [Safety Doctrine](Safety-Doctrine.md) |
+| Days 1–30 | Existing digital-skills learning, outreach through paid connectors, baseline voluntary AI-error check | Aggregate headcounts and anonymous check totals |
+| Days 31–60 | Finish learning; first Solve clinic | Resident-owned briefs, public-source links, named next steps |
+| Days 61–90 | Second Solve clinic; check follow-through; decide whether a small tool is justified | Reviewed outcomes and a continue/change/stop decision |
 
-## A general plan
+The start date is set after room, staffing, and money are confirmed. No February 2027 cohort is announced by this planning guide.
 
-### Days 1-30: Set up and Learn
-- Confirm lead, steward, room, and dates.
-- Recruit 12-25 residents per session through trusted channels. Personal invitations outperform flyers; see [Recruitment and Outreach](Recruitment-and-Outreach.md).
-- Print the [facilitator kit](https://neighborhoodos.org/kit/) and read the [Facilitator Guide](Facilitator-Guide.md).
-- Run **Learn 1** (What AI is and isn't) and **Learn 2** (Scams, privacy, and checking the machine).
-- Collect nothing by default. Headcount only. If the library keeps an opt-in follow-up list, it holds it, not you. See the [Threat Model](Threat-Model.md).
-- Run the anonymous AI-error check at the start of Learn 1.
+## Useful materials
 
-### Days 31-60: Finish Learn, start Solve
-- Run **Learn 3** (Public data and your block). End with the AI-error check again.
-- Point people to [Kansas City Documenters](https://kansascity.documenters.org/) notes for recent meetings that touch Linwood.
-- Run **Solve Clinic 1**. Collect problems on sticky notes; turn the strongest into one-page Problem Briefs.
-- Keep a simple, public log of problems raised, next steps, and dates. Places and institutions only, never people. A shared spreadsheet is fine.
+[Session plans](Session-Plans.md), [facilitator guide](Facilitator-Guide.md), [budget](Budget-and-Hardware.md), [measurement plan](Evaluation-and-Metrics.md), [partner worksheet](Partner-MOU.md), and [print kit](https://neighborhoodos.org/kit/).
 
-### Days 61-90: Solve and decide
-- Run **Solve Clinic 2**. Follow up on Clinic 1 problems first. Show what moved.
-- Score the top Build candidate against the [Pilot Rubric](../docs/PILOT-RUBRIC.md). Build only if it scores 7/9 or better and passes the Red-Light Test.
-- Write a two-page summary using [Evaluation and Metrics](Evaluation-and-Metrics.md). Decide: continue, change, or stop.
+## Other neighborhoods
 
-### Not in the first 90 days
-- Local AI hardware, a data platform, or voting tools. See [Later, if residents want it](Later-If-Residents-Want-It.md).
+Lykins / Northeast and Hickman Mills are worked expansion candidates, not confirmed partners. Agree a local host, language needs, resident invitation route, and official boundary coverage before adding sessions. KCK needs a separate data connector and local invitation.
 
-## What success looks like at day 90
-
-- Problems resolved, and how long each took (not just captured).
-- A measurable improvement in spotting AI errors from Learn 1 to Learn 3.
-- Paid peer helpers recruited for the next cohort, with retention checked at six months.
-- Enough evidence to decide what comes next. See [Evaluation and Metrics](Evaluation-and-Metrics.md).
-
-## What to avoid
-
-- Starting with the software or the hardware.
-- Promising outcomes the program can't deliver (fixing 311, legal help).
-- Collecting data "just in case."
-- Publishing AI summaries of public meetings. Link to Documenters instead.
-- Letting a vendor or funder turn it into a surveillance or "smart city" product.
+[Contact KC Digital Drive](https://www.kcdigitaldrive.org/contact/) to discuss program delivery.

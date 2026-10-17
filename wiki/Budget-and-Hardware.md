@@ -1,6 +1,6 @@
 # Budget and Hardware
 
-All figures are **rough planning ranges in US dollars**, written in September 2026. Prices for hardware in particular move quickly. Get real quotes before committing.
+All figures are **rough planning ranges in US dollars**, reviewed for planning in October 2026. Prices for hardware in particular move quickly. Get real quotes before committing.
 
 ## Three sizes
 
@@ -13,7 +13,7 @@ All figures are **rough planning ranges in US dollars**, written in September 20
 | Food for 5-7 sessions | $750 - $1,500 |
 | Printing, sticky notes, supplies | $150 - $400 |
 | Accessibility (interpretation, large print, captioning) | $0 - $1,500 depending on need |
-| Room | $0 when hosted by the library |
+| Room | $0 when donated by the host (confirm) |
 | **Total** | **roughly $7,000 - $16,000** |
 
 *Sizes M and L are not part of the current program. They are here for planning only; see [Later, if residents want it](Later-If-Residents-Want-It.md).*
@@ -65,17 +65,11 @@ It is fine to use cloud tools for Learn session demos, as long as participants n
 
 Pay attendees and peer helpers at the same rate Kansas City Documenters pays residents to cover public meetings: **$20 an hour**. For a 90-minute session that's $30 per person. Paying people changes who can come: the residents most affected by automated systems are often the ones who can least afford an unpaid evening.
 
-- **Who pays:** the host library, a fiscal sponsor, or the grantee, through its normal system. NeighborhoodOS never collects or keeps payment details. See the [Threat Model](Threat-Model.md).
+- **Who pays:** the host organization, a fiscal sponsor, or the grantee, through its normal system. NeighborhoodOS never collects or keeps payment details. See the [Threat Model](Threat-Model.md).
 - **How:** cash-equivalent cards or checks, handed out at the end of each session. No attendance requirement to get paid for the session you came to.
 - **Tax:** above a yearly threshold the payer may need a tax form from the recipient. The paying partner handles this; check its rules before the first session and tell participants up front.
 - **Peer helpers:** graduates who co-facilitate or staff clinics are paid for prep time as well as time in the room.
 
 ## Funding
 
-Library-partnered grants are the best fit, because the library is the host and can be the applicant.
-
-- **IMLS National Leadership Grants for Libraries.** IMLS announced its FY2026 awards on September 2, 2026 and said FY2027 applications would open in September 2026. The CivicAI project the program draws on was funded through this program. Check [imls.gov](https://www.imls.gov/find-funding/funding-opportunities/grant-programs/national-leadership-grants-for-libraries) for current deadlines and eligibility.
-- **State library subgrants.** Federal library money is also passed through state library agencies; ask the Missouri State Library what's open.
-- **Local funders.** Community foundations, digital inclusion and digital equity funds, and workforce-development money (AI literacy is a job skill).
-
-Stipends are the easiest line to justify and the first to fund. Hardware is easier to fund once residents have asked for it.
+KCDD leads funding for the LAMP program. A library can be an eligible lead for library-specific grants; it is not the default program owner. Use the [Grant Kit](Grant-Kit.md) and [Funding Research](Funding-Research.md). Verify current notices, deadlines, and terms before applying. No award or stipend funding is claimed by this planning budget.

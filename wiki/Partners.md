@@ -1,47 +1,23 @@
-# Partners
+# Partners and Reference Resources
 
-NeighborhoodOS does not rebuild what already works in Kansas City. It plugs into it. This page lists the partnerships the Linwood program is built around, what each one does, and where each one stands.
+## Confirmed program owner: KC Digital Drive
 
-**Status as of September 2026: all three are proposed, not yet agreed.** Nothing here should be described in outreach as a confirmed partnership until the partner says yes in writing.
+Adoption was confirmed by founder Simon L. Paige on October 17, 2026. KCDD leads program delivery; Simon remains site administrator and advisor. KCDD should name a program lead and a separate data steward before a cohort begins.
 
-## The shape
+The [Digital Services & Support Center at LAMP](https://www.kcdigitaldrive.org/project/dsslampcampus/) is at **1801 Linwood Blvd, Kansas City, MO 64109**. Parking is on Woodland; entry is on Linwood. Confirm room booking, access, and times before scheduling.
 
-| Layer | Who does it | What NeighborhoodOS does |
-|---|---|---|
-| Where the program happens | LAMP campus (1801 Linwood Blvd.) | Brings the sessions, facilitators, and materials |
-| What gets taught | CivicAI curriculum (NJ State Library + InnovateUS), as it is released | Adds Linwood examples and the Solve clinic format |
-| What happened at public meetings | Kansas City Documenters (The Beacon) | Links to their notes and helps residents act on them |
-| What residents do next | NeighborhoodOS Solve clinics | Turns a stuck problem into a one-page brief with a next step |
+## Build on DSSC
 
-## Kansas City Documenters: the meeting layer
+Use DSSC's existing digital skills learning as the Learn track. NeighborhoodOS adds the Solve clinic format, local public-source work, and a private problem brief. Do not advertise a second competing AI-literacy course. The [KCDD calendar](https://www.kcdigitaldrive.org/events/) remains the event source; individual event pages link to registration when offered.
 
-[Kansas City Documenters](https://kansascity.documenters.org/) is hosted by [The Beacon](https://thebeaconnews.org/documenters/), built on City Bureau's model. The Beacon trains and pays residents ($20 an hour) to attend public meetings in both Kansas Cities and take notes, which Beacon staff fact-check and edit before publishing.
+## References, not confirmed agreements
 
-**How we use it**
-- Documenters' verified notes are the program's record of what happened at public meetings. We link to them; we do not copy, rewrite, or re-summarize them.
-- Solve clinics are offered as a place where residents can act on something Documenters surfaced: a zoning case, a budget line, a promise made at a council meeting.
-- Clinic participants who want to go deeper are pointed to the Documenters training.
+- Kansas City Documenters / The Beacon: link to human-reported meeting notes or the official record. No unreviewed AI meeting summaries. No partnership is asserted.
+- CivicAI: evaluate available curriculum and reuse terms before adoption. No agreement or guaranteed module availability is asserted.
+- UMKC Center for Neighborhoods, UMKC SBDC, HEMP, Trust Neighborhoods, and neighborhood associations: potential collaborators or independent referrals. A listing in the directory is not a partnership.
+- Lykins / Northeast and Hickman Mills: possible next program areas; local agreement, a host, and funding are prerequisites.
+- A public library can be a second venue or an eligible library-grant lead. It is not described as the current program owner.
 
-**The rule:** NeighborhoodOS never publishes an AI-generated summary of a public meeting that a trained person has not reviewed. If Documenters haven't covered a meeting, we link to the official agenda and minutes instead. See [Safety Doctrine](Safety-Doctrine.md).
+Keep proposed, contacted, in conversation, agreed, and operating distinct. Record a change only after the relevant organization confirms it.
 
-**The ask:** permission to link to and cite Documenters notes in clinic materials, a standing slot to mention Documenters training at clinics, and a way to tell the Documenters team when residents flag a meeting that needs coverage.
-
-## LAMP campus: the host
-
-KC Digital Drive's Emerge @ LAMP project puts the program on the LAMP campus at Linwood Blvd and Woodland Ave. That means a trusted, accessible room in the neighborhood, a host that already runs digital inclusion programs, and a partner that can apply for the grants that pay participant stipends. A nearby library branch is still a good second venue.
-
-**The ask:** a recurring room for 3 Learn sessions and 2 Solve clinics over about 90 days, listing on the host's events calendar, a staff point of contact, and the host's willingness to be the lead or co-applicant on a grant that pays participant stipends (see [Budget and Hardware](Budget-and-Hardware.md)).
-
-**What the host gets:** a ready-to-run program with session plans, a printable [facilitator kit](https://neighborhoodos.org/kit/), a safety doctrine, and outcome measures (see [Evaluation and Metrics](Evaluation-and-Metrics.md)).
-
-## CivicAI: the curriculum
-
-In September 2026 the New Jersey State Library announced [CivicAI](https://www.njstatelib.org/new-jersey-state-library-awarded-national-leadership-grant-to-expand-civic-ai-learning-through-libraries/), a three-year IMLS-funded project with InnovateUS, the Hawaiʻi State Public Library System, and the Montana State Library. It is building a free, mobile-first, eight-part course that teaches residents to use AI to understand government information, navigate services, communicate with officials, and organize with neighbors. Its materials are meant to be freely reused by other libraries.
-
-**How we use it:** as CivicAI modules are released, the Learn sessions adopt them instead of maintaining a parallel NeighborhoodOS curriculum. Our own Learn materials stay in place until then, and we keep only what CivicAI doesn't cover: the Linwood examples, the Solve clinic format, and the link to local public data.
-
-**The ask:** to be kept informed as modules are published, and to share back what worked in Linwood.
-
-## Contact
-
-Partner conversations: [simon@simonlpaige.com](mailto:simon@simonlpaige.com).
+Program inquiries: [KCDD's official contact page](https://www.kcdigitaldrive.org/contact/). A dedicated program inbox has not been supplied; do not invent one.

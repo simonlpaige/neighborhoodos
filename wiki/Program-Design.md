@@ -4,7 +4,7 @@
 
 | Track | Sessions | Goal | Needs software? |
 |---|---|---|---|
-| **Learn** | 3 | Practical AI literacy: how it works, where it breaks, scams, privacy, verification. Adopts CivicAI modules as they're released | No (a projector and one AI chat tool for demos) |
+| **Learn** | 3 learning touchpoints | Use existing DSSC workshops; add local safety, privacy, and source-checking practice | No |
 | **Solve** | 2 | Turn real stuck problems into briefs with an authority, evidence, and a next move. Includes issues surfaced by Kansas City Documenters | No (sticky notes, a wall, public data websites) |
 | **Build** | 1-2 | Co-design one small, safe tool from a real brief | Sometimes. Paper prototypes first. |
 
@@ -12,8 +12,8 @@ The order matters. Learn builds trust and shared language. Solve surfaces real n
 
 ## Where it runs and what it builds on
 
-- **Host:** a public library branch (in Linwood, the LAMP campus at 1801 Linwood Blvd.).
-- **Curriculum:** the [CivicAI](Partners.md) course from the New Jersey State Library and InnovateUS, adopted module by module as it's released. NeighborhoodOS keeps only the local pieces: Linwood examples, the Solve clinic format, and links to local public data.
+- **Host:** KC Digital Drive’s Digital Services & Support Center at LAMP, 1801 Linwood Blvd, Kansas City, MO 64109. A library may be a second venue.
+- **Curriculum:** build Learn around DSSC’s existing digital-skills workshops. Use the self-paced lesson as a supplement. Evaluate outside curricula and reuse terms before adoption.
 - **Meetings:** [Kansas City Documenters](Partners.md) notes are the record of public meetings. Solve clinics are where residents act on them.
 - **Pay:** participants get $30 per session; peer helpers $20/hour. See [Budget and Hardware](Budget-and-Hardware.md).
 
@@ -55,6 +55,6 @@ Every session ends with something physical or useful:
 
 Options, in order of effort:
 1. **Repeat** the Learn/Solve cycle with a new cohort, with paid graduates co-facilitating.
-2. **Standing clinic:** a monthly Solve night at the library with a public problem log.
+2. **Standing clinic:** a monthly Solve night at LAMP with a public problem log.
 3. **Build one tool** that passed the rubric (see [Building a Tool](Building-a-Tool.md)).
 4. Anything bigger (a data layer, governance tools, local hardware) only if residents ask for it. See [Later, if residents want it](Later-If-Residents-Want-It.md).

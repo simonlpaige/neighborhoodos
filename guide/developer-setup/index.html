@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Developer Setup | NeighborhoodOS</title><meta name="description" content="Developer Setup: program guidance, responsibilities, and practical materials for NeighborhoodOS, a KC Digital Drive program."><link rel="canonical" href="https://neighborhoodos.org/guide/developer-setup/"><meta property="og:title" content="Developer Setup | NeighborhoodOS"><meta property="og:description" content="Developer Setup: program guidance, responsibilities, and practical materials for NeighborhoodOS, a KC Digital Drive program."><meta property="og:type" content="website"><meta property="og:url" content="https://neighborhoodos.org/guide/developer-setup/"><meta property="og:image" content="https://neighborhoodos.org/assets/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#17324d"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/barlow-condensed-600.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/assets/workshop.css"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://neighborhoodos.org/#website","name":"NeighborhoodOS","url":"https://neighborhoodos.org/"},{"@type":"Organization","@id":"https://neighborhoodos.org/#program","name":"NeighborhoodOS","url":"https://neighborhoodos.org/","parentOrganization":{"@type":"Organization","name":"KC Digital Drive","url":"https://www.kcdigitaldrive.org/"},"founder":{"@type":"Person","name":"Simon L. Paige"},"areaServed":{"@type":"Place","name":"Linwood, Kansas City, Missouri"}}]}</script></head><body class=""><a class="skip-link" href="#main">Skip to main content</a><div class="site-top" lang="en"><div class="container"><div class="top-inner"><span>Linwood, Kansas City</span><span>A <a href="https://www.kcdigitaldrive.org/">KC Digital Drive</a> program</span></div></div></div><header class="site-nav" lang="en"><div class="container nav-inner"><a href="/" class="nav-logo" aria-label="NeighborhoodOS home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>neighborhoodOS</a><nav class="nav-links" aria-label="Primary"><a href="/learn/">Learn AI safely</a><a href="/sessions/">Sessions</a><a href="/neighborhoods/">Neighborhoods</a><a href="/resources/">Resources</a><a href="/guide/" aria-current="page">Run a program</a></nav></div></header><main id="main"><div class="page-head container"><p class="breadcrumbs"><a href="/guide/">Program guide</a></p><h1>Developer Setup</h1></div><div class="container content-section guide-layout"><aside class="guide-nav" aria-label="Program guide"><a href="/guide/">All guide pages</a><details open><summary>Start here</summary><ul><li><a href="/guide/home/">NeighborhoodOS Program Guide</a></li><li><a href="/guide/what-neighborhoodos-is/">What NeighborhoodOS Is</a></li><li><a href="/guide/start-here-for-partners/">Start Here for Partners</a></li><li><a href="/guide/program-design/">Program Design</a></li><li><a href="/guide/partners/">Partners and Reference Resources</a></li></ul></details><details><summary>Run a session</summary><ul><li><a href="/guide/session-plans/">Session Plans</a></li><li><a href="/guide/facilitator-guide/">Facilitator Guide</a></li><li><a href="/guide/roles-and-staffing/">Roles and Staffing</a></li><li><a href="/guide/recruitment-and-outreach/">Recruitment and Outreach</a></li><li><a href="/guide/building-a-tool/">Building a Tool</a></li><li><a href="/guide/launching-a-new-neighborhood/">Launching a New Neighborhood</a></li></ul></details><details><summary>Funding and handoff</summary><ul><li><a href="/guide/grant-kit/">Grant Kit</a></li><li><a href="/guide/budget-and-hardware/">Budget and Hardware</a></li><li><a href="/guide/evaluation-and-metrics/">Evaluation and Metrics</a></li><li><a href="/guide/partner-mou/">Partner Agreement Worksheet</a></li><li><a href="/guide/handoff-and-licensing/">Handoff and Licensing</a></li><li><a href="/guide/known-gaps-and-roadmap/">Known Gaps and Roadmap</a></li></ul></details><details><summary>Safety and technical work</summary><ul><li><a href="/guide/safety-doctrine/">Safety Doctrine</a></li><li><a href="/guide/threat-model/">Threat Model</a></li><li><a href="/guide/data-sources/">Data Sources</a></li><li><a href="/guide/technical-architecture/">Technical Architecture</a></li><li><a href="/guide/developer-setup/">Developer Setup</a></li><li><a href="/guide/later-if-residents-want-it/">Later, if residents want it</a></li><li><a href="/guide/community-ai-hub-guide/">Community AI Hub Guide</a></li><li><a href="/guide/faq/">FAQ</a></li><li><a href="/guide/glossary/">Glossary</a></li></ul></details></aside><article class="prose"><h2>Requirements</h2>
+<ul>
+<li>Node.js 18 or newer (tested on Node 22)</li>
+<li>A C/C++ toolchain for native modules (<code>better-sqlite3</code>, <code>bcrypt</code>). On Windows, install "Desktop development with C++" from Visual Studio Build Tools. On Debian/Ubuntu: <code>sudo apt install build-essential python3</code>.</li>
+<li>Git</li>
+</ul>
+<h2>Install and test</h2>
+<pre><code class="language-bash">git clone https://github.com/simonlpaige/neighborhoodos.git
+cd neighborhoodos
+npm install
+npm test
+</code></pre>
+<p><code>npm test</code> runs three suites. You should see <code>35 passed</code>, <code>5 passed</code>, and <code>6 passed</code>, each with <code>0 failed</code>. Both use temporary databases and clean up after themselves.</p>
+<h2>Configure a neighborhood</h2>
+<pre><code class="language-bash">npm run config:example      # copies node.config.example.json to node.config.json
+</code></pre>
+<p>Edit <code>node.config.json</code>:</p>
+<ul>
+<li><code>slug</code>: a unique id like <code>linwood@yourorg.org</code></li>
+<li><code>name</code>: human-readable neighborhood name</li>
+<li><code>bounds</code>: a north/south/east/west latitude-longitude box around the neighborhood (get these from any map by right-clicking corners)</li>
+<li><code>contactEmail</code>: the data steward's address</li>
+</ul>
+<p>Config resolution order: <code>NOS_CONFIG_PATH</code> env var, then <code>./node.config.json</code>, then built-in defaults.</p>
+<h2>Pull public data</h2>
+<pre><code class="language-bash">npm run sync            # all enabled sources, incremental
+npm run sync:status     # what's in the local DB, no network
+node ingest/sync.js --source kc-data     # just city open data
+node ingest/sync.js --source legistar    # just council matters/events
+</code></pre>
+<p>Optional: get a free Socrata app token and set <code>KC_OPEN_DATA_TOKEN</code> to avoid rate limits.</p>
+<p>To run nightly, add a cron entry (Linux/macOS) such as:</p>
+<pre><code>15 3 * * * cd /opt/neighborhoodos &amp;&amp; /usr/bin/npm run sync &gt;&gt; sync.log 2&gt;&amp;1
+</code></pre>
+<p>On Windows use Task Scheduler with the same command.</p>
+<h2>Run the API</h2>
+<pre><code class="language-bash">ADMIN_TOKEN="$(openssl rand -hex 24)" \
+NODE_SLUG="linwood@yourorg.org" \
+DB_PATH=./node.db \
+PORT=4242 \
+npm run api
+</code></pre>
+<p>Then: <code>curl http://localhost:4242/health</code></p>
+<p>Admin routes are closed unless <code>ADMIN_TOKEN</code> is set or per-admin tokens are provisioned with <code>node identity/admin-cli.js</code>. Never set <code>ALLOW_OPEN_ADMIN=1</code> outside your own laptop.</p>
+<h2>Environment variables</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DB_PATH</code> / <code>NOS_DB_PATH</code></td>
+<td>Database file for API / sync</td>
+</tr>
+<tr>
+<td><code>NODE_SLUG</code>, <code>PORT</code></td>
+<td>Node identity and API port</td>
+</tr>
+<tr>
+<td><code>ADMIN_TOKEN</code></td>
+<td>Shared admin bearer token (prefer per-admin tokens)</td>
+</tr>
+<tr>
+<td><code>AUDIT_IP_SALT</code></td>
+<td>Secret salt for hashing IPs in the audit log. Set this in production.</td>
+</tr>
+<tr>
+<td><code>CORS_ORIGIN</code></td>
+<td>Allowed browser origin for the API</td>
+</tr>
+<tr>
+<td><code>KC_OPEN_DATA_TOKEN</code></td>
+<td>Optional Socrata app token</td>
+</tr>
+<tr>
+<td><code>NOS_CONFIG_PATH</code>, <code>NOS_BOUNDS</code>, <code>NOS_NEIGHBORHOOD</code></td>
+<td>Config overrides</td>
+</tr>
+<tr>
+<td><code>NOS_ENABLE_SOCIAL</code></td>
+<td>Must be <code>1</code> to run the social connector. Requires steward sign-off.</td>
+</tr>
+<tr>
+<td><code>SMTP_HOST</code>, <code>SMTP_PORT</code>, <code>SMTP_USER</code>, <code>SMTP_PASS</code>, <code>SMTP_FROM</code>, <code>DIGEST_TO</code></td>
+<td>Weekly email digest</td>
+</tr>
+<tr>
+<td><code>RL_*_MAX</code></td>
+<td>Rate-limit tuning</td>
+</tr>
+<tr>
+<td><code>RETENTION_*</code></td>
+<td>Data retention windows</td>
+</tr>
+<tr>
+<td><code>FEDERATION_MAX_STALENESS_SECONDS</code>, <code>NODE_PRIVKEY_PATH</code></td>
+<td>Federation</td>
+</tr>
+<tr>
+<td><code>NOS_LLM_HOST</code>, <code>NOS_LLM_MODEL</code></td>
+<td>Local model for tools (defaults: <code>http://localhost:11434</code>, <code>qwen2.5:7b</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Adding a schema change</h2>
+<p>Never edit an existing migration. Add a new file: <code>identity/migrations/0003_short_name.sql</code>. It runs automatically, once, in a transaction, the next time a database is opened.</p>
+<h2>Working on the website</h2>
+<p>The site is plain HTML/CSS/JS with no build step. Open <code>index.html</code> in a browser, or run <code>npx serve .</code> from the repo root. Read <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/DESIGN.md"><code>DESIGN.md</code></a> first; it defines the palette, type, components, and copy rules. Pushing to <code>main</code> deploys via GitHub Pages.</p>
+<h2>Backups</h2>
+<p>Stop the API and sync, copy the <code>.db</code> file (and <code>-wal</code> if present), restart. Keep at least one copy off the machine. Encrypt backups that contain identity tables.</p>
+</article></div></main><footer class="site-footer" lang="en"><div class="container"><div class="footer-top"><div><div class="footer-brand">Good questions. Useful next steps.</div><p>NeighborhoodOS is a KC Digital Drive program, starting in Linwood. Created by Simon L. Paige, site administrator and advisor.</p><a href="/about/">About & contact</a><a href="/funders/">For funders</a><a href="/business/">Small business</a></div><div><a class="kcdd-brand" href="https://www.kcdigitaldrive.org/"><img src="/assets/kcdd-logo.svg" alt="KC Digital Drive" width="180" height="54"></a><p>People stay in charge.</p><a href="/guide/safety-doctrine/">Safety rules</a><a href="/accessibility/">Accessibility</a><br><a href="/guide/threat-model/">Privacy & data</a><a href="https://github.com/simonlpaige/neighborhoodos">Source code</a></div></div><div class="footer-bottom">Open materials for practical community work. <a href="/guide/handoff-and-licensing/">Reuse & licensing</a><a href="https://www.kcdigitaldrive.org/contact/">Contact KC Digital Drive</a></div></div></footer><script src="/assets/site.js" defer></script></body></html>

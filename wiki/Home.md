@@ -1,70 +1,26 @@
-# NeighborhoodOS Wiki
+# NeighborhoodOS Program Guide
 
-**Everything you need to run a NeighborhoodOS program without the original author in the room.**
+**A KC Digital Drive program. Starting in Linwood, with a model other neighborhoods can reuse.**
 
-**NeighborhoodOS: Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
+KC Digital Drive adoption was confirmed by Simon L. Paige on October 17, 2026. Simon remains the site administrator and advisor. The program does not depend on him to run recurring sessions.
 
-Neighbors learn what AI can and can't do, bring real stuck problems to structured clinics, and build small tools only when a real need shows up. It runs out of a library, links to Kansas City Documenters for public meetings, pays participants for their time, and holds nothing about residents. Infrastructure and governance tools are on a separate page, for later, if residents want them.
+Neighbors learn to check AI answers, then use Solve clinics to turn a stuck civic problem into a sourced one-page brief. At LAMP, the Learn track should use DSSC's existing digital skills workshops rather than duplicate them.
 
-Contact: [simon@simonlpaige.com](mailto:simon@simonlpaige.com)
+## Start with your task
 
-This wiki is written for three readers:
+- [Start here for partners](Start-Here-for-Partners.md)
+- [Program design](Program-Design.md) and [session plans](Session-Plans.md)
+- [Printable facilitator kit](https://neighborhoodos.org/kit/)
+- [Budget](Budget-and-Hardware.md) and [grant kit](Grant-Kit.md)
+- [Roles](Roles-and-Staffing.md) and [partner agreement worksheet](Partner-MOU.md)
+- [Safety doctrine](Safety-Doctrine.md) and [threat model](Threat-Model.md)
+- [Data sources and methods](Data-Sources.md)
+- [Current gaps and roadmap](Known-Gaps-and-Roadmap.md)
 
-| If you are... | Start here |
-|---|---|
-| A partner organization deciding whether to run a program | [Start Here for Partners](Start-Here-for-Partners.md) |
-| A neighbor who just wants to learn | The free [15-minute lesson](https://neighborhoodos.org/learn/) |
-| A facilitator or program lead running sessions | [Program Design](Program-Design.md), [Session Plans](Session-Plans.md), and the printable [facilitator kit](https://neighborhoodos.org/kit/) |
-| A developer or technical volunteer | [Technical Architecture](Technical-Architecture.md), then [Developer Setup](Developer-Setup.md) |
+## What is ready
 
-## Pages
+The self-paced lesson, private brief builder, print kit, on-site guide, sourced resource directory, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
 
-**Understand it**
-- [What NeighborhoodOS Is](What-NeighborhoodOS-Is.md): the idea, the three layers, what it is not
-- [Safety Doctrine](Safety-Doctrine.md): the hard limits every program and every line of code must respect
-- [Threat Model](Threat-Model.md): what data is held, who can compel it, how long it's kept
-- [Glossary](Glossary.md)
-- [FAQ](FAQ.md)
+Lykins / Northeast and Hickman Mills are expansion candidates. Their public-data pages do not establish a relationship or consent to run a program.
 
-**Run a program**
-- [Start Here for Partners](Start-Here-for-Partners.md): the first 30 days, decisions to make, a general plan
-- [Partners](Partners.md): the library, Kansas City Documenters, and the CivicAI curriculum
-- [Program Design](Program-Design.md): Learn / Solve / Build and the four-level ladder
-- [Session Plans](Session-Plans.md): every session, minute by minute
-- [Facilitator Guide](Facilitator-Guide.md): running the room, and handling hard moments
-- [Facilitator kit](https://neighborhoodos.org/kit/): every printable handout
-- [Recruitment and Outreach](Recruitment-and-Outreach.md): getting the right people in the room
-- [Roles and Staffing](Roles-and-Staffing.md): who does what, and realistic hours
-- [Budget and Hardware](Budget-and-Hardware.md): what it costs at three sizes
-- [Evaluation and Metrics](Evaluation-and-Metrics.md): how to know if it's working
-- [Launching a New Neighborhood](Launching-a-New-Neighborhood.md): repeating it somewhere else
-
-**Later, if residents want it**
-- [Later, if residents want it](Later-If-Residents-Want-It.md): neighborhood memory, governance tools, local AI hardware, and when they should start
-- [Community AI Hub Guide](Community-AI-Hub-Guide.md): planning a physical space
-
-**Build the software**
-- [Technical Architecture](Technical-Architecture.md): how the pieces fit, and what is real vs. prototype
-- [Developer Setup](Developer-Setup.md): install, configure, test, run
-- [Data Sources](Data-Sources.md): every public dataset, with IDs and caveats
-- [Building a Tool](Building-a-Tool.md): from problem brief to working, safe tool
-- [Known Gaps and Roadmap](Known-Gaps-and-Roadmap.md): an honest status report
-
-**Ownership**
-- [Handoff and Licensing](Handoff-and-Licensing.md): who may use what, and how
-
-## Deeper reference (in `/docs`)
-
-The wiki summarizes and links to the full manuals in the repo's `docs/` folder:
-[Workshop Playbook](../docs/WORKSHOP-PLAYBOOK.md) ·
-[Level 1: Safe AI User](../docs/Level-1-Safe-AI-User.md) ·
-[Level 2: Problem Framer](../docs/Level-2-Problem-Framer.md) ·
-[Level 3: Tool Builder](../docs/Level-3-Tool-Builder.md) ·
-[Pilot Rubric](../docs/PILOT-RUBRIC.md) ·
-[Banned Use](../docs/BANNED-USE.md) ·
-[Data Stewardship](../docs/Data-Stewardship-Guide.md) ·
-[Civic Data Ingest](../docs/Civic-Data-Ingest-Guide.md) ·
-[Local Compute](../docs/LOCAL-COMPUTE-GUIDE.md)
-
----
-*Status as of September 2026: pre-alpha software, fully specified education program. See [Known Gaps and Roadmap](Known-Gaps-and-Roadmap.md).*
+Program questions: [Contact KC Digital Drive](https://www.kcdigitaldrive.org/contact/). Website administration: Simon L. Paige.

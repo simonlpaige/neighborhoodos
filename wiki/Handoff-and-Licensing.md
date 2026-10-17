@@ -20,3 +20,7 @@ NeighborhoodOS was created by Simon L. Paige in 2026. He has chosen to hand it o
 - [ ] Contact email on the website, README, wiki, and `llms.txt` updated to the new program owner (currently simon@simonlpaige.com)
 - [ ] Mirrors (Codeberg) either updated or retired
 - [ ] Signed letter of permission, if requested
+
+## October 17, 2026 update
+
+KC Digital Drive adoption is confirmed. Simon L. Paige remains site administrator and advisor; repository and domain ownership have not been transferred. Use KCDD’s public contact page until a dedicated program inbox is supplied. Formal non-code licensing and a signed permission letter remain decisions to record explicitly; no license grant is silently changed by the website release.

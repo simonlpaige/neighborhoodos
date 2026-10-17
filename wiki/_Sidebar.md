@@ -30,4 +30,4 @@ Later, if residents want it
 
 [Handoff and Licensing](Handoff-and-Licensing.md)
 
-Contact: [simon@simonlpaige.com](mailto:simon@simonlpaige.com)
+Contact: [KC Digital Drive](https://www.kcdigitaldrive.org/contact/)

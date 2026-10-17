@@ -1,15 +1,15 @@
 {
   "slug": "linwood@neighborhoodos.local",
-  "name": "Linwood (pilot)",
+  "name": "Linwood / LAMP example (ingest bounds only)",
   "contactEmail": "steward@example.org",
   "bounds": {
-    "north": 38.9920,
-    "south": 38.9540,
-    "east": -94.5890,
-    "west": -94.6140
+    "north": 39.0775,
+    "south": 39.0406,
+    "east": -94.5524,
+    "west": -94.5685
   },
   "nextdoor": {
-    "publicSlug": "westwaldomo",
+    "publicSlug": null,
     "enablePostScrape": false
   },
   "facebook": {

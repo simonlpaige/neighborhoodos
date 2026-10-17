@@ -18,4 +18,8 @@ The model is designed to be repeated. Each neighborhood runs its own program and
 
 The education program works anywhere without changes beyond local examples. The software's city connectors are Kansas City specific. Adding a city means writing a connector file shaped like `connectors/kc-open-data.js` with that city's dataset IDs and date fields.
 
-The site's [30-day launch playbook](https://neighborhoodos.org/launch.html) is an older, more software-forward version of this checklist; prefer this page where they differ.
+The older 30-day software playbook has been retired. Use the on-site [program guide](https://neighborhoodos.org/guide/) and the 90-day cohort plan.
+
+## Worked expansion candidates
+
+Lykins / Northeast: start with the city’s Lykins polygon, a local host invitation, and confirmed English/Spanish access needs. Do not label this all of Northeast. Hickman Mills: begin with the two named city polygons in the config, then agree the coverage and room with local organizations. Both are candidates, not confirmed partner commitments.

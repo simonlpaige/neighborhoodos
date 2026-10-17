@@ -1,5 +1,23 @@
 # NeighborhoodOS Design Guide
 
+## Active design: October 2026 Linwood workshop refresh
+
+Simon explicitly requested and approved a fresh visual direction in October 2026. This section supersedes the earlier palette, fonts, components, and Waldo-specific language below, which remain only as historical context.
+
+- Identity: a useful Linwood neighborhood workshop. The completed one-page problem brief is the signature visual; every page should make a practical next step clear.
+- Palette: white #FFFFFF, midnight #17324D, workwear blue #2457C5, light blue #EAF2FA, notice yellow #F4CE54, slate #465568. Yellow carries dark text and is never low-contrast body text.
+- Type: locally served Barlow Condensed semibold headings; Atkinson Hyperlegible regular/bold body. Upright headlines, sentence-case navigation, no decorative monospace labels.
+- Layout: left-aligned content, a 1240px maximum container, useful semantic groups, quiet boundaries. Homepage hero pairs the practical promise with a clearly labeled example brief. Stack on mobile; no horizontal page overflow at 320px.
+- Access: WCAG 2.2 AA target, visible keyboard focus, 44px project touch targets, reduced-motion support, table alternatives, focusable table scroll regions, print layouts, and local-only resident input. Automated checks supplement manual review.
+- Program: KC Digital Drive adoption is confirmed. Simon L. Paige remains founder, site administrator, and advisor. Program contact uses KCDD's official contact page until a shared inbox is supplied. LAMP/DSSC address is 1801 Linwood Blvd, Kansas City, MO 64109.
+- Status: no unconfirmed clinic dates, paid-session promises, partner commitments, grants, or outcomes. Resource listings and public-data coverage do not establish participation.
+- Data: official named polygons, dated snapshots, canceled distinct from resolved, no household complaint locations or free text. Print outputs are a supported first-class task.
+- Sources: `scripts/pages.mjs`, `scripts/build-site.mjs`, `assets/workshop.css`, `content/`, `wiki/`, and `data/`. Root HTML is generated. The publication workflow stages an allowlist in `.public-site/`; source fragments and experimental backend modules are excluded.
+
+Before release, run the static audit and relevant tests, inspect desktop and mobile, exercise the lesson and brief, and verify live rendering after deployment.
+
+## Historical design reference (superseded)
+
 Canonical source of truth for `neighborhoodos.org` visual and customer-facing work.
 
 This guide captures the Claude Design direction already present in the live site: civic, local, editorial, warm, and useful. Use this before touching any NeighborhoodOS frontend, dashboard, packet, deck, public doc, case study, or visual artifact.

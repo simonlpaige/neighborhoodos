@@ -12,7 +12,7 @@
 
 import { createSecureDatabase } from '../core/db.js';
 import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'fs';
-import { syncDataset, getIngestSummary, WEST_WALDO_BOUNDS, DATASETS }
+import { syncDataset, getIngestSummary, DATASETS }
   from '../connectors/kc-open-data.js';
 import { syncRecentMatters, syncRecentEvents, getOverdueCommitments }
   from '../connectors/legistar.js';
@@ -27,9 +27,9 @@ import { loadConfig } from '../identity/config.js';
 
 const CFG = loadConfig();
 const DB_PATH = process.env.NOS_DB_PATH || './neighborhood-os.db';
-const NEIGHBORHOOD = process.env.NOS_NEIGHBORHOOD || CFG.slug.split('@')[0] || 'westwaldo';
+const NEIGHBORHOOD = process.env.NOS_NEIGHBORHOOD || CFG.slug.split('@')[0];
 const BOUNDS = process.env.NOS_BOUNDS ? JSON.parse(process.env.NOS_BOUNDS) : CFG.bounds;
-const NEXTDOOR_SLUG = process.env.NEXTDOOR_SLUG || CFG.nextdoor?.publicSlug || 'westwaldomo';
+const NEXTDOOR_SLUG = process.env.NEXTDOOR_SLUG || CFG.nextdoor?.publicSlug || null;
 const LOCK_PATH = process.env.NOS_LOCK_PATH || `${DB_PATH}.lock`;
 
 // Parse args

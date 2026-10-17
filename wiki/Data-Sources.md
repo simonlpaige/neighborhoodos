@@ -43,3 +43,13 @@ Store organizations, not individuals. Every entry gets a source and a "last chec
 5. Is its freshness shown honestly wherever it's displayed?
 
 If a feed breaks, show the link to the original source instead of stale numbers dressed as live.
+
+## October 2026 public website snapshots
+
+The public website uses official DataKC neighborhood polygons (`vq6h-tqrf`) and 311 records (`d4px-6rwg`). `data/neighborhoods.json` names exact polygon membership. Linwood / LAMP groups Key Coalition and four Ivanhoe areas; Lykins is not all of Northeast; Hickman Mills uses Hickman Mills and Hickman Mills South. Neighborhood coverage does not imply association consent or participation.
+
+Snapshots cover requests opened in the trailing 365 days. The oldest-open metric excludes older cases. Canceled and duplicate statuses are distinct from resolved; status case is normalized. Closure medians use resolved records with a closure date and nonnegative duration, with local sample counts and a matched citywide window. Open cases are excluded; closed-only duration does not predict waiting time. The chart shows the last 12 calendar months with a partial final month. Unlocated city records cannot enter polygon counts.
+
+Raw rows exist only in the refresh process memory. Published JSON contains aggregates and a short allowlist of public-infrastructure issues rounded to a 100-block. Household complaint locations, names, free text, coordinates, animal-service rows, and encampment rows never enter published output. No property layers or AI meeting summaries are published.
+
+The city feed can lag; show both latest city record date and snapshot preparation date. If the snapshot is more than seven days old, the website warns and links to the official source. Failed refreshes do not overwrite snapshots with empty values. Source: https://data.kcmo.org/d/d4px-6rwg and https://data.kcmo.org/d/vq6h-tqrf.

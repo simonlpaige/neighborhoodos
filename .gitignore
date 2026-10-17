@@ -8,3 +8,5 @@ digests/
 .DS_Store
 *.log
 node.config.json
+artifacts/
+.public-site/

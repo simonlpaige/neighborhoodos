@@ -1,0 +1,10 @@
+name: Add a neighborhood
+description: Request data coverage or propose a locally invited program
+body:
+  - type: textarea
+    id: area
+    attributes:
+      label: Area, official boundary, association source, and next step
+      description: State whether this is data coverage or an authorized program invitation. Neither implies the other. Do not include private contacts.
+    validations:
+      required: true

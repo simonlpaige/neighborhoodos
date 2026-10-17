@@ -1,0 +1,459 @@
+{
+  "area": "lykins",
+  "asOf": "2026-10-17",
+  "sourceMax": "2026-10-12",
+  "generatedAt": "2026-10-17T15:56:25.461Z",
+  "window": "Requests opened in the trailing 365 days; final trend month is partial.",
+  "total": 2143,
+  "requests30": 118,
+  "requests90": 539,
+  "counts": {
+    "open": 366,
+    "resolved": 1602,
+    "canceled": 175
+  },
+  "openOver60": 232,
+  "types": [
+    {
+      "type": "Property Violations",
+      "count": 440,
+      "medianDays": 50.5,
+      "closedSample": 204,
+      "cityMedianDays": 14
+    },
+    {
+      "type": "Animal Services",
+      "count": 325,
+      "medianDays": 0,
+      "closedSample": 286,
+      "cityMedianDays": 0
+    },
+    {
+      "type": "Illegal Dumping",
+      "count": 314,
+      "medianDays": 5,
+      "closedSample": 248,
+      "cityMedianDays": 5
+    },
+    {
+      "type": "Trash  Recycling  Bulky Services",
+      "count": 201,
+      "medianDays": 1,
+      "closedSample": 199,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Trees City Row",
+      "count": 99,
+      "medianDays": 3,
+      "closedSample": 71,
+      "cityMedianDays": 4
+    },
+    {
+      "type": "Trash Cart Program",
+      "count": 78,
+      "medianDays": 10,
+      "closedSample": 55,
+      "cityMedianDays": 8
+    },
+    {
+      "type": "Vehicles and Parking",
+      "count": 72,
+      "medianDays": 6,
+      "closedSample": 69,
+      "cityMedianDays": 6
+    },
+    {
+      "type": "Homeless Camp",
+      "count": 63,
+      "medianDays": 66,
+      "closedSample": 36,
+      "cityMedianDays": 30
+    },
+    {
+      "type": "A Pothole",
+      "count": 59,
+      "medianDays": 3,
+      "closedSample": 53,
+      "cityMedianDays": 5
+    },
+    {
+      "type": "Water Service",
+      "count": 59,
+      "medianDays": 1.5,
+      "closedSample": 50,
+      "cityMedianDays": 2
+    },
+    {
+      "type": "Recycling Cart Program",
+      "count": 48,
+      "medianDays": 21.5,
+      "closedSample": 32,
+      "cityMedianDays": 11
+    },
+    {
+      "type": "Sewer and Stormwater",
+      "count": 44,
+      "medianDays": 7,
+      "closedSample": 37,
+      "cityMedianDays": 3
+    },
+    {
+      "type": "Solid Waste Services",
+      "count": 41,
+      "medianDays": 1,
+      "closedSample": 39,
+      "cityMedianDays": 5
+    },
+    {
+      "type": "Tents or Sleeping Structures",
+      "count": 36,
+      "medianDays": 4,
+      "closedSample": 17,
+      "cityMedianDays": 7
+    },
+    {
+      "type": "Traffic Signs and Street Markings",
+      "count": 27,
+      "medianDays": 2.5,
+      "closedSample": 22,
+      "cityMedianDays": 3
+    },
+    {
+      "type": "Health Code Violations",
+      "count": 26,
+      "medianDays": 2,
+      "closedSample": 23,
+      "cityMedianDays": 2
+    },
+    {
+      "type": "Zoning and Permits",
+      "count": 21,
+      "medianDays": 29,
+      "closedSample": 12,
+      "cityMedianDays": 23
+    },
+    {
+      "type": "Street Maintenance",
+      "count": 21,
+      "medianDays": 1,
+      "closedSample": 13,
+      "cityMedianDays": 11
+    },
+    {
+      "type": "Land Bank Issues",
+      "count": 21,
+      "medianDays": 30,
+      "closedSample": 14,
+      "cityMedianDays": 11
+    },
+    {
+      "type": "Parks and Recreation",
+      "count": 19,
+      "medianDays": 3,
+      "closedSample": 17,
+      "cityMedianDays": 4
+    },
+    {
+      "type": "Streetlights",
+      "count": 18,
+      "medianDays": 1,
+      "closedSample": 18,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Healthy Homes",
+      "count": 15,
+      "medianDays": 2.5,
+      "closedSample": 12,
+      "cityMedianDays": 6
+    },
+    {
+      "type": "Dangerous Buildings",
+      "count": 15,
+      "medianDays": 78,
+      "closedSample": 5,
+      "cityMedianDays": 32
+    },
+    {
+      "type": "Sidewalks and Curbs",
+      "count": 12,
+      "medianDays": 4,
+      "closedSample": 10,
+      "cityMedianDays": 5
+    },
+    {
+      "type": "Traffic Signals",
+      "count": 11,
+      "medianDays": 1,
+      "closedSample": 11,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Right-of-Way / Inspections",
+      "count": 11,
+      "medianDays": 4,
+      "closedSample": 11,
+      "cityMedianDays": 7
+    },
+    {
+      "type": "Tents/Sleeping Structures",
+      "count": 10,
+      "medianDays": 3,
+      "closedSample": 5,
+      "cityMedianDays": 11
+    },
+    {
+      "type": "Street Cleaning / Sweeping",
+      "count": 9,
+      "medianDays": 21,
+      "closedSample": 6,
+      "cityMedianDays": 20
+    },
+    {
+      "type": "Food Safety",
+      "count": 8,
+      "medianDays": 3.5,
+      "closedSample": 8,
+      "cityMedianDays": 2
+    },
+    {
+      "type": "Public Safety",
+      "count": 7,
+      "medianDays": 1,
+      "closedSample": 7,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Traffic Calming or Concerns",
+      "count": 3,
+      "medianDays": 5,
+      "closedSample": 3,
+      "cityMedianDays": 3
+    },
+    {
+      "type": "Administration or Questions",
+      "count": 3,
+      "medianDays": 5,
+      "closedSample": 3,
+      "cityMedianDays": 3
+    },
+    {
+      "type": "Bridge",
+      "count": 2,
+      "medianDays": 8.5,
+      "closedSample": 2,
+      "cityMedianDays": 13
+    },
+    {
+      "type": "311 Research and Investigation",
+      "count": 2,
+      "medianDays": 0.5,
+      "closedSample": 2,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Graffiti",
+      "count": 1,
+      "medianDays": null,
+      "closedSample": 0,
+      "cityMedianDays": 22
+    },
+    {
+      "type": "Brush Special Collection Appointment Request",
+      "count": 1,
+      "medianDays": 14,
+      "closedSample": 1,
+      "cityMedianDays": 12
+    },
+    {
+      "type": "Short Term Rental",
+      "count": 1,
+      "medianDays": 39,
+      "closedSample": 1,
+      "cityMedianDays": 11
+    }
+  ],
+  "trend": [
+    {
+      "month": "2025-11",
+      "count": 149,
+      "types": {
+        "Property Violations": 22,
+        "Animal Services": 38,
+        "Illegal Dumping": 23,
+        "Trash  Recycling  Bulky Services": 5,
+        "Trees City Row": 1
+      }
+    },
+    {
+      "month": "2025-12",
+      "count": 115,
+      "types": {
+        "Property Violations": 10,
+        "Animal Services": 23,
+        "Illegal Dumping": 13,
+        "Trash  Recycling  Bulky Services": 10,
+        "Trees City Row": 4
+      }
+    },
+    {
+      "month": "2026-01",
+      "count": 149,
+      "types": {
+        "Property Violations": 22,
+        "Animal Services": 29,
+        "Illegal Dumping": 16,
+        "Trash  Recycling  Bulky Services": 20,
+        "Trees City Row": 0
+      }
+    },
+    {
+      "month": "2026-02",
+      "count": 175,
+      "types": {
+        "Property Violations": 38,
+        "Animal Services": 27,
+        "Illegal Dumping": 21,
+        "Trash  Recycling  Bulky Services": 24,
+        "Trees City Row": 0
+      }
+    },
+    {
+      "month": "2026-03",
+      "count": 167,
+      "types": {
+        "Property Violations": 37,
+        "Animal Services": 24,
+        "Illegal Dumping": 8,
+        "Trash  Recycling  Bulky Services": 19,
+        "Trees City Row": 1
+      }
+    },
+    {
+      "month": "2026-04",
+      "count": 202,
+      "types": {
+        "Property Violations": 41,
+        "Animal Services": 29,
+        "Illegal Dumping": 26,
+        "Trash  Recycling  Bulky Services": 29,
+        "Trees City Row": 8
+      }
+    },
+    {
+      "month": "2026-05",
+      "count": 214,
+      "types": {
+        "Property Violations": 34,
+        "Animal Services": 23,
+        "Illegal Dumping": 40,
+        "Trash  Recycling  Bulky Services": 17,
+        "Trees City Row": 15
+      }
+    },
+    {
+      "month": "2026-06",
+      "count": 235,
+      "types": {
+        "Property Violations": 47,
+        "Animal Services": 31,
+        "Illegal Dumping": 45,
+        "Trash  Recycling  Bulky Services": 16,
+        "Trees City Row": 22
+      }
+    },
+    {
+      "month": "2026-07",
+      "count": 210,
+      "types": {
+        "Property Violations": 65,
+        "Animal Services": 28,
+        "Illegal Dumping": 34,
+        "Trash  Recycling  Bulky Services": 10,
+        "Trees City Row": 15
+      }
+    },
+    {
+      "month": "2026-08",
+      "count": 191,
+      "types": {
+        "Property Violations": 40,
+        "Animal Services": 23,
+        "Illegal Dumping": 42,
+        "Trash  Recycling  Bulky Services": 16,
+        "Trees City Row": 8
+      }
+    },
+    {
+      "month": "2026-09",
+      "count": 183,
+      "types": {
+        "Property Violations": 48,
+        "Animal Services": 31,
+        "Illegal Dumping": 17,
+        "Trash  Recycling  Bulky Services": 14,
+        "Trees City Row": 21
+      }
+    },
+    {
+      "month": "2026-10",
+      "count": 51,
+      "types": {
+        "Property Violations": 10,
+        "Animal Services": 8,
+        "Illegal Dumping": 7,
+        "Trash  Recycling  Bulky Services": 7,
+        "Trees City Row": 0
+      }
+    }
+  ],
+  "channels": [
+    {
+      "name": "Phone",
+      "count": 912
+    },
+    {
+      "name": "Mobile app",
+      "count": 779
+    },
+    {
+      "name": "Other / not specified",
+      "count": 452
+    }
+  ],
+  "stuck": [
+    {
+      "issue": "Street Maintenance",
+      "block": "1300 block of Cleveland Ave",
+      "opened": "2026-01-09",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "800 block of Elmwood Ave",
+      "opened": "2026-02-27",
+      "department": "PW Capital Improvements"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "800 block of Cypress Ave",
+      "opened": "2026-04-26",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "500 block of Monroe Ave",
+      "opened": "2026-07-08",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "3200 block of E 12th St",
+      "opened": "2026-08-05",
+      "department": "PW Streets"
+    }
+  ],
+  "privacy": "No household complaint locations, resident names, free text, coordinates, or individual animal / encampment records are published. Stuck list contains allowlisted public infrastructure only, rounded to a block.",
+  "method": "Resolved and canceled are separate. Closure medians use resolved records with a closure date and nonnegative duration, among requests opened in this window. They exclude still-open requests and do not estimate how long an open request will take. City comparison uses the same opening window and status rules. Unlocated records cannot be assigned to a neighborhood."
+}

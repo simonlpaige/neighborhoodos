@@ -15,7 +15,7 @@ NeighborhoodOS is a way to get the help without the harm.
 ## What it is today
 
 ### 1. Practical AI help (Learn)
-Three free sessions at the library: how chatbots work, why they make things up, the scams aimed at neighbors, what never to type in, and how to check an answer. Participants are paid for their time. See [Program Design](Program-Design.md).
+Three free sessions at LAMP: how chatbots work, why they make things up, the scams aimed at neighbors, what never to type in, and how to check an answer. Participants are paid for their time. See [Program Design](Program-Design.md).
 
 ### 2. Clinics for stuck civic problems (Solve)
 Bring something stuck: a streetlight out for months, a zoning case, a promise made at a council meeting that nobody followed up on. Leave with a one-page brief: who has the power to fix it, what public evidence exists, and the smallest next step with a name on it. Clinics build on what [Kansas City Documenters](Partners.md) surface from public meetings.

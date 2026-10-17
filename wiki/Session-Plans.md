@@ -1,5 +1,7 @@
 # Session Plans
 
+October 2026 delivery note: at LAMP, map these learning objectives onto DSSC’s existing workshops before scheduling. Do not run a duplicate AI-literacy course. The small-business variant uses public business FAQs or checklists, never customer records or payroll. Confirm funded stipends and accommodations in each session listing. These are facilitator plans, not announced dates.
+
 Each session is 90 minutes. Times are guides, not rules. Materials lists assume 20 participants. **Every handout referenced here is in the printable [facilitator kit](https://neighborhoodos.org/kit/)**; how to run the room (including hard moments) is in the [Facilitator Guide](Facilitator-Guide.md). Full background for facilitators is in the [Workshop Playbook](../docs/WORKSHOP-PLAYBOOK.md) and the Level manuals in `docs/`.
 
 **Every session:** welcome and food (10 min), name tags with first names only, an optional [sign-in sheet](https://neighborhoodos.org/kit/#h-signin), [feedback slips](https://neighborhoodos.org/kit/#h-feedback) at the door, a clear statement that nothing typed or said will be recorded or stored unless someone chooses to share it, and a close that asks "what's one thing you'll do differently this week?"

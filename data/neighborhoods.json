@@ -1,0 +1,5 @@
+[
+  {"slug":"linwood","name":"Linwood / LAMP area","description":"Public data for Key Coalition and four city-defined Ivanhoe areas around the LAMP campus.","officialNames":["Key Coalition","Ivanhoe Northeast","Ivanhoe Southeast","Ivanhoe Southwest","Linwood Homeowners-Ivanhoe"],"participation":"KCDD program home. Association participation is not implied by inclusion in this public-data view."},
+  {"slug":"lykins","name":"Lykins / Northeast","description":"Lykins is the initial public-data view for a possible Northeast expansion. It does not represent all of Northeast Kansas City.","officialNames":["Lykins"],"participation":"Expansion candidate; no NeighborhoodOS sessions or association partnership confirmed here."},
+  {"slug":"hickman-mills","name":"Hickman Mills","description":"Public data for the city-defined Hickman Mills and Hickman Mills South neighborhoods.","officialNames":["Hickman Mills","Hickman Mills South"],"participation":"Expansion candidate; host, neighborhood participation, and session dates remain to be agreed."}
+]

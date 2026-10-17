@@ -1,0 +1,10 @@
+name: Website bug
+description: Report a problem completing a task
+body:
+  - type: textarea
+    id: details
+    attributes:
+      label: Page URL, intended task, and what happened
+      description: Leave out private information. See SECURITY.md for sensitive concerns.
+    validations:
+      required: true

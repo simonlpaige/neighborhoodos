@@ -1,0 +1,10 @@
+name: Dashboard data error
+description: Report an aggregate count, boundary, source, or freshness issue
+body:
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Dashboard, snapshot date, expected result, and public source
+      description: Do not include household addresses, resident names, or private case details.
+    validations:
+      required: true

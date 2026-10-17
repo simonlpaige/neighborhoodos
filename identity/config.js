@@ -10,7 +10,7 @@
 //   1. NOS_CONFIG_PATH environment variable (explicit override)
 //   2. ./node.config.json in the process cwd
 //   3. ./node.config.json next to this module
-//   4. built-in defaults (West Waldo, for back-compat)
+//   4. Linwood / LAMP example defaults (ingest only, not public dashboard boundaries)
 //
 // The loader validates shape but does not enforce anything beyond that.
 // Values you omit fall through to the defaults. A missing config file is
@@ -22,20 +22,19 @@ import { fileURLToPath } from 'url';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 
-// Built-in defaults. These match the original hardcoded West Waldo values
-// so a node that never writes a config file keeps working.
+// Ingest example only. Public snapshots use data/neighborhoods.json and city polygons.
 const DEFAULTS = Object.freeze({
-  slug: 'local@waldonet.local',
-  name: 'Local Neighborhood',
+  slug: 'linwood@neighborhoodos.local',
+  name: 'Linwood / LAMP example',
   contactEmail: null,
   bounds: {
-    north: 38.9920,
-    south: 38.9540,
-    east:  -94.5890,
-    west:  -94.6140
+    north: 39.0775,
+    south: 39.0406,
+    east:  -94.5524,
+    west:  -94.5685
   },
   nextdoor: {
-    publicSlug: 'westwaldomo',
+    publicSlug: null,
     enablePostScrape: false // Must be explicitly opted in per review
   },
   facebook: {

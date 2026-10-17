@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Threat Model | NeighborhoodOS</title><meta name="description" content="Threat Model: program guidance, responsibilities, and practical materials for NeighborhoodOS, a KC Digital Drive program."><link rel="canonical" href="https://neighborhoodos.org/guide/threat-model/"><meta property="og:title" content="Threat Model | NeighborhoodOS"><meta property="og:description" content="Threat Model: program guidance, responsibilities, and practical materials for NeighborhoodOS, a KC Digital Drive program."><meta property="og:type" content="website"><meta property="og:url" content="https://neighborhoodos.org/guide/threat-model/"><meta property="og:image" content="https://neighborhoodos.org/assets/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#17324d"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/barlow-condensed-600.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/assets/workshop.css"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://neighborhoodos.org/#website","name":"NeighborhoodOS","url":"https://neighborhoodos.org/"},{"@type":"Organization","@id":"https://neighborhoodos.org/#program","name":"NeighborhoodOS","url":"https://neighborhoodos.org/","parentOrganization":{"@type":"Organization","name":"KC Digital Drive","url":"https://www.kcdigitaldrive.org/"},"founder":{"@type":"Person","name":"Simon L. Paige"},"areaServed":{"@type":"Place","name":"Linwood, Kansas City, Missouri"}}]}</script></head><body class=""><a class="skip-link" href="#main">Skip to main content</a><div class="site-top" lang="en"><div class="container"><div class="top-inner"><span>Linwood, Kansas City</span><span>A <a href="https://www.kcdigitaldrive.org/">KC Digital Drive</a> program</span></div></div></div><header class="site-nav" lang="en"><div class="container nav-inner"><a href="/" class="nav-logo" aria-label="NeighborhoodOS home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>neighborhoodOS</a><nav class="nav-links" aria-label="Primary"><a href="/learn/">Learn AI safely</a><a href="/sessions/">Sessions</a><a href="/neighborhoods/">Neighborhoods</a><a href="/resources/">Resources</a><a href="/guide/" aria-current="page">Run a program</a></nav></div></header><main id="main"><div class="page-head container"><p class="breadcrumbs"><a href="/guide/">Program guide</a></p><h1>Threat Model</h1></div><div class="container content-section guide-layout"><aside class="guide-nav" aria-label="Program guide"><a href="/guide/">All guide pages</a><details open><summary>Start here</summary><ul><li><a href="/guide/home/">NeighborhoodOS Program Guide</a></li><li><a href="/guide/what-neighborhoodos-is/">What NeighborhoodOS Is</a></li><li><a href="/guide/start-here-for-partners/">Start Here for Partners</a></li><li><a href="/guide/program-design/">Program Design</a></li><li><a href="/guide/partners/">Partners and Reference Resources</a></li></ul></details><details><summary>Run a session</summary><ul><li><a href="/guide/session-plans/">Session Plans</a></li><li><a href="/guide/facilitator-guide/">Facilitator Guide</a></li><li><a href="/guide/roles-and-staffing/">Roles and Staffing</a></li><li><a href="/guide/recruitment-and-outreach/">Recruitment and Outreach</a></li><li><a href="/guide/building-a-tool/">Building a Tool</a></li><li><a href="/guide/launching-a-new-neighborhood/">Launching a New Neighborhood</a></li></ul></details><details><summary>Funding and handoff</summary><ul><li><a href="/guide/grant-kit/">Grant Kit</a></li><li><a href="/guide/budget-and-hardware/">Budget and Hardware</a></li><li><a href="/guide/evaluation-and-metrics/">Evaluation and Metrics</a></li><li><a href="/guide/partner-mou/">Partner Agreement Worksheet</a></li><li><a href="/guide/handoff-and-licensing/">Handoff and Licensing</a></li><li><a href="/guide/known-gaps-and-roadmap/">Known Gaps and Roadmap</a></li></ul></details><details><summary>Safety and technical work</summary><ul><li><a href="/guide/safety-doctrine/">Safety Doctrine</a></li><li><a href="/guide/threat-model/">Threat Model</a></li><li><a href="/guide/data-sources/">Data Sources</a></li><li><a href="/guide/technical-architecture/">Technical Architecture</a></li><li><a href="/guide/developer-setup/">Developer Setup</a></li><li><a href="/guide/later-if-residents-want-it/">Later, if residents want it</a></li><li><a href="/guide/community-ai-hub-guide/">Community AI Hub Guide</a></li><li><a href="/guide/faq/">FAQ</a></li><li><a href="/guide/glossary/">Glossary</a></li></ul></details></aside><article class="prose"><p>One page: what data the Linwood program holds, who could force it to be handed over, and how long it's kept.</p>
+<p><strong>The default is simple: NeighborhoodOS holds nothing about residents.</strong> The best protection against a subpoena, a breach, or a bad actor is not having the data in the first place. Anything that changes this default has to be added to this page, and approved by the data steward, before it starts.</p>
+<p><em>Updated October 17, 2026. This is a plain-language planning document, not legal advice.</em></p>
+<h2>What exists, who holds it, who can compel it, how long it's kept</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Who holds it</th>
+<th>Who could compel it</th>
+<th>How long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Website visits</strong></td>
+<td>GitHub hosts the site and can see visitor IP addresses. Fonts are served from this same site. No analytics or tracking cookies are enabled.</td>
+<td>Hosting-provider legal process and policies</td>
+<td>Hosting-provider policies</td>
+</tr>
+<tr>
+<td><strong>Problem brief builder, "catch the machine" exercise</strong></td>
+<td>Nobody. Runs in the visitor's browser; nothing is sent anywhere.</td>
+<td>Nothing to compel</td>
+<td>Gone when the tab closes</td>
+</tr>
+<tr>
+<td><strong>Neighborhood dashboards</strong></td>
+<td>A scheduled repository workflow fetches city data and publishes only aggregates and allowlisted infrastructure blocks. Visitor browsers read files from this site; they do not query DataKC. No raw household rows, free text, coordinates, or resident names are stored in snapshots.</td>
+<td>Already public aggregate files; host policies apply to site access</td>
+<td>Dated aggregate snapshots remain in Git history</td>
+</tr>
+<tr>
+<td><strong>Session attendance</strong></td>
+<td>Headcount only, on paper. No sign-in sheet by default.</td>
+<td>Nothing to compel</td>
+<td>Not kept</td>
+</tr>
+<tr>
+<td><strong>Optional follow-up list</strong></td>
+<td>KCDD or the hosting partner, with explicit opt-in, under its own privacy and records rules. NeighborhoodOS does not hold it. No list exists on this website.</td>
+<td>Process served on the hosting organization; confirm applicable rules before collection</td>
+<td>Delete at cohort end (90 days) or sooner on request, subject to the host’s approved policy</td>
+</tr>
+<tr>
+<td><strong>Stipend payments</strong> (name, mailing address, and, above a tax threshold, a tax ID)</td>
+<td>The paying partner (library, fiscal sponsor, or grantee) through its normal payroll or vendor system. NeighborhoodOS never sees or keeps it.</td>
+<td>Tax authorities; legal process served on the paying partner</td>
+<td>The partner's financial-records rules, which are usually several years</td>
+</tr>
+<tr>
+<td><strong>Solve clinic problem briefs</strong></td>
+<td>The participant. Briefs are on paper and go home with the person who wrote them.</td>
+<td>Nothing to compel from us</td>
+<td>Theirs to keep</td>
+</tr>
+<tr>
+<td><strong>Public problem log</strong></td>
+<td>Public. Lists places and institutions, never people ("streetlight at Linwood and Prospect, 311 case #…").</td>
+<td>Already public</td>
+<td>Until resolved, then archived</td>
+</tr>
+<tr>
+<td><strong>Contact requests</strong></td>
+<td>KCDD’s official contact channel follows KCDD’s own privacy and retention terms. Site-administration email is held by the administrator’s mail provider. Avoid private case details.</td>
+<td>Provider or organization legal process</td>
+<td>Organization or administrator’s retention policy; no unsupported deletion promise</td>
+</tr>
+<tr>
+<td><strong>AI tools used in sessions</strong></td>
+<td>The AI vendor, under the facilitator's account. Participants are told not to type personal information.</td>
+<td>Legal process served on the vendor</td>
+<td>Vendor's policy</td>
+</tr>
+<tr>
+<td><strong>Meeting notes</strong></td>
+<td>Kansas City Documenters / The Beacon publish them. We link, we don't copy.</td>
+<td>Already public</td>
+<td>Theirs</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Who might want it, and what stops them</h2>
+<ul>
+<li><strong>Police, immigration enforcement, or other agencies.</strong> The <a href="/guide/safety-doctrine/">Safety Doctrine</a> bans sharing with them. More importantly, there is nothing to share.</li>
+<li><strong>Civil litigants</strong> (a landlord in a dispute with a tenant who came to a clinic, for example). Briefs stay with residents; the problem log names no people.</li>
+<li><strong>Public records requests.</strong> Anything a public library holds may be requestable. Another reason the follow-up list is optional, minimal, and short-lived.</li>
+<li><strong>Breach or a careless volunteer.</strong> No resident database exists to leak.</li>
+<li><strong>Mission drift</strong> (a funder or partner wanting "engagement data"). The answer is no, and this page is why.</li>
+</ul>
+<h2>If someone asks for data anyway</h2>
+<ol>
+<li>Don't hand anything over informally. Ask for the request in writing.</li>
+<li>Tell the data steward and the host partner the same day.</li>
+<li>Tell the affected people, unless a court order forbids it.</li>
+<li>Publish a note on this page that a request was received (no details that identify anyone).</li>
+</ol>
+<h2>What would change this page</h2>
+<p>Turning on any of the optional software in <a href="/guide/later-if-residents-want-it/">Later, if residents want it</a> (resident accounts, voting, a local AI server that residents type into) creates new data. Before any of it runs for real residents, this page gets a new row for each new kind of data, and the steward signs off.</p>
+<p>Questions: <a href="https://www.kcdigitaldrive.org/contact/">KC Digital Drive</a>.</p>
+<h2>Directory and analytics</h2>
+<p>The directory lists organizations and public source links, not private resident contacts or named neighborhood leaders. Source availability checks are automated; service details need human review. No aggregate visitor analytics has been enabled. Any future analytics needs a named operator, purpose, fields, retention, and data-steward approval before activation.</p>
+</article></div></main><footer class="site-footer" lang="en"><div class="container"><div class="footer-top"><div><div class="footer-brand">Good questions. Useful next steps.</div><p>NeighborhoodOS is a KC Digital Drive program, starting in Linwood. Created by Simon L. Paige, site administrator and advisor.</p><a href="/about/">About & contact</a><a href="/funders/">For funders</a><a href="/business/">Small business</a></div><div><a class="kcdd-brand" href="https://www.kcdigitaldrive.org/"><img src="/assets/kcdd-logo.svg" alt="KC Digital Drive" width="180" height="54"></a><p>People stay in charge.</p><a href="/guide/safety-doctrine/">Safety rules</a><a href="/accessibility/">Accessibility</a><br><a href="/guide/threat-model/">Privacy & data</a><a href="https://github.com/simonlpaige/neighborhoodos">Source code</a></div></div><div class="footer-bottom">Open materials for practical community work. <a href="/guide/handoff-and-licensing/">Reuse & licensing</a><a href="https://www.kcdigitaldrive.org/contact/">Contact KC Digital Drive</a></div></div></footer><script src="/assets/site.js" defer></script></body></html>

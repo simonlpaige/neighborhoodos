@@ -14,10 +14,10 @@ A small program needs few people, but the roles must be clear. One person can ho
 
 ## Paying people
 
-Pay residents for their time: participants ($30 per 90-minute session), peer helpers, community connectors, and advisory members, all at $20/hour, the Kansas City Documenters rate. Stipends change who can participate. The host library or a fiscal sponsor handles payments. Budget lines and funding are in [Budget and Hardware](Budget-and-Hardware.md).
+Pay residents for their time: participants ($30 per 90-minute session), peer helpers, community connectors, and advisory members, all at $20/hour, the Kansas City Documenters rate. Stipends change who can participate. The host organization or a fiscal sponsor handles payments. Budget lines and funding are in [Budget and Hardware](Budget-and-Hardware.md).
 
 Peer helper retention at six months is one of the program's three outcome measures (see [Evaluation and Metrics](Evaluation-and-Metrics.md)). Paying them, giving them real responsibility, and asking why anyone leaves all help.
 
-## The original author
+## Program owner and site administrator
 
-Simon Paige created NeighborhoodOS and has handed it off (see [Handoff and Licensing](Handoff-and-Licensing.md)). Until a program owner is named, he is the contact for partner conversations: [simon@simonlpaige.com](mailto:simon@simonlpaige.com). Nothing in this wiki depends on him.
+KC Digital Drive owns the program. Simon L. Paige is founder, site administrator, and advisor. He may join kickoff or check-in conversations, but is not the recurring facilitator. KCDD should assign a program lead and a separate data steward; names are not yet supplied. Program inquiries go through [KCDD’s official contact page](https://www.kcdigitaldrive.org/contact/).

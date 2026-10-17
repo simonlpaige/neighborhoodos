@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Turn a neighborhood problem into a plan | NeighborhoodOS</title><meta name="description" content="Make a one-page problem brief: the issue, who can fix it, evidence, and the next step. Your answers stay in your browser."><link rel="canonical" href="https://neighborhoodos.org/brief/"><meta property="og:title" content="Turn a neighborhood problem into a plan | NeighborhoodOS"><meta property="og:description" content="Make a one-page problem brief: the issue, who can fix it, evidence, and the next step. Your answers stay in your browser."><meta property="og:type" content="website"><meta property="og:url" content="https://neighborhoodos.org/brief/"><meta property="og:image" content="https://neighborhoodos.org/assets/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#17324d"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/barlow-condensed-600.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="/assets/workshop.css"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://neighborhoodos.org/#website","name":"NeighborhoodOS","url":"https://neighborhoodos.org/"},{"@type":"Organization","@id":"https://neighborhoodos.org/#program","name":"NeighborhoodOS","url":"https://neighborhoodos.org/","parentOrganization":{"@type":"Organization","name":"KC Digital Drive","url":"https://www.kcdigitaldrive.org/"},"founder":{"@type":"Person","name":"Simon L. Paige"},"areaServed":{"@type":"Place","name":"Linwood, Kansas City, Missouri"}}]}</script></head><body class=""><a class="skip-link" href="#main">Skip to main content</a><div class="site-top" lang="en"><div class="container"><div class="top-inner"><span>Linwood, Kansas City</span><span>A <a href="https://www.kcdigitaldrive.org/">KC Digital Drive</a> program</span></div></div></div><header class="site-nav" lang="en"><div class="container nav-inner"><a href="/" class="nav-logo" aria-label="NeighborhoodOS home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>neighborhoodOS</a><nav class="nav-links" aria-label="Primary"><a href="/learn/">Learn AI safely</a><a href="/sessions/">Sessions</a><a href="/neighborhoods/">Neighborhoods</a><a href="/resources/">Resources</a><a href="/guide/">Run a program</a></nav></div></header><main id="main"><div class="page-head container"><h1>Get a problem unstuck.</h1><p class="page-lede">A useful brief has four answers. Keep it about places and institutions. Leave out private information about individual neighbors.</p></div><section id="brief" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Bring a problem</p>
+        <div>
+          <h2>A complaint is a frustration. A brief is a plan.</h2>
+          <p>This is the core exercise from our Solve clinics. Fill it in for something stuck on your block. It stays on your device: nothing you type is sent anywhere.</p>
+        </div>
+      </div>
+      <div class="brief-grid">
+        <form class="brief-builder-form" id="brief-form" onsubmit="return false">
+          <div class="field">
+            <label for="b-what">What’s wrong, exactly?
+              <span class="hint">Be concrete: where, since when, who it affects. “Streetlight at Linwood and Prospect out since July,” not “the city ignores us.”</span></label>
+            <textarea id="b-what" name="what"></textarea>
+          </div>
+          <div class="field">
+            <label for="b-who">Who has the power to fix it?</label>
+            <select id="b-who" name="who">
+              <option value="">Choose one</option>
+              <option>The city (311, public works, codes)</option>
+              <option>A utility (power, water, gas)</option>
+              <option>A landlord or property company</option>
+              <option>The county</option>
+              <option>The state</option>
+              <option>Us: neighbors, an association, mutual aid</option>
+              <option>Not sure yet (that’s the first thing to find out)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-evidence">What evidence exists?
+              <span class="hint">311 case numbers, dated photos, permits, meeting minutes. Things anyone can check.</span></label>
+            <textarea id="b-evidence" name="evidence"></textarea>
+          </div>
+          <div class="field">
+            <label for="b-next">What’s the smallest next step, and who will take it?
+              <span class="hint">Something doable this week. “I’ll file a 311 request Tuesday and post the case number.”</span></label>
+            <textarea id="b-next" name="next"></textarea>
+          </div>
+          <p class="privacy-line">Keep it about places and institutions, not about individual neighbors.</p>
+          <button type="button" class="btn small" id="b-example">Show me an example</button>
+        </form>
+
+        <div class="brief-out" aria-labelledby="brief-title">
+          <p class="eyebrow">Your problem brief</p>
+          <h3 id="brief-title">One page, four answers.</h3>
+          <dl>
+            <dt>The problem</dt><dd id="o-what" class="empty">Your answers appear here.</dd>
+            <dt>Who can fix it</dt><dd id="o-who" class="empty">Not chosen yet.</dd>
+            <dt>Evidence</dt><dd id="o-evidence" class="empty">Nothing yet.</dd>
+            <dt>Next step</dt><dd id="o-next" class="empty">Nothing yet.</dd>
+          </dl>
+          <p class="where" id="o-where" hidden=""></p>
+          <div class="actions no-print">
+            <button type="button" class="btn small primary" id="b-copy">Copy brief</button>
+            <button type="button" class="btn small" id="b-print">Print</button>
+            <button type="button" class="btn small" id="b-clear">Clear</button>
+          </div>
+          <p class="status" id="b-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section></main><footer class="site-footer" lang="en"><div class="container"><div class="footer-top"><div><div class="footer-brand">Good questions. Useful next steps.</div><p>NeighborhoodOS is a KC Digital Drive program, starting in Linwood. Created by Simon L. Paige, site administrator and advisor.</p><a href="/about/">About & contact</a><a href="/funders/">For funders</a><a href="/business/">Small business</a></div><div><a class="kcdd-brand" href="https://www.kcdigitaldrive.org/"><img src="/assets/kcdd-logo.svg" alt="KC Digital Drive" width="180" height="54"></a><p>People stay in charge.</p><a href="/guide/safety-doctrine/">Safety rules</a><a href="/accessibility/">Accessibility</a><br><a href="/guide/threat-model/">Privacy & data</a><a href="https://github.com/simonlpaige/neighborhoodos">Source code</a></div></div><div class="footer-bottom">Open materials for practical community work. <a href="/guide/handoff-and-licensing/">Reuse & licensing</a><a href="https://www.kcdigitaldrive.org/contact/">Contact KC Digital Drive</a></div></div></footer><script src="/assets/site.js" defer></script><script>(function(){
+  var fields = ['what', 'who', 'evidence', 'next'];
+  var empty = { what: 'Start typing on the left.', who: 'Not chosen yet.', evidence: 'Nothing yet.', next: 'Nothing yet.' };
+  var status = document.getElementById('b-status');
+  var where = {
+    'The city (311, public works, codes)': 'Tip: file a 311 request first and write down the case number. It becomes your evidence, and you can check its status later.',
+    'A utility (power, water, gas)': 'Tip: utilities keep their own outage and repair records. Report it through the utility directly and ask for a ticket number.',
+    'A landlord or property company': 'Tip: put the request in writing and keep a dated copy. For rights and options, talk to a tenant advocate, not a chatbot.',
+    'The county': 'Tip: county offices handle things like assessments, health, and some roads. The county legislature publishes agendas you can speak at.',
+    'The state': 'Tip: your state representative’s office can often route a problem to the right agency faster than a cold call.',
+    'Us: neighbors, an association, mutual aid': 'Tip: the smallest next step is usually one conversation. Bring this brief to your next association meeting.',
+    'Not sure yet (that’s the first thing to find out)': 'Tip: that’s normal. Your next step can simply be: find out who is responsible. Bring it to a Solve clinic.'
+  };
+  function render() {
+    fields.forEach(function (f) {
+      var v = document.getElementById('b-' + f).value.trim();
+      var out = document.getElementById('o-' + f);
+      out.textContent = v || empty[f];
+      out.classList.toggle('empty', !v);
+    });
+    var w = where[document.getElementById('b-who').value];
+    var wEl = document.getElementById('o-where');
+    wEl.textContent = w || ''; wEl.hidden = !w;
+  }
+  fields.forEach(function (f) { document.getElementById('b-' + f).addEventListener('input', render); });
+  document.getElementById('b-copy').addEventListener('click', function () {
+    var labels = { what: 'The problem', who: 'Who can fix it', evidence: 'Evidence', next: 'Next step' };
+    var text = 'PROBLEM BRIEF\n\n' + fields.map(function (f) {
+      return labels[f] + ':\n' + (document.getElementById('b-' + f).value.trim() || '(blank)');
+    }).join('\n\n') + '\n\nMade with the NeighborhoodOS brief builder: neighborhoodos.org/#brief';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { status.textContent = 'Copied. Paste it into an email, a note, or a meeting agenda.'; },
+        function () { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; });
+    } else { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; }
+  });
+  document.getElementById('b-example').addEventListener('click', function () {
+    document.getElementById('b-what').value = 'The streetlight at the corner of our block has been out since July. Kids walk past it to the bus stop before sunrise.';
+    document.getElementById('b-who').value = 'The city (311, public works, codes)';
+    document.getElementById('b-evidence').value = 'Dated phone photos from July, August, and September. Not sure yet if anyone filed a 311 request; checking the open 311 map.';
+    document.getElementById('b-next').value = 'Maria files a 311 request Tuesday and posts the case number in the block group. We check its status in two weeks.';
+    render(); status.textContent = 'Example filled in. Clear it and try your own.';
+  });
+  document.getElementById('b-print').addEventListener('click', function () { document.body.classList.add('print-brief'); window.print(); });
+  document.getElementById('b-clear').addEventListener('click', function () {
+    fields.forEach(function (f) { document.getElementById('b-' + f).value = ''; });
+    render(); status.textContent = 'Cleared.';
+    document.getElementById('b-what').focus();
+  });
+})();
+</script></body></html>

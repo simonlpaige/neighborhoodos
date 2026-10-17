@@ -16,7 +16,7 @@ No. It helps residents use them well and hold institutions to their promises.
 For facilitator demos, yes, with no personal information typed in. For tools that residents type into, prefer a local model on hub hardware.
 
 **What data do you keep about participants?**
-None, by default. Sessions count heads, not names. If the host library keeps an optional follow-up list, the library holds it. Stipend payments go through the library or a fiscal sponsor. See the [Threat Model](Threat-Model.md).
+None, by default. Sessions count heads, not names. If the host organization keeps an optional follow-up list, the host organization holds it. Stipend payments go through the host organization or a fiscal sponsor. See the [Threat Model](Threat-Model.md).
 
 **Are participants paid?**
 Yes. $30 per 90-minute session, and $20/hour for peer helpers, the same rate Kansas City Documenters pays. See [Budget and Hardware](Budget-and-Hardware.md).
@@ -24,8 +24,8 @@ Yes. $30 per 90-minute session, and $20/hour for peer helpers, the same rate Kan
 **Do you summarize city council meetings with AI?**
 No. We link to [Kansas City Documenters](https://kansascity.documenters.org/) notes, which are fact-checked by The Beacon, or to official minutes. We never publish an AI summary of a meeting that a person hasn't reviewed.
 
-**Why a library?**
-It's where neighbors already go for help with forms, scams, and city services, and it can apply for library grants that pay participants. See [Partners](Partners.md).
+**Where does it happen?**
+KC Digital Drive’s Digital Services & Support Center at the LAMP campus is the Linwood program home: 1801 Linwood Blvd, Kansas City, MO 64109. Libraries can be additional venues. Check the sessions page for confirmed dates.
 
 **Can the city or police get access to the data?**
 The Safety Doctrine prohibits integration with or sharing to law enforcement or immigration systems. The data layer is designed to hold public records and aggregates, not information about individuals.
@@ -37,4 +37,4 @@ Yes. The education program works anywhere. The software needs new data connector
 See [Handoff and Licensing](Handoff-and-Licensing.md). Short answer: it's open for community use.
 
 **Who do we ask for help?**
-Start with this wiki. For partner conversations, email [simon@simonlpaige.com](mailto:simon@simonlpaige.com). For code, open a GitHub issue.
+Start with this wiki. For partner conversations, email [KC Digital Drive](https://www.kcdigitaldrive.org/contact/). For code, open a GitHub issue.

@@ -10,7 +10,12 @@
     "api": "node identity/api.js",
     "start": "node ingest/sync.js && node identity/api.js",
     "test": "node identity/smoke-test.js && node identity/federation-smoke.js && node core/llm-test.js",
-    "config:example": "cp -n node.config.example.json node.config.json"
+    "config:example": "cp -n node.config.example.json node.config.json",
+    "build": "node scripts/build-site.mjs && python scripts/package-evidence.py",
+    "test:web": "node --test tests/*.test.mjs",
+    "audit:web": "node scripts/audit-site.mjs",
+    "check:browser": "node scripts/browser-check.mjs",
+    "refresh:data": "node scripts/refresh-data.mjs"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -38,5 +43,11 @@
   "homepage": "https://neighborhoodos.org",
   "bugs": {
     "url": "https://github.com/simonlpaige/neighborhoodos/issues"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "cheerio": "^1.2.0",
+    "markdown-it": "^14.3.3",
+    "playwright": "^1.64.1"
   }
 }

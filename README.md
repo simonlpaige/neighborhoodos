@@ -2,7 +2,7 @@
 
 **Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
 
-Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Wiki: [start here](wiki/Home.md)** · Free lesson: [neighborhoodos.org/learn](https://neighborhoodos.org/learn/) · Facilitator kit: [neighborhoodos.org/kit](https://neighborhoodos.org/kit/) · Contact: [simon@simonlpaige.com](mailto:simon@simonlpaige.com)
+Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Program guide: [start here](https://neighborhoodos.org/guide/)** · Free lesson: [neighborhoodos.org/learn](https://neighborhoodos.org/learn/) · Facilitator kit: [neighborhoodos.org/kit](https://neighborhoodos.org/kit/) · Contact: [KC Digital Drive](https://www.kcdigitaldrive.org/contact/)
 
 > **Open for community use.** Any organization can run the program under the [Safety Doctrine](wiki/Safety-Doctrine.md). See [Handoff and Licensing](wiki/Handoff-and-Licensing.md).
 
@@ -14,8 +14,8 @@ Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Wiki: [start he
 2. **Clinics for stuck civic problems (Solve).** Bring something stuck; leave with who can fix it, the public evidence, and a next step with a name on it.
 
 How it runs:
-- **Out of a library.** Designed for the LAMP campus at 1801 Linwood Blvd., using the CivicAI curriculum (NJ State Library + InnovateUS) as it's released. See [Partners](wiki/Partners.md).
-- **Partnered for meetings.** Kansas City Documenters' verified notes are the meeting record. We never publish unreviewed AI summaries of meetings.
+- **At LAMP.** A KC Digital Drive program at its Digital Services & Support Center, 1801 Linwood Blvd, Kansas City, MO 64109. Learn uses existing DSSC workshops; Solve adds clinic practice.
+- **Source-linked for meetings.** Kansas City Documenters' verified notes are the meeting record. We never publish unreviewed AI summaries of meetings.
 - **Participants are paid.** $30 per session, $20/hour for peer helpers, the Documenters rate.
 - **Holds nothing about residents.** See the one-page [Threat Model](wiki/Threat-Model.md).
 - **Measured by outcomes.** Problems resolved and time to resolution, AI-error spotting before and after, peer helpers retained at six months. See [Evaluation and Metrics](wiki/Evaluation-and-Metrics.md).
@@ -115,7 +115,7 @@ node digest.js      # generate weekly digest
 
 Program: in planning for Linwood, KCMO. Library, Documenters, and CivicAI partnerships are proposed, not yet agreed. Software: pre-alpha, breaking changes expected. Issues and PRs welcome.
 
-Open for community use. Partner conversations: [simon@simonlpaige.com](mailto:simon@simonlpaige.com). Honest status: [Known Gaps and Roadmap](wiki/Known-Gaps-and-Roadmap.md).
+Open for community use. Partner conversations: [KC Digital Drive](https://www.kcdigitaldrive.org/contact/). Honest status: [Known Gaps and Roadmap](wiki/Known-Gaps-and-Roadmap.md).
 
 ---
 
@@ -133,3 +133,9 @@ MIT. See [`LICENSE`](./LICENSE).
 
 - GitHub: [simonlpaige/neighborhoodos](https://github.com/simonlpaige/neighborhoodos)
 - Codeberg: [AlphaWorm/neighborhoodos](https://codeberg.org/AlphaWorm/neighborhoodos)
+
+## Website development and release
+
+KC Digital Drive owns the program; Simon L. Paige remains site administrator and advisor. Program contact uses KCDD’s official contact page; technical issues may be sent to Simon. No repo/domain transfer is implied.
+
+The static site is generated from `scripts/pages.mjs`, the original interactive lesson/kit fragments in `content/`, `wiki/`, and sourced JSON in `data/`. Run `npm run build`, `npm run test:web`, and `npm run audit:web`. Live data: `npm run refresh:data`. Directory/calendar sources and fonts: `node scripts/refresh-sources.mjs` (not part of normal build). The nightly workflow refreshes calendar and aggregate snapshots, then builds and publishes the same static pages. No accounts or resident data storage are part of the public site.

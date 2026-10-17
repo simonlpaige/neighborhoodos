@@ -1,0 +1,10 @@
+name: Resource correction
+description: Correct an organization listing
+body:
+  - type: textarea
+    id: correction
+    attributes:
+      label: Organization, correction, and public source
+      description: Use public organization information, never private resident contacts.
+    validations:
+      required: true

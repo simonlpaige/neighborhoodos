@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeighborhoodOS | Free, practical AI help for Linwood neighbors</title>
+<meta name="description" content="Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems. An open program started in Linwood, Kansas City.">
+<link rel="canonical" href="https://neighborhoodos.org/">
+<meta property="og:title" content="NeighborhoodOS: free, practical AI help for Linwood neighbors">
+<meta property="og:description" content="Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.">
+<meta property="og:url" content="https://neighborhoodos.org/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="twitter:image" content="https://neighborhoodos.org/assets/og.png">
+<meta name="theme-color" content="#F5EFE6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/nos.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NeighborhoodOS",
+  "url": "https://neighborhoodos.org/",
+  "description": "Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.",
+  "email": "simon@simonlpaige.com",
+  "areaServed": { "@type": "Place", "name": "Linwood, Kansas City, Missouri" }
+}
+</script>
+<style>
+/* Hero */
+.hero { padding:72px 0 76px; border-bottom:var(--rule-soft); }
+.hero-grid { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr); gap:56px; align-items:start; }
+.hero h1 { max-width:12ch; }
+
+/* The exercise: the one bold thing on the page */
+.exercise .q { font-family:var(--display); font-size:20px; line-height:1.35; margin:10px 0 16px; }
+.exercise .bot { font-family:var(--mono); font-size:12px; color:var(--ink-3); margin-bottom:8px; }
+.claims { list-style:none; display:grid; gap:8px; }
+.claim { width:100%; text-align:left; font:inherit; font-size:16px; line-height:1.45; color:var(--ink); background:transparent; border:1px dashed transparent; border-radius:8px; padding:9px 11px 9px 36px; position:relative; cursor:pointer; }
+.claim::before { content:""; position:absolute; left:11px; top:13px; width:15px; height:15px; border:1.5px solid var(--ink-3); border-radius:4px; background:#FFFCF7; }
+.claim:hover { border-color:#CDBFA8; background:#FFFCF7; }
+.claim[aria-pressed="true"] { background:#F7E4DA; border-color:var(--terracotta); border-style:solid; }
+.claim[aria-pressed="true"]::before { background:var(--terracotta-deep); border-color:var(--terracotta-deep); box-shadow:inset 0 0 0 3px #F7E4DA; }
+.claim .verdict { display:none; margin-top:6px; font-size:14.5px; color:var(--ink-2); }
+.revealed .claim { cursor:default; padding-left:11px; }
+.revealed .claim::before { display:none; }
+.revealed .claim .verdict { display:block; }
+.revealed .claim[data-kind="invented"], .revealed .claim[data-kind="danger"] { background:#F7E4DA; border:1px solid var(--terracotta); }
+.revealed .claim[data-kind="checkable"] { background:#E6ECDD; border:1px solid #A9BC9C; }
+.verdict b { font-family:var(--mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; margin-right:6px; }
+.revealed .claim[data-kind="checkable"] .verdict b { color:var(--moss-deep); }
+.revealed .claim[data-kind="invented"] .verdict b, .revealed .claim[data-kind="danger"] .verdict b { color:var(--brick); }
+.ex-foot { margin-top:16px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.ex-result { margin-top:14px; padding:14px 16px; border-left:3px solid var(--terracotta-deep); background:var(--paper-2); border-radius:0 8px 8px 0; font-size:16px; }
+.ex-result p { margin:0 0 6px; }
+.ex-result p:last-child { margin:0; }
+
+/* Paths */
+.paths { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--ink); }
+.path { padding:28px 26px 30px 0; border-right:var(--rule-soft); }
+.path + .path { padding-left:26px; }
+.path:last-child { border-right:0; }
+.path h3 { font-size:27px; }
+.path .who { color:var(--ink-3); font-size:15px; margin-bottom:14px; }
+.path ul { list-style:none; margin-top:14px; }
+.path li { padding:10px 0; border-top:var(--rule-soft); }
+.path li a { font-weight:600; }
+.path li span { display:block; color:var(--ink-3); font-size:15px; }
+
+/* Ladder */
+.ladder { list-style:none; counter-reset:rung; display:grid; gap:0; }
+.rung { counter-increment:rung; display:grid; grid-template-columns:72px 1.1fr 1fr; gap:28px; padding:26px 0; border-top:var(--rule-soft); align-items:baseline; }
+.rung h3 { font-size:28px; }
+.rung .does { color:var(--ink-2); font-size:16.5px; margin:6px 0 0; }
+.rung .when { font-family:var(--mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--terracotta-deep); }
+.rung::before { content:counter(rung); font-family:var(--display); font-style:italic; font-size:44px; line-height:1; color:var(--terracotta-deep); }
+.rung h3 { margin:0; }
+.rung .take { color:var(--ink-2); font-size:16px; margin:0; }
+.rung .take b { display:block; font-family:var(--mono); font-weight:500; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:2px; }
+.ladder-note { margin-top:26px; font-family:var(--display); font-style:italic; font-size:22px; line-height:1.4; color:var(--terracotta-deep); max-width:40ch; }
+
+/* Brief builder */
+.brief-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
+.brief-out { background:#FFFCF7; border:1px solid var(--paper-3); border-radius:14px; padding:28px; position:sticky; top:84px; }
+.brief-out h3 { font-size:26px; font-style:italic; font-weight:400; }
+.brief-out dl { margin-top:14px; }
+.brief-out dt { font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-top:14px; }
+.brief-out dd { margin-top:3px; white-space:pre-wrap; }
+.brief-out dd.empty { color:#716559; font-style:italic; }
+.where { margin-top:18px; padding:12px 14px; background:var(--paper-2); border-radius:8px; font-size:15.5px; color:var(--ink-2); }
+.privacy-line { font-size:14.5px; color:var(--ink-3); margin-top:14px; }
+.status { font-size:14.5px; color:var(--moss-deep); min-height:1.4em; margin-top:8px; }
+
+/* Safety */
+.never { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:start; }
+.never ul { list-style:none; }
+.never li { padding:11px 0; border-top:1px solid #4A413A; }
+.never li strong { color:var(--paper); }
+
+/* Kit */
+.kit-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:44px; border-top:1px solid var(--ink); }
+.kit-item { padding:20px 20px 4px 0; }
+.kit-item + .kit-item { padding-left:20px; border-left:var(--rule-soft); }
+.kit-n { display:block; font-family:var(--display); font-style:italic; font-size:24px; margin-bottom:6px; }
+.kit-item p { font-size:16px; color:var(--ink-2); }
+
+/* Status */
+.facts { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.fact .tag { margin-bottom:10px; }
+.fact p { font-size:16px; color:var(--ink-2); margin:0; }
+
+@media (max-width:900px) {
+  .hero-grid, .brief-grid, .never { grid-template-columns:1fr; }
+  .paths { grid-template-columns:1fr; }
+  .path, .path + .path { padding:24px 0; border-right:0; border-bottom:var(--rule-soft); }
+  .rung { grid-template-columns:52px 1fr; }
+  .rung .take { grid-column:2; }
+  .brief-out { position:static; }
+  .facts { grid-template-columns:1fr 1fr; }
+  .kit-grid { grid-template-columns:1fr 1fr; }
+  .kit-item:nth-child(3) { padding-left:0; border-left:0; }
+}
+@media (max-width:560px) { .kit-grid { grid-template-columns:1fr; } .kit-item + .kit-item { padding-left:0; border-left:0; border-top:var(--rule-soft); } .facts { grid-template-columns:1fr; } .hero { padding:48px 0 56px; } }
+@media print { .hero, #paths, #ladder, #never, #status, #faq, #run { display:none; } .brief-grid { display:block; } .brief-builder-form { display:none; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav class="site-nav" aria-label="Primary">
+  <a href="/" class="nav-logo">neighborhood<span class="os">OS</span></a>
+  <div class="nav-links">
+    <a href="/learn/">Free lesson</a>
+    <a href="#brief">Bring a problem</a>
+    <a href="#run">Run a program</a>
+    <a href="mailto:simon@simonlpaige.com">Contact</a>
+    <a href="/local/">Linwood dashboard</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Linwood, Kansas City</p>
+        <h1>Free, practical AI help for Linwood neighbors.</h1>
+        <p class="lede">Plus clinics for stuck civic problems. Learn what AI can and can't do and the scams aimed at you, then bring something stuck on your block and leave with a next step. Participants are paid for their time. People stay in charge the whole way.</p>
+        <p class="lede">The software doesn't swing the hammer. People swing the hammer.</p>
+        <div class="actions">
+          <a class="btn primary" href="/learn/">Take the free 15-minute lesson</a>
+          <a class="btn" href="#brief">Turn a problem into a plan</a>
+        </div>
+      </div>
+
+      <div class="panel exercise" id="exercise" aria-labelledby="ex-title">
+        <p class="eyebrow" id="ex-title">Try it: catch the machine</p>
+        <p class="q">A neighbor asks a chatbot: “My landlord won’t fix peeling paint. What does Kansas City code say?”</p>
+        <p class="bot">The chatbot answers, sounding sure of itself:</p>
+        <ul class="claims" id="claims">
+          <li><button type="button" class="claim" data-kind="checkable" aria-pressed="false">Kansas City has property maintenance rules that apply to rental homes.
+            <span class="verdict"><b>Checkable</b>Likely true, but look up the actual rule before quoting it.</span></button></li>
+          <li><button type="button" class="claim" data-kind="invented" aria-pressed="false">Under Section 14-B8, landlords must repair it within 24 hours.
+            <span class="verdict"><b>Invented</b>An example of a made-up section number and deadline. It sounds exactly as real as the true parts.</span></button></li>
+          <li><button type="button" class="claim" data-kind="checkable" aria-pressed="false">You can report property conditions to the city through 311.
+            <span class="verdict"><b>Checkable</b>Kansas City’s 311 takes these reports. Easy to confirm on the city’s site.</span></button></li>
+          <li><button type="button" class="claim" data-kind="danger" aria-pressed="false">If they don’t fix it, you can legally stop paying rent.
+            <span class="verdict"><b>Dangerous</b>Legal advice a chatbot can’t give. Acting on it could cost someone their home. Ask a tenant advocate.</span></button></li>
+        </ul>
+        <div class="ex-foot">
+          <span id="ex-instr" class="hint">Tap the lines you wouldn’t trust yet.</span>
+          <button type="button" class="btn small primary" id="ex-check">Check my picks</button>
+          <button type="button" class="btn small" id="ex-reset" hidden>Try again</button>
+        </div>
+        <div class="ex-result" id="ex-result" role="status" aria-live="polite" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="paths">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Where to start</p>
+        <h2>Pick the door that fits you.</h2>
+      </div>
+      <div class="paths">
+        <div class="path">
+          <h3>I’m a neighbor</h3>
+          <p class="who">Curious, cautious, or just tired of a problem nobody fixes.</p>
+          <ul>
+            <li><a href="/learn/">Take the free lesson</a><span>How AI works, scams to watch for, what to keep private. About 15 minutes.</span></li>
+            <li><a href="#brief">Turn a problem into a plan</a><span>A one-page brief with who can fix it and your next step.</span></li>
+            <li><a href="/local/">Open the Linwood dashboard</a><span>Recent 311 requests in Linwood, meeting notes, and links to city and county sources.</span></li>
+          </ul>
+        </div>
+        <div class="path">
+          <h3>I run an organization</h3>
+          <p class="who">A library, nonprofit, church, school, association, or campus.</p>
+          <ul>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Start-Here-for-Partners.md">Start here for partners</a><span>The first 30 days, decisions to make, a 90-day plan.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Partners.md">Who we work with</a><span>The library, Kansas City Documenters, and the CivicAI curriculum.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Session-Plans.md">Session plans</a><span>Every Learn, Solve, and Build session, minute by minute.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Budget-and-Hardware.md">Budget and stipends</a><span>What it costs, including paying participants, and where the money can come from.</span></li>
+          </ul>
+        </div>
+        <div class="path">
+          <h3>I build things</h3>
+          <p class="who">Developers, data people, and technical volunteers. The software is <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Later-If-Residents-Want-It.md">for later, if residents want it</a>.</p>
+          <ul>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Technical-Architecture.md">How the software fits together</a><span>Local-first Node.js and SQLite, with safety rules built into the database layer.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Developer-Setup.md">Set it up</a><span>Install, run the tests, pull public data for your neighborhood.</span></li>
+            <li><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Known-Gaps-and-Roadmap.md">Pick something to fix</a><span>An honest list of what works and what doesn’t yet.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ladder" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How the program works</p>
+        <div>
+          <h2>Learn, solve, build, then teach.</h2>
+          <p>Over about 90 days at the library: three Learn sessions, two Solve clinics, and one Build, only if a real need shows up. Participants are paid $30 a session. Each step is a rung. Nobody is graded, and anyone can stop at any rung.</p>
+        </div>
+      </div>
+      <ol class="ladder">
+        <li class="rung">
+          <div><span class="when">Three Learn sessions</span><h3>Safe AI user</h3><p class="does">How chatbots work, why they make things up, the scams aimed at neighbors, and what never to type in.</p></div>
+          <p class="take"><b>You leave with</b>A privacy checklist, a family safe-word card, and the habit of checking the machine.</p>
+        </li>
+        <li class="rung">
+          <div><span class="when">Two Solve clinics</span><h3>Local problem framer</h3><p class="does">Bring something stuck, or something Kansas City Documenters flagged from a public meeting. Sort out who can actually fix it, what public evidence exists, and the smallest next move.</p></div>
+          <p class="take"><b>You leave with</b>A one-page brief: who has the power to fix it, the public evidence, and a next step with a name on it.</p>
+        </li>
+        <li class="rung">
+          <div><span class="when">One Build, if earned</span><h3>Tool co-designer</h3><p class="does">When a clinic surfaces a real need, sketch a small tool on paper, test it with neighbors, and write its safety rules.</p></div>
+          <p class="take"><b>You leave with</b>A tested paper prototype, or a small working tool with a named human reviewer.</p>
+        </li>
+        <li class="rung">
+          <div><span class="when">After the first 90 days</span><h3>Peer helper</h3><p class="does">Co-lead the next cohort with the session plans and facilitator kit, paid $20 an hour. This is how the program outlives any one organization.</p></div>
+          <p class="take"><b>You leave with</b>The materials and confidence to run the next session for your own neighbors.</p>
+        </li>
+      </ol>
+      <p class="ladder-note">The goal isn’t one more intro-to-AI class. It’s neighbors who can teach neighbors.</p>
+    </div>
+  </section>
+
+  <section id="brief">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Bring a problem</p>
+        <div>
+          <h2>A complaint is a frustration. A brief is a plan.</h2>
+          <p>This is the core exercise from our Solve clinics. Fill it in for something stuck on your block. It stays on your device: nothing you type is sent anywhere.</p>
+        </div>
+      </div>
+      <div class="brief-grid">
+        <form class="brief-builder-form" id="brief-form" onsubmit="return false">
+          <div class="field">
+            <label for="b-what">What’s wrong, exactly?
+              <span class="hint">Be concrete: where, since when, who it affects. “Streetlight at Linwood and Prospect out since July,” not “the city ignores us.”</span></label>
+            <textarea id="b-what" name="what"></textarea>
+          </div>
+          <div class="field">
+            <label for="b-who">Who has the power to fix it?</label>
+            <select id="b-who" name="who">
+              <option value="">Choose one</option>
+              <option>The city (311, public works, codes)</option>
+              <option>A utility (power, water, gas)</option>
+              <option>A landlord or property company</option>
+              <option>The county</option>
+              <option>The state</option>
+              <option>Us: neighbors, an association, mutual aid</option>
+              <option>Not sure yet (that’s the first thing to find out)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-evidence">What evidence exists?
+              <span class="hint">311 case numbers, dated photos, permits, meeting minutes. Things anyone can check.</span></label>
+            <textarea id="b-evidence" name="evidence"></textarea>
+          </div>
+          <div class="field">
+            <label for="b-next">What’s the smallest next step, and who will take it?
+              <span class="hint">Something doable this week. “I’ll file a 311 request Tuesday and post the case number.”</span></label>
+            <textarea id="b-next" name="next"></textarea>
+          </div>
+          <p class="privacy-line">Keep it about places and institutions, not about individual neighbors.</p>
+          <button type="button" class="btn small" id="b-example">Show me an example</button>
+        </form>
+
+        <div class="brief-out" aria-labelledby="brief-title">
+          <p class="eyebrow">Your problem brief</p>
+          <h3 id="brief-title">One page, four answers.</h3>
+          <dl>
+            <dt>The problem</dt><dd id="o-what" class="empty">Start typing on the left.</dd>
+            <dt>Who can fix it</dt><dd id="o-who" class="empty">Not chosen yet.</dd>
+            <dt>Evidence</dt><dd id="o-evidence" class="empty">Nothing yet.</dd>
+            <dt>Next step</dt><dd id="o-next" class="empty">Nothing yet.</dd>
+          </dl>
+          <p class="where" id="o-where" hidden></p>
+          <div class="actions no-print">
+            <button type="button" class="btn small primary" id="b-copy">Copy brief</button>
+            <button type="button" class="btn small" id="b-print">Print</button>
+            <button type="button" class="btn small" id="b-clear">Clear</button>
+          </div>
+          <p class="status" id="b-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="never" class="alt">
+    <div class="container">
+      <div class="callout never">
+        <div>
+          <p class="eyebrow" style="color:#B8AC9F">Our promise</p>
+          <h2>Built to be bad at surveillance, on purpose.</h2>
+          <p>Neighborhood data can help people or hurt them. These limits are written into the software itself and every program that uses the name agrees to them.</p>
+          <p>Our default: we hold nothing about residents.</p>
+          <p><a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Threat-Model.md">Read the one-page threat model</a> · <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Safety-Doctrine.md">Full safety doctrine</a></p>
+        </div>
+        <ul>
+          <li><strong>No files on residents.</strong> We never build profiles or histories of individual people.</li>
+          <li><strong>No predictive policing.</strong> No hot-spot prediction, and no data sharing with police or immigration enforcement.</li>
+          <li><strong>No watching organizers.</strong> No monitoring of speech, protest, or who influences whom.</li>
+          <li><strong>No scoring people.</strong> No risk, trust, or “value” scores for residents or households.</li>
+          <li><strong>No machine decisions about people.</strong> AI can summarize and draft. Humans decide who gets help.</li>
+          <li><strong>No unreviewed AI meeting summaries.</strong> For public meetings we link to Kansas City Documenters’ fact-checked notes or the official record.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="status">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Where things stand</p>
+        <div>
+          <h2>Honest status, September 2026.</h2>
+          <p>We say what’s live and what isn’t. Data is labeled with its source and freshness, and when a feed breaks we link to the original instead of pretending.</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact card"><span class="tag moss">Ready</span><p>The Learn and Solve program: session plans, facilitator kit, rubric, and safety rules.</p></div>
+        <div class="fact card"><span class="tag moss">Live</span><p>The <a href="/local/">Linwood dashboard</a> with recent Linwood 311 requests and links to meeting notes and public records.</p></div>
+        <div class="fact card"><span class="tag dusk">Proposed</span><p>Hosting at the LAMP campus, working with Kansas City Documenters, and using the CivicAI curriculum. <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Partners.md">Not yet agreed.</a></p></div>
+        <div class="fact card"><span class="tag">Later</span><p>Neighborhood memory, voting tools, and local AI hardware, <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Later-If-Residents-Want-It.md">only if residents want them</a>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="run" class="alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Run it where you live</p>
+        <div>
+          <h2>Everything you need is in the open.</h2>
+          <p>You don’t need permission, a license fee, or the original team. You need a library room, a facilitator, two neighbors who can bring twenty more, money for stipends, and someone who takes data seriously. No software required.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Home.md">Open the program wiki</a>
+            <a class="btn" href="/kit/">Print the facilitator kit</a>
+          </div>
+        </div>
+      </div>
+      <div class="kit-grid">
+        <div class="kit-item"><span class="kit-n">A library room</span><p>Seats 25, a screen, a blank wall for sticky notes, step-free access. A branch library is ideal.</p></div>
+        <div class="kit-item"><span class="kit-n">Two people in charge</span><p>A program lead, and a separate data steward who decides what gets collected.</p></div>
+        <div class="kit-item"><span class="kit-n">Two connectors</span><p>Trusted neighbors who can personally invite twenty more. Paid, like everyone else.</p></div>
+        <div class="kit-item"><span class="kit-n">About 90 days</span><p>Five to seven 90-minute sessions. Roughly $7,000 to $16,000 with paid facilitation, participant stipends, and food.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container narrow">
+      <div class="section-head" style="grid-template-columns:1fr">
+        <h2>Questions people ask.</h2>
+      </div>
+      <details><summary>Do I need to know anything about technology?</summary><p>No. The Learn sessions start from zero, and most of the program uses sticky notes, a projector, and conversation.</p></details>
+      <details><summary>Is this anti-AI?</summary><p>No. It’s pro-people. We teach where AI genuinely helps, where it fails, and how to stay in charge of it.</p></details>
+      <details><summary>Does this replace 311 or city services?</summary><p>No. It helps neighbors use them well, and keep track of what institutions promised.</p></details>
+      <details><summary>What do you collect about me?</summary><p>Nothing, by default. Sessions count heads, not names. If you want to hear about future sessions, the library keeps an optional list and deletes it after 90 days. Stipends are paid through the library or a fiscal partner. See the <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Threat-Model.md">threat model</a>.</p></details>
+      <details><summary>Do I get paid to come?</summary><p>Yes. $30 for each 90-minute session, the same $20-an-hour rate Kansas City Documenters pays residents to cover public meetings.</p></details>
+      <details><summary>Do you summarize city meetings with AI?</summary><p>No. We point you to <a href="https://kansascity.documenters.org/">Kansas City Documenters</a>, whose notes are fact-checked by The Beacon, or the official minutes. Clinics are where you act on what you find.</p></details>
+      <details><summary>How do I reach you?</summary><p>Email <a href="mailto:simon@simonlpaige.com">simon@simonlpaige.com</a>.</p></details>
+      <details><summary>Can we do this outside Kansas City?</summary><p>Yes. The education program works anywhere. The software needs new connectors for your city’s open data. The <a href="https://github.com/simonlpaige/neighborhoodos/blob/main/wiki/Launching-a-New-Neighborhood.md">launch checklist</a> walks through it.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>NeighborhoodOS. Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems. <a href="mailto:simon@simonlpaige.com">simon@simonlpaige.com</a></span>
+    <span><a href="/learn/">Free lesson</a> &nbsp; <a href="/local/">Linwood dashboard</a> &nbsp; <a href="https://github.com/simonlpaige/neighborhoodos">Source</a> &nbsp; <a href="/kit/">Facilitator kit</a> &nbsp; <a href="/llms.txt">llms.txt</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* Catch the machine */
+  var box = document.getElementById('exercise');
+  var claims = box.querySelectorAll('.claim');
+  var result = document.getElementById('ex-result');
+  var check = document.getElementById('ex-check');
+  var reset = document.getElementById('ex-reset');
+  var instr = document.getElementById('ex-instr');
+  claims.forEach(function (c) {
+    c.addEventListener('click', function () {
+      if (box.classList.contains('revealed')) return;
+      c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    });
+  });
+  check.addEventListener('click', function () {
+    var caught = 0, missed = 0, extra = 0;
+    claims.forEach(function (c) {
+      var bad = c.dataset.kind !== 'checkable';
+      var picked = c.getAttribute('aria-pressed') === 'true';
+      if (bad && picked) caught++; else if (bad) missed++; else if (picked) extra++;
+    });
+    box.classList.add('revealed');
+    claims.forEach(function (c) { c.setAttribute('aria-disabled', 'true'); });
+    var head = missed === 0
+      ? 'You caught both. Nice work.'
+      : 'You caught ' + caught + ' of 2. That’s normal: the made-up lines are written to sound exactly like the real ones.';
+    var tail = extra ? ' Being careful with the true lines is fine too. The habit is what matters.' : '';
+    result.innerHTML = '<p><strong>' + head + '</strong>' + tail + '</p><p>The rule: check anything specific (numbers, laws, deadlines, links) at the original source. <a href="/learn/">Learn more in the free lesson.</a></p>';
+    result.hidden = false; check.hidden = true; reset.hidden = false; instr.hidden = true;
+    reset.focus();
+  });
+  reset.addEventListener('click', function () {
+    box.classList.remove('revealed');
+    claims.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.removeAttribute('aria-disabled'); });
+    result.hidden = true; check.hidden = false; reset.hidden = true; instr.hidden = false;
+    claims[0].focus();
+  });
+
+  /* Problem brief builder (stays in the browser) */
+  var fields = ['what', 'who', 'evidence', 'next'];
+  var empty = { what: 'Start typing on the left.', who: 'Not chosen yet.', evidence: 'Nothing yet.', next: 'Nothing yet.' };
+  var status = document.getElementById('b-status');
+  var where = {
+    'The city (311, public works, codes)': 'Tip: file a 311 request first and write down the case number. It becomes your evidence, and you can check its status later.',
+    'A utility (power, water, gas)': 'Tip: utilities keep their own outage and repair records. Report it through the utility directly and ask for a ticket number.',
+    'A landlord or property company': 'Tip: put the request in writing and keep a dated copy. For rights and options, talk to a tenant advocate, not a chatbot.',
+    'The county': 'Tip: county offices handle things like assessments, health, and some roads. The county legislature publishes agendas you can speak at.',
+    'The state': 'Tip: your state representative’s office can often route a problem to the right agency faster than a cold call.',
+    'Us: neighbors, an association, mutual aid': 'Tip: the smallest next step is usually one conversation. Bring this brief to your next association meeting.',
+    'Not sure yet (that’s the first thing to find out)': 'Tip: that’s normal. Your next step can simply be: find out who is responsible. Bring it to a Solve clinic.'
+  };
+  function render() {
+    fields.forEach(function (f) {
+      var v = document.getElementById('b-' + f).value.trim();
+      var out = document.getElementById('o-' + f);
+      out.textContent = v || empty[f];
+      out.classList.toggle('empty', !v);
+    });
+    var w = where[document.getElementById('b-who').value];
+    var wEl = document.getElementById('o-where');
+    wEl.textContent = w || ''; wEl.hidden = !w;
+  }
+  fields.forEach(function (f) { document.getElementById('b-' + f).addEventListener('input', render); });
+  document.getElementById('b-copy').addEventListener('click', function () {
+    var labels = { what: 'The problem', who: 'Who can fix it', evidence: 'Evidence', next: 'Next step' };
+    var text = 'PROBLEM BRIEF\n\n' + fields.map(function (f) {
+      return labels[f] + ':\n' + (document.getElementById('b-' + f).value.trim() || '(blank)');
+    }).join('\n\n') + '\n\nMade with the NeighborhoodOS brief builder: neighborhoodos.org/#brief';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { status.textContent = 'Copied. Paste it into an email, a note, or a meeting agenda.'; },
+        function () { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; });
+    } else { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; }
+  });
+  document.getElementById('b-example').addEventListener('click', function () {
+    document.getElementById('b-what').value = 'The streetlight at the corner of our block has been out since July. Kids walk past it to the bus stop before sunrise.';
+    document.getElementById('b-who').value = 'The city (311, public works, codes)';
+    document.getElementById('b-evidence').value = 'Dated phone photos from July, August, and September. Not sure yet if anyone filed a 311 request; checking the open 311 map.';
+    document.getElementById('b-next').value = 'Maria files a 311 request Tuesday and posts the case number in the block group. We check its status in two weeks.';
+    render(); status.textContent = 'Example filled in. Clear it and try your own.';
+  });
+  document.getElementById('b-print').addEventListener('click', function () { window.print(); });
+  document.getElementById('b-clear').addEventListener('click', function () {
+    fields.forEach(function (f) { document.getElementById('b-' + f).value = ''; });
+    render(); status.textContent = 'Cleared.';
+    document.getElementById('b-what').focus();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,15 +1,66 @@
-name: test
+name: Verify and publish NeighborhoodOS
 on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 11 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: neighborhoodos-${{ github.event_name == 'pull_request' && github.ref || 'pages' }}
+  cancel-in-progress: false
 jobs:
-  test:
+  verify:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Refresh public sources (nightly only)
+        if: github.event_name == 'schedule'
+        run: |
+          node scripts/refresh-data.mjs
+          node scripts/refresh-calendar.mjs
       - run: npm test
+      - run: npm run test:web
+      - run: npm run build
+      - run: npm run audit:web
+      - name: Save dated source snapshots
+        if: github.event_name == 'schedule'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/boundaries.json data/snapshots data/events.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh dated aggregate city snapshots and organizer calendar'
+            git push
+          fi
+      - run: node scripts/stage-public-site.mjs
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request'
+        with:
+          path: .public-site
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified static artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

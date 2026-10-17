@@ -138,13 +138,8 @@ export function boxWhere(bounds, pointField) {
   return `within_box(${pointField}, ${n}, ${w}, ${s}, ${e})`;
 }
 
-// West Waldo default bounds
-export const WEST_WALDO_BOUNDS = {
-  north: 38.9920,  // ~75th St
-  south: 38.9540,  // ~85th St
-  east:  -94.5890, // Wornall Rd
-  west:  -94.6140  // Ward Pkwy
-};
+// Geographic coverage is supplied by node.config.json. Public website coverage
+// uses official polygons from data/neighborhoods.json, never this ingest box.
 
 // ----------------------------------------------------------------
 // Incremental sync: fetch new records since last cursor
