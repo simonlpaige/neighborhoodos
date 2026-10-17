@@ -5,8 +5,8 @@ import vm from 'node:vm';
 import {load} from 'cheerio';
 import {translationLanguages,translationUrl,themeInit,readingRoute} from '../scripts/ui-settings.mjs';
 import {readingCopy} from '../scripts/reading-copy.mjs';
-test('five supported languages link only to public reading paths, with no user query or state',()=>{
- assert.equal(translationLanguages.length,5);
+test('six supported languages link only to public reading paths, with no user query or state',()=>{
+ assert.equal(translationLanguages.length,6);
  for(const l of translationLanguages){const u=new URL(translationUrl('/guide/start-here-for-partners/',l.code));assert.equal(u.origin,'https://translate.google.com');assert.equal(u.searchParams.get('tl'),l.code);assert.equal(u.searchParams.get('u'),'https://neighborhoodos.org/reading/guide/start-here-for-partners/');}
  assert.throws(()=>translationUrl('/','xx'));assert.equal(readingRoute('/learn/es/'),'/reading/learn/');
 });

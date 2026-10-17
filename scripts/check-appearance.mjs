@@ -16,7 +16,7 @@ try{
   }
   console.log(`${scheme}: ${routes.length} pages audited.`);
   await page.goto(base+'/guide/start-here-for-partners/');await page.locator('.language-menu summary').click();await page.screenshot({path:`${artifacts}/partners-${scheme}-desktop.png`});
-  assert.equal(await page.locator('.language-options li a').count(),5);await page.keyboard.press('Escape');assert.equal(await page.locator('.language-menu').getAttribute('open'),null);
+  assert.equal(await page.locator('.language-options li a').count(),6);await page.keyboard.press('Escape');assert.equal(await page.locator('.language-menu').getAttribute('open'),null);
   await page.setViewportSize({width:390,height:844});
   for(const route of ['/','/learn/','/kit/','/resources/','/neighborhoods/linwood/','/guide/start-here-for-partners/']){await page.goto(base+route);await page.locator('.language-menu summary').click();const box=await page.locator('.language-options').boundingBox();assert.ok(box.x>=0&&box.x+box.width<=391,`Language menu outside viewport: ${route}`);const a=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();for(const v of a.violations)failures.push({scheme,route,width:390,id:v.id,nodes:v.nodes.map(n=>({target:n.target,detail:n.failureSummary}))});results.push({scheme,route,width:390,violations:a.violations.length});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);}
   await page.screenshot({path:`${artifacts}/partners-${scheme}-mobile.png`});await context.close();

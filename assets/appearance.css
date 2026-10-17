@@ -9,3 +9,5 @@
 @media print{:root,:root[data-theme],:root:not([data-theme]){color-scheme:light;--background:#fff;--text:#17324d;--link:#2457c5;--muted:#465568;--surface:#eaf2fa;--border:#a9bfd8;--border-strong:#95acc6;--line:#c8d7e8;--soft-line:#d8e3ee;--paper-shadow:#cddff1;--warning-bg:#fff4c8}.site-tools,.translation-reading-notice{display:none!important}}
 
 .dashboard-nav a[aria-current]{background:var(--text);color:var(--background)}
+
+.language-options li a{direction:ltr}.language-native{font-weight:400;unicode-bidi:isolate}.language-options li a>span{margin-left:auto;text-align:right}
