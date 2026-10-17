@@ -15,5 +15,5 @@ export function readingCopy(html,route){
     if(u.origin!=='https://neighborhoodos.org'||!u.pathname.endsWith('/')||u.pathname.startsWith('/reading/'))return;
     $(el).attr('href','/reading'+(u.pathname==='/learn/es/'?'/learn/':u.pathname)+u.hash);
   });
-  return $.html()+'\n';
+  return $.html().replace(/[ \t]+\n/g,'\n')+'\n';
 }
