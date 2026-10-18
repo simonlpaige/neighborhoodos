@@ -1,6 +1,6 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "source": "w8jz-wjgn",
   "sourceMax": "2026-10-14",
   "sourceUpdated": "2026-10-15",
@@ -9,7 +9,7 @@
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
   "total": 72,
   "issued30": 27,
-  "issued90": 36,
+  "issued90": 35,
   "byType": [
     {
       "type": "Residential",

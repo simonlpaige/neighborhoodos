@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "sourceMax": "2026-10-12",
-  "generatedAt": "2026-10-17T17:11:27.055Z",
+  "generatedAt": "2026-10-18T14:40:57.552Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1099,
-  "requests30": 71,
-  "requests90": 273,
+  "total": 1093,
+  "requests30": 62,
+  "requests90": 271,
   "counts": {
-    "open": 155,
-    "resolved": 893,
+    "open": 154,
+    "resolved": 888,
     "canceled": 51
   },
-  "openOver60": 96,
+  "openOver60": 95,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 200,
+      "count": 199,
       "medianDays": 1,
-      "closedSample": 175,
+      "closedSample": 174,
       "cityMedianDays": 0
     },
     {
@@ -33,7 +33,7 @@
       "count": 150,
       "medianDays": 6.5,
       "closedSample": 52,
-      "cityMedianDays": 14
+      "cityMedianDays": 13
     },
     {
       "type": "A Pothole",
@@ -71,18 +71,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Solid Waste Services",
-      "count": 36,
-      "medianDays": 7,
-      "closedSample": 34,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Trees City Row",
       "count": 36,
       "medianDays": 0,
       "closedSample": 27,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Solid Waste Services",
+      "count": 35,
+      "medianDays": 7,
+      "closedSample": 33,
+      "cityMedianDays": 5
     },
     {
       "type": "Street Maintenance",
@@ -93,24 +93,17 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 19,
+      "count": 18,
       "medianDays": 7,
-      "closedSample": 15,
+      "closedSample": 14,
       "cityMedianDays": 8
     },
     {
       "type": "Zoning and Permits",
-      "count": 15,
-      "medianDays": 13.5,
-      "closedSample": 10,
-      "cityMedianDays": 23
-    },
-    {
-      "type": "Recycling Cart Program",
       "count": 14,
-      "medianDays": 30,
+      "medianDays": 17,
       "closedSample": 9,
-      "cityMedianDays": 11
+      "cityMedianDays": 23
     },
     {
       "type": "Vehicles and Parking",
@@ -125,6 +118,13 @@
       "medianDays": 3,
       "closedSample": 13,
       "cityMedianDays": 2
+    },
+    {
+      "type": "Recycling Cart Program",
+      "count": 13,
+      "medianDays": 32,
+      "closedSample": 8,
+      "cityMedianDays": 11
     },
     {
       "type": "Health Code Violations",
@@ -197,13 +197,6 @@
       "cityMedianDays": 32
     },
     {
-      "type": "Land Bank Issues",
-      "count": 4,
-      "medianDays": 32,
-      "closedSample": 2,
-      "cityMedianDays": 11
-    },
-    {
       "type": "Brush Special Collection Appointment Request",
       "count": 4,
       "medianDays": 8,
@@ -223,6 +216,13 @@
       "medianDays": 34,
       "closedSample": 3,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Land Bank Issues",
+      "count": 3,
+      "medianDays": 32,
+      "closedSample": 2,
+      "cityMedianDays": 11
     },
     {
       "type": "Sidewalks and Curbs",
@@ -404,11 +404,11 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 633
+      "count": 628
     },
     {
       "name": "Other / not specified",
-      "count": 203
+      "count": 202
     },
     {
       "name": "Mobile app",

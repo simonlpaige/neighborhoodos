@@ -1,31 +1,31 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "sourceMax": "2026-10-12",
-  "generatedAt": "2026-10-17T17:11:26.302Z",
+  "generatedAt": "2026-10-18T14:40:57.136Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2143,
-  "requests30": 118,
-  "requests90": 539,
+  "total": 2140,
+  "requests30": 107,
+  "requests90": 531,
   "counts": {
     "open": 366,
-    "resolved": 1602,
+    "resolved": 1599,
     "canceled": 175
   },
-  "openOver60": 232,
+  "openOver60": 234,
   "types": [
     {
       "type": "Property Violations",
       "count": 440,
       "medianDays": 50.5,
       "closedSample": 204,
-      "cityMedianDays": 14
+      "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 325,
+      "count": 323,
       "medianDays": 0,
-      "closedSample": 286,
+      "closedSample": 284,
       "cityMedianDays": 0
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 201,
+      "count": 200,
       "medianDays": 1,
-      "closedSample": 199,
+      "closedSample": 198,
       "cityMedianDays": 1
     },
     {
@@ -410,12 +410,12 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 912
+      "name": "Mobile app",
+      "count": 777
     },
     {
-      "name": "Mobile app",
-      "count": 779
+      "name": "Phone",
+      "count": 911
     },
     {
       "name": "Other / not specified",

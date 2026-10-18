@@ -1,38 +1,38 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-17",
+  "asOf": "2026-10-18",
   "sourceMax": "2026-10-12",
-  "generatedAt": "2026-10-17T17:11:25.653Z",
+  "generatedAt": "2026-10-18T14:40:56.695Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3643,
-  "requests30": 196,
-  "requests90": 823,
+  "total": 3625,
+  "requests30": 191,
+  "requests90": 811,
   "counts": {
-    "open": 616,
-    "resolved": 2804,
-    "canceled": 223
+    "open": 613,
+    "resolved": 2790,
+    "canceled": 222
   },
-  "openOver60": 405,
+  "openOver60": 403,
   "types": [
     {
       "type": "Property Violations",
-      "count": 832,
-      "medianDays": 11,
-      "closedSample": 406,
-      "cityMedianDays": 14
+      "count": 819,
+      "medianDays": 12,
+      "closedSample": 397,
+      "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 548,
+      "count": 547,
       "medianDays": 0,
-      "closedSample": 473,
+      "closedSample": 472,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 388,
+      "count": 385,
       "medianDays": 6,
-      "closedSample": 313,
+      "closedSample": 310,
       "cityMedianDays": 5
     },
     {
@@ -155,13 +155,6 @@
       "cityMedianDays": 30
     },
     {
-      "type": "Streetlights",
-      "count": 31,
-      "medianDays": 1,
-      "closedSample": 31,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Parks and Recreation",
       "count": 30,
       "medianDays": 3,
@@ -174,6 +167,13 @@
       "medianDays": 2.5,
       "closedSample": 30,
       "cityMedianDays": 2
+    },
+    {
+      "type": "Streetlights",
+      "count": 30,
+      "medianDays": 1,
+      "closedSample": 30,
+      "cityMedianDays": 1
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -446,15 +446,15 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 878
-    },
-    {
-      "name": "Other / not specified",
-      "count": 794
+      "count": 877
     },
     {
       "name": "Phone",
-      "count": 1971
+      "count": 1957
+    },
+    {
+      "name": "Other / not specified",
+      "count": 791
     }
   ],
   "stuck": [
