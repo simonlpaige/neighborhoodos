@@ -16,7 +16,9 @@
     "audit:web": "node scripts/audit-site.mjs",
     "check:browser": "node scripts/browser-check.mjs",
     "refresh:data": "node scripts/refresh-data.mjs",
-    "check:appearance": "node scripts/check-appearance.mjs"
+    "check:appearance": "node scripts/check-appearance.mjs",
+    "check:web": "npm run build && npm run test:web && npm run audit:web",
+    "check:resident": "node scripts/check-resident-flow.mjs"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",

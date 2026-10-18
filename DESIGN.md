@@ -18,7 +18,11 @@ Before release, run the static audit and relevant tests, inspect desktop and mob
 
 October 2026 appearance and language controls: follow `prefers-color-scheme` until a visitor selects light or dark. A compact sun/moon switch and an Auto reset sit beside the Translate menu in the top bar. Store only the functional theme preference locally; print stays light. Use semantic color tokens in `workshop.css` with light/dark values in `appearance.css`. Test both palettes and the expanded language menu for contrast and keyboard access.
 
-The Translate menu offers Spanish, Chinese (Simplified), Vietnamese, Arabic, and French, based on KCMO language-access priorities; do not claim a precise current individual-language ranking. Links open Google Translate only on request, using non-indexed public reading copies with no editable forms or scripts. Original page input must never appear in a translation URL or copy. The native Spanish lesson remains separate.
+The Translate menu offers Spanish, Chinese (Simplified), Vietnamese, Arabic, French, and Swahili, based on KCMO language-access priorities; do not claim a precise current individual-language ranking. Links open Google Translate only on request, using non-indexed public reading copies with no editable forms or scripts. Original page input must never appear in a translation URL or copy. The native Spanish lesson remains separate.
+
+## October 18 resident-flow polish
+
+The front door leads with a neighborhood question and a useful next step. Keep the completed brief as the signature visual. Four primary resident actions sit beside a separate host/funder menu. Explain agency and privacy affirmatively while retaining the specific safety rules and provider limits. Connect dashboards to private brief starting points using fixed public context identifiers in URL fragments; never place resident answers in URLs, storage, or translation copies. Show open/resolved/canceled shares with a common denominator. Readiness counts are not program outcomes.
 
 ## Historical design reference (superseded)
 

@@ -1,82 +1,26 @@
-# Workshop Manual: Level 2 — The Local Problem Framer
+# Facilitator manual: Make a problem brief
 
-> **"A complaint is a frustration. A problem brief is an action plan."**
+Help a neighbor leave with a specific problem, the responsible office, evidence they can check, and a next step they choose. Use the [brief builder](/brief/) or a sheet of paper. A complaint can identify a real failure; listen before asking someone to turn it into a plan.
 
-This guide outlines the curriculum and facilitator instructions for running a **"Solve" Clinic** (Level 2). It teaches residents and organizers how to take raw, messy community frustrations ("the block is dark," "our landlord ignores us") and translate them into structured Problem Briefs with clear data points, accountability paths, and immediate next physical actions.
+## Find the responsible office
 
----
+Use [Who fixes what in Kansas City?](/who-fixes-what/) to distinguish city service requests, rental inspections, utility service, permits, and county assessments. Confirm the jurisdiction and the office's current process. Knowing who has authority is part of the work.
 
-## 🧭 Part 1: The Philosophy of Problem Framing
+## Build the brief together
 
-When people show up to community meetings, they are often carrying heavy, unstructured frustrations. If a workshop only lets people vent, they leave tired. If a workshop immediately pushes a software platform, they leave confused.
+1. Describe the place, issue, and time period without identifying a household.
+2. Name the office or institution responsible. “Not sure yet” is a useful starting point.
+3. Record public source links, dates, and existing case numbers.
+4. Choose an action, a person who agrees to take it, and a date to check back.
 
-The Level 2 Problem Framer track is designed to turn venting into building. We do this by breaking local issues down into three clear pieces:
-1.  **The Authority**: Who is legally and operationally responsible for fixing this?
-2.  **The Evidence**: What municipal public record or asset data can we use to prove the scale of the issue?
-3.  **The Wedge**: What is the smallest, sharpest piece of this problem we can begin solving ourselves this week?
+A dashboard pattern can raise a question. It cannot establish the condition of a particular home or prove why a request closed. Separate a neighbor's observation from what a public record confirms.
 
----
+## Make follow-through possible
 
-## 🔍 Part 2: The "Sticky-Note Sieve" (Facilitation Guide)
+Before leaving, copy or print the brief. The website does not retain the answers. Write a check-back date in your own calendar or on the paper. At that date, record what happened: a response, an unresolved question, a referral, or a verified change.
 
-This is our signature 45-minute workshop exercise to filter and structure neighborhood complaints.
+Ask permission before sharing the brief. A personal case may need a private conversation with the responsible provider or a qualified advocate, rather than a public workshop.
 
-### Setup
-- A blank wall or white board.
-- Sticky notes (three different colors: Pink, Yellow, Green).
-- Fine-tip markers.
+## Check effectiveness
 
-### Step 1: Dump the Frustrations (Pink Notes)
-Give every participant a stack of Pink notes. Ask them to write down concrete frustrations on their block. 
-- *Rule*: One frustration per note. No generalizations. (Good: *"the streetlight at 42nd and Oak has been out for a month."* Bad: *"the city neglects our streets."*)
-- Have them stick all Pink notes on the left side of the wall.
-
-### Step 2: Categorize by Authority (Yellow Notes)
-As a group, review the Pink notes. For each frustration, place a Yellow note next to it identifying **who has the authority** to resolve it:
-- **Tenant-Landlord**: Private landlord, lease holder.
-- **Municipal**: City codes, 311, public works, county tax assessor.
-- **Utility**: Electric company, water department, gas company.
-- **State/Federal**: State highways, environmental protection.
-- **Community**: Neighbors, mutual aid, neighborhood association.
-
-### Step 3: Identify the Evidence (Green Notes)
-For the municipal and utility categories, place a Green note identifying **what public record data or evidence** can verify the issue:
-- Does the issue show up in KC 311 service request histories?
-- Are there open building permits, property violations, or dangerous building notices?
-- Are there public city council votes, budget vendor payments, or legislative minutes discussing this?
-
-***
-
-## 📝 Part 3: The Problem Brief Template
-
-Once a frustration is categorized and mapped to evidence, the group translates it into a formal **Problem Brief**. This template turns a raw complaint into a clear, structured specification for our Level 3 Tool Builders.
-
-```markdown
-# NeighborhoodOS Problem Brief: [Descriptive Title]
-
-### 1. The Core Frustration (The "What")
-- Describe the issue in plain, concrete language.
-- Where is it happening? 
-- Who is directly affected by it?
-
-### 2. The Authority Map (The "Who")
-- Who has the legal or operational responsibility to fix this?
-- List specific contacts, municipal departments, or entities.
-
-### 3. The Evidence Layer (The "Data")
-- What public record datasets are relevant to this issue?
-- List specific 311 categories, permits, or council minutes.
-- Where can our developers fetch or audit this data?
-
-### 4. The Wedge (The "Next Action")
-- What is the smallest, sharpest physical action we can take?
-- (e.g. "Draft a template letter for tenants citing the specific open 311 cases on our block," or "Generate a map of chronic, unresolved housing code violations to present to the neighborhood association.")
-```
-
----
-
-## 🛡 Part 4: Safety & Privacy in Problem Framing
-
-When framing local problems, we must enforce our **Civic Memory Safety Doctrine** strictly:
-- **No Individual Finger-Pointing**: Do not create briefs that map or track individual, non-commercial property owners or individual residents. Focus on commercial landlords, municipal accountability, or systemic infrastructure failures.
-- **Public-Record Integrity**: Rely entirely on verifiable, public-record evidence. Never compile unverified rumors or private resident observations into a permanent database.
+A completed brief is an output. A verified response or improvement is an outcome. Ask whether the resident found the next step useful and what still stands in the way. Do not describe citywide 311 closures as program results. See [measurement guidance](../wiki/Evaluation-and-Metrics.md).

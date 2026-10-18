@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Operating manual: Public-data snapshots | NeighborhoodOS</title><meta name="description" content="Operating manual: Public-data snapshots: practical NeighborhoodOS guidance for residents, hosts, and facilitators."><link rel="canonical" href="https://neighborhoodos.org/guide/manual-public-data/"><meta property="og:title" content="Operating manual: Public-data snapshots | NeighborhoodOS"><meta property="og:description" content="Operating manual: Public-data snapshots: practical NeighborhoodOS guidance for residents, hosts, and facilitators."><meta property="og:type" content="website"><meta property="og:url" content="https://neighborhoodos.org/guide/manual-public-data/"><meta property="og:image" content="https://neighborhoodos.org/assets/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#17324d"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/barlow-condensed-600.ttf" as="font" type="font/ttf" crossorigin=""><link rel="stylesheet" href="/assets/workshop.css"><link rel="stylesheet" href="/assets/appearance.css"><meta name="robots" content="noindex,follow"></head><body class=""><a class="skip-link" href="#main">Skip to main content</a><div class="site-top" lang="en"><div class="container"><div class="top-inner"><span>Linwood, Kansas City</span><span>A <a href="https://www.kcdigitaldrive.org/">KC Digital Drive</a> program</span></div></div></div><header class="site-nav" lang="en"><div class="container nav-inner"><a href="/reading/" class="nav-logo notranslate" translate="no" aria-label="NeighborhoodOS home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>neighborhoodOS</a><nav class="nav-links" aria-label="Primary"><a href="/reading/learn/">Learn AI safely</a><a href="/reading/brief/">Make a brief</a><a href="/reading/resources/">Find local help</a><a href="/reading/neighborhoods/">Neighborhood data</a></nav><details class="program-menu"><summary>Run or fund a program</summary><nav aria-label="For hosts and supporters"><a href="/reading/guide/">Program guide</a><a href="/reading/sessions/">Classes &amp; clinics</a><a href="/reading/kit/">Printable kit</a><a href="/reading/funders/">Funding &amp; support</a><a href="/reading/results/">Readiness &amp; results</a><a href="/reading/about/">About &amp; contact</a></nav></details></div></header><main id="main"><div class="container translation-reading-notice"><p><strong>Public reading copy.</strong> Automatic translation is for reading. To use private tools, return to your original NeighborhoodOS tab. No personal answers are included in this copy.</p></div><div class="page-head container"><p class="breadcrumbs"><a href="/reading/guide/">Program guide</a></p><h1>Operating manual: Public-data snapshots</h1></div><div class="container content-section guide-layout"><aside class="guide-nav" aria-label="Program guide"><a href="/reading/guide/">All guide pages</a><details open=""><summary>Start here</summary><ul><li><a href="/reading/guide/principles/">What the work is for</a></li><li><a href="/reading/guide/home/">NeighborhoodOS Program Guide</a></li><li><a href="/reading/guide/what-neighborhoodos-is/">What NeighborhoodOS Is</a></li><li><a href="/reading/guide/start-here-for-partners/">Start Here for Partners</a></li><li><a href="/reading/guide/program-design/">Program Design</a></li><li><a href="/reading/guide/partners/">Partners and Reference Resources</a></li></ul></details><details><summary>Run a session</summary><ul><li><a href="/reading/guide/session-plans/">Session Plans</a></li><li><a href="/reading/guide/facilitator-guide/">Facilitator Guide</a></li><li><a href="/reading/guide/roles-and-staffing/">Roles and Staffing</a></li><li><a href="/reading/guide/recruitment-and-outreach/">Recruitment and Outreach</a></li><li><a href="/reading/guide/building-a-tool/">Building a Tool</a></li><li><a href="/reading/guide/launching-a-new-neighborhood/">Launching a New Neighborhood</a></li></ul></details><details><summary>Funding and handoff</summary><ul><li><a href="/reading/guide/grant-kit/">Grant Kit</a></li><li><a href="/reading/guide/budget-and-hardware/">Budget and Hardware</a></li><li><a href="/reading/guide/evaluation-and-metrics/">Evaluation and Metrics</a></li><li><a href="/reading/guide/partner-mou/">Partner Agreement Worksheet</a></li><li><a href="/reading/guide/handoff-and-licensing/">Handoff and Licensing</a></li><li><a href="/reading/guide/known-gaps-and-roadmap/">Known Gaps and Roadmap</a></li></ul></details><details><summary>Safety and technical work</summary><ul><li><a href="/reading/guide/safety-doctrine/">Safety Doctrine</a></li><li><a href="/reading/guide/threat-model/">Threat Model</a></li><li><a href="/reading/guide/language-access/">Language Access and Translation</a></li><li><a href="/reading/guide/data-sources/">Data Sources</a></li><li><a href="/reading/guide/technical-architecture/">Technical Architecture</a></li><li><a href="/reading/guide/developer-setup/">Developer Setup</a></li><li><a href="/reading/guide/later-if-residents-want-it/">Later, if residents want it</a></li><li><a href="/reading/guide/community-ai-hub-guide/">Community AI Hub Guide</a></li><li><a href="/reading/guide/faq/">FAQ</a></li><li><a href="/reading/guide/glossary/">Glossary</a></li></ul></details><details><summary>Workshop &amp; operating manuals</summary><ul><li><a href="/reading/guide/manual-safe-ai/">Facilitator manual: Learn AI safely</a></li><li><a href="/reading/guide/manual-problem-framing/">Facilitator manual: Make a problem brief</a></li><li><a href="/reading/guide/manual-tool-building/">Facilitator manual: Build only what helps</a></li><li><a href="/reading/guide/manual-public-data/">Operating manual: Public-data snapshots</a></li></ul></details></aside><article class="prose"><p>This manual covers the published NeighborhoodOS dashboards. Their sources are official Kansas City datasets, and their outputs are dated, privacy-filtered JSON snapshots. Experimental connectors elsewhere in the repository are not the public-site pipeline.</p>
+<h2 id="refresh-and-publication">Refresh and publication</h2>
+<p>Run <code>npm run refresh:data</code> from the repository root. The scheduled GitHub Actions workflow runs this refresh and the organizer-calendar refresh daily, checks the result, builds the site, and publishes an explicit allowlist through GitHub Pages.</p>
+<ul>
+<li><code>scripts/refresh-data.mjs</code> fetches official neighborhood polygons and 311 records.</li>
+<li><code>scripts/civic-data.mjs</code> applies status, aggregation, and publication rules.</li>
+<li><code>scripts/permits.mjs</code> fetches current issued building permits and matches parcels.</li>
+<li><code>data/snapshots/</code> contains the public outputs.</li>
+<li><code>scripts/stage-public-site.mjs</code> stages only the allowed public files.</li>
+</ul>
+<p>Raw source rows are processed in memory. The public-site refresh does not create a SQLite database.</p>
+<h2 id="current-source-registry">Current source registry</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable data table"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>DataKC identifier</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>311 service requests</td>
+<td><code>d4px-6rwg</code></td>
+<td>Dated service-request summaries</td>
+</tr>
+<tr>
+<td>Official neighborhoods</td>
+<td><code>vq6h-tqrf</code></td>
+<td>Named geographic boundaries</td>
+</tr>
+<tr>
+<td>City Issued Permits</td>
+<td><code>w8jz-wjgn</code></td>
+<td>Issued residential and commercial building permits</td>
+</tr>
+<tr>
+<td>City parcel polygons</td>
+<td><code>6g4y-sh3m</code></td>
+<td>Matching permits to neighborhoods</td>
+</tr>
+</tbody>
+</table></div>
+<p>The older permit feed <code>ntw8-aacc</code> stopped updating in May 2025. The parcel map was published in December 2023, so changed or new parcels can be missed. Keep the displayed coverage caveat even when permit records are fresh.</p>
+<h2 id="publication-rules">Publication rules</h2>
+<p>Canceled and duplicate requests are separate from resolved requests. Closure medians use eligible resolved records only and cannot predict an open case's wait. Published locations are restricted to allowlisted infrastructure blocks; household complaints and free text are excluded.</p>
+<p>Permit snapshots contain category counts and a limited recent list with permit numbers, dates, recorded status, and 100-block locations. They omit owners, contractors, descriptions, parcel identifiers, exact addresses, and coordinates. A permit does not establish that construction began or finished.</p>
+<h2 id="failure-and-review">Failure and review</h2>
+<p>A failed refresh must fail the publication job. Inspect the source and error before retrying; do not fill a failed feed with zeros. Check snapshot dates, expected fields, local links, and the rendered dashboard. Build and audit with <code>npm run check:web</code>.</p>
+<p>Use <a href="/reading/guide/data-sources/">Data Sources</a> for full methodology and <a href="/reading/guide/threat-model/">Threat Model</a> for hosting and privacy limits.</p>
+</article></div></main><footer class="site-footer" lang="en"><div class="container"><div class="footer-top"><div><div class="footer-brand">Good questions. Useful next steps.</div><p>NeighborhoodOS is a KC Digital Drive program, starting in Linwood. Created by Simon L. Paige, site administrator and advisor.</p><a href="/reading/about/">About &amp; contact</a><a href="/reading/funders/">For funders</a><a href="/reading/business/">Small business</a></div><div><a class="kcdd-brand" href="https://www.kcdigitaldrive.org/"><img src="/assets/kcdd-logo.svg" alt="KC Digital Drive" width="180" height="54"></a><p>People stay in charge.</p><a href="/reading/guide/safety-doctrine/">Safety rules</a><a href="/reading/accessibility/">Accessibility</a><br><a href="/reading/guide/threat-model/">Privacy &amp; data</a><a href="https://github.com/simonlpaige/neighborhoodos">Source code</a></div></div><div class="footer-bottom">Open materials for practical community work. <a href="/reading/guide/handoff-and-licensing/">Reuse &amp; licensing</a><a href="https://www.kcdigitaldrive.org/contact/">Contact KC Digital Drive</a></div></div></footer>
+</body></html>

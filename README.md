@@ -2,140 +2,85 @@
 
 **Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
 
-Live site: [neighborhoodos.org](https://neighborhoodos.org) · **Program guide: [start here](https://neighborhoodos.org/guide/)** · Free lesson: [neighborhoodos.org/learn](https://neighborhoodos.org/learn/) · Facilitator kit: [neighborhoodos.org/kit](https://neighborhoodos.org/kit/) · Contact: [KC Digital Drive](https://www.kcdigitaldrive.org/contact/)
+[Use the website](https://neighborhoodos.org/) · [Make a brief](https://neighborhoodos.org/brief/) · [Who fixes what?](https://neighborhoodos.org/who-fixes-what/) · [Program guide](https://neighborhoodos.org/guide/) · [Contact KC Digital Drive](https://www.kcdigitaldrive.org/contact/)
 
-> **Open for community use.** Any organization can run the program under the [Safety Doctrine](wiki/Safety-Doctrine.md). See [Handoff and Licensing](wiki/Handoff-and-Licensing.md).
+KC Digital Drive owns the program. Simon L. Paige created NeighborhoodOS and remains site administrator and advisor. Linwood is the starting area; other neighborhoods can adapt the materials. No repository or domain transfer is implied.
 
----
+## What a neighbor can do today
 
-## What this is
+- Practice checking an AI answer with the free lesson.
+- Find the office responsible for a local issue.
+- Make a private, printable brief with evidence, a next action, and a check-back date.
+- Read dated 311 and building-permit snapshots or find local help.
 
-1. **Practical AI help (Learn).** Free sessions where neighbors learn what AI can and can't do, the scams aimed at them, and how to check an answer.
-2. **Clinics for stuck civic problems (Solve).** Bring something stuck; leave with who can fix it, the public evidence, and a next step with a name on it.
+The public website has no accounts, analytics, or resident database. Brief answers remain in the tab until the user copies or prints them. Hosting providers can receive ordinary web-access information. Optional external translation and contact services follow their own policies. See the [Threat Model](wiki/Threat-Model.md).
 
-How it runs:
-- **At LAMP.** A KC Digital Drive program at its Digital Services & Support Center, 1801 Linwood Blvd, Kansas City, MO 64109. Learn uses existing DSSC workshops; Solve adds clinic practice.
-- **Source-linked for meetings.** Kansas City Documenters' verified notes are the meeting record. We never publish unreviewed AI summaries of meetings.
-- **Participants are paid.** $30 per session, $20/hour for peer helpers, the Documenters rate.
-- **Holds nothing about residents.** See the one-page [Threat Model](wiki/Threat-Model.md).
-- **Measured by outcomes.** Problems resolved and time to resolution, AI-error spotting before and after, peer helpers retained at six months. See [Evaluation and Metrics](wiki/Evaluation-and-Metrics.md).
+## Program and philosophy
 
-Infrastructure and governance (neighborhood memory, voting, local AI hardware) are on a separate page: [Later, if residents want it](wiki/Later-If-Residents-Want-It.md). The code for them lives in this repo but is not part of the current program.
+Residents choose the question. Facilitators help identify authority, check sources, and make follow-through practical. A completed brief is an output; a documented response or improvement is an outcome. Public-data totals do not establish program impact.
 
----
+KCDD adoption is confirmed. Clinic dates, facilitators, access arrangements, and stipend funding must be confirmed before sessions are announced. The planning budget includes participant and peer-helper pay; it is not a promise of funded attendance. See [sessions](https://neighborhoodos.org/sessions/), [principles](wiki/Principles.md), [evaluation](wiki/Evaluation-and-Metrics.md), and the [Safety Doctrine](wiki/Safety-Doctrine.md).
 
-## Current focus: 90-day pilot
+## Website quick start
 
-The first pilot targets one neighborhood and three tracks:
+Use Node 22 and Python 3.12 (for the evidence ZIP), matching CI.
 
-- **Learn** - 3 sessions of practical AI literacy for residents, neighborhood leaders, nonprofits, and small businesses.
-- **Solve** - 2 problem-solving clinics where participants bring stuck problems and leave with stakeholder maps and clear next steps.
-- **Build** - 1 lightweight tool, scoped only after the Solve clinics surface a real need.
-
-The candidate build on the table: a **Neighborhood Service Navigator and Action Tracker** - it helps residents turn a confusing local issue into plain-language next steps, relevant resources, source links, and a follow-up tracker reviewed by humans. Not a 311 replacement. Not legal advice. Not a sensitive-data system.
-
-Success is measured by outcomes: problems actually resolved and how long they took, whether people can spot an AI error better after training, and paid peer helpers still involved at six months.
-
----
-
-## Safety commitments
-
-The default: we hold nothing about residents. See the [Threat Model](wiki/Threat-Model.md).
-
-Hard limits:
-- No resident dossiers
-- No people scoring
-- No predictive policing
-- No protest monitoring
-- No immigration-enforcement use
-- No private social scraping
-- No sensitive case management
-- No automated adverse decisions about people
-- No unreviewed AI summaries of public meetings
-
-The design uses public and provenance-first records, human review, append-only audit events, and clear data-steward roles.
-
----
-
-## Repo layout
-
-```
-neighborhoodos/
-├── core/            # Node entry point, shared wiring
-├── connectors/      # City data (KC Open Data, Legistar), social signals
-├── ingest/          # Cron-ready ingest scripts (populate the DB)
-├── identity/        # Civic identity, trust levels, federated voting
-├── wedges/          # Pilot modules (swap as we learn)
-│   └── home-maintenance/   # West Waldo home maintenance (archived prototype)
-├── index.html, learn/, kit/, local/, assets/   # neighborhoodos.org (GitHub Pages)
-├── docs/            # Full manuals: workshops, rubric, safety, stewardship
-├── wiki/            # Program + technical wiki (start at wiki/Home.md)
-└── package.json
+```sh
+npm ci
+npm run check:web
+python -m http.server 8765
 ```
 
----
+Open http://localhost:8765. Run browser checks in a second terminal:
 
-## Principles
-
-- **Practical before platform.** Ship the smallest useful thing for one real neighborhood. The framework gets written after v1 works, not before.
-- **Neighborhoods over platforms.** Each neighborhood runs its own node. Data stays local unless residents decide otherwise.
-- **Trust is the feature.** The tool is a reason to show up reliably. Good software with no trust is a failure.
-- **Toothbrush test.** Does anyone use this daily? If not, reassess.
-- **Safety by design.** Civic memory should protect communities, not expose them. Hard limits come first.
-
----
-
-## Quick start (developer)
-
-The software is optional and not part of the current program; see [Later, if residents want it](wiki/Later-If-Residents-Want-It.md).
-
-```bash
-git clone https://github.com/simonlpaige/neighborhoodos.git
-cd neighborhoodos
-npm install
-npm test            # 46 checks: identity, voting, audit, federation, local AI helper
-npm run config:example   # then edit node.config.json for your neighborhood
-npm run sync        # pull public data into ./neighborhood-os.db
+```sh
+npx playwright install chromium
+npm run check:browser
+npm run check:appearance
+npm run check:resident
 ```
 
-Full setup: [wiki/Developer-Setup.md](wiki/Developer-Setup.md).
+`check:web` builds the site, runs web unit checks, and audits generated pages. Browser checks require the local server above. They test interactions, accessibility, responsive layouts, and themes. Automated checks complement manual review.
 
-Pilot module (early prototype, West Waldo home maintenance):
-```bash
-cd wedges/home-maintenance
-npm install
-node fetch-all.js   # pull KC Open Data
-node ingest-all.js  # load into SQLite
-node digest.js      # generate weekly digest
+To refresh public sources:
+
+```sh
+npm run refresh:data
+node scripts/refresh-calendar.mjs
+npm run check:web
 ```
 
----
+Refreshes contact official public APIs. The normal build uses checked-in snapshots. Failed refreshes must not publish empty replacements.
 
-## Status
+## Source and generated files
 
-Program: in planning for Linwood, KCMO. Library, Documenters, and CivicAI partnerships are proposed, not yet agreed. Software: pre-alpha, breaking changes expected. Issues and PRs welcome.
+| Location | Purpose |
+| --- | --- |
+| `scripts/pages.mjs`, `scripts/build-site.mjs` | Page content and site generator |
+| `scripts/resident-tools.mjs`, `scripts/guide-render.mjs` | Resident flows, routing, and handbook rendering |
+| `content/` | Source fragments for the lesson, brief, and print kit |
+| `wiki/` | Program, safety, and operating guidance |
+| Selected `docs/` manuals | Reviewed manuals published in the same guide |
+| `assets/` | Local fonts, styles, and browser code |
+| `data/snapshots/` | Public, filtered 311 and permit data |
+| Root HTML and route folders | Generated output; edit source and rebuild |
+| `tests/`, `scripts/*check*.mjs` | Unit and browser validation |
+| `.public-site/` | Ignored deployment staging area containing only the public allowlist |
 
-Open for community use. Partner conversations: [KC Digital Drive](https://www.kcdigitaldrive.org/contact/). Honest status: [Known Gaps and Roadmap](wiki/Known-Gaps-and-Roadmap.md).
+GitHub Actions refreshes snapshots and the organizer calendar daily, runs checks, builds, stages, and deploys a Pages artifact. Source fragments, local databases, test artifacts, and experimental backends are excluded from hosting. Generated HTML remains committed for review; do not edit it by hand.
 
----
+## Experimental and archived software
 
-## Relationship to Commonweave
+`core/`, `connectors/`, `ingest/`, and `identity/` contain experimental Node/SQLite, local AI, and federation work. These modules are not deployed on neighborhoodos.org and are not required by residents or facilitators. Their checks run with `npm test`. See [Developer Setup](wiki/Developer-Setup.md) and [Later, if residents want it](wiki/Later-If-Residents-Want-It.md) before using them.
 
-[Commonweave](https://commonweave.earth) is a sibling project - a framework and directory for the broader "effortless economy" movement (co-ops, land trusts, mutual aid, commons-aligned orgs). NeighborhoodOS can optionally consume the Commonweave directory to answer "who's already working on this near me?" when a pilot calls for it. It is not required. The two projects run independently.
+`wedges/home-maintenance/` is an archived West Waldo prototype. The current public program starts in Linwood.
 
----
+## Contributing
 
-## License
+Begin with a specific resident task or a documented source correction. Follow [DESIGN.md](DESIGN.md), preserve privacy boundaries, and keep sources and coverage limits beside public claims. Check the [roadmap](wiki/Known-Gaps-and-Roadmap.md) for current scope.
 
-MIT. See [`LICENSE`](./LICENSE).
+[Commonweave](https://commonweave.earth) is an independent sibling project, not a required NeighborhoodOS service.
 
-## Mirrors
+## License and source
 
-- GitHub: [simonlpaige/neighborhoodos](https://github.com/simonlpaige/neighborhoodos)
-- Codeberg: [AlphaWorm/neighborhoodos](https://codeberg.org/AlphaWorm/neighborhoodos)
-
-## Website development and release
-
-KC Digital Drive owns the program; Simon L. Paige remains site administrator and advisor. Program contact uses KCDD’s official contact page; technical issues may be sent to Simon. No repo/domain transfer is implied.
-
-The static site is generated from `scripts/pages.mjs`, the original interactive lesson/kit fragments in `content/`, `wiki/`, and sourced JSON in `data/`. Run `npm run build`, `npm run test:web`, and `npm run audit:web`. Live data: `npm run refresh:data`. Directory/calendar sources and fonts: `node scripts/refresh-sources.mjs` (not part of normal build). The nightly workflow refreshes calendar and aggregate snapshots, then builds and publishes the same static pages. No accounts or resident data storage are part of the public site.
+MIT; see [LICENSE](LICENSE). [GitHub](https://github.com/simonlpaige/neighborhoodos) is the release source. [Codeberg mirror](https://codeberg.org/AlphaWorm/neighborhoodos).

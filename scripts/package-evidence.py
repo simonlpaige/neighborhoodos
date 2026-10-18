@@ -5,8 +5,9 @@ import zipfile
 root=Path(__file__).resolve().parent.parent
 target=root/'downloads'/'neighborhoodos-evidence-pack.zip'
 target.parent.mkdir(exist_ok=True)
-docs=['Grant-Kit','Budget-and-Hardware','Evaluation-and-Metrics','Safety-Doctrine','Threat-Model','Language-Access','Roles-and-Staffing','Partner-MOU','Partners','Data-Sources','Handoff-and-Licensing','Known-Gaps-and-Roadmap']
+docs=['Principles','Grant-Kit','Budget-and-Hardware','Evaluation-and-Metrics','Safety-Doctrine','Threat-Model','Language-Access','Roles-and-Staffing','Partner-MOU','Partners','Data-Sources','Handoff-and-Licensing','Known-Gaps-and-Roadmap']
 files=[root/'wiki'/f'{name}.md' for name in docs]+[root/'data'/'neighborhoods.json']+list((root/'data'/'snapshots').glob('*.json'))
+files += [root/'docs'/name for name in ['Level-1-Safe-AI-User.md','Level-2-Problem-Framer.md','Level-3-Tool-Builder.md','Civic-Data-Ingest-Guide.md']]
 readme='''NeighborhoodOS evidence pack — October 2026 website release
 
 A KC Digital Drive program. Created by Simon L. Paige, site administrator and advisor.

@@ -10,3 +10,7 @@ digests/
 node.config.json
 artifacts/
 .public-site/
+
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
