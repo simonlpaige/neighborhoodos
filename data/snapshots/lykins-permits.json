@@ -1,6 +1,6 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-18",
+  "asOf": "2026-10-19",
   "source": "w8jz-wjgn",
   "sourceMax": "2026-10-14",
   "sourceUpdated": "2026-10-15",
@@ -9,7 +9,7 @@
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
   "total": 34,
   "issued30": 0,
-  "issued90": 6,
+  "issued90": 5,
   "byType": [
     {
       "type": "Residential",
