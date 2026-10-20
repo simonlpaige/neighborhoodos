@@ -1,15 +1,15 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-19",
+  "asOf": "2026-10-20",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-19T17:35:01.039Z",
+  "generatedAt": "2026-10-20T15:41:40.904Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1105,
+  "total": 1104,
   "requests30": 75,
-  "requests90": 283,
+  "requests90": 279,
   "counts": {
     "open": 160,
-    "resolved": 894,
+    "resolved": 893,
     "canceled": 51
   },
   "openOver60": 95,
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 203,
+      "count": 202,
       "medianDays": 1,
-      "closedSample": 173,
+      "closedSample": 172,
       "cityMedianDays": 0
     },
     {
@@ -166,7 +166,7 @@
       "count": 8,
       "medianDays": 1.5,
       "closedSample": 4,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 30
     },
     {
       "type": "Administration or Questions",
@@ -403,12 +403,12 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 635
-    },
-    {
       "name": "Other / not specified",
       "count": 204
+    },
+    {
+      "name": "Phone",
+      "count": 634
     },
     {
       "name": "Mobile app",

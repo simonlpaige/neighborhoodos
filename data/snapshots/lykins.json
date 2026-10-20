@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-19",
+  "asOf": "2026-10-20",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-19T17:35:00.628Z",
+  "generatedAt": "2026-10-20T15:41:40.196Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2158,
-  "requests30": 133,
-  "requests90": 553,
+  "total": 2154,
+  "requests30": 132,
+  "requests90": 547,
   "counts": {
-    "open": 368,
-    "resolved": 1621,
+    "open": 366,
+    "resolved": 1619,
     "canceled": 169
   },
-  "openOver60": 234,
+  "openOver60": 238,
   "types": [
     {
       "type": "Property Violations",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 330,
+      "count": 329,
       "medianDays": 0,
-      "closedSample": 286,
+      "closedSample": 285,
       "cityMedianDays": 0
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "type": "Trees City Row",
-      "count": 100,
+      "count": 98,
       "medianDays": 3,
       "closedSample": 74,
       "cityMedianDays": 4
@@ -65,10 +65,10 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 63,
+      "count": 62,
       "medianDays": 66,
-      "closedSample": 36,
-      "cityMedianDays": 29.5
+      "closedSample": 35,
+      "cityMedianDays": 30
     },
     {
       "type": "Water Service",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 774
+      "name": "Other / not specified",
+      "count": 453
     },
     {
       "name": "Phone",
-      "count": 931
+      "count": 930
     },
     {
-      "name": "Other / not specified",
-      "count": 453
+      "name": "Mobile app",
+      "count": 771
     }
   ],
   "stuck": [

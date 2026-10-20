@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-19",
+  "asOf": "2026-10-20",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-19T17:35:00.041Z",
+  "generatedAt": "2026-10-20T15:41:39.614Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3691,
+  "total": 3690,
   "requests30": 255,
-  "requests90": 867,
+  "requests90": 855,
   "counts": {
     "open": 630,
-    "resolved": 2836,
+    "resolved": 2835,
     "canceled": 225
   },
-  "openOver60": 401,
+  "openOver60": 406,
   "types": [
     {
       "type": "Property Violations",
@@ -114,9 +114,9 @@
     },
     {
       "type": "Street Maintenance",
-      "count": 49,
+      "count": 48,
       "medianDays": 3,
-      "closedSample": 38,
+      "closedSample": 37,
       "cityMedianDays": 12
     },
     {
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 30
     },
     {
       "type": "Health Code Violations",
@@ -445,12 +445,12 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 892
-    },
-    {
       "name": "Phone",
       "count": 2002
+    },
+    {
+      "name": "Mobile app",
+      "count": 891
     },
     {
       "name": "Other / not specified",
