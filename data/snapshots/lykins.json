@@ -1,38 +1,38 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-20T15:41:40.196Z",
+  "generatedAt": "2026-10-21T16:00:14.183Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2154,
-  "requests30": 132,
-  "requests90": 547,
+  "total": 2135,
+  "requests30": 128,
+  "requests90": 538,
   "counts": {
-    "open": 366,
-    "resolved": 1619,
-    "canceled": 169
+    "open": 364,
+    "resolved": 1603,
+    "canceled": 168
   },
-  "openOver60": 238,
+  "openOver60": 236,
   "types": [
     {
       "type": "Property Violations",
-      "count": 440,
-      "medianDays": 51,
-      "closedSample": 203,
+      "count": 435,
+      "medianDays": 52,
+      "closedSample": 201,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 329,
+      "count": 328,
       "medianDays": 0,
-      "closedSample": 285,
+      "closedSample": 284,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 312,
+      "count": 309,
       "medianDays": 5,
-      "closedSample": 252,
+      "closedSample": 249,
       "cityMedianDays": 5
     },
     {
@@ -44,9 +44,9 @@
     },
     {
       "type": "Trees City Row",
-      "count": 98,
+      "count": 97,
       "medianDays": 3,
-      "closedSample": 74,
+      "closedSample": 73,
       "cityMedianDays": 4
     },
     {
@@ -58,17 +58,10 @@
     },
     {
       "type": "Vehicles and Parking",
-      "count": 72,
+      "count": 71,
       "medianDays": 6,
-      "closedSample": 70,
+      "closedSample": 69,
       "cityMedianDays": 6
-    },
-    {
-      "type": "Homeless Camp",
-      "count": 62,
-      "medianDays": 66,
-      "closedSample": 35,
-      "cityMedianDays": 30
     },
     {
       "type": "Water Service",
@@ -78,10 +71,17 @@
       "cityMedianDays": 2
     },
     {
+      "type": "Homeless Camp",
+      "count": 60,
+      "medianDays": 66,
+      "closedSample": 33,
+      "cityMedianDays": 29.5
+    },
+    {
       "type": "A Pothole",
-      "count": 58,
+      "count": 57,
       "medianDays": 4,
-      "closedSample": 53,
+      "closedSample": 52,
       "cityMedianDays": 5
     },
     {
@@ -114,16 +114,16 @@
     },
     {
       "type": "Health Code Violations",
-      "count": 27,
-      "medianDays": 2.5,
-      "closedSample": 24,
+      "count": 26,
+      "medianDays": 3,
+      "closedSample": 23,
       "cityMedianDays": 2
     },
     {
       "type": "Traffic Signs and Street Markings",
-      "count": 26,
+      "count": 25,
       "medianDays": 3,
-      "closedSample": 22,
+      "closedSample": 21,
       "cityMedianDays": 3
     },
     {
@@ -134,18 +134,18 @@
       "cityMedianDays": 12
     },
     {
-      "type": "Zoning and Permits",
-      "count": 21,
-      "medianDays": 29,
-      "closedSample": 12,
-      "cityMedianDays": 23
-    },
-    {
       "type": "Land Bank Issues",
       "count": 21,
       "medianDays": 30,
       "closedSample": 14,
       "cityMedianDays": 11
+    },
+    {
+      "type": "Zoning and Permits",
+      "count": 20,
+      "medianDays": 30,
+      "closedSample": 11,
+      "cityMedianDays": 23
     },
     {
       "type": "Parks and Recreation",
@@ -156,24 +156,24 @@
     },
     {
       "type": "Streetlights",
-      "count": 18,
+      "count": 17,
       "medianDays": 1,
-      "closedSample": 18,
+      "closedSample": 17,
       "cityMedianDays": 1
-    },
-    {
-      "type": "Healthy Homes",
-      "count": 15,
-      "medianDays": 2.5,
-      "closedSample": 12,
-      "cityMedianDays": 6
     },
     {
       "type": "Dangerous Buildings",
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 32
+      "cityMedianDays": 35
+    },
+    {
+      "type": "Healthy Homes",
+      "count": 14,
+      "medianDays": 3,
+      "closedSample": 11,
+      "cityMedianDays": 6
     },
     {
       "type": "Sidewalks and Curbs",
@@ -243,7 +243,7 @@
       "count": 2,
       "medianDays": 8.5,
       "closedSample": 2,
-      "cityMedianDays": 13
+      "cityMedianDays": 12.5
     },
     {
       "type": "311 Research and Investigation",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
+      "name": "Mobile app",
+      "count": 770
+    },
+    {
       "name": "Other / not specified",
-      "count": 453
+      "count": 442
     },
     {
       "name": "Phone",
-      "count": 930
-    },
-    {
-      "name": "Mobile app",
-      "count": 771
+      "count": 923
     }
   ],
   "stuck": [

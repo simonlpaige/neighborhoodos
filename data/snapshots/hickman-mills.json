@@ -1,15 +1,15 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-20T15:41:40.904Z",
+  "generatedAt": "2026-10-21T16:00:15.010Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1104,
-  "requests30": 75,
-  "requests90": 279,
+  "total": 1102,
+  "requests30": 71,
+  "requests90": 268,
   "counts": {
     "open": 160,
-    "resolved": 893,
+    "resolved": 891,
     "canceled": 51
   },
   "openOver60": 95,
@@ -162,18 +162,18 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Homeless Camp",
-      "count": 8,
-      "medianDays": 1.5,
-      "closedSample": 4,
-      "cityMedianDays": 30
-    },
-    {
       "type": "Administration or Questions",
       "count": 8,
       "medianDays": 6,
       "closedSample": 3,
       "cityMedianDays": 3
+    },
+    {
+      "type": "Homeless Camp",
+      "count": 7,
+      "medianDays": 1,
+      "closedSample": 3,
+      "cityMedianDays": 29.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -191,10 +191,10 @@
     },
     {
       "type": "Dangerous Buildings",
-      "count": 5,
-      "medianDays": 99.5,
-      "closedSample": 4,
-      "cityMedianDays": 32
+      "count": 4,
+      "medianDays": 199,
+      "closedSample": 3,
+      "cityMedianDays": 35
     },
     {
       "type": "Brush Special Collection Appointment Request",
@@ -403,12 +403,12 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 204
-    },
-    {
       "name": "Phone",
       "count": 634
+    },
+    {
+      "name": "Other / not specified",
+      "count": 202
     },
     {
       "name": "Mobile app",

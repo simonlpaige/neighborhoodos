@@ -1,13 +1,13 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "source": "w8jz-wjgn",
   "sourceMax": "2026-10-14",
   "sourceUpdated": "2026-10-15",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 16,
+  "total": 15,
   "issued30": 0,
   "issued90": 2,
   "byType": [
@@ -17,7 +17,7 @@
     },
     {
       "type": "Commercial",
-      "count": 5
+      "count": 4
     }
   ],
   "recent": [

@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-20",
+  "asOf": "2026-10-21",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-20T15:41:39.614Z",
+  "generatedAt": "2026-10-21T16:00:13.436Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3690,
-  "requests30": 255,
-  "requests90": 855,
+  "total": 3678,
+  "requests30": 247,
+  "requests90": 840,
   "counts": {
-    "open": 630,
-    "resolved": 2835,
-    "canceled": 225
+    "open": 629,
+    "resolved": 2825,
+    "canceled": 224
   },
   "openOver60": 406,
   "types": [
     {
       "type": "Property Violations",
-      "count": 827,
+      "count": 824,
       "medianDays": 11,
-      "closedSample": 401,
+      "closedSample": 399,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 563,
+      "count": 560,
       "medianDays": 0,
-      "closedSample": 474,
+      "closedSample": 471,
       "cityMedianDays": 0
     },
     {
@@ -44,9 +44,9 @@
     },
     {
       "type": "Water Service",
-      "count": 153,
+      "count": 152,
       "medianDays": 2,
-      "closedSample": 146,
+      "closedSample": 145,
       "cityMedianDays": 2
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Trees City Row",
-      "count": 106,
+      "count": 105,
       "medianDays": 2,
-      "closedSample": 84,
+      "closedSample": 83,
       "cityMedianDays": 4
     },
     {
@@ -85,18 +85,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Recycling Cart Program",
-      "count": 94,
-      "medianDays": 11,
-      "closedSample": 75,
-      "cityMedianDays": 11
-    },
-    {
       "type": "Healthy Homes",
       "count": 94,
       "medianDays": 4.5,
       "closedSample": 74,
       "cityMedianDays": 6
+    },
+    {
+      "type": "Recycling Cart Program",
+      "count": 93,
+      "medianDays": 10.5,
+      "closedSample": 74,
+      "cityMedianDays": 11
     },
     {
       "type": "A Pothole",
@@ -113,18 +113,18 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Street Maintenance",
-      "count": 48,
-      "medianDays": 3,
-      "closedSample": 37,
-      "cityMedianDays": 12
-    },
-    {
       "type": "Land Bank Issues",
       "count": 47,
       "medianDays": 22.5,
       "closedSample": 34,
       "cityMedianDays": 11
+    },
+    {
+      "type": "Street Maintenance",
+      "count": 47,
+      "medianDays": 3,
+      "closedSample": 37,
+      "cityMedianDays": 12
     },
     {
       "type": "Zoning and Permits",
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 30
+      "cityMedianDays": 29.5
     },
     {
       "type": "Health Code Violations",
@@ -187,7 +187,7 @@
       "count": 24,
       "medianDays": 0,
       "closedSample": 7,
-      "cityMedianDays": 32
+      "cityMedianDays": 35
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -198,16 +198,16 @@
     },
     {
       "type": "Street Cleaning / Sweeping",
-      "count": 18,
-      "medianDays": 21,
-      "closedSample": 13,
+      "count": 17,
+      "medianDays": 30.5,
+      "closedSample": 12,
       "cityMedianDays": 20
     },
     {
       "type": "Traffic Calming or Concerns",
-      "count": 16,
+      "count": 15,
       "medianDays": 2,
-      "closedSample": 14,
+      "closedSample": 13,
       "cityMedianDays": 3
     },
     {
@@ -278,7 +278,7 @@
       "count": 2,
       "medianDays": 0,
       "closedSample": 2,
-      "cityMedianDays": 13
+      "cityMedianDays": 12.5
     },
     {
       "type": "Graffiti",
@@ -446,24 +446,18 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 2002
-    },
-    {
-      "name": "Mobile app",
-      "count": 891
+      "count": 1992
     },
     {
       "name": "Other / not specified",
       "count": 797
+    },
+    {
+      "name": "Mobile app",
+      "count": 889
     }
   ],
   "stuck": [
-    {
-      "issue": "Street Maintenance",
-      "block": "3300 block of Brooklyn Ave",
-      "opened": "2025-10-20",
-      "department": "PW Streets"
-    },
     {
       "issue": "Street Maintenance",
       "block": "3400 block of Highland Ave",
