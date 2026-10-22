@@ -1,19 +1,19 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "source": "w8jz-wjgn",
-  "sourceMax": "2026-10-14",
-  "sourceUpdated": "2026-10-15",
+  "sourceMax": "2026-10-22",
+  "sourceUpdated": "2026-10-22",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 72,
-  "issued30": 27,
-  "issued90": 35,
+  "total": 74,
+  "issued30": 29,
+  "issued90": 37,
   "byType": [
     {
       "type": "Residential",
-      "count": 43
+      "count": 45
     },
     {
       "type": "Commercial",
@@ -21,6 +21,20 @@
     }
   ],
   "recent": [
+    {
+      "number": "CPBR-2026-02602",
+      "issued": "2026-10-19",
+      "type": "Residential building",
+      "block": "2900 block of Park Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-02550",
+      "issued": "2026-10-16",
+      "type": "Residential building",
+      "block": "3300 block of Park Ave",
+      "status": "issued"
+    },
     {
       "number": "CPBC-2026-00957",
       "issued": "2026-10-05",
@@ -107,20 +121,6 @@
     },
     {
       "number": "CPBC-2026-00944",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Garfield Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00943",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Garfield Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00942",
       "issued": "2026-10-05",
       "type": "Commercial building",
       "block": "2000 block of Garfield Ave",

@@ -1,22 +1,22 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-21T16:00:14.183Z",
+  "generatedAt": "2026-10-22T15:55:47.211Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2135,
-  "requests30": 128,
-  "requests90": 538,
+  "total": 2130,
+  "requests30": 116,
+  "requests90": 528,
   "counts": {
-    "open": 364,
-    "resolved": 1603,
-    "canceled": 168
+    "open": 363,
+    "resolved": 1602,
+    "canceled": 165
   },
-  "openOver60": 236,
+  "openOver60": 235,
   "types": [
     {
       "type": "Property Violations",
-      "count": 435,
+      "count": 434,
       "medianDays": 52,
       "closedSample": 201,
       "cityMedianDays": 13
@@ -30,9 +30,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 309,
-      "medianDays": 5,
-      "closedSample": 249,
+      "count": 306,
+      "medianDays": 4.5,
+      "closedSample": 248,
       "cityMedianDays": 5
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 60,
+      "count": 59,
       "medianDays": 66,
       "closedSample": 33,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 29
     },
     {
       "type": "A Pothole",
@@ -166,14 +166,14 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 35
+      "cityMedianDays": 36
     },
     {
       "type": "Healthy Homes",
       "count": 14,
       "medianDays": 3,
       "closedSample": 11,
-      "cityMedianDays": 6
+      "cityMedianDays": 7
     },
     {
       "type": "Sidewalks and Curbs",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
+      "name": "Phone",
+      "count": 923
+    },
+    {
       "name": "Mobile app",
-      "count": 770
+      "count": 766
     },
     {
       "name": "Other / not specified",
-      "count": 442
-    },
-    {
-      "name": "Phone",
-      "count": 923
+      "count": 441
     }
   ],
   "stuck": [

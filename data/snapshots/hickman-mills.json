@@ -1,15 +1,15 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-21T16:00:15.010Z",
+  "generatedAt": "2026-10-22T15:55:47.578Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1102,
-  "requests30": 71,
-  "requests90": 268,
+  "total": 1100,
+  "requests30": 69,
+  "requests90": 263,
   "counts": {
     "open": 160,
-    "resolved": 891,
+    "resolved": 889,
     "canceled": 51
   },
   "openOver60": 95,
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 202,
+      "count": 201,
       "medianDays": 1,
-      "closedSample": 172,
+      "closedSample": 171,
       "cityMedianDays": 0
     },
     {
@@ -44,10 +44,10 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 55,
-      "medianDays": 5.5,
-      "closedSample": 44,
-      "cityMedianDays": 6
+      "count": 54,
+      "medianDays": 6,
+      "closedSample": 43,
+      "cityMedianDays": 7
     },
     {
       "type": "Illegal Dumping",
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 29
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -194,7 +194,7 @@
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 35
+      "cityMedianDays": 36
     },
     {
       "type": "Brush Special Collection Appointment Request",
@@ -403,12 +403,12 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 634
-    },
-    {
       "name": "Other / not specified",
       "count": 202
+    },
+    {
+      "name": "Phone",
+      "count": 632
     },
     {
       "name": "Mobile app",

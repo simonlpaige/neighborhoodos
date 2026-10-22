@@ -1,19 +1,19 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "source": "w8jz-wjgn",
-  "sourceMax": "2026-10-14",
-  "sourceUpdated": "2026-10-15",
+  "sourceMax": "2026-10-22",
+  "sourceUpdated": "2026-10-22",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 34,
-  "issued30": 0,
-  "issued90": 4,
+  "total": 36,
+  "issued30": 2,
+  "issued90": 6,
   "byType": [
     {
       "type": "Residential",
-      "count": 22
+      "count": 24
     },
     {
       "type": "Commercial",
@@ -21,6 +21,20 @@
     }
   ],
   "recent": [
+    {
+      "number": "CPBR-2026-02631",
+      "issued": "2026-10-20",
+      "type": "Residential building",
+      "block": "3200 block of E 7th St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-02278",
+      "issued": "2026-10-19",
+      "type": "Residential building",
+      "block": "600 block of Cypress Ave",
+      "status": "issued"
+    },
     {
       "number": "CPBR-2026-01931",
       "issued": "2026-08-24",
@@ -111,20 +125,6 @@
       "type": "Residential building",
       "block": "900 block of Benton Blvd",
       "status": "See city record"
-    },
-    {
-      "number": "CPBR-2026-01277",
-      "issued": "2026-05-26",
-      "type": "Residential building",
-      "block": "1000 block of Cleveland Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBR-2026-01177",
-      "issued": "2026-05-15",
-      "type": "Residential building",
-      "block": "4400 block of Cloon Ave",
-      "status": "issued"
     }
   ],
   "method": "Current city-issued permits are joined by parcel number to the city parcel polygons intersecting the dashboard’s named official neighborhood boundaries. Boundary-crossing parcels can appear in adjacent areas. Only residential and commercial building permits with an issue date are included; electrical, plumbing, mechanical, zoning, and applications without an issue date are excluded. A permit is not proof that work has begun, finished, or is currently authorized. Missing or changed parcel identifiers can prevent a match; zero matched records does not establish no construction.",
