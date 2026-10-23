@@ -1,38 +1,38 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-22",
+  "asOf": "2026-10-23",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-22T15:55:46.627Z",
+  "generatedAt": "2026-10-23T15:47:25.927Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3666,
-  "requests30": 236,
-  "requests90": 826,
+  "total": 3657,
+  "requests30": 228,
+  "requests90": 820,
   "counts": {
     "open": 629,
-    "resolved": 2813,
+    "resolved": 2804,
     "canceled": 224
   },
-  "openOver60": 406,
+  "openOver60": 409,
   "types": [
     {
       "type": "Property Violations",
-      "count": 822,
+      "count": 821,
       "medianDays": 11,
-      "closedSample": 397,
+      "closedSample": 396,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 558,
+      "count": 555,
       "medianDays": 0,
-      "closedSample": 469,
+      "closedSample": 466,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 386,
+      "count": 384,
       "medianDays": 1,
-      "closedSample": 383,
+      "closedSample": 381,
       "cityMedianDays": 1
     },
     {
@@ -51,9 +51,9 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 126,
+      "count": 124,
       "medianDays": 8,
-      "closedSample": 89,
+      "closedSample": 87,
       "cityMedianDays": 8
     },
     {
@@ -93,9 +93,9 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 92,
+      "count": 91,
       "medianDays": 10,
-      "closedSample": 73,
+      "closedSample": 72,
       "cityMedianDays": 11
     },
     {
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 29
+      "cityMedianDays": 28.5
     },
     {
       "type": "Health Code Violations",
@@ -278,7 +278,7 @@
       "count": 2,
       "medianDays": 0,
       "closedSample": 2,
-      "cityMedianDays": 12.5
+      "cityMedianDays": 12
     },
     {
       "type": "Graffiti",
@@ -446,15 +446,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 1987
-    },
-    {
-      "name": "Mobile app",
-      "count": 883
+      "count": 1979
     },
     {
       "name": "Other / not specified",
       "count": 796
+    },
+    {
+      "name": "Mobile app",
+      "count": 882
     }
   ],
   "stuck": [

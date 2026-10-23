@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-22",
+  "asOf": "2026-10-23",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-22T15:55:47.211Z",
+  "generatedAt": "2026-10-23T15:47:26.421Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2130,
-  "requests30": 116,
-  "requests90": 528,
+  "total": 2128,
+  "requests30": 114,
+  "requests90": 523,
   "counts": {
-    "open": 363,
-    "resolved": 1602,
+    "open": 362,
+    "resolved": 1601,
     "canceled": 165
   },
-  "openOver60": 235,
+  "openOver60": 237,
   "types": [
     {
       "type": "Property Violations",
@@ -37,9 +37,9 @@
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 204,
+      "count": 203,
       "medianDays": 1,
-      "closedSample": 202,
+      "closedSample": 201,
       "cityMedianDays": 1
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 78,
+      "count": 77,
       "medianDays": 10,
       "closedSample": 55,
       "cityMedianDays": 8
@@ -75,7 +75,7 @@
       "count": 59,
       "medianDays": 66,
       "closedSample": 33,
-      "cityMedianDays": 29
+      "cityMedianDays": 28.5
     },
     {
       "type": "A Pothole",
@@ -243,7 +243,7 @@
       "count": 2,
       "medianDays": 8.5,
       "closedSample": 2,
-      "cityMedianDays": 12.5
+      "cityMedianDays": 12
     },
     {
       "type": "311 Research and Investigation",
@@ -411,11 +411,11 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 923
+      "count": 922
     },
     {
       "name": "Mobile app",
-      "count": 766
+      "count": 765
     },
     {
       "name": "Other / not specified",
