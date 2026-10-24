@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-23",
+  "asOf": "2026-10-24",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-23T15:47:25.927Z",
+  "generatedAt": "2026-10-24T14:39:45.819Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3657,
-  "requests30": 228,
-  "requests90": 820,
+  "total": 3651,
+  "requests30": 221,
+  "requests90": 817,
   "counts": {
-    "open": 629,
-    "resolved": 2804,
-    "canceled": 224
+    "open": 628,
+    "resolved": 2800,
+    "canceled": 223
   },
-  "openOver60": 409,
+  "openOver60": 417,
   "types": [
     {
       "type": "Property Violations",
-      "count": 821,
+      "count": 820,
       "medianDays": 11,
       "closedSample": 396,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 555,
+      "count": 554,
       "medianDays": 0,
-      "closedSample": 466,
+      "closedSample": 465,
       "cityMedianDays": 0
     },
     {
@@ -44,9 +44,9 @@
     },
     {
       "type": "Water Service",
-      "count": 152,
+      "count": 151,
       "medianDays": 2,
-      "closedSample": 145,
+      "closedSample": 144,
       "cityMedianDays": 2
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Trees City Row",
-      "count": 105,
+      "count": 104,
       "medianDays": 2,
-      "closedSample": 83,
+      "closedSample": 82,
       "cityMedianDays": 4
     },
     {
@@ -142,9 +142,9 @@
     },
     {
       "type": "Traffic Signs and Street Markings",
-      "count": 36,
+      "count": 35,
       "medianDays": 5,
-      "closedSample": 29,
+      "closedSample": 28,
       "cityMedianDays": 3
     },
     {
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 28.5
+      "cityMedianDays": 29
     },
     {
       "type": "Health Code Violations",
@@ -169,18 +169,18 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Right-of-Way / Inspections",
-      "count": 29,
-      "medianDays": 7,
-      "closedSample": 25,
-      "cityMedianDays": 7
-    },
-    {
       "type": "Parks and Recreation",
       "count": 29,
       "medianDays": 3.5,
       "closedSample": 26,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Right-of-Way / Inspections",
+      "count": 28,
+      "medianDays": 7,
+      "closedSample": 25,
+      "cityMedianDays": 7
     },
     {
       "type": "Dangerous Buildings",
@@ -446,11 +446,11 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 1979
+      "count": 1974
     },
     {
       "name": "Other / not specified",
-      "count": 796
+      "count": 795
     },
     {
       "name": "Mobile app",
@@ -463,6 +463,12 @@
       "block": "3400 block of Highland Ave",
       "opened": "2026-07-14",
       "department": "PW Permits"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "3900 block of Flora Ave",
+      "opened": "2026-08-25",
+      "department": "PW Capital Improvements"
     }
   ],
   "privacy": "No household complaint locations, resident names, free text, coordinates, or individual animal / encampment records are published. Stuck list contains allowlisted public infrastructure only, rounded to a block.",

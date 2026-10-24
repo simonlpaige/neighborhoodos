@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-23",
+  "asOf": "2026-10-24",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-23T15:47:26.768Z",
+  "generatedAt": "2026-10-24T14:39:46.930Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 1099,
-  "requests30": 69,
+  "requests30": 63,
   "requests90": 262,
   "counts": {
     "open": 160,
     "resolved": 888,
     "canceled": 51
   },
-  "openOver60": 95,
+  "openOver60": 96,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 28.5
+      "cityMedianDays": 29
     },
     {
       "type": "Right-of-Way / Inspections",
