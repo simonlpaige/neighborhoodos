@@ -1,22 +1,22 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-24",
+  "asOf": "2026-10-25",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-24T14:39:46.327Z",
+  "generatedAt": "2026-10-25T15:00:07.540Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2125,
-  "requests30": 102,
-  "requests90": 521,
+  "total": 2119,
+  "requests30": 98,
+  "requests90": 501,
   "counts": {
     "open": 362,
-    "resolved": 1599,
-    "canceled": 164
+    "resolved": 1595,
+    "canceled": 162
   },
-  "openOver60": 239,
+  "openOver60": 240,
   "types": [
     {
       "type": "Property Violations",
-      "count": 434,
+      "count": 433,
       "medianDays": 52,
       "closedSample": 201,
       "cityMedianDays": 13
@@ -30,16 +30,16 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 306,
+      "count": 305,
       "medianDays": 4.5,
       "closedSample": 248,
       "cityMedianDays": 5
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 202,
+      "count": 201,
       "medianDays": 1,
-      "closedSample": 200,
+      "closedSample": 199,
       "cityMedianDays": 1
     },
     {
@@ -72,10 +72,10 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 59,
+      "count": 58,
       "medianDays": 66,
-      "closedSample": 33,
-      "cityMedianDays": 29
+      "closedSample": 32,
+      "cityMedianDays": 28
     },
     {
       "type": "A Pothole",
@@ -93,17 +93,17 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 46,
+      "count": 45,
       "medianDays": 6,
-      "closedSample": 39,
+      "closedSample": 38,
       "cityMedianDays": 3
     },
     {
       "type": "Solid Waste Services",
-      "count": 43,
+      "count": 42,
       "medianDays": 1,
-      "closedSample": 41,
-      "cityMedianDays": 4
+      "closedSample": 40,
+      "cityMedianDays": 5
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -166,7 +166,7 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 36
+      "cityMedianDays": 34
     },
     {
       "type": "Healthy Homes",
@@ -194,7 +194,7 @@
       "count": 11,
       "medianDays": 4,
       "closedSample": 11,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Tents/Sleeping Structures",
@@ -411,15 +411,15 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 765
-    },
-    {
-      "name": "Other / not specified",
-      "count": 441
+      "count": 763
     },
     {
       "name": "Phone",
-      "count": 919
+      "count": 917
+    },
+    {
+      "name": "Other / not specified",
+      "count": 439
     }
   ],
   "stuck": [

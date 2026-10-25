@@ -1,31 +1,31 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-24",
+  "asOf": "2026-10-25",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-24T14:39:46.930Z",
+  "generatedAt": "2026-10-25T15:00:07.982Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1099,
-  "requests30": 63,
-  "requests90": 262,
+  "total": 1095,
+  "requests30": 57,
+  "requests90": 258,
   "counts": {
     "open": 160,
-    "resolved": 888,
+    "resolved": 884,
     "canceled": 51
   },
-  "openOver60": 96,
+  "openOver60": 97,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 215,
-      "medianDays": 2,
-      "closedSample": 215,
+      "count": 214,
+      "medianDays": 1.5,
+      "closedSample": 214,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 200,
+      "count": 198,
       "medianDays": 1,
-      "closedSample": 170,
+      "closedSample": 168,
       "cityMedianDays": 0
     },
     {
@@ -82,7 +82,7 @@
       "count": 36,
       "medianDays": 7,
       "closedSample": 33,
-      "cityMedianDays": 4
+      "cityMedianDays": 5
     },
     {
       "type": "Street Maintenance",
@@ -113,18 +113,18 @@
       "cityMedianDays": 6
     },
     {
-      "type": "Food Safety",
-      "count": 13,
-      "medianDays": 3,
-      "closedSample": 13,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Recycling Cart Program",
       "count": 13,
       "medianDays": 32,
       "closedSample": 8,
       "cityMedianDays": 11
+    },
+    {
+      "type": "Food Safety",
+      "count": 12,
+      "medianDays": 3,
+      "closedSample": 12,
+      "cityMedianDays": 2
     },
     {
       "type": "Health Code Violations",
@@ -173,14 +173,14 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 29
+      "cityMedianDays": 28
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Street Cleaning / Sweeping",
@@ -194,7 +194,7 @@
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 36
+      "cityMedianDays": 34
     },
     {
       "type": "Brush Special Collection Appointment Request",
@@ -404,7 +404,7 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 632
+      "count": 628
     },
     {
       "name": "Other / not specified",
