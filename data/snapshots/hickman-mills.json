@@ -1,12 +1,12 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-25T15:00:07.982Z",
+  "generatedAt": "2026-10-26T17:28:22.220Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 1095,
-  "requests30": 57,
-  "requests90": 258,
+  "requests30": 56,
+  "requests90": 249,
   "counts": {
     "open": 160,
     "resolved": 884,
@@ -173,14 +173,14 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 28
+      "cityMedianDays": 27.5
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 7
     },
     {
       "type": "Street Cleaning / Sweeping",

@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-25T15:00:07.082Z",
+  "generatedAt": "2026-10-26T17:28:21.213Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3643,
-  "requests30": 206,
-  "requests90": 806,
+  "total": 3642,
+  "requests30": 199,
+  "requests90": 781,
   "counts": {
     "open": 628,
-    "resolved": 2793,
+    "resolved": 2792,
     "canceled": 222
   },
-  "openOver60": 422,
+  "openOver60": 429,
   "types": [
     {
       "type": "Property Violations",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 552,
+      "count": 551,
       "medianDays": 0,
-      "closedSample": 463,
+      "closedSample": 462,
       "cityMedianDays": 0
     },
     {
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 28
+      "cityMedianDays": 27.5
     },
     {
       "type": "Health Code Violations",
@@ -180,7 +180,7 @@
       "count": 28,
       "medianDays": 7,
       "closedSample": 25,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 7
     },
     {
       "type": "Dangerous Buildings",
@@ -446,7 +446,7 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 1969
+      "count": 1968
     },
     {
       "name": "Mobile app",

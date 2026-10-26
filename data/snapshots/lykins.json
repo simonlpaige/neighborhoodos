@@ -1,15 +1,15 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-25T15:00:07.540Z",
+  "generatedAt": "2026-10-26T17:28:21.768Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2119,
-  "requests30": 98,
-  "requests90": 501,
+  "total": 2118,
+  "requests30": 97,
+  "requests90": 494,
   "counts": {
     "open": 362,
-    "resolved": 1595,
+    "resolved": 1594,
     "canceled": 162
   },
   "openOver60": 240,
@@ -72,10 +72,10 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 58,
+      "count": 57,
       "medianDays": 66,
-      "closedSample": 32,
-      "cityMedianDays": 28
+      "closedSample": 31,
+      "cityMedianDays": 27.5
     },
     {
       "type": "A Pothole",
@@ -194,7 +194,7 @@
       "count": 11,
       "medianDays": 4,
       "closedSample": 11,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 7
     },
     {
       "type": "Tents/Sleeping Structures",
@@ -411,7 +411,7 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 763
+      "count": 762
     },
     {
       "name": "Phone",
