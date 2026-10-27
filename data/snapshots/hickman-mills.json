@@ -1,53 +1,60 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-26",
-  "sourceMax": "2026-10-19",
-  "generatedAt": "2026-10-26T17:28:22.220Z",
+  "asOf": "2026-10-27",
+  "sourceMax": "2026-10-26",
+  "generatedAt": "2026-10-27T16:44:33.191Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1095,
-  "requests30": 56,
-  "requests90": 249,
+  "total": 1118,
+  "requests30": 79,
+  "requests90": 267,
   "counts": {
-    "open": 160,
-    "resolved": 884,
+    "open": 166,
+    "resolved": 901,
     "canceled": 51
   },
-  "openOver60": 97,
+  "openOver60": 98,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 214,
+      "count": 218,
       "medianDays": 1.5,
       "closedSample": 214,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 198,
+      "count": 200,
       "medianDays": 1,
       "closedSample": 168,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 151,
+      "count": 153,
       "medianDays": 6.5,
       "closedSample": 52,
       "cityMedianDays": 13
     },
     {
       "type": "A Pothole",
-      "count": 61,
+      "count": 62,
       "medianDays": 6,
-      "closedSample": 59,
+      "closedSample": 60,
       "cityMedianDays": 5
     },
     {
       "type": "Healthy Homes",
-      "count": 54,
-      "medianDays": 6,
-      "closedSample": 43,
+      "count": 56,
+      "medianDays": 7,
+      "closedSample": 48,
       "cityMedianDays": 7
+    },
+    {
+      "type": "Water Service",
+      "count": 48,
+      "medianDays": 2,
+      "closedSample": 46,
+      "cityMedianDays": 2
     },
     {
       "type": "Illegal Dumping",
@@ -55,13 +62,6 @@
       "medianDays": 4,
       "closedSample": 43,
       "cityMedianDays": 5
-    },
-    {
-      "type": "Water Service",
-      "count": 47,
-      "medianDays": 2,
-      "closedSample": 45,
-      "cityMedianDays": 2
     },
     {
       "type": "Sewer and Stormwater",
@@ -72,35 +72,35 @@
     },
     {
       "type": "Trees City Row",
-      "count": 36,
+      "count": 38,
       "medianDays": 0,
       "closedSample": 27,
       "cityMedianDays": 4
     },
     {
       "type": "Solid Waste Services",
-      "count": 36,
+      "count": 37,
       "medianDays": 7,
-      "closedSample": 33,
+      "closedSample": 34,
       "cityMedianDays": 5
     },
     {
       "type": "Street Maintenance",
-      "count": 31,
+      "count": 33,
       "medianDays": 1,
-      "closedSample": 17,
-      "cityMedianDays": 12
+      "closedSample": 18,
+      "cityMedianDays": 13
     },
     {
       "type": "Trash Cart Program",
       "count": 18,
       "medianDays": 7,
-      "closedSample": 14,
-      "cityMedianDays": 8
+      "closedSample": 15,
+      "cityMedianDays": 9
     },
     {
       "type": "Zoning and Permits",
-      "count": 14,
+      "count": 15,
       "medianDays": 17,
       "closedSample": 9,
       "cityMedianDays": 23
@@ -115,9 +115,16 @@
     {
       "type": "Recycling Cart Program",
       "count": 13,
-      "medianDays": 32,
-      "closedSample": 8,
-      "cityMedianDays": 11
+      "medianDays": 31,
+      "closedSample": 10,
+      "cityMedianDays": 12
+    },
+    {
+      "type": "Traffic Signs and Street Markings",
+      "count": 12,
+      "medianDays": 3.5,
+      "closedSample": 12,
+      "cityMedianDays": 3
     },
     {
       "type": "Food Safety",
@@ -134,11 +141,11 @@
       "cityMedianDays": 2
     },
     {
-      "type": "Traffic Signs and Street Markings",
+      "type": "Traffic Signals",
       "count": 11,
-      "medianDays": 4,
+      "medianDays": 1,
       "closedSample": 11,
-      "cityMedianDays": 3
+      "cityMedianDays": 1
     },
     {
       "type": "Streetlights",
@@ -155,13 +162,6 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Traffic Signals",
-      "count": 9,
-      "medianDays": 1,
-      "closedSample": 9,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Administration or Questions",
       "count": 8,
       "medianDays": 6,
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 27.5
+      "cityMedianDays": 27
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -185,9 +185,9 @@
     {
       "type": "Street Cleaning / Sweeping",
       "count": 7,
-      "medianDays": 9,
-      "closedSample": 5,
-      "cityMedianDays": 20
+      "medianDays": 14,
+      "closedSample": 6,
+      "cityMedianDays": 25
     },
     {
       "type": "Dangerous Buildings",
@@ -195,6 +195,13 @@
       "medianDays": 199,
       "closedSample": 3,
       "cityMedianDays": 34
+    },
+    {
+      "type": "Leaf and Brush Curbside Pickup",
+      "count": 4,
+      "medianDays": 1,
+      "closedSample": 3,
+      "cityMedianDays": 1
     },
     {
       "type": "Brush Special Collection Appointment Request",
@@ -230,13 +237,6 @@
       "medianDays": 3,
       "closedSample": 3,
       "cityMedianDays": 5
-    },
-    {
-      "type": "Leaf and Brush Curbside Pickup",
-      "count": 2,
-      "medianDays": 1,
-      "closedSample": 2,
-      "cityMedianDays": 1
     },
     {
       "type": "Snow",
@@ -391,28 +391,28 @@
     },
     {
       "month": "2026-10",
-      "count": 34,
+      "count": 57,
       "types": {
-        "Trash  Recycling  Bulky Services": 4,
-        "Animal Services": 11,
-        "Property Violations": 3,
-        "A Pothole": 1,
-        "Healthy Homes": 4
+        "Trash  Recycling  Bulky Services": 8,
+        "Animal Services": 13,
+        "Property Violations": 5,
+        "A Pothole": 2,
+        "Healthy Homes": 6
       }
     }
   ],
   "channels": [
     {
       "name": "Phone",
-      "count": 628
+      "count": 638
     },
     {
       "name": "Other / not specified",
-      "count": 201
+      "count": 207
     },
     {
       "name": "Mobile app",
-      "count": 266
+      "count": 273
     }
   ],
   "stuck": [
