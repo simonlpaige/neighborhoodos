@@ -1,13 +1,13 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-27",
+  "asOf": "2026-10-28",
   "source": "w8jz-wjgn",
   "sourceMax": "2026-10-23",
   "sourceUpdated": "2026-10-22",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 36,
+  "total": 35,
   "issued30": 2,
   "issued90": 6,
   "byType": [
@@ -17,7 +17,7 @@
     },
     {
       "type": "Commercial",
-      "count": 12
+      "count": 11
     }
   ],
   "recent": [

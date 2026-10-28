@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-27",
+  "asOf": "2026-10-28",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-27T16:44:32.320Z",
+  "generatedAt": "2026-10-28T17:12:57.933Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3694,
-  "requests30": 250,
-  "requests90": 806,
+  "total": 3677,
+  "requests30": 238,
+  "requests90": 795,
   "counts": {
-    "open": 610,
-    "resolved": 2858,
-    "canceled": 226
+    "open": 608,
+    "resolved": 2844,
+    "canceled": 225
   },
-  "openOver60": 435,
+  "openOver60": 433,
   "types": [
     {
       "type": "Property Violations",
-      "count": 829,
+      "count": 827,
       "medianDays": 11,
-      "closedSample": 402,
+      "closedSample": 401,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 557,
+      "count": 553,
       "medianDays": 0,
-      "closedSample": 464,
+      "closedSample": 461,
       "cityMedianDays": 0
     },
     {
@@ -44,23 +44,23 @@
     },
     {
       "type": "Water Service",
-      "count": 150,
+      "count": 149,
       "medianDays": 2,
-      "closedSample": 144,
+      "closedSample": 143,
       "cityMedianDays": 2
     },
     {
       "type": "Trash Cart Program",
-      "count": 126,
+      "count": 122,
       "medianDays": 8,
-      "closedSample": 96,
+      "closedSample": 92,
       "cityMedianDays": 9
     },
     {
       "type": "Vehicles and Parking",
-      "count": 106,
+      "count": 105,
       "medianDays": 6,
-      "closedSample": 103,
+      "closedSample": 102,
       "cityMedianDays": 6
     },
     {
@@ -86,16 +86,16 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 95,
-      "medianDays": 5.5,
-      "closedSample": 80,
+      "count": 94,
+      "medianDays": 6,
+      "closedSample": 79,
       "cityMedianDays": 7
     },
     {
       "type": "Recycling Cart Program",
-      "count": 91,
-      "medianDays": 11,
-      "closedSample": 77,
+      "count": 89,
+      "medianDays": 10,
+      "closedSample": 75,
       "cityMedianDays": 12
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "type": "Zoning and Permits",
-      "count": 44,
+      "count": 43,
       "medianDays": 30,
       "closedSample": 24,
       "cityMedianDays": 23
@@ -152,14 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 27
-    },
-    {
-      "type": "Health Code Violations",
-      "count": 31,
-      "medianDays": 2.5,
-      "closedSample": 30,
-      "cityMedianDays": 2
+      "cityMedianDays": 21
     },
     {
       "type": "Streetlights",
@@ -167,6 +160,13 @@
       "medianDays": 1,
       "closedSample": 31,
       "cityMedianDays": 1
+    },
+    {
+      "type": "Health Code Violations",
+      "count": 30,
+      "medianDays": 3,
+      "closedSample": 29,
+      "cityMedianDays": 2
     },
     {
       "type": "Parks and Recreation",
@@ -187,7 +187,7 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 34
+      "cityMedianDays": 35
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -446,15 +446,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 1997
+      "count": 1985
     },
     {
       "name": "Mobile app",
-      "count": 899
+      "count": 898
     },
     {
       "name": "Other / not specified",
-      "count": 798
+      "count": 794
     }
   ],
   "stuck": [

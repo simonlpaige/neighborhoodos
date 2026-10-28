@@ -1,31 +1,31 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-27",
+  "asOf": "2026-10-28",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-27T16:44:33.191Z",
+  "generatedAt": "2026-10-28T17:12:59.124Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1118,
-  "requests30": 79,
-  "requests90": 267,
+  "total": 1115,
+  "requests30": 70,
+  "requests90": 266,
   "counts": {
     "open": 166,
-    "resolved": 901,
+    "resolved": 898,
     "canceled": 51
   },
   "openOver60": 98,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 218,
+      "count": 216,
       "medianDays": 1.5,
-      "closedSample": 214,
+      "closedSample": 212,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 200,
+      "count": 199,
       "medianDays": 1,
-      "closedSample": 168,
+      "closedSample": 167,
       "cityMedianDays": 0
     },
     {
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 27
+      "cityMedianDays": 21
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -194,7 +194,7 @@
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 34
+      "cityMedianDays": 35
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -404,11 +404,11 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 638
+      "count": 636
     },
     {
       "name": "Other / not specified",
-      "count": 207
+      "count": 206
     },
     {
       "name": "Mobile app",
