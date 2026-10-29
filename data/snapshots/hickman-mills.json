@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-28",
+  "asOf": "2026-10-29",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-28T17:12:59.124Z",
+  "generatedAt": "2026-10-29T17:28:24.096Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1115,
-  "requests30": 70,
-  "requests90": 266,
+  "total": 1114,
+  "requests30": 64,
+  "requests90": 261,
   "counts": {
     "open": 166,
-    "resolved": 898,
+    "resolved": 897,
     "canceled": 51
   },
-  "openOver60": 98,
+  "openOver60": 99,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -134,13 +134,6 @@
       "cityMedianDays": 2
     },
     {
-      "type": "Health Code Violations",
-      "count": 11,
-      "medianDays": 3,
-      "closedSample": 11,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Traffic Signals",
       "count": 11,
       "medianDays": 1,
@@ -160,6 +153,13 @@
       "medianDays": 3,
       "closedSample": 9,
       "cityMedianDays": 3
+    },
+    {
+      "type": "Health Code Violations",
+      "count": 10,
+      "medianDays": 2.5,
+      "closedSample": 10,
+      "cityMedianDays": 2
     },
     {
       "type": "Administration or Questions",
@@ -187,14 +187,14 @@
       "count": 7,
       "medianDays": 14,
       "closedSample": 6,
-      "cityMedianDays": 25
+      "cityMedianDays": 25.5
     },
     {
       "type": "Dangerous Buildings",
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 35
+      "cityMedianDays": 34
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -404,7 +404,7 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 636
+      "count": 635
     },
     {
       "name": "Other / not specified",

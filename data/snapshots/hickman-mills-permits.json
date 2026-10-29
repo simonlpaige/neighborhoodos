@@ -1,19 +1,19 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-28",
+  "asOf": "2026-10-29",
   "source": "w8jz-wjgn",
-  "sourceMax": "2026-10-23",
-  "sourceUpdated": "2026-10-22",
+  "sourceMax": "2026-10-29",
+  "sourceUpdated": "2026-10-29",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 15,
-  "issued30": 0,
-  "issued90": 2,
+  "total": 18,
+  "issued30": 3,
+  "issued90": 5,
   "byType": [
     {
       "type": "Residential",
-      "count": 11
+      "count": 14
     },
     {
       "type": "Commercial",
@@ -21,6 +21,27 @@
     }
   ],
   "recent": [
+    {
+      "number": "CPBR-2026-02710",
+      "issued": "2026-10-28",
+      "type": "Residential building",
+      "block": "11400 block of Hickman Mills Dr",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-02671",
+      "issued": "2026-10-26",
+      "type": "Residential building",
+      "block": "11300 block of Lister Dr",
+      "status": "issued"
+    },
+    {
+      "number": "CPBR-2026-02663",
+      "issued": "2026-10-23",
+      "type": "Residential building",
+      "block": "11400 block of Hickman Mills Dr",
+      "status": "issued"
+    },
     {
       "number": "CPBR-2026-01901",
       "issued": "2026-08-04",
@@ -104,27 +125,6 @@
       "type": "Residential building",
       "block": "6300 block of Longview Rd",
       "status": "issued"
-    },
-    {
-      "number": "CPBR-2026-00196",
-      "issued": "2026-01-27",
-      "type": "Residential building",
-      "block": "6300 block of E Red Bridge Rd",
-      "status": "issued"
-    },
-    {
-      "number": "CPBR-2022-02825",
-      "issued": "2025-12-22",
-      "type": "Residential building",
-      "block": "8200 block of E 104TH Ter",
-      "status": "issued"
-    },
-    {
-      "number": "CPBR-2025-02687",
-      "issued": "2025-11-17",
-      "type": "Residential building",
-      "block": "11600 block of Blue Ridge Blvd",
-      "status": "closed"
     }
   ],
   "method": "Current city-issued permits are joined by parcel number to the city parcel polygons intersecting the dashboard’s named official neighborhood boundaries. Boundary-crossing parcels can appear in adjacent areas. Only residential and commercial building permits with an issue date are included; electrical, plumbing, mechanical, zoning, and applications without an issue date are excluded. A permit is not proof that work has begun, finished, or is currently authorized. Missing or changed parcel identifiers can prevent a match; zero matched records does not establish no construction.",

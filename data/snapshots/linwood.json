@@ -1,45 +1,45 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-28",
+  "asOf": "2026-10-29",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-28T17:12:57.933Z",
+  "generatedAt": "2026-10-29T17:28:23.355Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3677,
-  "requests30": 238,
-  "requests90": 795,
+  "total": 3657,
+  "requests30": 216,
+  "requests90": 783,
   "counts": {
     "open": 608,
-    "resolved": 2844,
-    "canceled": 225
+    "resolved": 2825,
+    "canceled": 224
   },
-  "openOver60": 433,
+  "openOver60": 434,
   "types": [
     {
       "type": "Property Violations",
-      "count": 827,
+      "count": 826,
       "medianDays": 11,
-      "closedSample": 401,
+      "closedSample": 400,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 553,
+      "count": 545,
       "medianDays": 0,
-      "closedSample": 461,
+      "closedSample": 453,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 390,
+      "count": 389,
       "medianDays": 1,
-      "closedSample": 387,
+      "closedSample": 386,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 387,
+      "count": 384,
       "medianDays": 6,
-      "closedSample": 312,
+      "closedSample": 310,
       "cityMedianDays": 5
     },
     {
@@ -64,18 +64,18 @@
       "cityMedianDays": 6
     },
     {
-      "type": "Solid Waste Services",
-      "count": 104,
-      "medianDays": 1.5,
-      "closedSample": 100,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Trees City Row",
       "count": 104,
       "medianDays": 2,
       "closedSample": 83,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Solid Waste Services",
+      "count": 103,
+      "medianDays": 2,
+      "closedSample": 99,
+      "cityMedianDays": 5
     },
     {
       "type": "Sewer and Stormwater",
@@ -128,9 +128,9 @@
     },
     {
       "type": "Zoning and Permits",
-      "count": 43,
+      "count": 42,
       "medianDays": 30,
-      "closedSample": 24,
+      "closedSample": 23,
       "cityMedianDays": 23
     },
     {
@@ -155,20 +155,6 @@
       "cityMedianDays": 21
     },
     {
-      "type": "Streetlights",
-      "count": 31,
-      "medianDays": 1,
-      "closedSample": 31,
-      "cityMedianDays": 1
-    },
-    {
-      "type": "Health Code Violations",
-      "count": 30,
-      "medianDays": 3,
-      "closedSample": 29,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Parks and Recreation",
       "count": 30,
       "medianDays": 3,
@@ -176,10 +162,24 @@
       "cityMedianDays": 4
     },
     {
-      "type": "Right-of-Way / Inspections",
+      "type": "Streetlights",
+      "count": 30,
+      "medianDays": 1,
+      "closedSample": 30,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Health Code Violations",
       "count": 29,
-      "medianDays": 6.5,
-      "closedSample": 26,
+      "medianDays": 4.5,
+      "closedSample": 28,
+      "cityMedianDays": 2
+    },
+    {
+      "type": "Right-of-Way / Inspections",
+      "count": 27,
+      "medianDays": 6,
+      "closedSample": 24,
       "cityMedianDays": 7
     },
     {
@@ -187,7 +187,7 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 35
+      "cityMedianDays": 34
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -201,7 +201,7 @@
       "count": 18,
       "medianDays": 46,
       "closedSample": 15,
-      "cityMedianDays": 25
+      "cityMedianDays": 25.5
     },
     {
       "type": "Food Safety",
@@ -219,9 +219,9 @@
     },
     {
       "type": "311 Research and Investigation",
-      "count": 11,
+      "count": 10,
       "medianDays": 1,
-      "closedSample": 10,
+      "closedSample": 9,
       "cityMedianDays": 1
     },
     {
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 1985
+      "name": "Mobile app",
+      "count": 887
     },
     {
-      "name": "Mobile app",
-      "count": 898
+      "name": "Phone",
+      "count": 1978
     },
     {
       "name": "Other / not specified",
-      "count": 794
+      "count": 792
     }
   ],
   "stuck": [

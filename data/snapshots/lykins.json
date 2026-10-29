@@ -1,24 +1,24 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-28",
+  "asOf": "2026-10-29",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-28T17:12:58.516Z",
+  "generatedAt": "2026-10-29T17:28:23.782Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2150,
-  "requests30": 134,
-  "requests90": 507,
+  "total": 2146,
+  "requests30": 129,
+  "requests90": 499,
   "counts": {
     "open": 375,
-    "resolved": 1616,
-    "canceled": 159
+    "resolved": 1615,
+    "canceled": 156
   },
   "openOver60": 239,
   "types": [
     {
       "type": "Property Violations",
-      "count": 433,
-      "medianDays": 52,
-      "closedSample": 199,
+      "count": 430,
+      "medianDays": 54,
+      "closedSample": 198,
       "cityMedianDays": 13
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 308,
+      "count": 307,
       "medianDays": 5,
       "closedSample": 252,
       "cityMedianDays": 5
@@ -173,7 +173,7 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 35
+      "cityMedianDays": 34
     },
     {
       "type": "Sidewalks and Curbs",
@@ -208,7 +208,7 @@
       "count": 10,
       "medianDays": 21.5,
       "closedSample": 8,
-      "cityMedianDays": 25
+      "cityMedianDays": 25.5
     },
     {
       "type": "Food Safety",
@@ -411,15 +411,15 @@
   "channels": [
     {
       "name": "Other / not specified",
-      "count": 443
-    },
-    {
-      "name": "Mobile app",
-      "count": 774
+      "count": 441
     },
     {
       "name": "Phone",
       "count": 933
+    },
+    {
+      "name": "Mobile app",
+      "count": 772
     }
   ],
   "stuck": [
