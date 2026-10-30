@@ -1,15 +1,15 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-29",
+  "asOf": "2026-10-30",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-29T17:28:24.096Z",
+  "generatedAt": "2026-10-30T17:03:39.897Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1114,
-  "requests30": 64,
-  "requests90": 261,
+  "total": 1113,
+  "requests30": 57,
+  "requests90": 259,
   "counts": {
     "open": 166,
-    "resolved": 897,
+    "resolved": 896,
     "canceled": 51
   },
   "openOver60": 99,
@@ -71,18 +71,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Trees City Row",
-      "count": 38,
-      "medianDays": 0,
-      "closedSample": 27,
-      "cityMedianDays": 4
-    },
-    {
       "type": "Solid Waste Services",
       "count": 37,
       "medianDays": 7,
       "closedSample": 34,
       "cityMedianDays": 5
+    },
+    {
+      "type": "Trees City Row",
+      "count": 37,
+      "medianDays": 0,
+      "closedSample": 26,
+      "cityMedianDays": 4
     },
     {
       "type": "Street Maintenance",
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 21
+      "cityMedianDays": 20.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -187,14 +187,14 @@
       "count": 7,
       "medianDays": 14,
       "closedSample": 6,
-      "cityMedianDays": 25.5
+      "cityMedianDays": 25
     },
     {
       "type": "Dangerous Buildings",
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 34
+      "cityMedianDays": 32
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -404,7 +404,7 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 635
+      "count": 634
     },
     {
       "name": "Other / not specified",

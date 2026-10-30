@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-29",
+  "asOf": "2026-10-30",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-29T17:28:23.355Z",
+  "generatedAt": "2026-10-30T17:03:38.642Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3657,
-  "requests30": 216,
-  "requests90": 783,
+  "total": 3639,
+  "requests30": 195,
+  "requests90": 778,
   "counts": {
-    "open": 608,
-    "resolved": 2825,
+    "open": 606,
+    "resolved": 2809,
     "canceled": 224
   },
-  "openOver60": 434,
+  "openOver60": 439,
   "types": [
     {
       "type": "Property Violations",
@@ -23,37 +23,37 @@
     },
     {
       "type": "Animal Services",
-      "count": 545,
+      "count": 539,
       "medianDays": 0,
-      "closedSample": 453,
+      "closedSample": 447,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 389,
+      "count": 386,
       "medianDays": 1,
-      "closedSample": 386,
+      "closedSample": 383,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 384,
+      "count": 382,
       "medianDays": 6,
-      "closedSample": 310,
+      "closedSample": 308,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 149,
+      "count": 148,
       "medianDays": 2,
       "closedSample": 143,
       "cityMedianDays": 2
     },
     {
       "type": "Trash Cart Program",
-      "count": 122,
+      "count": 121,
       "medianDays": 8,
-      "closedSample": 92,
+      "closedSample": 91,
       "cityMedianDays": 9
     },
     {
@@ -72,9 +72,9 @@
     },
     {
       "type": "Solid Waste Services",
-      "count": 103,
+      "count": 102,
       "medianDays": 2,
-      "closedSample": 99,
+      "closedSample": 98,
       "cityMedianDays": 5
     },
     {
@@ -93,9 +93,9 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 89,
+      "count": 88,
       "medianDays": 10,
-      "closedSample": 75,
+      "closedSample": 74,
       "cityMedianDays": 12
     },
     {
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 21
+      "cityMedianDays": 20.5
     },
     {
       "type": "Parks and Recreation",
@@ -177,9 +177,9 @@
     },
     {
       "type": "Right-of-Way / Inspections",
-      "count": 27,
+      "count": 26,
       "medianDays": 6,
-      "closedSample": 24,
+      "closedSample": 23,
       "cityMedianDays": 7
     },
     {
@@ -187,7 +187,7 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 34
+      "cityMedianDays": 32
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -201,7 +201,7 @@
       "count": 18,
       "medianDays": 46,
       "closedSample": 15,
-      "cityMedianDays": 25.5
+      "cityMedianDays": 25
     },
     {
       "type": "Food Safety",
@@ -218,18 +218,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "311 Research and Investigation",
-      "count": 10,
-      "medianDays": 1,
-      "closedSample": 9,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Administration or Questions",
       "count": 10,
       "medianDays": 7,
       "closedSample": 3,
       "cityMedianDays": 3
+    },
+    {
+      "type": "311 Research and Investigation",
+      "count": 9,
+      "medianDays": 1,
+      "closedSample": 8,
+      "cityMedianDays": 1
     },
     {
       "type": "Snow",
@@ -274,13 +274,6 @@
       "cityMedianDays": 12
     },
     {
-      "type": "Graffiti",
-      "count": 2,
-      "medianDays": null,
-      "closedSample": 0,
-      "cityMedianDays": 22
-    },
-    {
       "type": "Bridge",
       "count": 2,
       "medianDays": 0,
@@ -307,6 +300,13 @@
       "medianDays": null,
       "closedSample": 0,
       "cityMedianDays": null
+    },
+    {
+      "type": "Graffiti",
+      "count": 1,
+      "medianDays": null,
+      "closedSample": 0,
+      "cityMedianDays": 22
     }
   ],
   "trend": [
@@ -446,15 +446,15 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 887
+      "count": 883
     },
     {
       "name": "Phone",
-      "count": 1978
+      "count": 1965
     },
     {
       "name": "Other / not specified",
-      "count": 792
+      "count": 791
     }
   ],
   "stuck": [

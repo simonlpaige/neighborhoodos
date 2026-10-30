@@ -1,31 +1,31 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-29",
+  "asOf": "2026-10-30",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-29T17:28:23.782Z",
+  "generatedAt": "2026-10-30T17:03:39.460Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2146,
-  "requests30": 129,
-  "requests90": 499,
+  "total": 2135,
+  "requests30": 125,
+  "requests90": 495,
   "counts": {
     "open": 375,
-    "resolved": 1615,
+    "resolved": 1604,
     "canceled": 156
   },
-  "openOver60": 239,
+  "openOver60": 246,
   "types": [
     {
       "type": "Property Violations",
-      "count": 430,
-      "medianDays": 54,
-      "closedSample": 198,
+      "count": 428,
+      "medianDays": 51.5,
+      "closedSample": 196,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 331,
+      "count": 329,
       "medianDays": 0,
-      "closedSample": 282,
+      "closedSample": 280,
       "cityMedianDays": 0
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 205,
+      "count": 199,
       "medianDays": 1,
-      "closedSample": 202,
+      "closedSample": 196,
       "cityMedianDays": 1
     },
     {
@@ -65,9 +65,9 @@
     },
     {
       "type": "Water Service",
-      "count": 63,
+      "count": 62,
       "medianDays": 2,
-      "closedSample": 55,
+      "closedSample": 54,
       "cityMedianDays": 2
     },
     {
@@ -82,7 +82,7 @@
       "count": 56,
       "medianDays": 66,
       "closedSample": 30,
-      "cityMedianDays": 21
+      "cityMedianDays": 20.5
     },
     {
       "type": "Recycling Cart Program",
@@ -173,7 +173,7 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 34
+      "cityMedianDays": 32
     },
     {
       "type": "Sidewalks and Curbs",
@@ -208,7 +208,7 @@
       "count": 10,
       "medianDays": 21.5,
       "closedSample": 8,
-      "cityMedianDays": 25.5
+      "cityMedianDays": 25
     },
     {
       "type": "Food Safety",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 441
-    },
-    {
       "name": "Phone",
-      "count": 933
+      "count": 930
     },
     {
       "name": "Mobile app",
-      "count": 772
+      "count": 767
+    },
+    {
+      "name": "Other / not specified",
+      "count": 438
     }
   ],
   "stuck": [
