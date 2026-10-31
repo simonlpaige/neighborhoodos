@@ -1,15 +1,15 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-30",
+  "asOf": "2026-10-31",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-30T17:03:39.897Z",
+  "generatedAt": "2026-10-31T16:11:19.302Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1113,
-  "requests30": 57,
+  "total": 1112,
+  "requests30": 55,
   "requests90": 259,
   "counts": {
     "open": 166,
-    "resolved": 896,
+    "resolved": 895,
     "canceled": 51
   },
   "openOver60": 99,
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 199,
+      "count": 198,
       "medianDays": 1,
-      "closedSample": 167,
+      "closedSample": 166,
       "cityMedianDays": 0
     },
     {
@@ -103,7 +103,7 @@
       "count": 15,
       "medianDays": 17,
       "closedSample": 9,
-      "cityMedianDays": 23
+      "cityMedianDays": 22
     },
     {
       "type": "Vehicles and Parking",
@@ -173,14 +173,14 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 20.5
+      "cityMedianDays": 20
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Street Cleaning / Sweeping",
@@ -257,7 +257,7 @@
       "count": 1,
       "medianDays": null,
       "closedSample": 0,
-      "cityMedianDays": 22
+      "cityMedianDays": 17.5
     },
     {
       "type": "Tents/Sleeping Structures",
@@ -403,12 +403,12 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 634
-    },
-    {
       "name": "Other / not specified",
       "count": 206
+    },
+    {
+      "name": "Phone",
+      "count": 633
     },
     {
       "name": "Mobile app",

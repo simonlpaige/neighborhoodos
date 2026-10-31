@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-30",
+  "asOf": "2026-10-31",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-30T17:03:39.460Z",
+  "generatedAt": "2026-10-31T16:11:18.611Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2135,
-  "requests30": 125,
-  "requests90": 495,
+  "total": 2126,
+  "requests30": 118,
+  "requests90": 494,
   "counts": {
     "open": 375,
-    "resolved": 1604,
-    "canceled": 156
+    "resolved": 1596,
+    "canceled": 155
   },
-  "openOver60": 246,
+  "openOver60": 250,
   "types": [
     {
       "type": "Property Violations",
@@ -23,23 +23,23 @@
     },
     {
       "type": "Animal Services",
-      "count": 329,
+      "count": 328,
       "medianDays": 0,
-      "closedSample": 280,
+      "closedSample": 279,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 307,
+      "count": 305,
       "medianDays": 5,
-      "closedSample": 252,
+      "closedSample": 251,
       "cityMedianDays": 5
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 199,
+      "count": 195,
       "medianDays": 1,
-      "closedSample": 196,
+      "closedSample": 192,
       "cityMedianDays": 1
     },
     {
@@ -51,9 +51,9 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 80,
+      "count": 79,
       "medianDays": 10,
-      "closedSample": 60,
+      "closedSample": 59,
       "cityMedianDays": 9
     },
     {
@@ -72,9 +72,9 @@
     },
     {
       "type": "A Pothole",
-      "count": 60,
-      "medianDays": 4,
-      "closedSample": 53,
+      "count": 59,
+      "medianDays": 3.5,
+      "closedSample": 52,
       "cityMedianDays": 5
     },
     {
@@ -82,7 +82,7 @@
       "count": 56,
       "medianDays": 66,
       "closedSample": 30,
-      "cityMedianDays": 20.5
+      "cityMedianDays": 20
     },
     {
       "type": "Recycling Cart Program",
@@ -145,7 +145,7 @@
       "count": 20,
       "medianDays": 30,
       "closedSample": 11,
-      "cityMedianDays": 23
+      "cityMedianDays": 22
     },
     {
       "type": "Parks and Recreation",
@@ -194,7 +194,7 @@
       "count": 11,
       "medianDays": 4,
       "closedSample": 11,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Tents/Sleeping Structures",
@@ -257,7 +257,7 @@
       "count": 1,
       "medianDays": null,
       "closedSample": 0,
-      "cityMedianDays": 22
+      "cityMedianDays": 17.5
     },
     {
       "type": "Brush Special Collection Appointment Request",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 930
-    },
-    {
       "name": "Mobile app",
-      "count": 767
+      "count": 762
     },
     {
       "name": "Other / not specified",
       "count": 438
+    },
+    {
+      "name": "Phone",
+      "count": 926
     }
   ],
   "stuck": [

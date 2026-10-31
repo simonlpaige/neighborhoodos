@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-30",
+  "asOf": "2026-10-31",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-30T17:03:38.642Z",
+  "generatedAt": "2026-10-31T16:11:17.366Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3639,
-  "requests30": 195,
-  "requests90": 778,
+  "total": 3622,
+  "requests30": 189,
+  "requests90": 776,
   "counts": {
-    "open": 606,
-    "resolved": 2809,
-    "canceled": 224
+    "open": 605,
+    "resolved": 2795,
+    "canceled": 222
   },
-  "openOver60": 439,
+  "openOver60": 440,
   "types": [
     {
       "type": "Property Violations",
-      "count": 826,
+      "count": 823,
       "medianDays": 11,
-      "closedSample": 400,
+      "closedSample": 398,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 539,
+      "count": 536,
       "medianDays": 0,
-      "closedSample": 447,
+      "closedSample": 445,
       "cityMedianDays": 0
     },
     {
@@ -58,24 +58,17 @@
     },
     {
       "type": "Vehicles and Parking",
-      "count": 105,
+      "count": 104,
       "medianDays": 6,
-      "closedSample": 102,
+      "closedSample": 101,
       "cityMedianDays": 6
     },
     {
       "type": "Trees City Row",
-      "count": 104,
+      "count": 103,
       "medianDays": 2,
-      "closedSample": 83,
+      "closedSample": 82,
       "cityMedianDays": 4
-    },
-    {
-      "type": "Solid Waste Services",
-      "count": 102,
-      "medianDays": 2,
-      "closedSample": 98,
-      "cityMedianDays": 5
     },
     {
       "type": "Sewer and Stormwater",
@@ -85,24 +78,31 @@
       "cityMedianDays": 3
     },
     {
+      "type": "Solid Waste Services",
+      "count": 101,
+      "medianDays": 2,
+      "closedSample": 97,
+      "cityMedianDays": 5
+    },
+    {
       "type": "Healthy Homes",
-      "count": 94,
+      "count": 93,
       "medianDays": 6,
-      "closedSample": 79,
+      "closedSample": 78,
       "cityMedianDays": 7
     },
     {
       "type": "Recycling Cart Program",
-      "count": 88,
+      "count": 87,
       "medianDays": 10,
       "closedSample": 74,
       "cityMedianDays": 12
     },
     {
       "type": "A Pothole",
-      "count": 68,
+      "count": 67,
       "medianDays": 3,
-      "closedSample": 57,
+      "closedSample": 56,
       "cityMedianDays": 5
     },
     {
@@ -113,13 +113,6 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Land Bank Issues",
-      "count": 48,
-      "medianDays": 22.5,
-      "closedSample": 34,
-      "cityMedianDays": 11
-    },
-    {
       "type": "Street Maintenance",
       "count": 48,
       "medianDays": 3,
@@ -127,11 +120,18 @@
       "cityMedianDays": 13
     },
     {
+      "type": "Land Bank Issues",
+      "count": 47,
+      "medianDays": 21,
+      "closedSample": 33,
+      "cityMedianDays": 11
+    },
+    {
       "type": "Zoning and Permits",
-      "count": 42,
-      "medianDays": 30,
-      "closedSample": 23,
-      "cityMedianDays": 23
+      "count": 39,
+      "medianDays": 25.5,
+      "closedSample": 20,
+      "cityMedianDays": 22
     },
     {
       "type": "Sidewalks and Curbs",
@@ -152,7 +152,7 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 20.5
+      "cityMedianDays": 20
     },
     {
       "type": "Parks and Recreation",
@@ -180,7 +180,7 @@
       "count": 26,
       "medianDays": 6,
       "closedSample": 23,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Dangerous Buildings",
@@ -212,9 +212,9 @@
     },
     {
       "type": "Traffic Calming or Concerns",
-      "count": 15,
+      "count": 14,
       "medianDays": 2,
-      "closedSample": 14,
+      "closedSample": 13,
       "cityMedianDays": 3
     },
     {
@@ -306,7 +306,7 @@
       "count": 1,
       "medianDays": null,
       "closedSample": 0,
-      "cityMedianDays": 22
+      "cityMedianDays": 17.5
     }
   ],
   "trend": [
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 883
+      "name": "Other / not specified",
+      "count": 790
     },
     {
       "name": "Phone",
-      "count": 1965
+      "count": 1956
     },
     {
-      "name": "Other / not specified",
-      "count": 791
+      "name": "Mobile app",
+      "count": 876
     }
   ],
   "stuck": [
