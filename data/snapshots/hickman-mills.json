@@ -1,31 +1,31 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-10-31",
+  "asOf": "2026-11-01",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-31T16:11:19.302Z",
+  "generatedAt": "2026-11-01T17:11:20.148Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1112,
-  "requests30": 55,
-  "requests90": 259,
+  "total": 1109,
+  "requests30": 51,
+  "requests90": 255,
   "counts": {
     "open": 166,
-    "resolved": 895,
+    "resolved": 892,
     "canceled": 51
   },
   "openOver60": 99,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 216,
-      "medianDays": 1.5,
-      "closedSample": 212,
+      "count": 215,
+      "medianDays": 2,
+      "closedSample": 211,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 198,
+      "count": 196,
       "medianDays": 1,
-      "closedSample": 166,
+      "closedSample": 164,
       "cityMedianDays": 0
     },
     {
@@ -117,7 +117,7 @@
       "count": 13,
       "medianDays": 31,
       "closedSample": 10,
-      "cityMedianDays": 12
+      "cityMedianDays": 11
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Street Cleaning / Sweeping",
@@ -268,17 +268,6 @@
     }
   ],
   "trend": [
-    {
-      "month": "2025-11",
-      "count": 76,
-      "types": {
-        "Trash  Recycling  Bulky Services": 14,
-        "Animal Services": 15,
-        "Property Violations": 18,
-        "A Pothole": 0,
-        "Healthy Homes": 1
-      }
-    },
     {
       "month": "2025-12",
       "count": 71,
@@ -399,20 +388,31 @@
         "A Pothole": 2,
         "Healthy Homes": 6
       }
+    },
+    {
+      "month": "2026-11",
+      "count": 0,
+      "types": {
+        "Trash  Recycling  Bulky Services": 0,
+        "Animal Services": 0,
+        "Property Violations": 0,
+        "A Pothole": 0,
+        "Healthy Homes": 0
+      }
     }
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 206
+      "name": "Mobile app",
+      "count": 273
     },
     {
       "name": "Phone",
-      "count": 633
+      "count": 631
     },
     {
-      "name": "Mobile app",
-      "count": 273
+      "name": "Other / not specified",
+      "count": 205
     }
   ],
   "stuck": [

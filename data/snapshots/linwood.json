@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-10-31",
+  "asOf": "2026-11-01",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-31T16:11:17.366Z",
+  "generatedAt": "2026-11-01T17:11:18.924Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3622,
-  "requests30": 189,
-  "requests90": 776,
+  "total": 3615,
+  "requests30": 186,
+  "requests90": 756,
   "counts": {
-    "open": 605,
-    "resolved": 2795,
+    "open": 604,
+    "resolved": 2789,
     "canceled": 222
   },
-  "openOver60": 440,
+  "openOver60": 443,
   "types": [
     {
       "type": "Property Violations",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 536,
+      "count": 533,
       "medianDays": 0,
-      "closedSample": 445,
+      "closedSample": 443,
       "cityMedianDays": 0
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 382,
+      "count": 381,
       "medianDays": 6,
-      "closedSample": 308,
+      "closedSample": 307,
       "cityMedianDays": 5
     },
     {
@@ -96,7 +96,7 @@
       "count": 87,
       "medianDays": 10,
       "closedSample": 74,
-      "cityMedianDays": 12
+      "cityMedianDays": 11
     },
     {
       "type": "A Pothole",
@@ -127,18 +127,18 @@
       "cityMedianDays": 11
     },
     {
-      "type": "Zoning and Permits",
-      "count": 39,
-      "medianDays": 25.5,
-      "closedSample": 20,
-      "cityMedianDays": 22
-    },
-    {
       "type": "Sidewalks and Curbs",
       "count": 38,
       "medianDays": 5,
       "closedSample": 34,
       "cityMedianDays": 5
+    },
+    {
+      "type": "Zoning and Permits",
+      "count": 38,
+      "medianDays": 21,
+      "closedSample": 19,
+      "cityMedianDays": 22
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -180,7 +180,7 @@
       "count": 26,
       "medianDays": 6,
       "closedSample": 23,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Dangerous Buildings",
@@ -198,9 +198,9 @@
     },
     {
       "type": "Street Cleaning / Sweeping",
-      "count": 18,
-      "medianDays": 46,
-      "closedSample": 15,
+      "count": 17,
+      "medianDays": 57,
+      "closedSample": 14,
       "cityMedianDays": 25
     },
     {
@@ -212,9 +212,9 @@
     },
     {
       "type": "Traffic Calming or Concerns",
-      "count": 14,
+      "count": 13,
       "medianDays": 2,
-      "closedSample": 13,
+      "closedSample": 12,
       "cityMedianDays": 3
     },
     {
@@ -310,17 +310,6 @@
     }
   ],
   "trend": [
-    {
-      "month": "2025-11",
-      "count": 197,
-      "types": {
-        "Property Violations": 33,
-        "Animal Services": 41,
-        "Trash  Recycling  Bulky Services": 16,
-        "Illegal Dumping": 19,
-        "Water Service": 11
-      }
-    },
     {
       "month": "2025-12",
       "count": 262,
@@ -441,20 +430,31 @@
         "Illegal Dumping": 8,
         "Water Service": 3
       }
+    },
+    {
+      "month": "2026-11",
+      "count": 0,
+      "types": {
+        "Property Violations": 0,
+        "Animal Services": 0,
+        "Trash  Recycling  Bulky Services": 0,
+        "Illegal Dumping": 0,
+        "Water Service": 0
+      }
     }
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 790
+      "name": "Mobile app",
+      "count": 873
     },
     {
       "name": "Phone",
-      "count": 1956
+      "count": 1953
     },
     {
-      "name": "Mobile app",
-      "count": 876
+      "name": "Other / not specified",
+      "count": 789
     }
   ],
   "stuck": [

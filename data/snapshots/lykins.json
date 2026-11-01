@@ -1,38 +1,38 @@
 {
   "area": "lykins",
-  "asOf": "2026-10-31",
+  "asOf": "2026-11-01",
   "sourceMax": "2026-10-26",
-  "generatedAt": "2026-10-31T16:11:18.611Z",
+  "generatedAt": "2026-11-01T17:11:19.760Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2126,
-  "requests30": 118,
-  "requests90": 494,
+  "total": 2115,
+  "requests30": 115,
+  "requests90": 488,
   "counts": {
     "open": 375,
-    "resolved": 1596,
-    "canceled": 155
+    "resolved": 1586,
+    "canceled": 154
   },
-  "openOver60": 250,
+  "openOver60": 252,
   "types": [
     {
       "type": "Property Violations",
-      "count": 428,
-      "medianDays": 51.5,
-      "closedSample": 196,
+      "count": 422,
+      "medianDays": 54,
+      "closedSample": 190,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 328,
+      "count": 326,
       "medianDays": 0,
-      "closedSample": 279,
+      "closedSample": 277,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 305,
+      "count": 303,
       "medianDays": 5,
-      "closedSample": 251,
+      "closedSample": 250,
       "cityMedianDays": 5
     },
     {
@@ -89,13 +89,13 @@
       "count": 49,
       "medianDays": 24.5,
       "closedSample": 34,
-      "cityMedianDays": 12
+      "cityMedianDays": 11
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 46,
+      "count": 45,
       "medianDays": 6,
-      "closedSample": 38,
+      "closedSample": 37,
       "cityMedianDays": 3
     },
     {
@@ -194,7 +194,7 @@
       "count": 11,
       "medianDays": 4,
       "closedSample": 11,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Tents/Sleeping Structures",
@@ -275,17 +275,6 @@
     }
   ],
   "trend": [
-    {
-      "month": "2025-11",
-      "count": 149,
-      "types": {
-        "Property Violations": 22,
-        "Animal Services": 38,
-        "Illegal Dumping": 23,
-        "Trash  Recycling  Bulky Services": 5,
-        "Trees City Row": 1
-      }
-    },
     {
       "month": "2025-12",
       "count": 115,
@@ -406,20 +395,31 @@
         "Trash  Recycling  Bulky Services": 15,
         "Trees City Row": 3
       }
+    },
+    {
+      "month": "2026-11",
+      "count": 0,
+      "types": {
+        "Property Violations": 0,
+        "Animal Services": 0,
+        "Illegal Dumping": 0,
+        "Trash  Recycling  Bulky Services": 0,
+        "Trees City Row": 0
+      }
     }
   ],
   "channels": [
     {
       "name": "Mobile app",
-      "count": 762
-    },
-    {
-      "name": "Other / not specified",
-      "count": 438
+      "count": 760
     },
     {
       "name": "Phone",
-      "count": 926
+      "count": 924
+    },
+    {
+      "name": "Other / not specified",
+      "count": 431
     }
   ],
   "stuck": [
