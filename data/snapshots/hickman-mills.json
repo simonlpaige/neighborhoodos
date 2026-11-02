@@ -1,43 +1,43 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-01",
-  "sourceMax": "2026-10-26",
-  "generatedAt": "2026-11-01T17:11:20.148Z",
+  "asOf": "2026-11-02",
+  "sourceMax": "2026-11-02",
+  "generatedAt": "2026-11-02T20:49:20.883Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1109,
-  "requests30": 51,
-  "requests90": 255,
+  "total": 1124,
+  "requests30": 67,
+  "requests90": 266,
   "counts": {
-    "open": 166,
-    "resolved": 892,
-    "canceled": 51
+    "open": 170,
+    "resolved": 902,
+    "canceled": 52
   },
-  "openOver60": 99,
+  "openOver60": 97,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 215,
-      "medianDays": 2,
-      "closedSample": 211,
+      "count": 220,
+      "medianDays": 1,
+      "closedSample": 214,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 196,
+      "count": 200,
       "medianDays": 1,
       "closedSample": 164,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 153,
-      "medianDays": 6.5,
-      "closedSample": 52,
+      "count": 154,
+      "medianDays": 7,
+      "closedSample": 53,
       "cityMedianDays": 13
     },
     {
       "type": "A Pothole",
-      "count": 62,
+      "count": 63,
       "medianDays": 6,
       "closedSample": 60,
       "cityMedianDays": 5
@@ -46,7 +46,7 @@
       "type": "Healthy Homes",
       "count": 56,
       "medianDays": 7,
-      "closedSample": 48,
+      "closedSample": 49,
       "cityMedianDays": 7
     },
     {
@@ -66,9 +66,16 @@
     {
       "type": "Sewer and Stormwater",
       "count": 41,
-      "medianDays": 6,
-      "closedSample": 37,
+      "medianDays": 6.5,
+      "closedSample": 38,
       "cityMedianDays": 3
+    },
+    {
+      "type": "Trees City Row",
+      "count": 38,
+      "medianDays": 0.5,
+      "closedSample": 28,
+      "cityMedianDays": 4
     },
     {
       "type": "Solid Waste Services",
@@ -78,29 +85,22 @@
       "cityMedianDays": 5
     },
     {
-      "type": "Trees City Row",
-      "count": 37,
-      "medianDays": 0,
-      "closedSample": 26,
-      "cityMedianDays": 4
-    },
-    {
       "type": "Street Maintenance",
       "count": 33,
       "medianDays": 1,
-      "closedSample": 18,
+      "closedSample": 19,
       "cityMedianDays": 13
     },
     {
       "type": "Trash Cart Program",
-      "count": 18,
+      "count": 19,
       "medianDays": 7,
       "closedSample": 15,
       "cityMedianDays": 9
     },
     {
       "type": "Zoning and Permits",
-      "count": 15,
+      "count": 16,
       "medianDays": 17,
       "closedSample": 9,
       "cityMedianDays": 22
@@ -141,6 +141,13 @@
       "cityMedianDays": 1
     },
     {
+      "type": "Health Code Violations",
+      "count": 11,
+      "medianDays": 2.5,
+      "closedSample": 10,
+      "cityMedianDays": 2
+    },
+    {
       "type": "Streetlights",
       "count": 10,
       "medianDays": 1,
@@ -155,13 +162,6 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Health Code Violations",
-      "count": 10,
-      "medianDays": 2.5,
-      "closedSample": 10,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Administration or Questions",
       "count": 8,
       "medianDays": 6,
@@ -173,14 +173,14 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 20
+      "cityMedianDays": 19
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 8
+      "cityMedianDays": 7.5
     },
     {
       "type": "Street Cleaning / Sweeping",
@@ -200,7 +200,7 @@
       "type": "Leaf and Brush Curbside Pickup",
       "count": 4,
       "medianDays": 1,
-      "closedSample": 3,
+      "closedSample": 4,
       "cityMedianDays": 1
     },
     {
@@ -380,21 +380,21 @@
     },
     {
       "month": "2026-10",
-      "count": 57,
+      "count": 71,
       "types": {
-        "Trash  Recycling  Bulky Services": 8,
-        "Animal Services": 13,
-        "Property Violations": 5,
-        "A Pothole": 2,
+        "Trash  Recycling  Bulky Services": 13,
+        "Animal Services": 16,
+        "Property Violations": 6,
+        "A Pothole": 3,
         "Healthy Homes": 6
       }
     },
     {
       "month": "2026-11",
-      "count": 0,
+      "count": 2,
       "types": {
-        "Trash  Recycling  Bulky Services": 0,
-        "Animal Services": 0,
+        "Trash  Recycling  Bulky Services": 1,
+        "Animal Services": 1,
         "Property Violations": 0,
         "A Pothole": 0,
         "Healthy Homes": 0
@@ -404,24 +404,18 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 273
+      "count": 278
     },
     {
       "name": "Phone",
-      "count": 631
+      "count": 638
     },
     {
       "name": "Other / not specified",
-      "count": 205
+      "count": 208
     }
   ],
   "stuck": [
-    {
-      "issue": "Street Maintenance",
-      "block": "10400 block of Crystal Ave",
-      "opened": "2026-05-03",
-      "department": "PW Streets"
-    },
     {
       "issue": "Street Maintenance",
       "block": "8300 block of E 105th St",

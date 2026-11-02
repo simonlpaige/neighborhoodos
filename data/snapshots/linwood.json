@@ -1,74 +1,81 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-01",
-  "sourceMax": "2026-10-26",
-  "generatedAt": "2026-11-01T17:11:18.924Z",
+  "asOf": "2026-11-02",
+  "sourceMax": "2026-11-02",
+  "generatedAt": "2026-11-02T20:49:19.912Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3615,
-  "requests30": 186,
-  "requests90": 756,
+  "total": 3666,
+  "requests30": 237,
+  "requests90": 791,
   "counts": {
-    "open": 604,
-    "resolved": 2789,
-    "canceled": 222
+    "open": 627,
+    "resolved": 2814,
+    "canceled": 225
   },
   "openOver60": 443,
   "types": [
     {
       "type": "Property Violations",
-      "count": 823,
+      "count": 830,
       "medianDays": 11,
-      "closedSample": 398,
+      "closedSample": 402,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 533,
+      "count": 538,
       "medianDays": 0,
-      "closedSample": 443,
+      "closedSample": 442,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 386,
+      "count": 394,
       "medianDays": 1,
-      "closedSample": 383,
+      "closedSample": 391,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 381,
+      "count": 385,
       "medianDays": 6,
-      "closedSample": 307,
+      "closedSample": 309,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 148,
+      "count": 152,
       "medianDays": 2,
-      "closedSample": 143,
+      "closedSample": 144,
       "cityMedianDays": 2
     },
     {
       "type": "Trash Cart Program",
-      "count": 121,
+      "count": 123,
       "medianDays": 8,
       "closedSample": 91,
       "cityMedianDays": 9
     },
     {
       "type": "Vehicles and Parking",
-      "count": 104,
+      "count": 107,
       "medianDays": 6,
-      "closedSample": 101,
+      "closedSample": 102,
       "cityMedianDays": 6
     },
     {
       "type": "Trees City Row",
-      "count": 103,
+      "count": 105,
       "medianDays": 2,
-      "closedSample": 82,
+      "closedSample": 85,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Solid Waste Services",
+      "count": 104,
+      "medianDays": 2,
+      "closedSample": 99,
+      "cityMedianDays": 5
     },
     {
       "type": "Sewer and Stormwater",
@@ -78,45 +85,38 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Solid Waste Services",
-      "count": 101,
-      "medianDays": 2,
-      "closedSample": 97,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Healthy Homes",
-      "count": 93,
+      "count": 96,
       "medianDays": 6,
       "closedSample": 78,
       "cityMedianDays": 7
     },
     {
       "type": "Recycling Cart Program",
-      "count": 87,
+      "count": 88,
       "medianDays": 10,
       "closedSample": 74,
       "cityMedianDays": 11
     },
     {
       "type": "A Pothole",
-      "count": 67,
+      "count": 68,
       "medianDays": 3,
       "closedSample": 56,
       "cityMedianDays": 5
     },
     {
       "type": "Traffic Signals",
-      "count": 66,
+      "count": 67,
       "medianDays": 1,
-      "closedSample": 62,
+      "closedSample": 63,
       "cityMedianDays": 1
     },
     {
       "type": "Street Maintenance",
       "count": 48,
-      "medianDays": 3,
-      "closedSample": 38,
+      "medianDays": 3.5,
+      "closedSample": 40,
       "cityMedianDays": 13
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "type": "Sidewalks and Curbs",
-      "count": 38,
+      "count": 39,
       "medianDays": 5,
       "closedSample": 34,
       "cityMedianDays": 5
@@ -152,11 +152,11 @@
       "count": 32,
       "medianDays": 15,
       "closedSample": 19,
-      "cityMedianDays": 20
+      "cityMedianDays": 19
     },
     {
       "type": "Parks and Recreation",
-      "count": 30,
+      "count": 32,
       "medianDays": 3,
       "closedSample": 27,
       "cityMedianDays": 4
@@ -177,10 +177,10 @@
     },
     {
       "type": "Right-of-Way / Inspections",
-      "count": 26,
-      "medianDays": 6,
-      "closedSample": 23,
-      "cityMedianDays": 8
+      "count": 27,
+      "medianDays": 5.5,
+      "closedSample": 24,
+      "cityMedianDays": 7.5
     },
     {
       "type": "Dangerous Buildings",
@@ -191,16 +191,16 @@
     },
     {
       "type": "Tents or Sleeping Structures",
-      "count": 20,
+      "count": 21,
       "medianDays": 15.5,
       "closedSample": 12,
       "cityMedianDays": 7
     },
     {
       "type": "Street Cleaning / Sweeping",
-      "count": 17,
-      "medianDays": 57,
-      "closedSample": 14,
+      "count": 18,
+      "medianDays": 46,
+      "closedSample": 15,
       "cityMedianDays": 25
     },
     {
@@ -218,18 +218,18 @@
       "cityMedianDays": 3
     },
     {
+      "type": "311 Research and Investigation",
+      "count": 10,
+      "medianDays": 1,
+      "closedSample": 8,
+      "cityMedianDays": 1
+    },
+    {
       "type": "Administration or Questions",
       "count": 10,
       "medianDays": 7,
       "closedSample": 3,
       "cityMedianDays": 3
-    },
-    {
-      "type": "311 Research and Investigation",
-      "count": 9,
-      "medianDays": 1,
-      "closedSample": 8,
-      "cityMedianDays": 1
     },
     {
       "type": "Snow",
@@ -250,7 +250,7 @@
       "count": 6,
       "medianDays": 25.5,
       "closedSample": 4,
-      "cityMedianDays": 11
+      "cityMedianDays": 10
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -422,20 +422,20 @@
     },
     {
       "month": "2026-10",
-      "count": 195,
+      "count": 246,
       "types": {
-        "Property Violations": 29,
-        "Animal Services": 37,
-        "Trash  Recycling  Bulky Services": 34,
-        "Illegal Dumping": 8,
-        "Water Service": 3
+        "Property Violations": 35,
+        "Animal Services": 43,
+        "Trash  Recycling  Bulky Services": 42,
+        "Illegal Dumping": 12,
+        "Water Service": 7
       }
     },
     {
       "month": "2026-11",
-      "count": 0,
+      "count": 2,
       "types": {
-        "Property Violations": 0,
+        "Property Violations": 2,
         "Animal Services": 0,
         "Trash  Recycling  Bulky Services": 0,
         "Illegal Dumping": 0,
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 873
+      "name": "Other / not specified",
+      "count": 799
     },
     {
       "name": "Phone",
-      "count": 1953
+      "count": 1984
     },
     {
-      "name": "Other / not specified",
-      "count": 789
+      "name": "Mobile app",
+      "count": 883
     }
   ],
   "stuck": [

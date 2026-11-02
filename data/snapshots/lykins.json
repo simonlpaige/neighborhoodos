@@ -1,57 +1,57 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-01",
-  "sourceMax": "2026-10-26",
-  "generatedAt": "2026-11-01T17:11:19.760Z",
+  "asOf": "2026-11-02",
+  "sourceMax": "2026-11-02",
+  "generatedAt": "2026-11-02T20:49:20.524Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2115,
-  "requests30": 115,
-  "requests90": 488,
+  "total": 2142,
+  "requests30": 148,
+  "requests90": 517,
   "counts": {
-    "open": 375,
-    "resolved": 1586,
-    "canceled": 154
+    "open": 381,
+    "resolved": 1604,
+    "canceled": 157
   },
-  "openOver60": 252,
+  "openOver60": 255,
   "types": [
     {
       "type": "Property Violations",
-      "count": 422,
-      "medianDays": 54,
-      "closedSample": 190,
+      "count": 426,
+      "medianDays": 52,
+      "closedSample": 191,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 326,
+      "count": 329,
       "medianDays": 0,
-      "closedSample": 277,
+      "closedSample": 278,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 303,
-      "medianDays": 5,
-      "closedSample": 250,
+      "count": 313,
+      "medianDays": 4,
+      "closedSample": 255,
       "cityMedianDays": 5
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 195,
+      "count": 199,
       "medianDays": 1,
-      "closedSample": 192,
+      "closedSample": 196,
       "cityMedianDays": 1
     },
     {
       "type": "Trees City Row",
       "count": 98,
       "medianDays": 3,
-      "closedSample": 73,
+      "closedSample": 78,
       "cityMedianDays": 4
     },
     {
       "type": "Trash Cart Program",
-      "count": 79,
+      "count": 80,
       "medianDays": 10,
       "closedSample": 59,
       "cityMedianDays": 9
@@ -60,49 +60,49 @@
       "type": "Vehicles and Parking",
       "count": 73,
       "medianDays": 6,
-      "closedSample": 70,
+      "closedSample": 71,
       "cityMedianDays": 6
     },
     {
       "type": "Water Service",
-      "count": 62,
-      "medianDays": 2,
-      "closedSample": 54,
+      "count": 64,
+      "medianDays": 1.5,
+      "closedSample": 56,
       "cityMedianDays": 2
     },
     {
       "type": "A Pothole",
-      "count": 59,
+      "count": 60,
       "medianDays": 3.5,
       "closedSample": 52,
       "cityMedianDays": 5
     },
     {
       "type": "Homeless Camp",
-      "count": 56,
-      "medianDays": 66,
-      "closedSample": 30,
-      "cityMedianDays": 20
+      "count": 54,
+      "medianDays": 67,
+      "closedSample": 28,
+      "cityMedianDays": 19
     },
     {
       "type": "Recycling Cart Program",
-      "count": 49,
+      "count": 50,
       "medianDays": 24.5,
       "closedSample": 34,
       "cityMedianDays": 11
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 45,
+      "count": 44,
       "medianDays": 6,
       "closedSample": 37,
       "cityMedianDays": 3
     },
     {
       "type": "Solid Waste Services",
-      "count": 43,
-      "medianDays": 1.5,
-      "closedSample": 42,
+      "count": 44,
+      "medianDays": 2,
+      "closedSample": 43,
       "cityMedianDays": 5
     },
     {
@@ -162,6 +162,13 @@
       "cityMedianDays": 1
     },
     {
+      "type": "Sidewalks and Curbs",
+      "count": 15,
+      "medianDays": 4,
+      "closedSample": 12,
+      "cityMedianDays": 5
+    },
+    {
       "type": "Healthy Homes",
       "count": 15,
       "medianDays": 3,
@@ -176,13 +183,6 @@
       "cityMedianDays": 32
     },
     {
-      "type": "Sidewalks and Curbs",
-      "count": 13,
-      "medianDays": 4,
-      "closedSample": 12,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Traffic Signals",
       "count": 11,
       "medianDays": 1,
@@ -194,7 +194,14 @@
       "count": 11,
       "medianDays": 4,
       "closedSample": 11,
-      "cityMedianDays": 8
+      "cityMedianDays": 7.5
+    },
+    {
+      "type": "Street Cleaning / Sweeping",
+      "count": 11,
+      "medianDays": 21.5,
+      "closedSample": 8,
+      "cityMedianDays": 25
     },
     {
       "type": "Tents/Sleeping Structures",
@@ -202,13 +209,6 @@
       "medianDays": 3,
       "closedSample": 5,
       "cityMedianDays": 11
-    },
-    {
-      "type": "Street Cleaning / Sweeping",
-      "count": 10,
-      "medianDays": 21.5,
-      "closedSample": 8,
-      "cityMedianDays": 25
     },
     {
       "type": "Food Safety",
@@ -271,7 +271,7 @@
       "count": 1,
       "medianDays": 39,
       "closedSample": 1,
-      "cityMedianDays": 11
+      "cityMedianDays": 10
     }
   ],
   "trend": [
@@ -387,22 +387,22 @@
     },
     {
       "month": "2026-10",
-      "count": 125,
+      "count": 151,
       "types": {
-        "Property Violations": 18,
-        "Animal Services": 20,
-        "Illegal Dumping": 18,
-        "Trash  Recycling  Bulky Services": 15,
+        "Property Violations": 21,
+        "Animal Services": 22,
+        "Illegal Dumping": 28,
+        "Trash  Recycling  Bulky Services": 19,
         "Trees City Row": 3
       }
     },
     {
       "month": "2026-11",
-      "count": 0,
+      "count": 7,
       "types": {
-        "Property Violations": 0,
-        "Animal Services": 0,
-        "Illegal Dumping": 0,
+        "Property Violations": 2,
+        "Animal Services": 2,
+        "Illegal Dumping": 1,
         "Trash  Recycling  Bulky Services": 0,
         "Trees City Row": 0
       }
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 760
-    },
-    {
       "name": "Phone",
-      "count": 924
+      "count": 935
     },
     {
       "name": "Other / not specified",
-      "count": 431
+      "count": 437
+    },
+    {
+      "name": "Mobile app",
+      "count": 770
     }
   ],
   "stuck": [
@@ -445,6 +445,12 @@
       "issue": "Street Maintenance",
       "block": "3200 block of E 12th St",
       "opened": "2026-08-05",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "3300 block of E 12th St",
+      "opened": "2026-09-03",
       "department": "PW Streets"
     }
   ],
