@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-03",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-02T20:49:20.524Z",
+  "generatedAt": "2026-11-03T18:29:37.575Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2142,
-  "requests30": 148,
-  "requests90": 517,
+  "total": 2141,
+  "requests30": 145,
+  "requests90": 514,
   "counts": {
     "open": 381,
-    "resolved": 1604,
+    "resolved": 1603,
     "canceled": 157
   },
-  "openOver60": 255,
+  "openOver60": 258,
   "types": [
     {
       "type": "Property Violations",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 329,
+      "count": 328,
       "medianDays": 0,
-      "closedSample": 278,
+      "closedSample": 277,
       "cityMedianDays": 0
     },
     {
@@ -411,7 +411,7 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 935
+      "count": 934
     },
     {
       "name": "Other / not specified",

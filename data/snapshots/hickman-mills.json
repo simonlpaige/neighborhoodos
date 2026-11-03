@@ -1,24 +1,24 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-03",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-02T20:49:20.883Z",
+  "generatedAt": "2026-11-03T18:29:38.019Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1124,
+  "total": 1123,
   "requests30": 67,
-  "requests90": 266,
+  "requests90": 265,
   "counts": {
     "open": 170,
-    "resolved": 902,
+    "resolved": 901,
     "canceled": 52
   },
-  "openOver60": 97,
+  "openOver60": 99,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 220,
+      "count": 219,
       "medianDays": 1,
-      "closedSample": 214,
+      "closedSample": 213,
       "cityMedianDays": 1
     },
     {
@@ -404,7 +404,7 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 278
+      "count": 277
     },
     {
       "name": "Phone",

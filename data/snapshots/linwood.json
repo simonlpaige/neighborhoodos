@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-03",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-02T20:49:19.912Z",
+  "generatedAt": "2026-11-03T18:29:36.802Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3666,
-  "requests30": 237,
-  "requests90": 791,
+  "total": 3664,
+  "requests30": 235,
+  "requests90": 778,
   "counts": {
     "open": 627,
-    "resolved": 2814,
+    "resolved": 2812,
     "canceled": 225
   },
-  "openOver60": 443,
+  "openOver60": 451,
   "types": [
     {
       "type": "Property Violations",
@@ -64,18 +64,18 @@
       "cityMedianDays": 6
     },
     {
-      "type": "Trees City Row",
-      "count": 105,
-      "medianDays": 2,
-      "closedSample": 85,
-      "cityMedianDays": 4
-    },
-    {
       "type": "Solid Waste Services",
       "count": 104,
       "medianDays": 2,
       "closedSample": 99,
       "cityMedianDays": 5
+    },
+    {
+      "type": "Trees City Row",
+      "count": 104,
+      "medianDays": 2,
+      "closedSample": 84,
+      "cityMedianDays": 4
     },
     {
       "type": "Sewer and Stormwater",
@@ -127,18 +127,18 @@
       "cityMedianDays": 11
     },
     {
-      "type": "Sidewalks and Curbs",
-      "count": 39,
-      "medianDays": 5,
-      "closedSample": 34,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Zoning and Permits",
       "count": 38,
       "medianDays": 21,
       "closedSample": 19,
       "cityMedianDays": 22
+    },
+    {
+      "type": "Sidewalks and Curbs",
+      "count": 38,
+      "medianDays": 5,
+      "closedSample": 33,
+      "cityMedianDays": 5
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -446,7 +446,7 @@
   "channels": [
     {
       "name": "Other / not specified",
-      "count": 799
+      "count": 797
     },
     {
       "name": "Phone",
