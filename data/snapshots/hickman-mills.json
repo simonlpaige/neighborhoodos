@@ -1,24 +1,24 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-03",
+  "asOf": "2026-11-04",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-03T18:29:38.019Z",
+  "generatedAt": "2026-11-04T18:42:24.468Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1123,
-  "requests30": 67,
-  "requests90": 265,
+  "total": 1114,
+  "requests30": 62,
+  "requests90": 260,
   "counts": {
     "open": 170,
-    "resolved": 901,
-    "canceled": 52
+    "resolved": 894,
+    "canceled": 50
   },
   "openOver60": 99,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 219,
+      "count": 218,
       "medianDays": 1,
-      "closedSample": 213,
+      "closedSample": 212,
       "cityMedianDays": 1
     },
     {
@@ -30,9 +30,9 @@
     },
     {
       "type": "Property Violations",
-      "count": 154,
+      "count": 150,
       "medianDays": 7,
-      "closedSample": 53,
+      "closedSample": 51,
       "cityMedianDays": 13
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 47,
+      "count": 46,
       "medianDays": 4,
-      "closedSample": 43,
+      "closedSample": 42,
       "cityMedianDays": 5
     },
     {
@@ -86,16 +86,16 @@
     },
     {
       "type": "Street Maintenance",
-      "count": 33,
+      "count": 32,
       "medianDays": 1,
-      "closedSample": 19,
+      "closedSample": 18,
       "cityMedianDays": 13
     },
     {
       "type": "Trash Cart Program",
-      "count": 19,
+      "count": 18,
       "medianDays": 7,
-      "closedSample": 15,
+      "closedSample": 14,
       "cityMedianDays": 9
     },
     {
@@ -114,9 +114,9 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 13,
-      "medianDays": 31,
-      "closedSample": 10,
+      "count": 12,
+      "medianDays": 30,
+      "closedSample": 9,
       "cityMedianDays": 11
     },
     {
@@ -180,14 +180,14 @@
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Street Cleaning / Sweeping",
       "count": 7,
       "medianDays": 14,
       "closedSample": 6,
-      "cityMedianDays": 25
+      "cityMedianDays": 24
     },
     {
       "type": "Dangerous Buildings",
@@ -403,12 +403,12 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 277
+      "name": "Phone",
+      "count": 633
     },
     {
-      "name": "Phone",
-      "count": 638
+      "name": "Mobile app",
+      "count": 273
     },
     {
       "name": "Other / not specified",

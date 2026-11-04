@@ -1,24 +1,24 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-03",
+  "asOf": "2026-11-04",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-03T18:29:36.802Z",
+  "generatedAt": "2026-11-04T18:42:23.333Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3664,
-  "requests30": 235,
-  "requests90": 778,
+  "total": 3658,
+  "requests30": 226,
+  "requests90": 776,
   "counts": {
     "open": 627,
-    "resolved": 2812,
+    "resolved": 2806,
     "canceled": 225
   },
-  "openOver60": 451,
+  "openOver60": 452,
   "types": [
     {
       "type": "Property Violations",
-      "count": 830,
+      "count": 829,
       "medianDays": 11,
-      "closedSample": 402,
+      "closedSample": 401,
       "cityMedianDays": 13
     },
     {
@@ -30,23 +30,23 @@
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 394,
+      "count": 393,
       "medianDays": 1,
-      "closedSample": 391,
+      "closedSample": 390,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 385,
+      "count": 383,
       "medianDays": 6,
-      "closedSample": 309,
+      "closedSample": 307,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 152,
+      "count": 151,
       "medianDays": 2,
-      "closedSample": 144,
+      "closedSample": 143,
       "cityMedianDays": 2
     },
     {
@@ -127,18 +127,18 @@
       "cityMedianDays": 11
     },
     {
-      "type": "Zoning and Permits",
-      "count": 38,
-      "medianDays": 21,
-      "closedSample": 19,
-      "cityMedianDays": 22
-    },
-    {
       "type": "Sidewalks and Curbs",
       "count": 38,
       "medianDays": 5,
       "closedSample": 33,
       "cityMedianDays": 5
+    },
+    {
+      "type": "Zoning and Permits",
+      "count": 37,
+      "medianDays": 25,
+      "closedSample": 18,
+      "cityMedianDays": 22
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -180,7 +180,7 @@
       "count": 27,
       "medianDays": 5.5,
       "closedSample": 24,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Dangerous Buildings",
@@ -201,7 +201,7 @@
       "count": 18,
       "medianDays": 46,
       "closedSample": 15,
-      "cityMedianDays": 25
+      "cityMedianDays": 24
     },
     {
       "type": "Food Safety",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 797
-    },
-    {
       "name": "Phone",
-      "count": 1984
+      "count": 1982
     },
     {
       "name": "Mobile app",
-      "count": 883
+      "count": 882
+    },
+    {
+      "name": "Other / not specified",
+      "count": 794
     }
   ],
   "stuck": [
