@@ -1,52 +1,52 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-06",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-04T18:42:23.333Z",
+  "generatedAt": "2026-11-06T18:07:12.845Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3658,
-  "requests30": 226,
-  "requests90": 776,
+  "total": 3637,
+  "requests30": 194,
+  "requests90": 761,
   "counts": {
-    "open": 627,
-    "resolved": 2806,
-    "canceled": 225
+    "open": 626,
+    "resolved": 2788,
+    "canceled": 223
   },
-  "openOver60": 452,
+  "openOver60": 453,
   "types": [
     {
       "type": "Property Violations",
-      "count": 829,
+      "count": 824,
       "medianDays": 11,
-      "closedSample": 401,
+      "closedSample": 399,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 538,
+      "count": 535,
       "medianDays": 0,
-      "closedSample": 442,
+      "closedSample": 439,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 393,
+      "count": 388,
       "medianDays": 1,
-      "closedSample": 390,
+      "closedSample": 385,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 383,
+      "count": 382,
       "medianDays": 6,
-      "closedSample": 307,
+      "closedSample": 306,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 151,
+      "count": 150,
       "medianDays": 2,
-      "closedSample": 143,
+      "closedSample": 142,
       "cityMedianDays": 2
     },
     {
@@ -54,7 +54,7 @@
       "count": 123,
       "medianDays": 8,
       "closedSample": 91,
-      "cityMedianDays": 9
+      "cityMedianDays": 8
     },
     {
       "type": "Vehicles and Parking",
@@ -86,9 +86,9 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 96,
-      "medianDays": 6,
-      "closedSample": 78,
+      "count": 94,
+      "medianDays": 5.5,
+      "closedSample": 76,
       "cityMedianDays": 7
     },
     {
@@ -148,18 +148,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Homeless Camp",
-      "count": 32,
-      "medianDays": 15,
-      "closedSample": 19,
-      "cityMedianDays": 19
-    },
-    {
       "type": "Parks and Recreation",
       "count": 32,
       "medianDays": 3,
       "closedSample": 27,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Homeless Camp",
+      "count": 30,
+      "medianDays": 15,
+      "closedSample": 17,
+      "cityMedianDays": 17
     },
     {
       "type": "Streetlights",
@@ -177,9 +177,9 @@
     },
     {
       "type": "Right-of-Way / Inspections",
-      "count": 27,
-      "medianDays": 5.5,
-      "closedSample": 24,
+      "count": 26,
+      "medianDays": 6,
+      "closedSample": 23,
       "cityMedianDays": 8
     },
     {
@@ -187,7 +187,7 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 32
+      "cityMedianDays": 31
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -201,7 +201,7 @@
       "count": 18,
       "medianDays": 46,
       "closedSample": 15,
-      "cityMedianDays": 24
+      "cityMedianDays": 24.5
     },
     {
       "type": "Food Safety",
@@ -253,16 +253,16 @@
       "cityMedianDays": 10
     },
     {
-      "type": "Leaf and Brush Curbside Pickup",
-      "count": 5,
-      "medianDays": 84.5,
-      "closedSample": 4,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Public Safety",
       "count": 5,
       "medianDays": 4,
+      "closedSample": 3,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Leaf and Brush Curbside Pickup",
+      "count": 4,
+      "medianDays": 2,
       "closedSample": 3,
       "cityMedianDays": 1
     },
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
+      "name": "Other / not specified",
+      "count": 791
+    },
+    {
       "name": "Phone",
-      "count": 1982
+      "count": 1971
     },
     {
       "name": "Mobile app",
-      "count": 882
-    },
-    {
-      "name": "Other / not specified",
-      "count": 794
+      "count": 875
     }
   ],
   "stuck": [

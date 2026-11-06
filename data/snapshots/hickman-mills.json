@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-04",
+  "asOf": "2026-11-06",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-04T18:42:24.468Z",
+  "generatedAt": "2026-11-06T18:07:14.257Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1114,
-  "requests30": 62,
-  "requests90": 260,
+  "total": 1106,
+  "requests30": 57,
+  "requests90": 247,
   "counts": {
-    "open": 170,
-    "resolved": 894,
-    "canceled": 50
+    "open": 169,
+    "resolved": 888,
+    "canceled": 49
   },
-  "openOver60": 99,
+  "openOver60": 98,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -23,16 +23,16 @@
     },
     {
       "type": "Animal Services",
-      "count": 200,
+      "count": 199,
       "medianDays": 1,
-      "closedSample": 164,
+      "closedSample": 163,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 150,
-      "medianDays": 7,
-      "closedSample": 51,
+      "count": 147,
+      "medianDays": 6.5,
+      "closedSample": 50,
       "cityMedianDays": 13
     },
     {
@@ -50,18 +50,18 @@
       "cityMedianDays": 7
     },
     {
-      "type": "Water Service",
-      "count": 48,
-      "medianDays": 2,
-      "closedSample": 46,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Illegal Dumping",
       "count": 46,
       "medianDays": 4,
       "closedSample": 42,
       "cityMedianDays": 5
+    },
+    {
+      "type": "Water Service",
+      "count": 44,
+      "medianDays": 2,
+      "closedSample": 42,
+      "cityMedianDays": 2
     },
     {
       "type": "Sewer and Stormwater",
@@ -96,7 +96,7 @@
       "count": 18,
       "medianDays": 7,
       "closedSample": 14,
-      "cityMedianDays": 9
+      "cityMedianDays": 8
     },
     {
       "type": "Zoning and Permits",
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 19
+      "cityMedianDays": 17
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -187,14 +187,14 @@
       "count": 7,
       "medianDays": 14,
       "closedSample": 6,
-      "cityMedianDays": 24
+      "cityMedianDays": 24.5
     },
     {
       "type": "Dangerous Buildings",
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 32
+      "cityMedianDays": 31
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -404,15 +404,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 633
+      "count": 631
     },
     {
       "name": "Mobile app",
-      "count": 273
+      "count": 269
     },
     {
       "name": "Other / not specified",
-      "count": 208
+      "count": 206
     }
   ],
   "stuck": [
