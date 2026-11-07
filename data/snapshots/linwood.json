@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-06T18:07:12.845Z",
+  "generatedAt": "2026-11-07T16:54:46.820Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3637,
-  "requests30": 194,
-  "requests90": 761,
+  "total": 3627,
+  "requests30": 186,
+  "requests90": 758,
   "counts": {
     "open": 626,
-    "resolved": 2788,
+    "resolved": 2778,
     "canceled": 223
   },
-  "openOver60": 453,
+  "openOver60": 456,
   "types": [
     {
       "type": "Property Violations",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 535,
+      "count": 531,
       "medianDays": 0,
-      "closedSample": 439,
+      "closedSample": 435,
       "cityMedianDays": 0
     },
     {
@@ -37,16 +37,16 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 382,
+      "count": 381,
       "medianDays": 6,
-      "closedSample": 306,
+      "closedSample": 305,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 150,
+      "count": 149,
       "medianDays": 2,
-      "closedSample": 142,
+      "closedSample": 141,
       "cityMedianDays": 2
     },
     {
@@ -79,16 +79,16 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 102,
+      "count": 101,
       "medianDays": 2,
-      "closedSample": 94,
+      "closedSample": 93,
       "cityMedianDays": 3
     },
     {
       "type": "Healthy Homes",
-      "count": 94,
-      "medianDays": 5.5,
-      "closedSample": 76,
+      "count": 93,
+      "medianDays": 5,
+      "closedSample": 75,
       "cityMedianDays": 7
     },
     {
@@ -114,16 +114,16 @@
     },
     {
       "type": "Street Maintenance",
-      "count": 48,
-      "medianDays": 3.5,
-      "closedSample": 40,
+      "count": 47,
+      "medianDays": 4,
+      "closedSample": 39,
       "cityMedianDays": 13
     },
     {
       "type": "Land Bank Issues",
-      "count": 47,
-      "medianDays": 21,
-      "closedSample": 33,
+      "count": 46,
+      "medianDays": 18.5,
+      "closedSample": 32,
       "cityMedianDays": 11
     },
     {
@@ -159,7 +159,7 @@
       "count": 30,
       "medianDays": 15,
       "closedSample": 17,
-      "cityMedianDays": 17
+      "cityMedianDays": 16
     },
     {
       "type": "Streetlights",
@@ -187,7 +187,7 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 31
+      "cityMedianDays": 30.5
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -201,7 +201,7 @@
       "count": 18,
       "medianDays": 46,
       "closedSample": 15,
-      "cityMedianDays": 24.5
+      "cityMedianDays": 24
     },
     {
       "type": "Food Safety",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 791
+      "name": "Mobile app",
+      "count": 874
     },
     {
       "name": "Phone",
-      "count": 1971
+      "count": 1965
     },
     {
-      "name": "Mobile app",
-      "count": 875
+      "name": "Other / not specified",
+      "count": 788
     }
   ],
   "stuck": [

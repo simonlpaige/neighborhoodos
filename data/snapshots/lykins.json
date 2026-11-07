@@ -1,31 +1,31 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-06T18:07:13.993Z",
+  "generatedAt": "2026-11-07T16:54:47.431Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2117,
-  "requests30": 125,
+  "total": 2105,
+  "requests30": 117,
   "requests90": 496,
   "counts": {
     "open": 381,
-    "resolved": 1581,
-    "canceled": 155
+    "resolved": 1570,
+    "canceled": 154
   },
-  "openOver60": 258,
+  "openOver60": 263,
   "types": [
     {
       "type": "Property Violations",
-      "count": 422,
-      "medianDays": 50.5,
-      "closedSample": 188,
+      "count": 419,
+      "medianDays": 51,
+      "closedSample": 185,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 322,
+      "count": 321,
       "medianDays": 0,
-      "closedSample": 271,
+      "closedSample": 270,
       "cityMedianDays": 0
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 198,
+      "count": 197,
       "medianDays": 1,
-      "closedSample": 195,
+      "closedSample": 194,
       "cityMedianDays": 1
     },
     {
@@ -51,9 +51,9 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 78,
+      "count": 75,
       "medianDays": 10,
-      "closedSample": 57,
+      "closedSample": 55,
       "cityMedianDays": 8
     },
     {
@@ -79,16 +79,16 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 53,
-      "medianDays": 53,
-      "closedSample": 27,
-      "cityMedianDays": 17
+      "count": 51,
+      "medianDays": 32,
+      "closedSample": 25,
+      "cityMedianDays": 16
     },
     {
       "type": "Recycling Cart Program",
-      "count": 47,
-      "medianDays": 19,
-      "closedSample": 32,
+      "count": 46,
+      "medianDays": 16,
+      "closedSample": 31,
       "cityMedianDays": 11
     },
     {
@@ -162,13 +162,6 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Sidewalks and Curbs",
-      "count": 15,
-      "medianDays": 4,
-      "closedSample": 12,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Healthy Homes",
       "count": 15,
       "medianDays": 3,
@@ -180,7 +173,14 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 31
+      "cityMedianDays": 30.5
+    },
+    {
+      "type": "Sidewalks and Curbs",
+      "count": 14,
+      "medianDays": 4,
+      "closedSample": 11,
+      "cityMedianDays": 5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -194,7 +194,7 @@
       "count": 11,
       "medianDays": 21.5,
       "closedSample": 8,
-      "cityMedianDays": 24.5
+      "cityMedianDays": 24
     },
     {
       "type": "Traffic Signals",
@@ -411,15 +411,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 922
+      "count": 919
     },
     {
       "name": "Mobile app",
-      "count": 766
+      "count": 763
     },
     {
       "name": "Other / not specified",
-      "count": 429
+      "count": 423
     }
   ],
   "stuck": [

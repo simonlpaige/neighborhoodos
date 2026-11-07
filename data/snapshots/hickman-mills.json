@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-07",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-06T18:07:14.257Z",
+  "generatedAt": "2026-11-07T16:54:47.746Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1106,
-  "requests30": 57,
+  "total": 1102,
+  "requests30": 56,
   "requests90": 247,
   "counts": {
     "open": 169,
-    "resolved": 888,
+    "resolved": 884,
     "canceled": 49
   },
-  "openOver60": 98,
+  "openOver60": 103,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -23,16 +23,16 @@
     },
     {
       "type": "Animal Services",
-      "count": 199,
+      "count": 198,
       "medianDays": 1,
-      "closedSample": 163,
+      "closedSample": 162,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 147,
-      "medianDays": 6.5,
-      "closedSample": 50,
+      "count": 146,
+      "medianDays": 6,
+      "closedSample": 49,
       "cityMedianDays": 13
     },
     {
@@ -93,9 +93,9 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 18,
+      "count": 17,
       "medianDays": 7,
-      "closedSample": 14,
+      "closedSample": 13,
       "cityMedianDays": 8
     },
     {
@@ -113,13 +113,6 @@
       "cityMedianDays": 6
     },
     {
-      "type": "Recycling Cart Program",
-      "count": 12,
-      "medianDays": 30,
-      "closedSample": 9,
-      "cityMedianDays": 11
-    },
-    {
       "type": "Traffic Signs and Street Markings",
       "count": 12,
       "medianDays": 3.5,
@@ -132,6 +125,13 @@
       "medianDays": 3,
       "closedSample": 12,
       "cityMedianDays": 2
+    },
+    {
+      "type": "Recycling Cart Program",
+      "count": 11,
+      "medianDays": 22.5,
+      "closedSample": 8,
+      "cityMedianDays": 11
     },
     {
       "type": "Traffic Signals",
@@ -173,7 +173,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 17
+      "cityMedianDays": 16
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -187,14 +187,14 @@
       "count": 7,
       "medianDays": 14,
       "closedSample": 6,
-      "cityMedianDays": 24.5
+      "cityMedianDays": 24
     },
     {
       "type": "Dangerous Buildings",
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 31
+      "cityMedianDays": 30.5
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 631
-    },
-    {
       "name": "Mobile app",
       "count": 269
     },
     {
       "name": "Other / not specified",
       "count": 206
+    },
+    {
+      "name": "Phone",
+      "count": 627
     }
   ],
   "stuck": [
