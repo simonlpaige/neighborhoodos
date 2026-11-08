@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-08",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-07T16:54:47.431Z",
+  "generatedAt": "2026-11-08T17:08:07.137Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2105,
-  "requests30": 117,
-  "requests90": 496,
+  "total": 2103,
+  "requests30": 111,
+  "requests90": 489,
   "counts": {
     "open": 381,
-    "resolved": 1570,
+    "resolved": 1568,
     "canceled": 154
   },
-  "openOver60": 263,
+  "openOver60": 266,
   "types": [
     {
       "type": "Property Violations",
@@ -37,9 +37,9 @@
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 197,
+      "count": 196,
       "medianDays": 1,
-      "closedSample": 194,
+      "closedSample": 193,
       "cityMedianDays": 1
     },
     {
@@ -183,18 +183,18 @@
       "cityMedianDays": 5
     },
     {
-      "type": "Right-of-Way / Inspections",
-      "count": 11,
-      "medianDays": 4,
-      "closedSample": 11,
-      "cityMedianDays": 8
-    },
-    {
       "type": "Street Cleaning / Sweeping",
       "count": 11,
       "medianDays": 21.5,
       "closedSample": 8,
       "cityMedianDays": 24
+    },
+    {
+      "type": "Right-of-Way / Inspections",
+      "count": 10,
+      "medianDays": 4,
+      "closedSample": 10,
+      "cityMedianDays": 8
     },
     {
       "type": "Traffic Signals",
@@ -411,15 +411,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 919
-    },
-    {
-      "name": "Mobile app",
-      "count": 763
+      "count": 918
     },
     {
       "name": "Other / not specified",
       "count": 423
+    },
+    {
+      "name": "Mobile app",
+      "count": 762
     }
   ],
   "stuck": [

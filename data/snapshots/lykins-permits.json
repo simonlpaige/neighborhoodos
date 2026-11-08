@@ -1,26 +1,33 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-08",
   "source": "w8jz-wjgn",
-  "sourceMax": "2026-11-02",
-  "sourceUpdated": "2026-11-01",
+  "sourceMax": "2026-11-07",
+  "sourceUpdated": "2026-11-08",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
   "total": 36,
-  "issued30": 3,
-  "issued90": 6,
+  "issued30": 4,
+  "issued90": 7,
   "byType": [
     {
       "type": "Residential",
-      "count": 24
+      "count": 25
     },
     {
       "type": "Commercial",
-      "count": 12
+      "count": 11
     }
   ],
   "recent": [
+    {
+      "number": "CPBR-2026-02464",
+      "issued": "2026-11-06",
+      "type": "Residential building",
+      "block": "4800 block of E 8th St",
+      "status": "issued"
+    },
     {
       "number": "CPBC-2026-01064",
       "issued": "2026-10-29",
@@ -118,13 +125,6 @@
       "type": "Residential building",
       "block": "4200 block of E 7th St",
       "status": "issued"
-    },
-    {
-      "number": "CPBR-2026-01533",
-      "issued": "2026-06-22",
-      "type": "Residential building",
-      "block": "600 block of Spruce Ave",
-      "status": "closed"
     }
   ],
   "method": "Current city-issued permits are joined by parcel number to the city parcel polygons intersecting the dashboard’s named official neighborhood boundaries. Boundary-crossing parcels can appear in adjacent areas. Only residential and commercial building permits with an issue date are included; electrical, plumbing, mechanical, zoning, and applications without an issue date are excluded. A permit is not proof that work has begun, finished, or is currently authorized. Missing or changed parcel identifiers can prevent a match; zero matched records does not establish no construction.",

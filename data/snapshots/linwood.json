@@ -1,24 +1,24 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-08",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-07T16:54:46.820Z",
+  "generatedAt": "2026-11-08T17:08:06.472Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3627,
-  "requests30": 186,
-  "requests90": 758,
+  "total": 3621,
+  "requests30": 177,
+  "requests90": 749,
   "counts": {
     "open": 626,
-    "resolved": 2778,
-    "canceled": 223
+    "resolved": 2773,
+    "canceled": 222
   },
-  "openOver60": 456,
+  "openOver60": 458,
   "types": [
     {
       "type": "Property Violations",
-      "count": 824,
+      "count": 823,
       "medianDays": 11,
-      "closedSample": 399,
+      "closedSample": 398,
       "cityMedianDays": 13
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 381,
+      "count": 380,
       "medianDays": 6,
-      "closedSample": 305,
+      "closedSample": 304,
       "cityMedianDays": 5
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Vehicles and Parking",
-      "count": 107,
+      "count": 106,
       "medianDays": 6,
-      "closedSample": 102,
+      "closedSample": 101,
       "cityMedianDays": 6
     },
     {
@@ -135,16 +135,16 @@
     },
     {
       "type": "Zoning and Permits",
-      "count": 37,
+      "count": 36,
       "medianDays": 25,
       "closedSample": 18,
       "cityMedianDays": 22
     },
     {
       "type": "Traffic Signs and Street Markings",
-      "count": 35,
+      "count": 33,
       "medianDays": 5,
-      "closedSample": 28,
+      "closedSample": 26,
       "cityMedianDays": 3
     },
     {
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 874
-    },
-    {
       "name": "Phone",
-      "count": 1965
+      "count": 1963
     },
     {
       "name": "Other / not specified",
       "count": 788
+    },
+    {
+      "name": "Mobile app",
+      "count": 870
     }
   ],
   "stuck": [

@@ -1,31 +1,31 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-08",
   "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-07T16:54:47.746Z",
+  "generatedAt": "2026-11-08T17:08:07.592Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1102,
-  "requests30": 56,
-  "requests90": 247,
+  "total": 1098,
+  "requests30": 54,
+  "requests90": 242,
   "counts": {
     "open": 169,
-    "resolved": 884,
+    "resolved": 880,
     "canceled": 49
   },
-  "openOver60": 103,
+  "openOver60": 105,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 218,
+      "count": 216,
       "medianDays": 1,
-      "closedSample": 212,
+      "closedSample": 210,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 198,
+      "count": 197,
       "medianDays": 1,
-      "closedSample": 162,
+      "closedSample": 161,
       "cityMedianDays": 0
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Water Service",
-      "count": 44,
+      "count": 43,
       "medianDays": 2,
-      "closedSample": 42,
+      "closedSample": 41,
       "cityMedianDays": 2
     },
     {
@@ -404,15 +404,15 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 269
+      "count": 268
     },
     {
       "name": "Other / not specified",
-      "count": 206
+      "count": 205
     },
     {
       "name": "Phone",
-      "count": 627
+      "count": 625
     }
   ],
   "stuck": [

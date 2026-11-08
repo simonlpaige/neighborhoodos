@@ -1,19 +1,19 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-08",
   "source": "w8jz-wjgn",
-  "sourceMax": "2026-11-02",
-  "sourceUpdated": "2026-11-01",
+  "sourceMax": "2026-11-07",
+  "sourceUpdated": "2026-11-08",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 73,
-  "issued30": 2,
-  "issued90": 35,
+  "total": 74,
+  "issued30": 3,
+  "issued90": 36,
   "byType": [
     {
       "type": "Residential",
-      "count": 44
+      "count": 45
     },
     {
       "type": "Commercial",
@@ -21,6 +21,13 @@
     }
   ],
   "recent": [
+    {
+      "number": "CPBR-2026-02756",
+      "issued": "2026-11-03",
+      "type": "Residential building",
+      "block": "4000 block of Euclid Ave",
+      "status": "issued"
+    },
     {
       "number": "CPBR-2026-02602",
       "issued": "2026-10-19",
@@ -114,13 +121,6 @@
     },
     {
       "number": "CPBC-2026-00945",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Garfield Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00944",
       "issued": "2026-10-05",
       "type": "Commercial building",
       "block": "2000 block of Garfield Ave",
