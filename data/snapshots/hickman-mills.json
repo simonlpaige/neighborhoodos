@@ -1,64 +1,64 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-08",
-  "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-08T17:08:07.592Z",
+  "asOf": "2026-11-09",
+  "sourceMax": "2026-11-09",
+  "generatedAt": "2026-11-09T21:29:38.712Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1098,
-  "requests30": 54,
-  "requests90": 242,
+  "total": 1116,
+  "requests30": 74,
+  "requests90": 258,
   "counts": {
-    "open": 169,
-    "resolved": 880,
+    "open": 164,
+    "resolved": 903,
     "canceled": 49
   },
-  "openOver60": 105,
+  "openOver60": 101,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 216,
+      "count": 219,
       "medianDays": 1,
-      "closedSample": 210,
+      "closedSample": 217,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 197,
+      "count": 198,
       "medianDays": 1,
-      "closedSample": 161,
+      "closedSample": 160,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 146,
+      "count": 149,
       "medianDays": 6,
-      "closedSample": 49,
+      "closedSample": 51,
       "cityMedianDays": 13
     },
     {
       "type": "A Pothole",
-      "count": 63,
+      "count": 64,
       "medianDays": 6,
-      "closedSample": 60,
+      "closedSample": 63,
       "cityMedianDays": 5
     },
     {
       "type": "Healthy Homes",
-      "count": 56,
-      "medianDays": 7,
-      "closedSample": 49,
-      "cityMedianDays": 7
+      "count": 57,
+      "medianDays": 10,
+      "closedSample": 55,
+      "cityMedianDays": 8
     },
     {
       "type": "Illegal Dumping",
-      "count": 46,
+      "count": 48,
       "medianDays": 4,
       "closedSample": 42,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 43,
+      "count": 44,
       "medianDays": 2,
       "closedSample": 41,
       "cityMedianDays": 2
@@ -86,10 +86,10 @@
     },
     {
       "type": "Street Maintenance",
-      "count": 32,
+      "count": 33,
       "medianDays": 1,
-      "closedSample": 18,
-      "cityMedianDays": 13
+      "closedSample": 19,
+      "cityMedianDays": 14
     },
     {
       "type": "Trash Cart Program",
@@ -113,6 +113,13 @@
       "cityMedianDays": 6
     },
     {
+      "type": "Health Code Violations",
+      "count": 13,
+      "medianDays": 2,
+      "closedSample": 13,
+      "cityMedianDays": 2
+    },
+    {
       "type": "Traffic Signs and Street Markings",
       "count": 12,
       "medianDays": 3.5,
@@ -134,24 +141,17 @@
       "cityMedianDays": 11
     },
     {
-      "type": "Traffic Signals",
+      "type": "Streetlights",
       "count": 11,
       "medianDays": 1,
       "closedSample": 11,
       "cityMedianDays": 1
     },
     {
-      "type": "Health Code Violations",
+      "type": "Traffic Signals",
       "count": 11,
-      "medianDays": 2.5,
-      "closedSample": 10,
-      "cityMedianDays": 2
-    },
-    {
-      "type": "Streetlights",
-      "count": 10,
       "medianDays": 1,
-      "closedSample": 10,
+      "closedSample": 11,
       "cityMedianDays": 1
     },
     {
@@ -169,11 +169,18 @@
       "cityMedianDays": 3
     },
     {
+      "type": "Street Cleaning / Sweeping",
+      "count": 8,
+      "medianDays": 9,
+      "closedSample": 7,
+      "cityMedianDays": 23.5
+    },
+    {
       "type": "Homeless Camp",
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 16
+      "cityMedianDays": 15.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -181,13 +188,6 @@
       "medianDays": 6,
       "closedSample": 7,
       "cityMedianDays": 8
-    },
-    {
-      "type": "Street Cleaning / Sweeping",
-      "count": 7,
-      "medianDays": 14,
-      "closedSample": 6,
-      "cityMedianDays": 24
     },
     {
       "type": "Dangerous Buildings",
@@ -204,6 +204,13 @@
       "cityMedianDays": 1
     },
     {
+      "type": "Parks and Recreation",
+      "count": 4,
+      "medianDays": 34,
+      "closedSample": 3,
+      "cityMedianDays": 4
+    },
+    {
       "type": "Brush Special Collection Appointment Request",
       "count": 4,
       "medianDays": 8,
@@ -218,18 +225,11 @@
       "cityMedianDays": 7
     },
     {
-      "type": "Parks and Recreation",
-      "count": 3,
-      "medianDays": 34,
-      "closedSample": 3,
-      "cityMedianDays": 4
-    },
-    {
       "type": "Land Bank Issues",
       "count": 3,
       "medianDays": 32,
       "closedSample": 2,
-      "cityMedianDays": 11
+      "cityMedianDays": 11.5
     },
     {
       "type": "Sidewalks and Curbs",
@@ -391,28 +391,28 @@
     },
     {
       "month": "2026-11",
-      "count": 2,
+      "count": 22,
       "types": {
-        "Trash  Recycling  Bulky Services": 1,
-        "Animal Services": 1,
-        "Property Violations": 0,
-        "A Pothole": 0,
-        "Healthy Homes": 0
+        "Trash  Recycling  Bulky Services": 4,
+        "Animal Services": 4,
+        "Property Violations": 3,
+        "A Pothole": 1,
+        "Healthy Homes": 1
       }
     }
   ],
   "channels": [
     {
+      "name": "Phone",
+      "count": 634
+    },
+    {
       "name": "Mobile app",
-      "count": 268
+      "count": 274
     },
     {
       "name": "Other / not specified",
-      "count": 205
-    },
-    {
-      "name": "Phone",
-      "count": 625
+      "count": 208
     }
   ],
   "stuck": [
@@ -438,12 +438,6 @@
       "issue": "Street Maintenance",
       "block": "6300 block of Longview Rd",
       "opened": "2026-07-29",
-      "department": "PW Streets"
-    },
-    {
-      "issue": "Street Maintenance",
-      "block": "11200 block of Applewood Dr",
-      "opened": "2026-08-14",
       "department": "PW Streets"
     }
   ],

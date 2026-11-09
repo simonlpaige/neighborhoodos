@@ -1,45 +1,45 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-08",
-  "sourceMax": "2026-11-02",
-  "generatedAt": "2026-11-08T17:08:07.137Z",
+  "asOf": "2026-11-09",
+  "sourceMax": "2026-11-09",
+  "generatedAt": "2026-11-09T21:29:38.364Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2103,
-  "requests30": 111,
-  "requests90": 489,
+  "total": 2135,
+  "requests30": 142,
+  "requests90": 517,
   "counts": {
-    "open": 381,
-    "resolved": 1568,
-    "canceled": 154
+    "open": 389,
+    "resolved": 1591,
+    "canceled": 155
   },
-  "openOver60": 266,
+  "openOver60": 265,
   "types": [
     {
       "type": "Property Violations",
-      "count": 419,
-      "medianDays": 51,
-      "closedSample": 185,
+      "count": 423,
+      "medianDays": 52,
+      "closedSample": 187,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 321,
+      "count": 330,
       "medianDays": 0,
-      "closedSample": 270,
+      "closedSample": 274,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 310,
-      "medianDays": 4,
-      "closedSample": 252,
+      "count": 317,
+      "medianDays": 4.5,
+      "closedSample": 258,
       "cityMedianDays": 5
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 196,
+      "count": 201,
       "medianDays": 1,
-      "closedSample": 193,
+      "closedSample": 198,
       "cityMedianDays": 1
     },
     {
@@ -51,23 +51,23 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 75,
+      "count": 76,
       "medianDays": 10,
       "closedSample": 55,
       "cityMedianDays": 8
     },
     {
       "type": "Vehicles and Parking",
-      "count": 70,
+      "count": 71,
       "medianDays": 6,
       "closedSample": 68,
       "cityMedianDays": 6
     },
     {
       "type": "Water Service",
-      "count": 64,
-      "medianDays": 1.5,
-      "closedSample": 56,
+      "count": 67,
+      "medianDays": 1,
+      "closedSample": 57,
       "cityMedianDays": 2
     },
     {
@@ -82,14 +82,21 @@
       "count": 51,
       "medianDays": 32,
       "closedSample": 25,
-      "cityMedianDays": 16
+      "cityMedianDays": 15.5
     },
     {
       "type": "Recycling Cart Program",
-      "count": 46,
+      "count": 47,
       "medianDays": 16,
       "closedSample": 31,
       "cityMedianDays": 11
+    },
+    {
+      "type": "Solid Waste Services",
+      "count": 45,
+      "medianDays": 2,
+      "closedSample": 45,
+      "cityMedianDays": 5
     },
     {
       "type": "Sewer and Stormwater",
@@ -99,15 +106,8 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Solid Waste Services",
-      "count": 44,
-      "medianDays": 2,
-      "closedSample": 43,
-      "cityMedianDays": 5
-    },
-    {
       "type": "Tents or Sleeping Structures",
-      "count": 38,
+      "count": 39,
       "medianDays": 4,
       "closedSample": 17,
       "cityMedianDays": 7
@@ -120,25 +120,25 @@
       "cityMedianDays": 2
     },
     {
-      "type": "Traffic Signs and Street Markings",
+      "type": "Street Maintenance",
       "count": 25,
+      "medianDays": 2,
+      "closedSample": 17,
+      "cityMedianDays": 14
+    },
+    {
+      "type": "Traffic Signs and Street Markings",
+      "count": 24,
       "medianDays": 3,
       "closedSample": 21,
       "cityMedianDays": 3
-    },
-    {
-      "type": "Street Maintenance",
-      "count": 25,
-      "medianDays": 1.5,
-      "closedSample": 16,
-      "cityMedianDays": 13
     },
     {
       "type": "Land Bank Issues",
       "count": 21,
       "medianDays": 30,
       "closedSample": 14,
-      "cityMedianDays": 11
+      "cityMedianDays": 11.5
     },
     {
       "type": "Zoning and Permits",
@@ -164,9 +164,9 @@
     {
       "type": "Healthy Homes",
       "count": 15,
-      "medianDays": 3,
-      "closedSample": 11,
-      "cityMedianDays": 7
+      "medianDays": 3.5,
+      "closedSample": 12,
+      "cityMedianDays": 8
     },
     {
       "type": "Dangerous Buildings",
@@ -179,7 +179,7 @@
       "type": "Sidewalks and Curbs",
       "count": 14,
       "medianDays": 4,
-      "closedSample": 11,
+      "closedSample": 12,
       "cityMedianDays": 5
     },
     {
@@ -187,7 +187,7 @@
       "count": 11,
       "medianDays": 21.5,
       "closedSample": 8,
-      "cityMedianDays": 24
+      "cityMedianDays": 23.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -387,7 +387,7 @@
     },
     {
       "month": "2026-10",
-      "count": 151,
+      "count": 150,
       "types": {
         "Property Violations": 21,
         "Animal Services": 22,
@@ -398,12 +398,12 @@
     },
     {
       "month": "2026-11",
-      "count": 7,
+      "count": 40,
       "types": {
-        "Property Violations": 2,
-        "Animal Services": 2,
-        "Illegal Dumping": 1,
-        "Trash  Recycling  Bulky Services": 0,
+        "Property Violations": 6,
+        "Animal Services": 11,
+        "Illegal Dumping": 8,
+        "Trash  Recycling  Bulky Services": 5,
         "Trees City Row": 0
       }
     }
@@ -411,24 +411,18 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 918
+      "count": 939
     },
     {
       "name": "Other / not specified",
-      "count": 423
+      "count": 426
     },
     {
       "name": "Mobile app",
-      "count": 762
+      "count": 770
     }
   ],
   "stuck": [
-    {
-      "issue": "Street Maintenance",
-      "block": "1300 block of Cleveland Ave",
-      "opened": "2026-01-09",
-      "department": "PW Streets"
-    },
     {
       "issue": "Street Maintenance",
       "block": "800 block of Cypress Ave",
