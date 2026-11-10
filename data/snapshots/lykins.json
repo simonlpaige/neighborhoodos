@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-09T21:29:38.364Z",
+  "generatedAt": "2026-11-10T18:42:54.136Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 2135,
-  "requests30": 142,
-  "requests90": 517,
+  "requests30": 141,
+  "requests90": 511,
   "counts": {
     "open": 389,
     "resolved": 1591,
     "canceled": 155
   },
-  "openOver60": 265,
+  "openOver60": 266,
   "types": [
     {
       "type": "Property Violations",
@@ -187,7 +187,7 @@
       "count": 11,
       "medianDays": 21.5,
       "closedSample": 8,
-      "cityMedianDays": 23.5
+      "cityMedianDays": 23
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -445,6 +445,12 @@
       "issue": "Street Maintenance",
       "block": "3300 block of E 12th St",
       "opened": "2026-09-03",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "1300 block of Cleveland Ave",
+      "opened": "2026-09-11",
       "department": "PW Streets"
     }
   ],

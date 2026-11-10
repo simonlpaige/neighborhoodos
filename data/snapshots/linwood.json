@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-09T21:29:37.869Z",
+  "generatedAt": "2026-11-10T18:42:53.642Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3664,
-  "requests30": 220,
-  "requests90": 776,
+  "total": 3663,
+  "requests30": 216,
+  "requests90": 758,
   "counts": {
     "open": 627,
-    "resolved": 2815,
+    "resolved": 2814,
     "canceled": 222
   },
-  "openOver60": 454,
+  "openOver60": 457,
   "types": [
     {
       "type": "Property Violations",
@@ -58,9 +58,9 @@
     },
     {
       "type": "Vehicles and Parking",
-      "count": 107,
+      "count": 106,
       "medianDays": 6,
-      "closedSample": 106,
+      "closedSample": 105,
       "cityMedianDays": 6
     },
     {
@@ -208,7 +208,7 @@
       "count": 18,
       "medianDays": 46,
       "closedSample": 15,
-      "cityMedianDays": 23.5
+      "cityMedianDays": 23
     },
     {
       "type": "Traffic Calming or Concerns",
@@ -445,12 +445,12 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 877
-    },
-    {
       "name": "Phone",
       "count": 1985
+    },
+    {
+      "name": "Mobile app",
+      "count": 876
     },
     {
       "name": "Other / not specified",

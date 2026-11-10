@@ -1,12 +1,12 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-09T21:29:38.712Z",
+  "generatedAt": "2026-11-10T18:42:54.436Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 1116,
   "requests30": 74,
-  "requests90": 258,
+  "requests90": 255,
   "counts": {
     "open": 164,
     "resolved": 903,
@@ -173,7 +173,7 @@
       "count": 8,
       "medianDays": 9,
       "closedSample": 7,
-      "cityMedianDays": 23.5
+      "cityMedianDays": 23
     },
     {
       "type": "Homeless Camp",
