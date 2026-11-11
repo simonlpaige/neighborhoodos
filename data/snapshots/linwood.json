@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-11",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-10T18:42:53.642Z",
+  "generatedAt": "2026-11-11T18:46:01.044Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3663,
-  "requests30": 216,
-  "requests90": 758,
+  "total": 3659,
+  "requests30": 205,
+  "requests90": 748,
   "counts": {
     "open": 627,
-    "resolved": 2814,
+    "resolved": 2810,
     "canceled": 222
   },
-  "openOver60": 457,
+  "openOver60": 458,
   "types": [
     {
       "type": "Property Violations",
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 541,
+      "count": 538,
       "medianDays": 0,
-      "closedSample": 440,
+      "closedSample": 437,
       "cityMedianDays": 0
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 383,
+      "count": 382,
       "medianDays": 6,
-      "closedSample": 305,
+      "closedSample": 304,
       "cityMedianDays": 5
     },
     {
@@ -117,7 +117,7 @@
       "count": 47,
       "medianDays": 22.5,
       "closedSample": 34,
-      "cityMedianDays": 11.5
+      "cityMedianDays": 11
     },
     {
       "type": "Street Maintenance",
@@ -159,7 +159,7 @@
       "count": 30,
       "medianDays": 15,
       "closedSample": 17,
-      "cityMedianDays": 15.5
+      "cityMedianDays": 15
     },
     {
       "type": "Streetlights",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 1985
-    },
-    {
       "name": "Mobile app",
       "count": 876
     },
     {
       "name": "Other / not specified",
       "count": 802
+    },
+    {
+      "name": "Phone",
+      "count": 1981
     }
   ],
   "stuck": [

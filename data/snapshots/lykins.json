@@ -1,24 +1,24 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-11",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-10T18:42:54.136Z",
+  "generatedAt": "2026-11-11T18:46:01.502Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2135,
-  "requests30": 141,
-  "requests90": 511,
+  "total": 2130,
+  "requests30": 135,
+  "requests90": 504,
   "counts": {
-    "open": 389,
-    "resolved": 1591,
-    "canceled": 155
+    "open": 388,
+    "resolved": 1588,
+    "canceled": 154
   },
   "openOver60": 266,
   "types": [
     {
       "type": "Property Violations",
-      "count": 423,
-      "medianDays": 52,
-      "closedSample": 187,
+      "count": 421,
+      "medianDays": 54,
+      "closedSample": 186,
       "cityMedianDays": 13
     },
     {
@@ -30,9 +30,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 317,
-      "medianDays": 4.5,
-      "closedSample": 258,
+      "count": 316,
+      "medianDays": 4,
+      "closedSample": 257,
       "cityMedianDays": 5
     },
     {
@@ -44,9 +44,9 @@
     },
     {
       "type": "Trees City Row",
-      "count": 98,
+      "count": 97,
       "medianDays": 3,
-      "closedSample": 78,
+      "closedSample": 77,
       "cityMedianDays": 4
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "type": "Vehicles and Parking",
-      "count": 71,
+      "count": 70,
       "medianDays": 6,
       "closedSample": 68,
       "cityMedianDays": 6
@@ -82,7 +82,7 @@
       "count": 51,
       "medianDays": 32,
       "closedSample": 25,
-      "cityMedianDays": 15.5
+      "cityMedianDays": 15
     },
     {
       "type": "Recycling Cart Program",
@@ -138,7 +138,7 @@
       "count": 21,
       "medianDays": 30,
       "closedSample": 14,
-      "cityMedianDays": 11.5
+      "cityMedianDays": 11
     },
     {
       "type": "Zoning and Permits",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
+      "name": "Mobile app",
+      "count": 767
+    },
+    {
       "name": "Phone",
-      "count": 939
+      "count": 938
     },
     {
       "name": "Other / not specified",
-      "count": 426
-    },
-    {
-      "name": "Mobile app",
-      "count": 770
+      "count": 425
     }
   ],
   "stuck": [
