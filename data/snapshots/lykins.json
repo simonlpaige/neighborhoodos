@@ -1,15 +1,15 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-12",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-11T18:46:01.502Z",
+  "generatedAt": "2026-11-12T18:59:54.094Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2130,
-  "requests30": 135,
-  "requests90": 504,
+  "total": 2129,
+  "requests30": 133,
+  "requests90": 495,
   "counts": {
     "open": 388,
-    "resolved": 1588,
+    "resolved": 1587,
     "canceled": 154
   },
   "openOver60": 266,
@@ -30,9 +30,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 316,
-      "medianDays": 4,
-      "closedSample": 257,
+      "count": 315,
+      "medianDays": 4.5,
+      "closedSample": 256,
       "cityMedianDays": 5
     },
     {
@@ -110,7 +110,7 @@
       "count": 39,
       "medianDays": 4,
       "closedSample": 17,
-      "cityMedianDays": 7
+      "cityMedianDays": 6.5
     },
     {
       "type": "Health Code Violations",
@@ -411,7 +411,7 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 767
+      "count": 766
     },
     {
       "name": "Phone",

@@ -1,12 +1,12 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-12",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-11T18:46:01.865Z",
+  "generatedAt": "2026-11-12T18:59:54.507Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 1112,
-  "requests30": 70,
-  "requests90": 250,
+  "requests30": 67,
+  "requests90": 245,
   "counts": {
     "open": 164,
     "resolved": 900,
@@ -222,7 +222,7 @@
       "count": 4,
       "medianDays": 5,
       "closedSample": 1,
-      "cityMedianDays": 7
+      "cityMedianDays": 6.5
     },
     {
       "type": "Land Bank Issues",
