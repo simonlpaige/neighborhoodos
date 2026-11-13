@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-12T18:59:54.507Z",
+  "generatedAt": "2026-11-13T18:36:06.814Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1112,
-  "requests30": 67,
-  "requests90": 245,
+  "total": 1110,
+  "requests30": 64,
+  "requests90": 243,
   "counts": {
     "open": 164,
-    "resolved": 900,
-    "canceled": 48
+    "resolved": 899,
+    "canceled": 47
   },
-  "openOver60": 101,
+  "openOver60": 102,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -30,7 +30,7 @@
     },
     {
       "type": "Property Violations",
-      "count": 148,
+      "count": 147,
       "medianDays": 6,
       "closedSample": 51,
       "cityMedianDays": 13
@@ -44,9 +44,9 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 57,
+      "count": 56,
       "medianDays": 10,
-      "closedSample": 55,
+      "closedSample": 54,
       "cityMedianDays": 8
     },
     {
@@ -187,14 +187,14 @@
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 8
+      "cityMedianDays": 7
     },
     {
       "type": "Dangerous Buildings",
       "count": 4,
       "medianDays": 199,
       "closedSample": 3,
-      "cityMedianDays": 30.5
+      "cityMedianDays": 31
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -403,12 +403,12 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 632
-    },
-    {
       "name": "Other / not specified",
       "count": 208
+    },
+    {
+      "name": "Phone",
+      "count": 630
     },
     {
       "name": "Mobile app",
@@ -438,6 +438,12 @@
       "issue": "Street Maintenance",
       "block": "6300 block of Longview Rd",
       "opened": "2026-07-29",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "10300 block of Crystal Ave",
+      "opened": "2026-09-14",
       "department": "PW Streets"
     }
   ],

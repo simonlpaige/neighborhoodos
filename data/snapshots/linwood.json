@@ -1,45 +1,45 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-12T18:59:53.505Z",
+  "generatedAt": "2026-11-13T18:36:05.459Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3656,
-  "requests30": 187,
-  "requests90": 734,
+  "total": 3636,
+  "requests30": 171,
+  "requests90": 733,
   "counts": {
     "open": 627,
-    "resolved": 2807,
-    "canceled": 222
+    "resolved": 2788,
+    "canceled": 221
   },
-  "openOver60": 459,
+  "openOver60": 463,
   "types": [
     {
       "type": "Property Violations",
-      "count": 836,
+      "count": 834,
       "medianDays": 11,
-      "closedSample": 399,
+      "closedSample": 397,
       "cityMedianDays": 13
     },
     {
       "type": "Animal Services",
-      "count": 538,
+      "count": 536,
       "medianDays": 0,
-      "closedSample": 437,
+      "closedSample": 436,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 391,
+      "count": 386,
       "medianDays": 1,
-      "closedSample": 388,
+      "closedSample": 384,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 382,
+      "count": 381,
       "medianDays": 6,
-      "closedSample": 304,
+      "closedSample": 303,
       "cityMedianDays": 5
     },
     {
@@ -51,16 +51,16 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 125,
+      "count": 124,
       "medianDays": 8,
-      "closedSample": 91,
+      "closedSample": 90,
       "cityMedianDays": 8
     },
     {
       "type": "Vehicles and Parking",
-      "count": 106,
+      "count": 105,
       "medianDays": 6,
-      "closedSample": 105,
+      "closedSample": 104,
       "cityMedianDays": 6
     },
     {
@@ -72,9 +72,9 @@
     },
     {
       "type": "Solid Waste Services",
-      "count": 104,
+      "count": 100,
       "medianDays": 2,
-      "closedSample": 101,
+      "closedSample": 97,
       "cityMedianDays": 5
     },
     {
@@ -93,9 +93,9 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 91,
+      "count": 90,
       "medianDays": 10,
-      "closedSample": 74,
+      "closedSample": 73,
       "cityMedianDays": 11
     },
     {
@@ -107,9 +107,9 @@
     },
     {
       "type": "Traffic Signals",
-      "count": 67,
+      "count": 66,
       "medianDays": 1,
-      "closedSample": 63,
+      "closedSample": 62,
       "cityMedianDays": 1
     },
     {
@@ -170,9 +170,9 @@
     },
     {
       "type": "Health Code Violations",
-      "count": 29,
-      "medianDays": 4.5,
-      "closedSample": 28,
+      "count": 28,
+      "medianDays": 3,
+      "closedSample": 27,
       "cityMedianDays": 2
     },
     {
@@ -180,14 +180,14 @@
       "count": 26,
       "medianDays": 6,
       "closedSample": 23,
-      "cityMedianDays": 8
+      "cityMedianDays": 7
     },
     {
       "type": "Dangerous Buildings",
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 30.5
+      "cityMedianDays": 31
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -218,18 +218,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "311 Research and Investigation",
-      "count": 10,
-      "medianDays": 1,
-      "closedSample": 9,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Administration or Questions",
       "count": 10,
       "medianDays": 7,
       "closedSample": 3,
       "cityMedianDays": 3
+    },
+    {
+      "type": "311 Research and Investigation",
+      "count": 9,
+      "medianDays": 2,
+      "closedSample": 8,
+      "cityMedianDays": 1
     },
     {
       "type": "Snow",
@@ -445,12 +445,12 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 875
+      "name": "Phone",
+      "count": 1965
     },
     {
-      "name": "Phone",
-      "count": 1981
+      "name": "Mobile app",
+      "count": 871
     },
     {
       "name": "Other / not specified",
