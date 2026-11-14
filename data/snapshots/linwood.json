@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-13",
+  "asOf": "2026-11-14",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-13T18:36:05.459Z",
+  "generatedAt": "2026-11-14T17:12:39.060Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3636,
-  "requests30": 171,
-  "requests90": 733,
+  "total": 3628,
+  "requests30": 163,
+  "requests90": 732,
   "counts": {
     "open": 627,
-    "resolved": 2788,
+    "resolved": 2780,
     "canceled": 221
   },
-  "openOver60": 463,
+  "openOver60": 466,
   "types": [
     {
       "type": "Property Violations",
-      "count": 834,
+      "count": 833,
       "medianDays": 11,
-      "closedSample": 397,
-      "cityMedianDays": 13
+      "closedSample": 396,
+      "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 536,
+      "count": 533,
       "medianDays": 0,
-      "closedSample": 436,
+      "closedSample": 433,
       "cityMedianDays": 0
     },
     {
@@ -37,23 +37,23 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 381,
+      "count": 379,
       "medianDays": 6,
-      "closedSample": 303,
+      "closedSample": 301,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 152,
+      "count": 151,
       "medianDays": 2,
-      "closedSample": 144,
+      "closedSample": 143,
       "cityMedianDays": 2
     },
     {
       "type": "Trash Cart Program",
-      "count": 124,
+      "count": 123,
       "medianDays": 8,
-      "closedSample": 90,
+      "closedSample": 89,
       "cityMedianDays": 8
     },
     {
@@ -194,7 +194,7 @@
       "count": 21,
       "medianDays": 15.5,
       "closedSample": 12,
-      "cityMedianDays": 6.5
+      "cityMedianDays": 6
     },
     {
       "type": "Food Safety",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
+      "name": "Other / not specified",
+      "count": 799
+    },
+    {
       "name": "Phone",
-      "count": 1965
+      "count": 1960
     },
     {
       "name": "Mobile app",
-      "count": 871
-    },
-    {
-      "name": "Other / not specified",
-      "count": 800
+      "count": 869
     }
   ],
   "stuck": [

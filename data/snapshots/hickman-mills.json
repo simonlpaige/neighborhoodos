@@ -1,16 +1,16 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-13",
+  "asOf": "2026-11-14",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-13T18:36:06.814Z",
+  "generatedAt": "2026-11-14T17:12:39.794Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1110,
-  "requests30": 64,
-  "requests90": 243,
+  "total": 1109,
+  "requests30": 61,
+  "requests90": 242,
   "counts": {
     "open": 164,
     "resolved": 899,
-    "canceled": 47
+    "canceled": 46
   },
   "openOver60": 102,
   "types": [
@@ -30,10 +30,10 @@
     },
     {
       "type": "Property Violations",
-      "count": 147,
+      "count": 146,
       "medianDays": 6,
       "closedSample": 51,
-      "cityMedianDays": 13
+      "cityMedianDays": 12
     },
     {
       "type": "A Pothole",
@@ -222,7 +222,7 @@
       "count": 4,
       "medianDays": 5,
       "closedSample": 1,
-      "cityMedianDays": 6.5
+      "cityMedianDays": 6
     },
     {
       "type": "Land Bank Issues",
@@ -404,7 +404,7 @@
   "channels": [
     {
       "name": "Other / not specified",
-      "count": 208
+      "count": 207
     },
     {
       "name": "Phone",
