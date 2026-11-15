@@ -30,7 +30,7 @@ if(startingPoint){
  fields[2].value=o.dataset.evidence;
  fields[3].value='Confirm the responsible office and check the current record. Choose who will contact the office and a date to check back.';
  fields.forEach(f=>f.dispatchEvent(new Event('input')));
- help.href='/resources/#category='+encodeURIComponent(o.dataset.category);
+ help.href='/resources/';
  notice.textContent='Public starting point added. Edit it to fit your question; the area totals do not establish any individual case.';
  };
  document.querySelector('#brief-use-context').addEventListener('click',apply);

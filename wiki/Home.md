@@ -19,7 +19,7 @@ Neighbors learn to check AI answers, then use Solve clinics to turn a stuck civi
 
 ## What is ready
 
-The self-paced lesson, private plan builder, print kit, on-site guide, sourced resource directory, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
+The self-paced lesson, private plan builder, print kit, on-site guide, pointers to 211 and existing local directories, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
 
 Lykins / Northeast and Hickman Mills are expansion candidates. Their public-data pages do not establish a relationship or consent to run a program.
 
