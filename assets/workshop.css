@@ -27,4 +27,6 @@
 .guide-bucket{margin:0 0 48px}.guide-bucket[hidden]{display:none}.guide-bucket>h2{margin-bottom:.3rem}.guide-bucket>p{margin-bottom:16px}.guide-entry h3{font-size:1.5rem}
 @media(max-width:720px){.door-link{width:100%;justify-content:center}.door-label{margin-left:0;flex-basis:100%}}
 @media print{.door-link,.door-label{display:none!important}}
-
+.changing-section,.census-section{margin:48px 0}.metrics.metrics-3{grid-template-columns:repeat(3,1fr)}.changing-section .metric strong{font-size:2.2rem}
+@media(max-width:720px){.metrics.metrics-3{grid-template-columns:1fr}}
+@media print{.metrics.metrics-3{grid-template-columns:repeat(3,1fr)}}

@@ -44,3 +44,36 @@ export function summarize(rows, {asOf, area, sourceMax, cityHistogram=[]}) {
     method:'Resolved and canceled are separate. Closure medians use resolved records with a closure date and nonnegative duration, among requests opened in this window. They exclude still-open requests and do not estimate how long an open request will take. City comparison uses the same opening window and status rules. Unlocated records cannot be assigned to a neighborhood.'
   };
 }
+
+// Monthly request counts from an aggregated city query: [{month:'2026-10', count, types:{...}}].
+// The city renamed two categories; counts are joined under the current name so a rename is not read as a change.
+export const renamedTypes = {'Animals and Pets':'Animal Services','Sewer or Stormwater':'Sewer and Stormwater'};
+// Categories with fewer than `floor` requests across the whole period are folded into "Other" so small counts are not published by month.
+export function monthlyHistory(rows, floor=40) {
+  const name = r => /homeless|encampment/i.test(r.issue_type||'') ? 'Other' : renamedTypes[r.issue_type] || r.issue_type || 'Other';
+  const totals = {}; for (const r of rows) totals[name(r)] = (totals[name(r)] || 0) + (Number(r.n) || 0);
+  const months = {};
+  for (const r of rows) { const m = String(r.month).slice(0,7), n = Number(r.n) || 0; const o = months[m] ||= {month:m, count:0, types:{}}; o.count += n; const t = totals[name(r)] >= floor ? name(r) : 'Other'; o.types[t] = (o.types[t] || 0) + n; }
+  return Object.values(months).sort((a,b)=>a.month.localeCompare(b.month));
+}
+// Compare the last full month with the month before and with the same month a year earlier,
+// and the last 12 full months with the 12 before. asOf's own month is partial and left out.
+export function trends(history, asOf) {
+  if (!history?.length) return null;
+  const by = Object.fromEntries(history.map(h=>[h.month,h]));
+  const shift = (month, n) => { const d = new Date(month+'-01T00:00:00Z'); d.setUTCMonth(d.getUTCMonth()+n); return d.toISOString().slice(0,7); };
+  const last = shift(asOf.slice(0,7), -1), count = m => by[m]?.count ?? 0;
+  if (!by[last]) return null;
+  const change = (now, before) => ({now, before, percent: before ? Math.round((now-before)/before*100) : null});
+  const span = (end, n) => Array.from({length:n}, (_,i)=>shift(end, -i));
+  const total = months => months.reduce((s,m)=>s+count(m), 0);
+  const year = span(last,12), prior = span(shift(last,-12),12);
+  const complete = months => months.every(m=>by[m]);
+  const typeTotal = (months,type) => months.reduce((s,m)=>s+(by[m]?.types[type]||0), 0);
+  const types = [...new Set(year.flatMap(m=>Object.keys(by[m]?.types||{})))].filter(t=>t!=='Other');
+  const movers = complete(prior) ? types.map(type=>({type, ...change(typeTotal(year,type), typeTotal(prior,type))})).filter(t=>t.now+t.before>=40 && t.percent!==null).sort((a,b)=>Math.abs(b.now-b.before)-Math.abs(a.now-a.before)).slice(0,6) : [];
+  return {month:last, previousMonth:shift(last,-1), sameMonthLastYear:shift(last,-12),
+    monthOverMonth: by[shift(last,-1)] ? change(count(last), count(shift(last,-1))) : null,
+    yearOverYear: by[shift(last,-12)] ? change(count(last), count(shift(last,-12))) : null,
+    twelveMonths: complete(prior) ? change(total(year), total(prior)) : null, movers};
+}

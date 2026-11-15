@@ -1,0 +1,132 @@
+{
+  "area": "hickman-mills",
+  "release": "ACS 2024 5-year",
+  "years": "2020-2024",
+  "checked": "2026-11-15",
+  "source": "https://censusreporter.org/",
+  "tracts": [
+    {
+      "id": "29095013100",
+      "name": "Census Tract 131, Jackson, MO",
+      "shareInside": 45
+    },
+    {
+      "id": "29095012906",
+      "name": "Census Tract 129.06, Jackson, MO",
+      "shareInside": 35
+    },
+    {
+      "id": "29095010204",
+      "name": "Census Tract 102.04, Jackson, MO",
+      "shareInside": 21
+    }
+  ],
+  "population": {
+    "estimate": 3913,
+    "margin": 338
+  },
+  "age": {
+    "under18": {
+      "estimate": 848,
+      "margin": 165
+    },
+    "adults": {
+      "estimate": 2509
+    },
+    "over65": {
+      "estimate": 556,
+      "margin": 101
+    }
+  },
+  "households": {
+    "estimate": 1694,
+    "margin": 137
+  },
+  "housing": {
+    "owners": {
+      "estimate": 976,
+      "margin": 128
+    },
+    "renters": {
+      "estimate": 718,
+      "margin": 129
+    }
+  },
+  "languages": {
+    "base": {
+      "estimate": 3672,
+      "margin": 300
+    },
+    "englishOnly": {
+      "estimate": 3273,
+      "margin": 292
+    },
+    "other": [
+      {
+        "name": "Spanish",
+        "estimate": 172,
+        "margin": 149,
+        "limitedEnglish": 53
+      },
+      {
+        "name": "Arabic",
+        "estimate": 140,
+        "margin": 109,
+        "limitedEnglish": 37
+      },
+      {
+        "name": "Other Indo-European",
+        "estimate": 25,
+        "margin": 59,
+        "limitedEnglish": 12
+      },
+      {
+        "name": "Tagalog",
+        "estimate": 24,
+        "margin": 28,
+        "limitedEnglish": 0
+      },
+      {
+        "name": "French, Haitian, or Cajun",
+        "estimate": 11,
+        "margin": 16,
+        "limitedEnglish": 2
+      },
+      {
+        "name": "Korean",
+        "estimate": 10,
+        "margin": 12,
+        "limitedEnglish": 4
+      },
+      {
+        "name": "Other Asian and Pacific Island",
+        "estimate": 9,
+        "margin": 14,
+        "limitedEnglish": 9
+      },
+      {
+        "name": "Chinese",
+        "estimate": 5,
+        "margin": 8,
+        "limitedEnglish": 2
+      },
+      {
+        "name": "Other and unspecified",
+        "estimate": 4,
+        "margin": 10,
+        "limitedEnglish": 2
+      }
+    ]
+  },
+  "internet": {
+    "households": {
+      "estimate": 1694,
+      "margin": 137
+    },
+    "none": {
+      "estimate": 16,
+      "margin": 13
+    }
+  },
+  "method": "Census tracts do not follow neighborhood lines. Each overlapping tract is counted in proportion to the share of its land inside this area, which assumes people are spread evenly across a tract. These are rough survey estimates with a margin of error, not a count of residents."
+}

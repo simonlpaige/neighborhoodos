@@ -2,7 +2,7 @@
   "area": "hickman-mills",
   "asOf": "2026-11-15",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-15T17:51:10.622Z",
+  "generatedAt": "2026-11-15T19:43:06.079Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 1107,
   "requests30": 59,
@@ -448,5 +448,738 @@
     }
   ],
   "privacy": "No household complaint locations, resident names, free text, coordinates, or individual animal / encampment records are published. Stuck list contains allowlisted public infrastructure only, rounded to a block.",
-  "method": "Resolved and canceled are separate. Closure medians use resolved records with a closure date and nonnegative duration, among requests opened in this window. They exclude still-open requests and do not estimate how long an open request will take. City comparison uses the same opening window and status rules. Unlocated records cannot be assigned to a neighborhood."
+  "method": "Resolved and canceled are separate. Closure medians use resolved records with a closure date and nonnegative duration, among requests opened in this window. They exclude still-open requests and do not estimate how long an open request will take. City comparison uses the same opening window and status rules. Unlocated records cannot be assigned to a neighborhood.",
+  "history": [
+    {
+      "month": "2023-11",
+      "count": 69,
+      "types": {
+        "Other": 5,
+        "Animal Services": 3,
+        "Healthy Homes": 3,
+        "Illegal Dumping": 2,
+        "Property Violations": 7,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 3,
+        "Street Maintenance": 4,
+        "Trash / Recycling / Bulky Services": 29,
+        "Trees City Row": 2,
+        "Vehicles and Parking": 4,
+        "Water Service": 3
+      }
+    },
+    {
+      "month": "2023-12",
+      "count": 75,
+      "types": {
+        "Other": 12,
+        "Animal Services": 2,
+        "Illegal Dumping": 2,
+        "Property Violations": 3,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 5,
+        "Street Maintenance": 5,
+        "Trash / Recycling / Bulky Services": 28,
+        "Water Service": 15
+      }
+    },
+    {
+      "month": "2024-01",
+      "count": 90,
+      "types": {
+        "Other": 5,
+        "A Pothole": 5,
+        "Healthy Homes": 4,
+        "Illegal Dumping": 3,
+        "Property Violations": 4,
+        "Solid Waste Services": 5,
+        "Street Maintenance": 5,
+        "Trash / Recycling / Bulky Services": 39,
+        "Trees City Row": 1,
+        "Water Service": 19
+      }
+    },
+    {
+      "month": "2024-02",
+      "count": 69,
+      "types": {
+        "Animal Services": 2,
+        "A Pothole": 19,
+        "Other": 9,
+        "Healthy Homes": 3,
+        "Illegal Dumping": 3,
+        "Property Violations": 10,
+        "Recycling Cart Program": 2,
+        "Solid Waste Services": 2,
+        "Street Maintenance": 1,
+        "Trash / Recycling / Bulky Services": 6,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 3,
+        "Water Service": 8
+      }
+    },
+    {
+      "month": "2024-03",
+      "count": 92,
+      "types": {
+        "Animal Services": 3,
+        "A Pothole": 11,
+        "Other": 8,
+        "Healthy Homes": 3,
+        "Illegal Dumping": 4,
+        "Property Violations": 16,
+        "Recycling Cart Program": 3,
+        "Solid Waste Services": 7,
+        "Street Maintenance": 1,
+        "Trash / Recycling / Bulky Services": 26,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 3,
+        "Water Service": 5,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2024-04",
+      "count": 84,
+      "types": {
+        "Animal Services": 2,
+        "A Pothole": 7,
+        "Healthy Homes": 5,
+        "Other": 7,
+        "Illegal Dumping": 3,
+        "Property Violations": 20,
+        "Recycling Cart Program": 3,
+        "Solid Waste Services": 3,
+        "Street Maintenance": 5,
+        "Trash / Recycling / Bulky Services": 11,
+        "Trees City Row": 2,
+        "Vehicles and Parking": 5,
+        "Water Service": 11
+      }
+    },
+    {
+      "month": "2024-05",
+      "count": 106,
+      "types": {
+        "Animal Services": 2,
+        "A Pothole": 23,
+        "Other": 10,
+        "Healthy Homes": 4,
+        "Property Violations": 9,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 5,
+        "Solid Waste Services": 9,
+        "Street Maintenance": 7,
+        "Trash Cart Program": 2,
+        "Trash / Recycling / Bulky Services": 20,
+        "Trees City Row": 8,
+        "Vehicles and Parking": 1,
+        "Water Service": 4
+      }
+    },
+    {
+      "month": "2024-06",
+      "count": 181,
+      "types": {
+        "Animal Services": 1,
+        "A Pothole": 6,
+        "Healthy Homes": 5,
+        "Illegal Dumping": 8,
+        "Property Violations": 30,
+        "Recycling Cart Program": 1,
+        "Other": 12,
+        "Sewer and Stormwater": 6,
+        "Solid Waste Services": 6,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 2,
+        "Trash / Recycling / Bulky Services": 77,
+        "Trees City Row": 6,
+        "Vehicles and Parking": 3,
+        "Water Service": 15,
+        "Zoning and Permits": 2
+      }
+    },
+    {
+      "month": "2024-07",
+      "count": 166,
+      "types": {
+        "Other": 12,
+        "Animal Services": 1,
+        "A Pothole": 9,
+        "Healthy Homes": 9,
+        "Illegal Dumping": 11,
+        "Property Violations": 38,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 4,
+        "Street Maintenance": 9,
+        "Trash / Recycling / Bulky Services": 46,
+        "Trees City Row": 6,
+        "Vehicles and Parking": 5,
+        "Water Service": 12
+      }
+    },
+    {
+      "month": "2024-08",
+      "count": 234,
+      "types": {
+        "Animal Services": 3,
+        "A Pothole": 11,
+        "Other": 14,
+        "Healthy Homes": 8,
+        "Illegal Dumping": 8,
+        "Property Violations": 102,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 7,
+        "Solid Waste Services": 5,
+        "Street Maintenance": 5,
+        "Trash Cart Program": 1,
+        "Trash / Recycling / Bulky Services": 56,
+        "Trees City Row": 6,
+        "Water Service": 4,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2024-09",
+      "count": 77,
+      "types": {
+        "Other": 6,
+        "Animal Services": 1,
+        "A Pothole": 1,
+        "Healthy Homes": 8,
+        "Illegal Dumping": 6,
+        "Property Violations": 17,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 4,
+        "Street Maintenance": 1,
+        "Trash / Recycling / Bulky Services": 19,
+        "Vehicles and Parking": 1,
+        "Water Service": 10,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2024-10",
+      "count": 81,
+      "types": {
+        "Animal Services": 11,
+        "A Pothole": 1,
+        "Other": 5,
+        "Healthy Homes": 6,
+        "Illegal Dumping": 6,
+        "Property Violations": 9,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 4,
+        "Street Maintenance": 6,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 6,
+        "Trash / Recycling / Bulky Services": 14,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 3,
+        "Water Service": 4
+      }
+    },
+    {
+      "month": "2024-11",
+      "count": 73,
+      "types": {
+        "Other": 6,
+        "Animal Services": 6,
+        "A Pothole": 2,
+        "Healthy Homes": 2,
+        "Illegal Dumping": 7,
+        "Property Violations": 11,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 1,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 26,
+        "Trees City Row": 1,
+        "Water Service": 3,
+        "Zoning and Permits": 2
+      }
+    },
+    {
+      "month": "2024-12",
+      "count": 79,
+      "types": {
+        "Animal Services": 1,
+        "A Pothole": 6,
+        "Other": 11,
+        "Healthy Homes": 4,
+        "Illegal Dumping": 5,
+        "Property Violations": 11,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 5,
+        "Solid Waste Services": 6,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 21,
+        "Water Service": 4,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2025-01",
+      "count": 155,
+      "types": {
+        "Other": 40,
+        "Animal Services": 1,
+        "A Pothole": 4,
+        "Healthy Homes": 5,
+        "Illegal Dumping": 2,
+        "Property Violations": 9,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 18,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 55,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 1,
+        "Water Service": 9,
+        "Zoning and Permits": 5
+      }
+    },
+    {
+      "month": "2025-02",
+      "count": 71,
+      "types": {
+        "Animal Services": 2,
+        "A Pothole": 10,
+        "Other": 5,
+        "Illegal Dumping": 5,
+        "Property Violations": 5,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 8,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 19,
+        "Water Service": 10,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2025-03",
+      "count": 95,
+      "types": {
+        "Animal Services": 4,
+        "A Pothole": 14,
+        "Other": 10,
+        "Healthy Homes": 1,
+        "Illegal Dumping": 6,
+        "Property Violations": 12,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 6,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 15,
+        "Trees City Row": 3,
+        "Vehicles and Parking": 2,
+        "Water Service": 14,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2025-04",
+      "count": 95,
+      "types": {
+        "Animal Services": 2,
+        "A Pothole": 17,
+        "Other": 11,
+        "Healthy Homes": 7,
+        "Illegal Dumping": 2,
+        "Property Violations": 6,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 4,
+        "Street Maintenance": 3,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 28,
+        "Trees City Row": 2,
+        "Vehicles and Parking": 2,
+        "Water Service": 5
+      }
+    },
+    {
+      "month": "2025-05",
+      "count": 90,
+      "types": {
+        "Other": 16,
+        "Animal Services": 7,
+        "A Pothole": 6,
+        "Healthy Homes": 3,
+        "Illegal Dumping": 2,
+        "Property Violations": 26,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 4,
+        "Street Maintenance": 3,
+        "Trash  Recycling  Bulky Services": 13,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 2,
+        "Water Service": 3,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2025-06",
+      "count": 98,
+      "types": {
+        "Animal Services": 3,
+        "A Pothole": 9,
+        "Other": 9,
+        "Healthy Homes": 5,
+        "Illegal Dumping": 6,
+        "Property Violations": 28,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 6,
+        "Solid Waste Services": 2,
+        "Street Maintenance": 2,
+        "Trash  Recycling  Bulky Services": 17,
+        "Trees City Row": 3,
+        "Vehicles and Parking": 1,
+        "Water Service": 4,
+        "Zoning and Permits": 2
+      }
+    },
+    {
+      "month": "2025-07",
+      "count": 124,
+      "types": {
+        "Other": 5,
+        "Animal Services": 2,
+        "A Pothole": 3,
+        "Healthy Homes": 11,
+        "Illegal Dumping": 7,
+        "Property Violations": 19,
+        "Sewer and Stormwater": 1,
+        "Solid Waste Services": 5,
+        "Street Maintenance": 3,
+        "Trash  Recycling  Bulky Services": 54,
+        "Trees City Row": 5,
+        "Vehicles and Parking": 4,
+        "Water Service": 2,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2025-08",
+      "count": 115,
+      "types": {
+        "Animal Services": 16,
+        "A Pothole": 1,
+        "Other": 7,
+        "Healthy Homes": 13,
+        "Illegal Dumping": 5,
+        "Property Violations": 29,
+        "Recycling Cart Program": 3,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 4,
+        "Street Maintenance": 2,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 16,
+        "Trees City Row": 7,
+        "Water Service": 4,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2025-09",
+      "count": 93,
+      "types": {
+        "Other": 7,
+        "Animal Services": 18,
+        "A Pothole": 4,
+        "Illegal Dumping": 8,
+        "Property Violations": 19,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 5,
+        "Solid Waste Services": 1,
+        "Street Maintenance": 4,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 17,
+        "Trees City Row": 3,
+        "Water Service": 2,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2025-10",
+      "count": 69,
+      "types": {
+        "Animal Services": 17,
+        "A Pothole": 4,
+        "Other": 9,
+        "Healthy Homes": 2,
+        "Illegal Dumping": 3,
+        "Property Violations": 6,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 4,
+        "Solid Waste Services": 3,
+        "Street Maintenance": 2,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 8,
+        "Trees City Row": 2,
+        "Vehicles and Parking": 1,
+        "Zoning and Permits": 5
+      }
+    },
+    {
+      "month": "2025-11",
+      "count": 76,
+      "types": {
+        "Animal Services": 15,
+        "Other": 6,
+        "Healthy Homes": 1,
+        "Illegal Dumping": 1,
+        "Property Violations": 18,
+        "Recycling Cart Program": 3,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 1,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 14,
+        "Water Service": 12
+      }
+    },
+    {
+      "month": "2025-12",
+      "count": 71,
+      "types": {
+        "Animal Services": 16,
+        "A Pothole": 2,
+        "Other": 5,
+        "Healthy Homes": 6,
+        "Illegal Dumping": 5,
+        "Property Violations": 7,
+        "Sewer and Stormwater": 1,
+        "Solid Waste Services": 3,
+        "Street Maintenance": 2,
+        "Trash  Recycling  Bulky Services": 19,
+        "Vehicles and Parking": 1,
+        "Water Service": 1,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2026-01",
+      "count": 82,
+      "types": {
+        "Animal Services": 10,
+        "A Pothole": 7,
+        "Other": 9,
+        "Healthy Homes": 7,
+        "Illegal Dumping": 2,
+        "Property Violations": 4,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 3,
+        "Street Maintenance": 3,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 26,
+        "Vehicles and Parking": 3,
+        "Water Service": 1,
+        "Zoning and Permits": 2
+      }
+    },
+    {
+      "month": "2026-02",
+      "count": 71,
+      "types": {
+        "Other": 8,
+        "Animal Services": 14,
+        "A Pothole": 8,
+        "Healthy Homes": 2,
+        "Illegal Dumping": 4,
+        "Property Violations": 11,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 1,
+        "Street Maintenance": 2,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 12,
+        "Vehicles and Parking": 4
+      }
+    },
+    {
+      "month": "2026-03",
+      "count": 109,
+      "types": {
+        "Other": 14,
+        "Animal Services": 27,
+        "A Pothole": 11,
+        "Healthy Homes": 2,
+        "Illegal Dumping": 7,
+        "Property Violations": 10,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 4,
+        "Solid Waste Services": 3,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 17,
+        "Trees City Row": 2,
+        "Water Service": 5,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2026-04",
+      "count": 117,
+      "types": {
+        "Other": 15,
+        "Animal Services": 23,
+        "A Pothole": 10,
+        "Healthy Homes": 5,
+        "Illegal Dumping": 14,
+        "Property Violations": 10,
+        "Sewer and Stormwater": 8,
+        "Solid Waste Services": 1,
+        "Street Maintenance": 3,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 15,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 4,
+        "Water Service": 5,
+        "Zoning and Permits": 2
+      }
+    },
+    {
+      "month": "2026-05",
+      "count": 78,
+      "types": {
+        "Animal Services": 15,
+        "A Pothole": 6,
+        "Healthy Homes": 5,
+        "Illegal Dumping": 2,
+        "Property Violations": 9,
+        "Sewer and Stormwater": 3,
+        "Solid Waste Services": 3,
+        "Other": 6,
+        "Street Maintenance": 5,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 15,
+        "Trees City Row": 1,
+        "Vehicles and Parking": 1,
+        "Water Service": 5
+      }
+    },
+    {
+      "month": "2026-06",
+      "count": 119,
+      "types": {
+        "Animal Services": 18,
+        "A Pothole": 4,
+        "Other": 17,
+        "Healthy Homes": 8,
+        "Illegal Dumping": 2,
+        "Property Violations": 22,
+        "Sewer and Stormwater": 6,
+        "Solid Waste Services": 5,
+        "Street Maintenance": 3,
+        "Trash Cart Program": 3,
+        "Trash  Recycling  Bulky Services": 21,
+        "Trees City Row": 5,
+        "Water Service": 5
+      }
+    },
+    {
+      "month": "2026-07",
+      "count": 125,
+      "types": {
+        "Animal Services": 16,
+        "A Pothole": 4,
+        "Other": 12,
+        "Healthy Homes": 5,
+        "Illegal Dumping": 3,
+        "Property Violations": 23,
+        "Recycling Cart Program": 1,
+        "Sewer and Stormwater": 4,
+        "Solid Waste Services": 7,
+        "Street Maintenance": 4,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 33,
+        "Trees City Row": 7,
+        "Vehicles and Parking": 1,
+        "Water Service": 4
+      }
+    },
+    {
+      "month": "2026-08",
+      "count": 100,
+      "types": {
+        "Other": 10,
+        "Animal Services": 22,
+        "A Pothole": 4,
+        "Healthy Homes": 2,
+        "Illegal Dumping": 3,
+        "Property Violations": 15,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 5,
+        "Solid Waste Services": 5,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 3,
+        "Trash  Recycling  Bulky Services": 13,
+        "Trees City Row": 8,
+        "Water Service": 4,
+        "Zoning and Permits": 3
+      }
+    },
+    {
+      "month": "2026-09",
+      "count": 104,
+      "types": {
+        "Animal Services": 7,
+        "A Pothole": 4,
+        "Other": 11,
+        "Healthy Homes": 7,
+        "Illegal Dumping": 4,
+        "Property Violations": 19,
+        "Recycling Cart Program": 2,
+        "Sewer and Stormwater": 2,
+        "Solid Waste Services": 3,
+        "Street Maintenance": 6,
+        "Trash Cart Program": 2,
+        "Trash  Recycling  Bulky Services": 22,
+        "Trees City Row": 11,
+        "Water Service": 3,
+        "Zoning and Permits": 1
+      }
+    },
+    {
+      "month": "2026-10",
+      "count": 71,
+      "types": {
+        "Animal Services": 16,
+        "A Pothole": 3,
+        "Other": 12,
+        "Healthy Homes": 6,
+        "Property Violations": 6,
+        "Recycling Cart Program": 1,
+        "Solid Waste Services": 2,
+        "Street Maintenance": 3,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 13,
+        "Trees City Row": 3,
+        "Water Service": 3,
+        "Zoning and Permits": 2
+      }
+    },
+    {
+      "month": "2026-11",
+      "count": 22,
+      "types": {
+        "Animal Services": 4,
+        "A Pothole": 1,
+        "Other": 5,
+        "Healthy Homes": 1,
+        "Illegal Dumping": 2,
+        "Property Violations": 3,
+        "Street Maintenance": 1,
+        "Trash  Recycling  Bulky Services": 4,
+        "Water Service": 1
+      }
+    }
+  ]
 }

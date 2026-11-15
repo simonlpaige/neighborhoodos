@@ -1,0 +1,140 @@
+{
+  "area": "linwood",
+  "release": "ACS 2024 5-year",
+  "years": "2020-2024",
+  "checked": "2026-11-15",
+  "source": "https://censusreporter.org/",
+  "tracts": [
+    {
+      "id": "29095005400",
+      "name": "Census Tract 54, Jackson, MO",
+      "shareInside": 100
+    },
+    {
+      "id": "29095005500",
+      "name": "Census Tract 55, Jackson, MO",
+      "shareInside": 100
+    },
+    {
+      "id": "29095016900",
+      "name": "Census Tract 169, Jackson, MO",
+      "shareInside": 75
+    },
+    {
+      "id": "29095006300",
+      "name": "Census Tract 63, Jackson, MO",
+      "shareInside": 69
+    },
+    {
+      "id": "29095005300",
+      "name": "Census Tract 53, Jackson, MO",
+      "shareInside": 50
+    },
+    {
+      "id": "29095005200",
+      "name": "Census Tract 52, Jackson, MO",
+      "shareInside": 50
+    },
+    {
+      "id": "29095016600",
+      "name": "Census Tract 166, Jackson, MO",
+      "shareInside": 48
+    }
+  ],
+  "population": {
+    "estimate": 6611,
+    "margin": 711
+  },
+  "age": {
+    "under18": {
+      "estimate": 1305,
+      "margin": 265
+    },
+    "adults": {
+      "estimate": 4405
+    },
+    "over65": {
+      "estimate": 901,
+      "margin": 163
+    }
+  },
+  "households": {
+    "estimate": 3210,
+    "margin": 290
+  },
+  "housing": {
+    "owners": {
+      "estimate": 1137,
+      "margin": 177
+    },
+    "renters": {
+      "estimate": 2073,
+      "margin": 272
+    }
+  },
+  "languages": {
+    "base": {
+      "estimate": 6357,
+      "margin": 677
+    },
+    "englishOnly": {
+      "estimate": 5581,
+      "margin": 648
+    },
+    "other": [
+      {
+        "name": "Spanish",
+        "estimate": 618,
+        "margin": 285,
+        "limitedEnglish": 253
+      },
+      {
+        "name": "Other Asian and Pacific Island",
+        "estimate": 96,
+        "margin": 124,
+        "limitedEnglish": 96
+      },
+      {
+        "name": "Other and unspecified",
+        "estimate": 37,
+        "margin": 44,
+        "limitedEnglish": 35
+      },
+      {
+        "name": "French, Haitian, or Cajun",
+        "estimate": 8,
+        "margin": 24,
+        "limitedEnglish": 0
+      },
+      {
+        "name": "German or other West Germanic",
+        "estimate": 8,
+        "margin": 23,
+        "limitedEnglish": 3
+      },
+      {
+        "name": "Other Indo-European",
+        "estimate": 6,
+        "margin": 24,
+        "limitedEnglish": 0
+      },
+      {
+        "name": "Tagalog",
+        "estimate": 4,
+        "margin": 23,
+        "limitedEnglish": 0
+      }
+    ]
+  },
+  "internet": {
+    "households": {
+      "estimate": 3210,
+      "margin": 290
+    },
+    "none": {
+      "estimate": 373,
+      "margin": 106
+    }
+  },
+  "method": "Census tracts do not follow neighborhood lines. Each overlapping tract is counted in proportion to the share of its land inside this area, which assumes people are spread evenly across a tract. These are rough survey estimates with a margin of error, not a count of residents."
+}
