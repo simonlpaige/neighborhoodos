@@ -1,6 +1,6 @@
 # Building a Tool
 
-From a Problem Brief to a working, safe tool. The full curriculum is in the [Level 3 manual](../docs/Level-3-Tool-Builder.md).
+From a One-Page Plan to a working, safe tool. The full curriculum is in the [Level 3 manual](../docs/Level-3-Tool-Builder.md).
 
 ## 0. Earn the right to build
 - The problem came from a real Solve clinic.

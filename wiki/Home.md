@@ -4,7 +4,7 @@
 
 KC Digital Drive adoption was confirmed by Simon L. Paige on October 17, 2026. Simon remains the site administrator and advisor. The program does not depend on him to run recurring sessions.
 
-Neighbors learn to check AI answers, then use Solve clinics to turn a stuck civic problem into a sourced one-page brief. At LAMP, the Learn track should use DSSC's existing digital skills workshops rather than duplicate them.
+Neighbors learn to check AI answers, then use Solve clinics to turn a stuck civic problem into a sourced one-page plan. At LAMP, the Learn track should use DSSC's existing digital skills workshops rather than duplicate them.
 
 ## Start with your task
 
@@ -19,7 +19,7 @@ Neighbors learn to check AI answers, then use Solve clinics to turn a stuck civi
 
 ## What is ready
 
-The self-paced lesson, private brief builder, print kit, on-site guide, sourced resource directory, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
+The self-paced lesson, private plan builder, print kit, on-site guide, sourced resource directory, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
 
 Lykins / Northeast and Hickman Mills are expansion candidates. Their public-data pages do not establish a relationship or consent to run a program.
 

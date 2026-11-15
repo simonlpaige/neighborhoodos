@@ -10,11 +10,11 @@
 **Local model:** an AI model running on hardware in the hub rather than on a company's servers.
 **Node:** one neighborhood's installation of the software, usually one SQLite database file.
 **Ollama:** free software for running open AI models locally.
-**Problem Brief:** a one-page description of a local problem: what, who has authority, what evidence, and the smallest next move.
+**One-Page Plan:** a one-page description of a local problem: what, who has authority, what evidence, and the smallest next move.
 **Provenance:** where a piece of information came from; every fact should link back to its source.
 **Red-Light Test:** the six questions in the Pilot Rubric that instantly reject a proposal.
 **Safety driver:** `core/db.js`, the code that refuses banned data structures.
-**Solve clinic:** a session where residents turn real problems into Problem Briefs.
+**Solve clinic:** a session where residents turn real problems into One-Page Plans.
 **Socrata:** the platform behind Kansas City's open data portal.
 **Legistar:** the platform many city councils use for agendas, minutes, and votes.
 **Toothbrush test:** does anyone use this at least weekly? If not, reconsider it.

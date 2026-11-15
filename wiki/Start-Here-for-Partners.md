@@ -16,7 +16,7 @@ NeighborhoodOS is free, practical AI learning plus clinics for stuck civic probl
 | Period | Work | Evidence |
 |---|---|---|
 | Days 1–30 | Existing digital-skills learning, outreach through paid connectors, baseline voluntary AI-error check | Aggregate headcounts and anonymous check totals |
-| Days 31–60 | Finish learning; first Solve clinic | Resident-owned briefs, public-source links, named next steps |
+| Days 31–60 | Finish learning; first Solve clinic | Resident-owned plans, public-source links, named next steps |
 | Days 61–90 | Second Solve clinic; check follow-through; decide whether a small tool is justified | Reviewed outcomes and a continue/change/stop decision |
 
 The start date is set after room, staffing, and money are confirmed. No February 2027 cohort is announced by this planning guide.

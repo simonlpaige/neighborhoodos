@@ -12,13 +12,13 @@ Explain who can act: a city department, a utility, a property manager, a county 
 
 ## Protect the ability to participate
 
-The public tools work without accounts. Brief answers stay in the current tab until a person copies or prints them. Hosts should arrange accessible rooms, language support, and funded payment for participants' time before announcing paid sessions. Confirm those arrangements in the listing.
+The public tools work without accounts. Plan answers stay in the current tab until a person copies, downloads, emails, or prints them. Hosts should arrange accessible rooms, language support, and funded payment for participants' time before announcing paid sessions. Confirm those arrangements in the listing.
 
 Privacy commitments have concrete limits. The host can receive ordinary web-access information; external translation and contact services follow their own policies. See the [Threat Model](Threat-Model.md) and [Safety Doctrine](Safety-Doctrine.md).
 
 ## Judge usefulness by what happens next
 
-A lesson should help someone check a claim. A brief should identify a practical next step and a check-back date. A program result needs documented follow-through, a human review, and enough context to understand the limits.
+A lesson should help someone check a claim. A plan should identify a practical next step and a check-back date. A program result needs documented follow-through, a human review, and enough context to understand the limits.
 
 Use voluntary feedback and aggregate measures. Count public resources and working tools as readiness; count verified changes as outcomes. Page visits, AI output, and citywide case closures do not prove the program helped.
 

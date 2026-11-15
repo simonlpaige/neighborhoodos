@@ -8,7 +8,7 @@ The [Digital Services & Support Center at LAMP](https://www.kcdigitaldrive.org/p
 
 ## Build on DSSC
 
-Use DSSC's existing digital skills learning as the Learn track. NeighborhoodOS adds the Solve clinic format, local public-source work, and a private problem brief. Do not advertise a second competing AI-literacy course. The [KCDD calendar](https://www.kcdigitaldrive.org/events/) remains the event source; individual event pages link to registration when offered.
+Use DSSC's existing digital skills learning as the Learn track. NeighborhoodOS adds the Solve clinic format, local public-source work, and a private one-page plan. Do not advertise a second competing AI-literacy course. The [KCDD calendar](https://www.kcdigitaldrive.org/events/) remains the event source; individual event pages link to registration when offered.
 
 ## References, not confirmed agreements
 

@@ -2,7 +2,7 @@
 
 **Free, practical AI help for Linwood neighbors, plus clinics for stuck civic problems.**
 
-[Use the website](https://neighborhoodos.org/) · [Make a brief](https://neighborhoodos.org/brief/) · [Who fixes what?](https://neighborhoodos.org/who-fixes-what/) · [Program guide](https://neighborhoodos.org/guide/) · [Contact KC Digital Drive](https://www.kcdigitaldrive.org/contact/)
+[Use the website](https://neighborhoodos.org/) · [Make a plan](https://neighborhoodos.org/plan/) · [Who fixes what?](https://neighborhoodos.org/who-fixes-what/) · [Program guide](https://neighborhoodos.org/guide/) · [Contact KC Digital Drive](https://www.kcdigitaldrive.org/contact/)
 
 KC Digital Drive owns the program. Simon L. Paige created NeighborhoodOS and remains site administrator and advisor. Linwood is the starting area; other neighborhoods can adapt the materials. No repository or domain transfer is implied.
 
@@ -10,14 +10,14 @@ KC Digital Drive owns the program. Simon L. Paige created NeighborhoodOS and rem
 
 - Practice checking an AI answer with the free lesson.
 - Find the office responsible for a local issue.
-- Make a private, printable brief with evidence, a next action, and a check-back date.
+- Make a private, printable plan with evidence, a next action, and a check-back date.
 - Read dated 311 and building-permit snapshots or find local help.
 
-The public website has no accounts, analytics, or resident database. Brief answers remain in the tab until the user copies or prints them. Hosting providers can receive ordinary web-access information. Optional external translation and contact services follow their own policies. See the [Threat Model](wiki/Threat-Model.md).
+The public website has no accounts, analytics, or resident database. Plan answers remain in the tab until the user copies, downloads, emails, or prints them (email uses the person’s own mail app; the site sends nothing). Hosting providers can receive ordinary web-access information. Optional external translation and contact services follow their own policies. See the [Threat Model](wiki/Threat-Model.md).
 
 ## Program and philosophy
 
-Residents choose the question. Facilitators help identify authority, check sources, and make follow-through practical. A completed brief is an output; a documented response or improvement is an outcome. Public-data totals do not establish program impact.
+Residents choose the question. Facilitators help identify authority, check sources, and make follow-through practical. A completed plan is an output; a documented response or improvement is an outcome. Public-data totals do not establish program impact.
 
 KCDD adoption is confirmed. Clinic dates, facilitators, access arrangements, and stipend funding must be confirmed before sessions are announced. The planning budget includes participant and peer-helper pay; it is not a promise of funded attendance. See [sessions](https://neighborhoodos.org/sessions/), [principles](wiki/Principles.md), [evaluation](wiki/Evaluation-and-Metrics.md), and the [Safety Doctrine](wiki/Safety-Doctrine.md).
 
@@ -58,7 +58,7 @@ Refreshes contact official public APIs. The normal build uses checked-in snapsho
 | --- | --- |
 | `scripts/pages.mjs`, `scripts/build-site.mjs` | Page content and site generator |
 | `scripts/resident-tools.mjs`, `scripts/guide-render.mjs` | Resident flows, routing, and handbook rendering |
-| `content/` | Source fragments for the lesson, brief, and print kit |
+| `content/` | Source fragments for the lesson, plan, and print kit |
 | `wiki/` | Program, safety, and operating guidance |
 | Selected `docs/` manuals | Reviewed manuals published in the same guide |
 | `assets/` | Local fonts, styles, and browser code |
