@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-15",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-14T17:12:39.794Z",
+  "generatedAt": "2026-11-15T17:51:10.622Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1109,
-  "requests30": 61,
-  "requests90": 242,
+  "total": 1107,
+  "requests30": 59,
+  "requests90": 239,
   "counts": {
     "open": 164,
-    "resolved": 899,
+    "resolved": 897,
     "canceled": 46
   },
-  "openOver60": 102,
+  "openOver60": 104,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -23,16 +23,16 @@
     },
     {
       "type": "Animal Services",
-      "count": 198,
+      "count": 197,
       "medianDays": 1,
-      "closedSample": 160,
+      "closedSample": 159,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 146,
+      "count": 145,
       "medianDays": 6,
-      "closedSample": 51,
+      "closedSample": 50,
       "cityMedianDays": 12
     },
     {
@@ -187,7 +187,7 @@
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Dangerous Buildings",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 207
+      "name": "Mobile app",
+      "count": 272
     },
     {
       "name": "Phone",
-      "count": 630
+      "count": 629
     },
     {
-      "name": "Mobile app",
-      "count": 272
+      "name": "Other / not specified",
+      "count": 206
     }
   ],
   "stuck": [

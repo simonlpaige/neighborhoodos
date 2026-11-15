@@ -1,26 +1,89 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-15",
   "source": "w8jz-wjgn",
   "sourceMax": "2026-11-14",
-  "sourceUpdated": "2026-11-08",
+  "sourceUpdated": "2026-11-15",
   "parcelSource": "6g4y-sh3m",
   "parcelUpdated": "2023-12-30",
   "window": "Unique building permits issued in the trailing 365 days; not applications or all trade permits.",
-  "total": 74,
-  "issued30": 3,
-  "issued90": 36,
+  "total": 83,
+  "issued30": 11,
+  "issued90": 45,
   "byType": [
     {
       "type": "Residential",
-      "count": 45
+      "count": 46
     },
     {
       "type": "Commercial",
-      "count": 29
+      "count": 37
     }
   ],
   "recent": [
+    {
+      "number": "CPBR-2026-02808",
+      "issued": "2026-11-13",
+      "type": "Residential building",
+      "block": "3400 block of Prospect Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01142",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Olive St A-2",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01144",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Olive St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01148",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Wabash Ave Mail Structure",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01146",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Wabash Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01143",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Olive St",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01149",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Wabash Ave Maintenance Shed",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01147",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Wabash Ave",
+      "status": "issued"
+    },
+    {
+      "number": "CPBC-2026-01145",
+      "issued": "2026-11-11",
+      "type": "Commercial building",
+      "block": "4400 block of Wabash Ave",
+      "status": "issued"
+    },
     {
       "number": "CPBR-2026-02756",
       "issued": "2026-11-03",
@@ -61,69 +124,6 @@
       "issued": "2026-10-05",
       "type": "Commercial building",
       "block": "2000 block of Euclid Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00954",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Euclid Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00953",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Euclid Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00952",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of E 37th St",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00951",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of E 37th St",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00949",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of E 37th St",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00948",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of E 37th St",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00947",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Garfield Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00946",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Garfield Ave",
-      "status": "issued"
-    },
-    {
-      "number": "CPBC-2026-00945",
-      "issued": "2026-10-05",
-      "type": "Commercial building",
-      "block": "2000 block of Garfield Ave",
       "status": "issued"
     }
   ],

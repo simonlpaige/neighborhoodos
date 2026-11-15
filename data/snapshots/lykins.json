@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-15",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-14T17:12:39.486Z",
+  "generatedAt": "2026-11-15T17:51:09.941Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2094,
-  "requests30": 120,
-  "requests90": 494,
+  "total": 2090,
+  "requests30": 115,
+  "requests90": 485,
   "counts": {
     "open": 387,
-    "resolved": 1554,
+    "resolved": 1550,
     "canceled": 153
   },
-  "openOver60": 271,
+  "openOver60": 274,
   "types": [
     {
       "type": "Property Violations",
@@ -100,9 +100,9 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 43,
-      "medianDays": 81,
-      "closedSample": 17,
+      "count": 40,
+      "medianDays": 56,
+      "closedSample": 14,
       "cityMedianDays": 15
     },
     {
@@ -169,18 +169,18 @@
       "cityMedianDays": 31
     },
     {
-      "type": "Healthy Homes",
-      "count": 14,
-      "medianDays": 3,
-      "closedSample": 11,
-      "cityMedianDays": 8
-    },
-    {
       "type": "Sidewalks and Curbs",
       "count": 14,
       "medianDays": 4,
       "closedSample": 12,
       "cityMedianDays": 5
+    },
+    {
+      "type": "Healthy Homes",
+      "count": 13,
+      "medianDays": 4,
+      "closedSample": 10,
+      "cityMedianDays": 8
     },
     {
       "type": "Street Cleaning / Sweeping",
@@ -194,7 +194,7 @@
       "count": 10,
       "medianDays": 4,
       "closedSample": 10,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Traffic Signals",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 418
-    },
-    {
       "name": "Phone",
-      "count": 925
+      "count": 924
     },
     {
       "name": "Mobile app",
       "count": 751
+    },
+    {
+      "name": "Other / not specified",
+      "count": 415
     }
   ],
   "stuck": [

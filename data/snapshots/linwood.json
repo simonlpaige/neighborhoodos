@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-14",
+  "asOf": "2026-11-15",
   "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-14T17:12:39.060Z",
+  "generatedAt": "2026-11-15T17:51:09.513Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3628,
-  "requests30": 163,
-  "requests90": 732,
+  "total": 3618,
+  "requests30": 156,
+  "requests90": 721,
   "counts": {
-    "open": 627,
-    "resolved": 2780,
-    "canceled": 221
+    "open": 626,
+    "resolved": 2772,
+    "canceled": 220
   },
-  "openOver60": 466,
+  "openOver60": 469,
   "types": [
     {
       "type": "Property Violations",
-      "count": 833,
+      "count": 830,
       "medianDays": 11,
-      "closedSample": 396,
+      "closedSample": 395,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 533,
+      "count": 532,
       "medianDays": 0,
-      "closedSample": 433,
+      "closedSample": 432,
       "cityMedianDays": 0
     },
     {
@@ -37,9 +37,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 379,
+      "count": 376,
       "medianDays": 6,
-      "closedSample": 301,
+      "closedSample": 298,
       "cityMedianDays": 5
     },
     {
@@ -57,18 +57,18 @@
       "cityMedianDays": 8
     },
     {
-      "type": "Vehicles and Parking",
-      "count": 105,
-      "medianDays": 6,
-      "closedSample": 104,
-      "cityMedianDays": 6
-    },
-    {
       "type": "Trees City Row",
       "count": 105,
       "medianDays": 2,
       "closedSample": 87,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Vehicles and Parking",
+      "count": 104,
+      "medianDays": 6,
+      "closedSample": 103,
+      "cityMedianDays": 6
     },
     {
       "type": "Solid Waste Services",
@@ -86,9 +86,9 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 93,
-      "medianDays": 7,
-      "closedSample": 85,
+      "count": 92,
+      "medianDays": 7.5,
+      "closedSample": 84,
       "cityMedianDays": 8
     },
     {
@@ -114,9 +114,9 @@
     },
     {
       "type": "Land Bank Issues",
-      "count": 47,
-      "medianDays": 22.5,
-      "closedSample": 34,
+      "count": 46,
+      "medianDays": 21,
+      "closedSample": 33,
       "cityMedianDays": 11
     },
     {
@@ -180,7 +180,7 @@
       "count": 26,
       "medianDays": 6,
       "closedSample": 23,
-      "cityMedianDays": 7
+      "cityMedianDays": 7.5
     },
     {
       "type": "Dangerous Buildings",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 799
+      "name": "Mobile app",
+      "count": 865
     },
     {
       "name": "Phone",
-      "count": 1960
+      "count": 1956
     },
     {
-      "name": "Mobile app",
-      "count": 869
+      "name": "Other / not specified",
+      "count": 797
     }
   ],
   "stuck": [
