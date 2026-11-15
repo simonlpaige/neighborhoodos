@@ -24,7 +24,7 @@ Neighbors learn to check AI answers, then use Solve clinics to turn a stuck civi
 
 ## What is ready
 
-The self-paced lesson, private brief builder, print kit, on-site guide, sourced resource directory, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
+The self-paced lesson, private plan builder, print kit, on-site guide, pointers to 211 and existing local directories, and dated public-data snapshots can be used now. Session dates, stipend funding, named program roles, partner agreements, and reviewed clinic results remain to be confirmed.
 
 Lykins / Northeast and Hickman Mills are expansion candidates. Their public-data pages do not establish a relationship or consent to run a program.
 
@@ -96,7 +96,7 @@ Status: October 17, 2026. Availability is separate from adoption, participation,
 - Confirmed KCDD program ownership, with Simon as site administrator and advisor.
 - LAMP/DSSC host information and one address; library as an optional second venue.
 - Shared accessible design, local fonts, sessions, resources, small business, funder materials, and on-site guide.
-- Browser-only brief builder and existing learning exercises retained.
+- Browser-only plan builder and existing learning exercises retained.
 - Official neighborhood polygons, dated 311 snapshots, separate canceled statuses, closure medians, trends, and infrastructure-only block-level stuck lists.
 - One neighborhood config, sourced directory records, a Spanish lesson, print views, and a downloadable evidence pack.
 

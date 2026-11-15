@@ -23,6 +23,6 @@ For a suspicious request for money, stop and contact the person or organization 
 
 ## Close with a useful next step
 
-Invite each person to name one task they can try and one detail they will verify. Offer the reminder card and [local digital help](/resources/#category=Digital%20help).
+Invite each person to name one task they can try and one detail they will verify. Offer the reminder card and [local digital help](/resources/).
 
 Participation checks are voluntary. Report group totals only; do not create resident scores or histories. See [evaluation and metrics](../wiki/Evaluation-and-Metrics.md).
