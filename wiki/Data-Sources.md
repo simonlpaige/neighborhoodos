@@ -63,3 +63,17 @@ The current permit feed has no geographic coordinates. Join `main_parcel_number`
 Publish issue-date counts, residential/commercial categories, and at most 15 recent records with public permit number, recorded status and a 100-block. Never publish owners, contractors, descriptions, exact addresses, parcel identifiers or coordinates. Source record links select only permit number, issue date, type and status. Permit issuance does not prove that work started, finished, or remains authorized. Show the permit source date, publication date, check date, and parcel-map date separately. A failed source or geometry query prevents publication of an empty replacement.
 
 Official sources: https://data.kcmo.org/d/w8jz-wjgn and https://data.kcmo.org/d/6g4y-sh3m.
+
+## Census: who lives here
+
+Each neighborhood page shows area-wide figures from the U.S. Census Bureau's American Community Survey 5-year estimates: population, age groups, households, renters and owners, languages spoken at home, and households without internet. The figures are read through the [Census Reporter](https://censusreporter.org/) API by `scripts/refresh-census.mjs` and saved as `data/snapshots/<area>-census.json`.
+
+- Run `node scripts/refresh-census.mjs` by hand once a year, after a new ACS release. It is not part of the nightly refresh. A failed run writes nothing.
+- Census tracts do not follow neighborhood lines. Each overlapping tract is counted in proportion to the share of its land inside the area. Treat the results as rough estimates.
+- Languages under 3% of people are grouped, because small estimates are unreliable.
+- Race and ethnicity are not shown. Adding them is a program decision for KC Digital Drive, not a technical default.
+- ACS 5-year periods overlap, so the page does not compare one release with the next.
+
+## Trends in 311 requests
+
+The nightly refresh also saves 37 months of monthly request counts per area (`history` in each snapshot). The page compares the last full month with the month before and with the same month a year earlier, and the last 12 full months with the 12 before. Two renamed city categories are joined under their current names, categories with few requests are folded into "Other", and encampment reports are never broken out.

@@ -1,0 +1,125 @@
+{
+  "area": "lykins",
+  "release": "ACS 2024 5-year",
+  "years": "2020-2024",
+  "checked": "2026-11-15",
+  "source": "https://censusreporter.org/",
+  "tracts": [
+    {
+      "id": "29095001900",
+      "name": "Census Tract 19, Jackson, MO",
+      "shareInside": 73
+    },
+    {
+      "id": "29095001800",
+      "name": "Census Tract 18, Jackson, MO",
+      "shareInside": 49
+    },
+    {
+      "id": "29095016000",
+      "name": "Census Tract 160, Jackson, MO",
+      "shareInside": 16
+    },
+    {
+      "id": "29095002300",
+      "name": "Census Tract 23, Jackson, MO",
+      "shareInside": 7
+    }
+  ],
+  "population": {
+    "estimate": 3956,
+    "margin": 593
+  },
+  "age": {
+    "under18": {
+      "estimate": 863,
+      "margin": 170
+    },
+    "adults": {
+      "estimate": 2696
+    },
+    "over65": {
+      "estimate": 397,
+      "margin": 143
+    }
+  },
+  "households": {
+    "estimate": 1627,
+    "margin": 332
+  },
+  "housing": {
+    "owners": {
+      "estimate": 786,
+      "margin": 143
+    },
+    "renters": {
+      "estimate": 842,
+      "margin": 301
+    }
+  },
+  "languages": {
+    "base": {
+      "estimate": 3779,
+      "margin": 574
+    },
+    "englishOnly": {
+      "estimate": 1841,
+      "margin": 484
+    },
+    "other": [
+      {
+        "name": "Spanish",
+        "estimate": 1497,
+        "margin": 414,
+        "limitedEnglish": 751
+      },
+      {
+        "name": "Other and unspecified",
+        "estimate": 270,
+        "margin": 254,
+        "limitedEnglish": 88
+      },
+      {
+        "name": "Vietnamese",
+        "estimate": 51,
+        "margin": 51,
+        "limitedEnglish": 51
+      },
+      {
+        "name": "Tagalog",
+        "estimate": 51,
+        "margin": 76,
+        "limitedEnglish": 27
+      },
+      {
+        "name": "French, Haitian, or Cajun",
+        "estimate": 46,
+        "margin": 57,
+        "limitedEnglish": 34
+      },
+      {
+        "name": "Other Asian and Pacific Island",
+        "estimate": 16,
+        "margin": 16,
+        "limitedEnglish": 14
+      },
+      {
+        "name": "Other Indo-European",
+        "estimate": 7,
+        "margin": 15,
+        "limitedEnglish": 6
+      }
+    ]
+  },
+  "internet": {
+    "households": {
+      "estimate": 1627,
+      "margin": 332
+    },
+    "none": {
+      "estimate": 152,
+      "margin": 84
+    }
+  },
+  "method": "Census tracts do not follow neighborhood lines. Each overlapping tract is counted in proportion to the share of its land inside this area, which assumes people are spread evenly across a tract. These are rough survey estimates with a margin of error, not a count of residents."
+}
