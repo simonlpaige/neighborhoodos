@@ -71,7 +71,7 @@ Each neighborhood page shows area-wide figures from the U.S. Census Bureau's Ame
 - Run `node scripts/refresh-census.mjs` by hand once a year, after a new ACS release. It is not part of the nightly refresh. A failed run writes nothing.
 - Census tracts do not follow neighborhood lines. Each overlapping tract is counted in proportion to the share of its land inside the area. Treat the results as rough estimates.
 - Languages under 3% of people are grouped, because small estimates are unreliable.
-- Race and ethnicity are not shown. Adding them is a program decision for KC Digital Drive, not a technical default.
+- Race and ethnicity are not shown. KC Digital Drive decided to leave them out (November 2026).
 - ACS 5-year periods overlap, so the page does not compare one release with the next.
 
 ## Trends in 311 requests
