@@ -57,7 +57,7 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 
 ## Solve Clinic 1 and 2
 
-**Goal:** Turn frustrations into Problem Briefs with a clear next move and an owner.
+**Goal:** Turn frustrations into One-Page Plans with a clear next move and an owner.
 
 | Time | Activity |
 |---|---|
@@ -65,26 +65,26 @@ Each session is 90 minutes. Times are guides, not rules. Materials lists assume 
 | 0:10 | **Pink notes: dump the frustrations.** One concrete problem per note. ("Streetlight at Linwood and Prospect out since July," not "the city ignores us.") |
 | 0:25 | **Yellow notes: who has authority?** Landlord, city department, utility, county, state, or community. |
 | 0:40 | **Green notes: what's the evidence?** 311 cases, permits, violations, meeting minutes, photos with dates. |
-| 0:55 | **Pick 3-5 and write briefs** in small groups using the Problem Brief template (below). AI can help draft; a human checks every line. |
-| 1:15 | **Commitments.** Each brief gets a named next step and a date. Post them on the public problem log. Close. |
+| 0:55 | **Pick 3-5 and write plans** in small groups using the One-Page Plan template (below). AI can help draft; a human checks every line. |
+| 1:15 | **Commitments.** Each plan gets a named next step and a date. Post them on the public problem log. Close. |
 
-**Problem Brief template** ([printable](https://neighborhoodos.org/kit/#h-brief), or [online](https://neighborhoodos.org/#brief)); track all of them on the [public problem log](https://neighborhoodos.org/kit/#h-log):
+**One-Page Plan template** ([printable](https://neighborhoodos.org/kit/#h-brief), or [online](https://neighborhoodos.org/plan/)); track all of them on the [public problem log](https://neighborhoodos.org/kit/#h-log):
 1. The problem, in plain words. Where, since when, who is affected.
 2. Who has authority to fix it (specific office or entity).
 3. What evidence exists (with links).
 4. The smallest next move this week, and who will do it.
 
-Never write briefs about individual private residents. Focus on institutions, commercial landlords, and infrastructure. See the [Level 2 manual](../docs/Level-2-Problem-Framer.md).
+Never write plans about individual private residents. Focus on institutions, commercial landlords, and infrastructure. See the [Level 2 manual](../docs/Level-2-Problem-Framer.md).
 
 ---
 
 ## Build Session(s)
 
-**Goal:** Co-design one small tool from the strongest brief, safely.
+**Goal:** Co-design one small tool from the strongest plan, safely.
 
 | Time | Activity |
 |---|---|
-| 0:00 | Welcome. Read the chosen brief out loud. |
+| 0:00 | Welcome. Read the chosen plan out loud. |
 | 0:10 | **Rubric check.** Score it together with the [score sheet](https://neighborhoodos.org/kit/#h-rubric) (full detail: [Pilot Rubric](../docs/PILOT-RUBRIC.md)). If it fails the Red-Light Test, stop and pick another. |
 | 0:25 | **Paper prototype.** Draw the screens on paper cards. Test them on each other. |
 | 0:55 | **Write the rules.** Plain-language instructions for any AI piece: always link sources, never give legal advice, say "I don't know" when unsure. |

@@ -7,7 +7,7 @@ Status: October 17, 2026. Availability is separate from adoption, participation,
 - Confirmed KCDD program ownership, with Simon as site administrator and advisor.
 - LAMP/DSSC host information and one address; library as an optional second venue.
 - Shared accessible design, local fonts, sessions, resources, small business, funder materials, and on-site guide.
-- Browser-only brief builder and existing learning exercises retained.
+- Browser-only plan builder and existing learning exercises retained.
 - Official neighborhood polygons, dated 311 snapshots, separate canceled statuses, closure medians, trends, and infrastructure-only block-level stuck lists.
 - One neighborhood config, sourced directory records, a Spanish lesson, print views, and a downloadable evidence pack.
 

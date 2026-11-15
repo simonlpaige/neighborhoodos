@@ -18,6 +18,6 @@ Native names appear on the left and English names on the right. Arabic retains r
 
 Selecting a language opens Google Translate in a new tab. Google receives the public reading-copy URL and handles the automatic translation under its own terms. No Google translation widget, tracker, or script loads on the original NeighborhoodOS page.
 
-The reading copy excludes editable forms, embedded content, and scripts. It never includes a visitor's answers. Return to the original tab to use the private brief or interactive quizzes. Existing private input remains in that original tab and is not part of the translation URL.
+The reading copy excludes editable forms, embedded content, and scripts. It never includes a visitor's answers. Return to the original tab to use the private plan or interactive quizzes. Existing private input remains in that original tab and is not part of the translation URL.
 
 Automatic translation can make mistakes, especially with service rules, dates, legal language, or names. It is not a reviewed translation or a promise of interpreting services. Use the original source and contact KCDD for language help or corrections. The separately published Spanish lesson remains available on the site.

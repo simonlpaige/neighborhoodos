@@ -7,7 +7,7 @@ A KC Digital Drive program. KCDD adoption confirmed by founder Simon L. Paige on
 ## Available now
 - Self-paced AI safety lesson: https://neighborhoodos.org/learn/
 - Spanish lesson: https://neighborhoodos.org/learn/es/
-- Private, browser-only problem brief: https://neighborhoodos.org/brief/
+- Private, browser-only one-page plan: https://neighborhoodos.org/plan/
 - Who fixes what in Kansas City: https://neighborhoodos.org/who-fixes-what/
 - Resident agency and measures of usefulness: https://neighborhoodos.org/guide/principles/
 - Sourced resources: https://neighborhoodos.org/resources/

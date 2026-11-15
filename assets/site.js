@@ -24,7 +24,7 @@ if(startingPoint){
  const fields=['what','who','evidence','next'].map(k=>document.querySelector('#b-'+k));
  const notice=document.querySelector('#brief-context-status'),help=document.querySelector('#brief-help');
  const apply=()=>{const o=startingPoint.selectedOptions[0];if(!o?.dataset.evidence){notice.textContent='Choose a public pattern, or write your own question below.';return;}
- if(fields.some(f=>f.value.trim())){notice.textContent='Your current answers are still here. Copy or print them, then use Clear before loading another starting point.';return;}
+ if(fields.some(f=>f.value.trim())){notice.textContent='Your current answers are still here. Download, copy, or print them, then use Clear before loading another starting point.';return;}
  fields[0].value='A question about '+o.dataset.topic.toLowerCase()+' in '+o.dataset.area+'. Add the specific public issue you want to understand.';
  fields[1].value='The city (311, public works, codes)';
  fields[2].value=o.dataset.evidence;

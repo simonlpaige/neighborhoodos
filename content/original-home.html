@@ -82,7 +82,7 @@
 .rung .take b { display:block; font-family:var(--mono); font-weight:500; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-bottom:2px; }
 .ladder-note { margin-top:26px; font-family:var(--display); font-style:italic; font-size:22px; line-height:1.4; color:var(--terracotta-deep); max-width:40ch; }
 
-/* Brief builder */
+/* Plan builder */
 .brief-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
 .brief-out { background:#FFFCF7; border:1px solid var(--paper-3); border-radius:14px; padding:28px; position:sticky; top:84px; }
 .brief-out h3 { font-size:26px; font-style:italic; font-weight:400; }
@@ -191,7 +191,7 @@
           <p class="who">Curious, cautious, or just tired of a problem nobody fixes.</p>
           <ul>
             <li><a href="/learn/">Take the free lesson</a><span>How AI works, scams to watch for, what to keep private. About 15 minutes.</span></li>
-            <li><a href="#brief">Turn a problem into a plan</a><span>A one-page brief with who can fix it and your next step.</span></li>
+            <li><a href="#brief">Turn a problem into a plan</a><span>A one-page plan with who can fix it and your next step.</span></li>
             <li><a href="/local/">Open the Linwood dashboard</a><span>Recent 311 requests in Linwood, meeting notes, and links to city and county sources.</span></li>
           </ul>
         </div>
@@ -234,7 +234,7 @@
         </li>
         <li class="rung">
           <div><span class="when">Two Solve clinics</span><h3>Local problem framer</h3><p class="does">Bring something stuck, or something Kansas City Documenters flagged from a public meeting. Sort out who can actually fix it, what public evidence exists, and the smallest next move.</p></div>
-          <p class="take"><b>You leave with</b>A one-page brief: who has the power to fix it, the public evidence, and a next step with a name on it.</p>
+          <p class="take"><b>You leave with</b>A one-page plan: who has the power to fix it, the public evidence, and a next step with a name on it.</p>
         </li>
         <li class="rung">
           <div><span class="when">One Build, if earned</span><h3>Tool co-designer</h3><p class="does">When a clinic surfaces a real need, sketch a small tool on paper, test it with neighbors, and write its safety rules.</p></div>
@@ -254,7 +254,7 @@
       <div class="section-head">
         <p class="eyebrow">Bring a problem</p>
         <div>
-          <h2>A complaint is a frustration. A brief is a plan.</h2>
+          <h2>A complaint is a frustration. A plan is a plan.</h2>
           <p>This is the core exercise from our Solve clinics. Fill it in for something stuck on your block. It stays on your device: nothing you type is sent anywhere.</p>
         </div>
       </div>
@@ -274,9 +274,16 @@
               <option>A landlord or property company</option>
               <option>The county</option>
               <option>The state</option>
+              <option>A nonprofit or community group</option>
               <option>Us: neighbors, an association, mutual aid</option>
+              <option>Other (write it in)</option>
               <option>Not sure yet (that’s the first thing to find out)</option>
             </select>
+          </div>
+          <div class="field" id="b-other-field" hidden>
+            <label for="b-other">Who is it?
+              <span class="hint">Name the group or office: a nonprofit, a school, a church, a business.</span></label>
+            <input type="text" id="b-other" name="other" autocomplete="off">
           </div>
           <div class="field">
             <label for="b-evidence">What evidence exists?
@@ -293,18 +300,20 @@
         </form>
 
         <div class="brief-out" aria-labelledby="brief-title">
-          <p class="eyebrow">Your problem brief</p>
+          <p class="eyebrow">Your one-page plan</p>
           <h3 id="brief-title">One page, four answers.</h3>
           <dl>
-            <dt>The problem</dt><dd id="o-what" class="empty">Start typing on the left.</dd>
+            <dt>The problem</dt><dd id="o-what" class="empty">Your answers appear here.</dd>
             <dt>Who can fix it</dt><dd id="o-who" class="empty">Not chosen yet.</dd>
             <dt>Evidence</dt><dd id="o-evidence" class="empty">Nothing yet.</dd>
             <dt>Next step</dt><dd id="o-next" class="empty">Nothing yet.</dd>
           </dl>
           <p class="where" id="o-where" hidden></p>
           <div class="actions no-print">
-            <button type="button" class="btn small primary" id="b-copy">Copy brief</button>
-            <button type="button" class="btn small" id="b-print">Print</button>
+            <button type="button" class="btn small primary" id="b-copy">Copy plan</button>
+            <button type="button" class="btn small" id="b-download">Download</button>
+            <button type="button" class="btn small" id="b-email">Email it to myself</button>
+            <button type="button" class="btn small" id="b-print">Print or save as PDF</button>
             <button type="button" class="btn small" id="b-clear">Clear</button>
           </div>
           <p class="status" id="b-status" role="status" aria-live="polite"></p>
@@ -438,9 +447,9 @@
     claims[0].focus();
   });
 
-  /* Problem brief builder (stays in the browser) */
+  /* One-page plan builder (stays in the browser) */
   var fields = ['what', 'who', 'evidence', 'next'];
-  var empty = { what: 'Start typing on the left.', who: 'Not chosen yet.', evidence: 'Nothing yet.', next: 'Nothing yet.' };
+  var empty = { what: 'Your answers appear here.', who: 'Not chosen yet.', evidence: 'Nothing yet.', next: 'Nothing yet.' };
   var status = document.getElementById('b-status');
   var where = {
     'The city (311, public works, codes)': 'Tip: file a 311 request first and write down the case number. It becomes your evidence, and you can check its status later.',
@@ -448,12 +457,32 @@
     'A landlord or property company': 'Tip: put the request in writing and keep a dated copy. For rights and options, talk to a tenant advocate, not a chatbot.',
     'The county': 'Tip: county offices handle things like assessments, health, and some roads. The county legislature publishes agendas you can speak at.',
     'The state': 'Tip: your state representative’s office can often route a problem to the right agency faster than a cold call.',
-    'Us: neighbors, an association, mutual aid': 'Tip: the smallest next step is usually one conversation. Bring this brief to your next association meeting.',
+    'A nonprofit or community group': 'Tip: ask who runs the program and how to reach them. Write down the name of the person you talk to and the date.',
+    'Other (write it in)': 'Tip: write down who you asked, when, and what they said. If they can’t act, ask who can.',
+    'Us: neighbors, an association, mutual aid': 'Tip: the smallest next step is usually one conversation. Bring this plan to your next association meeting.',
     'Not sure yet (that’s the first thing to find out)': 'Tip: that’s normal. Your next step can simply be: find out who is responsible. Bring it to a Solve clinic.'
   };
+  var other = document.getElementById('b-other');
+  var otherField = document.getElementById('b-other-field');
+  var named = { 'A nonprofit or community group': 1, 'Other (write it in)': 1 };
+  function value(f) {
+    var v = document.getElementById('b-' + f).value.trim();
+    if (f !== 'who' || !named[v]) return v;
+    var name = other.value.trim();
+    if (v === 'Other (write it in)') return name || 'Other';
+    return name ? v + ': ' + name : v;
+  }
+  function planText() {
+    var labels = { what: 'The problem', who: 'Who can fix it', evidence: 'Evidence', next: 'Next step' };
+    return 'ONE-PAGE PLAN\n\n' + fields.map(function (f) {
+      return labels[f] + ':\n' + (value(f) || '(blank)');
+    }).join('\n\n') + '\n\nMade with the NeighborhoodOS plan builder: neighborhoodos.org/plan/';
+  }
+  function hasAnswers() { return fields.some(function (f) { return document.getElementById('b-' + f).value.trim(); }); }
   function render() {
+    otherField.hidden = !named[document.getElementById('b-who').value];
     fields.forEach(function (f) {
-      var v = document.getElementById('b-' + f).value.trim();
+      var v = value(f);
       var out = document.getElementById('o-' + f);
       out.textContent = v || empty[f];
       out.classList.toggle('empty', !v);
@@ -463,15 +492,27 @@
     wEl.textContent = w || ''; wEl.hidden = !w;
   }
   fields.forEach(function (f) { document.getElementById('b-' + f).addEventListener('input', render); });
+  other.addEventListener('input', render);
+  document.getElementById('b-download').addEventListener('click', function () {
+    if (!hasAnswers()) { status.textContent = 'Nothing to download yet. Fill in at least one answer.'; return; }
+    var url = URL.createObjectURL(new Blob([planText().replace(/\n/g, '\r\n')], { type: 'text/plain;charset=utf-8' }));
+    var a = document.createElement('a');
+    a.href = url; a.download = 'my-neighborhood-plan.txt';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    status.textContent = 'Downloaded as my-neighborhood-plan.txt. On a shared computer, move it to your own drive or email, then delete it here.';
+  });
+  document.getElementById('b-email').addEventListener('click', function () {
+    if (!hasAnswers()) { status.textContent = 'Nothing to email yet. Fill in at least one answer.'; return; }
+    location.href = 'mailto:?subject=' + encodeURIComponent('My neighborhood plan') + '&body=' + encodeURIComponent(planText());
+    status.textContent = 'Your email app should open with the plan filled in. Add your own address and send. If nothing opens, use Copy plan and paste it into an email.';
+  });
   document.getElementById('b-copy').addEventListener('click', function () {
-    var labels = { what: 'The problem', who: 'Who can fix it', evidence: 'Evidence', next: 'Next step' };
-    var text = 'PROBLEM BRIEF\n\n' + fields.map(function (f) {
-      return labels[f] + ':\n' + (document.getElementById('b-' + f).value.trim() || '(blank)');
-    }).join('\n\n') + '\n\nMade with the NeighborhoodOS brief builder: neighborhoodos.org/#brief';
+    var text = planText();
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { status.textContent = 'Copied. Paste it into an email, a note, or a meeting agenda.'; },
-        function () { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; });
-    } else { status.textContent = 'Couldn’t copy automatically. Select the brief and copy it by hand.'; }
+        function () { status.textContent = 'Couldn’t copy automatically. Select the plan and copy it by hand.'; });
+    } else { status.textContent = 'Couldn’t copy automatically. Select the plan and copy it by hand.'; }
   });
   document.getElementById('b-example').addEventListener('click', function () {
     document.getElementById('b-what').value = 'The streetlight at the corner of our block has been out since July. Kids walk past it to the bus stop before sunrise.';
@@ -483,6 +524,7 @@
   document.getElementById('b-print').addEventListener('click', function () { window.print(); });
   document.getElementById('b-clear').addEventListener('click', function () {
     fields.forEach(function (f) { document.getElementById('b-' + f).value = ''; });
+    other.value = '';
     render(); status.textContent = 'Cleared.';
     document.getElementById('b-what').focus();
   });

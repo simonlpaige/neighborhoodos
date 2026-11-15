@@ -11,9 +11,9 @@ test('six supported languages link only to public reading paths, with no user qu
  assert.throws(()=>translationUrl('/','xx'));assert.equal(readingRoute('/learn/es/'),'/reading/learn/');
 });
 test('reading copies strip editable controls and scripts, preserve public text, and use original canonicals',()=>{
- const html='<html><head><link rel="canonical" href="https://neighborhoodos.org/brief/"></head><body><main><p>Public guidance</p><form><label>Secret<input value="PRIVATE"></label><textarea>PRIVATE</textarea><button>Send</button></form><iframe src="https://example.com"></iframe><script>secret()</script><a href="/sessions/">Next</a></main></body></html>';
- const out=readingCopy(html,'/brief/'),$=load(out);
- assert.equal($('input,textarea,select,form,button,script,iframe').length,0);assert.ok(!out.includes('PRIVATE'));assert.match(out,/Public guidance/);assert.equal($('meta[name=robots]').attr('content'),'noindex,follow');assert.equal($('link[rel=canonical]').attr('href'),'https://neighborhoodos.org/brief/');assert.equal($('a').attr('href'),'/reading/sessions/');
+ const html='<html><head><link rel="canonical" href="https://neighborhoodos.org/plan/"></head><body><main><p>Public guidance</p><form><label>Secret<input value="PRIVATE"></label><textarea>PRIVATE</textarea><button>Send</button></form><iframe src="https://example.com"></iframe><script>secret()</script><a href="/sessions/">Next</a></main></body></html>';
+ const out=readingCopy(html,'/plan/'),$=load(out);
+ assert.equal($('input,textarea,select,form,button,script,iframe').length,0);assert.ok(!out.includes('PRIVATE'));assert.match(out,/Public guidance/);assert.equal($('meta[name=robots]').attr('content'),'noindex,follow');assert.equal($('link[rel=canonical]').attr('href'),'https://neighborhoodos.org/plan/');assert.equal($('a').attr('href'),'/reading/sessions/');
 });
 test('initial theme follows the system and only honors valid manual choices, even with blocked storage',()=>{
  for(const [saved,dark,blocked,expected,pref] of [[null,true,false,'dark','system'],[null,false,false,'light','system'],['light',true,false,'light','light'],['dark',false,false,'dark','dark'],['invalid',true,false,'dark','system'],[null,true,true,'dark','system']]){

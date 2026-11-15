@@ -6,7 +6,7 @@ NeighborhoodOS is a KC Digital Drive program that combines practical digital-ski
 
 ## Need statement
 
-Residents face confusing public systems and AI answers that can sound authoritative while being wrong. The program teaches checking original sources and protecting private information, then helps neighbors turn a stuck issue into an evidence-backed brief and a concrete next step. Public 311 data can identify reported issues worth discussing; it cannot establish resident need, identity, or program impact by itself.
+Residents face confusing public systems and AI answers that can sound authoritative while being wrong. The program teaches checking original sources and protecting private information, then helps neighbors turn a stuck issue into an evidence-backed plan and a concrete next step. Public 311 data can identify reported issues worth discussing; it cannot establish resident need, identity, or program impact by itself.
 
 Use the current official-boundary [Linwood / LAMP snapshot](https://neighborhoodos.org/neighborhoods/linwood/) with its date and methodology. Do not reuse the older handoff report's 15-neighborhood bounding-box statistics as if they describe the new area.
 
@@ -14,12 +14,12 @@ Use the current official-boundary [Linwood / LAMP snapshot](https://neighborhood
 
 | Inputs | Activities | Outputs | Outcomes |
 |---|---|---|---|
-| Accessible room, facilitator, separate data steward, trusted connectors, stipend funding | Existing digital-skills classes, two Solve clinics, source verification, peer-helper practice | Aggregate attendance, completed resident-owned briefs, documented next steps, reviewed materials | Improved AI-error spotting, follow-through, documented problem resolution, peer helpers retained at six months |
+| Accessible room, facilitator, separate data steward, trusted connectors, stipend funding | Existing digital-skills classes, two Solve clinics, source verification, peer-helper practice | Aggregate attendance, completed resident-owned plans, documented next steps, reviewed materials | Improved AI-error spotting, follow-through, documented problem resolution, peer helpers retained at six months |
 
 ## Measures and limits
 
 - Learning: voluntary anonymous before/after AI-error checks, reported as aggregate counts and denominators. Do not track individuals.
-- Follow-through: reviewed briefs with a dated next step; report follow-up availability and unresolved cases.
+- Follow-through: reviewed plans with a dated next step; report follow-up availability and unresolved cases.
 - Resolution: count only where evidence and a human reviewer support the conclusion. A canceled city request is not a resolved program problem.
 - Capacity: paid peer helpers invited back, with voluntary six-month follow-up.
 - Reach: session headcounts. Website visitor analytics are not enabled in this release; do not claim web reach numbers.

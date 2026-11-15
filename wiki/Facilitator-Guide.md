@@ -33,7 +33,7 @@ Take it seriously, then redirect: “That’s exactly the kind of question where
 Thank them. Don’t ask for details they don’t offer. Say it happens to careful people. After the session, offer the local fraud reporting line and their bank’s fraud number. Never make it a teaching example without their permission.
 
 **Someone is angry at the city, a landlord, or a specific person.**
-Validate the frustration, then move it onto the Problem Brief: who has authority, what evidence exists. If the anger targets an individual private resident, gently steer: “We keep briefs about institutions and places, not individual neighbors.”
+Validate the frustration, then move it onto the One-Page Plan: who has authority, what evidence exists. If the anger targets an individual private resident, gently steer: “We keep plans about institutions and places, not individual neighbors.”
 
 **Someone wants to use the data to find out about a specific neighbor.**
 Clear and kind: “That’s over a line we don’t cross. We look at patterns and institutions, never individual people.” Point to the [Safety Doctrine](Safety-Doctrine.md).

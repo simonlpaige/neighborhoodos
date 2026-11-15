@@ -50,19 +50,19 @@ Our standard pilot consists of three distinct phases: **Learn** (3 sessions), **
 - **Output**: Map of local public-data assets for the participants' neighborhood.
 
 ### Session 3: Framing Local Problems (The "Solve" Clinic)
-- **Goal**: Take a real, chronic neighborhood problem and break it down into a structured brief.
+- **Goal**: Take a real, chronic neighborhood problem and break it down into a structured plan.
 - **Activities**:
   - *The Sticky-Note Sieve*: Residents write local problems on sticky notes, then filter them by whether they are a "tech" problem, a "municipal communication" problem, or a "physical resources" problem.
   - *Stakeholder Mapping*: Identifying who is responsible (e.g. City codes, county assessor, state highways, or private landlords) and mapping public data points needed to hold them accountable.
-- **Output**: 2-3 structured Problem Briefs chosen by the residents for the "Build" phase.
+- **Output**: 2-3 structured One-Page Plans chosen by the residents for the "Build" phase.
 
 ### Session 4 & 5: Co-Designing Community-Benefit Tools
-- **Goal**: Take the highest-priority Problem Brief from Session 3 and co-design a simple, non-sensitive digital tool to help solve it.
+- **Goal**: Take the highest-priority One-Page Plan from Session 3 and co-design a simple, non-sensitive digital tool to help solve it.
 - **Example Candidate**: A *Neighborhood Service Navigator* that takes a complex tenant issue, identifies relevant city codes, compiles links to resources, and provides an open progress-tracker.
 - **Activities**:
   - *Paper Prototyping*: Drawing the interface on cardboard or paper cards first to test usability.
   - *Prompt Crafting*: Working together to write the system instructions for a local model, ensuring it has strict boundaries (e.g., "Always link back to the official city code. Never offer legal advice").
-- **Output**: A fully specified tool brief with strict safety limits and human-review roles.
+- **Output**: A fully specified tool plan with strict safety limits and human-review roles.
 
 ---
 
