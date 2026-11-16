@@ -1,87 +1,87 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-15",
-  "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-15T19:43:05.355Z",
+  "asOf": "2026-11-16",
+  "sourceMax": "2026-11-16",
+  "generatedAt": "2026-11-16T21:06:27.976Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2090,
-  "requests30": 115,
-  "requests90": 485,
+  "total": 2130,
+  "requests30": 152,
+  "requests90": 522,
   "counts": {
     "open": 387,
-    "resolved": 1550,
-    "canceled": 153
+    "resolved": 1587,
+    "canceled": 156
   },
-  "openOver60": 274,
+  "openOver60": 275,
   "types": [
     {
       "type": "Property Violations",
-      "count": 417,
+      "count": 421,
       "medianDays": 54,
       "closedSample": 184,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 323,
+      "count": 329,
       "medianDays": 0,
       "closedSample": 267,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 310,
+      "count": 317,
       "medianDays": 4,
-      "closedSample": 251,
+      "closedSample": 262,
       "cityMedianDays": 5
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 200,
+      "count": 205,
       "medianDays": 1,
-      "closedSample": 197,
+      "closedSample": 201,
       "cityMedianDays": 1
     },
     {
       "type": "Trees City Row",
       "count": 97,
-      "medianDays": 3,
-      "closedSample": 77,
+      "medianDays": 3.5,
+      "closedSample": 78,
       "cityMedianDays": 4
     },
     {
       "type": "Trash Cart Program",
-      "count": 72,
+      "count": 75,
       "medianDays": 10,
-      "closedSample": 51,
-      "cityMedianDays": 8
+      "closedSample": 55,
+      "cityMedianDays": 9
     },
     {
       "type": "Vehicles and Parking",
-      "count": 69,
+      "count": 71,
       "medianDays": 6,
       "closedSample": 67,
       "cityMedianDays": 6
     },
     {
       "type": "Water Service",
-      "count": 66,
-      "medianDays": 1.5,
-      "closedSample": 56,
+      "count": 68,
+      "medianDays": 1,
+      "closedSample": 60,
       "cityMedianDays": 2
     },
     {
       "type": "A Pothole",
-      "count": 60,
+      "count": 62,
       "medianDays": 3.5,
-      "closedSample": 52,
+      "closedSample": 54,
       "cityMedianDays": 5
     },
     {
       "type": "Recycling Cart Program",
-      "count": 46,
-      "medianDays": 16,
-      "closedSample": 30,
+      "count": 48,
+      "medianDays": 15.5,
+      "closedSample": 34,
       "cityMedianDays": 11
     },
     {
@@ -99,18 +99,18 @@
       "cityMedianDays": 3
     },
     {
+      "type": "Tents or Sleeping Structures",
+      "count": 41,
+      "medianDays": 3.5,
+      "closedSample": 18,
+      "cityMedianDays": 6
+    },
+    {
       "type": "Homeless Camp",
       "count": 40,
       "medianDays": 56,
       "closedSample": 14,
-      "cityMedianDays": 15
-    },
-    {
-      "type": "Tents or Sleeping Structures",
-      "count": 39,
-      "medianDays": 4,
-      "closedSample": 17,
-      "cityMedianDays": 6
+      "cityMedianDays": 14
     },
     {
       "type": "Health Code Violations",
@@ -121,16 +121,16 @@
     },
     {
       "type": "Street Maintenance",
-      "count": 25,
+      "count": 26,
       "medianDays": 2,
       "closedSample": 17,
       "cityMedianDays": 14
     },
     {
       "type": "Traffic Signs and Street Markings",
-      "count": 23,
-      "medianDays": 2.5,
-      "closedSample": 20,
+      "count": 25,
+      "medianDays": 2,
+      "closedSample": 21,
       "cityMedianDays": 3
     },
     {
@@ -156,9 +156,9 @@
     },
     {
       "type": "Streetlights",
-      "count": 17,
+      "count": 19,
       "medianDays": 1,
-      "closedSample": 17,
+      "closedSample": 18,
       "cityMedianDays": 1
     },
     {
@@ -172,21 +172,21 @@
       "type": "Sidewalks and Curbs",
       "count": 14,
       "medianDays": 4,
-      "closedSample": 12,
+      "closedSample": 13,
       "cityMedianDays": 5
     },
     {
       "type": "Healthy Homes",
       "count": 13,
-      "medianDays": 4,
-      "closedSample": 10,
-      "cityMedianDays": 8
+      "medianDays": 6,
+      "closedSample": 11,
+      "cityMedianDays": 9
     },
     {
       "type": "Street Cleaning / Sweeping",
       "count": 11,
-      "medianDays": 21.5,
-      "closedSample": 8,
+      "medianDays": 26.5,
+      "closedSample": 10,
       "cityMedianDays": 23
     },
     {
@@ -194,7 +194,7 @@
       "count": 10,
       "medianDays": 4,
       "closedSample": 10,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Traffic Signals",
@@ -398,12 +398,12 @@
     },
     {
       "month": "2026-11",
-      "count": 40,
+      "count": 80,
       "types": {
-        "Property Violations": 6,
-        "Animal Services": 11,
-        "Illegal Dumping": 8,
-        "Trash  Recycling  Bulky Services": 5,
+        "Property Violations": 10,
+        "Animal Services": 17,
+        "Illegal Dumping": 15,
+        "Trash  Recycling  Bulky Services": 10,
         "Trees City Row": 0
       }
     }
@@ -411,15 +411,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 924
+      "count": 942
     },
     {
       "name": "Mobile app",
-      "count": 751
+      "count": 771
     },
     {
       "name": "Other / not specified",
-      "count": 415
+      "count": 417
     }
   ],
   "stuck": [
@@ -1460,20 +1460,23 @@
     },
     {
       "month": "2026-11",
-      "count": 40,
+      "count": 80,
       "types": {
-        "Animal Services": 11,
-        "A Pothole": 1,
-        "Illegal Dumping": 8,
-        "Property Violations": 6,
-        "Recycling Cart Program": 1,
+        "Animal Services": 17,
+        "A Pothole": 3,
+        "Illegal Dumping": 15,
+        "Property Violations": 10,
+        "Recycling Cart Program": 3,
         "Sidewalks and Curbs": 1,
         "Solid Waste Services": 1,
-        "Tents or Sleeping Structures": 1,
-        "Trash Cart Program": 1,
-        "Trash  Recycling  Bulky Services": 5,
-        "Vehicles and Parking": 1,
-        "Water Service": 3
+        "Streetlights": 2,
+        "Street Maintenance": 1,
+        "Tents or Sleeping Structures": 3,
+        "Traffic Signs and Street Markings": 2,
+        "Trash Cart Program": 4,
+        "Trash  Recycling  Bulky Services": 10,
+        "Vehicles and Parking": 3,
+        "Water Service": 5
       }
     }
   ]

@@ -1,74 +1,74 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-15",
-  "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-15T19:43:04.449Z",
+  "asOf": "2026-11-16",
+  "sourceMax": "2026-11-16",
+  "generatedAt": "2026-11-16T21:06:26.424Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3618,
-  "requests30": 156,
-  "requests90": 721,
+  "total": 3673,
+  "requests30": 209,
+  "requests90": 761,
   "counts": {
-    "open": 626,
-    "resolved": 2772,
-    "canceled": 220
+    "open": 629,
+    "resolved": 2818,
+    "canceled": 226
   },
-  "openOver60": 469,
+  "openOver60": 467,
   "types": [
     {
       "type": "Property Violations",
-      "count": 830,
+      "count": 851,
       "medianDays": 11,
-      "closedSample": 395,
+      "closedSample": 405,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 532,
+      "count": 538,
       "medianDays": 0,
       "closedSample": 432,
       "cityMedianDays": 0
     },
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 386,
+      "count": 392,
       "medianDays": 1,
-      "closedSample": 384,
+      "closedSample": 389,
       "cityMedianDays": 1
     },
     {
       "type": "Illegal Dumping",
-      "count": 376,
+      "count": 383,
       "medianDays": 6,
-      "closedSample": 298,
+      "closedSample": 305,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 151,
+      "count": 154,
       "medianDays": 2,
-      "closedSample": 143,
+      "closedSample": 147,
       "cityMedianDays": 2
     },
     {
       "type": "Trash Cart Program",
-      "count": 123,
+      "count": 125,
       "medianDays": 8,
-      "closedSample": 89,
-      "cityMedianDays": 8
+      "closedSample": 95,
+      "cityMedianDays": 9
+    },
+    {
+      "type": "Vehicles and Parking",
+      "count": 105,
+      "medianDays": 6,
+      "closedSample": 103,
+      "cityMedianDays": 6
     },
     {
       "type": "Trees City Row",
       "count": 105,
       "medianDays": 2,
-      "closedSample": 87,
+      "closedSample": 88,
       "cityMedianDays": 4
-    },
-    {
-      "type": "Vehicles and Parking",
-      "count": 104,
-      "medianDays": 6,
-      "closedSample": 103,
-      "cityMedianDays": 6
     },
     {
       "type": "Solid Waste Services",
@@ -86,23 +86,23 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 92,
-      "medianDays": 7.5,
-      "closedSample": 84,
-      "cityMedianDays": 8
+      "count": 93,
+      "medianDays": 8.5,
+      "closedSample": 88,
+      "cityMedianDays": 9
     },
     {
       "type": "Recycling Cart Program",
-      "count": 90,
+      "count": 91,
       "medianDays": 10,
-      "closedSample": 73,
+      "closedSample": 77,
       "cityMedianDays": 11
     },
     {
       "type": "A Pothole",
-      "count": 69,
+      "count": 70,
       "medianDays": 3,
-      "closedSample": 57,
+      "closedSample": 59,
       "cityMedianDays": 5
     },
     {
@@ -114,16 +114,16 @@
     },
     {
       "type": "Land Bank Issues",
-      "count": 46,
+      "count": 47,
       "medianDays": 21,
       "closedSample": 33,
       "cityMedianDays": 11
     },
     {
       "type": "Street Maintenance",
-      "count": 46,
+      "count": 47,
       "medianDays": 4,
-      "closedSample": 39,
+      "closedSample": 41,
       "cityMedianDays": 14
     },
     {
@@ -149,38 +149,38 @@
     },
     {
       "type": "Parks and Recreation",
-      "count": 31,
+      "count": 32,
       "medianDays": 3.5,
       "closedSample": 28,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Streetlights",
+      "count": 31,
+      "medianDays": 1,
+      "closedSample": 31,
+      "cityMedianDays": 1
     },
     {
       "type": "Homeless Camp",
       "count": 30,
       "medianDays": 15,
       "closedSample": 17,
-      "cityMedianDays": 15
-    },
-    {
-      "type": "Streetlights",
-      "count": 30,
-      "medianDays": 1,
-      "closedSample": 30,
-      "cityMedianDays": 1
+      "cityMedianDays": 14
     },
     {
       "type": "Health Code Violations",
-      "count": 28,
+      "count": 29,
       "medianDays": 3,
       "closedSample": 27,
       "cityMedianDays": 2
     },
     {
       "type": "Right-of-Way / Inspections",
-      "count": 26,
+      "count": 27,
       "medianDays": 6,
       "closedSample": 23,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Dangerous Buildings",
@@ -422,39 +422,39 @@
     },
     {
       "month": "2026-10",
-      "count": 247,
+      "count": 248,
       "types": {
         "Property Violations": 37,
         "Animal Services": 43,
         "Trash  Recycling  Bulky Services": 42,
         "Illegal Dumping": 12,
-        "Water Service": 8
+        "Water Service": 9
       }
     },
     {
       "month": "2026-11",
-      "count": 45,
+      "count": 100,
       "types": {
-        "Property Violations": 13,
-        "Animal Services": 10,
-        "Trash  Recycling  Bulky Services": 3,
-        "Illegal Dumping": 3,
-        "Water Service": 2
+        "Property Violations": 34,
+        "Animal Services": 17,
+        "Trash  Recycling  Bulky Services": 9,
+        "Illegal Dumping": 10,
+        "Water Service": 4
       }
     }
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 865
+      "name": "Phone",
+      "count": 1978
     },
     {
-      "name": "Phone",
-      "count": 1956
+      "name": "Mobile app",
+      "count": 880
     },
     {
       "name": "Other / not specified",
-      "count": 797
+      "count": 815
     }
   ],
   "stuck": [
@@ -463,12 +463,6 @@
       "block": "3400 block of Highland Ave",
       "opened": "2026-07-14",
       "department": "PW Permits"
-    },
-    {
-      "issue": "Street Maintenance",
-      "block": "3900 block of Flora Ave",
-      "opened": "2026-08-25",
-      "department": "PW Capital Improvements"
     }
   ],
   "privacy": "No household complaint locations, resident names, free text, coordinates, or individual animal / encampment records are published. Stuck list contains allowlisted public infrastructure only, rounded to a block.",
@@ -1612,7 +1606,7 @@
     },
     {
       "month": "2026-10",
-      "count": 247,
+      "count": 248,
       "types": {
         "311 Research and Investigation": 1,
         "Other": 7,
@@ -1640,28 +1634,34 @@
         "Trash  Recycling  Bulky Services": 42,
         "Trees City Row": 5,
         "Vehicles and Parking": 14,
-        "Water Service": 8,
+        "Water Service": 9,
         "Zoning and Permits": 3
       }
     },
     {
       "month": "2026-11",
-      "count": 45,
+      "count": 100,
       "types": {
-        "Animal Services": 10,
-        "A Pothole": 2,
+        "Animal Services": 17,
+        "A Pothole": 3,
         "Food Safety": 1,
-        "Illegal Dumping": 3,
-        "Land Bank Issues": 1,
+        "Health Code Violations": 1,
+        "Healthy Homes": 1,
+        "Illegal Dumping": 10,
+        "Land Bank Issues": 2,
         "Other": 2,
-        "Property Violations": 13,
-        "Recycling Cart Program": 3,
+        "Parks and Recreation": 1,
+        "Property Violations": 34,
+        "Recycling Cart Program": 4,
+        "Right-of-Way / Inspections": 1,
         "Sewer and Stormwater": 1,
-        "Trash Cart Program": 2,
-        "Trash  Recycling  Bulky Services": 3,
+        "Streetlights": 1,
+        "Street Maintenance": 1,
+        "Trash Cart Program": 4,
+        "Trash  Recycling  Bulky Services": 9,
         "Trees City Row": 1,
-        "Vehicles and Parking": 1,
-        "Water Service": 2
+        "Vehicles and Parking": 2,
+        "Water Service": 4
       }
     }
   ]

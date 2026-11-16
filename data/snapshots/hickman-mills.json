@@ -1,38 +1,38 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-15",
-  "sourceMax": "2026-11-09",
-  "generatedAt": "2026-11-15T19:43:06.079Z",
+  "asOf": "2026-11-16",
+  "sourceMax": "2026-11-16",
+  "generatedAt": "2026-11-16T21:06:28.753Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1107,
-  "requests30": 59,
-  "requests90": 239,
+  "total": 1118,
+  "requests30": 73,
+  "requests90": 248,
   "counts": {
-    "open": 164,
-    "resolved": 897,
+    "open": 170,
+    "resolved": 902,
     "canceled": 46
   },
-  "openOver60": 104,
+  "openOver60": 107,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 218,
+      "count": 219,
       "medianDays": 1,
-      "closedSample": 216,
+      "closedSample": 215,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 197,
+      "count": 199,
       "medianDays": 1,
-      "closedSample": 159,
+      "closedSample": 158,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 145,
+      "count": 147,
       "medianDays": 6,
-      "closedSample": 50,
+      "closedSample": 51,
       "cityMedianDays": 12
     },
     {
@@ -46,26 +46,26 @@
       "type": "Healthy Homes",
       "count": 56,
       "medianDays": 10,
-      "closedSample": 54,
-      "cityMedianDays": 8
+      "closedSample": 56,
+      "cityMedianDays": 9
     },
     {
       "type": "Illegal Dumping",
-      "count": 48,
+      "count": 51,
       "medianDays": 4,
-      "closedSample": 42,
+      "closedSample": 45,
       "cityMedianDays": 5
     },
     {
       "type": "Water Service",
-      "count": 44,
+      "count": 43,
       "medianDays": 2,
-      "closedSample": 41,
+      "closedSample": 40,
       "cityMedianDays": 2
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 41,
+      "count": 42,
       "medianDays": 6.5,
       "closedSample": 38,
       "cityMedianDays": 3
@@ -86,23 +86,23 @@
     },
     {
       "type": "Street Maintenance",
-      "count": 33,
+      "count": 34,
       "medianDays": 1,
       "closedSample": 19,
       "cityMedianDays": 14
     },
     {
       "type": "Trash Cart Program",
-      "count": 17,
-      "medianDays": 7,
-      "closedSample": 13,
-      "cityMedianDays": 8
+      "count": 18,
+      "medianDays": 7.5,
+      "closedSample": 14,
+      "cityMedianDays": 9
     },
     {
       "type": "Zoning and Permits",
       "count": 16,
       "medianDays": 17,
-      "closedSample": 9,
+      "closedSample": 10,
       "cityMedianDays": 22
     },
     {
@@ -162,6 +162,13 @@
       "cityMedianDays": 11
     },
     {
+      "type": "Street Cleaning / Sweeping",
+      "count": 9,
+      "medianDays": 9,
+      "closedSample": 7,
+      "cityMedianDays": 23
+    },
+    {
       "type": "Administration or Questions",
       "count": 8,
       "medianDays": 6,
@@ -169,25 +176,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Street Cleaning / Sweeping",
-      "count": 8,
-      "medianDays": 9,
-      "closedSample": 7,
-      "cityMedianDays": 23
-    },
-    {
       "type": "Homeless Camp",
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 15
+      "cityMedianDays": 14
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 7.5
+      "cityMedianDays": 8
     },
     {
       "type": "Dangerous Buildings",
@@ -391,11 +391,11 @@
     },
     {
       "month": "2026-11",
-      "count": 22,
+      "count": 36,
       "types": {
-        "Trash  Recycling  Bulky Services": 4,
-        "Animal Services": 4,
-        "Property Violations": 3,
+        "Trash  Recycling  Bulky Services": 6,
+        "Animal Services": 7,
+        "Property Violations": 5,
         "A Pothole": 1,
         "Healthy Homes": 1
       }
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
+      "name": "Other / not specified",
+      "count": 208
+    },
+    {
       "name": "Mobile app",
-      "count": 272
+      "count": 275
     },
     {
       "name": "Phone",
-      "count": 629
-    },
-    {
-      "name": "Other / not specified",
-      "count": 206
+      "count": 635
     }
   ],
   "stuck": [
@@ -444,6 +444,12 @@
       "issue": "Street Maintenance",
       "block": "10300 block of Crystal Ave",
       "opened": "2026-09-14",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "10300 block of Raytown Rd",
+      "opened": "2026-09-17",
       "department": "PW Streets"
     }
   ],
@@ -1168,16 +1174,18 @@
     },
     {
       "month": "2026-11",
-      "count": 22,
+      "count": 36,
       "types": {
-        "Animal Services": 4,
+        "Animal Services": 7,
         "A Pothole": 1,
-        "Other": 5,
+        "Other": 6,
         "Healthy Homes": 1,
-        "Illegal Dumping": 2,
-        "Property Violations": 3,
-        "Street Maintenance": 1,
-        "Trash  Recycling  Bulky Services": 4,
+        "Illegal Dumping": 5,
+        "Property Violations": 5,
+        "Sewer and Stormwater": 1,
+        "Street Maintenance": 2,
+        "Trash Cart Program": 1,
+        "Trash  Recycling  Bulky Services": 6,
         "Water Service": 1
       }
     }
