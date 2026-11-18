@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseEventDetail} from '../scripts/calendar.mjs';
+test('reads the Event Date layout with a year, time, location and admission',()=>{assert.deepEqual(parseEventDetail('Event Date: December 1st, 2026 Time: 3:00-4:00pm Location: Hybrid – in person at LAMP Campus (1801 Linwood Blvd) or on Zoom Admission: Free','2026-11-17'),{startDate:'2026-12-01',location:'Hybrid – in person at LAMP Campus (1801 Linwood Blvd) or on Zoom'});});
+test('reads the When/Where layout that prints no year',()=>{assert.deepEqual(parseEventDetail('When: Wednesday, December 9th @ 3:00-5:00 p.m. Where: LAMP Campus – 1801 Linwood Blvd, Kansas City, MO 64109 Parking directions: Park in the lot on Woodland.','2026-11-17'),{startDate:'2026-12-09',location:'LAMP Campus – 1801 Linwood Blvd, Kansas City, MO 64109'});});
+test('a date with no year rolls into next year near the turn of the year, and a just-passed date stays in the past',()=>{assert.equal(parseEventDetail('When: Tuesday, January 5th @ 6 p.m.','2026-12-20').startDate,'2027-01-05');assert.equal(parseEventDetail('When: December 9th','2026-12-10').startDate,'2026-12-09');});
+test('a page with no readable date is skipped rather than stopping the refresh',()=>{assert.equal(parseEventDetail('Join us for an open house. Details soon.','2026-11-17'),null);assert.equal(parseEventDetail('Event Date: February 30th, 2027','2026-11-17'),null);});
