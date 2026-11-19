@@ -144,7 +144,7 @@
     document.getElementById('b-next').value = 'Maria files a 311 request Tuesday and posts the case number in the block group. We check its status in two weeks.';
     render(); status.textContent = 'Example filled in. Clear it and try your own.';
   });
-  document.getElementById('b-print').addEventListener('click', function () { document.body.classList.add('print-brief'); window.print(); });
+  document.getElementById('b-print').addEventListener('click', function () { document.body.classList.add('print-brief'); window.addEventListener('afterprint', function () { document.body.classList.remove('print-brief'); }, {once: true}); window.print(); });
   document.getElementById('b-clear').addEventListener('click', function () {
     fields.forEach(function (f) { document.getElementById('b-' + f).value = ''; });
     other.value = '';
