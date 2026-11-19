@@ -28,9 +28,13 @@ jobs:
       - run: npm ci
       - name: Refresh public sources (nightly only)
         if: github.event_name == 'schedule'
-        run: |
-          node scripts/refresh-data.mjs
-          node scripts/refresh-calendar.mjs
+        run: node scripts/refresh-data.mjs
+      # The organizer calendar is a nice-to-have from another site. If it can't be read,
+      # keep the last saved calendar and still publish instead of skipping the deploy.
+      - name: Refresh organizer calendar (nightly only)
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        run: node scripts/refresh-calendar.mjs
       - run: npm test
       - run: npm run test:web
       - run: npm run build
