@@ -1,25 +1,7 @@
 {
-  "checked": "2026-11-16",
+  "checked": "2026-11-19",
   "source": "https://www.kcdigitaldrive.org/events/",
   "events": [
-    {
-      "title": "Solutions Lab Ventures – A Showcase of Tech Entrepreneurs Journey through the KC Startup Ecosystem",
-      "url": "https://www.kcdigitaldrive.org/event/solutions-lab-ventures-a-showcase-of-tech-entrepreneurs-journey-through-the-kc-startup-ecosystem/",
-      "startDate": "2026-11-18",
-      "endDate": "2026-11-18",
-      "location": "Union Station Kansas City, 30 W Pershing Rd, Kansas City, MO 64108, USA",
-      "organizer": "KC Digital Drive",
-      "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
-    },
-    {
-      "title": "Maternal Health Data Regional Summit Proceedings, Outcomes, Scorecard",
-      "url": "https://www.kcdigitaldrive.org/event/maternal-health-data-proceedings-outcomes/",
-      "startDate": "2026-11-19",
-      "endDate": "2026-11-19",
-      "location": "Online on Zoom",
-      "organizer": "KC Digital Drive",
-      "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
-    },
     {
       "title": "Digital Inclusion Learning Circle December 2026",
       "url": "https://www.kcdigitaldrive.org/event/digital-inclusion-learning-circle-december-2026/",
@@ -30,20 +12,29 @@
       "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
     },
     {
-      "title": "Kansas City Coalition for Digital Inclusion – December 2026",
-      "url": "https://www.kcdigitaldrive.org/event/kansas-city-coalition-for-digital-inclusion-december-2026/",
-      "startDate": "2026-12-04",
-      "endDate": "2026-12-04",
-      "location": "Zoom Meeting ID: 872 7286 2030 Passcode: 071930",
-      "organizer": "KC Digital Drive",
-      "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
-    },
-    {
       "title": "Computer Repair Event by Per Scholas (December 2026)",
       "url": "https://www.kcdigitaldrive.org/event/computer-repair-event-by-per-scholas-december-2026/",
       "startDate": "2026-12-07",
       "endDate": "2026-12-07",
       "location": "Digital Services & Support Center LAMP Campus (1801 Linwood Blvd)",
+      "organizer": "KC Digital Drive",
+      "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
+    },
+    {
+      "title": "Digital Services & Support Center Renovation Preview Open House",
+      "url": "https://www.kcdigitaldrive.org/event/digital-services-support-center-renovation-preview-open-house/",
+      "startDate": "2026-12-09",
+      "endDate": "2026-12-09",
+      "location": "LAMP Campus – 1801 Linwood Blvd, Kansas City, MO 64109",
+      "organizer": "KC Digital Drive",
+      "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
+    },
+    {
+      "title": "Kansas City Coalition for Digital Inclusion – December Annual Reception 2026",
+      "url": "https://www.kcdigitaldrive.org/event/kansas-city-coalition-for-digital-inclusion-december-2026/",
+      "startDate": "2026-12-10",
+      "endDate": "2026-12-10",
+      "location": "Tech Central @ 710 Central St, Kansas City, MO 64105 Admission is free, but please register on the Luma page here: RSVP HERE Please join the KC Coalition for Digital Inclusion for our annual holiday reception celebrating our digital inclusion ecosystem partnerships. Enjoy heavy appetizers and beverages and reflect on all we’ve accomplished together in 2026. The reception will be on the 3rd floor of Tech Central.",
       "organizer": "KC Digital Drive",
       "program": "Related KCDD event; not a confirmed NeighborhoodOS clinic"
     }

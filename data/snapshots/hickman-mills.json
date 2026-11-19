@@ -1,36 +1,36 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-19",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-16T21:06:28.753Z",
+  "generatedAt": "2026-11-19T19:31:20.955Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1118,
-  "requests30": 73,
-  "requests90": 248,
+  "total": 1107,
+  "requests30": 69,
+  "requests90": 239,
   "counts": {
     "open": 170,
-    "resolved": 902,
-    "canceled": 46
+    "resolved": 892,
+    "canceled": 45
   },
   "openOver60": 107,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 219,
+      "count": 216,
       "medianDays": 1,
-      "closedSample": 215,
+      "closedSample": 212,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 199,
+      "count": 198,
       "medianDays": 1,
-      "closedSample": 158,
+      "closedSample": 157,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 147,
+      "count": 146,
       "medianDays": 6,
       "closedSample": 51,
       "cityMedianDays": 12
@@ -57,18 +57,18 @@
       "cityMedianDays": 5
     },
     {
-      "type": "Water Service",
-      "count": 43,
-      "medianDays": 2,
-      "closedSample": 40,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Sewer and Stormwater",
       "count": 42,
       "medianDays": 6.5,
       "closedSample": 38,
       "cityMedianDays": 3
+    },
+    {
+      "type": "Water Service",
+      "count": 40,
+      "medianDays": 2,
+      "closedSample": 37,
+      "cityMedianDays": 2
     },
     {
       "type": "Trees City Row",
@@ -120,13 +120,6 @@
       "cityMedianDays": 2
     },
     {
-      "type": "Traffic Signs and Street Markings",
-      "count": 12,
-      "medianDays": 3.5,
-      "closedSample": 12,
-      "cityMedianDays": 3
-    },
-    {
       "type": "Food Safety",
       "count": 12,
       "medianDays": 3,
@@ -146,6 +139,13 @@
       "medianDays": 1,
       "closedSample": 11,
       "cityMedianDays": 1
+    },
+    {
+      "type": "Traffic Signs and Street Markings",
+      "count": 10,
+      "medianDays": 4.5,
+      "closedSample": 10,
+      "cityMedianDays": 3
     },
     {
       "type": "Traffic Calming or Concerns",
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 14
+      "cityMedianDays": 13.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -188,13 +188,6 @@
       "medianDays": 6,
       "closedSample": 7,
       "cityMedianDays": 8
-    },
-    {
-      "type": "Dangerous Buildings",
-      "count": 4,
-      "medianDays": 199,
-      "closedSample": 3,
-      "cityMedianDays": 31
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -223,6 +216,13 @@
       "medianDays": 5,
       "closedSample": 1,
       "cityMedianDays": 6
+    },
+    {
+      "type": "Dangerous Buildings",
+      "count": 3,
+      "medianDays": 99.5,
+      "closedSample": 2,
+      "cityMedianDays": 29.5
     },
     {
       "type": "Land Bank Issues",
@@ -264,7 +264,7 @@
       "count": 1,
       "medianDays": null,
       "closedSample": 0,
-      "cityMedianDays": 11
+      "cityMedianDays": 10
     }
   ],
   "trend": [
@@ -404,15 +404,15 @@
   "channels": [
     {
       "name": "Other / not specified",
-      "count": 208
+      "count": 205
     },
     {
       "name": "Mobile app",
-      "count": 275
+      "count": 271
     },
     {
       "name": "Phone",
-      "count": 635
+      "count": 631
     }
   ],
   "stuck": [

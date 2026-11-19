@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-16",
+  "asOf": "2026-11-19",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-16T21:06:27.976Z",
+  "generatedAt": "2026-11-19T19:31:19.893Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2130,
-  "requests30": 152,
-  "requests90": 522,
+  "total": 2124,
+  "requests30": 137,
+  "requests90": 470,
   "counts": {
     "open": 387,
-    "resolved": 1587,
-    "canceled": 156
+    "resolved": 1582,
+    "canceled": 155
   },
-  "openOver60": 275,
+  "openOver60": 279,
   "types": [
     {
       "type": "Property Violations",
@@ -23,16 +23,16 @@
     },
     {
       "type": "Animal Services",
-      "count": 329,
+      "count": 326,
       "medianDays": 0,
-      "closedSample": 267,
+      "closedSample": 264,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 317,
+      "count": 314,
       "medianDays": 4,
-      "closedSample": 262,
+      "closedSample": 260,
       "cityMedianDays": 5
     },
     {
@@ -110,7 +110,7 @@
       "count": 40,
       "medianDays": 56,
       "closedSample": 14,
-      "cityMedianDays": 14
+      "cityMedianDays": 13.5
     },
     {
       "type": "Health Code Violations",
@@ -166,7 +166,7 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 31
+      "cityMedianDays": 29.5
     },
     {
       "type": "Sidewalks and Curbs",
@@ -208,7 +208,7 @@
       "count": 10,
       "medianDays": 3,
       "closedSample": 5,
-      "cityMedianDays": 11
+      "cityMedianDays": 10
     },
     {
       "type": "Food Safety",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 942
+      "name": "Mobile app",
+      "count": 769
     },
     {
-      "name": "Mobile app",
-      "count": 771
+      "name": "Phone",
+      "count": 939
     },
     {
       "name": "Other / not specified",
-      "count": 417
+      "count": 416
     }
   ],
   "stuck": [
