@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-19",
+  "asOf": "2026-11-20",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-19T19:31:20.955Z",
+  "generatedAt": "2026-11-20T19:10:13.115Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1107,
-  "requests30": 69,
-  "requests90": 239,
+  "total": 1102,
+  "requests30": 64,
+  "requests90": 235,
   "counts": {
     "open": 170,
-    "resolved": 892,
+    "resolved": 887,
     "canceled": 45
   },
-  "openOver60": 107,
+  "openOver60": 108,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -23,16 +23,16 @@
     },
     {
       "type": "Animal Services",
-      "count": 198,
+      "count": 197,
       "medianDays": 1,
-      "closedSample": 157,
+      "closedSample": 156,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 146,
+      "count": 145,
       "medianDays": 6,
-      "closedSample": 51,
+      "closedSample": 50,
       "cityMedianDays": 12
     },
     {
@@ -64,18 +64,18 @@
       "cityMedianDays": 3
     },
     {
-      "type": "Water Service",
-      "count": 40,
-      "medianDays": 2,
-      "closedSample": 37,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Trees City Row",
       "count": 38,
       "medianDays": 0.5,
       "closedSample": 28,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Water Service",
+      "count": 37,
+      "medianDays": 2,
+      "closedSample": 34,
+      "cityMedianDays": 2
     },
     {
       "type": "Solid Waste Services",
@@ -180,14 +180,14 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 13.5
+      "cityMedianDays": 13
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 7,
       "medianDays": 6,
       "closedSample": 7,
-      "cityMedianDays": 8
+      "cityMedianDays": 7
     },
     {
       "type": "Leaf and Brush Curbside Pickup",
@@ -222,7 +222,7 @@
       "count": 3,
       "medianDays": 99.5,
       "closedSample": 2,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 29
     },
     {
       "type": "Land Bank Issues",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
+      "name": "Phone",
+      "count": 630
+    },
+    {
       "name": "Other / not specified",
-      "count": 205
+      "count": 204
     },
     {
       "name": "Mobile app",
-      "count": 271
-    },
-    {
-      "name": "Phone",
-      "count": 631
+      "count": 268
     }
   ],
   "stuck": [

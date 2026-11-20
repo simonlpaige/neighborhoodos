@@ -1,24 +1,24 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-19",
+  "asOf": "2026-11-20",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-19T19:31:19.893Z",
+  "generatedAt": "2026-11-20T19:10:11.999Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2124,
-  "requests30": 137,
-  "requests90": 470,
+  "total": 2118,
+  "requests30": 124,
+  "requests90": 466,
   "counts": {
     "open": 387,
-    "resolved": 1582,
+    "resolved": 1576,
     "canceled": 155
   },
-  "openOver60": 279,
+  "openOver60": 280,
   "types": [
     {
       "type": "Property Violations",
-      "count": 421,
-      "medianDays": 54,
-      "closedSample": 184,
+      "count": 419,
+      "medianDays": 51.5,
+      "closedSample": 182,
       "cityMedianDays": 12
     },
     {
@@ -30,9 +30,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 314,
+      "count": 312,
       "medianDays": 4,
-      "closedSample": 260,
+      "closedSample": 258,
       "cityMedianDays": 5
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Vehicles and Parking",
-      "count": 71,
+      "count": 70,
       "medianDays": 6,
-      "closedSample": 67,
+      "closedSample": 66,
       "cityMedianDays": 6
     },
     {
@@ -93,9 +93,9 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 44,
+      "count": 43,
       "medianDays": 6,
-      "closedSample": 37,
+      "closedSample": 36,
       "cityMedianDays": 3
     },
     {
@@ -110,7 +110,7 @@
       "count": 40,
       "medianDays": 56,
       "closedSample": 14,
-      "cityMedianDays": 13.5
+      "cityMedianDays": 13
     },
     {
       "type": "Health Code Violations",
@@ -166,7 +166,7 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 29
     },
     {
       "type": "Sidewalks and Curbs",
@@ -194,7 +194,7 @@
       "count": 10,
       "medianDays": 4,
       "closedSample": 10,
-      "cityMedianDays": 8
+      "cityMedianDays": 7
     },
     {
       "type": "Traffic Signals",
@@ -411,11 +411,11 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 769
+      "count": 766
     },
     {
       "name": "Phone",
-      "count": 939
+      "count": 936
     },
     {
       "name": "Other / not specified",

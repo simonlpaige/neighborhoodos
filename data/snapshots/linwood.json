@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-19",
+  "asOf": "2026-11-20",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-19T19:31:18.740Z",
+  "generatedAt": "2026-11-20T19:10:11.146Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3644,
-  "requests30": 183,
-  "requests90": 738,
+  "total": 3630,
+  "requests30": 170,
+  "requests90": 736,
   "counts": {
     "open": 627,
-    "resolved": 2791,
-    "canceled": 226
+    "resolved": 2781,
+    "canceled": 222
   },
-  "openOver60": 469,
+  "openOver60": 470,
   "types": [
     {
       "type": "Property Violations",
-      "count": 846,
+      "count": 842,
       "medianDays": 11,
-      "closedSample": 401,
+      "closedSample": 398,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 535,
+      "count": 530,
       "medianDays": 0,
-      "closedSample": 429,
+      "closedSample": 425,
       "cityMedianDays": 0
     },
     {
@@ -44,14 +44,14 @@
     },
     {
       "type": "Water Service",
-      "count": 149,
+      "count": 148,
       "medianDays": 2,
-      "closedSample": 142,
+      "closedSample": 141,
       "cityMedianDays": 2
     },
     {
       "type": "Trash Cart Program",
-      "count": 123,
+      "count": 122,
       "medianDays": 8,
       "closedSample": 94,
       "cityMedianDays": 9
@@ -86,14 +86,14 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 93,
-      "medianDays": 8.5,
-      "closedSample": 88,
+      "count": 92,
+      "medianDays": 9,
+      "closedSample": 87,
       "cityMedianDays": 9
     },
     {
       "type": "Recycling Cart Program",
-      "count": 90,
+      "count": 89,
       "medianDays": 10,
       "closedSample": 76,
       "cityMedianDays": 11
@@ -155,13 +155,6 @@
       "cityMedianDays": 4
     },
     {
-      "type": "Streetlights",
-      "count": 30,
-      "medianDays": 1,
-      "closedSample": 30,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Health Code Violations",
       "count": 29,
       "medianDays": 3,
@@ -169,25 +162,32 @@
       "cityMedianDays": 2
     },
     {
+      "type": "Streetlights",
+      "count": 29,
+      "medianDays": 1,
+      "closedSample": 29,
+      "cityMedianDays": 1
+    },
+    {
       "type": "Homeless Camp",
       "count": 28,
       "medianDays": 15,
       "closedSample": 15,
-      "cityMedianDays": 13.5
+      "cityMedianDays": 13
     },
     {
       "type": "Right-of-Way / Inspections",
       "count": 27,
       "medianDays": 6,
       "closedSample": 23,
-      "cityMedianDays": 8
+      "cityMedianDays": 7
     },
     {
       "type": "Dangerous Buildings",
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 29.5
+      "cityMedianDays": 29
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 874
+      "name": "Phone",
+      "count": 1950
     },
     {
       "name": "Other / not specified",
-      "count": 814
+      "count": 809
     },
     {
-      "name": "Phone",
-      "count": 1956
+      "name": "Mobile app",
+      "count": 871
     }
   ],
   "stuck": [
