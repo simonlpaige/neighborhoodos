@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-21",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-20T19:10:13.115Z",
+  "generatedAt": "2026-11-21T18:04:31.309Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1102,
-  "requests30": 64,
-  "requests90": 235,
+  "total": 1101,
+  "requests30": 61,
+  "requests90": 234,
   "counts": {
     "open": 170,
-    "resolved": 887,
+    "resolved": 886,
     "canceled": 45
   },
-  "openOver60": 108,
+  "openOver60": 109,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -30,9 +30,9 @@
     },
     {
       "type": "Property Violations",
-      "count": 145,
+      "count": 144,
       "medianDays": 6,
-      "closedSample": 50,
+      "closedSample": 49,
       "cityMedianDays": 12
     },
     {
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 13
+      "cityMedianDays": 12
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -404,7 +404,7 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 630
+      "count": 629
     },
     {
       "name": "Other / not specified",

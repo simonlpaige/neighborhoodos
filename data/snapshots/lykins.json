@@ -1,24 +1,24 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-21",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-20T19:10:11.999Z",
+  "generatedAt": "2026-11-21T18:04:30.180Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2118,
-  "requests30": 124,
-  "requests90": 466,
+  "total": 2111,
+  "requests30": 114,
+  "requests90": 465,
   "counts": {
     "open": 387,
-    "resolved": 1576,
+    "resolved": 1569,
     "canceled": 155
   },
-  "openOver60": 280,
+  "openOver60": 284,
   "types": [
     {
       "type": "Property Violations",
-      "count": 419,
-      "medianDays": 51.5,
-      "closedSample": 182,
+      "count": 418,
+      "medianDays": 51,
+      "closedSample": 181,
       "cityMedianDays": 12
     },
     {
@@ -30,9 +30,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 312,
+      "count": 310,
       "medianDays": 4,
-      "closedSample": 258,
+      "closedSample": 256,
       "cityMedianDays": 5
     },
     {
@@ -93,9 +93,9 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 43,
+      "count": 42,
       "medianDays": 6,
-      "closedSample": 36,
+      "closedSample": 35,
       "cityMedianDays": 3
     },
     {
@@ -107,10 +107,10 @@
     },
     {
       "type": "Homeless Camp",
-      "count": 40,
+      "count": 38,
       "medianDays": 56,
-      "closedSample": 14,
-      "cityMedianDays": 13
+      "closedSample": 12,
+      "cityMedianDays": 12
     },
     {
       "type": "Health Code Violations",
@@ -212,9 +212,9 @@
     },
     {
       "type": "Food Safety",
-      "count": 8,
-      "medianDays": 3.5,
-      "closedSample": 8,
+      "count": 7,
+      "medianDays": 4,
+      "closedSample": 7,
       "cityMedianDays": 2
     },
     {
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 766
-    },
-    {
       "name": "Phone",
-      "count": 936
+      "count": 935
     },
     {
       "name": "Other / not specified",
-      "count": 416
+      "count": 415
+    },
+    {
+      "name": "Mobile app",
+      "count": 761
     }
   ],
   "stuck": [

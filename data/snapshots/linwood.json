@@ -1,31 +1,31 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-21",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-20T19:10:11.146Z",
+  "generatedAt": "2026-11-21T18:04:29.062Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3630,
-  "requests30": 170,
+  "total": 3616,
+  "requests30": 158,
   "requests90": 736,
   "counts": {
     "open": 627,
-    "resolved": 2781,
+    "resolved": 2767,
     "canceled": 222
   },
-  "openOver60": 470,
+  "openOver60": 472,
   "types": [
     {
       "type": "Property Violations",
-      "count": 842,
+      "count": 840,
       "medianDays": 11,
-      "closedSample": 398,
+      "closedSample": 396,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 530,
+      "count": 524,
       "medianDays": 0,
-      "closedSample": 425,
+      "closedSample": 419,
       "cityMedianDays": 0
     },
     {
@@ -57,18 +57,18 @@
       "cityMedianDays": 9
     },
     {
-      "type": "Vehicles and Parking",
-      "count": 105,
-      "medianDays": 6,
-      "closedSample": 103,
-      "cityMedianDays": 6
-    },
-    {
       "type": "Trees City Row",
       "count": 105,
       "medianDays": 2,
       "closedSample": 88,
       "cityMedianDays": 4
+    },
+    {
+      "type": "Vehicles and Parking",
+      "count": 104,
+      "medianDays": 6,
+      "closedSample": 102,
+      "cityMedianDays": 6
     },
     {
       "type": "Sewer and Stormwater",
@@ -86,9 +86,9 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 92,
-      "medianDays": 9,
-      "closedSample": 87,
+      "count": 91,
+      "medianDays": 9.5,
+      "closedSample": 86,
       "cityMedianDays": 9
     },
     {
@@ -142,9 +142,9 @@
     },
     {
       "type": "Traffic Signs and Street Markings",
-      "count": 33,
+      "count": 31,
       "medianDays": 5,
-      "closedSample": 26,
+      "closedSample": 24,
       "cityMedianDays": 3
     },
     {
@@ -153,13 +153,6 @@
       "medianDays": 4,
       "closedSample": 27,
       "cityMedianDays": 4
-    },
-    {
-      "type": "Health Code Violations",
-      "count": 29,
-      "medianDays": 3,
-      "closedSample": 27,
-      "cityMedianDays": 2
     },
     {
       "type": "Streetlights",
@@ -173,7 +166,14 @@
       "count": 28,
       "medianDays": 15,
       "closedSample": 15,
-      "cityMedianDays": 13
+      "cityMedianDays": 12
+    },
+    {
+      "type": "Health Code Violations",
+      "count": 28,
+      "medianDays": 2.5,
+      "closedSample": 26,
+      "cityMedianDays": 2
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -261,9 +261,9 @@
     },
     {
       "type": "Public Safety",
-      "count": 5,
-      "medianDays": 4,
-      "closedSample": 3,
+      "count": 4,
+      "medianDays": 2,
+      "closedSample": 2,
       "cityMedianDays": 1
     },
     {
@@ -446,15 +446,15 @@
   "channels": [
     {
       "name": "Phone",
-      "count": 1950
-    },
-    {
-      "name": "Other / not specified",
-      "count": 809
+      "count": 1944
     },
     {
       "name": "Mobile app",
-      "count": 871
+      "count": 869
+    },
+    {
+      "name": "Other / not specified",
+      "count": 803
     }
   ],
   "stuck": [
