@@ -1,38 +1,38 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-21",
+  "asOf": "2026-11-22",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-21T18:04:30.180Z",
+  "generatedAt": "2026-11-22T18:34:27.957Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2111,
-  "requests30": 114,
-  "requests90": 465,
+  "total": 2103,
+  "requests30": 113,
+  "requests90": 455,
   "counts": {
     "open": 387,
-    "resolved": 1569,
-    "canceled": 155
+    "resolved": 1563,
+    "canceled": 153
   },
-  "openOver60": 284,
+  "openOver60": 286,
   "types": [
     {
       "type": "Property Violations",
-      "count": 418,
-      "medianDays": 51,
-      "closedSample": 181,
+      "count": 417,
+      "medianDays": 51.5,
+      "closedSample": 180,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 326,
+      "count": 323,
       "medianDays": 0,
-      "closedSample": 264,
+      "closedSample": 262,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 310,
+      "count": 309,
       "medianDays": 4,
-      "closedSample": 256,
+      "closedSample": 255,
       "cityMedianDays": 5
     },
     {
@@ -51,9 +51,9 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 75,
+      "count": 74,
       "medianDays": 10,
-      "closedSample": 55,
+      "closedSample": 54,
       "cityMedianDays": 9
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 48,
+      "count": 47,
       "medianDays": 15.5,
       "closedSample": 34,
       "cityMedianDays": 11
@@ -93,9 +93,9 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 42,
+      "count": 41,
       "medianDays": 6,
-      "closedSample": 35,
+      "closedSample": 34,
       "cityMedianDays": 3
     },
     {
@@ -110,7 +110,7 @@
       "count": 38,
       "medianDays": 56,
       "closedSample": 12,
-      "cityMedianDays": 12
+      "cityMedianDays": 11.5
     },
     {
       "type": "Health Code Violations",
@@ -166,7 +166,7 @@
       "count": 15,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 29
+      "cityMedianDays": 30
     },
     {
       "type": "Sidewalks and Curbs",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
+      "name": "Mobile app",
+      "count": 760
+    },
+    {
       "name": "Phone",
-      "count": 935
+      "count": 929
     },
     {
       "name": "Other / not specified",
-      "count": 415
-    },
-    {
-      "name": "Mobile app",
-      "count": 761
+      "count": 414
     }
   ],
   "stuck": [

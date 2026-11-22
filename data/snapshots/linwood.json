@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-21",
+  "asOf": "2026-11-22",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-21T18:04:29.062Z",
+  "generatedAt": "2026-11-22T18:34:26.566Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3616,
-  "requests30": 158,
-  "requests90": 736,
+  "total": 3612,
+  "requests30": 157,
+  "requests90": 723,
   "counts": {
-    "open": 627,
-    "resolved": 2767,
+    "open": 626,
+    "resolved": 2764,
     "canceled": 222
   },
-  "openOver60": 472,
+  "openOver60": 475,
   "types": [
     {
       "type": "Property Violations",
@@ -37,9 +37,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 381,
+      "count": 380,
       "medianDays": 6,
-      "closedSample": 303,
+      "closedSample": 302,
       "cityMedianDays": 5
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 122,
+      "count": 121,
       "medianDays": 8,
       "closedSample": 94,
       "cityMedianDays": 9
@@ -93,9 +93,9 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 89,
+      "count": 88,
       "medianDays": 10,
-      "closedSample": 76,
+      "closedSample": 75,
       "cityMedianDays": 11
     },
     {
@@ -162,18 +162,18 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Homeless Camp",
-      "count": 28,
-      "medianDays": 15,
-      "closedSample": 15,
-      "cityMedianDays": 12
-    },
-    {
       "type": "Health Code Violations",
       "count": 28,
       "medianDays": 2.5,
       "closedSample": 26,
       "cityMedianDays": 2
+    },
+    {
+      "type": "Homeless Camp",
+      "count": 27,
+      "medianDays": 11,
+      "closedSample": 14,
+      "cityMedianDays": 11.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -187,7 +187,7 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 29
+      "cityMedianDays": 30
     },
     {
       "type": "Tents or Sleeping Structures",
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 1944
+      "name": "Other / not specified",
+      "count": 803
     },
     {
       "name": "Mobile app",
-      "count": 869
+      "count": 868
     },
     {
-      "name": "Other / not specified",
-      "count": 803
+      "name": "Phone",
+      "count": 1941
     }
   ],
   "stuck": [

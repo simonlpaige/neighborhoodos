@@ -1,15 +1,15 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-21",
+  "asOf": "2026-11-22",
   "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-21T18:04:31.309Z",
+  "generatedAt": "2026-11-22T18:34:29.350Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1101,
-  "requests30": 61,
-  "requests90": 234,
+  "total": 1097,
+  "requests30": 55,
+  "requests90": 231,
   "counts": {
     "open": 170,
-    "resolved": 886,
+    "resolved": 882,
     "canceled": 45
   },
   "openOver60": 109,
@@ -23,9 +23,9 @@
     },
     {
       "type": "Animal Services",
-      "count": 197,
+      "count": 194,
       "medianDays": 1,
-      "closedSample": 156,
+      "closedSample": 153,
       "cityMedianDays": 0
     },
     {
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 12
+      "cityMedianDays": 11.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -188,13 +188,6 @@
       "medianDays": 6,
       "closedSample": 7,
       "cityMedianDays": 7
-    },
-    {
-      "type": "Leaf and Brush Curbside Pickup",
-      "count": 4,
-      "medianDays": 1,
-      "closedSample": 4,
-      "cityMedianDays": 1
     },
     {
       "type": "Parks and Recreation",
@@ -218,11 +211,18 @@
       "cityMedianDays": 6
     },
     {
+      "type": "Leaf and Brush Curbside Pickup",
+      "count": 3,
+      "medianDays": 1,
+      "closedSample": 3,
+      "cityMedianDays": 1
+    },
+    {
       "type": "Dangerous Buildings",
       "count": 3,
       "medianDays": 99.5,
       "closedSample": 2,
-      "cityMedianDays": 29
+      "cityMedianDays": 30
     },
     {
       "type": "Land Bank Issues",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 629
+      "name": "Mobile app",
+      "count": 268
     },
     {
       "name": "Other / not specified",
-      "count": 204
+      "count": 203
     },
     {
-      "name": "Mobile app",
-      "count": 268
+      "name": "Phone",
+      "count": 626
     }
   ],
   "stuck": [
