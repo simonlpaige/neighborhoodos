@@ -1,64 +1,64 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-22",
-  "sourceMax": "2026-11-16",
-  "generatedAt": "2026-11-22T18:34:29.350Z",
+  "asOf": "2026-11-23",
+  "sourceMax": "2026-11-23",
+  "generatedAt": "2026-11-23T22:44:21.578Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1097,
-  "requests30": 55,
-  "requests90": 231,
+  "total": 1107,
+  "requests30": 65,
+  "requests90": 242,
   "counts": {
-    "open": 170,
-    "resolved": 882,
+    "open": 168,
+    "resolved": 894,
     "canceled": 45
   },
-  "openOver60": 109,
+  "openOver60": 111,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 216,
+      "count": 219,
       "medianDays": 1,
-      "closedSample": 212,
+      "closedSample": 216,
       "cityMedianDays": 1
     },
     {
       "type": "Animal Services",
-      "count": 194,
+      "count": 195,
       "medianDays": 1,
-      "closedSample": 153,
+      "closedSample": 152,
       "cityMedianDays": 0
     },
     {
       "type": "Property Violations",
-      "count": 144,
+      "count": 145,
       "medianDays": 6,
       "closedSample": 49,
       "cityMedianDays": 12
     },
     {
       "type": "A Pothole",
-      "count": 64,
+      "count": 66,
       "medianDays": 6,
       "closedSample": 63,
       "cityMedianDays": 5
     },
     {
       "type": "Healthy Homes",
-      "count": 56,
+      "count": 57,
       "medianDays": 10,
       "closedSample": 56,
       "cityMedianDays": 9
     },
     {
       "type": "Illegal Dumping",
-      "count": 51,
+      "count": 52,
       "medianDays": 4,
       "closedSample": 45,
       "cityMedianDays": 5
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 42,
+      "count": 41,
       "medianDays": 6.5,
       "closedSample": 38,
       "cityMedianDays": 3
@@ -71,31 +71,31 @@
       "cityMedianDays": 4
     },
     {
+      "type": "Solid Waste Services",
+      "count": 37,
+      "medianDays": 7,
+      "closedSample": 33,
+      "cityMedianDays": 4
+    },
+    {
       "type": "Water Service",
       "count": 37,
       "medianDays": 2,
-      "closedSample": 34,
+      "closedSample": 35,
       "cityMedianDays": 2
-    },
-    {
-      "type": "Solid Waste Services",
-      "count": 36,
-      "medianDays": 7,
-      "closedSample": 33,
-      "cityMedianDays": 5
     },
     {
       "type": "Street Maintenance",
       "count": 34,
-      "medianDays": 1,
-      "closedSample": 19,
-      "cityMedianDays": 14
+      "medianDays": 10.5,
+      "closedSample": 24,
+      "cityMedianDays": 15
     },
     {
       "type": "Trash Cart Program",
       "count": 18,
-      "medianDays": 7.5,
-      "closedSample": 14,
+      "medianDays": 7,
+      "closedSample": 15,
       "cityMedianDays": 9
     },
     {
@@ -120,18 +120,18 @@
       "cityMedianDays": 2
     },
     {
+      "type": "Streetlights",
+      "count": 12,
+      "medianDays": 1,
+      "closedSample": 11,
+      "cityMedianDays": 1
+    },
+    {
       "type": "Food Safety",
       "count": 12,
       "medianDays": 3,
       "closedSample": 12,
       "cityMedianDays": 2
-    },
-    {
-      "type": "Streetlights",
-      "count": 11,
-      "medianDays": 1,
-      "closedSample": 11,
-      "cityMedianDays": 1
     },
     {
       "type": "Traffic Signals",
@@ -159,14 +159,14 @@
       "count": 10,
       "medianDays": 15,
       "closedSample": 7,
-      "cityMedianDays": 11
+      "cityMedianDays": 10
     },
     {
       "type": "Street Cleaning / Sweeping",
       "count": 9,
-      "medianDays": 9,
-      "closedSample": 7,
-      "cityMedianDays": 23
+      "medianDays": 7,
+      "closedSample": 8,
+      "cityMedianDays": 22
     },
     {
       "type": "Administration or Questions",
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 11.5
+      "cityMedianDays": 12
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -192,8 +192,8 @@
     {
       "type": "Parks and Recreation",
       "count": 4,
-      "medianDays": 34,
-      "closedSample": 3,
+      "medianDays": 23.5,
+      "closedSample": 4,
       "cityMedianDays": 4
     },
     {
@@ -229,7 +229,7 @@
       "count": 3,
       "medianDays": 32,
       "closedSample": 2,
-      "cityMedianDays": 11
+      "cityMedianDays": 11.5
     },
     {
       "type": "Sidewalks and Curbs",
@@ -391,28 +391,28 @@
     },
     {
       "month": "2026-11",
-      "count": 36,
+      "count": 49,
       "types": {
-        "Trash  Recycling  Bulky Services": 6,
-        "Animal Services": 7,
-        "Property Violations": 5,
-        "A Pothole": 1,
-        "Healthy Homes": 1
+        "Trash  Recycling  Bulky Services": 10,
+        "Animal Services": 9,
+        "Property Violations": 6,
+        "A Pothole": 3,
+        "Healthy Homes": 2
       }
     }
   ],
   "channels": [
     {
       "name": "Mobile app",
-      "count": 268
-    },
-    {
-      "name": "Other / not specified",
-      "count": 203
+      "count": 270
     },
     {
       "name": "Phone",
-      "count": 626
+      "count": 632
+    },
+    {
+      "name": "Other / not specified",
+      "count": 205
     }
   ],
   "stuck": [
@@ -426,24 +426,6 @@
       "issue": "Street Maintenance",
       "block": "7800 block of E 107th St",
       "opened": "2026-06-09",
-      "department": "PW Streets"
-    },
-    {
-      "issue": "Street Maintenance",
-      "block": "11700 block of Lawndale Ave",
-      "opened": "2026-07-24",
-      "department": "PW Streets"
-    },
-    {
-      "issue": "Street Maintenance",
-      "block": "6300 block of Longview Rd",
-      "opened": "2026-07-29",
-      "department": "PW Streets"
-    },
-    {
-      "issue": "Street Maintenance",
-      "block": "10300 block of Crystal Ave",
-      "opened": "2026-09-14",
       "department": "PW Streets"
     },
     {
@@ -1174,18 +1156,19 @@
     },
     {
       "month": "2026-11",
-      "count": 36,
+      "count": 49,
       "types": {
-        "Animal Services": 7,
-        "A Pothole": 1,
-        "Other": 6,
-        "Healthy Homes": 1,
-        "Illegal Dumping": 5,
-        "Property Violations": 5,
+        "Animal Services": 9,
+        "A Pothole": 3,
+        "Other": 7,
+        "Healthy Homes": 2,
+        "Illegal Dumping": 6,
+        "Property Violations": 6,
         "Sewer and Stormwater": 1,
+        "Solid Waste Services": 1,
         "Street Maintenance": 2,
         "Trash Cart Program": 1,
-        "Trash  Recycling  Bulky Services": 6,
+        "Trash  Recycling  Bulky Services": 10,
         "Water Service": 1
       }
     }
