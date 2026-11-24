@@ -1,31 +1,31 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-23T22:44:20.257Z",
+  "generatedAt": "2026-11-24T21:22:38.292Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2129,
-  "requests30": 139,
-  "requests90": 477,
+  "total": 2125,
+  "requests30": 137,
+  "requests90": 471,
   "counts": {
     "open": 387,
-    "resolved": 1588,
+    "resolved": 1584,
     "canceled": 154
   },
-  "openOver60": 287,
+  "openOver60": 289,
   "types": [
     {
       "type": "Property Violations",
-      "count": 420,
-      "medianDays": 50.5,
-      "closedSample": 182,
+      "count": 419,
+      "medianDays": 51,
+      "closedSample": 181,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 327,
+      "count": 324,
       "medianDays": 0,
-      "closedSample": 263,
+      "closedSample": 260,
       "cityMedianDays": 0
     },
     {
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 766
-    },
-    {
       "name": "Phone",
-      "count": 945
+      "count": 943
     },
     {
       "name": "Other / not specified",
       "count": 418
+    },
+    {
+      "name": "Mobile app",
+      "count": 764
     }
   ],
   "stuck": [

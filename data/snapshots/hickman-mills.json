@@ -1,24 +1,24 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-23T22:44:21.578Z",
+  "generatedAt": "2026-11-24T21:22:39.206Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1107,
-  "requests30": 65,
-  "requests90": 242,
+  "total": 1105,
+  "requests30": 64,
+  "requests90": 238,
   "counts": {
     "open": 168,
-    "resolved": 894,
+    "resolved": 892,
     "canceled": 45
   },
-  "openOver60": 111,
+  "openOver60": 113,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 219,
+      "count": 218,
       "medianDays": 1,
-      "closedSample": 216,
+      "closedSample": 215,
       "cityMedianDays": 1
     },
     {
@@ -211,13 +211,6 @@
       "cityMedianDays": 6
     },
     {
-      "type": "Leaf and Brush Curbside Pickup",
-      "count": 3,
-      "medianDays": 1,
-      "closedSample": 3,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Dangerous Buildings",
       "count": 3,
       "medianDays": 99.5,
@@ -244,6 +237,13 @@
       "medianDays": 1.5,
       "closedSample": 2,
       "cityMedianDays": 2
+    },
+    {
+      "type": "Leaf and Brush Curbside Pickup",
+      "count": 2,
+      "medianDays": 1.5,
+      "closedSample": 2,
+      "cityMedianDays": 1
     },
     {
       "type": "Public Safety",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 270
-    },
-    {
       "name": "Phone",
       "count": 632
     },
     {
       "name": "Other / not specified",
       "count": 205
+    },
+    {
+      "name": "Mobile app",
+      "count": 268
     }
   ],
   "stuck": [

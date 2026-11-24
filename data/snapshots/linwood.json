@@ -1,22 +1,22 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-23",
+  "asOf": "2026-11-24",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-23T22:44:19.442Z",
+  "generatedAt": "2026-11-24T21:22:37.235Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3659,
-  "requests30": 201,
-  "requests90": 754,
+  "total": 3656,
+  "requests30": 199,
+  "requests90": 735,
   "counts": {
-    "open": 638,
-    "resolved": 2799,
+    "open": 637,
+    "resolved": 2797,
     "canceled": 222
   },
-  "openOver60": 475,
+  "openOver60": 482,
   "types": [
     {
       "type": "Property Violations",
-      "count": 843,
+      "count": 842,
       "medianDays": 10,
       "closedSample": 402,
       "cityMedianDays": 12
@@ -72,9 +72,9 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 102,
+      "count": 101,
       "medianDays": 2,
-      "closedSample": 95,
+      "closedSample": 94,
       "cityMedianDays": 3
     },
     {
@@ -86,9 +86,9 @@
     },
     {
       "type": "Healthy Homes",
-      "count": 92,
-      "medianDays": 9.5,
-      "closedSample": 88,
+      "count": 91,
+      "medianDays": 10,
+      "closedSample": 87,
       "cityMedianDays": 9
     },
     {
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 809
-    },
-    {
       "name": "Mobile app",
-      "count": 877
+      "count": 876
     },
     {
       "name": "Phone",
-      "count": 1973
+      "count": 1972
+    },
+    {
+      "name": "Other / not specified",
+      "count": 808
     }
   ],
   "stuck": [
