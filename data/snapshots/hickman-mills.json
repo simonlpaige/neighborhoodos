@@ -1,24 +1,24 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-24T21:22:39.206Z",
+  "generatedAt": "2026-11-25T20:31:43.502Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1105,
-  "requests30": 64,
-  "requests90": 238,
+  "total": 1102,
+  "requests30": 61,
+  "requests90": 235,
   "counts": {
     "open": 168,
-    "resolved": 892,
-    "canceled": 45
+    "resolved": 890,
+    "canceled": 44
   },
-  "openOver60": 113,
+  "openOver60": 114,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
-      "count": 218,
-      "medianDays": 1,
-      "closedSample": 215,
+      "count": 216,
+      "medianDays": 2,
+      "closedSample": 213,
       "cityMedianDays": 1
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "type": "Property Violations",
-      "count": 145,
+      "count": 144,
       "medianDays": 6,
       "closedSample": 49,
       "cityMedianDays": 12
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 12
+      "cityMedianDays": 11
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -215,14 +215,14 @@
       "count": 3,
       "medianDays": 99.5,
       "closedSample": 2,
-      "cityMedianDays": 30
+      "cityMedianDays": 30.5
     },
     {
       "type": "Land Bank Issues",
       "count": 3,
       "medianDays": 32,
       "closedSample": 2,
-      "cityMedianDays": 11.5
+      "cityMedianDays": 12
     },
     {
       "type": "Sidewalks and Curbs",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
-      "name": "Phone",
-      "count": 632
+      "name": "Mobile app",
+      "count": 267
     },
     {
       "name": "Other / not specified",
-      "count": 205
+      "count": 204
     },
     {
-      "name": "Mobile app",
-      "count": 268
+      "name": "Phone",
+      "count": 631
     }
   ],
   "stuck": [

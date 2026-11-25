@@ -1,24 +1,24 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-24T21:22:38.292Z",
+  "generatedAt": "2026-11-25T20:31:42.687Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2125,
-  "requests30": 137,
-  "requests90": 471,
+  "total": 2120,
+  "requests30": 130,
+  "requests90": 460,
   "counts": {
-    "open": 387,
-    "resolved": 1584,
-    "canceled": 154
+    "open": 385,
+    "resolved": 1582,
+    "canceled": 153
   },
-  "openOver60": 289,
+  "openOver60": 287,
   "types": [
     {
       "type": "Property Violations",
-      "count": 419,
-      "medianDays": 51,
-      "closedSample": 181,
+      "count": 418,
+      "medianDays": 50.5,
+      "closedSample": 180,
       "cityMedianDays": 12
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 315,
+      "count": 314,
       "medianDays": 4,
       "closedSample": 261,
       "cityMedianDays": 5
@@ -51,7 +51,7 @@
     },
     {
       "type": "Trash Cart Program",
-      "count": 75,
+      "count": 74,
       "medianDays": 10,
       "closedSample": 58,
       "cityMedianDays": 9
@@ -79,9 +79,9 @@
     },
     {
       "type": "Recycling Cart Program",
-      "count": 49,
-      "medianDays": 14,
-      "closedSample": 37,
+      "count": 48,
+      "medianDays": 14.5,
+      "closedSample": 36,
       "cityMedianDays": 10
     },
     {
@@ -110,7 +110,7 @@
       "count": 38,
       "medianDays": 56,
       "closedSample": 12,
-      "cityMedianDays": 12
+      "cityMedianDays": 11
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -145,7 +145,7 @@
       "count": 21,
       "medianDays": 30,
       "closedSample": 14,
-      "cityMedianDays": 11.5
+      "cityMedianDays": 12
     },
     {
       "type": "Parks and Recreation",
@@ -162,18 +162,18 @@
       "cityMedianDays": 1
     },
     {
-      "type": "Dangerous Buildings",
-      "count": 15,
-      "medianDays": 78,
-      "closedSample": 5,
-      "cityMedianDays": 30
-    },
-    {
       "type": "Healthy Homes",
       "count": 14,
       "medianDays": 4,
       "closedSample": 12,
       "cityMedianDays": 9
+    },
+    {
+      "type": "Dangerous Buildings",
+      "count": 14,
+      "medianDays": 78,
+      "closedSample": 5,
+      "cityMedianDays": 30.5
     },
     {
       "type": "Sidewalks and Curbs",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
+      "name": "Mobile app",
+      "count": 763
+    },
+    {
       "name": "Phone",
-      "count": 943
+      "count": 940
     },
     {
       "name": "Other / not specified",
-      "count": 418
-    },
-    {
-      "name": "Mobile app",
-      "count": 764
+      "count": 417
     }
   ],
   "stuck": [
