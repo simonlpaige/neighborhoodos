@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-25T20:31:42.687Z",
+  "generatedAt": "2026-11-26T20:16:39.806Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2120,
-  "requests30": 130,
-  "requests90": 460,
+  "total": 2111,
+  "requests30": 128,
+  "requests90": 454,
   "counts": {
-    "open": 385,
-    "resolved": 1582,
-    "canceled": 153
+    "open": 384,
+    "resolved": 1576,
+    "canceled": 151
   },
-  "openOver60": 287,
+  "openOver60": 286,
   "types": [
     {
       "type": "Property Violations",
@@ -23,16 +23,16 @@
     },
     {
       "type": "Animal Services",
-      "count": 324,
+      "count": 321,
       "medianDays": 0,
-      "closedSample": 260,
+      "closedSample": 257,
       "cityMedianDays": 0
     },
     {
       "type": "Illegal Dumping",
-      "count": 314,
+      "count": 311,
       "medianDays": 4,
-      "closedSample": 261,
+      "closedSample": 260,
       "cityMedianDays": 5
     },
     {
@@ -57,18 +57,18 @@
       "cityMedianDays": 9
     },
     {
-      "type": "Vehicles and Parking",
-      "count": 70,
-      "medianDays": 6,
-      "closedSample": 67,
-      "cityMedianDays": 6
-    },
-    {
       "type": "Water Service",
       "count": 69,
       "medianDays": 1,
       "closedSample": 60,
       "cityMedianDays": 2
+    },
+    {
+      "type": "Vehicles and Parking",
+      "count": 69,
+      "medianDays": 6,
+      "closedSample": 66,
+      "cityMedianDays": 6
     },
     {
       "type": "A Pothole",
@@ -100,9 +100,9 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 41,
-      "medianDays": 6,
-      "closedSample": 35,
+      "count": 39,
+      "medianDays": 6.5,
+      "closedSample": 34,
       "cityMedianDays": 3
     },
     {
@@ -110,7 +110,7 @@
       "count": 38,
       "medianDays": 56,
       "closedSample": 12,
-      "cityMedianDays": 11
+      "cityMedianDays": 10.5
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -173,7 +173,7 @@
       "count": 14,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 30.5
+      "cityMedianDays": 31
     },
     {
       "type": "Sidewalks and Curbs",
@@ -243,7 +243,7 @@
       "count": 2,
       "medianDays": 8.5,
       "closedSample": 2,
-      "cityMedianDays": 12
+      "cityMedianDays": 11
     },
     {
       "type": "311 Research and Investigation",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 763
+      "name": "Other / not specified",
+      "count": 417
     },
     {
       "name": "Phone",
-      "count": 940
+      "count": 937
     },
     {
-      "name": "Other / not specified",
-      "count": 417
+      "name": "Mobile app",
+      "count": 757
     }
   ],
   "stuck": [

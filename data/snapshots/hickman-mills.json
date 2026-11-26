@@ -1,16 +1,16 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-25T20:31:43.502Z",
+  "generatedAt": "2026-11-26T20:16:40.383Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1102,
-  "requests30": 61,
-  "requests90": 235,
+  "total": 1099,
+  "requests30": 59,
+  "requests90": 229,
   "counts": {
     "open": 168,
-    "resolved": 890,
-    "canceled": 44
+    "resolved": 888,
+    "canceled": 43
   },
   "openOver60": 114,
   "types": [
@@ -30,9 +30,9 @@
     },
     {
       "type": "Property Violations",
-      "count": 144,
+      "count": 142,
       "medianDays": 6,
-      "closedSample": 49,
+      "closedSample": 48,
       "cityMedianDays": 12
     },
     {
@@ -58,9 +58,9 @@
     },
     {
       "type": "Sewer and Stormwater",
-      "count": 41,
-      "medianDays": 6.5,
-      "closedSample": 38,
+      "count": 40,
+      "medianDays": 7,
+      "closedSample": 37,
       "cityMedianDays": 3
     },
     {
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 11
+      "cityMedianDays": 10.5
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -215,7 +215,7 @@
       "count": 3,
       "medianDays": 99.5,
       "closedSample": 2,
-      "cityMedianDays": 30.5
+      "cityMedianDays": 31
     },
     {
       "type": "Land Bank Issues",
@@ -404,15 +404,15 @@
   "channels": [
     {
       "name": "Mobile app",
-      "count": 267
-    },
-    {
-      "name": "Other / not specified",
-      "count": 204
+      "count": 265
     },
     {
       "name": "Phone",
       "count": 631
+    },
+    {
+      "name": "Other / not specified",
+      "count": 203
     }
   ],
   "stuck": [
