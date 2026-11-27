@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-26T20:16:40.383Z",
+  "generatedAt": "2026-11-27T20:04:06.126Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 1099,
-  "requests30": 59,
-  "requests90": 229,
+  "total": 1098,
+  "requests30": 57,
+  "requests90": 226,
   "counts": {
     "open": 168,
-    "resolved": 888,
+    "resolved": 887,
     "canceled": 43
   },
-  "openOver60": 114,
+  "openOver60": 115,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -120,13 +120,6 @@
       "cityMedianDays": 2
     },
     {
-      "type": "Streetlights",
-      "count": 12,
-      "medianDays": 1,
-      "closedSample": 11,
-      "cityMedianDays": 1
-    },
-    {
       "type": "Food Safety",
       "count": 12,
       "medianDays": 3,
@@ -138,6 +131,13 @@
       "count": 11,
       "medianDays": 1,
       "closedSample": 11,
+      "cityMedianDays": 1
+    },
+    {
+      "type": "Streetlights",
+      "count": 11,
+      "medianDays": 1,
+      "closedSample": 10,
       "cityMedianDays": 1
     },
     {
@@ -180,7 +180,7 @@
       "count": 7,
       "medianDays": 1,
       "closedSample": 3,
-      "cityMedianDays": 10.5
+      "cityMedianDays": 10
     },
     {
       "type": "Right-of-Way / Inspections",
@@ -215,7 +215,7 @@
       "count": 3,
       "medianDays": 99.5,
       "closedSample": 2,
-      "cityMedianDays": 31
+      "cityMedianDays": 31.5
     },
     {
       "type": "Land Bank Issues",
@@ -403,16 +403,16 @@
   ],
   "channels": [
     {
-      "name": "Mobile app",
-      "count": 265
-    },
-    {
       "name": "Phone",
       "count": 631
     },
     {
       "name": "Other / not specified",
       "count": 203
+    },
+    {
+      "name": "Mobile app",
+      "count": 264
     }
   ],
   "stuck": [

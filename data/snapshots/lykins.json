@@ -1,31 +1,31 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-26T20:16:39.806Z",
+  "generatedAt": "2026-11-27T20:04:05.520Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 2111,
-  "requests30": 128,
-  "requests90": 454,
+  "total": 2107,
+  "requests30": 123,
+  "requests90": 452,
   "counts": {
     "open": 384,
-    "resolved": 1576,
+    "resolved": 1572,
     "canceled": 151
   },
-  "openOver60": 286,
+  "openOver60": 290,
   "types": [
     {
       "type": "Property Violations",
-      "count": 418,
-      "medianDays": 50.5,
-      "closedSample": 180,
+      "count": 416,
+      "medianDays": 51.5,
+      "closedSample": 178,
       "cityMedianDays": 12
     },
     {
       "type": "Animal Services",
-      "count": 321,
+      "count": 320,
       "medianDays": 0,
-      "closedSample": 257,
+      "closedSample": 256,
       "cityMedianDays": 0
     },
     {
@@ -57,18 +57,18 @@
       "cityMedianDays": 9
     },
     {
-      "type": "Water Service",
-      "count": 69,
-      "medianDays": 1,
-      "closedSample": 60,
-      "cityMedianDays": 2
-    },
-    {
       "type": "Vehicles and Parking",
       "count": 69,
       "medianDays": 6,
       "closedSample": 66,
       "cityMedianDays": 6
+    },
+    {
+      "type": "Water Service",
+      "count": 68,
+      "medianDays": 1,
+      "closedSample": 59,
+      "cityMedianDays": 2
     },
     {
       "type": "A Pothole",
@@ -110,7 +110,7 @@
       "count": 38,
       "medianDays": 56,
       "closedSample": 12,
-      "cityMedianDays": 10.5
+      "cityMedianDays": 10
     },
     {
       "type": "Traffic Signs and Street Markings",
@@ -173,7 +173,7 @@
       "count": 14,
       "medianDays": 78,
       "closedSample": 5,
-      "cityMedianDays": 31
+      "cityMedianDays": 31.5
     },
     {
       "type": "Sidewalks and Curbs",
@@ -410,16 +410,16 @@
   ],
   "channels": [
     {
+      "name": "Mobile app",
+      "count": 757
+    },
+    {
       "name": "Other / not specified",
-      "count": 417
+      "count": 414
     },
     {
       "name": "Phone",
-      "count": 937
-    },
-    {
-      "name": "Mobile app",
-      "count": 757
+      "count": 936
     }
   ],
   "stuck": [

@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-26T20:16:38.636Z",
+  "generatedAt": "2026-11-27T20:04:03.861Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
-  "total": 3632,
-  "requests30": 169,
-  "requests90": 701,
+  "total": 3629,
+  "requests30": 162,
+  "requests90": 700,
   "counts": {
     "open": 637,
-    "resolved": 2777,
+    "resolved": 2774,
     "canceled": 218
   },
-  "openOver60": 489,
+  "openOver60": 490,
   "types": [
     {
       "type": "Property Violations",
@@ -37,9 +37,9 @@
     },
     {
       "type": "Illegal Dumping",
-      "count": 386,
+      "count": 384,
       "medianDays": 6,
-      "closedSample": 305,
+      "closedSample": 303,
       "cityMedianDays": 5
     },
     {
@@ -166,7 +166,7 @@
       "count": 27,
       "medianDays": 11,
       "closedSample": 14,
-      "cityMedianDays": 10.5
+      "cityMedianDays": 10
     },
     {
       "type": "Health Code Violations",
@@ -187,13 +187,13 @@
       "count": 22,
       "medianDays": 0,
       "closedSample": 5,
-      "cityMedianDays": 31
+      "cityMedianDays": 31.5
     },
     {
       "type": "Tents or Sleeping Structures",
-      "count": 21,
-      "medianDays": 15.5,
-      "closedSample": 12,
+      "count": 20,
+      "medianDays": 13,
+      "closedSample": 11,
       "cityMedianDays": 6
     },
     {
@@ -445,16 +445,16 @@
   ],
   "channels": [
     {
-      "name": "Other / not specified",
-      "count": 805
+      "name": "Mobile app",
+      "count": 868
     },
     {
       "name": "Phone",
-      "count": 1958
+      "count": 1957
     },
     {
-      "name": "Mobile app",
-      "count": 869
+      "name": "Other / not specified",
+      "count": 804
     }
   ],
   "stuck": [
