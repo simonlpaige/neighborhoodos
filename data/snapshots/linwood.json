@@ -1,18 +1,18 @@
 {
   "area": "linwood",
-  "asOf": "2026-11-27",
+  "asOf": "2026-11-28",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-27T20:04:03.861Z",
+  "generatedAt": "2026-11-28T18:59:55.694Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 3629,
-  "requests30": 162,
-  "requests90": 700,
+  "requests30": 159,
+  "requests90": 699,
   "counts": {
     "open": 637,
     "resolved": 2774,
     "canceled": 218
   },
-  "openOver60": 490,
+  "openOver60": 494,
   "types": [
     {
       "type": "Property Violations",

@@ -1,18 +1,18 @@
 {
   "area": "hickman-mills",
-  "asOf": "2026-11-27",
+  "asOf": "2026-11-28",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-27T20:04:06.126Z",
+  "generatedAt": "2026-11-28T18:59:57.823Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 1098,
-  "requests30": 57,
-  "requests90": 226,
+  "requests30": 56,
+  "requests90": 224,
   "counts": {
     "open": 168,
     "resolved": 887,
     "canceled": 43
   },
-  "openOver60": 115,
+  "openOver60": 119,
   "types": [
     {
       "type": "Trash  Recycling  Bulky Services",
@@ -432,6 +432,12 @@
       "issue": "Street Maintenance",
       "block": "10300 block of Raytown Rd",
       "opened": "2026-09-17",
+      "department": "PW Streets"
+    },
+    {
+      "issue": "Street Maintenance",
+      "block": "11700 block of Grandview Rd G",
+      "opened": "2026-09-29",
       "department": "PW Streets"
     }
   ],

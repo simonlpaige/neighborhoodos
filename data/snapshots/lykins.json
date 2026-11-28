@@ -1,18 +1,18 @@
 {
   "area": "lykins",
-  "asOf": "2026-11-27",
+  "asOf": "2026-11-28",
   "sourceMax": "2026-11-23",
-  "generatedAt": "2026-11-27T20:04:05.520Z",
+  "generatedAt": "2026-11-28T18:59:56.888Z",
   "window": "Requests opened in the trailing 365 days; final trend month is partial.",
   "total": 2107,
-  "requests30": 123,
-  "requests90": 452,
+  "requests30": 112,
+  "requests90": 451,
   "counts": {
     "open": 384,
     "resolved": 1572,
     "canceled": 151
   },
-  "openOver60": 290,
+  "openOver60": 292,
   "types": [
     {
       "type": "Property Violations",
